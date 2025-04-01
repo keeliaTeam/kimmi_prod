@@ -73,17 +73,15 @@ jobs:
             # 编译 APK 文件
             -   name: ======== 编译aab ========
                 run: flutter build appbundle --no-tree-shake-icons --obfuscate --split-debug-info=./obfuscate
-            -   name: ======== 编译apk ========
-                run: flutter build apk --no-tree-shake-icons --obfuscate --split-debug-info=./obfuscate_apk
 
             # 重命名 APK 文件为对应的分支名
             -   name: ===✅✅✅ 拷贝构建文件 ✅✅✅ ===
-                run: mv build/app/outputs/bundle/release/app-release.aab build/app/outputs/bundle/release/${{env.branch_name}}_${{github.run_number}}.aab; mv build/app/outputs/flutter-apk/app-release.apk build/app/outputs/flutter-apk/${{env.branch_name}}_${{github.run_number}}.apk
+                run: mv build/app/outputs/bundle/release/app-release.aab build/app/outputs/bundle/release/${{env.branch_name}}_${{github.run_number}}.aab
 
             -   name: ===🌹🌹🌹 拷贝构建文件 🌹🌹🌹 ===
                 uses: ncipollo/release-action@v1
                 with:
-                    artifacts: "obfuscate/*,build/app/outputs/bundle/release/${{env.branch_name}}_${{github.run_number}}.aab,build/app/outputs/flutter-apk/${{env.branch_name}}_${{github.run_number}}.apk"
+                    artifacts: "obfuscate/*,build/app/outputs/bundle/release/${{env.branch_name}}_${{github.run_number}}.aab"
                     tag: ${{env.branch_name}}-${{github.run_number}}
                     body: "${{inputs.desc}}"
 #                    token: ${{ secrets.YOUR_GITHUB_TOKEN }}
