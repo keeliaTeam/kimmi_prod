@@ -1,0 +1,3 @@
+class KimmiWhatchaGamingComponent {
+  KimmiWhatchaGamingComponent();
+}

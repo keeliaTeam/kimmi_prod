@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "372000909479",
+    "project_id": "kimmi-e3daf",
+    "storage_bucket": "kimmi-e3daf.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:372000909479:android:a7b598071345bf77f05382",
+        "android_client_info": {
+          "package_name": "com.kimmi.imk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "372000909479-rhhe4dtncq45q11tfhqastptcpnsf4k0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kimmi.imk",
+            "certificate_hash": "59336a186e270f27ec63b312e3c028d73efe3eee"
+          }
+        },
+        {
+          "client_id": "372000909479-eamforh5uh4bl9svdomaiftefhk19b5o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADo7RjIYOu1UF0YIe55bCQL3bHygF7Vww"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "372000909479-eamforh5uh4bl9svdomaiftefhk19b5o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

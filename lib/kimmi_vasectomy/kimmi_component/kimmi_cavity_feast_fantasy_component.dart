@@ -1,0 +1,3 @@
+class KimmiCavityFeastFantasyComponent {
+  KimmiCavityFeastFantasyComponent();
+}

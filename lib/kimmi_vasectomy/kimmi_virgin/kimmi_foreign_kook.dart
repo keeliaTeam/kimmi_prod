@@ -1,0 +1,1 @@
+class KimmiForeignKook implements Exception {}
