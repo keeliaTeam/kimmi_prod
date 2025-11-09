@@ -55,7 +55,7 @@ jobs:
             -   name: ===🤖🤖🤖 安装Flutter开发环境 ===
                 uses: subosito/flutter-action@v2
                 with:
-                    flutter-version: '3.19.6'
+                    flutter-version: '3.35.3'
             #
             # 获取分支名称
             -   name: ===🆚🆚🆚 设置环境变量和配置 ===
@@ -64,6 +64,26 @@ jobs:
             #
             -   run: flutter config --no-cli-animations
             -   run: flutter --version
+
+            - name: Free up GitHub Actions disk space
+              run: |
+                       echo "Before cleanup:"
+                       df -h
+                
+                # 删除不必要的大工具
+                       sudo rm -rf /usr/share/dotnet
+                       sudo rm -rf /usr/lib/jvm
+                       sudo rm -rf /opt/ghc
+                       sudo rm -rf /opt/hostedtoolcache/CodeQL
+                
+                # 删除缓存
+                       sudo rm -rf ~/.gradle/
+                       sudo rm -rf ~/.pub-cache/
+                       sudo rm -rf ~/.android/
+                       sudo rm -rf ~/Library
+                       
+                       echo "After cleanup:"
+                       df -h
             #
             # 运行 Flutter 的 pub get 来获取依赖
             -   name: ===🔨🔨🔨开始编译 ===
@@ -73,15 +93,17 @@ jobs:
             # 编译 APK 文件
             -   name: ======== 编译aab ========
                 run: flutter build appbundle --no-tree-shake-icons --obfuscate --split-debug-info=./obfuscate
+            -   name: ======== 编译apk ========
+                run: flutter build apk --no-tree-shake-icons --obfuscate --split-debug-info=./obfuscate_apk
 
             # 重命名 APK 文件为对应的分支名
             -   name: ===✅✅✅ 拷贝构建文件 ✅✅✅ ===
-                run: mv build/app/outputs/bundle/release/app-release.aab build/app/outputs/bundle/release/${{env.branch_name}}_${{github.run_number}}.aab
+                run: mv build/app/outputs/bundle/release/app-release.aab build/app/outputs/bundle/release/${{env.branch_name}}_${{github.run_number}}.aab; mv build/app/outputs/flutter-apk/app-release.apk build/app/outputs/flutter-apk/${{env.branch_name}}_${{github.run_number}}.apk
 
             -   name: ===🌹🌹🌹 拷贝构建文件 🌹🌹🌹 ===
                 uses: ncipollo/release-action@v1
                 with:
-                    artifacts: "obfuscate/*,build/app/outputs/bundle/release/${{env.branch_name}}_${{github.run_number}}.aab"
+                    artifacts: "obfuscate/*,build/app/outputs/bundle/release/${{env.branch_name}}_${{github.run_number}}.aab,build/app/outputs/flutter-apk/${{env.branch_name}}_${{github.run_number}}.apk"
                     tag: ${{env.branch_name}}-${{github.run_number}}
                     body: "${{inputs.desc}}"
 #                    token: ${{ secrets.YOUR_GITHUB_TOKEN }}
