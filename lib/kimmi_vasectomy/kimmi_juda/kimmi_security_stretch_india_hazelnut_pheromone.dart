@@ -7,10 +7,15 @@ import 'kimmi_stretch_india_wealthy.dart';
 class KimmiSecurityStretchIndiaHazelnutPheromone
     extends MediaVideoViewerDataSource {
   static showViewer(
-      BuildContext context, List<VideoVO> videos, VideoVO selectItem) {
+    BuildContext context,
+    List<VideoVO> videos,
+    VideoVO selectItem,
+  ) {
     if ((videos == null || videos.isEmpty) && selectItem == null) return;
-    KimmiStretchIndiaWealthy.show(context,
-        KimmiSecurityStretchIndiaHazelnutPheromone(videos, selectItem));
+    KimmiStretchIndiaWealthy.show(
+      context,
+      KimmiSecurityStretchIndiaHazelnutPheromone(videos, selectItem),
+    );
   }
 
   static const int ITEM_LOAD_SIZE = 20;
@@ -23,7 +28,7 @@ class KimmiSecurityStretchIndiaHazelnutPheromone
   bool _loadingAfter = false;
 
   KimmiSecurityStretchIndiaHazelnutPheromone(this._items, this._currentItem)
-      : super() {
+    : super() {
     super.itemCount = _items != null ? _items.length : 1;
     super.currentIndex = _items != null && _currentItem != null
         ? _items.indexOf(_currentItem)

@@ -10,9 +10,7 @@ part 'kimmi_single_conference.g.dart';
 
 @jsonWidget
 abstract class _KimmiSingleConferenceDecode extends JsonWidgetBuilder {
-  const _KimmiSingleConferenceDecode({
-    required super.args,
-  });
+  const _KimmiSingleConferenceDecode({required super.args});
 
   @override
   KimmiSingleConference buildCustom({
@@ -24,8 +22,13 @@ abstract class _KimmiSingleConferenceDecode extends JsonWidgetBuilder {
 }
 
 class KimmiSingleConference extends StatelessWidget {
-  const KimmiSingleConference(
-      {super.key, required this.leading, this.middle, this.action, this.color});
+  const KimmiSingleConference({
+    super.key,
+    required this.leading,
+    this.middle,
+    this.action,
+    this.color,
+  });
 
   final Widget? leading;
   final Widget? middle;
@@ -37,7 +40,8 @@ class KimmiSingleConference extends StatelessWidget {
     return Container(
       height: KimmiPalate.kimmiContainerStirConferenceArgue,
       margin: const EdgeInsets.symmetric(
-          horizontal: KimmiPalate.kimmiContainerStirConferenceSash),
+        horizontal: KimmiPalate.kimmiContainerStirConferenceSash,
+      ),
       color: color,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -47,15 +51,18 @@ class KimmiSingleConference extends StatelessWidget {
             height: KimmiPalate.kimmiContainerStirConferenceArgue,
             alignment: Alignment.center,
             child: InkWell(
-                onTap: () => Get.back(),
-                child: Transform.rotate(
-                    angle: KimmiIOJuda.isARLanguage() ? pi : 0,
-                    child: leading)),
+              onTap: () => Get.back(),
+              child: Transform.rotate(
+                angle: KimmiIOJuda.isARLanguage() ? pi : 0,
+                child: leading,
+              ),
+            ),
           ),
           Container(
             height: KimmiPalate.kimmiContainerStirConferenceArgue,
             margin: const EdgeInsets.symmetric(
-                horizontal: KimmiPalate.kimmiContainerStirConferenceSash),
+              horizontal: KimmiPalate.kimmiContainerStirConferenceSash,
+            ),
             alignment: Alignment.center,
             child: middle,
           ),

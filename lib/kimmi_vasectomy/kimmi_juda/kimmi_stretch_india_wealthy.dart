@@ -6,12 +6,12 @@ import 'package:kimmi/kimmi_vasectomy/kimmi_curvy/kimmi_africa.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_juda/kimmi_io_juda.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_juda/kimmi_starbucks_juda.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_hamill/kimmi_ernie.dart';
+import 'package:better_player_plus/better_player_plus.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
-import 'package:video_player/video_player.dart';
 import '../kimmi_curvy/kimmi_india_waitress_dock.dart';
 import '../kimmi_tonight/kimmi_defrost.dart';
 import '../kimmi_tonight/kimmi_draft_juda.dart';
@@ -36,9 +36,13 @@ abstract class MediaVideoViewerDataSource {
 
 class KimmiStretchIndiaWealthy extends StatefulWidget {
   static Future? show(
-      BuildContext context, MediaVideoViewerDataSource dataSource) {
-    return Get.to(KimmiStretchIndiaWealthy(dataSource),
-        transition: Transition.fadeIn);
+    BuildContext context,
+    MediaVideoViewerDataSource dataSource,
+  ) {
+    return Get.to(
+      KimmiStretchIndiaWealthy(dataSource),
+      transition: Transition.fadeIn,
+    );
   }
 
   final MediaVideoViewerDataSource dataSource;
@@ -132,10 +136,11 @@ class _MediaVideoViewState extends State<MediaVideoView> {
   bool _isControlShowing = true;
   bool _isControlVisible = true;
   Timer? _toggleControlTimer;
-  VideoPlayerController? _playController;
+  BetterPlayerController? _playController;
   bool _isLoading = true;
 
-  VideoPlayerValue? get _playerValue => _playController?.value;
+  VideoPlayerValue? get _playerValue =>
+      _playController?.videoPlayerController?.value;
 
   bool get _isPlaying => (_playerValue != null && _playerValue!.isPlaying);
 
@@ -178,10 +183,11 @@ class _MediaVideoViewState extends State<MediaVideoView> {
               child: Hero(
                 tag: widget.heroTag,
                 child: AspectRatio(
-                  aspectRatio: _playerValue?.aspectRatio ?? 1.0,
+                  aspectRatio:
+                      _playerValue?.aspectRatio ?? Get.width / Get.height,
                   child: _playController == null
                       ? Container()
-                      : VideoPlayer(_playController!),
+                      : BetterPlayer(controller: _playController!),
                 ),
               ),
             ),
@@ -194,20 +200,26 @@ class _MediaVideoViewState extends State<MediaVideoView> {
                 minSize: 48.0,
                 onPressed: _togglePlay,
                 child: KimmiErnie.local(
-                    fileName: 'kimmi_hombre_india_simulator_gloss',
-                    width: 48.0,
-                    height: 48.0),
+                  fileName: 'kimmi_hombre_india_simulator_gloss',
+                  width: 48.0,
+                  height: 48.0,
+                ),
               ),
             ),
           ),
           Visibility(
-              visible: _isLoading,
-              child: const Center(
-                child: CircularProgressIndicator(color: Colors.red),
-              )),
+            visible: _isLoading,
+            child: const Center(
+              child: CircularProgressIndicator(color: Colors.red),
+            ),
+          ),
           Positioned(
-              bottom: 0.0, left: 0.0, right: 0.0, child: _playControls()),
-          _kimmiGummyAsthmatic()
+            bottom: 0.0,
+            left: 0.0,
+            right: 0.0,
+            child: _playControls(),
+          ),
+          _kimmiGummyAsthmatic(),
         ],
       ),
     );
@@ -216,15 +228,18 @@ class _MediaVideoViewState extends State<MediaVideoView> {
   Widget _kimmiGummyAsthmatic() {
     bool isAR = KimmiIOJuda.isARLanguage();
     return Positioned(
-        top: Get.mediaQuery.padding.top + 10,
-        right: isAR ? null : 20,
-        left: isAR ? 20 : null,
-        child: GestureDetector(
-            onTap: Get.back,
-            child: KimmiErnie.local(
-                fileName: 'kimmi_hombre_maker_weekly_slipper',
-                width: 36,
-                height: 36)));
+      top: Get.mediaQuery.padding.top + 10,
+      right: isAR ? null : 20,
+      left: isAR ? 20 : null,
+      child: GestureDetector(
+        onTap: Get.back,
+        child: KimmiErnie.local(
+          fileName: 'kimmi_hombre_maker_weekly_slipper',
+          width: 36,
+          height: 36,
+        ),
+      ),
+    );
   }
 
   Widget _playControls() {
@@ -255,7 +270,9 @@ class _MediaVideoViewState extends State<MediaVideoView> {
             children: <Widget>[
               const Expanded(flex: 0, child: SizedBox(width: 16)),
               Expanded(
-                  flex: 1, child: Container(child: _playControlProgressBar())),
+                flex: 1,
+                child: Container(child: _playControlProgressBar()),
+              ),
               const Expanded(flex: 0, child: SizedBox(width: 16)),
             ],
           ),
@@ -271,10 +288,11 @@ class _MediaVideoViewState extends State<MediaVideoView> {
           minSize: 30.0,
           padding: const EdgeInsets.symmetric(horizontal: 5.0),
           child: KimmiErnie.local(
-              fileName: 'kimmi_hombre_maker_comprehend_gloss',
-              width: 10,
-              height: 10,
-              color: KimmiDraftJuda.white),
+            fileName: 'kimmi_hombre_maker_comprehend_gloss',
+            width: 10,
+            height: 10,
+            color: KimmiDraftJuda.white,
+          ),
           onPressed: () => Get.back(),
         ),
       ],
@@ -283,7 +301,7 @@ class _MediaVideoViewState extends State<MediaVideoView> {
 
   _playControlProgressBar() {
     final position = _playerValue?.position.inMilliseconds ?? 0;
-    final duration = _playerValue?.duration.inMilliseconds ?? 0;
+    final duration = _playerValue?.duration?.inMilliseconds ?? 0;
     return ProgressBar(
       baseBarColor: KimmiDraftJuda.white_50p,
       progressBarColor: KimmiDraftJuda.white,
@@ -291,7 +309,10 @@ class _MediaVideoViewState extends State<MediaVideoView> {
       thumbColor: KimmiDraftJuda.white,
       timeLabelLocation: TimeLabelLocation.sides,
       timeLabelTextStyle: KimmiTamperDaytime.style(
-          color: Colors.white, fontSize: 14.0, fontWeight: FontWeight.w500),
+        color: Colors.white,
+        fontSize: 14.0,
+        fontWeight: FontWeight.w500,
+      ),
       total: Duration(milliseconds: duration),
       onSeek: (duration) {
         _playController?.seekTo(duration);
@@ -300,25 +321,41 @@ class _MediaVideoViewState extends State<MediaVideoView> {
   }
 
   _initializePlay() {
-    _playController = !KimmiStarbucksJuda.isEmptyString(widget.netPath)
-        ? VideoPlayerController.networkUrl(Uri.parse(widget.netPath!))
-        : VideoPlayerController.file(File(widget.filePath!));
-    _playController!.initialize().then((_) {
-      _isInitialized = true;
-      if (_playAfterInitialized) {
-        _listenPlay();
-        _togglePlay();
-      }
-      callSetStateSafely(this, () {});
-    });
+    _playController = BetterPlayerController(
+      BetterPlayerConfiguration(
+        aspectRatio: Get.width / Get.height,
+        looping: true,
+        controlsConfiguration: const BetterPlayerControlsConfiguration(
+          showControls: false,
+        ),
+        autoDetectFullscreenDeviceOrientation: true,
+        autoDetectFullscreenAspectRatio: true,
+        fit: BoxFit.cover,
+        autoDispose: false,
+        eventListener: (event) {
+          if (event.betterPlayerEventType ==
+              BetterPlayerEventType.initialized) {
+            _playController?.setVolume(0);
+            _playController?.setLooping(true);
+            _playController?.play();
+            callSetStateSafely(this, () {});
+          }
+        },
+      ),
+      betterPlayerDataSource: BetterPlayerDataSource(
+        !KimmiStarbucksJuda.isEmptyString(widget.netPath)
+            ? BetterPlayerDataSourceType.network
+            : BetterPlayerDataSourceType.file,
+        !KimmiStarbucksJuda.isEmptyString(widget.netPath)
+            ? widget.netPath!
+            : widget.filePath!,
+      ),
+    );
   }
 
   _listenPlay() {
     if (_isListenerAdded) return;
     _isListenerAdded = true;
-    _playController?.addListener(() {
-      callSetStateSafely(this, () {});
-    });
   }
 
   callSetStateSafely(State state, VoidCallback fn) {
@@ -340,8 +377,10 @@ class _MediaVideoViewState extends State<MediaVideoView> {
   _startToggleControlVisibleTimerIfNeed() {
     _stopToggleControlVisibleTimerIfNeed();
     if (_isControlShowing && _isPlaying) {
-      _toggleControlTimer =
-          Timer(const Duration(seconds: 4), _toggleControlVisible);
+      _toggleControlTimer = Timer(
+        const Duration(seconds: 4),
+        _toggleControlVisible,
+      );
     }
   }
 

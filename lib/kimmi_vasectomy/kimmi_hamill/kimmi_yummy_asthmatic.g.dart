@@ -11,10 +11,7 @@ class KimmiYummyAsthmaticDecode extends _KimmiYummyAsthmaticDecode {
   static KimmiYummyAsthmaticDecode fromDynamic(
     dynamic map, {
     JsonWidgetRegistry? registry,
-  }) =>
-      KimmiYummyAsthmaticDecode(
-        args: map,
-      );
+  }) => KimmiYummyAsthmaticDecode(args: map);
 
   @override
   KimmiYummyAsthmaticDecodeStorm createModel({
@@ -36,10 +33,7 @@ class KimmiYummyAsthmaticDecode extends _KimmiYummyAsthmaticDecode {
     required JsonWidgetData data,
     Key? key,
   }) {
-    final model = createModel(
-      childBuilder: childBuilder,
-      data: data,
-    );
+    final model = createModel(childBuilder: childBuilder, data: data);
 
     return KimmiYummyAsthmatic(
       borderRadius: model.borderRadius,
@@ -48,11 +42,13 @@ class KimmiYummyAsthmaticDecode extends _KimmiYummyAsthmaticDecode {
       height: model.height,
       key: key,
       onTap: model.onTap,
+      radius: model.radius,
       title: model.title,
       titleColor: model.titleColor,
       titleFontSize: model.titleFontSize,
       titleFontWeight: model.titleFontWeight,
       width: model.width,
+      child: model.child?.build(childBuilder: childBuilder, context: context),
     );
   }
 }
@@ -62,54 +58,60 @@ class JsonKimmiYummyAsthmatic extends JsonWidgetData {
     Map<String, dynamic> args = const {},
     JsonWidgetRegistry? registry,
     this.borderRadius,
-    this.colorFrom = const Color.fromRGBO(247, 92, 255, 1),
-    this.colorTo = const Color.fromRGBO(68, 176, 243, 1),
+    this.colorFrom = KimmiPalate.kimmiBathtubStuFoundationYummy,
+    this.colorTo = KimmiPalate.kimmiBathtubStuToYummy,
     required this.height,
     required this.onTap,
-    required this.title,
+    this.radius,
+    this.title,
     this.titleColor = Colors.white,
     this.titleFontSize = 16,
     this.titleFontWeight = FontWeight.bold,
     required this.width,
+    this.child,
   }) : super(
-          jsonWidgetArgs: KimmiYummyAsthmaticDecodeStorm.fromDynamic(
-            {
-              'borderRadius': borderRadius,
-              'colorFrom': colorFrom,
-              'colorTo': colorTo,
-              'height': height,
-              'onTap': onTap,
-              'title': title,
-              'titleColor': titleColor,
-              'titleFontSize': titleFontSize,
-              'titleFontWeight': titleFontWeight,
-              'width': width,
-              ...args,
-            },
-            args: args,
-            registry: registry,
-          ),
-          jsonWidgetBuilder: () => KimmiYummyAsthmaticDecode(
-            args: KimmiYummyAsthmaticDecodeStorm.fromDynamic(
-              {
-                'borderRadius': borderRadius,
-                'colorFrom': colorFrom,
-                'colorTo': colorTo,
-                'height': height,
-                'onTap': onTap,
-                'title': title,
-                'titleColor': titleColor,
-                'titleFontSize': titleFontSize,
-                'titleFontWeight': titleFontWeight,
-                'width': width,
-                ...args,
-              },
-              args: args,
-              registry: registry,
-            ),
-          ),
-          jsonWidgetType: KimmiYummyAsthmaticDecode.kType,
-        );
+         jsonWidgetArgs: KimmiYummyAsthmaticDecodeStorm.fromDynamic(
+           {
+             'borderRadius': borderRadius,
+             'colorFrom': colorFrom,
+             'colorTo': colorTo,
+             'height': height,
+             'onTap': onTap,
+             'radius': radius,
+             'title': title,
+             'titleColor': titleColor,
+             'titleFontSize': titleFontSize,
+             'titleFontWeight': titleFontWeight,
+             'width': width,
+             'child': child,
+             ...args,
+           },
+           args: args,
+           registry: registry,
+         ),
+         jsonWidgetBuilder: () => KimmiYummyAsthmaticDecode(
+           args: KimmiYummyAsthmaticDecodeStorm.fromDynamic(
+             {
+               'borderRadius': borderRadius,
+               'colorFrom': colorFrom,
+               'colorTo': colorTo,
+               'height': height,
+               'onTap': onTap,
+               'radius': radius,
+               'title': title,
+               'titleColor': titleColor,
+               'titleFontSize': titleFontSize,
+               'titleFontWeight': titleFontWeight,
+               'width': width,
+               'child': child,
+               ...args,
+             },
+             args: args,
+             registry: registry,
+           ),
+         ),
+         jsonWidgetType: KimmiYummyAsthmaticDecode.kType,
+       );
 
   final BorderRadius? borderRadius;
 
@@ -121,7 +123,9 @@ class JsonKimmiYummyAsthmatic extends JsonWidgetData {
 
   final void Function()? onTap;
 
-  final String title;
+  final double? radius;
+
+  final String? title;
 
   final Color titleColor;
 
@@ -130,6 +134,8 @@ class JsonKimmiYummyAsthmatic extends JsonWidgetData {
   final FontWeight? titleFontWeight;
 
   final double width;
+
+  final JsonWidgetData? child;
 }
 
 /* AUTOGENERATED FROM [KimmiYummyAsthmatic]*/
@@ -137,15 +143,17 @@ class KimmiYummyAsthmaticDecodeStorm extends JsonWidgetBuilderModel {
   const KimmiYummyAsthmaticDecodeStorm(
     super.args, {
     this.borderRadius,
-    this.colorFrom = const Color.fromRGBO(247, 92, 255, 1),
-    this.colorTo = const Color.fromRGBO(68, 176, 243, 1),
+    this.colorFrom = KimmiPalate.kimmiBathtubStuFoundationYummy,
+    this.colorTo = KimmiPalate.kimmiBathtubStuToYummy,
     required this.height,
     required this.onTap,
-    required this.title,
+    this.radius,
+    this.title,
     this.titleColor = Colors.white,
     this.titleFontSize = 16,
     this.titleFontWeight = FontWeight.bold,
     required this.width,
+    this.child,
   });
 
   final BorderRadius? borderRadius;
@@ -158,7 +166,9 @@ class KimmiYummyAsthmaticDecodeStorm extends JsonWidgetBuilderModel {
 
   final void Function()? onTap;
 
-  final String title;
+  final double? radius;
+
+  final String? title;
 
   final Color titleColor;
 
@@ -168,16 +178,14 @@ class KimmiYummyAsthmaticDecodeStorm extends JsonWidgetBuilderModel {
 
   final double width;
 
+  final JsonWidgetData? child;
+
   static KimmiYummyAsthmaticDecodeStorm fromDynamic(
     dynamic map, {
     Map<String, dynamic> args = const {},
     JsonWidgetRegistry? registry,
   }) {
-    final result = maybeFromDynamic(
-      map,
-      args: args,
-      registry: registry,
-    );
+    final result = maybeFromDynamic(map, args: args, registry: registry);
 
     if (result == null) {
       throw Exception(
@@ -197,10 +205,7 @@ class KimmiYummyAsthmaticDecodeStorm extends JsonWidgetBuilderModel {
 
     if (map != null) {
       if (map is String) {
-        map = yaon.parse(
-          map,
-          normalize: true,
-        );
+        map = yaon.parse(map, normalize: true);
       }
 
       if (map is KimmiYummyAsthmaticDecodeStorm) {
@@ -223,7 +228,7 @@ class KimmiYummyAsthmaticDecodeStorm extends JsonWidgetBuilderModel {
               map['colorFrom'],
               validate: false,
             );
-            parsed ??= const Color.fromRGBO(247, 92, 255, 1);
+            parsed ??= KimmiPalate.kimmiBathtubStuFoundationYummy;
 
             return parsed;
           }(),
@@ -232,7 +237,7 @@ class KimmiYummyAsthmaticDecodeStorm extends JsonWidgetBuilderModel {
               map['colorTo'],
               validate: false,
             );
-            parsed ??= const Color.fromRGBO(68, 176, 243, 1);
+            parsed ??= KimmiPalate.kimmiBathtubStuToYummy;
 
             return parsed;
           }(),
@@ -247,6 +252,11 @@ class KimmiYummyAsthmaticDecodeStorm extends JsonWidgetBuilderModel {
             return parsed;
           }(),
           onTap: map['onTap'],
+          radius: () {
+            dynamic parsed = JsonClass.maybeParseDouble(map['radius']);
+
+            return parsed;
+          }(),
           title: map['title'],
           titleColor: () {
             dynamic parsed = ThemeDecoder.decodeColor(
@@ -287,6 +297,14 @@ class KimmiYummyAsthmaticDecodeStorm extends JsonWidgetBuilderModel {
             }
             return parsed;
           }(),
+          child: () {
+            dynamic parsed = JsonWidgetData.maybeFromDynamic(
+              map['child'],
+              registry: registry,
+            );
+
+            return parsed;
+          }(),
         );
       }
     }
@@ -297,34 +315,26 @@ class KimmiYummyAsthmaticDecodeStorm extends JsonWidgetBuilderModel {
   @override
   Map<String, dynamic> toJson() {
     return JsonClass.removeNull({
-      'borderRadius': ThemeEncoder.encodeBorderRadius(
-        borderRadius,
-      ),
-      'colorFrom': const Color.fromRGBO(247, 92, 255, 1) == colorFrom
+      'borderRadius': ThemeEncoder.encodeBorderRadius(borderRadius),
+      'colorFrom': KimmiPalate.kimmiBathtubStuFoundationYummy == colorFrom
           ? null
-          : ThemeEncoder.encodeColor(
-              colorFrom,
-            ),
-      'colorTo': const Color.fromRGBO(68, 176, 243, 1) == colorTo
+          : ThemeEncoder.encodeColor(colorFrom),
+      'colorTo': KimmiPalate.kimmiBathtubStuToYummy == colorTo
           ? null
-          : ThemeEncoder.encodeColor(
-              colorTo,
-            ),
+          : ThemeEncoder.encodeColor(colorTo),
       'height': height,
       'onTap': onTap,
+      'radius': radius,
       'title': title,
       'titleColor': Colors.white == titleColor
           ? null
-          : ThemeEncoder.encodeColor(
-              titleColor,
-            ),
+          : ThemeEncoder.encodeColor(titleColor),
       'titleFontSize': 16 == titleFontSize ? null : titleFontSize,
       'titleFontWeight': FontWeight.bold == titleFontWeight
           ? null
-          : ThemeEncoder.encodeFontWeight(
-              titleFontWeight,
-            ),
+          : ThemeEncoder.encodeFontWeight(titleFontWeight),
       'width': width,
+      'child': child?.toJson(),
       ...args,
     });
   }
@@ -346,11 +356,14 @@ class KimmiYummyAsthmaticMobster {
       'colorTo': SchemaHelper.objectSchema(ColorSchema.id),
       'height': SchemaHelper.numberSchema,
       'onTap': SchemaHelper.anySchema,
+      'radius': SchemaHelper.numberSchema,
       'title': SchemaHelper.stringSchema,
       'titleColor': SchemaHelper.objectSchema(ColorSchema.id),
       'titleFontSize': SchemaHelper.numberSchema,
       'titleFontWeight': SchemaHelper.objectSchema(FontWeightSchema.id),
       'width': SchemaHelper.numberSchema,
+      'child': SchemaHelper.objectSchema(JsonWidgetDataSchema.id),
     },
+    'required': ['height', 'onTap', 'width'],
   };
 }

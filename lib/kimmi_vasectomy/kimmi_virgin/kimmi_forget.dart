@@ -17,9 +17,10 @@ class KimmiForget<T extends GeneratedMessage> {
 
   factory KimmiForget.raw(Message rawEmployee) {
     KimmiForget<T> emp = KimmiForget(
-        rawEmployee.messageCate,
-        rawEmployee.messageType,
-        KimmiForeignScriptOutsource.parse(rawEmployee));
+      rawEmployee.messageCate,
+      rawEmployee.messageType,
+      KimmiForeignScriptOutsource.parse(rawEmployee),
+    );
     emp.seqno = rawEmployee.seqno;
     return emp;
   }

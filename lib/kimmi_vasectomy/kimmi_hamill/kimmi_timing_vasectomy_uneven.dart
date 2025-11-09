@@ -10,11 +10,7 @@ import 'package:path/path.dart' as Path;
 import '../kimmi_palate.dart';
 import '../kimmi_curvy/kimmi_africa.dart';
 
-enum KimmiTimingVasectomyUnevenMarvel {
-  waiting,
-  complete,
-  failed,
-}
+enum KimmiTimingVasectomyUnevenMarvel { waiting, complete, failed }
 
 class KimmiTimingVasectomyUneven extends StatefulWidget {
   final KimmiTimingVasectomy app;
@@ -46,7 +42,10 @@ class _KimmiTimingVasectomyUnevenViking
         double width = Get.width * widget.app.widthPercent;
         double height = width * widget.app.aspectRatio!;
         return SizedBox(
-            width: width, height: height, child: _buildKimmiTemperUneven());
+          width: width,
+          height: height,
+          child: _buildKimmiTemperUneven(),
+        );
       } else {
         return _buildKimmiTemperUneven();
       }
@@ -66,8 +65,12 @@ class _KimmiTimingVasectomyUnevenViking
   }
 
   Future<void> _prepare() async {
-    File appIndex = File(Path.join(
-        KIMMI.filePath, "${widget.app.id}/${widget.app.version}/index.html"));
+    File appIndex = File(
+      Path.join(
+        KIMMI.filePath,
+        "${widget.app.id}/${widget.app.version}/index.html",
+      ),
+    );
     if (await appIndex.exists()) {
       setState(() {
         _status = KimmiTimingVasectomyUnevenMarvel.complete;
@@ -75,8 +78,10 @@ class _KimmiTimingVasectomyUnevenViking
       return;
     }
 
-    String zipPath =
-        Path.join(KIMMI.filePath, "${widget.app.id}/${widget.app.version}.zip");
+    String zipPath = Path.join(
+      KIMMI.filePath,
+      "${widget.app.id}/${widget.app.version}.zip",
+    );
     File zipFile = File(zipPath);
     Directory appDir = Directory(Path.join(KIMMI.filePath, "${widget.app.id}"));
 
@@ -84,7 +89,8 @@ class _KimmiTimingVasectomyUnevenViking
       await appDir.delete(recursive: true);
     }
     Directory versionDir = Directory(
-        Path.join(KIMMI.filePath, "${widget.app.id}/${widget.app.version}"));
+      Path.join(KIMMI.filePath, "${widget.app.id}/${widget.app.version}"),
+    );
     await versionDir.create(recursive: true);
 
     String appDownloadUrl =
@@ -99,11 +105,12 @@ class _KimmiTimingVasectomyUnevenViking
     }
 
     await ZipFile.extractToDirectory(
-        zipFile: zipFile,
-        destinationDir: versionDir,
-        onExtracting: (zipEntry, progress) {
-          return ZipFileOperation.includeItem;
-        });
+      zipFile: zipFile,
+      destinationDir: versionDir,
+      onExtracting: (zipEntry, progress) {
+        return ZipFileOperation.includeItem;
+      },
+    );
 
     if (await appIndex.exists()) {
       setState(() {

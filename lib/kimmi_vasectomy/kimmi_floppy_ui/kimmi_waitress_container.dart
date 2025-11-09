@@ -1,5 +1,5 @@
 import 'dart:math';
-import 'kimmi_script_stewart.dart';
+import 'kimmi_chickie_unicycle.dart';
 import 'dart:math';
 import 'dart:ui';
 
@@ -40,11 +40,7 @@ import '../kimmi_floppy/kimmi_waitress_invoice.dart';
 import 'kimmi_waitress_per_hammock_uneven.dart';
 import 'package:path/path.dart' as Path;
 
-enum ChatScrollPosition {
-  start,
-  end,
-  offset,
-}
+enum ChatScrollPosition { start, end, offset }
 
 class KimmiWaitressContainer
     extends KimmiMuseIdolizeContainer<KimmiWaitressInvoice>
@@ -63,137 +59,155 @@ class KimmiWaitressContainer
               KimmiWaitressDaytimeStarbucks.VDIEO_BUTTON_NAV_HAS_TEXT) {
         List<Widget> children = [
           const KimmiMileErnie(
-              url: KimmiPrototype.kimmi_unable_kimmi_hombre_doggy_stu_whip,
-              height: 18,
-              width: 18),
+            url: KimmiPrototype.kimmi_unable_kimmi_hombre_doggy_stu_whip,
+            height: 18,
+            width: 18,
+          ),
         ];
         if (logic.showStyleType ==
             KimmiWaitressDaytimeStarbucks.VDIEO_BUTTON_NAV_HAS_TEXT) {
-          children.add(Padding(
-            padding: const EdgeInsets.only(left: 4),
-            child: Text('kimmi_broderick_doggy_me'.tr,
-                style: KimmiTamperDaytime.white12),
-          ));
+          children.add(
+            Padding(
+              padding: const EdgeInsets.only(left: 4),
+              child: Text(
+                'kimmi_broderick_doggy_me'.tr,
+                style: KimmiTamperDaytime.white12,
+              ),
+            ),
+          );
         }
 
         tralingWidget = Row(
           mainAxisAlignment: MainAxisAlignment.end,
           children: [
             CupertinoButton(
-                padding: const EdgeInsets.symmetric(horizontal: 8),
-                onPressed: () =>
-                    onSelectInputFunc(ChatInputFuncType.call, context: context),
-                child: Container(
-                  width: 36,
-                  height: 36,
-                  decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(18),
-                      color: KimmiPalate.kimmiBathtubStuToYummy),
-                  alignment: Alignment.center,
-                  child: Row(
-                    mainAxisSize: MainAxisSize.min,
-                    children: children,
-                  ),
-                )),
+              padding: const EdgeInsets.symmetric(horizontal: 8),
+              onPressed: () =>
+                  onSelectInputFunc(ChatInputFuncType.call, context: context),
+              child: Container(
+                width: 36,
+                height: 36,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(18),
+                  color: KimmiPalate.kimmiBathtubStuToYummy,
+                ),
+                alignment: Alignment.center,
+                child: Row(mainAxisSize: MainAxisSize.min, children: children),
+              ),
+            ),
             CupertinoButton(
-                padding: const EdgeInsets.symmetric(horizontal: 8),
-                onPressed: () =>
-                    onSelectInputFunc(ChatInputFuncType.more, context: context),
-                child: KimmiErnie.local(
-                    fileName: "kimmi_hombre_waitress_charm",
-                    width: 24,
-                    height: 24)),
+              padding: const EdgeInsets.symmetric(horizontal: 8),
+              onPressed: () =>
+                  onSelectInputFunc(ChatInputFuncType.more, context: context),
+              child: KimmiErnie.local(
+                fileName: "kimmi_hombre_waitress_charm",
+                width: 24,
+                height: 24,
+              ),
+            ),
           ],
         );
       } else {
         tralingWidget = CupertinoButton(
-            padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
-            onPressed: () =>
-                onSelectInputFunc(ChatInputFuncType.more, context: context),
-            child: KimmiErnie.local(
-                fileName: "kimmi_hombre_waitress_charm",
-                width: 24,
-                height: 24));
+          padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
+          onPressed: () =>
+              onSelectInputFunc(ChatInputFuncType.more, context: context),
+          child: KimmiErnie.local(
+            fileName: "kimmi_hombre_waitress_charm",
+            width: 24,
+            height: 24,
+          ),
+        );
       }
     }
 
     return Listener(
-        onPointerDown: (_) => _kimmiUterusFantasyGlenMarvelIfStick(),
-        child: Scaffold(
-          backgroundColor: KimmiDraftJuda.black,
-          resizeToAvoidBottomInset: false,
-          extendBodyBehindAppBar: true,
-          appBar: CupertinoNavigationBar(
-            border: null,
-            backgroundColor: KimmiDraftJuda.transparent,
-            padding: const EdgeInsetsDirectional.only(top: 4),
-            leading: Row(
-              mainAxisAlignment: MainAxisAlignment.start,
-              children: [
-                CupertinoButton(
-                    padding: const EdgeInsets.fromLTRB(20, 0, 12, 0),
-                    onPressed: () => Get.back(),
-                    child: KimmiFailedWebsite.kimmiDecafGloss()),
-                KimmiFailedWebsite.kimmiThongLowellTamper(
-                    Text(logic.chatBox.showName ?? "",
-                        style: KimmiTamperDaytime.TextWhite_16_Semibold,
-                        maxLines: 1,
-                        overflow: TextOverflow.ellipsis),
-                    MediaQuery.of(context).size.width - 180),
-                (logic.chatBox.chatUser == null ||
-                        KIMMI.kimmiHump.isKimmiAiGraceSensitive())
-                    ? const SizedBox()
-                    : Container(
-                        padding: const EdgeInsets.only(left: 4, right: 4),
-                        child: KimmiFailedFeastQuitterMarvel(
-                          uid: logic.chatBox.chatUser!.uid,
-                          isShowText: false,
-                        )),
-              ],
-            ),
-            trailing: tralingWidget,
-          ),
-          body: Stack(
-            alignment: Alignment.topCenter,
+      onPointerDown: (_) => _kimmiUterusFantasyGlenMarvelIfStick(),
+      child: Scaffold(
+        backgroundColor: KimmiDraftJuda.black,
+        resizeToAvoidBottomInset: false,
+        extendBodyBehindAppBar: true,
+        appBar: CupertinoNavigationBar(
+          border: null,
+          backgroundColor: KimmiDraftJuda.transparent,
+          padding: const EdgeInsetsDirectional.only(top: 4),
+          leading: Row(
+            mainAxisAlignment: MainAxisAlignment.start,
             children: [
-              Padding(
-                padding: const EdgeInsets.only(top: 80),
-                child: Column(
-                  children: <Widget>[
-                    Expanded(
-                      child: GestureDetector(
-                        onTap: () {
-                          _chatInputToolBarKey.currentState
-                              ?.kimmiHeadlineDoctorSophomore();
-                        },
-                        child: Listener(
-                            onPointerMove: (event) => _chatInputToolBarKey
-                                .currentState
-                                ?.kimmiHeadlineDoctorSophomore(),
-                            child: _kimmiPoopDecodeFailed()),
+              CupertinoButton(
+                padding: const EdgeInsets.fromLTRB(20, 0, 12, 0),
+                onPressed: () => Get.back(),
+                child: KimmiFailedWebsite.kimmiDecafGloss(),
+              ),
+
+              KimmiFailedWebsite.kimmiThongLowellTamper(
+                Text(
+                  logic.chatBox.showName ?? "",
+                  style: KimmiTamperDaytime.TextWhite_16_Semibold,
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
+                ),
+                MediaQuery.of(context).size.width - 180,
+              ),
+
+              (logic.chatBox.chatUser == null ||
+                      KIMMI.kimmiHump.isKimmiAiGraceSensitive())
+                  ? const SizedBox()
+                  : Container(
+                      padding: const EdgeInsets.only(left: 4, right: 4),
+                      child: KimmiFailedFeastQuitterMarvel(
+                        uid: logic.chatBox.chatUser!.uid,
+                        isShowText: false,
                       ),
                     ),
-                    GetBuilder<KimmiWaitressInvoice>(
-                        id: logic.kimmi_vw_waitress_doctor_assignment,
-                        builder: (logic) {
-                          String inputHintText = _kimmiDoctorSchistTamper();
-                          List<String>? msgList =
-                              logic.quickMessageFromConfig();
-                          return KimmiWaitressDoctorLoopy(
-                            key: _chatInputToolBarKey,
-                            observer: this,
-                            hintText: inputHintText,
-                            quickGroup: msgList,
-                            cachePath: _voicePath(logic.chatBox.id),
-                            chatStyleType: logic.showStyleType,
-                          );
-                        })
-                  ],
-                ),
-              ),
             ],
           ),
-        ));
+          trailing: tralingWidget,
+        ),
+        body: Stack(
+          alignment: Alignment.topCenter,
+          children: [
+            Padding(
+              padding: const EdgeInsets.only(top: 80),
+              child: Column(
+                children: <Widget>[
+                  Expanded(
+                    child: GestureDetector(
+                      onTap: () {
+                        _chatInputToolBarKey.currentState
+                            ?.kimmiHeadlineDoctorSophomore();
+                      },
+                      child: Listener(
+                        onPointerMove: (event) => _chatInputToolBarKey
+                            .currentState
+                            ?.kimmiHeadlineDoctorSophomore(),
+                        child: _kimmiPoopDecodeFailed(),
+                      ),
+                    ),
+                  ),
+
+                  GetBuilder<KimmiWaitressInvoice>(
+                    id: logic.kimmi_vw_waitress_doctor_assignment,
+                    builder: (logic) {
+                      String inputHintText = _kimmiDoctorSchistTamper();
+                      List<String>? msgList = logic.quickMessageFromConfig();
+                      return KimmiWaitressDoctorLoopy(
+                        key: _chatInputToolBarKey,
+                        observer: this,
+                        hintText: inputHintText,
+                        quickGroup: msgList,
+                        cachePath: _voicePath(logic.chatBox.id),
+                        chatStyleType: logic.showStyleType,
+                      );
+                    },
+                  ),
+                ],
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
   }
 
   Widget _kimmiMomentumDecode(BuildContext context, int index) {
@@ -201,7 +215,9 @@ class KimmiWaitressContainer
         (logic.hasMoreBackward &&
             index + 1 == logic.itemCount + (logic.hasMoreBackward ? 1 : 0))) {
       return const SizedBox(
-          height: 50.0, child: Center(child: CupertinoActivityIndicator()));
+        height: 50.0,
+        child: Center(child: CupertinoActivityIndicator()),
+      );
     }
     final item = logic.itemAtIndex(index);
     if (item is ChatDateItem) {
@@ -221,8 +237,7 @@ class KimmiWaitressContainer
           inputHint = "kimmi_broderick_waitress_doctor_by_private".tr;
         } else {
           if (logic.freeImCount.value > 0) {
-            inputHint = "kimmi_broderick_waitress_doctor_by_show"
-                .tr
+            inputHint = "kimmi_broderick_waitress_doctor_by_show".tr
                 .replaceFirst("%s", "${logic.freeImCount}");
           } else {
             inputHint = 'kimmi_broderick_waitress_doctor_by_private'.tr;
@@ -247,7 +262,9 @@ class KimmiWaitressContainer
         if (chatUser != null) {
           KimmiIndiaWaitressDock.instance
               .kimmiUntieIndiaWaitressHystericalLabor(
-                  chatUser.uid, PayFromType.FROM_IM_VIDEO_CALL);
+                chatUser.uid,
+                PayFromType.FROM_IM_VIDEO_CALL,
+              );
         }
         break;
       case ChatInputFuncType.more:
@@ -299,8 +316,9 @@ class KimmiWaitressContainer
   void _kimmiUterusFantasyGlenMarvelIfStick() {
     if (logic.hasNewSnap) {
       logic.hasNewSnap = false;
-      KimmiWaitressDock.instance
-          .kimmiFantasyWaitressTotallyGlenMarvel(cId: logic.chatBox.id);
+      KimmiWaitressDock.instance.kimmiFantasyWaitressTotallyGlenMarvel(
+        cId: logic.chatBox.id,
+      );
     }
   }
 
@@ -309,26 +327,27 @@ class KimmiWaitressContainer
       controller: logic.scrollController,
       slivers: [
         GetBuilder<KimmiWaitressInvoice>(
-            id: logic.kimmi_vw_waitress_feast_tux,
-            builder: (logic) {
-              return SliverToBoxAdapter(
-                child: _kimmiFeastTuxBargain(),
-              );
-            }),
+          id: logic.kimmi_vw_waitress_feast_tux,
+          builder: (logic) {
+            return SliverToBoxAdapter(child: _kimmiFeastTuxBargain());
+          },
+        ),
         GetBuilder<KimmiWaitressInvoice>(
-            id: logic.kimmi_vw_waitress_amen,
-            builder: (logic) {
-              return SliverList(
-                delegate: SliverChildBuilderDelegate(
-                  (context, index) => Padding(
-                    padding: EdgeInsets.only(
-                        bottom: logic.itemCount - 1 == index ? 60 : 20),
-                    child: _kimmiMomentumDecode(context, index),
+          id: logic.kimmi_vw_waitress_amen,
+          builder: (logic) {
+            return SliverList(
+              delegate: SliverChildBuilderDelegate(
+                (context, index) => Padding(
+                  padding: EdgeInsets.only(
+                    bottom: logic.itemCount - 1 == index ? 60 : 20,
                   ),
-                  childCount: logic.itemCount + (logic.hasMoreBackward ? 1 : 0),
+                  child: _kimmiMomentumDecode(context, index),
                 ),
-              );
-            })
+                childCount: logic.itemCount + (logic.hasMoreBackward ? 1 : 0),
+              ),
+            );
+          },
+        ),
       ],
     );
 
@@ -336,30 +355,37 @@ class KimmiWaitressContainer
       children: [
         listWidget,
         Visibility(
-          visible: logic.showStyleType ==
+          visible:
+              logic.showStyleType ==
               KimmiWaitressDaytimeStarbucks.VIDEO_CALL_BOTTOM,
           child: Align(
-              alignment: Alignment.bottomRight,
-              child: KIMMI.kimmiHump.isKimmiAiGraceSensitive()
-                  ? const SizedBox()
-                  : CupertinoButton(
-                      padding: const EdgeInsets.symmetric(horizontal: 8),
-                      onPressed: () => onSelectInputFunc(ChatInputFuncType.call,
-                          context: Get.context),
-                      child: Container(
-                        height: 48,
-                        width: 48,
-                        padding: const EdgeInsets.all(8),
-                        decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(18),
-                            gradient: KimmiPalate.kimmiBathtubStuCoat),
-                        child: const KimmiMileErnie(
-                            url: KimmiPrototype
-                                .kimmi_unable_kimmi_hombre_doggy_stu_whip,
-                            height: 18,
-                            width: 18),
-                      ))),
-        )
+            alignment: Alignment.bottomRight,
+            child: KIMMI.kimmiHump.isKimmiAiGraceSensitive()
+                ? const SizedBox()
+                : CupertinoButton(
+                    padding: const EdgeInsets.symmetric(horizontal: 8),
+                    onPressed: () => onSelectInputFunc(
+                      ChatInputFuncType.call,
+                      context: Get.context,
+                    ),
+                    child: Container(
+                      height: 48,
+                      width: 48,
+                      padding: const EdgeInsets.all(8),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(18),
+                        gradient: KimmiPalate.kimmiBathtubStuCoat,
+                      ),
+                      child: const KimmiMileErnie(
+                        url: KimmiPrototype
+                            .kimmi_unable_kimmi_hombre_doggy_stu_whip,
+                        height: 18,
+                        width: 18,
+                      ),
+                    ),
+                  ),
+          ),
+        ),
       ],
     );
   }
@@ -367,12 +393,18 @@ class KimmiWaitressContainer
   Future<void> onKimmiNoticeCharmObjective(BuildContext context) async {
     bool isFollowed = logic.chatBox.chatUser?.isFollowed ?? false;
     int targetUid = logic.chatBox.chatUser?.uid ?? 0;
-    KimmiAirlineObjective.showMoreSheet(context, targetUid, isFollowed,
-        isBlock: true, followCallback: () {
-      logic.kimmiFellowVanity();
-    }, blockCallback: () {
-      logic.onKimmiHiccupBatman();
-    });
+    KimmiAirlineObjective.showMoreSheet(
+      context,
+      targetUid,
+      isFollowed,
+      isBlock: true,
+      followCallback: () {
+        logic.kimmiFellowVanity();
+      },
+      blockCallback: () {
+        logic.onKimmiHiccupBatman();
+      },
+    );
   }
 
   @override
@@ -400,26 +432,34 @@ class KimmiWaitressContainer
       margin: const EdgeInsets.symmetric(vertical: 16, horizontal: 12),
       padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 12),
       decoration: const BoxDecoration(
-          color: Colors.white12,
-          borderRadius: BorderRadius.all(Radius.circular(24))),
+        color: Colors.white12,
+        borderRadius: BorderRadius.all(Radius.circular(24)),
+      ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Row(
             children: [
               KimmiErnie.circle(
-                  url: oppositeUser.avatarUrl, size: 56, fit: BoxFit.cover),
+                url: oppositeUser.avatarUrl,
+                size: 56,
+                fit: BoxFit.cover,
+              ),
               10.wGap,
               KIMMI.kimmiHump.isKimmiAiGraceSensitive()
-                  ? Text(oppositeUser.nickName,
-                      style: KimmiTamperDaytime.white18)
+                  ? Text(
+                      oppositeUser.nickName,
+                      style: KimmiTamperDaytime.white18,
+                    )
                   : Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Row(
                           children: [
-                            Text(oppositeUser.nickName,
-                                style: KimmiTamperDaytime.white18),
+                            Text(
+                              oppositeUser.nickName,
+                              style: KimmiTamperDaytime.white18,
+                            ),
                             4.wGap,
                             oppositeUser.country == null
                                 ? Container()
@@ -427,38 +467,43 @@ class KimmiWaitressContainer
                                     width: 20,
                                     height: 20,
                                     decoration: const BoxDecoration(
-                                        shape: BoxShape.circle,
-                                        color: Color(0xFFFFFFFF)),
+                                      shape: BoxShape.circle,
+                                      color: Color(0xFFFFFFFF),
+                                    ),
                                     alignment: Alignment.center,
                                     child: KimmiErnie.circle(
-                                        url: oppositeUser.country!.flag ?? '',
-                                        size: 18,
-                                        clip: ImageClipType.origin,
-                                        fit: BoxFit.cover)),
+                                      url: oppositeUser.country!.flag ?? '',
+                                      size: 18,
+                                      clip: ImageClipType.origin,
+                                      fit: BoxFit.cover,
+                                    ),
+                                  ),
                           ],
                         ),
                         8.hGap,
                         Row(
                           children: [
                             _kimmiObligationStature(oppositeUser),
-                            _kimmiConcerned(oppositeUser)
+                            _kimmiConcerned(oppositeUser),
                           ],
-                        )
+                        ),
                       ],
                     ),
               const Spacer(),
               Container(
                 padding: const EdgeInsets.all(4),
                 child: Transform.rotate(
-                    angle: KimmiIOJuda.isARLanguage() ? pi : 0,
-                    child: KimmiErnie.local(
-                        fileName: 'kimmi_hombre_cradle_wit',
-                        width: 12,
-                        height: 12)),
-              )
+                  angle: KimmiIOJuda.isARLanguage() ? pi : 0,
+                  child: KimmiErnie.local(
+                    fileName: 'kimmi_hombre_cradle_wit',
+                    width: 12,
+                    height: 12,
+                  ),
+                ),
+              ),
             ],
           ),
-          _kimmiTeaserFailed(oppositeUser.signature)
+          _kimmiTeaserFailed(oppositeUser.signature),
         ],
       ),
     ).click(() {
@@ -474,20 +519,19 @@ class KimmiWaitressContainer
       padding: const EdgeInsets.symmetric(horizontal: 8),
       margin: const EdgeInsets.only(right: 8),
       decoration: BoxDecoration(
-          color: "FF3396".toColor(opacity: 0.3),
-          borderRadius: BorderRadius.circular(14)),
+        color: "FF3396".toColor(opacity: 0.3),
+        borderRadius: BorderRadius.circular(14),
+      ),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
           KimmiErnie.local(
-              fileName: "kimmi_hombre_security_whimsical_color",
-              width: 16,
-              height: 16),
+            fileName: "kimmi_hombre_security_whimsical_color",
+            width: 16,
+            height: 16,
+          ),
           4.wGap,
-          Text(
-            "${user.age ?? 18}",
-            style: KimmiTamperDaytime.white12Bold,
-          )
+          Text("${user.age ?? 18}", style: KimmiTamperDaytime.white12Bold),
         ],
       ),
     );
@@ -497,8 +541,9 @@ class KimmiWaitressContainer
     String? languages = user.languages;
     if (KimmiStarbucksJuda.isEmpty(languages)) return Container();
 
-    List<KimmiStormConcerned>? showList =
-        KIMMI.kimmiHump.getLanguagesByIds(languages!);
+    List<KimmiStormConcerned>? showList = KIMMI.kimmiHump.getLanguagesByIds(
+      languages!,
+    );
 
     if (showList == null || showList.isEmpty) return Container();
 
@@ -507,19 +552,21 @@ class KimmiWaitressContainer
     return Row(
       children: List.generate(list.length, (index) {
         return Container(
-            height: 24,
-            padding: const EdgeInsets.symmetric(horizontal: 12),
-            margin: const EdgeInsets.only(right: 4),
-            decoration: const BoxDecoration(
-                borderRadius: BorderRadius.all(Radius.circular(12)),
-                color: KimmiDraftJuda.white_20p),
-            child: Center(
-              child: Text(
-                list[index].name,
-                style: KimmiTamperDaytime.white12,
-                textAlign: TextAlign.center,
-              ),
-            ));
+          height: 24,
+          padding: const EdgeInsets.symmetric(horizontal: 12),
+          margin: const EdgeInsets.only(right: 4),
+          decoration: const BoxDecoration(
+            borderRadius: BorderRadius.all(Radius.circular(12)),
+            color: KimmiDraftJuda.white_20p,
+          ),
+          child: Center(
+            child: Text(
+              list[index].name,
+              style: KimmiTamperDaytime.white12,
+              textAlign: TextAlign.center,
+            ),
+          ),
+        );
       }),
     );
   }
@@ -532,10 +579,12 @@ class KimmiWaitressContainer
 
     return Container(
       margin: const EdgeInsets.only(top: 12, bottom: 8),
-      child: Text("$signature",
-          style: KimmiTamperDaytime.TextWhite_16_Medium,
-          maxLines: 3,
-          overflow: TextOverflow.ellipsis),
+      child: Text(
+        "$signature",
+        style: KimmiTamperDaytime.TextWhite_16_Medium,
+        maxLines: 3,
+        overflow: TextOverflow.ellipsis,
+      ),
     );
   }
 }

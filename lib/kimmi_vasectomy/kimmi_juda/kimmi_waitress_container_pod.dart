@@ -19,24 +19,32 @@ class KimmiWaitressContainerHusbandUp {
       chatBox = await chatBoxById(cid);
     }
     if (chatBox == null && uid != null) {
-      chatBox = await chatBoxByUser(uid,
-          srcType: CreateChatboxReq_SourceType.valueOf(
-              CreateChatboxReq_SourceType.FROM_UNKNOWN.value));
+      chatBox = await chatBoxByUser(
+        uid,
+        srcType: CreateChatboxReq_SourceType.valueOf(
+          CreateChatboxReq_SourceType.FROM_UNKNOWN.value,
+        ),
+      );
     }
     if (chatBox != null) {
       if (isOffPage) {
-        KIMMI.offNamed(KimmiSully.KimmiWaitressContainer,
-            arguments: KimmiWaitressContainerHealer(chatBox, null));
+        KIMMI.offNamed(
+          KimmiSully.KimmiWaitressContainer,
+          arguments: KimmiWaitressContainerHealer(chatBox, null),
+        );
       } else {
-        KIMMI.toNamed(KimmiSully.KimmiWaitressContainer,
-            arguments: KimmiWaitressContainerHealer(chatBox, null));
+        KIMMI.toNamed(
+          KimmiSully.KimmiWaitressContainer,
+          arguments: KimmiWaitressContainerHealer(chatBox, null),
+        );
       }
     }
   }
 
   static Future<KimmiWaitressTotally?> chatBoxById(int id) async {
-    KimmiWaitressTotally? chatBox =
-        await KIMMI.kimmiDb.chatBoxDao.modelById(id);
+    KimmiWaitressTotally? chatBox = await KIMMI.kimmiDb.chatBoxDao.modelById(
+      id,
+    );
     if (chatBox == null) {
       try {
         return await KimmiWaitressDock.instance.getChatBoxInfo(id);
@@ -48,8 +56,10 @@ class KimmiWaitressContainerHusbandUp {
     return chatBox;
   }
 
-  static Future<KimmiWaitressTotally?> chatBoxByUser(int? uid,
-      {CreateChatboxReq_SourceType? srcType}) async {
+  static Future<KimmiWaitressTotally?> chatBoxByUser(
+    int? uid, {
+    CreateChatboxReq_SourceType? srcType,
+  }) async {
     if (uid == null || uid == 0) {
       Fluttertoast.showToast(msg: 'UID is null');
       return null;
@@ -64,8 +74,10 @@ class KimmiWaitressContainerHusbandUp {
       }
     }
     try {
-      return await KimmiWaitressDock.instance
-          .createChatBox([uid, KIMMI.uid()], srcType: srcType);
+      return await KimmiWaitressDock.instance.createChatBox([
+        uid,
+        KIMMI.uid(),
+      ], srcType: srcType);
     } catch (e, stack) {
       KimmiVasectomyPioneerDock.kimmiPajamaCurious(10085, e, stack);
       Fluttertoast.showToast(msg: "fail".tr);

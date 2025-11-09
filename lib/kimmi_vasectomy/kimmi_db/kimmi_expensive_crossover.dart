@@ -26,7 +26,7 @@ class KimmiExpensiveCrossover
     final query = select(kimmiExpensiveCowboys)
       ..where((e) => e.cid.equals(cid))
       ..orderBy([
-        (e) => OrderingTerm(expression: e.createTime, mode: OrderingMode.desc)
+        (e) => OrderingTerm(expression: e.createTime, mode: OrderingMode.desc),
       ])
       ..limit(1);
     final result = await query.get();
@@ -120,8 +120,10 @@ class KimmiExpensiveCrossover
     });
   }
 
-  KimmiExpensiveCowboysNerd? _modelToEntityCompanion(KimmiExpensive? m,
-      [kimmi_expensive_cowboys? e]) {
+  KimmiExpensiveCowboysNerd? _modelToEntityCompanion(
+    KimmiExpensive? m, [
+    kimmi_expensive_cowboys? e,
+  ]) {
     if (m == null) return null;
     int? pk;
     if (e != null) {
@@ -151,24 +153,30 @@ class KimmiExpensiveCrossover
       id: m.id != null ? Value(m.id!) : const Value.absent(),
       cid: m.chatBoxId != null ? Value(m.chatBoxId!) : const Value.absent(),
       owner: m.owner != null ? Value(m.owner) : const Value.absent(),
-      ownerName:
-          m.ownerName != null ? Value(m.ownerName) : const Value.absent(),
-      ownerHead:
-          m.ownerHead != null ? Value(m.ownerHead) : const Value.absent(),
+      ownerName: m.ownerName != null
+          ? Value(m.ownerName)
+          : const Value.absent(),
+      ownerHead: m.ownerHead != null
+          ? Value(m.ownerHead)
+          : const Value.absent(),
       unread: m.unread != null ? Value(m.unread!) : const Value.absent(),
-      createTime:
-          m.createTime != null ? Value(m.createTime!) : const Value.absent(),
-      prevSnapId:
-          m.prevSnapId != null ? Value(m.prevSnapId!) : const Value.absent(),
+      createTime: m.createTime != null
+          ? Value(m.createTime!)
+          : const Value.absent(),
+      prevSnapId: m.prevSnapId != null
+          ? Value(m.prevSnapId!)
+          : const Value.absent(),
       type: m.type != null ? Value(m.type!) : const Value.absent(),
-      textContent:
-          m.textContent != null ? Value(m.textContent) : const Value.absent(),
+      textContent: m.textContent != null
+          ? Value(m.textContent)
+          : const Value.absent(),
       image: m.image != null ? Value(m.image) : const Value.absent(),
       video: m.video != null ? Value(m.video) : const Value.absent(),
       voice: m.voice != null ? Value(m.voice) : const Value.absent(),
       images: m.images != null ? Value(m.images) : const Value.absent(),
-      jsonContent:
-          m.jsonContent != null ? Value(m.jsonContent) : const Value.absent(),
+      jsonContent: m.jsonContent != null
+          ? Value(m.jsonContent)
+          : const Value.absent(),
       localId: m.localId != null ? Value(m.localId!) : const Value.absent(),
       extensions: m.extensions != null
           ? Value(jsonEncode(m.extensions))
@@ -177,8 +185,9 @@ class KimmiExpensiveCrossover
           ? Value(m.repliedSnapId!)
           : const Value.absent(),
       status: m.status != null ? Value(m.status!) : const Value.absent(),
-      sendStatus:
-          m.sendStatus != null ? Value(m.sendStatus!) : const Value.absent(),
+      sendStatus: m.sendStatus != null
+          ? Value(m.sendStatus!)
+          : const Value.absent(),
     );
   }
 
@@ -193,7 +202,8 @@ class KimmiExpensiveCrossover
           del.where((e) => e.id.equals(id));
         } else if (m.isLocalIdValid()) {
           del.where(
-              (e) => e.localId.equals(m.localId) & e.owner.equals(currUserId));
+            (e) => e.localId.equals(m.localId) & e.owner.equals(currUserId),
+          );
         }
         await del.go();
       }
@@ -210,34 +220,44 @@ class KimmiExpensiveCrossover
     fromTime ??= 0;
 
     final query = select(kimmiExpensiveCowboys)
-      ..where((e) =>
-          e.cid.equals(cid) &
-          e.owner.equals(currUserId).not() &
-          e.createTime.isBiggerThanValue(fromTime))
+      ..where(
+        (e) =>
+            e.cid.equals(cid) &
+            e.owner.equals(currUserId).not() &
+            e.createTime.isBiggerThanValue(fromTime),
+      )
       ..orderBy([
-        (e) => OrderingTerm(expression: e.createTime, mode: OrderingMode.asc)
+        (e) => OrderingTerm(expression: e.createTime, mode: OrderingMode.asc),
       ])
       ..limit(1);
     final result = await query.get();
     return result.isEmpty ? null : _modelByEntity(result.first);
   }
 
-  Future<List<KimmiExpensive>?> modelsByToTimeForChatBox(int? cid, int? toTime,
-      [int size = 20]) async {
+  Future<List<KimmiExpensive>?> modelsByToTimeForChatBox(
+    int? cid,
+    int? toTime, [
+    int size = 20,
+  ]) async {
     if (cid == null || toTime == null || toTime <= 0 || size <= 0) return null;
 
     final query = select(kimmiExpensiveCowboys)
       ..where(
-          (e) => e.cid.equals(cid) & e.createTime.isSmallerOrEqualValue(toTime))
+        (e) => e.cid.equals(cid) & e.createTime.isSmallerOrEqualValue(toTime),
+      )
       ..orderBy([
-        (e) => OrderingTerm(expression: e.createTime, mode: OrderingMode.desc)
+        (e) => OrderingTerm(expression: e.createTime, mode: OrderingMode.desc),
       ])
       ..limit(size);
     return modelsByEntities((await query.get()).reversed.toList());
   }
 
-  Future<List<KimmiExpensive>?> modelsByTimeForChatBox(int? cid,
-      [int? fromTime, int? toTime, int size = 20]) async {
+  Future<List<KimmiExpensive>?> modelsByTimeForChatBox(
+    int? cid, [
+    int? fromTime,
+    int? toTime,
+    int size = 20,
+  ]) async {
     if (cid == null || size <= 0) return null;
     if (fromTime == null || fromTime < 0) fromTime = 0;
     final query = select(kimmiExpensiveCowboys)
@@ -252,15 +272,18 @@ class KimmiExpensiveCrossover
         }
       })
       ..orderBy([
-        (e) => OrderingTerm(expression: e.createTime, mode: OrderingMode.asc)
+        (e) => OrderingTerm(expression: e.createTime, mode: OrderingMode.asc),
       ]);
     if (toTime == null) query.limit(size);
     return modelsByEntities(await query.get());
   }
 
   Future<List<KimmiExpensive>?> modelsByTypeBeforeTimeForChatBox(
-      int? cid, int type, int? time,
-      [int size = 20]) async {
+    int? cid,
+    int type,
+    int? time, [
+    int size = 20,
+  ]) async {
     if (cid == null || size <= 0) return null;
     final query = select(kimmiExpensiveCowboys)
       ..where((e) {
@@ -269,15 +292,18 @@ class KimmiExpensiveCrossover
         return ret;
       })
       ..orderBy([
-        (e) => OrderingTerm(expression: e.createTime, mode: OrderingMode.desc)
+        (e) => OrderingTerm(expression: e.createTime, mode: OrderingMode.desc),
       ])
       ..limit(size);
     return modelsByEntities((await query.get()).reversed.toList());
   }
 
   Future<List<KimmiExpensive>?> modelsByTypeAfterTimeForChatBox(
-      int? cid, int type, int? time,
-      [int size = 20]) async {
+    int? cid,
+    int type,
+    int? time, [
+    int size = 20,
+  ]) async {
     if (cid == null || size <= 0) return null;
     final query = select(kimmiExpensiveCowboys)
       ..where((e) {
@@ -286,14 +312,15 @@ class KimmiExpensiveCrossover
         return ret;
       })
       ..orderBy([
-        (e) => OrderingTerm(expression: e.createTime, mode: OrderingMode.asc)
+        (e) => OrderingTerm(expression: e.createTime, mode: OrderingMode.asc),
       ])
       ..limit(size);
     return modelsByEntities(await query.get());
   }
 
   Future<List<KimmiExpensive>?> modelsByEntities(
-      List<kimmi_expensive_cowboys>? es) async {
+    List<kimmi_expensive_cowboys>? es,
+  ) async {
     if (es == null || es.isEmpty) return null;
     List<KimmiExpensive> ms = [];
     for (final e in es) {
@@ -303,15 +330,18 @@ class KimmiExpensiveCrossover
     return ms;
   }
 
-  Future<List<KimmiExpensive>?> modelsByTimeDescForChatBox(int? cid,
-      [int page = 1, int size = 20]) async {
+  Future<List<KimmiExpensive>?> modelsByTimeDescForChatBox(
+    int? cid, [
+    int page = 1,
+    int size = 20,
+  ]) async {
     assert(page > 0);
     if (cid == null || size <= 0) return null;
 
     final query = select(kimmiExpensiveCowboys)
       ..where((e) => e.cid.equals(cid))
       ..orderBy([
-        (e) => OrderingTerm(expression: e.createTime, mode: OrderingMode.desc)
+        (e) => OrderingTerm(expression: e.createTime, mode: OrderingMode.desc),
       ])
       ..limit(size, offset: (page - 1) * size);
     var result = await query.get();
@@ -325,16 +355,19 @@ class KimmiExpensiveCrossover
       final query = selectOnly(kimmiExpensiveCowboys)
         ..join([
           innerJoin(
-              box,
-              box.id.equalsExp(kimmiExpensiveCowboys.cid) &
-                  box.type.equals(Chatbox_Type.SINGLE.value))
+            box,
+            box.id.equalsExp(kimmiExpensiveCowboys.cid) &
+                box.type.equals(Chatbox_Type.SINGLE.value),
+          ),
         ])
-        ..where(kimmiExpensiveCowboys.createTime
-                .isBiggerThan(box.lastReadSnapTime) &
-            kimmiExpensiveCowboys.owner.isNotValue(KIMMI.uid()))
+        ..where(
+          kimmiExpensiveCowboys.createTime.isBiggerThan(box.lastReadSnapTime) &
+              kimmiExpensiveCowboys.owner.isNotValue(KIMMI.uid()),
+        )
         ..addColumns([unreadCount]);
-      var result =
-          await query.map((row) => row.read(unreadCount) ?? 0).getSingle();
+      var result = await query
+          .map((row) => row.read(unreadCount) ?? 0)
+          .getSingle();
       return result;
     } catch (e, stack) {
       KimmiVasectomyPioneerDock.kimmiPajamaCurious(10001, e, stack);
@@ -347,12 +380,15 @@ class KimmiExpensiveCrossover
     fromTime ??= 0;
     final unreadCount = kimmiExpensiveCowboys.id.count();
     final query = selectOnly(kimmiExpensiveCowboys)
-      ..where(kimmiExpensiveCowboys.cid.equals(cid) &
-          kimmiExpensiveCowboys.owner.equals(currUserId).not() &
-          kimmiExpensiveCowboys.createTime.isBiggerThanValue(fromTime))
+      ..where(
+        kimmiExpensiveCowboys.cid.equals(cid) &
+            kimmiExpensiveCowboys.owner.equals(currUserId).not() &
+            kimmiExpensiveCowboys.createTime.isBiggerThanValue(fromTime),
+      )
       ..addColumns([unreadCount]);
-    var result =
-        await query.map((row) => row.read(unreadCount) ?? 0).getSingle();
+    var result = await query
+        .map((row) => row.read(unreadCount) ?? 0)
+        .getSingle();
     return result;
   }
 }

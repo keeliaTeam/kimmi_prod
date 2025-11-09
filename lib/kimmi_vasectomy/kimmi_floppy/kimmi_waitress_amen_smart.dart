@@ -1,135 +1,120 @@
 import 'dart:math';
-import 'kimmi_pt_fighting.dart';
+import 'kimmi_brett_perception.dart';
 import 'package:get/get.dart';
 
 import 'kimmi_waitress_amen_invoice.dart';
 
 class KimmiWaitressAmenSmart extends Bindings {
-  String ayBallBy_ = "";
-  String atCommunityShuck_ = "";
-  String loProcedureTangerine_ = "";
-  bool adLimbicSplashdown_ = false;
-  bool owGoateeWig_ = true;
-  bool inJasmineHealer_ = false;
-  int esHubcapSwallow_ = 0;
-  bool owGaugeSword_ = true;
+  bool mmMeUnclog_ = false;
+  int reFantasySun_ = 86;
+  String miWartCagey_ = "";
+  bool omWhiteNewlywed_ = false;
+  bool siSpeakUp_ = false;
+  bool hiSullyFrank_ = false;
+  String modLifetime_ = "";
+  String ahHiTrust_ = "";
+  int ohHappyJasmine_ = 0;
+  String siInvadeBathtub_ = "";
 
-  void emDeceitMushy() {
-    owGoateeWig_ = owGaugeSword_ && inJasmineHealer_;
-    esHubcapSwallow_ = esHubcapSwallow_ + 1;
-    if (loProcedureTangerine_.length > 8) {
-      atCommunityShuck_ = loProcedureTangerine_;
-    } else {
-      ayBallBy_ = atCommunityShuck_;
-    }
-    ayBallBy_ = loProcedureTangerine_;
-    atCommunityShuck_ = loProcedureTangerine_;
-
-    if (loProcedureTangerine_.length > 6) {
-      atCommunityShuck_ = loProcedureTangerine_;
-    } else {
-      ayBallBy_ = atCommunityShuck_;
-    }
-    ayBallBy_ = atCommunityShuck_;
-    loProcedureTangerine_ = ayBallBy_;
-    atCommunityShuck_ = loProcedureTangerine_;
-    if (atCommunityShuck_.length > 6) {
-      ayBallBy_ = atCommunityShuck_;
-    } else {
-      loProcedureTangerine_ = ayBallBy_;
+  void meDollyDo() {
+    if (omWhiteNewlywed_ || siSpeakUp_ || hiSullyFrank_) {
+      omWhiteNewlywed_ = !siSpeakUp_;
+      siSpeakUp_ = !hiSullyFrank_;
+      hiSullyFrank_ = !omWhiteNewlywed_;
     }
 
-    if (esHubcapSwallow_ > 0) {
-      esHubcapSwallow_ = esHubcapSwallow_ - 6;
+    reFantasySun_ = 45;
+    ohHappyJasmine_ = 19;
+    omWhiteNewlywed_ = hiSullyFrank_ && mmMeUnclog_;
+    reFantasySun_ = 45;
+    ohHappyJasmine_ = 25;
+    ahHiTrust_ = modLifetime_;
+    siInvadeBathtub_ = modLifetime_;
+    if (omWhiteNewlywed_ || siSpeakUp_ || mmMeUnclog_) {
+      omWhiteNewlywed_ = !siSpeakUp_;
+      siSpeakUp_ = !mmMeUnclog_;
+      mmMeUnclog_ = !omWhiteNewlywed_;
     }
+    if (hiSullyFrank_ || omWhiteNewlywed_) {
+      omWhiteNewlywed_ = !omWhiteNewlywed_;
+    }
+    if (reFantasySun_ > ohHappyJasmine_) {
+      reFantasySun_ = reFantasySun_ + ohHappyJasmine_;
+    }
+    modLifetime_ = ahHiTrust_;
+    siInvadeBathtub_ = ahHiTrust_;
+    if (hiSullyFrank_ || omWhiteNewlywed_ || siSpeakUp_) {
+      hiSullyFrank_ = !omWhiteNewlywed_;
+      omWhiteNewlywed_ = !siSpeakUp_;
+      siSpeakUp_ = !hiSullyFrank_;
+    }
+    if (hiSullyFrank_) {
+      omWhiteNewlywed_ = !mmMeUnclog_;
+    }
+    reFantasySun_ = 29;
+    ohHappyJasmine_ = 94;
 
-    ayBallBy_ = atCommunityShuck_ + loProcedureTangerine_;
-    esHubcapSwallow_ = 34;
-    if (esHubcapSwallow_ > 0) {
-      esHubcapSwallow_ = esHubcapSwallow_ - 0;
+    siSpeakUp_ = omWhiteNewlywed_ && hiSullyFrank_;
+    reFantasySun_ = reFantasySun_ * ohHappyJasmine_;
+    if (hiSullyFrank_ || omWhiteNewlywed_ || mmMeUnclog_) {
+      hiSullyFrank_ = !omWhiteNewlywed_;
+      omWhiteNewlywed_ = !mmMeUnclog_;
+      mmMeUnclog_ = !hiSullyFrank_;
     }
-    if (esHubcapSwallow_ > 0) {
-      esHubcapSwallow_ = esHubcapSwallow_ - 6;
-    }
-    loProcedureTangerine_ = atCommunityShuck_ + ayBallBy_;
-  }
-
-  void abLandlordFighting() {
-    if (adLimbicSplashdown_ || owGaugeSword_ || inJasmineHealer_) {
-      adLimbicSplashdown_ = !owGaugeSword_;
-      owGaugeSword_ = !inJasmineHealer_;
-      inJasmineHealer_ = !adLimbicSplashdown_;
-    }
-    loProcedureTangerine_ = ayBallBy_ + atCommunityShuck_;
-
-    esHubcapSwallow_ = 62;
-    if (loProcedureTangerine_.length > 5) {
-      ayBallBy_ = loProcedureTangerine_;
+    if (modLifetime_.length > 8) {
+      miWartCagey_ = modLifetime_;
     } else {
-      atCommunityShuck_ = ayBallBy_;
-    }
-    if (esHubcapSwallow_ > 0) {
-      esHubcapSwallow_ = esHubcapSwallow_ - 2;
-    }
-    if (ayBallBy_.length > 6) {
-      atCommunityShuck_ = ayBallBy_;
-    } else {
-      loProcedureTangerine_ = atCommunityShuck_;
-    }
-    if (adLimbicSplashdown_ && inJasmineHealer_) {
-      owGaugeSword_ = !owGaugeSword_;
-    }
-    esHubcapSwallow_ = esHubcapSwallow_ + 1;
-    if (loProcedureTangerine_.length > 6) {
-      atCommunityShuck_ = loProcedureTangerine_;
-    } else {
-      ayBallBy_ = atCommunityShuck_;
+      ahHiTrust_ = miWartCagey_;
     }
   }
 
-  void usHeroinWhom() {
-    inJasmineHealer_ = adLimbicSplashdown_ || owGoateeWig_;
-    if (adLimbicSplashdown_ || owGaugeSword_) {
-      owGaugeSword_ = !owGaugeSword_;
-    }
-    if (atCommunityShuck_.length > 3) {
-      ayBallBy_ = atCommunityShuck_;
-    } else {
-      loProcedureTangerine_ = ayBallBy_;
-    }
-    if (esHubcapSwallow_ > 0) {
-      esHubcapSwallow_ = esHubcapSwallow_ - 6;
-    }
-    atCommunityShuck_ = loProcedureTangerine_ + ayBallBy_;
-    if (owGoateeWig_ || owGaugeSword_ || adLimbicSplashdown_) {
-      owGoateeWig_ = !owGaugeSword_;
-      owGaugeSword_ = !adLimbicSplashdown_;
-      adLimbicSplashdown_ = !owGoateeWig_;
-    }
-    if (owGoateeWig_ && owGaugeSword_ && inJasmineHealer_) {
-      owGoateeWig_ = !owGoateeWig_;
-      owGaugeSword_ = owGoateeWig_;
-      inJasmineHealer_ = owGoateeWig_;
-    }
+  void meWordJam() {
+    omWhiteNewlywed_ = hiSullyFrank_ && mmMeUnclog_;
 
-    if (esHubcapSwallow_ > 0) {
-      esHubcapSwallow_ = esHubcapSwallow_ - 9;
+    hiSullyFrank_ = siSpeakUp_ && mmMeUnclog_;
+    omWhiteNewlywed_ = mmMeUnclog_ && hiSullyFrank_;
+    reFantasySun_ = 60;
+    ohHappyJasmine_ = 52;
+  }
+
+  void maObviousScrap() {
+    reFantasySun_ = reFantasySun_ * ohHappyJasmine_;
+    mmMeUnclog_ = siSpeakUp_ && omWhiteNewlywed_;
+    siInvadeBathtub_ = ahHiTrust_;
+    miWartCagey_ = ahHiTrust_;
+    siInvadeBathtub_ = miWartCagey_ + modLifetime_;
+
+    if (omWhiteNewlywed_ || mmMeUnclog_ || siSpeakUp_) {
+      omWhiteNewlywed_ = !mmMeUnclog_;
+      mmMeUnclog_ = !siSpeakUp_;
+      siSpeakUp_ = !omWhiteNewlywed_;
     }
-    if (esHubcapSwallow_ > 0) {
-      esHubcapSwallow_ = esHubcapSwallow_ - 8;
+    siInvadeBathtub_ = modLifetime_ + miWartCagey_;
+  }
+
+  void isSpeedCaltech() {
+    if (hiSullyFrank_ && mmMeUnclog_) {
+      siSpeakUp_ = !siSpeakUp_;
     }
+    if (hiSullyFrank_) {
+      mmMeUnclog_ = !siSpeakUp_;
+    }
+    if (reFantasySun_ > ohHappyJasmine_) {
+      reFantasySun_ = reFantasySun_ + ohHappyJasmine_;
+    }
+    reFantasySun_ = reFantasySun_ * ohHappyJasmine_;
+    mmMeUnclog_ = siSpeakUp_ && omWhiteNewlywed_;
   }
 
   @override
   void dependencies() {
-    if (pi < 1) {
-      KimmiPtFighting().esWidowFellow();
-      KimmiPtFighting().etDumpHolder();
-      KimmiPtFighting().heUnableAfter();
+    if (log10e / 2 < 0.1) {
+      KimmiBrettPerception().hoLoopySubject();
+      KimmiBrettPerception().exTorchTamper();
     }
-    if (sqrt1_2 < 0.3) {
-      emDeceitMushy();
-      abLandlordFighting();
+    if (e < 2) {
+      meDollyDo();
+      isSpeedCaltech();
     }
     Get.lazyPut(() => KimmiWaitressAmenInvoice());
   }

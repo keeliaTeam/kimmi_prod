@@ -44,45 +44,80 @@ class Sync extends $pb.GeneratedMessage {
     return $result;
   }
   Sync._() : super();
-  factory Sync.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory Sync.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+  factory Sync.fromBuffer(
+    $core.List<$core.int> i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromBuffer(i, r);
+  factory Sync.fromJson(
+    $core.String i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'Sync',
-      package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockIM()),
-      createEmptyInstance: create)
-    ..e<SyncType>(1, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE,
-        defaultOrMaker: SyncType.BUDDY,
-        valueOf: SyncType.valueOf,
-        enumValues: SyncType.values)
-    ..a<$fixnum.Int64>(2, _omitFieldNames ? '' : 'lastKey', $pb.PbFieldType.OU6,
-        defaultOrMaker: $fixnum.Int64.ZERO)
-    ..a<$fixnum.Int64>(3, _omitFieldNames ? '' : 'baseKey', $pb.PbFieldType.OU6,
-        defaultOrMaker: $fixnum.Int64.ZERO)
-    ..pc<$0.Any>(10, _omitFieldNames ? '' : 'add', $pb.PbFieldType.PM,
-        subBuilder: $0.Any.create)
-    ..pc<$0.Any>(11, _omitFieldNames ? '' : 'delete', $pb.PbFieldType.PM,
-        subBuilder: $0.Any.create)
-    ..pc<$0.Any>(12, _omitFieldNames ? '' : 'update', $pb.PbFieldType.PM,
-        subBuilder: $0.Any.create)
-    ..e<Sync_AfterSyncToDo>(
-        20, _omitFieldNames ? '' : 'afterSyncTodo', $pb.PbFieldType.OE,
-        defaultOrMaker: Sync_AfterSyncToDo.TODO_NOTHING,
-        valueOf: Sync_AfterSyncToDo.valueOf,
-        enumValues: Sync_AfterSyncToDo.values)
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i =
+      $pb.BuilderInfo(
+          _omitMessageNames ? '' : 'Sync',
+          package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockIM()),
+          createEmptyInstance: create,
+        )
+        ..e<SyncType>(
+          1,
+          _omitFieldNames ? '' : 'type',
+          $pb.PbFieldType.OE,
+          defaultOrMaker: SyncType.BUDDY,
+          valueOf: SyncType.valueOf,
+          enumValues: SyncType.values,
+        )
+        ..a<$fixnum.Int64>(
+          2,
+          _omitFieldNames ? '' : 'lastKey',
+          $pb.PbFieldType.OU6,
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..a<$fixnum.Int64>(
+          3,
+          _omitFieldNames ? '' : 'baseKey',
+          $pb.PbFieldType.OU6,
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..pc<$0.Any>(
+          10,
+          _omitFieldNames ? '' : 'add',
+          $pb.PbFieldType.PM,
+          subBuilder: $0.Any.create,
+        )
+        ..pc<$0.Any>(
+          11,
+          _omitFieldNames ? '' : 'delete',
+          $pb.PbFieldType.PM,
+          subBuilder: $0.Any.create,
+        )
+        ..pc<$0.Any>(
+          12,
+          _omitFieldNames ? '' : 'update',
+          $pb.PbFieldType.PM,
+          subBuilder: $0.Any.create,
+        )
+        ..e<Sync_AfterSyncToDo>(
+          20,
+          _omitFieldNames ? '' : 'afterSyncTodo',
+          $pb.PbFieldType.OE,
+          defaultOrMaker: Sync_AfterSyncToDo.TODO_NOTHING,
+          valueOf: Sync_AfterSyncToDo.valueOf,
+          enumValues: Sync_AfterSyncToDo.values,
+        )
+        ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+    'Will be removed in next major version',
+  )
   Sync clone() => Sync()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+    'Will be removed in next major version',
+  )
   Sync copyWith(void Function(Sync) updates) =>
       super.copyWith((message) => updates(message as Sync)) as Sync;
 
@@ -156,9 +191,7 @@ class Sync extends $pb.GeneratedMessage {
 }
 
 class SyncNotify extends $pb.GeneratedMessage {
-  factory SyncNotify({
-    $core.int? types,
-  }) {
+  factory SyncNotify({$core.int? types}) {
     final $result = create();
     if (types != null) {
       $result.types = types;
@@ -166,27 +199,35 @@ class SyncNotify extends $pb.GeneratedMessage {
     return $result;
   }
   SyncNotify._() : super();
-  factory SyncNotify.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory SyncNotify.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+  factory SyncNotify.fromBuffer(
+    $core.List<$core.int> i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromBuffer(i, r);
+  factory SyncNotify.fromJson(
+    $core.String i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'SyncNotify',
-      package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockIM()),
-      createEmptyInstance: create)
-    ..a<$core.int>(1, _omitFieldNames ? '' : 'types', $pb.PbFieldType.O3)
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i =
+      $pb.BuilderInfo(
+          _omitMessageNames ? '' : 'SyncNotify',
+          package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockIM()),
+          createEmptyInstance: create,
+        )
+        ..a<$core.int>(1, _omitFieldNames ? '' : 'types', $pb.PbFieldType.O3)
+        ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+    'Will be removed in next major version',
+  )
   SyncNotify clone() => SyncNotify()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+    'Will be removed in next major version',
+  )
   SyncNotify copyWith(void Function(SyncNotify) updates) =>
       super.copyWith((message) => updates(message as SyncNotify)) as SyncNotify;
 
@@ -215,10 +256,7 @@ class SyncNotify extends $pb.GeneratedMessage {
 }
 
 class SyncKeyConfirmNotify extends $pb.GeneratedMessage {
-  factory SyncKeyConfirmNotify({
-    SyncType? type,
-    $fixnum.Int64? lastKey,
-  }) {
+  factory SyncKeyConfirmNotify({SyncType? type, $fixnum.Int64? lastKey}) {
     final $result = create();
     if (type != null) {
       $result.type = type;
@@ -229,33 +267,49 @@ class SyncKeyConfirmNotify extends $pb.GeneratedMessage {
     return $result;
   }
   SyncKeyConfirmNotify._() : super();
-  factory SyncKeyConfirmNotify.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory SyncKeyConfirmNotify.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+  factory SyncKeyConfirmNotify.fromBuffer(
+    $core.List<$core.int> i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromBuffer(i, r);
+  factory SyncKeyConfirmNotify.fromJson(
+    $core.String i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'SyncKeyConfirmNotify',
-      package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockIM()),
-      createEmptyInstance: create)
-    ..e<SyncType>(1, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE,
-        defaultOrMaker: SyncType.BUDDY,
-        valueOf: SyncType.valueOf,
-        enumValues: SyncType.values)
-    ..a<$fixnum.Int64>(2, _omitFieldNames ? '' : 'lastKey', $pb.PbFieldType.OU6,
-        defaultOrMaker: $fixnum.Int64.ZERO)
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i =
+      $pb.BuilderInfo(
+          _omitMessageNames ? '' : 'SyncKeyConfirmNotify',
+          package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockIM()),
+          createEmptyInstance: create,
+        )
+        ..e<SyncType>(
+          1,
+          _omitFieldNames ? '' : 'type',
+          $pb.PbFieldType.OE,
+          defaultOrMaker: SyncType.BUDDY,
+          valueOf: SyncType.valueOf,
+          enumValues: SyncType.values,
+        )
+        ..a<$fixnum.Int64>(
+          2,
+          _omitFieldNames ? '' : 'lastKey',
+          $pb.PbFieldType.OU6,
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+    'Will be removed in next major version',
+  )
   SyncKeyConfirmNotify clone() =>
       SyncKeyConfirmNotify()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+    'Will be removed in next major version',
+  )
   SyncKeyConfirmNotify copyWith(void Function(SyncKeyConfirmNotify) updates) =>
       super.copyWith((message) => updates(message as SyncKeyConfirmNotify))
           as SyncKeyConfirmNotify;
@@ -298,5 +352,6 @@ class SyncKeyConfirmNotify extends $pb.GeneratedMessage {
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames =
-    $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames = $core.bool.fromEnvironment(
+  'protobuf.omit_message_names',
+);

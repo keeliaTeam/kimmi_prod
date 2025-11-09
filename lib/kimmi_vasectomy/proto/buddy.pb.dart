@@ -11,9 +11,7 @@ import 'object.pb.dart' as $2;
 export 'buddy.pbenum.dart';
 
 class GetBuddyInfoReq extends $pb.GeneratedMessage {
-  factory GetBuddyInfoReq({
-    $fixnum.Int64? buddyId,
-  }) {
+  factory GetBuddyInfoReq({$fixnum.Int64? buddyId}) {
     final $result = create();
     if (buddyId != null) {
       $result.buddyId = buddyId;
@@ -21,28 +19,40 @@ class GetBuddyInfoReq extends $pb.GeneratedMessage {
     return $result;
   }
   GetBuddyInfoReq._() : super();
-  factory GetBuddyInfoReq.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory GetBuddyInfoReq.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+  factory GetBuddyInfoReq.fromBuffer(
+    $core.List<$core.int> i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromBuffer(i, r);
+  factory GetBuddyInfoReq.fromJson(
+    $core.String i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'GetBuddyInfoReq',
-      package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockIM()),
-      createEmptyInstance: create)
-    ..a<$fixnum.Int64>(1, _omitFieldNames ? '' : 'buddyId', $pb.PbFieldType.OU6,
-        defaultOrMaker: $fixnum.Int64.ZERO)
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i =
+      $pb.BuilderInfo(
+          _omitMessageNames ? '' : 'GetBuddyInfoReq',
+          package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockIM()),
+          createEmptyInstance: create,
+        )
+        ..a<$fixnum.Int64>(
+          1,
+          _omitFieldNames ? '' : 'buddyId',
+          $pb.PbFieldType.OU6,
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+    'Will be removed in next major version',
+  )
   GetBuddyInfoReq clone() => GetBuddyInfoReq()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+    'Will be removed in next major version',
+  )
   GetBuddyInfoReq copyWith(void Function(GetBuddyInfoReq) updates) =>
       super.copyWith((message) => updates(message as GetBuddyInfoReq))
           as GetBuddyInfoReq;
@@ -95,31 +105,42 @@ class GetBuddyInfoRsp extends $pb.GeneratedMessage {
     return $result;
   }
   GetBuddyInfoRsp._() : super();
-  factory GetBuddyInfoRsp.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory GetBuddyInfoRsp.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+  factory GetBuddyInfoRsp.fromBuffer(
+    $core.List<$core.int> i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromBuffer(i, r);
+  factory GetBuddyInfoRsp.fromJson(
+    $core.String i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'GetBuddyInfoRsp',
-      package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockIM()),
-      createEmptyInstance: create)
-    ..a<$core.int>(1, _omitFieldNames ? '' : 'code', $pb.PbFieldType.OU3)
-    ..aOS(2, _omitFieldNames ? '' : 'msg')
-    ..aOM<$2.User>(3, _omitFieldNames ? '' : 'buddyInfo',
-        subBuilder: $2.User.create)
-    ..aOS(4, _omitFieldNames ? '' : 'additionalInfo')
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i =
+      $pb.BuilderInfo(
+          _omitMessageNames ? '' : 'GetBuddyInfoRsp',
+          package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockIM()),
+          createEmptyInstance: create,
+        )
+        ..a<$core.int>(1, _omitFieldNames ? '' : 'code', $pb.PbFieldType.OU3)
+        ..aOS(2, _omitFieldNames ? '' : 'msg')
+        ..aOM<$2.User>(
+          3,
+          _omitFieldNames ? '' : 'buddyInfo',
+          subBuilder: $2.User.create,
+        )
+        ..aOS(4, _omitFieldNames ? '' : 'additionalInfo')
+        ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+    'Will be removed in next major version',
+  )
   GetBuddyInfoRsp clone() => GetBuddyInfoRsp()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+    'Will be removed in next major version',
+  )
   GetBuddyInfoRsp copyWith(void Function(GetBuddyInfoRsp) updates) =>
       super.copyWith((message) => updates(message as GetBuddyInfoRsp))
           as GetBuddyInfoRsp;
@@ -202,31 +223,46 @@ class DeleteBuddyReq extends $pb.GeneratedMessage {
     return $result;
   }
   DeleteBuddyReq._() : super();
-  factory DeleteBuddyReq.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory DeleteBuddyReq.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+  factory DeleteBuddyReq.fromBuffer(
+    $core.List<$core.int> i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromBuffer(i, r);
+  factory DeleteBuddyReq.fromJson(
+    $core.String i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'DeleteBuddyReq',
-      package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockIM()),
-      createEmptyInstance: create)
-    ..a<$fixnum.Int64>(1, _omitFieldNames ? '' : 'buddyId', $pb.PbFieldType.OU6,
-        defaultOrMaker: $fixnum.Int64.ZERO)
-    ..a<$fixnum.Int64>(
-        2, _omitFieldNames ? '' : 'lastBuddyKey', $pb.PbFieldType.OU6,
-        defaultOrMaker: $fixnum.Int64.ZERO)
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i =
+      $pb.BuilderInfo(
+          _omitMessageNames ? '' : 'DeleteBuddyReq',
+          package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockIM()),
+          createEmptyInstance: create,
+        )
+        ..a<$fixnum.Int64>(
+          1,
+          _omitFieldNames ? '' : 'buddyId',
+          $pb.PbFieldType.OU6,
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..a<$fixnum.Int64>(
+          2,
+          _omitFieldNames ? '' : 'lastBuddyKey',
+          $pb.PbFieldType.OU6,
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+    'Will be removed in next major version',
+  )
   DeleteBuddyReq clone() => DeleteBuddyReq()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+    'Will be removed in next major version',
+  )
   DeleteBuddyReq copyWith(void Function(DeleteBuddyReq) updates) =>
       super.copyWith((message) => updates(message as DeleteBuddyReq))
           as DeleteBuddyReq;
@@ -287,32 +323,47 @@ class RemarkBuddyReq extends $pb.GeneratedMessage {
     return $result;
   }
   RemarkBuddyReq._() : super();
-  factory RemarkBuddyReq.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory RemarkBuddyReq.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+  factory RemarkBuddyReq.fromBuffer(
+    $core.List<$core.int> i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromBuffer(i, r);
+  factory RemarkBuddyReq.fromJson(
+    $core.String i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'RemarkBuddyReq',
-      package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockIM()),
-      createEmptyInstance: create)
-    ..a<$fixnum.Int64>(1, _omitFieldNames ? '' : 'buddyId', $pb.PbFieldType.OU6,
-        defaultOrMaker: $fixnum.Int64.ZERO)
-    ..aOS(2, _omitFieldNames ? '' : 'remarkName')
-    ..a<$fixnum.Int64>(
-        3, _omitFieldNames ? '' : 'lastBuddyKey', $pb.PbFieldType.OU6,
-        defaultOrMaker: $fixnum.Int64.ZERO)
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i =
+      $pb.BuilderInfo(
+          _omitMessageNames ? '' : 'RemarkBuddyReq',
+          package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockIM()),
+          createEmptyInstance: create,
+        )
+        ..a<$fixnum.Int64>(
+          1,
+          _omitFieldNames ? '' : 'buddyId',
+          $pb.PbFieldType.OU6,
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..aOS(2, _omitFieldNames ? '' : 'remarkName')
+        ..a<$fixnum.Int64>(
+          3,
+          _omitFieldNames ? '' : 'lastBuddyKey',
+          $pb.PbFieldType.OU6,
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+    'Will be removed in next major version',
+  )
   RemarkBuddyReq clone() => RemarkBuddyReq()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+    'Will be removed in next major version',
+  )
   RemarkBuddyReq copyWith(void Function(RemarkBuddyReq) updates) =>
       super.copyWith((message) => updates(message as RemarkBuddyReq))
           as RemarkBuddyReq;
@@ -385,32 +436,51 @@ class BlockBuddyReq extends $pb.GeneratedMessage {
     return $result;
   }
   BlockBuddyReq._() : super();
-  factory BlockBuddyReq.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory BlockBuddyReq.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+  factory BlockBuddyReq.fromBuffer(
+    $core.List<$core.int> i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromBuffer(i, r);
+  factory BlockBuddyReq.fromJson(
+    $core.String i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'BlockBuddyReq',
-      package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockIM()),
-      createEmptyInstance: create)
-    ..a<$fixnum.Int64>(1, _omitFieldNames ? '' : 'buddyId', $pb.PbFieldType.OU6,
-        defaultOrMaker: $fixnum.Int64.ZERO)
-    ..a<$core.int>(2, _omitFieldNames ? '' : 'operation', $pb.PbFieldType.OU3)
-    ..a<$fixnum.Int64>(
-        3, _omitFieldNames ? '' : 'lastBuddyKey', $pb.PbFieldType.OU6,
-        defaultOrMaker: $fixnum.Int64.ZERO)
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i =
+      $pb.BuilderInfo(
+          _omitMessageNames ? '' : 'BlockBuddyReq',
+          package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockIM()),
+          createEmptyInstance: create,
+        )
+        ..a<$fixnum.Int64>(
+          1,
+          _omitFieldNames ? '' : 'buddyId',
+          $pb.PbFieldType.OU6,
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..a<$core.int>(
+          2,
+          _omitFieldNames ? '' : 'operation',
+          $pb.PbFieldType.OU3,
+        )
+        ..a<$fixnum.Int64>(
+          3,
+          _omitFieldNames ? '' : 'lastBuddyKey',
+          $pb.PbFieldType.OU6,
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+    'Will be removed in next major version',
+  )
   BlockBuddyReq clone() => BlockBuddyReq()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+    'Will be removed in next major version',
+  )
   BlockBuddyReq copyWith(void Function(BlockBuddyReq) updates) =>
       super.copyWith((message) => updates(message as BlockBuddyReq))
           as BlockBuddyReq;
@@ -479,32 +549,46 @@ class BatchUnBlockBuddyReq extends $pb.GeneratedMessage {
     return $result;
   }
   BatchUnBlockBuddyReq._() : super();
-  factory BatchUnBlockBuddyReq.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory BatchUnBlockBuddyReq.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+  factory BatchUnBlockBuddyReq.fromBuffer(
+    $core.List<$core.int> i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromBuffer(i, r);
+  factory BatchUnBlockBuddyReq.fromJson(
+    $core.String i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'BatchUnBlockBuddyReq',
-      package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockIM()),
-      createEmptyInstance: create)
-    ..p<$fixnum.Int64>(
-        1, _omitFieldNames ? '' : 'buddyIds', $pb.PbFieldType.KU6)
-    ..a<$fixnum.Int64>(
-        2, _omitFieldNames ? '' : 'lastBuddyKey', $pb.PbFieldType.OU6,
-        defaultOrMaker: $fixnum.Int64.ZERO)
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i =
+      $pb.BuilderInfo(
+          _omitMessageNames ? '' : 'BatchUnBlockBuddyReq',
+          package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockIM()),
+          createEmptyInstance: create,
+        )
+        ..p<$fixnum.Int64>(
+          1,
+          _omitFieldNames ? '' : 'buddyIds',
+          $pb.PbFieldType.KU6,
+        )
+        ..a<$fixnum.Int64>(
+          2,
+          _omitFieldNames ? '' : 'lastBuddyKey',
+          $pb.PbFieldType.OU6,
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+    'Will be removed in next major version',
+  )
   BatchUnBlockBuddyReq clone() =>
       BatchUnBlockBuddyReq()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+    'Will be removed in next major version',
+  )
   BatchUnBlockBuddyReq copyWith(void Function(BatchUnBlockBuddyReq) updates) =>
       super.copyWith((message) => updates(message as BatchUnBlockBuddyReq))
           as BatchUnBlockBuddyReq;
@@ -556,32 +640,51 @@ class StarBuddyReq extends $pb.GeneratedMessage {
     return $result;
   }
   StarBuddyReq._() : super();
-  factory StarBuddyReq.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory StarBuddyReq.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+  factory StarBuddyReq.fromBuffer(
+    $core.List<$core.int> i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromBuffer(i, r);
+  factory StarBuddyReq.fromJson(
+    $core.String i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'StarBuddyReq',
-      package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockIM()),
-      createEmptyInstance: create)
-    ..a<$fixnum.Int64>(1, _omitFieldNames ? '' : 'buddyId', $pb.PbFieldType.OU6,
-        defaultOrMaker: $fixnum.Int64.ZERO)
-    ..a<$core.int>(2, _omitFieldNames ? '' : 'operation', $pb.PbFieldType.OU3)
-    ..a<$fixnum.Int64>(
-        3, _omitFieldNames ? '' : 'lastBuddyKey', $pb.PbFieldType.OU6,
-        defaultOrMaker: $fixnum.Int64.ZERO)
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i =
+      $pb.BuilderInfo(
+          _omitMessageNames ? '' : 'StarBuddyReq',
+          package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockIM()),
+          createEmptyInstance: create,
+        )
+        ..a<$fixnum.Int64>(
+          1,
+          _omitFieldNames ? '' : 'buddyId',
+          $pb.PbFieldType.OU6,
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..a<$core.int>(
+          2,
+          _omitFieldNames ? '' : 'operation',
+          $pb.PbFieldType.OU3,
+        )
+        ..a<$fixnum.Int64>(
+          3,
+          _omitFieldNames ? '' : 'lastBuddyKey',
+          $pb.PbFieldType.OU6,
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+    'Will be removed in next major version',
+  )
   StarBuddyReq clone() => StarBuddyReq()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+    'Will be removed in next major version',
+  )
   StarBuddyReq copyWith(void Function(StarBuddyReq) updates) =>
       super.copyWith((message) => updates(message as StarBuddyReq))
           as StarBuddyReq;
@@ -658,37 +761,52 @@ class InviteContactBuddyReq extends $pb.GeneratedMessage {
     return $result;
   }
   InviteContactBuddyReq._() : super();
-  factory InviteContactBuddyReq.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory InviteContactBuddyReq.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+  factory InviteContactBuddyReq.fromBuffer(
+    $core.List<$core.int> i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromBuffer(i, r);
+  factory InviteContactBuddyReq.fromJson(
+    $core.String i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'InviteContactBuddyReq',
-      package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockIM()),
-      createEmptyInstance: create)
-    ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOS(2, _omitFieldNames ? '' : 'phone')
-    ..a<$fixnum.Int64>(
-        3, _omitFieldNames ? '' : 'lastBuddyKey', $pb.PbFieldType.OU6,
-        defaultOrMaker: $fixnum.Int64.ZERO)
-    ..a<$fixnum.Int64>(
-        4, _omitFieldNames ? '' : 'lastChatboxKey', $pb.PbFieldType.OU6,
-        defaultOrMaker: $fixnum.Int64.ZERO)
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i =
+      $pb.BuilderInfo(
+          _omitMessageNames ? '' : 'InviteContactBuddyReq',
+          package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockIM()),
+          createEmptyInstance: create,
+        )
+        ..aOS(1, _omitFieldNames ? '' : 'name')
+        ..aOS(2, _omitFieldNames ? '' : 'phone')
+        ..a<$fixnum.Int64>(
+          3,
+          _omitFieldNames ? '' : 'lastBuddyKey',
+          $pb.PbFieldType.OU6,
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..a<$fixnum.Int64>(
+          4,
+          _omitFieldNames ? '' : 'lastChatboxKey',
+          $pb.PbFieldType.OU6,
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+    'Will be removed in next major version',
+  )
   InviteContactBuddyReq clone() =>
       InviteContactBuddyReq()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+    'Will be removed in next major version',
+  )
   InviteContactBuddyReq copyWith(
-          void Function(InviteContactBuddyReq) updates) =>
+    void Function(InviteContactBuddyReq) updates,
+  ) =>
       super.copyWith((message) => updates(message as InviteContactBuddyReq))
           as InviteContactBuddyReq;
 
@@ -768,33 +886,45 @@ class IgnoreRecommendBuddyReq extends $pb.GeneratedMessage {
     return $result;
   }
   IgnoreRecommendBuddyReq._() : super();
-  factory IgnoreRecommendBuddyReq.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory IgnoreRecommendBuddyReq.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+  factory IgnoreRecommendBuddyReq.fromBuffer(
+    $core.List<$core.int> i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromBuffer(i, r);
+  factory IgnoreRecommendBuddyReq.fromJson(
+    $core.String i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'IgnoreRecommendBuddyReq',
-      package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockIM()),
-      createEmptyInstance: create)
-    ..aOS(1, _omitFieldNames ? '' : 'phone')
-    ..a<$fixnum.Int64>(
-        2, _omitFieldNames ? '' : 'targetUid', $pb.PbFieldType.OU6,
-        defaultOrMaker: $fixnum.Int64.ZERO)
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i =
+      $pb.BuilderInfo(
+          _omitMessageNames ? '' : 'IgnoreRecommendBuddyReq',
+          package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockIM()),
+          createEmptyInstance: create,
+        )
+        ..aOS(1, _omitFieldNames ? '' : 'phone')
+        ..a<$fixnum.Int64>(
+          2,
+          _omitFieldNames ? '' : 'targetUid',
+          $pb.PbFieldType.OU6,
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+    'Will be removed in next major version',
+  )
   IgnoreRecommendBuddyReq clone() =>
       IgnoreRecommendBuddyReq()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+    'Will be removed in next major version',
+  )
   IgnoreRecommendBuddyReq copyWith(
-          void Function(IgnoreRecommendBuddyReq) updates) =>
+    void Function(IgnoreRecommendBuddyReq) updates,
+  ) =>
       super.copyWith((message) => updates(message as IgnoreRecommendBuddyReq))
           as IgnoreRecommendBuddyReq;
 
@@ -854,36 +984,55 @@ class BatchAddRecommendBuddyReq extends $pb.GeneratedMessage {
     return $result;
   }
   BatchAddRecommendBuddyReq._() : super();
-  factory BatchAddRecommendBuddyReq.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory BatchAddRecommendBuddyReq.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+  factory BatchAddRecommendBuddyReq.fromBuffer(
+    $core.List<$core.int> i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromBuffer(i, r);
+  factory BatchAddRecommendBuddyReq.fromJson(
+    $core.String i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'BatchAddRecommendBuddyReq',
-      package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockIM()),
-      createEmptyInstance: create)
-    ..p<$fixnum.Int64>(
-        1, _omitFieldNames ? '' : 'buddyIds', $pb.PbFieldType.KU6)
-    ..pc<$4.Contact>(2, _omitFieldNames ? '' : 'contact', $pb.PbFieldType.PM,
-        subBuilder: $4.Contact.create)
-    ..a<$fixnum.Int64>(
-        4, _omitFieldNames ? '' : 'lastBuddyKey', $pb.PbFieldType.OU6,
-        defaultOrMaker: $fixnum.Int64.ZERO)
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i =
+      $pb.BuilderInfo(
+          _omitMessageNames ? '' : 'BatchAddRecommendBuddyReq',
+          package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockIM()),
+          createEmptyInstance: create,
+        )
+        ..p<$fixnum.Int64>(
+          1,
+          _omitFieldNames ? '' : 'buddyIds',
+          $pb.PbFieldType.KU6,
+        )
+        ..pc<$4.Contact>(
+          2,
+          _omitFieldNames ? '' : 'contact',
+          $pb.PbFieldType.PM,
+          subBuilder: $4.Contact.create,
+        )
+        ..a<$fixnum.Int64>(
+          4,
+          _omitFieldNames ? '' : 'lastBuddyKey',
+          $pb.PbFieldType.OU6,
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+    'Will be removed in next major version',
+  )
   BatchAddRecommendBuddyReq clone() =>
       BatchAddRecommendBuddyReq()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+    'Will be removed in next major version',
+  )
   BatchAddRecommendBuddyReq copyWith(
-          void Function(BatchAddRecommendBuddyReq) updates) =>
+    void Function(BatchAddRecommendBuddyReq) updates,
+  ) =>
       super.copyWith((message) => updates(message as BatchAddRecommendBuddyReq))
           as BatchAddRecommendBuddyReq;
 
@@ -941,37 +1090,55 @@ class ReportUserReq extends $pb.GeneratedMessage {
     return $result;
   }
   ReportUserReq._() : super();
-  factory ReportUserReq.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory ReportUserReq.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+  factory ReportUserReq.fromBuffer(
+    $core.List<$core.int> i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromBuffer(i, r);
+  factory ReportUserReq.fromJson(
+    $core.String i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'ReportUserReq',
-      package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockIM()),
-      createEmptyInstance: create)
-    ..a<$fixnum.Int64>(
-        1, _omitFieldNames ? '' : 'targetUid', $pb.PbFieldType.OU6,
-        defaultOrMaker: $fixnum.Int64.ZERO)
-    ..e<ReportUserReq_ReportType>(
-        2, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE,
-        defaultOrMaker: ReportUserReq_ReportType.AD,
-        valueOf: ReportUserReq_ReportType.valueOf,
-        enumValues: ReportUserReq_ReportType.values)
-    ..aOS(3, _omitFieldNames ? '' : 'reason')
-    ..a<$fixnum.Int64>(4, _omitFieldNames ? '' : 'partyId', $pb.PbFieldType.OU6,
-        defaultOrMaker: $fixnum.Int64.ZERO)
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i =
+      $pb.BuilderInfo(
+          _omitMessageNames ? '' : 'ReportUserReq',
+          package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockIM()),
+          createEmptyInstance: create,
+        )
+        ..a<$fixnum.Int64>(
+          1,
+          _omitFieldNames ? '' : 'targetUid',
+          $pb.PbFieldType.OU6,
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..e<ReportUserReq_ReportType>(
+          2,
+          _omitFieldNames ? '' : 'type',
+          $pb.PbFieldType.OE,
+          defaultOrMaker: ReportUserReq_ReportType.AD,
+          valueOf: ReportUserReq_ReportType.valueOf,
+          enumValues: ReportUserReq_ReportType.values,
+        )
+        ..aOS(3, _omitFieldNames ? '' : 'reason')
+        ..a<$fixnum.Int64>(
+          4,
+          _omitFieldNames ? '' : 'partyId',
+          $pb.PbFieldType.OU6,
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+    'Will be removed in next major version',
+  )
   ReportUserReq clone() => ReportUserReq()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+    'Will be removed in next major version',
+  )
   ReportUserReq copyWith(void Function(ReportUserReq) updates) =>
       super.copyWith((message) => updates(message as ReportUserReq))
           as ReportUserReq;
@@ -1038,5 +1205,6 @@ class ReportUserReq extends $pb.GeneratedMessage {
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames =
-    $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames = $core.bool.fromEnvironment(
+  'protobuf.omit_message_names',
+);

@@ -1,129 +1,107 @@
 import 'dart:math';
-import 'kimmi_virgin_do.dart';
+import 'kimmi_concerned_1.dart';
 import 'package:get/get.dart';
 
 import 'kimmi_snoop_smile_invoice.dart';
 
 class KimmiSnoopSmileSmart extends Bindings {
-  String doMakerOpener_ = "";
-  String ayCoccyxBonus_ = "";
-  double reTuneBargain_ = 15;
-  String paTraitorAmbitious_ = "";
-  bool inPolandBadge_ = false;
-  bool isLoverGentleman_ = true;
-  double woDonutSchist_ = 0.0;
-  bool noNoodleTonight_ = true;
-  bool faFairyStir_ = false;
-  int myDecodeParamedic_ = 45;
+  bool usHazelnutClooney_ = true;
+  bool emPhilMention_ = false;
+  String soGeneC2_ = "";
+  bool faInvoiceSnarky_ = true;
 
-  void soWhiteAmigo() {
-    noNoodleTonight_ = inPolandBadge_ && isLoverGentleman_;
-    myDecodeParamedic_ = 31;
-    if (reTuneBargain_ > woDonutSchist_) {
-      reTuneBargain_ = reTuneBargain_ - woDonutSchist_;
+  void odLovedVanity() {
+    if (usHazelnutClooney_ && emPhilMention_) {
+      faInvoiceSnarky_ = !faInvoiceSnarky_;
     }
-    if (myDecodeParamedic_ > 0) {
-      myDecodeParamedic_ = myDecodeParamedic_ - 6;
+    if (faInvoiceSnarky_ && emPhilMention_ && usHazelnutClooney_) {
+      faInvoiceSnarky_ = !faInvoiceSnarky_;
+      emPhilMention_ = faInvoiceSnarky_;
+      usHazelnutClooney_ = faInvoiceSnarky_;
     }
-    inPolandBadge_ = faFairyStir_ && isLoverGentleman_;
-    myDecodeParamedic_ = myDecodeParamedic_ + 1;
-    faFairyStir_ = isLoverGentleman_ && inPolandBadge_;
-    reTuneBargain_ = reTuneBargain_ + woDonutSchist_;
-    isLoverGentleman_ = noNoodleTonight_ || inPolandBadge_;
-    ayCoccyxBonus_ = paTraitorAmbitious_ + doMakerOpener_;
-    doMakerOpener_ = paTraitorAmbitious_ + ayCoccyxBonus_;
-    doMakerOpener_ = ayCoccyxBonus_;
-    paTraitorAmbitious_ = ayCoccyxBonus_;
-    if (faFairyStir_) {
-      noNoodleTonight_ = !inPolandBadge_;
+
+    soGeneC2_ = soGeneC2_.toUpperCase();
+
+    emPhilMention_ = faInvoiceSnarky_ && usHazelnutClooney_;
+
+    soGeneC2_ = soGeneC2_.toUpperCase();
+    if (usHazelnutClooney_) {
+      emPhilMention_ = !faInvoiceSnarky_;
+    }
+    soGeneC2_ = soGeneC2_.toUpperCase();
+
+    soGeneC2_ = soGeneC2_.toUpperCase();
+  }
+
+  void oxHolderTootsie() {
+    if (usHazelnutClooney_ || emPhilMention_ || faInvoiceSnarky_) {
+      usHazelnutClooney_ = !emPhilMention_;
+      emPhilMention_ = !faInvoiceSnarky_;
+      faInvoiceSnarky_ = !usHazelnutClooney_;
+    }
+    if (usHazelnutClooney_ || emPhilMention_) {
+      emPhilMention_ = !emPhilMention_;
+    }
+
+    if (faInvoiceSnarky_ || emPhilMention_ || usHazelnutClooney_) {
+      faInvoiceSnarky_ = !emPhilMention_;
+      emPhilMention_ = !usHazelnutClooney_;
+      usHazelnutClooney_ = !faInvoiceSnarky_;
+    }
+
+    if (emPhilMention_ || usHazelnutClooney_ || faInvoiceSnarky_) {
+      emPhilMention_ = !usHazelnutClooney_;
+      usHazelnutClooney_ = !faInvoiceSnarky_;
+      faInvoiceSnarky_ = !emPhilMention_;
+    }
+    soGeneC2_ = soGeneC2_.toUpperCase();
+
+    if (faInvoiceSnarky_ || emPhilMention_ || usHazelnutClooney_) {
+      faInvoiceSnarky_ = !emPhilMention_;
+      emPhilMention_ = !usHazelnutClooney_;
+      usHazelnutClooney_ = !faInvoiceSnarky_;
+    }
+
+    if (usHazelnutClooney_ || faInvoiceSnarky_ || emPhilMention_) {
+      usHazelnutClooney_ = !faInvoiceSnarky_;
+      faInvoiceSnarky_ = !emPhilMention_;
+      emPhilMention_ = !usHazelnutClooney_;
     }
   }
 
-  void atShortenIntoxicate() {
-    paTraitorAmbitious_ = doMakerOpener_;
-    ayCoccyxBonus_ = doMakerOpener_;
-    if (paTraitorAmbitious_.length > 6) {
-      ayCoccyxBonus_ = paTraitorAmbitious_;
-    } else {
-      doMakerOpener_ = ayCoccyxBonus_;
-    }
-    reTuneBargain_ = reTuneBargain_ + woDonutSchist_;
-    if (doMakerOpener_.length > 7) {
-      paTraitorAmbitious_ = doMakerOpener_;
-    } else {
-      ayCoccyxBonus_ = paTraitorAmbitious_;
-    }
-    myDecodeParamedic_ = 53;
-    isLoverGentleman_ = faFairyStir_ && noNoodleTonight_;
-    if (doMakerOpener_.length > 4) {
-      ayCoccyxBonus_ = doMakerOpener_;
-    } else {
-      paTraitorAmbitious_ = ayCoccyxBonus_;
-    }
-    if (faFairyStir_) {
-      noNoodleTonight_ = !isLoverGentleman_;
-    }
-    if (noNoodleTonight_ && isLoverGentleman_ && inPolandBadge_) {
-      noNoodleTonight_ = !noNoodleTonight_;
-      isLoverGentleman_ = noNoodleTonight_;
-      inPolandBadge_ = noNoodleTonight_;
-    }
-    reTuneBargain_ = 73;
-    woDonutSchist_ = 9;
-  }
+  void heImCommunity() {
+    soGeneC2_ = soGeneC2_.toUpperCase();
+    soGeneC2_ = soGeneC2_.toUpperCase();
 
-  void hoFailedLoopy() {
-    noNoodleTonight_ = inPolandBadge_ || isLoverGentleman_;
-    noNoodleTonight_ = inPolandBadge_ && isLoverGentleman_;
-    doMakerOpener_ = paTraitorAmbitious_ + ayCoccyxBonus_;
-    if (reTuneBargain_ > woDonutSchist_) {
-      reTuneBargain_ = reTuneBargain_ - woDonutSchist_;
+    soGeneC2_ = soGeneC2_.toUpperCase();
+    soGeneC2_ = soGeneC2_.toUpperCase();
+    soGeneC2_ = soGeneC2_.toUpperCase();
+
+    soGeneC2_ = soGeneC2_.toUpperCase();
+    soGeneC2_ = soGeneC2_.toUpperCase();
+    if (usHazelnutClooney_ && faInvoiceSnarky_) {
+      emPhilMention_ = !emPhilMention_;
     }
-    reTuneBargain_ = 71;
-    woDonutSchist_ = 57;
-    if (isLoverGentleman_ || noNoodleTonight_) {
-      noNoodleTonight_ = !noNoodleTonight_;
+    if (emPhilMention_ || faInvoiceSnarky_ || usHazelnutClooney_) {
+      emPhilMention_ = !faInvoiceSnarky_;
+      faInvoiceSnarky_ = !usHazelnutClooney_;
+      usHazelnutClooney_ = !emPhilMention_;
     }
-    noNoodleTonight_ = inPolandBadge_ && isLoverGentleman_;
-    noNoodleTonight_ = faFairyStir_ && isLoverGentleman_;
-    reTuneBargain_ = 79;
-    woDonutSchist_ = 48;
-    if (faFairyStir_ && inPolandBadge_) {
-      isLoverGentleman_ = !isLoverGentleman_;
-    }
-    reTuneBargain_ = 27;
-    woDonutSchist_ = 72;
-    doMakerOpener_ = paTraitorAmbitious_ + ayCoccyxBonus_;
-    if (reTuneBargain_ > woDonutSchist_) {
-      reTuneBargain_ = reTuneBargain_ - woDonutSchist_;
-    }
-    if (myDecodeParamedic_ > 0) {
-      myDecodeParamedic_ = myDecodeParamedic_ - 1;
-    }
-    doMakerOpener_ = ayCoccyxBonus_;
-    paTraitorAmbitious_ = doMakerOpener_;
-    ayCoccyxBonus_ = paTraitorAmbitious_;
-    if (myDecodeParamedic_ > 0) {
-      myDecodeParamedic_ = myDecodeParamedic_ - 8;
-    }
-    faFairyStir_ = noNoodleTonight_ && isLoverGentleman_;
-    if (inPolandBadge_ || isLoverGentleman_) {
-      isLoverGentleman_ = !isLoverGentleman_;
-    }
-    reTuneBargain_ = reTuneBargain_ + woDonutSchist_;
+    usHazelnutClooney_ = faInvoiceSnarky_ && emPhilMention_;
+
+    soGeneC2_ = soGeneC2_.toUpperCase();
   }
 
   @override
   void dependencies() {
-    if (sqrt1_2 < 0.3) {
-      KimmiVirginDo().okAiDamp();
-      KimmiVirginDo().etDevastateCost();
-      KimmiVirginDo().ofBowlerBabysitter();
-      KimmiVirginDo().atJohnnyFalcon();
+    if (ln10 < 2) {
+      KimmiConcerned1().maIdolizeHazelnut();
+      KimmiConcerned1().idViaPutz();
+      KimmiConcerned1().paJoyousFairy();
     }
-    if (log10e / 2 < 0.1) {
-      soWhiteAmigo();
-      hoFailedLoopy();
+    if (sqrt1_2 < 0.3) {
+      heImCommunity();
+      oxHolderTootsie();
     }
     Get.lazyPut(() => KimmiSnoopSmileInvoice());
   }

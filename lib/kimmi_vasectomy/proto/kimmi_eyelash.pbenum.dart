@@ -3,14 +3,20 @@ import 'dart:core' as $core;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 class LiveStatus extends $pb.ProtobufEnum {
-  static const LiveStatus UNKNOWN =
-      LiveStatus._(0, _omitEnumNames ? '' : 'UNKNOWN');
+  static const LiveStatus UNKNOWN = LiveStatus._(
+    0,
+    _omitEnumNames ? '' : 'UNKNOWN',
+  );
   static const LiveStatus LIVE = LiveStatus._(1, _omitEnumNames ? '' : 'LIVE');
   static const LiveStatus END = LiveStatus._(2, _omitEnumNames ? '' : 'END');
-  static const LiveStatus CALL_END =
-      LiveStatus._(3, _omitEnumNames ? '' : 'CALL_END');
-  static const LiveStatus ERROR_END =
-      LiveStatus._(4, _omitEnumNames ? '' : 'ERROR_END');
+  static const LiveStatus CALL_END = LiveStatus._(
+    3,
+    _omitEnumNames ? '' : 'CALL_END',
+  );
+  static const LiveStatus ERROR_END = LiveStatus._(
+    4,
+    _omitEnumNames ? '' : 'ERROR_END',
+  );
 
   static const $core.List<LiveStatus> values = <LiveStatus>[
     UNKNOWN,

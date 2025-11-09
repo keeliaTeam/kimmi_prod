@@ -43,45 +43,72 @@ class SendBuddyRequestReq extends $pb.GeneratedMessage {
     return $result;
   }
   SendBuddyRequestReq._() : super();
-  factory SendBuddyRequestReq.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory SendBuddyRequestReq.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+  factory SendBuddyRequestReq.fromBuffer(
+    $core.List<$core.int> i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromBuffer(i, r);
+  factory SendBuddyRequestReq.fromJson(
+    $core.String i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'SendBuddyRequestReq',
-      package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockIM()),
-      createEmptyInstance: create)
-    ..a<$fixnum.Int64>(1, _omitFieldNames ? '' : 'buddyId', $pb.PbFieldType.OU6,
-        defaultOrMaker: $fixnum.Int64.ZERO)
-    ..a<$fixnum.Int64>(
-        2, _omitFieldNames ? '' : 'lastBuddyKey', $pb.PbFieldType.OU6,
-        defaultOrMaker: $fixnum.Int64.ZERO)
-    ..a<$fixnum.Int64>(
-        3, _omitFieldNames ? '' : 'lastChatboxKey', $pb.PbFieldType.OU6,
-        defaultOrMaker: $fixnum.Int64.ZERO)
-    ..e<SendBuddyRequestReq_SourceType>(
-        4, _omitFieldNames ? '' : 'sourceType', $pb.PbFieldType.OE,
-        defaultOrMaker: SendBuddyRequestReq_SourceType.FROM_UNKNOWN,
-        valueOf: SendBuddyRequestReq_SourceType.valueOf,
-        enumValues: SendBuddyRequestReq_SourceType.values)
-    ..a<$fixnum.Int64>(
-        5, _omitFieldNames ? '' : 'fromChatboxId', $pb.PbFieldType.OU6,
-        defaultOrMaker: $fixnum.Int64.ZERO)
-    ..a<$core.int>(
-        6, _omitFieldNames ? '' : 'recommendType', $pb.PbFieldType.OU3)
-    ..aOS(7, _omitFieldNames ? '' : 'msg')
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i =
+      $pb.BuilderInfo(
+          _omitMessageNames ? '' : 'SendBuddyRequestReq',
+          package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockIM()),
+          createEmptyInstance: create,
+        )
+        ..a<$fixnum.Int64>(
+          1,
+          _omitFieldNames ? '' : 'buddyId',
+          $pb.PbFieldType.OU6,
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..a<$fixnum.Int64>(
+          2,
+          _omitFieldNames ? '' : 'lastBuddyKey',
+          $pb.PbFieldType.OU6,
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..a<$fixnum.Int64>(
+          3,
+          _omitFieldNames ? '' : 'lastChatboxKey',
+          $pb.PbFieldType.OU6,
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..e<SendBuddyRequestReq_SourceType>(
+          4,
+          _omitFieldNames ? '' : 'sourceType',
+          $pb.PbFieldType.OE,
+          defaultOrMaker: SendBuddyRequestReq_SourceType.FROM_UNKNOWN,
+          valueOf: SendBuddyRequestReq_SourceType.valueOf,
+          enumValues: SendBuddyRequestReq_SourceType.values,
+        )
+        ..a<$fixnum.Int64>(
+          5,
+          _omitFieldNames ? '' : 'fromChatboxId',
+          $pb.PbFieldType.OU6,
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..a<$core.int>(
+          6,
+          _omitFieldNames ? '' : 'recommendType',
+          $pb.PbFieldType.OU3,
+        )
+        ..aOS(7, _omitFieldNames ? '' : 'msg')
+        ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+    'Will be removed in next major version',
+  )
   SendBuddyRequestReq clone() => SendBuddyRequestReq()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+    'Will be removed in next major version',
+  )
   SendBuddyRequestReq copyWith(void Function(SendBuddyRequestReq) updates) =>
       super.copyWith((message) => updates(message as SendBuddyRequestReq))
           as SendBuddyRequestReq;
@@ -206,41 +233,62 @@ class ConfirmBuddyRequestReq extends $pb.GeneratedMessage {
     return $result;
   }
   ConfirmBuddyRequestReq._() : super();
-  factory ConfirmBuddyRequestReq.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory ConfirmBuddyRequestReq.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+  factory ConfirmBuddyRequestReq.fromBuffer(
+    $core.List<$core.int> i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromBuffer(i, r);
+  factory ConfirmBuddyRequestReq.fromJson(
+    $core.String i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'ConfirmBuddyRequestReq',
-      package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockIM()),
-      createEmptyInstance: create)
-    ..a<$fixnum.Int64>(
-        1, _omitFieldNames ? '' : 'buddyrequestId', $pb.PbFieldType.OU6,
-        defaultOrMaker: $fixnum.Int64.ZERO)
-    ..a<$fixnum.Int64>(
-        2, _omitFieldNames ? '' : 'lastBuddyKey', $pb.PbFieldType.OU6,
-        defaultOrMaker: $fixnum.Int64.ZERO)
-    ..a<$fixnum.Int64>(
-        3, _omitFieldNames ? '' : 'lastChatboxKey', $pb.PbFieldType.OU6,
-        defaultOrMaker: $fixnum.Int64.ZERO)
-    ..a<$fixnum.Int64>(
-        4, _omitFieldNames ? '' : 'lastBuddyrequestKey', $pb.PbFieldType.OU6,
-        defaultOrMaker: $fixnum.Int64.ZERO)
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i =
+      $pb.BuilderInfo(
+          _omitMessageNames ? '' : 'ConfirmBuddyRequestReq',
+          package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockIM()),
+          createEmptyInstance: create,
+        )
+        ..a<$fixnum.Int64>(
+          1,
+          _omitFieldNames ? '' : 'buddyrequestId',
+          $pb.PbFieldType.OU6,
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..a<$fixnum.Int64>(
+          2,
+          _omitFieldNames ? '' : 'lastBuddyKey',
+          $pb.PbFieldType.OU6,
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..a<$fixnum.Int64>(
+          3,
+          _omitFieldNames ? '' : 'lastChatboxKey',
+          $pb.PbFieldType.OU6,
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..a<$fixnum.Int64>(
+          4,
+          _omitFieldNames ? '' : 'lastBuddyrequestKey',
+          $pb.PbFieldType.OU6,
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+    'Will be removed in next major version',
+  )
   ConfirmBuddyRequestReq clone() =>
       ConfirmBuddyRequestReq()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+    'Will be removed in next major version',
+  )
   ConfirmBuddyRequestReq copyWith(
-          void Function(ConfirmBuddyRequestReq) updates) =>
+    void Function(ConfirmBuddyRequestReq) updates,
+  ) =>
       super.copyWith((message) => updates(message as ConfirmBuddyRequestReq))
           as ConfirmBuddyRequestReq;
 
@@ -320,35 +368,50 @@ class DeleteBuddyRequestReq extends $pb.GeneratedMessage {
     return $result;
   }
   DeleteBuddyRequestReq._() : super();
-  factory DeleteBuddyRequestReq.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory DeleteBuddyRequestReq.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+  factory DeleteBuddyRequestReq.fromBuffer(
+    $core.List<$core.int> i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromBuffer(i, r);
+  factory DeleteBuddyRequestReq.fromJson(
+    $core.String i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'DeleteBuddyRequestReq',
-      package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockIM()),
-      createEmptyInstance: create)
-    ..a<$fixnum.Int64>(
-        1, _omitFieldNames ? '' : 'buddyrequestId', $pb.PbFieldType.OU6,
-        defaultOrMaker: $fixnum.Int64.ZERO)
-    ..a<$fixnum.Int64>(
-        2, _omitFieldNames ? '' : 'lastBuddyrequestKey', $pb.PbFieldType.OU6,
-        defaultOrMaker: $fixnum.Int64.ZERO)
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i =
+      $pb.BuilderInfo(
+          _omitMessageNames ? '' : 'DeleteBuddyRequestReq',
+          package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockIM()),
+          createEmptyInstance: create,
+        )
+        ..a<$fixnum.Int64>(
+          1,
+          _omitFieldNames ? '' : 'buddyrequestId',
+          $pb.PbFieldType.OU6,
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..a<$fixnum.Int64>(
+          2,
+          _omitFieldNames ? '' : 'lastBuddyrequestKey',
+          $pb.PbFieldType.OU6,
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+    'Will be removed in next major version',
+  )
   DeleteBuddyRequestReq clone() =>
       DeleteBuddyRequestReq()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+    'Will be removed in next major version',
+  )
   DeleteBuddyRequestReq copyWith(
-          void Function(DeleteBuddyRequestReq) updates) =>
+    void Function(DeleteBuddyRequestReq) updates,
+  ) =>
       super.copyWith((message) => updates(message as DeleteBuddyRequestReq))
           as DeleteBuddyRequestReq;
 
@@ -390,9 +453,7 @@ class DeleteBuddyRequestReq extends $pb.GeneratedMessage {
 }
 
 class SetAllBuddyRequestReadedReq extends $pb.GeneratedMessage {
-  factory SetAllBuddyRequestReadedReq({
-    $fixnum.Int64? lastBuddyrequestKey,
-  }) {
+  factory SetAllBuddyRequestReadedReq({$fixnum.Int64? lastBuddyrequestKey}) {
     final $result = create();
     if (lastBuddyrequestKey != null) {
       $result.lastBuddyrequestKey = lastBuddyrequestKey;
@@ -400,34 +461,47 @@ class SetAllBuddyRequestReadedReq extends $pb.GeneratedMessage {
     return $result;
   }
   SetAllBuddyRequestReadedReq._() : super();
-  factory SetAllBuddyRequestReadedReq.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory SetAllBuddyRequestReadedReq.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+  factory SetAllBuddyRequestReadedReq.fromBuffer(
+    $core.List<$core.int> i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromBuffer(i, r);
+  factory SetAllBuddyRequestReadedReq.fromJson(
+    $core.String i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'SetAllBuddyRequestReadedReq',
-      package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockIM()),
-      createEmptyInstance: create)
-    ..a<$fixnum.Int64>(
-        1, _omitFieldNames ? '' : 'lastBuddyrequestKey', $pb.PbFieldType.OU6,
-        defaultOrMaker: $fixnum.Int64.ZERO)
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i =
+      $pb.BuilderInfo(
+          _omitMessageNames ? '' : 'SetAllBuddyRequestReadedReq',
+          package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockIM()),
+          createEmptyInstance: create,
+        )
+        ..a<$fixnum.Int64>(
+          1,
+          _omitFieldNames ? '' : 'lastBuddyrequestKey',
+          $pb.PbFieldType.OU6,
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+    'Will be removed in next major version',
+  )
   SetAllBuddyRequestReadedReq clone() =>
       SetAllBuddyRequestReadedReq()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+    'Will be removed in next major version',
+  )
   SetAllBuddyRequestReadedReq copyWith(
-          void Function(SetAllBuddyRequestReadedReq) updates) =>
+    void Function(SetAllBuddyRequestReadedReq) updates,
+  ) =>
       super.copyWith(
-              (message) => updates(message as SetAllBuddyRequestReadedReq))
+            (message) => updates(message as SetAllBuddyRequestReadedReq),
+          )
           as SetAllBuddyRequestReadedReq;
 
   $pb.BuilderInfo get info_ => _i;
@@ -457,5 +531,6 @@ class SetAllBuddyRequestReadedReq extends $pb.GeneratedMessage {
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames =
-    $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames = $core.bool.fromEnvironment(
+  'protobuf.omit_message_names',
+);

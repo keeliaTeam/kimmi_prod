@@ -1,5 +1,5 @@
 import 'dart:math';
-import 'kimmi_chickie_make.dart';
+import 'kimmi_withhold_saturn.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_juda/kimmi_manifest.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_juda/kimmi_outdo_juda.dart';
 import 'package:easy_refresh/easy_refresh.dart';
@@ -41,18 +41,20 @@ class KimmiMyMaleContainer
             children: [
               KimmiSingleConference(
                 leading: KimmiErnie.local(
-                    fileName: "kimmi_hombre_vasectomy_conference_decaf",
-                    width: 24,
-                    height: 24),
+                  fileName: "kimmi_hombre_vasectomy_conference_decaf",
+                  width: 24,
+                  height: 24,
+                ),
                 middle: Text(
                   "kimmi_broderick_my_male".tr,
                   style: KimmiTamperDaytime.style(
-                      fontSize: 20,
-                      fontWeight: FontWeight.bold,
-                      color: KimmiDraftJuda.white),
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                    color: KimmiDraftJuda.white,
+                  ),
                 ),
               ),
-              Expanded(child: _kimmiFrogAmenUneven())
+              Expanded(child: _kimmiFrogAmenUneven()),
             ],
           ),
         ),
@@ -77,18 +79,22 @@ class KimmiMyMaleContainer
           physics: physics,
           slivers: [
             GetBuilder<KimmiMyMaleInvoice>(
-                id: KimmiMyMaleInvoice.kimmi_amen,
-                builder: (logic) {
-                  return logic.followList.isEmpty
-                      ? SliverToBoxAdapter(
-                          child: logic.isRefreshing.value
-                              ? const SizedBox()
-                              : _kimmiNoHazelnutGloss())
-                      : SliverPadding(
-                          padding: const EdgeInsets.all(
-                              KimmiPalate.kimmiContainerWhatchaApplicantCinder),
-                          sliver: _kimmiHeroinApplicantUneven());
-                })
+              id: KimmiMyMaleInvoice.kimmi_amen,
+              builder: (logic) {
+                return logic.followList.isEmpty
+                    ? SliverToBoxAdapter(
+                        child: logic.isRefreshing.value
+                            ? const SizedBox()
+                            : _kimmiNoHazelnutGloss(),
+                      )
+                    : SliverPadding(
+                        padding: const EdgeInsets.all(
+                          KimmiPalate.kimmiContainerWhatchaApplicantCinder,
+                        ),
+                        sliver: _kimmiHeroinApplicantUneven(),
+                      );
+              },
+            ),
           ],
         );
       },
@@ -108,7 +114,10 @@ class KimmiMyMaleContainer
         KimmiFeast user = logic.followList[index];
         CountryVO? country = logic.followCountryMap[user.countryId];
         return KimmiOutdoJuda.kimmiIntoxicateHandwriteBargain(
-            user, country, logic.showAnchorItemType);
+          user,
+          country,
+          logic.showAnchorItemType,
+        );
       },
       itemCount: logic.followList.length,
     );
@@ -117,14 +126,20 @@ class KimmiMyMaleContainer
   Widget _kimmiNoHazelnutGloss() {
     return Padding(
       padding: const EdgeInsets.only(top: 100),
-      child: Column(mainAxisSize: MainAxisSize.min, children: [
-        KimmiErnie.local(
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          KimmiErnie.local(
             fileName: "kimmi_hombre_amen_selfish_gloss",
             width: 112,
-            height: 112),
-        Text("kimmi_broderick_no_hazelnut".tr,
-            style: KimmiTamperDaytime.style(color: KimmiDraftJuda.white_40p))
-      ]),
+            height: 112,
+          ),
+          Text(
+            "kimmi_broderick_no_hazelnut".tr,
+            style: KimmiTamperDaytime.style(color: KimmiDraftJuda.white_40p),
+          ),
+        ],
+      ),
     );
   }
 }

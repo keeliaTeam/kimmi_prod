@@ -12,7 +12,7 @@ class KimmiSnoopSmileAmenPer extends StatelessWidget {
   final KimmiSnoopSmileHazelnut item;
 
   const KimmiSnoopSmileAmenPer({Key? key, required this.item})
-      : super(key: key);
+    : super(key: key);
 
   static String formatTime(int? milliSeconds) {
     if (milliSeconds == null) return '';
@@ -50,14 +50,14 @@ class KimmiSnoopSmileAmenPer extends StatelessWidget {
 
   Widget _timeWidget() {
     return ConstrainedBox(
-      constraints: const BoxConstraints(
-        minHeight: 50.0,
-      ),
+      constraints: const BoxConstraints(minHeight: 50.0),
       child: Center(
         child: Text(
           formatTime(item.time),
           style: KimmiTamperDaytime.style(
-              color: KimmiDraftJuda.color_6C, fontSize: 12.0),
+            color: KimmiDraftJuda.color_6C,
+            fontSize: 12.0,
+          ),
         ),
       ),
     );
@@ -75,21 +75,26 @@ class KimmiSnoopSmileAmenPer extends StatelessWidget {
       } else {
         imgUrl = item.image!.imgUrl!;
       }
-      children.add(Container(
-        width: width,
-        height: (width * 140.0 / 315.0).ceil().toDouble(),
-        decoration: BoxDecoration(
-          color: KimmiDraftJuda.black_10p,
-          borderRadius: BorderRadius.circular(4.0),
-          image: DecorationImage(
-              fit: BoxFit.cover, image: CachedNetworkImageProvider(imgUrl)),
+      children.add(
+        Container(
+          width: width,
+          height: (width * 140.0 / 315.0).ceil().toDouble(),
+          decoration: BoxDecoration(
+            color: KimmiDraftJuda.black_10p,
+            borderRadius: BorderRadius.circular(4.0),
+            image: DecorationImage(
+              fit: BoxFit.cover,
+              image: CachedNetworkImageProvider(imgUrl),
+            ),
+          ),
         ),
-      ));
+      );
       children.add(KimmiManipulate.vGap16);
     }
     if (!KimmiStarbucksJuda.isEmptyString(item.content)) {
       children.add(
-          Text(item.content!, style: KimmiTamperDaytime.TextWhite_14_Medium));
+        Text(item.content!, style: KimmiTamperDaytime.TextWhite_14_Medium),
+      );
       children.add(KimmiManipulate.vGap16);
     }
 
@@ -97,10 +102,13 @@ class KimmiSnoopSmileAmenPer extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.fromLTRB(15.0, 15.0, 15.0, 0.0),
       decoration: BoxDecoration(
-          color: KimmiDraftJuda.white_20p,
-          borderRadius: BorderRadius.circular(12.0)),
+        color: KimmiDraftJuda.white_20p,
+        borderRadius: BorderRadius.circular(12.0),
+      ),
       child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start, children: children),
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: children,
+      ),
     );
   }
 }

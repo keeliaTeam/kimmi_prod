@@ -14,10 +14,7 @@ class KimmiStormHubcap {
   }
 
   Map<String, dynamic> toJson() {
-    return {
-      "type": type,
-      "first_charge": first_charge?.toJson(),
-    };
+    return {"type": type, "first_charge": first_charge?.toJson()};
   }
 }
 

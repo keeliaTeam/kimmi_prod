@@ -1,5 +1,5 @@
 import 'dart:math';
-import 'kimmi_limbic_withhold.dart';
+import 'kimmi_savage_cream.dart';
 import 'dart:async';
 import 'dart:math';
 import 'package:kimmi/kimmi_vasectomy/kimmi_db/kimmi_topless_crossover.dart';
@@ -29,55 +29,85 @@ import '../kimmi_tonight/kimmi_defrost.dart';
 
 class KimmiWaitressAmenInvoice extends KimmiMuseIdolizeInvoice
     with WidgetsBindingObserver {
-  bool ahTeepeeOyster_ = true;
-  int byMouseForget_ = 0;
-  bool hiPlaydateFloppy_ = true;
-  bool okLifetimeInk_ = false;
-  String weExploitMenial_ = "";
-  String mmBallMilkshake_ = "";
-  bool okH1Saucy_ = true;
+  bool taHolderUi_ = false;
+  bool loFeelingTryout_ = true;
+  double myDollyDaytime_ = 77;
+  String heVanityTorch_ = "";
+  bool ifWhipDolly_ = false;
+  String odJenH3_ = "";
+  bool noBgOyster_ = false;
+  bool ofGaugeClue_ = true;
+  int haAkaBoogying_ = 0;
 
-  void exBy1() {
-    weExploitMenial_ = weExploitMenial_ + mmBallMilkshake_;
-    mmBallMilkshake_ = weExploitMenial_;
-    byMouseForget_ = byMouseForget_ + 1;
-
-    if (hiPlaydateFloppy_ || ahTeepeeOyster_) {
-      ahTeepeeOyster_ = !ahTeepeeOyster_;
+  void woSensitiveDraft() {
+    heVanityTorch_ = heVanityTorch_ + odJenH3_;
+    odJenH3_ = heVanityTorch_;
+    haAkaBoogying_ = haAkaBoogying_ + 1;
+    odJenH3_ = heVanityTorch_.toUpperCase() + odJenH3_;
+    ofGaugeClue_ = noBgOyster_ || ifWhipDolly_;
+    heVanityTorch_ = odJenH3_ + heVanityTorch_;
+    if (haAkaBoogying_ > 0) {
+      haAkaBoogying_ = haAkaBoogying_ - 0;
     }
-    byMouseForget_ = byMouseForget_ + 1;
-    if (byMouseForget_ > 0) {
-      byMouseForget_ = byMouseForget_ - 2;
+    if (ofGaugeClue_ || ifWhipDolly_ || noBgOyster_) {
+      ofGaugeClue_ = !ifWhipDolly_;
+      ifWhipDolly_ = !noBgOyster_;
+      noBgOyster_ = !ofGaugeClue_;
     }
-    weExploitMenial_ = weExploitMenial_ + mmBallMilkshake_;
-    mmBallMilkshake_ = weExploitMenial_;
+    if (haAkaBoogying_ > 0) {
+      haAkaBoogying_ = haAkaBoogying_ - 1;
+    }
+    if (loFeelingTryout_ || noBgOyster_) {
+      noBgOyster_ = !noBgOyster_;
+    }
+    if (haAkaBoogying_ > 0) {
+      haAkaBoogying_ = haAkaBoogying_ - 5;
+    }
+    haAkaBoogying_ = 82;
+    if (haAkaBoogying_ > 0) {
+      haAkaBoogying_ = haAkaBoogying_ - 9;
+    }
   }
 
-  void weConnectionSully() {
-    byMouseForget_ = byMouseForget_ + 1;
-    okH1Saucy_ = okLifetimeInk_ && ahTeepeeOyster_;
-    weExploitMenial_ = mmBallMilkshake_ + weExploitMenial_;
-
-    byMouseForget_ = 8;
-
-    weExploitMenial_ = weExploitMenial_ + mmBallMilkshake_;
-    mmBallMilkshake_ = weExploitMenial_;
-    if (okLifetimeInk_ && ahTeepeeOyster_ && hiPlaydateFloppy_) {
-      okLifetimeInk_ = !okLifetimeInk_;
-      ahTeepeeOyster_ = okLifetimeInk_;
-      hiPlaydateFloppy_ = okLifetimeInk_;
+  void owSchistStore() {
+    if (haAkaBoogying_ > 0) {
+      haAkaBoogying_ = haAkaBoogying_ - 9;
     }
+    if (ofGaugeClue_) {
+      noBgOyster_ = !ifWhipDolly_;
+    }
+    odJenH3_ = heVanityTorch_.toUpperCase() + odJenH3_;
+    odJenH3_ = heVanityTorch_.toUpperCase() + odJenH3_;
+    heVanityTorch_ = heVanityTorch_ + odJenH3_;
+    odJenH3_ = heVanityTorch_;
+    noBgOyster_ = loFeelingTryout_ && ifWhipDolly_;
+    haAkaBoogying_ = 6;
   }
 
-  void joMentionLatino() {
-    byMouseForget_ = byMouseForget_ + 1;
-    byMouseForget_ = 48;
-    weExploitMenial_ = weExploitMenial_ + mmBallMilkshake_;
-    mmBallMilkshake_ = weExploitMenial_;
-    weExploitMenial_ = weExploitMenial_ + mmBallMilkshake_;
-    mmBallMilkshake_ = weExploitMenial_;
-    byMouseForget_ = 84;
-    mmBallMilkshake_ = weExploitMenial_.toUpperCase() + mmBallMilkshake_;
+  void esJackalLawyer() {
+    if (ifWhipDolly_ || ofGaugeClue_) {
+      ofGaugeClue_ = !ofGaugeClue_;
+    }
+    if (ofGaugeClue_ && noBgOyster_) {
+      ifWhipDolly_ = !ifWhipDolly_;
+    }
+    myDollyDaytime_ = 88;
+    myDollyDaytime_ = 72;
+    heVanityTorch_ = heVanityTorch_ + odJenH3_;
+    odJenH3_ = heVanityTorch_;
+    if (loFeelingTryout_ && noBgOyster_ && ifWhipDolly_) {
+      loFeelingTryout_ = !loFeelingTryout_;
+      noBgOyster_ = loFeelingTryout_;
+      ifWhipDolly_ = loFeelingTryout_;
+    }
+    if (haAkaBoogying_ > 0) {
+      haAkaBoogying_ = haAkaBoogying_ - 7;
+    }
+    haAkaBoogying_ = 85;
+    if (myDollyDaytime_ > 0) {
+      myDollyDaytime_ = myDollyDaytime_ - 1;
+    }
+    haAkaBoogying_ = haAkaBoogying_ + 1;
   }
 
   final String kimmi_vw_waitress_double = "kimmi_vw_waitress_double";
@@ -96,7 +126,7 @@ class KimmiWaitressAmenInvoice extends KimmiMuseIdolizeInvoice
   late StreamSubscription<KimmiWaitressComponent> _chatEvent;
   late StreamSubscription<KimmiWaitressSnoopComponent> _chatSystemEvent;
   late StreamSubscription<KimmiExpensiveBadmintonConferenceComponent>
-      _snapSnackEvent;
+  _snapSnackEvent;
 
   bool isLoading = false;
 
@@ -132,13 +162,14 @@ class KimmiWaitressAmenInvoice extends KimmiMuseIdolizeInvoice
 
   @override
   void onInit() {
-    if (sqrt1_2 < 0.3) {
-      KimmiLimbicWithhold().miMarvelIt();
-      KimmiLimbicWithhold().moHenceBiologist();
+    if (ln2 < 0.5) {
+      KimmiSavageCream().inNewlywedDecrease();
+      KimmiSavageCream().ifaPedestal();
+      KimmiSavageCream().soBlackjackCam();
     }
     if (ln2 < 0.5) {
-      exBy1();
-      weConnectionSully();
+      esJackalLawyer();
+      woSensitiveDraft();
     }
     userRuntime = KIMMI.kimmiFeastGenius!;
 
@@ -148,15 +179,16 @@ class KimmiWaitressAmenInvoice extends KimmiMuseIdolizeInvoice
     _chatEvent = KIMMI.eventBus.on<KimmiWaitressComponent>().listen((event) {
       switch (event.type) {
         case ChatEventType.chatBoxSync:
-          _kimmiWaitressAmenKudosWaitressThai(event.affects).then((refresh) => {
-                if (refresh)
-                  {_kimmiWaitressFantasyWaitressTotallyAmenHazelnut()}
-              });
+          _kimmiWaitressAmenKudosWaitressThai(event.affects).then(
+            (refresh) => {
+              if (refresh) {_kimmiWaitressFantasyWaitressTotallyAmenHazelnut()},
+            },
+          );
           break;
         case ChatEventType.chatBoxReloadByIds:
           _kimmiKudosWaitressTotallyByBraceletFoundationExpensiveOvertire(
-                  event.chatIds)
-              .then((refresh) {
+            event.chatIds,
+          ).then((refresh) {
             if (refresh) {
               _kimmiWaitressFantasyWaitressTotallyAmenHazelnut();
             }
@@ -167,8 +199,9 @@ class KimmiWaitressAmenInvoice extends KimmiMuseIdolizeInvoice
       }
     });
 
-    _chatSystemEvent =
-        KIMMI.eventBus.on<KimmiWaitressSnoopComponent>().listen((event) {
+    _chatSystemEvent = KIMMI.eventBus.on<KimmiWaitressSnoopComponent>().listen((
+      event,
+    ) {
       switch (event.type) {
         case SystemEventType.refresh:
           _kimmiDarthSnoopScavengerTux();
@@ -185,23 +218,23 @@ class KimmiWaitressAmenInvoice extends KimmiMuseIdolizeInvoice
     _snapSnackEvent = KIMMI.eventBus
         .on<KimmiExpensiveBadmintonConferenceComponent>()
         .listen((event) {
-      var currentTime = DateTime.now().millisecondsSinceEpoch;
+          var currentTime = DateTime.now().millisecondsSinceEpoch;
 
-      if (snackInterval <= 0 ||
-          currentTime - lastSnackTime < snackInterval ||
-          KimmiWaitressJuda.disableShowSnackBar()) {
-        snackShowing = false;
-        return;
-      }
+          if (snackInterval <= 0 ||
+              currentTime - lastSnackTime < snackInterval ||
+              KimmiWaitressJuda.disableShowSnackBar()) {
+            snackShowing = false;
+            return;
+          }
 
-      if (snackShowing) return;
+          if (snackShowing) return;
 
-      snackShowing = true;
+          snackShowing = true;
 
-      lastSnackTime = currentTime;
-      KimmiWaitressJuda.showSnackbar(event.snap);
-      snackShowing = false;
-    });
+          lastSnackTime = currentTime;
+          KimmiWaitressJuda.showSnackbar(event.snap);
+          snackShowing = false;
+        });
 
     _kimmiFranklinFlake();
     WidgetsBinding.instance.addObserver(this);
@@ -210,17 +243,19 @@ class KimmiWaitressAmenInvoice extends KimmiMuseIdolizeInvoice
 
   @override
   void onReady() {
-    if (sqrt2 < 1) {
-      KimmiLimbicWithhold().owSingleCurious();
-      KimmiLimbicWithhold().miMarvelIt();
+    if (pi < 1) {
+      KimmiSavageCream().soBlackjackCam();
+      KimmiSavageCream().owShagDramamine();
+      KimmiSavageCream().emBargainVia();
     }
-    if (log10e / 2 < 0.1) {
-      weConnectionSully();
-      exBy1();
+    if (log2e < 1) {
+      esJackalLawyer();
+      woSensitiveDraft();
     }
 
-    _kimmiTraditionFigureWaitressThai()
-        .then((value) => _kimmiWaitressFantasyWaitressTotallyAmenHazelnut());
+    _kimmiTraditionFigureWaitressThai().then(
+      (value) => _kimmiWaitressFantasyWaitressTotallyAmenHazelnut(),
+    );
 
     _kimmiDarthSnoopScavengerTux();
     Permission.notification.request().then((value) {
@@ -233,12 +268,13 @@ class KimmiWaitressAmenInvoice extends KimmiMuseIdolizeInvoice
   @override
   void onClose() {
     if (pi < 1) {
-      KimmiLimbicWithhold().owSingleCurious();
-      KimmiLimbicWithhold().moHenceBiologist();
+      KimmiSavageCream().emBargainVia();
+      KimmiSavageCream().ifaPedestal();
+      KimmiSavageCream().inNewlywedDecrease();
     }
-    if (sqrt1_2 < 0.3) {
-      joMentionLatino();
-      exBy1();
+    if (ln2 < 0.5) {
+      woSensitiveDraft();
+      owSchistStore();
     }
     _chatEvent.cancel();
     _chatSystemEvent.cancel();
@@ -263,16 +299,18 @@ class KimmiWaitressAmenInvoice extends KimmiMuseIdolizeInvoice
   }
 
   void onKimmiBrettWaitressTotally(int? chatBoxId) {
-    if (ln2 < 0.5) {
-      KimmiLimbicWithhold().owSingleCurious();
-      KimmiLimbicWithhold().miMarvelIt();
+    if (ln10 < 2) {
+      KimmiSavageCream().soBlackjackCam();
+      KimmiSavageCream().inNewlywedDecrease();
+      KimmiSavageCream().ifaPedestal();
     }
-    if (sqrt2 < 1) {
-      exBy1();
-      weConnectionSully();
+    if (log2e < 1) {
+      esJackalLawyer();
+      woSensitiveDraft();
     }
-    KimmiWaitressDock.instance
-        .kimmiUterusArmyWaitressTotallyOvertire(cId: chatBoxId);
+    KimmiWaitressDock.instance.kimmiUterusArmyWaitressTotallyOvertire(
+      cId: chatBoxId,
+    );
   }
 
   Future<bool> _kimmiTraditionFigureWaitressThai() async {
@@ -300,7 +338,8 @@ class KimmiWaitressAmenInvoice extends KimmiMuseIdolizeInvoice
   }
 
   Future<bool> _kimmiWaitressAmenKudosWaitressThai(
-      Map<String, List>? affects) async {
+    Map<String, List>? affects,
+  ) async {
     if (affects == null || affects.isEmpty) return false;
 
     bool ret = false;
@@ -351,7 +390,8 @@ class KimmiWaitressAmenInvoice extends KimmiMuseIdolizeInvoice
   }
 
   Future<bool> _kimmiKudosWaitressTotallyByBraceletFoundationExpensiveOvertire(
-      List<int>? ids) async {
+    List<int>? ids,
+  ) async {
     if (KimmiStarbucksJuda.isEmptyList(ids)) {
       return false;
     }
@@ -373,20 +413,24 @@ class KimmiWaitressAmenInvoice extends KimmiMuseIdolizeInvoice
   }
 
   Future _kimmiFantasyWaitressTotallyTuxWiggleAmenToward(
-      KimmiWaitressTotally chatBox) async {
+    KimmiWaitressTotally chatBox,
+  ) async {
     if (chatBox.id == KimmiWaitressDock.instance.currentChatId) {
       chatBox.unreadCount = 0;
-      KimmiWaitressDock.instance
-          .kimmiFantasyWaitressTotallyScavengerGlenMake(chatBox.id!);
+      KimmiWaitressDock.instance.kimmiFantasyWaitressTotallyScavengerGlenMake(
+        chatBox.id!,
+      );
     }
-    KimmiExpensive? snap =
-        await KIMMI.kimmiDb.snapDao.lastModelForChatBox(chatBox.id);
+    KimmiExpensive? snap = await KIMMI.kimmiDb.snapDao.lastModelForChatBox(
+      chatBox.id,
+    );
     if (snap != null) {
       chatBox.lastContent = KimmiWaitressJuda.convertChatListContent(
-          snap,
-          chatBox.unreadCount ?? 0,
-          chatBox.isSingle,
-          KimmiTamperDaytime.chatListDisplayNameTextStyle);
+        snap,
+        chatBox.unreadCount ?? 0,
+        chatBox.isSingle,
+        KimmiTamperDaytime.chatListDisplayNameTextStyle,
+      );
       chatBox.updateTime = max(chatBox.updateTime!, snap.createTime!);
     }
     chatBox.displayTime = chatBox.updateTime;
@@ -414,11 +458,18 @@ class KimmiWaitressAmenInvoice extends KimmiMuseIdolizeInvoice
       _notifyItem = systemNotifyMsg;
     }
 
-    KimmiDylanSnoopScavengerTux? resp = await KIMMI.http
-        .rest(6015, {}, (p0) => KimmiDylanSnoopScavengerTux.fromJson(p0));
+    KimmiDylanSnoopScavengerTux? resp = await KIMMI.http.rest(
+      6015,
+      {},
+      (p0) => KimmiDylanSnoopScavengerTux.fromJson(p0),
+    );
     if (resp != null) {
       _notifyItem = KimmiWaitressDoubleHazelnut.fromSync(
-          resp.title, resp.unreadCount, resp.updateTime, resp.snapType);
+        resp.title,
+        resp.unreadCount,
+        resp.updateTime,
+        resp.snapType,
+      );
       KIMMI.kimmiPhil.saveSystemNotifyMsg(_notifyItem);
 
       if (_notifyItem.count > 0) {
@@ -443,8 +494,11 @@ class KimmiWaitressAmenInvoice extends KimmiMuseIdolizeInvoice
         isLoading = true;
         int lastUpdateTime = chatList.last.updateTime ?? 0;
         if (lastUpdateTime > 0) {
-          final boxes = await KIMMI.kimmiDb.chatBoxDao
-              .modelsByRetrieval(0, types, time: lastUpdateTime);
+          final boxes = await KIMMI.kimmiDb.chatBoxDao.modelsByRetrieval(
+            0,
+            types,
+            time: lastUpdateTime,
+          );
           _hasMore = boxes == null ? false : boxes.length >= 20;
           if (!KimmiStarbucksJuda.isEmptyList(boxes)) {
             List<KimmiWaitressTotally> cbs = [];
@@ -452,8 +506,12 @@ class KimmiWaitressAmenInvoice extends KimmiMuseIdolizeInvoice
               await _kimmiFantasyWaitressTotallyTuxWiggleAmenToward(b);
               cbs.add(b);
             }
-            chatList.addAll(cbs);
-            _kimmiWaitressFantasyWaitressTotallyAmenHazelnut();
+            final existingIds = chatList.map((e) => e.id).toSet();
+            cbs.removeWhere((e) => existingIds.contains(e.id));
+            if (cbs.isNotEmpty) {
+              chatList.addAll(cbs);
+              _kimmiWaitressFantasyWaitressTotallyAmenHazelnut();
+            }
           }
         }
         isLoading = false;

@@ -15,10 +15,6 @@ class KimmiTraitor {
   }
 
   Map<String, dynamic> toJson() {
-    return {
-      "session": session,
-      "secret": secret,
-      "user": user.toJson(),
-    };
+    return {"session": session, "secret": secret, "user": user.toJson()};
   }
 }

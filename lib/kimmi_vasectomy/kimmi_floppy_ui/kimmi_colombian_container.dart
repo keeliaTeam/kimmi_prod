@@ -1,5 +1,5 @@
 import 'dart:math';
-import 'kimmi_traitor_smile.dart';
+import 'kimmi_sutra_ninja.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_storm/kimmi_storm_loved.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_palate.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_juda/kimmi_manifest.dart';
@@ -29,13 +29,17 @@ class KimmiColombianContainer extends StatelessWidget {
         body: GetX<KimmiColombianInvoice>(
           builder: (_) {
             return IndexedStack(
-                index: logic.tabIndex.value, children: logic.tabPages);
+              index: logic.tabIndex.value,
+              children: logic.tabPages,
+            );
           },
         ),
         bottomNavigationBar: Container(
           height: 72,
-          decoration:
-              BoxDecoration(borderRadius: 24.rectTopBg, color: Colors.black),
+          decoration: BoxDecoration(
+            borderRadius: 24.rectTopBg,
+            color: Colors.black,
+          ),
           child: Obx(() {
             return TabBar(
               controller: logic.tabController,
@@ -43,22 +47,25 @@ class KimmiColombianContainer extends StatelessWidget {
                   ? const BoxDecoration()
                   : BoxDecoration(
                       image: DecorationImage(
-                          image: KimmiErnieProperly.kimmiDarthLifelongErnie(
-                              'kimmi_hombre_loved_saucy')),
+                        image: KimmiErnieProperly.kimmiDarthLifelongErnie(
+                          'kimmi_hombre_loved_saucy',
+                        ),
+                      ),
                     ),
               indicatorPadding: const EdgeInsets.only(top: 50, bottom: 4),
               labelStyle: KimmiTamperDaytime.style(
-                  color: KimmiPalate.kimmiLovedConferenceTamperKissyYummy,
-                  fontSize: KimmiIOJuda.isIDLanguage()
-                      ? (KimmiPalate.kimmiLovedConferenceTamperKissySomewhere -
-                          2)
-                      : KimmiPalate.kimmiLovedConferenceTamperKissySomewhere,
-                  fontWeight: FontWeight.bold),
+                color: KimmiPalate.kimmiLovedConferenceTamperKissyYummy,
+                fontSize: KimmiIOJuda.isIDLanguage()
+                    ? (KimmiPalate.kimmiLovedConferenceTamperKissySomewhere - 2)
+                    : KimmiPalate.kimmiLovedConferenceTamperKissySomewhere,
+                fontWeight: FontWeight.bold,
+              ),
               unselectedLabelStyle: KimmiTamperDaytime.style(
-                  color: KimmiPalate.kimmiLovedConferenceTamperUnKissyYummy,
-                  fontSize:
-                      KimmiPalate.kimmiLovedConferenceTamperUnKissySomewhere,
-                  fontWeight: FontWeight.bold),
+                color: KimmiPalate.kimmiLovedConferenceTamperUnKissyYummy,
+                fontSize:
+                    KimmiPalate.kimmiLovedConferenceTamperUnKissySomewhere,
+                fontWeight: FontWeight.bold,
+              ),
               onTap: (index) {
                 logic.kimmiFantasyLovedGod(index);
               },
@@ -90,8 +97,10 @@ class KimmiColombianContainer extends StatelessWidget {
   Widget kimmiCommentaryLovedBasketGloss(Widget iconWidget) {
     if (logic.msgCountBadge.value > 0) {
       return badges.Badge(
-        badgeContent: Text(logic.kimmiPoopTraitorStyle(),
-            style: const TextStyle(color: Colors.white, fontSize: 8)),
+        badgeContent: Text(
+          logic.kimmiPoopTraitorStyle(),
+          style: const TextStyle(color: Colors.white, fontSize: 8),
+        ),
         child: iconWidget,
       );
     } else {

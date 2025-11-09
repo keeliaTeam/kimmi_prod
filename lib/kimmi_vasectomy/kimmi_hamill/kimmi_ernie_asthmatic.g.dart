@@ -11,10 +11,7 @@ class KimmiErnieAsthmaticDecode extends _KimmiErnieAsthmaticDecode {
   static KimmiErnieAsthmaticDecode fromDynamic(
     dynamic map, {
     JsonWidgetRegistry? registry,
-  }) =>
-      KimmiErnieAsthmaticDecode(
-        args: map,
-      );
+  }) => KimmiErnieAsthmaticDecode(args: map);
 
   @override
   KimmiErnieAsthmaticDecodeStorm createModel({
@@ -36,18 +33,17 @@ class KimmiErnieAsthmaticDecode extends _KimmiErnieAsthmaticDecode {
     required JsonWidgetData data,
     Key? key,
   }) {
-    final model = createModel(
-      childBuilder: childBuilder,
-      data: data,
-    );
+    final model = createModel(childBuilder: childBuilder, data: data);
 
     return KimmiErnieAsthmatic(
       borderRadius: model.borderRadius,
       color: model.color,
       fit: model.fit,
       height: model.height,
+      highlightColor: model.highlightColor,
       key: key,
       onTap: model.onTap,
+      splashColor: model.splashColor,
       url: model.url,
       width: model.width,
     );
@@ -62,42 +58,48 @@ class JsonKimmiErnieAsthmatic extends JsonWidgetData {
     this.color = Colors.transparent,
     this.fit = BoxFit.contain,
     this.height,
+    this.highlightColor,
     this.onTap,
+    this.splashColor,
     required this.url,
     this.width,
   }) : super(
-          jsonWidgetArgs: KimmiErnieAsthmaticDecodeStorm.fromDynamic(
-            {
-              'borderRadius': borderRadius,
-              'color': color,
-              'fit': fit,
-              'height': height,
-              'onTap': onTap,
-              'url': url,
-              'width': width,
-              ...args,
-            },
-            args: args,
-            registry: registry,
-          ),
-          jsonWidgetBuilder: () => KimmiErnieAsthmaticDecode(
-            args: KimmiErnieAsthmaticDecodeStorm.fromDynamic(
-              {
-                'borderRadius': borderRadius,
-                'color': color,
-                'fit': fit,
-                'height': height,
-                'onTap': onTap,
-                'url': url,
-                'width': width,
-                ...args,
-              },
-              args: args,
-              registry: registry,
-            ),
-          ),
-          jsonWidgetType: KimmiErnieAsthmaticDecode.kType,
-        );
+         jsonWidgetArgs: KimmiErnieAsthmaticDecodeStorm.fromDynamic(
+           {
+             'borderRadius': borderRadius,
+             'color': color,
+             'fit': fit,
+             'height': height,
+             'highlightColor': highlightColor,
+             'onTap': onTap,
+             'splashColor': splashColor,
+             'url': url,
+             'width': width,
+             ...args,
+           },
+           args: args,
+           registry: registry,
+         ),
+         jsonWidgetBuilder: () => KimmiErnieAsthmaticDecode(
+           args: KimmiErnieAsthmaticDecodeStorm.fromDynamic(
+             {
+               'borderRadius': borderRadius,
+               'color': color,
+               'fit': fit,
+               'height': height,
+               'highlightColor': highlightColor,
+               'onTap': onTap,
+               'splashColor': splashColor,
+               'url': url,
+               'width': width,
+               ...args,
+             },
+             args: args,
+             registry: registry,
+           ),
+         ),
+         jsonWidgetType: KimmiErnieAsthmaticDecode.kType,
+       );
 
   final BorderRadius? borderRadius;
 
@@ -107,7 +109,11 @@ class JsonKimmiErnieAsthmatic extends JsonWidgetData {
 
   final double? height;
 
+  final Color? highlightColor;
+
   final void Function()? onTap;
+
+  final Color? splashColor;
 
   final String url;
 
@@ -122,7 +128,9 @@ class KimmiErnieAsthmaticDecodeStorm extends JsonWidgetBuilderModel {
     this.color = Colors.transparent,
     this.fit = BoxFit.contain,
     this.height,
+    this.highlightColor,
     this.onTap,
+    this.splashColor,
     required this.url,
     this.width,
   });
@@ -135,7 +143,11 @@ class KimmiErnieAsthmaticDecodeStorm extends JsonWidgetBuilderModel {
 
   final double? height;
 
+  final Color? highlightColor;
+
   final void Function()? onTap;
+
+  final Color? splashColor;
 
   final String url;
 
@@ -146,11 +158,7 @@ class KimmiErnieAsthmaticDecodeStorm extends JsonWidgetBuilderModel {
     Map<String, dynamic> args = const {},
     JsonWidgetRegistry? registry,
   }) {
-    final result = maybeFromDynamic(
-      map,
-      args: args,
-      registry: registry,
-    );
+    final result = maybeFromDynamic(map, args: args, registry: registry);
 
     if (result == null) {
       throw Exception(
@@ -170,10 +178,7 @@ class KimmiErnieAsthmaticDecodeStorm extends JsonWidgetBuilderModel {
 
     if (map != null) {
       if (map is String) {
-        map = yaon.parse(
-          map,
-          normalize: true,
-        );
+        map = yaon.parse(map, normalize: true);
       }
 
       if (map is KimmiErnieAsthmaticDecodeStorm) {
@@ -218,7 +223,23 @@ class KimmiErnieAsthmaticDecodeStorm extends JsonWidgetBuilderModel {
 
             return parsed;
           }(),
+          highlightColor: () {
+            dynamic parsed = ThemeDecoder.decodeColor(
+              map['highlightColor'],
+              validate: false,
+            );
+
+            return parsed;
+          }(),
           onTap: map['onTap'],
+          splashColor: () {
+            dynamic parsed = ThemeDecoder.decodeColor(
+              map['splashColor'],
+              validate: false,
+            );
+
+            return parsed;
+          }(),
           url: map['url'],
           width: () {
             dynamic parsed = JsonClass.maybeParseDouble(map['width']);
@@ -235,21 +256,15 @@ class KimmiErnieAsthmaticDecodeStorm extends JsonWidgetBuilderModel {
   @override
   Map<String, dynamic> toJson() {
     return JsonClass.removeNull({
-      'borderRadius': ThemeEncoder.encodeBorderRadius(
-        borderRadius,
-      ),
+      'borderRadius': ThemeEncoder.encodeBorderRadius(borderRadius),
       'color': Colors.transparent == color
           ? null
-          : ThemeEncoder.encodeColor(
-              color,
-            ),
-      'fit': BoxFit.contain == fit
-          ? null
-          : ThemeEncoder.encodeBoxFit(
-              fit,
-            ),
+          : ThemeEncoder.encodeColor(color),
+      'fit': BoxFit.contain == fit ? null : ThemeEncoder.encodeBoxFit(fit),
       'height': height,
+      'highlightColor': ThemeEncoder.encodeColor(highlightColor),
       'onTap': onTap,
+      'splashColor': ThemeEncoder.encodeColor(splashColor),
       'url': url,
       'width': width,
       ...args,
@@ -272,9 +287,12 @@ class KimmiErnieAsthmaticMobster {
       'color': SchemaHelper.objectSchema(ColorSchema.id),
       'fit': SchemaHelper.objectSchema(BoxFitSchema.id),
       'height': SchemaHelper.numberSchema,
+      'highlightColor': SchemaHelper.objectSchema(ColorSchema.id),
       'onTap': SchemaHelper.anySchema,
+      'splashColor': SchemaHelper.objectSchema(ColorSchema.id),
       'url': SchemaHelper.stringSchema,
       'width': SchemaHelper.numberSchema,
     },
+    'required': ['url'],
   };
 }

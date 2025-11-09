@@ -21,7 +21,8 @@ class KimmiWaitressExpensiveCalculusDensity {
           group.isBeyondTimeInterval(s.createTime ?? 0) ||
           (moreFirstSnap != null && s == moreFirstSnap)) {
         group = KimmiWaitressExpensiveCalculusDensity(
-            ChatDateItem(s.createTime ?? 0));
+          ChatDateItem(s.createTime ?? 0),
+        );
         ret.add(group);
       }
       group.snaps.add(s);

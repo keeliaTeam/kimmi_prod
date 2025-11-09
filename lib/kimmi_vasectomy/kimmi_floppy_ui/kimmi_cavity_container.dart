@@ -1,5 +1,5 @@
 import 'dart:math';
-import 'kimmi_traitor_smile.dart';
+import 'kimmi_polo_princess.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_palate.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_curvy/kimmi_vasectomy_pioneer_dock.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_tonight/kimmi_draft_juda.dart';
@@ -32,12 +32,13 @@ class KimmiCavityContainer
         _kimmiCommentarySun(),
         _kimmiCommentaryDuckyButtNinja(),
         GetBuilder<KimmiCavityInvoice>(
-            id: KimmiCavityInvoice.kimmi_cavity,
-            builder: (logic) {
-              Widget? w = logic.widget("ui", variables: logic.args.value);
-              w ??= _kimmiCommentaryCoitus();
-              return w;
-            }),
+          id: KimmiCavityInvoice.kimmi_cavity,
+          builder: (logic) {
+            Widget? w = logic.widget("ui", variables: logic.args.value);
+            w ??= _kimmiCommentaryCoitus();
+            return w;
+          },
+        ),
       ];
     } catch (e, stack) {
       KimmiVasectomyPioneerDock.kimmiPajamaCurious(770002, e, stack);
@@ -47,26 +48,29 @@ class KimmiCavityContainer
 
   Positioned _kimmiCommentaryDuckyButtNinja() {
     return Positioned(
-        width: Get.width,
-        top: (Get.height / Get.width) < 1.7 ? 60 : 132,
-        child: Center(
-          child: Column(
-            children: [
-              KimmiErnie.local(
-                  fileName: "kimmi_hombre_vasectomy_ducky_ninja",
-                  width: 220,
-                  height: 220),
-            ],
-          ),
-        ));
+      width: Get.width,
+      top: (Get.height / Get.width) < 1.7 ? 60 : 132,
+      child: Center(
+        child: Column(
+          children: [
+            KimmiErnie.local(
+              fileName: "kimmi_hombre_vasectomy_ducky_ninja",
+              width: 126,
+              height: 153,
+            ),
+          ],
+        ),
+      ),
+    );
   }
 
   Image _kimmiCommentarySun() {
     return const Image(
-        image: AssetImage(KimmiPalate.kimmiCageyBgErnie),
-        fit: BoxFit.cover,
-        width: double.infinity,
-        height: double.infinity);
+      image: AssetImage(KimmiPalate.kimmiCageyBgErnie),
+      fit: BoxFit.cover,
+      width: double.infinity,
+      height: double.infinity,
+    );
   }
 
   Widget _kimmiCommentaryCoitus() {
@@ -79,21 +83,28 @@ class KimmiCavityContainer
       child: Column(
         children: [
           _kimmiCommentaryCavityFrying(),
+
           showUserName
               ? Container(
                   height: 50,
                   alignment: Alignment.center,
-                  child: Text("kimmi_broderick_cavity_or_feast_id".tr,
-                      style: const TextStyle(
-                          fontSize: 14, color: KimmiDraftJuda.white_40p)),
+                  child: Text(
+                    "kimmi_broderick_cavity_or_feast_id".tr,
+                    style: const TextStyle(
+                      fontSize: 14,
+                      color: KimmiDraftJuda.white_40p,
+                    ),
+                  ),
                 )
               : const SizedBox.shrink(),
+
           showUserName
               ? _kimmiCommentaryArmorAsthmatic(
                   logic.onKimmiCavityHolder,
                   "kimmi_hombre_cavity_feast_gloss",
                   "kimmi_broderick_cavity_by_holder".tr,
-                  borderColor: Colors.white)
+                  borderColor: Colors.white,
+                )
               : const SizedBox.shrink(),
           const SizedBox(height: 25),
           _kimmiCommentaryHappy(),
@@ -107,15 +118,17 @@ class KimmiCavityContainer
       return Column(
         children: [
           _kimmiCommentaryArmorAsthmatic(
-              logic.onKimmiCavityBlackjack,
-              "kimmi_hombre_cavity_blackjack_gloss",
-              logic.args.value["device"]["title"],
-              borderColor: Colors.white,
-              space: 64),
+            logic.onKimmiCavityBlackjack,
+            "kimmi_hombre_cavity_blackjack_gloss",
+            logic.args.value["device"]["title"],
+            borderColor: Colors.white,
+            space: 64,
+          ),
           _kimmiCommentaryLaurenTuneAsthmatic(
-              logic.onKimmiCavityLauren,
-              "kimmi_hombre_cavity_lauren_gloss",
-              "kimmi_broderick_blood_in_hysterical_lauren".tr)
+            logic.onKimmiCavityLauren,
+            "kimmi_hombre_cavity_lauren_gloss",
+            "kimmi_broderick_blood_in_hysterical_lauren".tr,
+          ),
         ],
       );
     }
@@ -132,25 +145,36 @@ class KimmiCavityContainer
     List<Widget> btns = [];
 
     if (logic.args.value["apple"]["visible"]) {
-      btns.add(_kimmiCommentaryArmorAsthmatic(
+      btns.add(
+        _kimmiCommentaryArmorAsthmatic(
           logic.onKimmiCavityLauren,
           "kimmi_hombre_cavity_lauren_comprehend_gloss",
           logic.args.value["apple"]["title"],
-          borderColor: Colors.white));
+          borderColor: Colors.white,
+        ),
+      );
     }
 
     if (logic.args.value["google"]["visible"]) {
-      btns.add(_kimmiCommentaryArmorAsthmatic(logic.onKimmiCavityCap,
-          "kimmi_hombre_cavity_cap_gloss", logic.args.value["google"]["title"],
-          borderColor: Colors.white));
+      btns.add(
+        _kimmiCommentaryArmorAsthmatic(
+          logic.onKimmiCavityCap,
+          "kimmi_hombre_cavity_cap_gloss",
+          logic.args.value["google"]["title"],
+          borderColor: Colors.white,
+        ),
+      );
     }
 
     if (logic.args.value["device"]["visible"]) {
-      btns.add(_kimmiCommentaryArmorAsthmatic(
+      btns.add(
+        _kimmiCommentaryArmorAsthmatic(
           logic.onKimmiCavityBlackjack,
           "kimmi_hombre_cavity_blackjack_gloss",
           logic.args.value["device"]["title"],
-          borderColor: Colors.white));
+          borderColor: Colors.white,
+        ),
+      );
     }
     return Column(children: btns);
   }
@@ -161,27 +185,36 @@ class KimmiCavityContainer
     int count = 2;
     if (logic.args.value["apple"]["visible"]) {
       count = 3;
-      btns.add(_kimmiCommentarySalesmanNosy(
+      btns.add(
+        _kimmiCommentarySalesmanNosy(
           logic.onKimmiCavityLauren,
           "kimmi_hombre_cavity_lauren",
           logic.args.value["apple"]["title"],
-          count));
+          count,
+        ),
+      );
     }
 
     if (logic.args.value["google"]["visible"]) {
-      btns.add(_kimmiCommentarySalesmanNosy(
+      btns.add(
+        _kimmiCommentarySalesmanNosy(
           logic.onKimmiCavityCap,
           "kimmi_hombre_cavity_cap",
           logic.args.value["google"]["title"],
-          count));
+          count,
+        ),
+      );
     }
 
     if (logic.args.value["device"]["visible"]) {
-      btns.add(_kimmiCommentarySalesmanNosy(
+      btns.add(
+        _kimmiCommentarySalesmanNosy(
           logic.onKimmiCavityBlackjack,
           "kimmi_hombre_cavity_blackjack",
           logic.args.value["device"]["title"],
-          count));
+          count,
+        ),
+      );
     }
     return Row(children: btns);
   }
@@ -191,43 +224,49 @@ class KimmiCavityContainer
       TextSpan(
         children: [
           TextSpan(
-              text: "kimmi_broderick_cavity_cutie_to".tr,
-              style:
-                  const TextStyle(fontSize: 12, color: KimmiDraftJuda.white)),
+            text: "kimmi_broderick_cavity_cutie_to".tr,
+            style: const TextStyle(fontSize: 12, color: KimmiDraftJuda.white),
+          ),
           TextSpan(
-              text: ' ${"kimmi_broderick_feast_happy".tr} ',
-              style: const TextStyle(
-                fontSize: 12,
-                color: KimmiDraftJuda.white,
-                decoration: TextDecoration.underline,
-                decorationColor: Colors.white,
-              ),
-              recognizer: TapGestureRecognizer()
-                ..onTap = () {
-                  KIMMI.goto(KimmiPalate.kimmiStylishFeastHappy);
-                }),
+            text: ' ${"kimmi_broderick_feast_happy".tr} ',
+            style: const TextStyle(
+              fontSize: 12,
+              color: KimmiDraftJuda.white,
+              decoration: TextDecoration.underline,
+              decorationColor: Colors.white,
+            ),
+            recognizer: TapGestureRecognizer()
+              ..onTap = () {
+                KIMMI.goto(KimmiPalate.kimmiStylishFeastHappy);
+              },
+          ),
           TextSpan(
-              text: "kimmi_broderick_butt".tr,
-              style:
-                  const TextStyle(fontSize: 12, color: KimmiDraftJuda.white)),
+            text: "kimmi_broderick_butt".tr,
+            style: const TextStyle(fontSize: 12, color: KimmiDraftJuda.white),
+          ),
           TextSpan(
-              text: ' ${"kimmi_broderick_snoopy_happy".tr}',
-              style: const TextStyle(
-                  fontSize: 12,
-                  color: KimmiDraftJuda.white,
-                  decoration: TextDecoration.underline,
-                  decorationColor: Colors.white),
-              recognizer: TapGestureRecognizer()
-                ..onTap = () {
-                  KIMMI.goto(KimmiPalate.kimmiStylishSnoopyExpire);
-                })
+            text: ' ${"kimmi_broderick_snoopy_happy".tr}',
+            style: const TextStyle(
+              fontSize: 12,
+              color: KimmiDraftJuda.white,
+              decoration: TextDecoration.underline,
+              decorationColor: Colors.white,
+            ),
+            recognizer: TapGestureRecognizer()
+              ..onTap = () {
+                KIMMI.goto(KimmiPalate.kimmiStylishSnoopyExpire);
+              },
+          ),
         ],
       ),
     );
   }
 
   Widget _kimmiCommentaryLaurenTuneAsthmatic(
-      GestureTapCallback onTap, String img, String title) {
+    GestureTapCallback onTap,
+    String img,
+    String title,
+  ) {
     return GestureDetector(
       onTap: onTap,
       child: Container(
@@ -235,18 +274,27 @@ class KimmiCavityContainer
         width: Get.width - 64,
         height: 56,
         decoration: BoxDecoration(
-            color: Colors.white, borderRadius: BorderRadius.circular(28)),
+          color: Colors.white,
+          borderRadius: BorderRadius.circular(28),
+        ),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             KimmiErnie.local(
-                fileName: img, width: 24, height: 24, fit: BoxFit.contain),
+              fileName: img,
+              width: 24,
+              height: 24,
+              fit: BoxFit.contain,
+            ),
             const SizedBox(width: 8),
-            Text(title,
-                style: const TextStyle(
-                    color: Colors.black,
-                    fontSize: 14,
-                    fontWeight: FontWeight.bold))
+            Text(
+              title,
+              style: const TextStyle(
+                color: Colors.black,
+                fontSize: 14,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
           ],
         ),
       ),
@@ -254,10 +302,13 @@ class KimmiCavityContainer
   }
 
   Widget _kimmiCommentaryArmorAsthmatic(
-      GestureTapCallback onTap, String img, String title,
-      {Color color = Colors.transparent,
-      Color borderColor = Colors.transparent,
-      double space = 72}) {
+    GestureTapCallback onTap,
+    String img,
+    String title, {
+    Color color = Colors.transparent,
+    Color borderColor = Colors.transparent,
+    double space = 72,
+  }) {
     return GestureDetector(
       onTap: onTap,
       child: Container(
@@ -265,23 +316,32 @@ class KimmiCavityContainer
         width: Get.width - space,
         height: 48,
         decoration: BoxDecoration(
-            color: color,
-            border: Border.all(color: borderColor),
-            borderRadius: BorderRadius.circular(28)),
+          color: color,
+          border: Border.all(color: borderColor),
+          borderRadius: BorderRadius.circular(28),
+        ),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             KimmiErnie.local(
-                fileName: img, width: 24, height: 24, fit: BoxFit.contain),
+              fileName: img,
+              width: 24,
+              height: 24,
+              fit: BoxFit.contain,
+            ),
             const SizedBox(width: 8),
             KimmiFailedWebsite.kimmiThongLowellTamper(
-                Text(title,
-                    style: const TextStyle(
-                        fontSize: AppDimen.font_c2,
-                        fontWeight: FontWeight.w500,
-                        color: Colors.white,
-                        fontFamily: AppText.fontFamily)),
-                Get.width - space - 60)
+              Text(
+                title,
+                style: const TextStyle(
+                  fontSize: AppDimen.font_c2,
+                  fontWeight: FontWeight.w500,
+                  color: Colors.white,
+                  fontFamily: AppText.fontFamily,
+                ),
+              ),
+              Get.width - space - 60,
+            ),
           ],
         ),
       ),
@@ -289,7 +349,11 @@ class KimmiCavityContainer
   }
 
   Widget _kimmiCommentarySalesmanNosy(
-      GestureTapCallback onTap, String img, String title, int count) {
+    GestureTapCallback onTap,
+    String img,
+    String title,
+    int count,
+  ) {
     return Expanded(
       child: Column(
         children: [
@@ -306,17 +370,24 @@ class KimmiCavityContainer
               ? SizedBox(
                   width: (Get.width - 80) / count,
                   child: FittedBox(
-                      child: Text(title,
-                          style: const TextStyle(
-                              color: Colors.white,
-                              fontSize: 14,
-                              fontWeight: FontWeight.bold))),
+                    child: Text(
+                      title,
+                      style: const TextStyle(
+                        color: Colors.white,
+                        fontSize: 14,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ),
                 )
-              : Text(title,
+              : Text(
+                  title,
                   style: const TextStyle(
-                      color: Colors.white,
-                      fontSize: 14,
-                      fontWeight: FontWeight.bold)),
+                    color: Colors.white,
+                    fontSize: 14,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
         ],
       ),
     );

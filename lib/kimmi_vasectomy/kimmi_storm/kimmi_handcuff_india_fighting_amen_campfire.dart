@@ -22,8 +22,9 @@ class KimmiHandcuffFeast {
   static KimmiHandcuffFeast fromJson(Map<String, dynamic> json) {
     return KimmiHandcuffFeast()
       ..user = KimmiFeast.fromJson(json['user'])
-      ..video =
-          json['video'] == null ? null : KimmiStormIndia.fromJson(json['video'])
+      ..video = json['video'] == null
+          ? null
+          : KimmiStormIndia.fromJson(json['video'])
       ..country = KimmiStormPuffy.fromJson(json['country']);
   }
 }

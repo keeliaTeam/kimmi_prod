@@ -9,9 +9,7 @@ part 'kimmi_mile_ernie.g.dart';
 
 @jsonWidget
 abstract class _KimmiMileErnieDecode extends JsonWidgetBuilder {
-  const _KimmiMileErnieDecode({
-    required super.args,
-  });
+  const _KimmiMileErnieDecode({required super.args});
 
   @override
   KimmiMileErnie buildCustom({
@@ -23,16 +21,17 @@ abstract class _KimmiMileErnieDecode extends JsonWidgetBuilder {
 }
 
 class KimmiMileErnie extends StatelessWidget {
-  const KimmiMileErnie(
-      {super.key,
-      required this.url,
-      this.color,
-      this.height,
-      this.width,
-      this.fit,
-      this.borderRadius,
-      this.shape,
-      this.type});
+  const KimmiMileErnie({
+    super.key,
+    required this.url,
+    this.color,
+    this.height,
+    this.width,
+    this.fit,
+    this.borderRadius,
+    this.shape,
+    this.type,
+  });
 
   final Color? color;
   final double? height;
@@ -46,11 +45,13 @@ class KimmiMileErnie extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     if (url.endsWith(".pag")) {
-      return KimmiWhipUneven(url,
-          width: width,
-          height: height,
-          autoPlay: true,
-          repeatCount: PAGView.REPEAT_COUNT_LOOP);
+      return KimmiWhipUneven(
+        url,
+        width: width,
+        height: height,
+        autoPlay: true,
+        repeatCount: PAGView.REPEAT_COUNT_LOOP,
+      );
     } else {
       if (url.startsWith("http")) {
         return KimmiErnie.network(
@@ -63,11 +64,19 @@ class KimmiMileErnie extends StatelessWidget {
 
       if (url.startsWith("/")) {
         return KimmiErnie.file(
-            fileName: url, width: width, height: height, fit: fit);
+          fileName: url,
+          width: width,
+          height: height,
+          fit: fit,
+        );
       }
 
       return KimmiErnie.local(
-          fileName: url, width: width, height: height, fit: fit);
+        fileName: url,
+        width: width,
+        height: height,
+        fit: fit,
+      );
     }
   }
 }

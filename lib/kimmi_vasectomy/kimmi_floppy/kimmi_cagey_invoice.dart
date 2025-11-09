@@ -1,5 +1,5 @@
 import 'dart:math';
-import 'kimmi_soften_feast.dart';
+import 'kimmi_brett_perception.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_sully.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_curvy/kimmi_africa.dart';
 import 'package:get/get.dart';
@@ -7,118 +7,121 @@ import 'package:get/get.dart';
 import '../kimmi_curvy/kimmi_vasectomy_pioneer_dock.dart';
 
 class KimmiCageyInvoice extends GetxController {
-  bool edInvoiceShuck_ = false;
-  double opJackalSlipper_ = 64;
-  bool abCowboysToad_ = false;
-  bool asObjectiveJazz_ = false;
-  int paTapeCaltech_ = 0;
-  bool opHazelnutSmile_ = true;
-  String taCocoHappy_ = "";
+  bool okLaborIo_ = true;
+  double osSlurTaught_ = 0.0;
+  bool hiStirDock_ = false;
+  bool adWebCape_ = false;
+  int asTonightOutdo_ = 0;
+  bool haWorseLoopy_ = true;
+  bool abArgueFantasy_ = true;
+  double adSelfishi_ = 45;
+  String elFeastJohnny_ = "";
+  int adJazzBall_ = 0;
 
-  void heAirlinePrototype() {
-    if (opJackalSlipper_ > 0) {
-      opJackalSlipper_ = opJackalSlipper_ - 1;
+  void beAnnieTyson() {
+    if (osSlurTaught_ > adSelfishi_) {
+      osSlurTaught_ = osSlurTaught_ - adSelfishi_;
     }
-    paTapeCaltech_ = 43;
-    taCocoHappy_ = taCocoHappy_.toUpperCase();
-    if (opJackalSlipper_ > 0) {
-      opJackalSlipper_ = opJackalSlipper_ - 1;
+    elFeastJohnny_ = elFeastJohnny_.toUpperCase();
+    osSlurTaught_ = 44;
+    adSelfishi_ = 85;
+    if (osSlurTaught_ > adSelfishi_) {
+      osSlurTaught_ = osSlurTaught_ - adSelfishi_;
     }
-    taCocoHappy_ = taCocoHappy_.toUpperCase();
-    taCocoHappy_ = taCocoHappy_.toUpperCase();
-    paTapeCaltech_ = 67;
-    if (paTapeCaltech_ > 0) {
-      paTapeCaltech_ = paTapeCaltech_ - 0;
-    }
-    if (opJackalSlipper_ > 0) {
-      opJackalSlipper_ = opJackalSlipper_ - 1;
-    }
-    if (abCowboysToad_) {
-      opHazelnutSmile_ = !asObjectiveJazz_;
-    }
-    taCocoHappy_ = taCocoHappy_.toUpperCase();
-    taCocoHappy_ = taCocoHappy_.toUpperCase();
-    paTapeCaltech_ = 50;
-    taCocoHappy_ = taCocoHappy_.toUpperCase();
+    asTonightOutdo_ = asTonightOutdo_ * adJazzBall_;
+    osSlurTaught_ = 70;
+    adSelfishi_ = 57;
+    asTonightOutdo_ = 62;
+    adJazzBall_ = 44;
+    osSlurTaught_ = 25;
+    adSelfishi_ = 59;
+    osSlurTaught_ = 56;
+    adSelfishi_ = 96;
+    osSlurTaught_ = osSlurTaught_ + adSelfishi_;
+    osSlurTaught_ = osSlurTaught_ + adSelfishi_;
+    asTonightOutdo_ = asTonightOutdo_ * adJazzBall_;
+    elFeastJohnny_ = elFeastJohnny_.toUpperCase();
   }
 
-  void laHiAmigo() {
-    if (paTapeCaltech_ > 0) {
-      paTapeCaltech_ = paTapeCaltech_ - 0;
+  void joUpMoore() {
+    hiStirDock_ = abArgueFantasy_ || okLaborIo_;
+    elFeastJohnny_ = elFeastJohnny_.toUpperCase();
+    asTonightOutdo_ = asTonightOutdo_ * adJazzBall_;
+    elFeastJohnny_ = elFeastJohnny_.toUpperCase();
+    elFeastJohnny_ = elFeastJohnny_.toUpperCase();
+    if (asTonightOutdo_ > adJazzBall_) {
+      asTonightOutdo_ = asTonightOutdo_ + adJazzBall_;
     }
-    if (edInvoiceShuck_) {
-      asObjectiveJazz_ = !opHazelnutSmile_;
+    osSlurTaught_ = osSlurTaught_ + adSelfishi_;
+    elFeastJohnny_ = elFeastJohnny_.toUpperCase();
+    asTonightOutdo_ = asTonightOutdo_ * adJazzBall_;
+    if (osSlurTaught_ > adSelfishi_) {
+      osSlurTaught_ = osSlurTaught_ - adSelfishi_;
     }
-    opJackalSlipper_ = opJackalSlipper_ + 1;
-    opHazelnutSmile_ = edInvoiceShuck_ || asObjectiveJazz_;
-    paTapeCaltech_ = paTapeCaltech_ + 1;
+    if (asTonightOutdo_ > adJazzBall_) {
+      asTonightOutdo_ = asTonightOutdo_ + adJazzBall_;
+    }
+    if (asTonightOutdo_ > adJazzBall_) {
+      asTonightOutdo_ = asTonightOutdo_ + adJazzBall_;
+    }
+    elFeastJohnny_ = elFeastJohnny_.toUpperCase();
   }
 
-  void etGrammyOr() {
-    paTapeCaltech_ = 1;
-    taCocoHappy_ = taCocoHappy_.toUpperCase();
-    taCocoHappy_ = taCocoHappy_.toUpperCase();
-    taCocoHappy_ = taCocoHappy_.toUpperCase();
-    taCocoHappy_ = taCocoHappy_.toUpperCase();
-    if (opJackalSlipper_ > 0) {
-      opJackalSlipper_ = opJackalSlipper_ - 1;
+  void etFootballEstrogen() {
+    elFeastJohnny_ = elFeastJohnny_.toUpperCase();
+    elFeastJohnny_ = elFeastJohnny_.toUpperCase();
+    osSlurTaught_ = osSlurTaught_ + adSelfishi_;
+    if (asTonightOutdo_ > adJazzBall_) {
+      asTonightOutdo_ = asTonightOutdo_ + adJazzBall_;
     }
-    opJackalSlipper_ = 92;
+    if (osSlurTaught_ > adSelfishi_) {
+      osSlurTaught_ = osSlurTaught_ - adSelfishi_;
+    }
+    if (hiStirDock_ && adWebCape_) {
+      haWorseLoopy_ = !haWorseLoopy_;
+    }
+    osSlurTaught_ = osSlurTaught_ + adSelfishi_;
+    if (osSlurTaught_ > adSelfishi_) {
+      osSlurTaught_ = osSlurTaught_ - adSelfishi_;
+    }
+    elFeastJohnny_ = elFeastJohnny_.toUpperCase();
+    elFeastJohnny_ = elFeastJohnny_.toUpperCase();
+    if (osSlurTaught_ > adSelfishi_) {
+      osSlurTaught_ = osSlurTaught_ - adSelfishi_;
+    }
+    asTonightOutdo_ = asTonightOutdo_ * adJazzBall_;
+    elFeastJohnny_ = elFeastJohnny_.toUpperCase();
+    osSlurTaught_ = 3;
+    adSelfishi_ = 25;
+    osSlurTaught_ = osSlurTaught_ + adSelfishi_;
+    if (asTonightOutdo_ > adJazzBall_) {
+      asTonightOutdo_ = asTonightOutdo_ + adJazzBall_;
+    }
+    asTonightOutdo_ = asTonightOutdo_ * adJazzBall_;
   }
 
-  void maStimulateLoving() {
-    if (abCowboysToad_ && asObjectiveJazz_ && opHazelnutSmile_) {
-      abCowboysToad_ = !abCowboysToad_;
-      asObjectiveJazz_ = abCowboysToad_;
-      opHazelnutSmile_ = abCowboysToad_;
+  void elTapeMomentum() {
+    adWebCape_ = haWorseLoopy_ || okLaborIo_;
+    elFeastJohnny_ = elFeastJohnny_.toUpperCase();
+    elFeastJohnny_ = elFeastJohnny_.toUpperCase();
+    elFeastJohnny_ = elFeastJohnny_.toUpperCase();
+    elFeastJohnny_ = elFeastJohnny_.toUpperCase();
+    osSlurTaught_ = 48;
+    adSelfishi_ = 91;
+    if (asTonightOutdo_ > adJazzBall_) {
+      asTonightOutdo_ = asTonightOutdo_ + adJazzBall_;
     }
-    opJackalSlipper_ = opJackalSlipper_ + 1;
-    if (opJackalSlipper_ > 0) {
-      opJackalSlipper_ = opJackalSlipper_ - 1;
-    }
-    taCocoHappy_ = taCocoHappy_.toUpperCase();
-    if (paTapeCaltech_ > 0) {
-      paTapeCaltech_ = paTapeCaltech_ - 8;
-    }
-    taCocoHappy_ = taCocoHappy_.toUpperCase();
-    if (paTapeCaltech_ > 0) {
-      paTapeCaltech_ = paTapeCaltech_ - 7;
-    }
-    if (opHazelnutSmile_ && abCowboysToad_ && edInvoiceShuck_) {
-      opHazelnutSmile_ = !opHazelnutSmile_;
-      abCowboysToad_ = opHazelnutSmile_;
-      edInvoiceShuck_ = opHazelnutSmile_;
-    }
-    taCocoHappy_ = taCocoHappy_.toUpperCase();
-    taCocoHappy_ = taCocoHappy_.toUpperCase();
-    paTapeCaltech_ = 13;
-    paTapeCaltech_ = 51;
-    if (paTapeCaltech_ > 0) {
-      paTapeCaltech_ = paTapeCaltech_ - 9;
-    }
-    if (opHazelnutSmile_ || edInvoiceShuck_ || asObjectiveJazz_) {
-      opHazelnutSmile_ = !edInvoiceShuck_;
-      edInvoiceShuck_ = !asObjectiveJazz_;
-      asObjectiveJazz_ = !opHazelnutSmile_;
-    }
-    if (abCowboysToad_ && opHazelnutSmile_ && edInvoiceShuck_) {
-      abCowboysToad_ = !abCowboysToad_;
-      opHazelnutSmile_ = abCowboysToad_;
-      edInvoiceShuck_ = abCowboysToad_;
-    }
-    opJackalSlipper_ = 40;
-    edInvoiceShuck_ = asObjectiveJazz_ || opHazelnutSmile_;
   }
 
   @override
   void onInit() {
-    if (sqrt1_2 < 0.3) {
-      KimmiSoftenFeast().heContainerSlur();
-      KimmiSoftenFeast().ofEstrogenChoose();
+    if (ln2 < 0.5) {
+      KimmiBrettPerception().hoLoopySubject();
+      KimmiBrettPerception().etContagiousFiance();
     }
-    if (ln10 < 2) {
-      etGrammyOr();
-      heAirlinePrototype();
+    if (sqrt1_2 < 0.3) {
+      elTapeMomentum();
+      beAnnieTyson();
     }
     try {
       super.onInit();

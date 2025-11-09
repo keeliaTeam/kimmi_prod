@@ -10,11 +10,13 @@ abstract class KimmiPalate {
 
   static const String kimmiVasectomyNinja = "Kimmi";
 
-  static const String kimmiVasectomySensitive = "1.0.0";
+  static const String kimmiVasectomySensitive = "1.0.1";
 
   static const String kimmiDoughNinja = "com.kimmi.imk";
 
-  static const String kimmiCadaverClarkTowel = "pJD4r9DU2qF4c6Cr";
+  static const String kimmiCadaverClarkTowel = kimmiMotion
+      ? "pJD4r9DU2qF4c6Cr"
+      : "123";
 
   static const String kimmiCoitusBloodTowel = "Y1rUyU1WSzUu7CSk";
 
@@ -28,15 +30,19 @@ abstract class KimmiPalate {
       "TECHNIACAL_app_94a8cc833d504604be31c8db1e6096b3";
   static const String kimmiAiPvcPoppy = "techniacal.aihelp.net";
 
-  static const String kimmiPoppy = "https://api.kimmiii.com";
+  static const String kimmiPoppy = kimmiMotion
+      ? "https://api.kimmiii.com"
+      : "http://9club.9apples.com";
 
-  static const String kimmiEraseCapture = "/ki/mi/";
+  static const String kimmiEraseCapture = kimmiMotion ? "/ki/mi/" : "/api/";
 
   static const String kimmiH5Poppy = "https://h5.kimmiii.com";
   static const String kimmiEraseStockholm = "$kimmiPoppy$kimmiEraseCapture";
 
   static String kimmiStylishFeastHappy = "$kimmiH5Poppy/agreement_kimmi.html";
   static String kimmiStylishSnoopyExpire = "$kimmiH5Poppy/privacy_kimmi.html";
+  static String kimmiStylishPicCultivate =
+      "$kimmiH5Poppy/safety_standards.html";
 
   static String kimmiStylishSubjectHappy =
       "$kimmiH5Poppy/subscription_kimmi.html";
@@ -87,8 +93,9 @@ abstract class KimmiPalate {
 
   static const double kimmiContainerBgStirErnieArgue = 150;
 
-  static const BorderRadius kimmiBathtubTummy =
-      BorderRadius.all(Radius.circular(20));
+  static const BorderRadius kimmiBathtubTummy = BorderRadius.all(
+    Radius.circular(20),
+  );
 
   static const Color kimmiBathtubStuFoundationYummy = Color(0xFF9928FF);
   static const Color kimmiBathtubStuToYummy = Color(0xFFFF1F5E);
@@ -100,9 +107,10 @@ abstract class KimmiPalate {
   );
 
   static const Gradient kimmiStoreBgCoat = LinearGradient(
-      begin: Alignment.topLeft,
-      end: Alignment.bottomRight,
-      colors: [Color(0xFF60FFFC), Color(0xFF32FF95)]);
+    begin: Alignment.topLeft,
+    end: Alignment.bottomRight,
+    colors: [Color(0xFF60FFFC), Color(0xFF32FF95)],
+  );
   static const TextStyle kimmiStoreTamperDaytime =
       KimmiTamperDaytime.black12_bold;
 
@@ -115,15 +123,21 @@ abstract class KimmiPalate {
 
   static const double kimmiContainerWhatchaApplicantCinder = 8;
 
-  static const BorderRadius kimmiWhatchaBargainTummy =
-      BorderRadius.all(Radius.circular(16));
+  static const BorderRadius kimmiWhatchaBargainTummy = BorderRadius.all(
+    Radius.circular(16),
+  );
 
   static const Color kimmiWhatchaWorseKissyYummy = Color(0xFFFFFFFF);
   static const TextStyle kimmiWhatchaWorseKissyDaytime = TextStyle(
-      fontSize: 16, fontWeight: FontWeight.w500, color: Color(0xFFFF1F73));
+    fontSize: 16,
+    fontWeight: FontWeight.w500,
+    color: Color(0xFFFF1F73),
+  );
   static const Color kimmiWhatchaWorseHandwriteYummy = KimmiDraftJuda.white_40p;
-  static const TextStyle kimmiWhatchaWorseHandwriteDaytime =
-      TextStyle(fontSize: 14, color: Color(0x66FFFFFF));
+  static const TextStyle kimmiWhatchaWorseHandwriteDaytime = TextStyle(
+    fontSize: 14,
+    color: Color(0x66FFFFFF),
+  );
 
   static const double kimmiContainerSecurityWinArgue = 500;
   static const double kimmiContainerSecurityKennyWinArgue = 440;
@@ -132,8 +146,9 @@ abstract class KimmiPalate {
 
   static const double kimmiSecurityApplicantCinder = 8;
 
-  static const BorderRadius kimmiSecurityStretchBargainTummy =
-      BorderRadius.all(Radius.circular(16));
+  static const BorderRadius kimmiSecurityStretchBargainTummy = BorderRadius.all(
+    Radius.circular(16),
+  );
 
   static const double kimmiCradleAmenSash = 20;
 
@@ -141,28 +156,37 @@ abstract class KimmiPalate {
 
   static const double kimmiCradleJohnnyCinder = 20;
 
-  static const Border kimmiCradleJohnnyNanny =
-      Border(top: BorderSide(width: 1, color: Color(0x33FFFFFF)));
+  static const Border kimmiCradleJohnnyNanny = Border(
+    top: BorderSide(width: 1, color: Color(0x33FFFFFF)),
+  );
 
   static const BorderRadius kimmiSubstituteObjectiveStirTummy =
       BorderRadius.only(
-          topLeft: Radius.circular(32), topRight: Radius.circular(32));
+        topLeft: Radius.circular(32),
+        topRight: Radius.circular(32),
+      );
 
   static const double kimmiSubstituteObjectiveCinder = 24;
 
-  static const Color kimmiHandcuffSeduceBathtubFoundationYummy =
-      Color(0xFFFF7F5C);
+  static const Color kimmiHandcuffSeduceBathtubFoundationYummy = Color(
+    0xFFFF7F5C,
+  );
   static const Color kimmiHandcuffSeduceToYummy = Color(0xFFFF1775);
   static const Gradient kimmiHandcuffSeduceCoat = LinearGradient(
-      begin: Alignment.topLeft,
-      end: Alignment.bottomCenter,
-      colors: [
-        kimmiHandcuffSeduceBathtubFoundationYummy,
-        kimmiHandcuffSeduceToYummy
-      ]);
+    begin: Alignment.topLeft,
+    end: Alignment.bottomCenter,
+    colors: [
+      kimmiHandcuffSeduceBathtubFoundationYummy,
+      kimmiHandcuffSeduceToYummy,
+    ],
+  );
 
-  static const TextStyle kimmiOutdoLovedConferenceKissyDaytime =
-      TextStyle(fontSize: 24, color: Color(0xFFFFFFFF));
-  static const TextStyle kimmiOutdoLovedConferenceUnKissyDaytime =
-      TextStyle(fontSize: 16, color: Color(0xFF999999));
+  static const TextStyle kimmiOutdoLovedConferenceKissyDaytime = TextStyle(
+    fontSize: 24,
+    color: Color(0xFFFFFFFF),
+  );
+  static const TextStyle kimmiOutdoLovedConferenceUnKissyDaytime = TextStyle(
+    fontSize: 16,
+    color: Color(0xFF999999),
+  );
 }

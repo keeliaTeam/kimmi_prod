@@ -80,63 +80,113 @@ class CreateSnapReq extends $pb.GeneratedMessage {
     return $result;
   }
   CreateSnapReq._() : super();
-  factory CreateSnapReq.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory CreateSnapReq.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+  factory CreateSnapReq.fromBuffer(
+    $core.List<$core.int> i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromBuffer(i, r);
+  factory CreateSnapReq.fromJson(
+    $core.String i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'CreateSnapReq',
-      package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockIM()),
-      createEmptyInstance: create)
-    ..a<$fixnum.Int64>(
-        1, _omitFieldNames ? '' : 'chatboxId', $pb.PbFieldType.OU6,
-        defaultOrMaker: $fixnum.Int64.ZERO)
-    ..a<$fixnum.Int64>(
-        2, _omitFieldNames ? '' : 'lastSnapKey', $pb.PbFieldType.OU6,
-        defaultOrMaker: $fixnum.Int64.ZERO)
-    ..a<$fixnum.Int64>(
-        3, _omitFieldNames ? '' : 'lastChatboxKey', $pb.PbFieldType.OU6,
-        defaultOrMaker: $fixnum.Int64.ZERO)
-    ..e<$3.Snap_SnapType>(
-        4, _omitFieldNames ? '' : 'snapType', $pb.PbFieldType.OE,
-        defaultOrMaker: $3.Snap_SnapType.VIDEO_SNAP,
-        valueOf: $3.Snap_SnapType.valueOf,
-        enumValues: $3.Snap_SnapType.values)
-    ..aOS(5, _omitFieldNames ? '' : 'textContent')
-    ..a<$fixnum.Int64>(6, _omitFieldNames ? '' : 'imgId', $pb.PbFieldType.OU6,
-        defaultOrMaker: $fixnum.Int64.ZERO)
-    ..a<$fixnum.Int64>(7, _omitFieldNames ? '' : 'videoId', $pb.PbFieldType.OU6,
-        defaultOrMaker: $fixnum.Int64.ZERO)
-    ..a<$fixnum.Int64>(8, _omitFieldNames ? '' : 'voiceId', $pb.PbFieldType.OU6,
-        defaultOrMaker: $fixnum.Int64.ZERO)
-    ..aOS(9, _omitFieldNames ? '' : 'jsonContent')
-    ..a<$fixnum.Int64>(
-        10, _omitFieldNames ? '' : 'localId', $pb.PbFieldType.OU6,
-        defaultOrMaker: $fixnum.Int64.ZERO)
-    ..aOM<$0.Any>(11, _omitFieldNames ? '' : 'extensions',
-        subBuilder: $0.Any.create)
-    ..aOM<$3.RedPacket>(12, _omitFieldNames ? '' : 'redPacket',
-        subBuilder: $3.RedPacket.create)
-    ..p<$fixnum.Int64>(
-        13, _omitFieldNames ? '' : 'multiImgIds', $pb.PbFieldType.KU6)
-    ..a<$fixnum.Int64>(
-        14, _omitFieldNames ? '' : 'repliedSnapId', $pb.PbFieldType.OU6,
-        defaultOrMaker: $fixnum.Int64.ZERO)
-    ..aOM<$2.Location>(15, _omitFieldNames ? '' : 'location',
-        subBuilder: $2.Location.create)
-    ..aOS(16, _omitFieldNames ? '' : 'textTrans')
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i =
+      $pb.BuilderInfo(
+          _omitMessageNames ? '' : 'CreateSnapReq',
+          package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockIM()),
+          createEmptyInstance: create,
+        )
+        ..a<$fixnum.Int64>(
+          1,
+          _omitFieldNames ? '' : 'chatboxId',
+          $pb.PbFieldType.OU6,
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..a<$fixnum.Int64>(
+          2,
+          _omitFieldNames ? '' : 'lastSnapKey',
+          $pb.PbFieldType.OU6,
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..a<$fixnum.Int64>(
+          3,
+          _omitFieldNames ? '' : 'lastChatboxKey',
+          $pb.PbFieldType.OU6,
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..e<$3.Snap_SnapType>(
+          4,
+          _omitFieldNames ? '' : 'snapType',
+          $pb.PbFieldType.OE,
+          defaultOrMaker: $3.Snap_SnapType.VIDEO_SNAP,
+          valueOf: $3.Snap_SnapType.valueOf,
+          enumValues: $3.Snap_SnapType.values,
+        )
+        ..aOS(5, _omitFieldNames ? '' : 'textContent')
+        ..a<$fixnum.Int64>(
+          6,
+          _omitFieldNames ? '' : 'imgId',
+          $pb.PbFieldType.OU6,
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..a<$fixnum.Int64>(
+          7,
+          _omitFieldNames ? '' : 'videoId',
+          $pb.PbFieldType.OU6,
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..a<$fixnum.Int64>(
+          8,
+          _omitFieldNames ? '' : 'voiceId',
+          $pb.PbFieldType.OU6,
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..aOS(9, _omitFieldNames ? '' : 'jsonContent')
+        ..a<$fixnum.Int64>(
+          10,
+          _omitFieldNames ? '' : 'localId',
+          $pb.PbFieldType.OU6,
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..aOM<$0.Any>(
+          11,
+          _omitFieldNames ? '' : 'extensions',
+          subBuilder: $0.Any.create,
+        )
+        ..aOM<$3.RedPacket>(
+          12,
+          _omitFieldNames ? '' : 'redPacket',
+          subBuilder: $3.RedPacket.create,
+        )
+        ..p<$fixnum.Int64>(
+          13,
+          _omitFieldNames ? '' : 'multiImgIds',
+          $pb.PbFieldType.KU6,
+        )
+        ..a<$fixnum.Int64>(
+          14,
+          _omitFieldNames ? '' : 'repliedSnapId',
+          $pb.PbFieldType.OU6,
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..aOM<$2.Location>(
+          15,
+          _omitFieldNames ? '' : 'location',
+          subBuilder: $2.Location.create,
+        )
+        ..aOS(16, _omitFieldNames ? '' : 'textTrans')
+        ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+    'Will be removed in next major version',
+  )
   CreateSnapReq clone() => CreateSnapReq()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+    'Will be removed in next major version',
+  )
   CreateSnapReq copyWith(void Function(CreateSnapReq) updates) =>
       super.copyWith((message) => updates(message as CreateSnapReq))
           as CreateSnapReq;
@@ -370,33 +420,49 @@ class CreateSnapRsp extends $pb.GeneratedMessage {
     return $result;
   }
   CreateSnapRsp._() : super();
-  factory CreateSnapRsp.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory CreateSnapRsp.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+  factory CreateSnapRsp.fromBuffer(
+    $core.List<$core.int> i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromBuffer(i, r);
+  factory CreateSnapRsp.fromJson(
+    $core.String i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'CreateSnapRsp',
-      package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockIM()),
-      createEmptyInstance: create)
-    ..a<$core.int>(1, _omitFieldNames ? '' : 'code', $pb.PbFieldType.OU3)
-    ..aOS(2, _omitFieldNames ? '' : 'msg')
-    ..a<$fixnum.Int64>(3, _omitFieldNames ? '' : 'snapId', $pb.PbFieldType.OU6,
-        defaultOrMaker: $fixnum.Int64.ZERO)
-    ..aOS(4, _omitFieldNames ? '' : 'pushUrl')
-    ..a<$fixnum.Int64>(5, _omitFieldNames ? '' : 'localId', $pb.PbFieldType.OU6,
-        defaultOrMaker: $fixnum.Int64.ZERO)
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i =
+      $pb.BuilderInfo(
+          _omitMessageNames ? '' : 'CreateSnapRsp',
+          package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockIM()),
+          createEmptyInstance: create,
+        )
+        ..a<$core.int>(1, _omitFieldNames ? '' : 'code', $pb.PbFieldType.OU3)
+        ..aOS(2, _omitFieldNames ? '' : 'msg')
+        ..a<$fixnum.Int64>(
+          3,
+          _omitFieldNames ? '' : 'snapId',
+          $pb.PbFieldType.OU6,
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..aOS(4, _omitFieldNames ? '' : 'pushUrl')
+        ..a<$fixnum.Int64>(
+          5,
+          _omitFieldNames ? '' : 'localId',
+          $pb.PbFieldType.OU6,
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+    'Will be removed in next major version',
+  )
   CreateSnapRsp clone() => CreateSnapRsp()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+    'Will be removed in next major version',
+  )
   CreateSnapRsp copyWith(void Function(CreateSnapRsp) updates) =>
       super.copyWith((message) => updates(message as CreateSnapRsp))
           as CreateSnapRsp;
@@ -475,9 +541,7 @@ class CreateSnapRsp extends $pb.GeneratedMessage {
 }
 
 class UpdateSnapReadedStatusReq extends $pb.GeneratedMessage {
-  factory UpdateSnapReadedStatusReq({
-    $fixnum.Int64? snapId,
-  }) {
+  factory UpdateSnapReadedStatusReq({$fixnum.Int64? snapId}) {
     final $result = create();
     if (snapId != null) {
       $result.snapId = snapId;
@@ -485,31 +549,44 @@ class UpdateSnapReadedStatusReq extends $pb.GeneratedMessage {
     return $result;
   }
   UpdateSnapReadedStatusReq._() : super();
-  factory UpdateSnapReadedStatusReq.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory UpdateSnapReadedStatusReq.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+  factory UpdateSnapReadedStatusReq.fromBuffer(
+    $core.List<$core.int> i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromBuffer(i, r);
+  factory UpdateSnapReadedStatusReq.fromJson(
+    $core.String i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'UpdateSnapReadedStatusReq',
-      package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockIM()),
-      createEmptyInstance: create)
-    ..a<$fixnum.Int64>(1, _omitFieldNames ? '' : 'snapId', $pb.PbFieldType.OU6,
-        defaultOrMaker: $fixnum.Int64.ZERO)
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i =
+      $pb.BuilderInfo(
+          _omitMessageNames ? '' : 'UpdateSnapReadedStatusReq',
+          package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockIM()),
+          createEmptyInstance: create,
+        )
+        ..a<$fixnum.Int64>(
+          1,
+          _omitFieldNames ? '' : 'snapId',
+          $pb.PbFieldType.OU6,
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+    'Will be removed in next major version',
+  )
   UpdateSnapReadedStatusReq clone() =>
       UpdateSnapReadedStatusReq()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+    'Will be removed in next major version',
+  )
   UpdateSnapReadedStatusReq copyWith(
-          void Function(UpdateSnapReadedStatusReq) updates) =>
+    void Function(UpdateSnapReadedStatusReq) updates,
+  ) =>
       super.copyWith((message) => updates(message as UpdateSnapReadedStatusReq))
           as UpdateSnapReadedStatusReq;
 
@@ -539,9 +616,7 @@ class UpdateSnapReadedStatusReq extends $pb.GeneratedMessage {
 }
 
 class StartRecordSnapNotify extends $pb.GeneratedMessage {
-  factory StartRecordSnapNotify({
-    $fixnum.Int64? snapId,
-  }) {
+  factory StartRecordSnapNotify({$fixnum.Int64? snapId}) {
     final $result = create();
     if (snapId != null) {
       $result.snapId = snapId;
@@ -549,31 +624,44 @@ class StartRecordSnapNotify extends $pb.GeneratedMessage {
     return $result;
   }
   StartRecordSnapNotify._() : super();
-  factory StartRecordSnapNotify.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory StartRecordSnapNotify.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+  factory StartRecordSnapNotify.fromBuffer(
+    $core.List<$core.int> i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromBuffer(i, r);
+  factory StartRecordSnapNotify.fromJson(
+    $core.String i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'StartRecordSnapNotify',
-      package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockIM()),
-      createEmptyInstance: create)
-    ..a<$fixnum.Int64>(1, _omitFieldNames ? '' : 'snapId', $pb.PbFieldType.OU6,
-        defaultOrMaker: $fixnum.Int64.ZERO)
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i =
+      $pb.BuilderInfo(
+          _omitMessageNames ? '' : 'StartRecordSnapNotify',
+          package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockIM()),
+          createEmptyInstance: create,
+        )
+        ..a<$fixnum.Int64>(
+          1,
+          _omitFieldNames ? '' : 'snapId',
+          $pb.PbFieldType.OU6,
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+    'Will be removed in next major version',
+  )
   StartRecordSnapNotify clone() =>
       StartRecordSnapNotify()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+    'Will be removed in next major version',
+  )
   StartRecordSnapNotify copyWith(
-          void Function(StartRecordSnapNotify) updates) =>
+    void Function(StartRecordSnapNotify) updates,
+  ) =>
       super.copyWith((message) => updates(message as StartRecordSnapNotify))
           as StartRecordSnapNotify;
 
@@ -603,9 +691,7 @@ class StartRecordSnapNotify extends $pb.GeneratedMessage {
 }
 
 class StopRecordSnapNotify extends $pb.GeneratedMessage {
-  factory StopRecordSnapNotify({
-    $fixnum.Int64? snapId,
-  }) {
+  factory StopRecordSnapNotify({$fixnum.Int64? snapId}) {
     final $result = create();
     if (snapId != null) {
       $result.snapId = snapId;
@@ -613,29 +699,41 @@ class StopRecordSnapNotify extends $pb.GeneratedMessage {
     return $result;
   }
   StopRecordSnapNotify._() : super();
-  factory StopRecordSnapNotify.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory StopRecordSnapNotify.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+  factory StopRecordSnapNotify.fromBuffer(
+    $core.List<$core.int> i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromBuffer(i, r);
+  factory StopRecordSnapNotify.fromJson(
+    $core.String i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'StopRecordSnapNotify',
-      package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockIM()),
-      createEmptyInstance: create)
-    ..a<$fixnum.Int64>(1, _omitFieldNames ? '' : 'snapId', $pb.PbFieldType.OU6,
-        defaultOrMaker: $fixnum.Int64.ZERO)
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i =
+      $pb.BuilderInfo(
+          _omitMessageNames ? '' : 'StopRecordSnapNotify',
+          package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockIM()),
+          createEmptyInstance: create,
+        )
+        ..a<$fixnum.Int64>(
+          1,
+          _omitFieldNames ? '' : 'snapId',
+          $pb.PbFieldType.OU6,
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+    'Will be removed in next major version',
+  )
   StopRecordSnapNotify clone() =>
       StopRecordSnapNotify()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+    'Will be removed in next major version',
+  )
   StopRecordSnapNotify copyWith(void Function(StopRecordSnapNotify) updates) =>
       super.copyWith((message) => updates(message as StopRecordSnapNotify))
           as StopRecordSnapNotify;
@@ -684,34 +782,52 @@ class StartPlaySnapNotify extends $pb.GeneratedMessage {
     return $result;
   }
   StartPlaySnapNotify._() : super();
-  factory StartPlaySnapNotify.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory StartPlaySnapNotify.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+  factory StartPlaySnapNotify.fromBuffer(
+    $core.List<$core.int> i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromBuffer(i, r);
+  factory StartPlaySnapNotify.fromJson(
+    $core.String i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'StartPlaySnapNotify',
-      package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockIM()),
-      createEmptyInstance: create)
-    ..a<$fixnum.Int64>(1, _omitFieldNames ? '' : 'snapId', $pb.PbFieldType.OU6,
-        defaultOrMaker: $fixnum.Int64.ZERO)
-    ..a<$fixnum.Int64>(
-        2, _omitFieldNames ? '' : 'lastSnapKey', $pb.PbFieldType.OU6,
-        defaultOrMaker: $fixnum.Int64.ZERO)
-    ..a<$fixnum.Int64>(
-        3, _omitFieldNames ? '' : 'lastChatboxKey', $pb.PbFieldType.OU6,
-        defaultOrMaker: $fixnum.Int64.ZERO)
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i =
+      $pb.BuilderInfo(
+          _omitMessageNames ? '' : 'StartPlaySnapNotify',
+          package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockIM()),
+          createEmptyInstance: create,
+        )
+        ..a<$fixnum.Int64>(
+          1,
+          _omitFieldNames ? '' : 'snapId',
+          $pb.PbFieldType.OU6,
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..a<$fixnum.Int64>(
+          2,
+          _omitFieldNames ? '' : 'lastSnapKey',
+          $pb.PbFieldType.OU6,
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..a<$fixnum.Int64>(
+          3,
+          _omitFieldNames ? '' : 'lastChatboxKey',
+          $pb.PbFieldType.OU6,
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+    'Will be removed in next major version',
+  )
   StartPlaySnapNotify clone() => StartPlaySnapNotify()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+    'Will be removed in next major version',
+  )
   StartPlaySnapNotify copyWith(void Function(StartPlaySnapNotify) updates) =>
       super.copyWith((message) => updates(message as StartPlaySnapNotify))
           as StartPlaySnapNotify;
@@ -766,9 +882,7 @@ class StartPlaySnapNotify extends $pb.GeneratedMessage {
 }
 
 class StopPlaySnapNotify extends $pb.GeneratedMessage {
-  factory StopPlaySnapNotify({
-    $fixnum.Int64? snapId,
-  }) {
+  factory StopPlaySnapNotify({$fixnum.Int64? snapId}) {
     final $result = create();
     if (snapId != null) {
       $result.snapId = snapId;
@@ -776,28 +890,40 @@ class StopPlaySnapNotify extends $pb.GeneratedMessage {
     return $result;
   }
   StopPlaySnapNotify._() : super();
-  factory StopPlaySnapNotify.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory StopPlaySnapNotify.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+  factory StopPlaySnapNotify.fromBuffer(
+    $core.List<$core.int> i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromBuffer(i, r);
+  factory StopPlaySnapNotify.fromJson(
+    $core.String i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'StopPlaySnapNotify',
-      package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockIM()),
-      createEmptyInstance: create)
-    ..a<$fixnum.Int64>(1, _omitFieldNames ? '' : 'snapId', $pb.PbFieldType.OU6,
-        defaultOrMaker: $fixnum.Int64.ZERO)
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i =
+      $pb.BuilderInfo(
+          _omitMessageNames ? '' : 'StopPlaySnapNotify',
+          package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockIM()),
+          createEmptyInstance: create,
+        )
+        ..a<$fixnum.Int64>(
+          1,
+          _omitFieldNames ? '' : 'snapId',
+          $pb.PbFieldType.OU6,
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+    'Will be removed in next major version',
+  )
   StopPlaySnapNotify clone() => StopPlaySnapNotify()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+    'Will be removed in next major version',
+  )
   StopPlaySnapNotify copyWith(void Function(StopPlaySnapNotify) updates) =>
       super.copyWith((message) => updates(message as StopPlaySnapNotify))
           as StopPlaySnapNotify;
@@ -850,36 +976,57 @@ class DeleteSnapReq extends $pb.GeneratedMessage {
     return $result;
   }
   DeleteSnapReq._() : super();
-  factory DeleteSnapReq.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory DeleteSnapReq.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+  factory DeleteSnapReq.fromBuffer(
+    $core.List<$core.int> i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromBuffer(i, r);
+  factory DeleteSnapReq.fromJson(
+    $core.String i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'DeleteSnapReq',
-      package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockIM()),
-      createEmptyInstance: create)
-    ..a<$fixnum.Int64>(1, _omitFieldNames ? '' : 'snapId', $pb.PbFieldType.OU6,
-        defaultOrMaker: $fixnum.Int64.ZERO)
-    ..a<$fixnum.Int64>(
-        2, _omitFieldNames ? '' : 'lastSnapKey', $pb.PbFieldType.OU6,
-        defaultOrMaker: $fixnum.Int64.ZERO)
-    ..a<$fixnum.Int64>(
-        3, _omitFieldNames ? '' : 'lastChatboxKey', $pb.PbFieldType.OU6,
-        defaultOrMaker: $fixnum.Int64.ZERO)
-    ..aOM<$0.Any>(4, _omitFieldNames ? '' : 'extensions',
-        subBuilder: $0.Any.create)
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i =
+      $pb.BuilderInfo(
+          _omitMessageNames ? '' : 'DeleteSnapReq',
+          package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockIM()),
+          createEmptyInstance: create,
+        )
+        ..a<$fixnum.Int64>(
+          1,
+          _omitFieldNames ? '' : 'snapId',
+          $pb.PbFieldType.OU6,
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..a<$fixnum.Int64>(
+          2,
+          _omitFieldNames ? '' : 'lastSnapKey',
+          $pb.PbFieldType.OU6,
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..a<$fixnum.Int64>(
+          3,
+          _omitFieldNames ? '' : 'lastChatboxKey',
+          $pb.PbFieldType.OU6,
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..aOM<$0.Any>(
+          4,
+          _omitFieldNames ? '' : 'extensions',
+          subBuilder: $0.Any.create,
+        )
+        ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+    'Will be removed in next major version',
+  )
   DeleteSnapReq clone() => DeleteSnapReq()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+    'Will be removed in next major version',
+  )
   DeleteSnapReq copyWith(void Function(DeleteSnapReq) updates) =>
       super.copyWith((message) => updates(message as DeleteSnapReq))
           as DeleteSnapReq;
@@ -974,38 +1121,58 @@ class GetMoreSnapsFromReq extends $pb.GeneratedMessage {
     return $result;
   }
   GetMoreSnapsFromReq._() : super();
-  factory GetMoreSnapsFromReq.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory GetMoreSnapsFromReq.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+  factory GetMoreSnapsFromReq.fromBuffer(
+    $core.List<$core.int> i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromBuffer(i, r);
+  factory GetMoreSnapsFromReq.fromJson(
+    $core.String i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'GetMoreSnapsFromReq',
-      package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockIM()),
-      createEmptyInstance: create)
-    ..a<$fixnum.Int64>(
-        1, _omitFieldNames ? '' : 'chatboxId', $pb.PbFieldType.OU6,
-        defaultOrMaker: $fixnum.Int64.ZERO)
-    ..a<$fixnum.Int64>(
-        2, _omitFieldNames ? '' : 'fromSnapId', $pb.PbFieldType.OU6,
-        defaultOrMaker: $fixnum.Int64.ZERO)
-    ..a<$fixnum.Int64>(
-        3, _omitFieldNames ? '' : 'toSnapId', $pb.PbFieldType.OU6,
-        defaultOrMaker: $fixnum.Int64.ZERO)
-    ..a<$core.int>(4, _omitFieldNames ? '' : 'count', $pb.PbFieldType.O3)
-    ..aOM<$0.Any>(5, _omitFieldNames ? '' : 'extensions',
-        subBuilder: $0.Any.create)
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i =
+      $pb.BuilderInfo(
+          _omitMessageNames ? '' : 'GetMoreSnapsFromReq',
+          package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockIM()),
+          createEmptyInstance: create,
+        )
+        ..a<$fixnum.Int64>(
+          1,
+          _omitFieldNames ? '' : 'chatboxId',
+          $pb.PbFieldType.OU6,
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..a<$fixnum.Int64>(
+          2,
+          _omitFieldNames ? '' : 'fromSnapId',
+          $pb.PbFieldType.OU6,
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..a<$fixnum.Int64>(
+          3,
+          _omitFieldNames ? '' : 'toSnapId',
+          $pb.PbFieldType.OU6,
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..a<$core.int>(4, _omitFieldNames ? '' : 'count', $pb.PbFieldType.O3)
+        ..aOM<$0.Any>(
+          5,
+          _omitFieldNames ? '' : 'extensions',
+          subBuilder: $0.Any.create,
+        )
+        ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+    'Will be removed in next major version',
+  )
   GetMoreSnapsFromReq clone() => GetMoreSnapsFromReq()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+    'Will be removed in next major version',
+  )
   GetMoreSnapsFromReq copyWith(void Function(GetMoreSnapsFromReq) updates) =>
       super.copyWith((message) => updates(message as GetMoreSnapsFromReq))
           as GetMoreSnapsFromReq;
@@ -1104,30 +1271,42 @@ class GetMoreSnapsFromRsp extends $pb.GeneratedMessage {
     return $result;
   }
   GetMoreSnapsFromRsp._() : super();
-  factory GetMoreSnapsFromRsp.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory GetMoreSnapsFromRsp.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+  factory GetMoreSnapsFromRsp.fromBuffer(
+    $core.List<$core.int> i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromBuffer(i, r);
+  factory GetMoreSnapsFromRsp.fromJson(
+    $core.String i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'GetMoreSnapsFromRsp',
-      package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockIM()),
-      createEmptyInstance: create)
-    ..a<$core.int>(1, _omitFieldNames ? '' : 'code', $pb.PbFieldType.OU3)
-    ..aOS(2, _omitFieldNames ? '' : 'msg')
-    ..pc<$3.Snap>(3, _omitFieldNames ? '' : 'snaps', $pb.PbFieldType.PM,
-        subBuilder: $3.Snap.create)
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i =
+      $pb.BuilderInfo(
+          _omitMessageNames ? '' : 'GetMoreSnapsFromRsp',
+          package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockIM()),
+          createEmptyInstance: create,
+        )
+        ..a<$core.int>(1, _omitFieldNames ? '' : 'code', $pb.PbFieldType.OU3)
+        ..aOS(2, _omitFieldNames ? '' : 'msg')
+        ..pc<$3.Snap>(
+          3,
+          _omitFieldNames ? '' : 'snaps',
+          $pb.PbFieldType.PM,
+          subBuilder: $3.Snap.create,
+        )
+        ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+    'Will be removed in next major version',
+  )
   GetMoreSnapsFromRsp clone() => GetMoreSnapsFromRsp()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+    'Will be removed in next major version',
+  )
   GetMoreSnapsFromRsp copyWith(void Function(GetMoreSnapsFromRsp) updates) =>
       super.copyWith((message) => updates(message as GetMoreSnapsFromRsp))
           as GetMoreSnapsFromRsp;
@@ -1191,34 +1370,51 @@ class CheckRedPacketReq extends $pb.GeneratedMessage {
     return $result;
   }
   CheckRedPacketReq._() : super();
-  factory CheckRedPacketReq.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory CheckRedPacketReq.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+  factory CheckRedPacketReq.fromBuffer(
+    $core.List<$core.int> i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromBuffer(i, r);
+  factory CheckRedPacketReq.fromJson(
+    $core.String i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'CheckRedPacketReq',
-      package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockIM()),
-      createEmptyInstance: create)
-    ..a<$fixnum.Int64>(
-        1, _omitFieldNames ? '' : 'chatboxId', $pb.PbFieldType.OU6,
-        defaultOrMaker: $fixnum.Int64.ZERO)
-    ..a<$fixnum.Int64>(
-        2, _omitFieldNames ? '' : 'packetId', $pb.PbFieldType.OU6,
-        defaultOrMaker: $fixnum.Int64.ZERO)
-    ..aOM<$0.Any>(3, _omitFieldNames ? '' : 'extensions',
-        subBuilder: $0.Any.create)
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i =
+      $pb.BuilderInfo(
+          _omitMessageNames ? '' : 'CheckRedPacketReq',
+          package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockIM()),
+          createEmptyInstance: create,
+        )
+        ..a<$fixnum.Int64>(
+          1,
+          _omitFieldNames ? '' : 'chatboxId',
+          $pb.PbFieldType.OU6,
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..a<$fixnum.Int64>(
+          2,
+          _omitFieldNames ? '' : 'packetId',
+          $pb.PbFieldType.OU6,
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..aOM<$0.Any>(
+          3,
+          _omitFieldNames ? '' : 'extensions',
+          subBuilder: $0.Any.create,
+        )
+        ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+    'Will be removed in next major version',
+  )
   CheckRedPacketReq clone() => CheckRedPacketReq()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+    'Will be removed in next major version',
+  )
   CheckRedPacketReq copyWith(void Function(CheckRedPacketReq) updates) =>
       super.copyWith((message) => updates(message as CheckRedPacketReq))
           as CheckRedPacketReq;
@@ -1297,32 +1493,43 @@ class CheckRedPacketRsp extends $pb.GeneratedMessage {
     return $result;
   }
   CheckRedPacketRsp._() : super();
-  factory CheckRedPacketRsp.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory CheckRedPacketRsp.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+  factory CheckRedPacketRsp.fromBuffer(
+    $core.List<$core.int> i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromBuffer(i, r);
+  factory CheckRedPacketRsp.fromJson(
+    $core.String i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'CheckRedPacketRsp',
-      package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockIM()),
-      createEmptyInstance: create)
-    ..a<$core.int>(1, _omitFieldNames ? '' : 'code', $pb.PbFieldType.OU3)
-    ..aOS(2, _omitFieldNames ? '' : 'msg')
-    ..a<$fixnum.Int64>(
-        3, _omitFieldNames ? '' : 'packetId', $pb.PbFieldType.OU6,
-        defaultOrMaker: $fixnum.Int64.ZERO)
-    ..a<$core.int>(4, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OU3)
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i =
+      $pb.BuilderInfo(
+          _omitMessageNames ? '' : 'CheckRedPacketRsp',
+          package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockIM()),
+          createEmptyInstance: create,
+        )
+        ..a<$core.int>(1, _omitFieldNames ? '' : 'code', $pb.PbFieldType.OU3)
+        ..aOS(2, _omitFieldNames ? '' : 'msg')
+        ..a<$fixnum.Int64>(
+          3,
+          _omitFieldNames ? '' : 'packetId',
+          $pb.PbFieldType.OU6,
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..a<$core.int>(4, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OU3)
+        ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+    'Will be removed in next major version',
+  )
   CheckRedPacketRsp clone() => CheckRedPacketRsp()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+    'Will be removed in next major version',
+  )
   CheckRedPacketRsp copyWith(void Function(CheckRedPacketRsp) updates) =>
       super.copyWith((message) => updates(message as CheckRedPacketRsp))
           as CheckRedPacketRsp;
@@ -1407,34 +1614,51 @@ class ReceiveRedPacketReq extends $pb.GeneratedMessage {
     return $result;
   }
   ReceiveRedPacketReq._() : super();
-  factory ReceiveRedPacketReq.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory ReceiveRedPacketReq.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+  factory ReceiveRedPacketReq.fromBuffer(
+    $core.List<$core.int> i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromBuffer(i, r);
+  factory ReceiveRedPacketReq.fromJson(
+    $core.String i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'ReceiveRedPacketReq',
-      package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockIM()),
-      createEmptyInstance: create)
-    ..a<$fixnum.Int64>(
-        1, _omitFieldNames ? '' : 'chatboxId', $pb.PbFieldType.OU6,
-        defaultOrMaker: $fixnum.Int64.ZERO)
-    ..a<$fixnum.Int64>(
-        2, _omitFieldNames ? '' : 'packetId', $pb.PbFieldType.OU6,
-        defaultOrMaker: $fixnum.Int64.ZERO)
-    ..aOM<$0.Any>(3, _omitFieldNames ? '' : 'extensions',
-        subBuilder: $0.Any.create)
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i =
+      $pb.BuilderInfo(
+          _omitMessageNames ? '' : 'ReceiveRedPacketReq',
+          package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockIM()),
+          createEmptyInstance: create,
+        )
+        ..a<$fixnum.Int64>(
+          1,
+          _omitFieldNames ? '' : 'chatboxId',
+          $pb.PbFieldType.OU6,
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..a<$fixnum.Int64>(
+          2,
+          _omitFieldNames ? '' : 'packetId',
+          $pb.PbFieldType.OU6,
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..aOM<$0.Any>(
+          3,
+          _omitFieldNames ? '' : 'extensions',
+          subBuilder: $0.Any.create,
+        )
+        ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+    'Will be removed in next major version',
+  )
   ReceiveRedPacketReq clone() => ReceiveRedPacketReq()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+    'Will be removed in next major version',
+  )
   ReceiveRedPacketReq copyWith(void Function(ReceiveRedPacketReq) updates) =>
       super.copyWith((message) => updates(message as ReceiveRedPacketReq))
           as ReceiveRedPacketReq;
@@ -1509,30 +1733,41 @@ class ReceiveRedPacketRsp extends $pb.GeneratedMessage {
     return $result;
   }
   ReceiveRedPacketRsp._() : super();
-  factory ReceiveRedPacketRsp.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory ReceiveRedPacketRsp.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+  factory ReceiveRedPacketRsp.fromBuffer(
+    $core.List<$core.int> i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromBuffer(i, r);
+  factory ReceiveRedPacketRsp.fromJson(
+    $core.String i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'ReceiveRedPacketRsp',
-      package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockIM()),
-      createEmptyInstance: create)
-    ..a<$core.int>(1, _omitFieldNames ? '' : 'code', $pb.PbFieldType.OU3)
-    ..aOS(2, _omitFieldNames ? '' : 'msg')
-    ..aOM<$3.RedPacketDetail>(3, _omitFieldNames ? '' : 'packetDetail',
-        subBuilder: $3.RedPacketDetail.create)
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i =
+      $pb.BuilderInfo(
+          _omitMessageNames ? '' : 'ReceiveRedPacketRsp',
+          package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockIM()),
+          createEmptyInstance: create,
+        )
+        ..a<$core.int>(1, _omitFieldNames ? '' : 'code', $pb.PbFieldType.OU3)
+        ..aOS(2, _omitFieldNames ? '' : 'msg')
+        ..aOM<$3.RedPacketDetail>(
+          3,
+          _omitFieldNames ? '' : 'packetDetail',
+          subBuilder: $3.RedPacketDetail.create,
+        )
+        ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+    'Will be removed in next major version',
+  )
   ReceiveRedPacketRsp clone() => ReceiveRedPacketRsp()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+    'Will be removed in next major version',
+  )
   ReceiveRedPacketRsp copyWith(void Function(ReceiveRedPacketRsp) updates) =>
       super.copyWith((message) => updates(message as ReceiveRedPacketRsp))
           as ReceiveRedPacketRsp;
@@ -1607,34 +1842,51 @@ class GetRedPacketInfoReq extends $pb.GeneratedMessage {
     return $result;
   }
   GetRedPacketInfoReq._() : super();
-  factory GetRedPacketInfoReq.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory GetRedPacketInfoReq.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+  factory GetRedPacketInfoReq.fromBuffer(
+    $core.List<$core.int> i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromBuffer(i, r);
+  factory GetRedPacketInfoReq.fromJson(
+    $core.String i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'GetRedPacketInfoReq',
-      package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockIM()),
-      createEmptyInstance: create)
-    ..a<$fixnum.Int64>(
-        1, _omitFieldNames ? '' : 'chatboxId', $pb.PbFieldType.OU6,
-        defaultOrMaker: $fixnum.Int64.ZERO)
-    ..a<$fixnum.Int64>(
-        2, _omitFieldNames ? '' : 'packetId', $pb.PbFieldType.OU6,
-        defaultOrMaker: $fixnum.Int64.ZERO)
-    ..aOM<$0.Any>(3, _omitFieldNames ? '' : 'extensions',
-        subBuilder: $0.Any.create)
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i =
+      $pb.BuilderInfo(
+          _omitMessageNames ? '' : 'GetRedPacketInfoReq',
+          package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockIM()),
+          createEmptyInstance: create,
+        )
+        ..a<$fixnum.Int64>(
+          1,
+          _omitFieldNames ? '' : 'chatboxId',
+          $pb.PbFieldType.OU6,
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..a<$fixnum.Int64>(
+          2,
+          _omitFieldNames ? '' : 'packetId',
+          $pb.PbFieldType.OU6,
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..aOM<$0.Any>(
+          3,
+          _omitFieldNames ? '' : 'extensions',
+          subBuilder: $0.Any.create,
+        )
+        ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+    'Will be removed in next major version',
+  )
   GetRedPacketInfoReq clone() => GetRedPacketInfoReq()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+    'Will be removed in next major version',
+  )
   GetRedPacketInfoReq copyWith(void Function(GetRedPacketInfoReq) updates) =>
       super.copyWith((message) => updates(message as GetRedPacketInfoReq))
           as GetRedPacketInfoReq;
@@ -1709,30 +1961,41 @@ class GetRedPacketInfoRsp extends $pb.GeneratedMessage {
     return $result;
   }
   GetRedPacketInfoRsp._() : super();
-  factory GetRedPacketInfoRsp.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory GetRedPacketInfoRsp.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+  factory GetRedPacketInfoRsp.fromBuffer(
+    $core.List<$core.int> i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromBuffer(i, r);
+  factory GetRedPacketInfoRsp.fromJson(
+    $core.String i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'GetRedPacketInfoRsp',
-      package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockIM()),
-      createEmptyInstance: create)
-    ..a<$core.int>(1, _omitFieldNames ? '' : 'code', $pb.PbFieldType.OU3)
-    ..aOS(2, _omitFieldNames ? '' : 'msg')
-    ..aOM<$3.RedPacket>(3, _omitFieldNames ? '' : 'redPacket',
-        subBuilder: $3.RedPacket.create)
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i =
+      $pb.BuilderInfo(
+          _omitMessageNames ? '' : 'GetRedPacketInfoRsp',
+          package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockIM()),
+          createEmptyInstance: create,
+        )
+        ..a<$core.int>(1, _omitFieldNames ? '' : 'code', $pb.PbFieldType.OU3)
+        ..aOS(2, _omitFieldNames ? '' : 'msg')
+        ..aOM<$3.RedPacket>(
+          3,
+          _omitFieldNames ? '' : 'redPacket',
+          subBuilder: $3.RedPacket.create,
+        )
+        ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+    'Will be removed in next major version',
+  )
   GetRedPacketInfoRsp clone() => GetRedPacketInfoRsp()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+    'Will be removed in next major version',
+  )
   GetRedPacketInfoRsp copyWith(void Function(GetRedPacketInfoRsp) updates) =>
       super.copyWith((message) => updates(message as GetRedPacketInfoRsp))
           as GetRedPacketInfoRsp;
@@ -1803,30 +2066,45 @@ class ReadSnapReq extends $pb.GeneratedMessage {
     return $result;
   }
   ReadSnapReq._() : super();
-  factory ReadSnapReq.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory ReadSnapReq.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+  factory ReadSnapReq.fromBuffer(
+    $core.List<$core.int> i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromBuffer(i, r);
+  factory ReadSnapReq.fromJson(
+    $core.String i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'ReadSnapReq',
-      package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockIM()),
-      createEmptyInstance: create)
-    ..a<$fixnum.Int64>(
-        1, _omitFieldNames ? '' : 'chatboxId', $pb.PbFieldType.OU6,
-        defaultOrMaker: $fixnum.Int64.ZERO)
-    ..p<$fixnum.Int64>(2, _omitFieldNames ? '' : 'snapIds', $pb.PbFieldType.KU6)
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i =
+      $pb.BuilderInfo(
+          _omitMessageNames ? '' : 'ReadSnapReq',
+          package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockIM()),
+          createEmptyInstance: create,
+        )
+        ..a<$fixnum.Int64>(
+          1,
+          _omitFieldNames ? '' : 'chatboxId',
+          $pb.PbFieldType.OU6,
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..p<$fixnum.Int64>(
+          2,
+          _omitFieldNames ? '' : 'snapIds',
+          $pb.PbFieldType.KU6,
+        )
+        ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+    'Will be removed in next major version',
+  )
   ReadSnapReq clone() => ReadSnapReq()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+    'Will be removed in next major version',
+  )
   ReadSnapReq copyWith(void Function(ReadSnapReq) updates) =>
       super.copyWith((message) => updates(message as ReadSnapReq))
           as ReadSnapReq;
@@ -1859,5 +2137,6 @@ class ReadSnapReq extends $pb.GeneratedMessage {
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames =
-    $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames = $core.bool.fromEnvironment(
+  'protobuf.omit_message_names',
+);

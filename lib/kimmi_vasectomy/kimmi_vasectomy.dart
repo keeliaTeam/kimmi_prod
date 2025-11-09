@@ -43,7 +43,7 @@ class _KimmiVasectomyViking extends State<KimmiVasectomy>
       getPages: KimmiFloppy.routes,
       navigatorObservers: [KimmiSingleScottish()],
       theme: ThemeData(
-        tabBarTheme: const TabBarTheme(dividerColor: Colors.transparent),
+        tabBarTheme: const TabBarThemeData(dividerColor: Colors.transparent),
       ),
       defaultTransition: KimmiIOJuda.isARLanguage()
           ? Transition.downToUp
@@ -61,11 +61,11 @@ class _KimmiVasectomyViking extends State<KimmiVasectomy>
       },
       builder: (BuildContext context, Widget? child) {
         return MediaQuery(
-            data: MediaQuery.of(context)
-                .copyWith(textScaler: const TextScaler.linear(1.0)),
-            child: FlutterEasyLoading(
-              child: child,
-            ));
+          data: MediaQuery.of(
+            context,
+          ).copyWith(textScaler: const TextScaler.linear(1.0)),
+          child: FlutterEasyLoading(child: child),
+        );
       },
     );
   }
@@ -92,8 +92,9 @@ class _KimmiVasectomyViking extends State<KimmiVasectomy>
         KIMMI.deviceService.onResume();
         KimmiSingleScottish().onResume(Get.currentRoute);
       } else {}
-      KimmiTowDock.instance
-          .kimmiLeaderLaborPassportTowMateyMoore(showToast: false);
+      KimmiTowDock.instance.kimmiLeaderLaborPassportTowMateyMoore(
+        showToast: false,
+      );
       KimmiFeastQuitterMarvelSleazy.instance.onAppForegroundChange(true);
       KimmiVasectomyPioneerDock.kimmiOnVasectomyParoleUp(fromBackground: true);
       _hasPausedPrev = false;

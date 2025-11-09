@@ -7,21 +7,27 @@ class CommonToastNotify_ActionType extends $pb.ProtobufEnum {
       CommonToastNotify_ActionType._(0, _omitEnumNames ? '' : 'ACTION_NONE');
   static const CommonToastNotify_ActionType ACTION_POKEBUDDY =
       CommonToastNotify_ActionType._(
-          1, _omitEnumNames ? '' : 'ACTION_POKEBUDDY');
+        1,
+        _omitEnumNames ? '' : 'ACTION_POKEBUDDY',
+      );
   static const CommonToastNotify_ActionType ACTION_ADDBUDDY =
       CommonToastNotify_ActionType._(
-          2, _omitEnumNames ? '' : 'ACTION_ADDBUDDY');
+        2,
+        _omitEnumNames ? '' : 'ACTION_ADDBUDDY',
+      );
   static const CommonToastNotify_ActionType ACTION_INVITETOPARTY =
       CommonToastNotify_ActionType._(
-          3, _omitEnumNames ? '' : 'ACTION_INVITETOPARTY');
+        3,
+        _omitEnumNames ? '' : 'ACTION_INVITETOPARTY',
+      );
 
   static const $core.List<CommonToastNotify_ActionType> values =
       <CommonToastNotify_ActionType>[
-    ACTION_NONE,
-    ACTION_POKEBUDDY,
-    ACTION_ADDBUDDY,
-    ACTION_INVITETOPARTY,
-  ];
+        ACTION_NONE,
+        ACTION_POKEBUDDY,
+        ACTION_ADDBUDDY,
+        ACTION_INVITETOPARTY,
+      ];
 
   static final $core.Map<$core.int, CommonToastNotify_ActionType> _byValue =
       $pb.ProtobufEnum.initByValue(values);
@@ -29,7 +35,7 @@ class CommonToastNotify_ActionType extends $pb.ProtobufEnum {
       _byValue[value];
 
   const CommonToastNotify_ActionType._($core.int v, $core.String n)
-      : super(v, n);
+    : super(v, n);
 }
 
 class PopupNotify_PopupNotifyType extends $pb.ProtobufEnum {
@@ -41,11 +47,7 @@ class PopupNotify_PopupNotifyType extends $pb.ProtobufEnum {
       PopupNotify_PopupNotifyType._(2, _omitEnumNames ? '' : 'COIN_REWARD');
 
   static const $core.List<PopupNotify_PopupNotifyType> values =
-      <PopupNotify_PopupNotifyType>[
-    COMMON_POPUP,
-    COMMON_SNACKBAR,
-    COIN_REWARD,
-  ];
+      <PopupNotify_PopupNotifyType>[COMMON_POPUP, COMMON_SNACKBAR, COIN_REWARD];
 
   static final $core.Map<$core.int, PopupNotify_PopupNotifyType> _byValue =
       $pb.ProtobufEnum.initByValue(values);
@@ -53,7 +55,7 @@ class PopupNotify_PopupNotifyType extends $pb.ProtobufEnum {
       _byValue[value];
 
   const PopupNotify_PopupNotifyType._($core.int v, $core.String n)
-      : super(v, n);
+    : super(v, n);
 }
 
 const _omitEnumNames = $core.bool.fromEnvironment('protobuf.omit_enum_names');

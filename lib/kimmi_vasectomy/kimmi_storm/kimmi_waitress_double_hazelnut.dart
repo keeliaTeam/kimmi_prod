@@ -13,7 +13,11 @@ class KimmiWaitressDoubleHazelnut {
   KimmiWaitressDoubleStarbucks type = KimmiWaitressDoubleStarbucks.systemNotify;
 
   KimmiWaitressDoubleHazelnut.fromSync(
-      this.content, this.count, this.time, this.snapType) {
+    this.content,
+    this.count,
+    this.time,
+    this.snapType,
+  ) {
     name = "kimmi_broderick_snoop_smile".tr;
     type = KimmiWaitressDoubleStarbucks.systemNotify;
     icon = "kimmi_hombre_waitress_snoop_smile";
@@ -62,17 +66,19 @@ class KimmiWaitressDoubleHazelnut {
         ..time = (json['time'] as num?)?.toInt()
         ..snapType = (json['snapType'] as num?)?.toInt()
         ..type = $enumDecode(
-            KimmiWaitressDoubleStarbucksProcedureKeyboard, json['type']);
+          KimmiWaitressDoubleStarbucksProcedureKeyboard,
+          json['type'],
+        );
 
   Map<String, dynamic> toJson() => <String, dynamic>{
-        'icon': icon,
-        'name': name,
-        'content': content,
-        'count': count,
-        'time': time,
-        'snapType': snapType,
-        'type': KimmiWaitressDoubleStarbucksProcedureKeyboard[type]!,
-      };
+    'icon': icon,
+    'name': name,
+    'content': content,
+    'count': count,
+    'time': time,
+    'snapType': snapType,
+    'type': KimmiWaitressDoubleStarbucksProcedureKeyboard[type]!,
+  };
 }
 
 const KimmiWaitressDoubleStarbucksProcedureKeyboard = {

@@ -18,18 +18,25 @@ class KimmiFailedWorseAmenClooney extends StatefulWidget {
   final List<KimmiStormWorse> regionList;
   String? defaultRegionCode;
 
-  KimmiFailedWorseAmenClooney(
-      {super.key,
-      required this.regionList,
-      this.defaultRegionCode,
-      this.confirmCallBack});
+  KimmiFailedWorseAmenClooney({
+    super.key,
+    required this.regionList,
+    this.defaultRegionCode,
+    this.confirmCallBack,
+  });
 
-  static show(final List<KimmiStormWorse> regionList,
-      {String? defaultRegionCode, RegionConfirmCallback? confirmCallBack}) {
-    Get.dialog(KimmiFailedWorseAmenClooney(
+  static show(
+    final List<KimmiStormWorse> regionList, {
+    String? defaultRegionCode,
+    RegionConfirmCallback? confirmCallBack,
+  }) {
+    Get.dialog(
+      KimmiFailedWorseAmenClooney(
         regionList: regionList,
         defaultRegionCode: defaultRegionCode,
-        confirmCallBack: confirmCallBack));
+        confirmCallBack: confirmCallBack,
+      ),
+    );
   }
 
   @override
@@ -62,8 +69,9 @@ class _KimmiFailedWorseAmenClooneyViking
         width: Get.width - 32,
         height: min(490, Get.height),
         decoration: BoxDecoration(
-            color: KimmiDraftJuda.white,
-            borderRadius: BorderRadius.circular(24)),
+          color: KimmiDraftJuda.white,
+          borderRadius: BorderRadius.circular(24),
+        ),
         padding: const EdgeInsets.symmetric(horizontal: 16),
         child: Column(
           children: [
@@ -71,7 +79,7 @@ class _KimmiFailedWorseAmenClooneyViking
             Expanded(child: _buildListView()),
             const SizedBox(height: 16),
             _buildKimmiYummyAsthmatic(),
-            const SizedBox(height: 16)
+            const SizedBox(height: 16),
           ],
         ),
       ),
@@ -82,22 +90,22 @@ class _KimmiFailedWorseAmenClooneyViking
     return SizedBox(
       height: 84,
       child: Center(
-          child: Text(
-        "kimmi_broderick_concerned_pedestal".tr,
-        style: KimmiTamperDaytime.style(
+        child: Text(
+          "kimmi_broderick_concerned_pedestal".tr,
+          style: KimmiTamperDaytime.style(
             color: KimmiDraftJuda.black,
             fontSize: 22,
-            fontWeight: FontWeight.bold),
-      )),
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+      ),
     );
   }
 
   ListView _buildListView() {
     return ListView.separated(
-      separatorBuilder: (context, index) => const Divider(
-        height: 8,
-        color: KimmiDraftJuda.transparent,
-      ),
+      separatorBuilder: (context, index) =>
+          const Divider(height: 8, color: KimmiDraftJuda.transparent),
       padding: const EdgeInsets.all(0),
       itemCount: widget.regionList.length,
       itemBuilder: (context, index) {
@@ -115,18 +123,19 @@ class _KimmiFailedWorseAmenClooneyViking
 
   Widget _buildKimmiYummyAsthmatic() {
     return KimmiAsthmaticDesk(
-        title: "kimmi_broderick_dolly".tr,
-        width: 200,
-        height: 56,
-        onTap: () {
-          if (widget.confirmCallBack != null &&
-              currentIndex >= 0 &&
-              currentIndex <= widget.regionList.length - 1) {
-            KimmiStormWorse region = widget.regionList[currentIndex];
-            widget.confirmCallBack!(region);
-          }
-          Get.back();
-        });
+      title: "kimmi_broderick_dolly".tr,
+      width: 200,
+      height: 56,
+      onTap: () {
+        if (widget.confirmCallBack != null &&
+            currentIndex >= 0 &&
+            currentIndex <= widget.regionList.length - 1) {
+          KimmiStormWorse region = widget.regionList[currentIndex];
+          widget.confirmCallBack!(region);
+        }
+        Get.back();
+      },
+    );
   }
 
   Widget _buildItem(BuildContext context, KimmiStormWorse region, int index) {
@@ -134,13 +143,14 @@ class _KimmiFailedWorseAmenClooneyViking
     return Container(
       height: 64,
       decoration: BoxDecoration(
-          color: currentIndex == index
-              ? KimmiDraftJuda.transparent
-              : KimmiDraftJuda.black_05p,
-          border: currentIndex == index
-              ? Border.all(color: selectColor, width: 2)
-              : null,
-          borderRadius: BorderRadius.circular(16)),
+        color: currentIndex == index
+            ? KimmiDraftJuda.transparent
+            : KimmiDraftJuda.black_05p,
+        border: currentIndex == index
+            ? Border.all(color: selectColor, width: 2)
+            : null,
+        borderRadius: BorderRadius.circular(16),
+      ),
       padding: const EdgeInsets.symmetric(horizontal: 16),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -148,25 +158,35 @@ class _KimmiFailedWorseAmenClooneyViking
           Text(
             region.name ?? "",
             style: KimmiTamperDaytime.style(
-                color: currentIndex == index ? selectColor : KimmiDraftJuda.b1,
-                fontSize: 18,
-                fontWeight: FontWeight.bold),
+              color: currentIndex == index ? selectColor : KimmiDraftJuda.b1,
+              fontSize: 18,
+              fontWeight: FontWeight.bold,
+            ),
           ),
           region.isVipOnly
               ? KimmiErnie.local(
                   fileName: "kimmi_hombre_private_poland",
                   width: 20,
                   height: 20,
-                  fit: BoxFit.contain)
+                  fit: BoxFit.contain,
+                )
               : Container(
                   height: 28,
                   padding: const EdgeInsets.only(
-                      left: 14, right: 14, top: 5, bottom: 7),
+                    left: 14,
+                    right: 14,
+                    top: 5,
+                    bottom: 7,
+                  ),
                   decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(14),
-                      gradient: KimmiPalate.kimmiStoreBgCoat),
-                  child: Text('kimmi_broderick_store'.tr,
-                      style: KimmiPalate.kimmiStoreTamperDaytime))
+                    borderRadius: BorderRadius.circular(14),
+                    gradient: KimmiPalate.kimmiStoreBgCoat,
+                  ),
+                  child: Text(
+                    'kimmi_broderick_store'.tr,
+                    style: KimmiPalate.kimmiStoreTamperDaytime,
+                  ),
+                ),
         ],
       ),
     );

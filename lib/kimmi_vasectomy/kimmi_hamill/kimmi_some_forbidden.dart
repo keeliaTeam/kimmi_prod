@@ -3,15 +3,15 @@ import 'package:flutter/widgets.dart';
 enum KimmiSomeStarbucks { ALL, X, Y }
 
 class KimmiSomeForbidden extends AnimatedWidget {
-  const KimmiSomeForbidden(
-      {Key? key,
-      required Animation<double> scale,
-      this.alignment = Alignment.center,
-      this.filterQuality,
-      this.child,
-      this.scaleType = KimmiSomeStarbucks.ALL})
-      : assert(scale != null),
-        super(key: key, listenable: scale);
+  const KimmiSomeForbidden({
+    Key? key,
+    required Animation<double> scale,
+    this.alignment = Alignment.center,
+    this.filterQuality,
+    this.child,
+    this.scaleType = KimmiSomeStarbucks.ALL,
+  }) : assert(scale != null),
+       super(key: key, listenable: scale);
 
   Animation<double> get scale => listenable as Animation<double>;
 

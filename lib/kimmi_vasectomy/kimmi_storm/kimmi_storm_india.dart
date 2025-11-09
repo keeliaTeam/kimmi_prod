@@ -57,7 +57,7 @@ class KimmiStormIndia {
       "progress": progress,
       "relativePath": relativePath,
       "gif_url": gifUrl,
-      "url": url
+      "url": url,
     };
   }
 }

@@ -1,5 +1,5 @@
 import 'dart:math';
-import 'kimmi_tangerine_boat.dart';
+import 'kimmi_unemployed_lauren.dart';
 import 'dart:collection';
 import 'dart:io';
 
@@ -26,28 +26,33 @@ class KimmiInkContainer extends StatelessWidget {
   Widget build(BuildContext context) {
     if (logic.arguments.showNavbar) {
       return Scaffold(
-          backgroundColor: KimmiPalate.kimmiContainerBgYummy,
-          extendBodyBehindAppBar: false,
-          appBar: AppBar(
-            leading: InkWell(
-                onTap: Get.back,
-                child: const Icon(Icons.arrow_back_ios,
-                    color: Colors.white, size: 18)),
-            backgroundColor: Colors.transparent,
-            centerTitle: true,
-            titleTextStyle: const TextStyle(
-                fontSize: 18,
-                fontWeight: FontWeight.w500,
-                color: KimmiDraftJuda.white),
-            title: GetBuilder<KimmiInkInvoice>(
-                id: KimmiInkInvoice.kimmi_captive,
-                builder: (logic) {
-                  return Text(logic.pageTitle.value);
-                }),
+        backgroundColor: KimmiPalate.kimmiContainerBgYummy,
+        extendBodyBehindAppBar: false,
+        appBar: AppBar(
+          leading: InkWell(
+            onTap: Get.back,
+            child: const Icon(
+              Icons.arrow_back_ios,
+              color: Colors.white,
+              size: 18,
+            ),
           ),
-          body: SafeArea(
-            child: _kimmiCommentaryTemperUneven(),
-          ));
+          backgroundColor: Colors.transparent,
+          centerTitle: true,
+          titleTextStyle: const TextStyle(
+            fontSize: 18,
+            fontWeight: FontWeight.w500,
+            color: KimmiDraftJuda.white,
+          ),
+          title: GetBuilder<KimmiInkInvoice>(
+            id: KimmiInkInvoice.kimmi_captive,
+            builder: (logic) {
+              return Text(logic.pageTitle.value);
+            },
+          ),
+        ),
+        body: SafeArea(child: _kimmiCommentaryTemperUneven()),
+      );
     } else {
       return _kimmiCommentaryTemperUneven();
     }
@@ -55,7 +60,8 @@ class KimmiInkContainer extends StatelessWidget {
 
   Widget _kimmiCommentaryTemperUneven() {
     return KimmiTemperUneven(
-        url: logic.arguments.url,
-        onTitleChanged: logic.onKimmiDevastateCommercial);
+      url: logic.arguments.url,
+      onTitleChanged: logic.onKimmiDevastateCommercial,
+    );
   }
 }

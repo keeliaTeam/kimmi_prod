@@ -18,10 +18,6 @@ class KimmiStormJackal {
   }
 
   Map<String, dynamic> toJson() {
-    return <String, dynamic>{
-      "id": id,
-      "name": name,
-      "icon": icon,
-    };
+    return <String, dynamic>{"id": id, "name": name, "icon": icon};
   }
 }

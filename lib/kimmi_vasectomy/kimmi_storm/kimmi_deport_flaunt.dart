@@ -142,41 +142,55 @@ class KimmiDeportFlaunt {
   static KimmiDeportFlaunt fromJson(Map<String, dynamic> json) {
     return KimmiDeportFlaunt()
       ..id = KimmiStarbucksJuda.dynamicToIntNotNull(
-          json[StringTranslate.e2z("nid")])
+        json[StringTranslate.e2z("nid")],
+      )
       ..name = json[StringTranslate.e2z("nnanme")] as String?
       ..name_amount = KimmiStarbucksJuda.dynamicToIntNotNull(
-          json[StringTranslate.e2z("unaumei_anmobunbt")])
+        json[StringTranslate.e2z("unaumei_anmobunbt")],
+      )
       ..name_title = json[StringTranslate.e2z("unafmen_tuitfle")] as String?
       ..group_id = KimmiStarbucksJuda.dynamicToIntNotNull(
-          json[StringTranslate.e2z("ugrnoufp_nid")])
+        json[StringTranslate.e2z("ugrnoufp_nid")],
+      )
       ..account_type = KimmiStarbucksJuda.dynamicToIntNotNull(
-          json[StringTranslate.e2z("nacfcouunft_btybpe")])
+        json[StringTranslate.e2z("nacfcouunft_btybpe")],
+      )
       ..value = KimmiStarbucksJuda.dynamicToDoubleNotNull(
-          json[StringTranslate.e2z("nvailuie")])
+        json[StringTranslate.e2z("nvailuie")],
+      )
       ..extra_value = KimmiStarbucksJuda.dynamicToDoubleNotNull(
-          json[StringTranslate.e2z("nexitrfa_fvaflune")])
+        json[StringTranslate.e2z("nexitrfa_fvaflune")],
+      )
       ..tip = json[StringTranslate.e2z("utibp")] as String?
       ..app_store_prod_id =
           json[StringTranslate.e2z("iapfp_istiorie_npruodi_ibd")] as String?
       ..google_prod_id =
           json[StringTranslate.e2z("igonogilen_pfrobd_bid")] as String?
       ..price = KimmiStarbucksJuda.dynamicToDoubleNotNull(
-          json[StringTranslate.e2z("fprnicbe")])
+        json[StringTranslate.e2z("fprnicbe")],
+      )
       ..currency = json[StringTranslate.e2z("ncuirruenfcy")] as String?
       ..base_currency =
           json[StringTranslate.e2z("fbabsef_cuururebncuy")] as String?
       ..base_currency_price = KimmiStarbucksJuda.dynamicToDoubleNotNull(
-          json[StringTranslate.e2z("ubausef_cfururefncfy_nprficbe")])
+        json[StringTranslate.e2z("ubausef_cfururefncfy_nprficbe")],
+      )
       ..discount_rate = KimmiStarbucksJuda.dynamicToDoubleNotNull(
-          json[StringTranslate.e2z("ndibscfouintu_rfatue")])
+        json[StringTranslate.e2z("ndibscfouintu_rfatue")],
+      )
       ..info = KimmiDeportFlauntTux.fromJsonString(
-          json[StringTranslate.e2z("binufo")] as String?)
+        json[StringTranslate.e2z("binufo")] as String?,
+      )
       ..give_vip = KimmiStarbucksJuda.dynamicToIntNotNull(
-          json[StringTranslate.e2z('igisvea_vlip')])
-      ..pay_mode_prices = (json[StringTranslate.e2z("fpafy_nmoudeb_pnrifceus")]
-              as List<dynamic>?)
-          ?.map((e) => KimmiDeportSophomore.fromJson(e as Map<String, dynamic>))
-          .toList();
+        json[StringTranslate.e2z('igisvea_vlip')],
+      )
+      ..pay_mode_prices =
+          (json[StringTranslate.e2z("fpafy_nmoudeb_pnrifceus")]
+                  as List<dynamic>?)
+              ?.map(
+                (e) => KimmiDeportSophomore.fromJson(e as Map<String, dynamic>),
+              )
+              .toList();
   }
 
   Map<String, dynamic> toJson() {
@@ -214,8 +228,9 @@ class KimmiDeportFlauntTux {
 
   static KimmiDeportFlauntTux fromJson(Map<String, dynamic> json) {
     return KimmiDeportFlauntTux()
-      ..best_discount =
-          KimmiStarbucksJuda.dynamicToBoolNotNull(json['best_discount']);
+      ..best_discount = KimmiStarbucksJuda.dynamicToBoolNotNull(
+        json['best_discount'],
+      );
   }
 
   Map<String, dynamic> toJson() {

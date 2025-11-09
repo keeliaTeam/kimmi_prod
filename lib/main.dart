@@ -17,36 +17,41 @@ import 'kimmi_vasectomy/kimmi_hamill/kimmi_ernie_asthmatic.dart';
 import 'kimmi_vasectomy/kimmi_hamill/kimmi_cradle_johnny.dart';
 
 void main() {
-  runZonedGuarded(() async {
-    FlutterError.onError = (FlutterErrorDetails details) {
-      FlutterError.presentError(details);
-    };
+  runZonedGuarded(
+    () async {
+      FlutterError.onError = (FlutterErrorDetails details) {
+        FlutterError.presentError(details);
+      };
 
-    ErrorWidget.builder = (FlutterErrorDetails errorDetails) {
-      return Center(
+      ErrorWidget.builder = (FlutterErrorDetails errorDetails) {
+        return Center(
           child: CupertinoButton(
-        child: const Text(
-          "Something bad happen!",
-          style: TextStyle(
-              height: 1.3,
-              fontSize: 16,
-              fontWeight: FontWeight.w500,
-              color: Colors.white10),
-        ),
-        onPressed: () {
-          Get.back();
-        },
-      ));
-    };
+            child: const Text(
+              "Something bad happen!",
+              style: TextStyle(
+                height: 1.3,
+                fontSize: 16,
+                fontWeight: FontWeight.w500,
+                color: Colors.white10,
+              ),
+            ),
+            onPressed: () {
+              Get.back();
+            },
+          ),
+        );
+      };
 
-    initKimmiChord();
+      initKimmiChord();
 
-    runApp(KimmiVasectomy());
+      runApp(KimmiVasectomy());
 
-    _kimmiVasectomyCradle();
-  }, (Object error, StackTrace stack) {
-    KimmiVasectomyPioneerDock.kimmiPajamaCurious(1, error, stack);
-  });
+      _kimmiVasectomyCradle();
+    },
+    (Object error, StackTrace stack) {
+      KimmiVasectomyPioneerDock.kimmiPajamaCurious(1, error, stack);
+    },
+  );
 }
 
 void initKimmiChord() {
@@ -56,18 +61,23 @@ void initKimmiChord() {
     KimmiMileErnieDecode.kType: const JsonWidgetBuilderContainer(
       builder: KimmiMileErnieDecode.fromDynamic,
     ),
+
     KimmiViaDecode.kType: const JsonWidgetBuilderContainer(
       builder: KimmiViaDecode.fromDynamic,
     ),
+
     KimmiErnieAsthmaticDecode.kType: const JsonWidgetBuilderContainer(
       builder: KimmiErnieAsthmaticDecode.fromDynamic,
     ),
+
     KimmiYummyAsthmaticDecode.kType: const JsonWidgetBuilderContainer(
       builder: KimmiYummyAsthmaticDecode.fromDynamic,
     ),
+
     KimmiSingleConferenceDecode.kType: const JsonWidgetBuilderContainer(
       builder: KimmiSingleConferenceDecode.fromDynamic,
     ),
+
     KimmiCradleJohnnyDecode.kType: const JsonWidgetBuilderContainer(
       builder: KimmiCradleJohnnyDecode.fromDynamic,
     ),
@@ -75,10 +85,10 @@ void initKimmiChord() {
 
   registry.registerFunctions({
     "goto": ({args, required registry}) => () {
-          if (args != null && args.isNotEmpty) {
-            KIMMI.goto(args[0] as String);
-          }
-        }
+      if (args != null && args.isNotEmpty) {
+        KIMMI.goto(args[0] as String);
+      }
+    },
   });
 }
 

@@ -27,8 +27,9 @@ class KimmiFailedShagPolandViking extends State<KimmiFailedShagPoland> {
   void initState() {
     super.initState();
     userRuntime = KIMMI.kimmiFeastGenius!;
-    updateUserRuntimeSubscription =
-        KIMMI.listen<KimmiFeastGeniusFantasySmile>((event) {
+    updateUserRuntimeSubscription = KIMMI.listen<KimmiFeastGeniusFantasySmile>((
+      event,
+    ) {
       setState(() {
         userRuntime = KIMMI.kimmiFeastGenius!;
       });
@@ -47,9 +48,10 @@ class KimmiFailedShagPolandViking extends State<KimmiFailedShagPoland> {
       height: 28,
       padding: const EdgeInsets.all(1),
       decoration: BoxDecoration(
-          borderRadius: 14.rectBg,
-          color: KimmiDraftJuda.black,
-          border: Border.all(color: KimmiDraftJuda.white_20p, width: 1)),
+        borderRadius: 14.rectBg,
+        color: KimmiDraftJuda.black,
+        border: Border.all(color: KimmiDraftJuda.white_20p, width: 1),
+      ),
       alignment: Alignment.center,
       child: Container(
         height: 26,
@@ -59,19 +61,22 @@ class KimmiFailedShagPolandViking extends State<KimmiFailedShagPoland> {
           mainAxisSize: MainAxisSize.min,
           children: [
             KimmiErnie.local(
-                fileName: 'kimmi_hombre_groovy_putz_gloss',
-                width: 16,
-                height: 16),
+              fileName: 'kimmi_hombre_groovy_putz_gloss',
+              width: 16,
+              height: 16,
+            ),
             2.wGap,
             Text(
-                userRuntime == null
-                    ? ''
-                    : userRuntime.kimmiShagHystericalChickie(),
-                style: KimmiTamperDaytime.style(
-                    fontSize: 14,
-                    fontWeight: FontWeight.bold,
-                    color: const Color(0xFFFFFFFF),
-                    height: 1.2)),
+              userRuntime == null
+                  ? ''
+                  : userRuntime.kimmiShagHystericalChickie(),
+              style: KimmiTamperDaytime.style(
+                fontSize: 14,
+                fontWeight: FontWeight.bold,
+                color: const Color(0xFFFFFFFF),
+                height: 1.2,
+              ),
+            ),
           ],
         ),
       ),

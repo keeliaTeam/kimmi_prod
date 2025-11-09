@@ -27,13 +27,14 @@ class KimmiStormCam {
 
   factory KimmiStormCam.fromJson(Map<String, dynamic> json) {
     return KimmiStormCam(
-        KimmiKeyboardJuda.intDef(json, "id", 0),
-        KimmiKeyboardJuda.intDef(json, "duration", 0),
-        KimmiKeyboardJuda.intDef(json, "size", 0),
-        KimmiKeyboardJuda.strDef(json, "voice_url", ''),
-        KimmiKeyboardJuda.strDef(json, "mime_type", ''),
-        KimmiKeyboardJuda.doubleDef(json, "progress", 0),
-        KimmiKeyboardJuda.strDef(json, "relativePath", ''));
+      KimmiKeyboardJuda.intDef(json, "id", 0),
+      KimmiKeyboardJuda.intDef(json, "duration", 0),
+      KimmiKeyboardJuda.intDef(json, "size", 0),
+      KimmiKeyboardJuda.strDef(json, "voice_url", ''),
+      KimmiKeyboardJuda.strDef(json, "mime_type", ''),
+      KimmiKeyboardJuda.doubleDef(json, "progress", 0),
+      KimmiKeyboardJuda.strDef(json, "relativePath", ''),
+    );
   }
 
   Map<String, dynamic> toJson() {

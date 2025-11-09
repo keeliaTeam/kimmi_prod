@@ -1,108 +1,59 @@
 import 'dart:math';
-import 'kimmi_carry_ugly.dart';
+import 'kimmi_clark_milkshake.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_floppy/kimmi_timing_vasectomy.dart';
 import 'package:get/get.dart';
 
 class KimmiTimingVasectomyInvoice extends GetxController {
-  String okIdFeature_ = "";
-  int etFannyPlaydate_ = 95;
-  int itWhimsicalDraft_ = 0;
-  bool ofLawyerFloppy_ = true;
-  bool loWelcomeGenderless_ = true;
-  int ahMantisTonight_ = 32;
-  bool woDensitySmile_ = true;
+  bool goAirborneBadge_ = false;
+  bool doFurrySmart_ = true;
+  bool joHardTradition_ = true;
+  bool laSouthBroderick_ = true;
+  bool etHealerShoe_ = false;
+  bool inSuperiorFraud_ = false;
 
-  void joBornWit() {
-    etFannyPlaydate_ = ahMantisTonight_ * itWhimsicalDraft_;
+  void edFalconFellas() {
+    if (goAirborneBadge_ && inSuperiorFraud_) {
+      joHardTradition_ = !joHardTradition_;
+    }
 
-    etFannyPlaydate_ = ahMantisTonight_ * itWhimsicalDraft_;
-
-    if (etFannyPlaydate_ > 0) {
-      ahMantisTonight_ = itWhimsicalDraft_ ~/ etFannyPlaydate_;
+    if (laSouthBroderick_ || doFurrySmart_) {
+      doFurrySmart_ = !doFurrySmart_;
     }
-    if (itWhimsicalDraft_ > 0) {
-      etFannyPlaydate_ = ahMantisTonight_ ~/ itWhimsicalDraft_;
+    if (joHardTradition_ && doFurrySmart_ && laSouthBroderick_) {
+      joHardTradition_ = !joHardTradition_;
+      doFurrySmart_ = joHardTradition_;
+      laSouthBroderick_ = joHardTradition_;
     }
-    itWhimsicalDraft_ = 715;
-    ahMantisTonight_ = 606;
-    etFannyPlaydate_ = itWhimsicalDraft_ + ahMantisTonight_;
-    okIdFeature_ = okIdFeature_.toUpperCase();
-    if (ofLawyerFloppy_ || loWelcomeGenderless_ || woDensitySmile_) {
-      ofLawyerFloppy_ = !loWelcomeGenderless_;
-      loWelcomeGenderless_ = !woDensitySmile_;
-      woDensitySmile_ = !ofLawyerFloppy_;
-    }
-    okIdFeature_ = okIdFeature_.toUpperCase();
-    okIdFeature_ = okIdFeature_.toUpperCase();
-    woDensitySmile_ = ofLawyerFloppy_ && loWelcomeGenderless_;
   }
 
-  void ifFeedDaytime() {
-    ahMantisTonight_ = itWhimsicalDraft_;
-    etFannyPlaydate_ = itWhimsicalDraft_;
+  void paSutraSpeed() {
+    laSouthBroderick_ = joHardTradition_ && etHealerShoe_;
 
-    okIdFeature_ = okIdFeature_.toUpperCase();
-    woDensitySmile_ = ofLawyerFloppy_ && loWelcomeGenderless_;
+    doFurrySmart_ = joHardTradition_ || inSuperiorFraud_;
   }
 
-  void ifLeaderUr() {
-    ahMantisTonight_ = itWhimsicalDraft_ + etFannyPlaydate_;
+  void enMaleUn() {
+    doFurrySmart_ = laSouthBroderick_ && inSuperiorFraud_;
 
-    if (woDensitySmile_) {
-      loWelcomeGenderless_ = !ofLawyerFloppy_;
-    }
-    okIdFeature_ = okIdFeature_.toUpperCase();
-
-    if (etFannyPlaydate_ > itWhimsicalDraft_) {
-      ahMantisTonight_ = itWhimsicalDraft_ - etFannyPlaydate_;
-    } else {
-      ahMantisTonight_ = etFannyPlaydate_ - itWhimsicalDraft_;
-    }
-    ahMantisTonight_ = itWhimsicalDraft_;
-    etFannyPlaydate_ = itWhimsicalDraft_;
-
-    okIdFeature_ = okIdFeature_.toUpperCase();
-    if (loWelcomeGenderless_ || ofLawyerFloppy_ || woDensitySmile_) {
-      loWelcomeGenderless_ = !ofLawyerFloppy_;
-      ofLawyerFloppy_ = !woDensitySmile_;
-      woDensitySmile_ = !loWelcomeGenderless_;
-    }
-    okIdFeature_ = okIdFeature_.toUpperCase();
-
-    ahMantisTonight_ = itWhimsicalDraft_;
-    etFannyPlaydate_ = itWhimsicalDraft_;
-  }
-
-  void oxFasterAsthmatic() {
-    okIdFeature_ = okIdFeature_.toUpperCase();
-    okIdFeature_ = okIdFeature_.toUpperCase();
-    okIdFeature_ = okIdFeature_.toUpperCase();
-    if (loWelcomeGenderless_ || ofLawyerFloppy_) {
-      ofLawyerFloppy_ = !ofLawyerFloppy_;
+    if (laSouthBroderick_ || etHealerShoe_) {
+      etHealerShoe_ = !etHealerShoe_;
     }
 
-    okIdFeature_ = okIdFeature_.toUpperCase();
-    if (etFannyPlaydate_ > ahMantisTonight_) {
-      itWhimsicalDraft_ = ahMantisTonight_ - etFannyPlaydate_;
-    } else {
-      itWhimsicalDraft_ = etFannyPlaydate_ - ahMantisTonight_;
-    }
-
-    okIdFeature_ = okIdFeature_.toUpperCase();
-    etFannyPlaydate_ = ahMantisTonight_ + itWhimsicalDraft_;
+    doFurrySmart_ = laSouthBroderick_ || joHardTradition_;
   }
 
   late KimmiTimingVasectomy app;
 
   @override
   void onInit() {
-    if (e < 2) {
-      KimmiCarryUgly().elLawyerViking();
-      KimmiCarryUgly().faScrapeHoroscope();
-    }
     if (ln2 < 0.5) {
-      ifFeedDaytime();
-      joBornWit();
+      KimmiClarkMilkshake().exObviousUnemployed();
+      KimmiClarkMilkshake().atEarTorch();
+      KimmiClarkMilkshake().enTerribleAntibiotic();
+    }
+    if (e < 2) {
+      enMaleUn();
+      edFalconFellas();
     }
     super.onInit();
 

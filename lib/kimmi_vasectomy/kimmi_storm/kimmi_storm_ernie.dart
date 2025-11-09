@@ -45,12 +45,12 @@ class KimmiStormErnie {
   }
 
   Map<String, dynamic> toJson() => <String, dynamic>{
-        'id': id,
-        'width': width,
-        'height': height,
-        'img_url': imgUrl,
-        'url': url,
-        'mime_type': mimeType,
-        'relativePath': relativePath,
-      };
+    'id': id,
+    'width': width,
+    'height': height,
+    'img_url': imgUrl,
+    'url': url,
+    'mime_type': mimeType,
+    'relativePath': relativePath,
+  };
 }

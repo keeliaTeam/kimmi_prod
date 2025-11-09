@@ -15,7 +15,8 @@ class KimmiStormHubcapAmenCampfire {
       ..first_charge = json["first_charge"] == null
           ? null
           : KimmiStormTraditionLimbicHubcap.fromJson(
-              json["first_charge"] as Map<String, dynamic>);
+              json["first_charge"] as Map<String, dynamic>,
+            );
   }
 }
 

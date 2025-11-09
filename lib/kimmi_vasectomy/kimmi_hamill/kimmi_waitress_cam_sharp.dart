@@ -10,11 +10,7 @@ import '../kimmi_juda/kimmi_immerse_juda.dart';
 import 'kimmi_ernie.dart';
 import '../kimmi_tonight/kimmi_defrost.dart';
 
-enum ChatInputVoiceRecordState {
-  none,
-  recording,
-  recordingOnDelete,
-}
+enum ChatInputVoiceRecordState { none, recording, recordingOnDelete }
 
 class KimmiWaitressCamSharp extends StatefulWidget {
   final ValueChanged<String> onVoiceRecord;
@@ -103,20 +99,20 @@ class _KimmiWaitressCamSharpViking extends State<KimmiWaitressCamSharp> {
         Text(
           recordTips,
           style: KimmiTamperDaytime.style(
-              color: KimmiDraftJuda.white,
-              fontSize: 14.0,
-              fontWeight: FontWeight.w500),
+            color: KimmiDraftJuda.white,
+            fontSize: 14.0,
+            fontWeight: FontWeight.w500,
+          ),
         ),
         const SizedBox(height: 10.0),
-        VoiceRecordAnimation(
-          key: _voiceRecordAnimationKey,
-        ),
+        VoiceRecordAnimation(key: _voiceRecordAnimationKey),
         const SizedBox(height: 20.0),
         Row(
           children: <Widget>[
             SizedBox(width: buttonSpace),
             Visibility(
-              visible: _recordState == ChatInputVoiceRecordState.recording ||
+              visible:
+                  _recordState == ChatInputVoiceRecordState.recording ||
                   _recordState == ChatInputVoiceRecordState.recordingOnDelete,
               maintainSize: true,
               maintainAnimation: true,
@@ -128,17 +124,20 @@ class _KimmiWaitressCamSharpViking extends State<KimmiWaitressCamSharp> {
                   width: 72.0,
                   height: 72.0,
                   decoration: BoxDecoration(
-                    color: _recordState ==
+                    color:
+                        _recordState ==
                             ChatInputVoiceRecordState.recordingOnDelete
                         ? KimmiDraftJuda.color_ff4d4d
                         : KimmiDraftJuda.transparent,
                     borderRadius: BorderRadius.circular(36.0),
                   ),
                   child: Center(
-                      child: KimmiErnie.local(
-                          fileName: "kimmi_hombre_cam_brett",
-                          width: 24,
-                          height: 24)),
+                    child: KimmiErnie.local(
+                      fileName: "kimmi_hombre_cam_brett",
+                      width: 24,
+                      height: 24,
+                    ),
+                  ),
                 ),
                 onPressed: () {},
               ),
@@ -146,30 +145,33 @@ class _KimmiWaitressCamSharpViking extends State<KimmiWaitressCamSharp> {
             SizedBox(width: buttonSpace),
             GestureDetector(
               child: Container(
-                  width: 100.0,
-                  height: 100.0,
-                  decoration: BoxDecoration(
-                    color: _recordState == ChatInputVoiceRecordState.none
-                        ? KimmiDraftJuda.white_10p
-                        : null,
-                    border: _recordState == ChatInputVoiceRecordState.none
-                        ? Border.all(color: KimmiDraftJuda.white_20p, width: 1)
-                        : null,
-                    gradient: _recordState == ChatInputVoiceRecordState.none
-                        ? null
-                        : const LinearGradient(
-                            begin: Alignment.topCenter,
-                            end: Alignment.bottomCenter,
-                            colors: [Color(0xFFFFB955), Color(0xFFCE4400)]),
-                    borderRadius: BorderRadius.circular(50.0),
-                  ),
-                  alignment: Alignment.center,
-                  child: KimmiErnie.local(
-                      fileName: _recordState == ChatInputVoiceRecordState.none
-                          ? "kimmi_hombre_cam_on_gloss"
-                          : "kimmi_hombre_cam_mushy_gloss",
-                      width: 36,
-                      height: 36)),
+                width: 100.0,
+                height: 100.0,
+                decoration: BoxDecoration(
+                  color: _recordState == ChatInputVoiceRecordState.none
+                      ? KimmiDraftJuda.white_10p
+                      : null,
+                  border: _recordState == ChatInputVoiceRecordState.none
+                      ? Border.all(color: KimmiDraftJuda.white_20p, width: 1)
+                      : null,
+                  gradient: _recordState == ChatInputVoiceRecordState.none
+                      ? null
+                      : const LinearGradient(
+                          begin: Alignment.topCenter,
+                          end: Alignment.bottomCenter,
+                          colors: [Color(0xFFFFB955), Color(0xFFCE4400)],
+                        ),
+                  borderRadius: BorderRadius.circular(50.0),
+                ),
+                alignment: Alignment.center,
+                child: KimmiErnie.local(
+                  fileName: _recordState == ChatInputVoiceRecordState.none
+                      ? "kimmi_hombre_cam_on_gloss"
+                      : "kimmi_hombre_cam_mushy_gloss",
+                  width: 36,
+                  height: 36,
+                ),
+              ),
               onLongPressStart: (details) {
                 startRecord();
               },
@@ -180,8 +182,9 @@ class _KimmiWaitressCamSharpViking extends State<KimmiWaitressCamSharp> {
                 _setRecordState(ChatInputVoiceRecordState.none);
               },
               onLongPressMoveUpdate: (details) {
-                RenderBox? box = _deleteButtonKey.currentContext
-                    ?.findRenderObject() as RenderBox;
+                RenderBox? box =
+                    _deleteButtonKey.currentContext?.findRenderObject()
+                        as RenderBox;
                 Offset offset = box.localToGlobal(Offset.zero);
                 Size? size = box.size;
                 if (details.globalPosition.dx > offset.dx &&
@@ -286,15 +289,15 @@ class _VoiceRecordAnimationState extends State<VoiceRecordAnimation> {
 
     lineWidgets.clear();
     for (var i = 0; i < volumeList.length; i++) {
-      lineWidgets.add(Container(
-        width: 2,
-        height: 8.0 + volumeList[i] * 20,
-        color: KimmiDraftJuda.black_10p,
-      ));
-      if (i != volumeList.length - 1) {
-        lineWidgets.add(const SizedBox(
+      lineWidgets.add(
+        Container(
           width: 2,
-        ));
+          height: 8.0 + volumeList[i] * 20,
+          color: KimmiDraftJuda.black_10p,
+        ),
+      );
+      if (i != volumeList.length - 1) {
+        lineWidgets.add(const SizedBox(width: 2));
       }
     }
   }

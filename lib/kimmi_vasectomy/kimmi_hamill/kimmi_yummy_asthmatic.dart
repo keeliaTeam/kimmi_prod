@@ -9,9 +9,7 @@ part 'kimmi_yummy_asthmatic.g.dart';
 
 @jsonWidget
 abstract class _KimmiYummyAsthmaticDecode extends JsonWidgetBuilder {
-  const _KimmiYummyAsthmaticDecode({
-    required super.args,
-  });
+  const _KimmiYummyAsthmaticDecode({required super.args});
 
   @override
   KimmiYummyAsthmatic buildCustom({
@@ -23,20 +21,21 @@ abstract class _KimmiYummyAsthmaticDecode extends JsonWidgetBuilder {
 }
 
 class KimmiYummyAsthmatic extends StatelessWidget {
-  KimmiYummyAsthmatic(
-      {super.key,
-      required this.width,
-      required this.height,
-      required this.onTap,
-      this.title,
-      this.titleColor = Colors.white,
-      this.titleFontSize = 16,
-      this.titleFontWeight = FontWeight.bold,
-      this.colorFrom = KimmiPalate.kimmiBathtubStuFoundationYummy,
-      this.colorTo = KimmiPalate.kimmiBathtubStuToYummy,
-      this.borderRadius,
-      this.radius,
-      this.child});
+  KimmiYummyAsthmatic({
+    super.key,
+    required this.width,
+    required this.height,
+    required this.onTap,
+    this.title,
+    this.titleColor = Colors.white,
+    this.titleFontSize = 16,
+    this.titleFontWeight = FontWeight.bold,
+    this.colorFrom = KimmiPalate.kimmiBathtubStuFoundationYummy,
+    this.colorTo = KimmiPalate.kimmiBathtubStuToYummy,
+    this.borderRadius,
+    this.radius,
+    this.child,
+  });
 
   final String? title;
   final Color titleColor;
@@ -83,12 +82,16 @@ class KimmiYummyAsthmatic extends StatelessWidget {
           elevation: MaterialStateProperty.all(0),
           backgroundColor: MaterialStateProperty.all(Colors.transparent),
         ),
-        child: child ??
-            Text(title!,
-                style: TextStyle(
-                    fontSize: titleFontSize,
-                    color: titleColor,
-                    fontWeight: titleFontWeight)),
+        child:
+            child ??
+            Text(
+              title!,
+              style: TextStyle(
+                fontSize: titleFontSize,
+                color: titleColor,
+                fontWeight: titleFontWeight,
+              ),
+            ),
       ),
     );
   }

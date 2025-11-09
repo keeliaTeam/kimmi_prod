@@ -1,5 +1,6 @@
 import 'package:kimmi/kimmi_vasectomy/kimmi_curvy/kimmi_vasectomy_pioneer_dock.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_curvy/kimmi_africa.dart';
+import 'package:better_player_plus/better_player_plus.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:get/get.dart';
@@ -16,13 +17,14 @@ class KimmiFailedIndiaUneven extends StatefulWidget {
   VoidCallback? completeCallBack;
   VoidCallback? onPlayCallback;
 
-  KimmiFailedIndiaUneven(
-      {super.key,
-      required this.netPath,
-      this.fromType = 0,
-      this.isLoop = true,
-      this.completeCallBack,
-      this.onPlayCallback});
+  KimmiFailedIndiaUneven({
+    super.key,
+    required this.netPath,
+    this.fromType = 0,
+    this.isLoop = true,
+    this.completeCallBack,
+    this.onPlayCallback,
+  });
 
   @override
   _KimmiFailedIndiaUnevenViking createState() =>
@@ -30,7 +32,7 @@ class KimmiFailedIndiaUneven extends StatefulWidget {
 }
 
 class _KimmiFailedIndiaUnevenViking extends State<KimmiFailedIndiaUneven> {
-  VideoPlayerController? _playController;
+  BetterPlayerController? _playController;
 
   int _preBufferDurationStart = 0;
 
@@ -65,35 +67,55 @@ class _KimmiFailedIndiaUnevenViking extends State<KimmiFailedIndiaUneven> {
 
   @override
   Widget build(BuildContext context) {
+    double width = Get.width - 22 * 2;
+    double height = width * 596 / 334;
     return AspectRatio(
-      aspectRatio: _playController?.value.aspectRatio ?? 1.0,
-      child:
-          _playController == null ? Container() : VideoPlayer(_playController!),
+      aspectRatio:
+          _playController?.videoPlayerController?.value.aspectRatio ??
+          width / height,
+      child: _playController == null
+          ? Container()
+          : BetterPlayer(controller: _playController!),
     );
   }
 
   _kimmiEnglishPolo() {
     _preBufferDurationStart = DateTime.now().millisecondsSinceEpoch;
-    _playController =
-        VideoPlayerController.networkUrl(Uri.parse(widget.netPath));
-    _playController!.initialize().then((_) {
-      int now = DateTime.now().millisecondsSinceEpoch;
-      _playController?.setVolume(0);
-      _playController?.setLooping(widget.isLoop);
-      _playController?.play();
+    final betterPlayerDataSource = BetterPlayerDataSource(
+      BetterPlayerDataSourceType.network,
+      widget.netPath,
+    );
+    double width = Get.width - 22 * 2;
+    double height = width * 596 / 334;
+    _playController = BetterPlayerController(
+      BetterPlayerConfiguration(
+        aspectRatio: width / height,
+        autoPlay: true,
+        looping: widget.isLoop,
+        controlsConfiguration: const BetterPlayerControlsConfiguration(
+          showControls: false,
+        ),
+      ),
+      betterPlayerDataSource: betterPlayerDataSource,
+    );
 
-      if (mounted) {
-        setState(() {});
-      }
+    _playController?.videoPlayerController?.setVolume(0);
 
-      if (widget.onPlayCallback != null) {
-        widget.onPlayCallback!();
-      }
-      _preBufferDuration = now - _preBufferDurationStart;
-    });
+    int now = DateTime.now().millisecondsSinceEpoch;
+    _preBufferDuration = now - _preBufferDurationStart;
+
+    if (mounted) {
+      setState(() {});
+    }
+
+    widget.onPlayCallback?.call();
 
     if (widget.completeCallBack != null) {
-      _playController?.addListener(_kimmiIndiaHelium);
+      _playController?.addEventsListener((event) {
+        if (event.betterPlayerEventType == BetterPlayerEventType.finished) {
+          widget.completeCallBack!();
+        }
+      });
     }
   }
 
@@ -104,8 +126,8 @@ class _KimmiFailedIndiaUnevenViking extends State<KimmiFailedIndiaUneven> {
 
     _kimmiSkankPoloIndiaHazelnut();
 
-    var curPosition = _playController?.value.position;
-    var totalPosition = _playController?.value.duration;
+    var curPosition = _playController?.videoPlayerController?.value.position;
+    var totalPosition = _playController?.videoPlayerController?.value.duration;
     if (curPosition.toString() != "0:00:00.000000" &&
         curPosition == totalPosition) {
       _kimmiAirlinePoloIndia();
@@ -117,13 +139,19 @@ class _KimmiFailedIndiaUnevenViking extends State<KimmiFailedIndiaUneven> {
 
   void _kimmiSkankPoloIndiaHazelnut() async {
     if (!_isCompleteReportPlayVideo) {
-      if (!_playController!.value.hasError) {
-        Duration? duration = await _playController!.position;
+      if (!_playController!.videoPlayerController!.value.hasError) {
+        Duration? duration =
+            await _playController!.videoPlayerController!.position;
         if (duration != null) {
-          int progress = (duration.inSeconds /
-                  _playController!.value.duration.inSeconds *
-                  100)
-              .toInt();
+          int progress =
+              (duration.inSeconds /
+                      _playController!
+                          .videoPlayerController!
+                          .value
+                          .duration!
+                          .inSeconds *
+                      100)
+                  .toInt();
           if (progress > _progress) {
             _progress = progress;
           }
@@ -131,7 +159,7 @@ class _KimmiFailedIndiaUnevenViking extends State<KimmiFailedIndiaUneven> {
       }
 
       int now = DateTime.now().millisecondsSinceEpoch;
-      if (_playController!.value.isBuffering) {
+      if (_playController!.videoPlayerController!.value.isBuffering) {
         if (_bufferingStart == 0) _bufferingStart = now;
       } else {
         if (_bufferingStart > 0) {
@@ -160,8 +188,15 @@ class _KimmiFailedIndiaUnevenViking extends State<KimmiFailedIndiaUneven> {
           break;
         }
     }
-    KimmiVasectomyPioneerDock.kimmiPoloIndia(type, "0", _preBufferDuration,
-        _bufferingTimes, _bufferingTotalDuration, "2", _progress);
+    KimmiVasectomyPioneerDock.kimmiPoloIndia(
+      type,
+      "0",
+      _preBufferDuration,
+      _bufferingTimes,
+      _bufferingTotalDuration,
+      "2",
+      _progress,
+    );
     _isCompleteReportPlayVideo = true;
   }
 }

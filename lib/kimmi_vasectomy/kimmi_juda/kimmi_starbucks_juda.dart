@@ -89,8 +89,11 @@ abstract class KimmiStarbucksJuda {
   static double dynamicToDoubleNotNull(dynamic number) =>
       parseDouble(number) ?? 0;
 
-  static void nullSafe<T>(T? obj,
-      {VoidCallback? nullBlock, NotNullBlock<T>? notNullBlock}) {
+  static void nullSafe<T>(
+    T? obj, {
+    VoidCallback? nullBlock,
+    NotNullBlock<T>? notNullBlock,
+  }) {
     if (obj != null) {
       notNullBlock?.call(obj);
     } else {

@@ -29,24 +29,26 @@ class KimmiWaitressJuda {
     final now = DateTime.now();
     final dateTime = DateTime.fromMillisecondsSinceEpoch(milliSeconds);
     if (dateTime.isAfter(now) || dateTime.year < now.year) {
-      ret = KimmiDeceitJuda.getFormatDateTime(dateTime, formats: const [
-        DateFormat.yyyy,
-        '-',
-        DateFormat.mm,
-        '-',
-        DateFormat.dd
-      ]);
+      ret = KimmiDeceitJuda.getFormatDateTime(
+        dateTime,
+        formats: const [
+          DateFormat.yyyy,
+          '-',
+          DateFormat.mm,
+          '-',
+          DateFormat.dd,
+        ],
+      );
     } else if (dateTime.month < now.month || dateTime.day <= now.day - 1) {
-      ret = KimmiDeceitJuda.getFormatDateTime(dateTime,
-          formats: const [DateFormat.mm, '-', DateFormat.dd]);
+      ret = KimmiDeceitJuda.getFormatDateTime(
+        dateTime,
+        formats: const [DateFormat.mm, '-', DateFormat.dd],
+      );
     } else {
-      ret = KimmiDeceitJuda.getFormatDateTime(dateTime, formats: const [
-        DateFormat.am,
-        ' ',
-        DateFormat.hh,
-        ':',
-        DateFormat.nn
-      ]);
+      ret = KimmiDeceitJuda.getFormatDateTime(
+        dateTime,
+        formats: const [DateFormat.am, ' ', DateFormat.hh, ':', DateFormat.nn],
+      );
     }
     return ret;
   }
@@ -57,8 +59,12 @@ class KimmiWaitressJuda {
         : (unreadCount > 99 ? '99+' : unreadCount.toString());
   }
 
-  static List<InlineSpan> convertChatListContent(KimmiExpensive snap,
-      int unreadCount, bool isSingleChat, TextStyle style) {
+  static List<InlineSpan> convertChatListContent(
+    KimmiExpensive snap,
+    int unreadCount,
+    bool isSingleChat,
+    TextStyle style,
+  ) {
     List<InlineSpan> texts = [];
     if (!snap.isSupportType) {
       texts.add(TextSpan(text: "kimmi_broderick_fellas".tr, style: style));
@@ -72,16 +78,19 @@ class KimmiWaitressJuda {
       final copyText = KimmiUnicycleTamperJuda.getCopyText(snap.textContent!);
       texts.add(TextSpan(text: copyText, style: style));
     } else if (snapType == Snap_SnapType.IMG_SNAP) {
-      texts
-          .add(TextSpan(text: "kimmi_broderick_ernie_basket".tr, style: style));
+      texts.add(
+        TextSpan(text: "kimmi_broderick_ernie_basket".tr, style: style),
+      );
     } else if (snapType == Snap_SnapType.VOICE_SNAP) {
       texts.add(TextSpan(text: "kimmi_broderick_cam_basket".tr, style: style));
     } else if (snapType == Snap_SnapType.VIDEO_SNAP) {
-      texts
-          .add(TextSpan(text: "kimmi_broderick_india_basket".tr, style: style));
+      texts.add(
+        TextSpan(text: "kimmi_broderick_india_basket".tr, style: style),
+      );
     } else if (snapType == Snap_SnapType.JSON_SNAP) {
       String text = KimmiWaitressExpensiveSouthPhone.jsonContentListMessage(
-          snap.jsonContentObj);
+        snap.jsonContentObj,
+      );
       texts.add(TextSpan(text: text, style: style));
     }
 
@@ -97,28 +106,30 @@ class KimmiWaitressJuda {
     final now = DateTime.now();
     final dateTime = DateTime.fromMillisecondsSinceEpoch(milliSeconds);
     if (dateTime.isAfter(now) || dateTime.year < now.year) {
-      ret = KimmiDeceitJuda.getFormatDateTime(dateTime,
-          formats: KimmiDeceitJuda.FORMAT_YYYY_MM_DD_HH_MM_SS);
+      ret = KimmiDeceitJuda.getFormatDateTime(
+        dateTime,
+        formats: KimmiDeceitJuda.FORMAT_YYYY_MM_DD_HH_MM_SS,
+      );
     } else if (dateTime.month < now.month || dateTime.day <= now.day - 1) {
-      ret = KimmiDeceitJuda.getFormatDateTime(dateTime, formats: const [
-        DateFormat.mm,
-        '-',
-        DateFormat.dd,
-        ' ',
-        DateFormat.am,
-        ' ',
-        DateFormat.hh,
-        ':',
-        DateFormat.nn
-      ]);
+      ret = KimmiDeceitJuda.getFormatDateTime(
+        dateTime,
+        formats: const [
+          DateFormat.mm,
+          '-',
+          DateFormat.dd,
+          ' ',
+          DateFormat.am,
+          ' ',
+          DateFormat.hh,
+          ':',
+          DateFormat.nn,
+        ],
+      );
     } else {
-      ret = KimmiDeceitJuda.getFormatDateTime(dateTime, formats: const [
-        DateFormat.am,
-        ' ',
-        DateFormat.hh,
-        ':',
-        DateFormat.nn
-      ]);
+      ret = KimmiDeceitJuda.getFormatDateTime(
+        dateTime,
+        formats: const [DateFormat.am, ' ', DateFormat.hh, ':', DateFormat.nn],
+      );
     }
     return ret;
   }
@@ -137,9 +148,10 @@ class KimmiWaitressJuda {
 
   static Gradient kimmiWaitressPerSunCoatBySpine() {
     return const LinearGradient(
-        colors: [Color(0xFFFF1F73), Color(0xFFFF1F73)],
-        begin: Alignment.topCenter,
-        end: Alignment.bottomCenter);
+      colors: [Color(0xFFFF1F73), Color(0xFFFF1F73)],
+      begin: Alignment.topCenter,
+      end: Alignment.bottomCenter,
+    );
   }
 
   static Color kimmiWaitressPerSunYummyByJoshua() {
@@ -155,9 +167,15 @@ class KimmiWaitressJuda {
   }
 
   static PlaceholderWidgetBuilder chatPlaceHolderWidget(
-      double? width, double? height, BorderRadiusGeometry? borderRadius) {
+    double? width,
+    double? height,
+    BorderRadiusGeometry? borderRadius,
+  ) {
     Widget ph = Container(
-        color: KimmiDraftJuda.white_20p, width: width, height: height);
+      color: KimmiDraftJuda.white_20p,
+      width: width,
+      height: height,
+    );
 
     if (borderRadius != null) {
       ph = ClipRRect(borderRadius: borderRadius, child: ph);
@@ -216,9 +234,10 @@ class KimmiWaitressJuda {
     return Text(
       KimmiWaitressJuda.formatListTime(time),
       style: KimmiTamperDaytime.style(
-          fontSize: 12.0,
-          fontWeight: FontWeight.w500,
-          color: KimmiDraftJuda.white_40p),
+        fontSize: 12.0,
+        fontWeight: FontWeight.w500,
+        color: KimmiDraftJuda.white_40p,
+      ),
     );
   }
 
@@ -231,14 +250,18 @@ class KimmiWaitressJuda {
       constraints: const BoxConstraints(minWidth: 18.0),
       padding: const EdgeInsets.symmetric(horizontal: 4.0, vertical: 1.0),
       decoration: BoxDecoration(
-          color: const Color(0xFFFF2652),
-          borderRadius: BorderRadius.circular(18.0)),
+        color: const Color(0xFFFF2652),
+        borderRadius: BorderRadius.circular(18.0),
+      ),
       child: Center(
-        child: Text(KimmiWaitressJuda.chatUnreadCount(unreadCount),
-            style: KimmiTamperDaytime.style(
-                fontSize: 10,
-                fontWeight: FontWeight.w600,
-                color: KimmiDraftJuda.white)),
+        child: Text(
+          KimmiWaitressJuda.chatUnreadCount(unreadCount),
+          style: KimmiTamperDaytime.style(
+            fontSize: 10,
+            fontWeight: FontWeight.w600,
+            color: KimmiDraftJuda.white,
+          ),
+        ),
       ),
     );
   }
@@ -249,14 +272,14 @@ class KimmiWaitressJuda {
         Get.currentRoute == KimmiSully.KimmiDoggySmileContainer;
   }
 
-  static Widget kimmiWaitressAmenTamperFailed(List<InlineSpan>? lastContent,
-      {TextStyle customStyle = KimmiTamperDaytime.TextWhite_60p_14}) {
+  static Widget kimmiWaitressAmenTamperFailed(
+    List<InlineSpan>? lastContent, {
+    TextStyle customStyle = KimmiTamperDaytime.TextWhite_60p_14,
+  }) {
     if (lastContent == null) return const SizedBox(width: 0, height: 0);
 
     return Text.rich(
-      TextSpan(
-        children: lastContent,
-      ),
+      TextSpan(children: lastContent),
       maxLines: 1,
       overflow: TextOverflow.ellipsis,
       style: customStyle,
@@ -265,40 +288,59 @@ class KimmiWaitressJuda {
 
   static void showSnackbar(KimmiExpensive snackInfo) {
     var content = convertChatListContent(
-        snackInfo, 0, true, KimmiTamperDaytime.TextB2_16);
+      snackInfo,
+      0,
+      true,
+      KimmiTamperDaytime.TextB2_16,
+    );
+    if ([
+      KimmiSully.KimmiDoggySmileContainer,
+      KimmiSully.KimmiIndiaWaitressContainer,
+    ].contains(Get.currentRoute))
+      return;
     Widget showContent = KimmiWaitressJuda.kimmiWaitressAmenTamperFailed(
-        content,
-        customStyle: KimmiTamperDaytime.TextB2_16);
+      content,
+      customStyle: KimmiTamperDaytime.TextB2_16,
+    );
 
     KimmiVasectomyPioneerDock.showSnackBar(snackInfo.id!);
-    Get.snackbar("", "",
-        titleText: const SizedBox(),
-        messageText: Row(
-            mainAxisAlignment: MainAxisAlignment.start,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              KimmiErnie.circle(
-                  url: snackInfo.ownerHead ?? "",
-                  size: 56,
-                  clip: ImageClipType.small,
-                  fit: BoxFit.cover),
-              8.wGap,
-              Expanded(
-                  child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(snackInfo.ownerName ?? "",
-                      style: KimmiTamperDaytime.TextB1_16_Bold),
-                  2.hGap,
-                  showContent
-                ],
-              ))
-            ]),
-        backgroundColor: Colors.white,
-        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
-        duration: const Duration(seconds: 2), onTap: (snack) {
-      KimmiVasectomyPioneerDock.clickSnackBar(snackInfo.id!);
-      KimmiWaitressContainerHusbandUp.open(cid: snackInfo.chatBoxId);
-    });
+    Get.snackbar(
+      "",
+      "",
+      titleText: const SizedBox(),
+      messageText: Row(
+        mainAxisAlignment: MainAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          KimmiErnie.circle(
+            url: snackInfo.ownerHead ?? "",
+            size: 56,
+            clip: ImageClipType.small,
+            fit: BoxFit.cover,
+          ),
+          8.wGap,
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  snackInfo.ownerName ?? "",
+                  style: KimmiTamperDaytime.TextB1_16_Bold,
+                ),
+                2.hGap,
+                showContent,
+              ],
+            ),
+          ),
+        ],
+      ),
+      backgroundColor: Colors.white,
+      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
+      duration: const Duration(seconds: 2),
+      onTap: (snack) {
+        KimmiVasectomyPioneerDock.clickSnackBar(snackInfo.id!);
+        KimmiWaitressContainerHusbandUp.open(cid: snackInfo.chatBoxId);
+      },
+    );
   }
 }

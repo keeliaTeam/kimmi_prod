@@ -26,9 +26,12 @@ class KimmiWaitressPer extends StatefulWidget {
   final String? cachePath;
   final KimmiWaitressFeast? user;
 
-  const KimmiWaitressPer(
-      {Key? key, required this.snap, this.cachePath, this.user})
-      : super(key: key);
+  const KimmiWaitressPer({
+    Key? key,
+    required this.snap,
+    this.cachePath,
+    this.user,
+  }) : super(key: key);
 
   @override
   _KimmiWaitressPerViking createState() => _KimmiWaitressPerViking();
@@ -38,8 +41,11 @@ class _KimmiWaitressPerViking extends State<KimmiWaitressPer> {
   final _snapViewKey = GlobalKey();
 
   void _copy() {
-    Clipboard.setData(ClipboardData(
-        text: KimmiUnicycleTamperJuda.getCopyText(widget.snap.textContent)));
+    Clipboard.setData(
+      ClipboardData(
+        text: KimmiUnicycleTamperJuda.getCopyText(widget.snap.textContent),
+      ),
+    );
   }
 
   @override
@@ -68,9 +74,7 @@ class _KimmiWaitressPerViking extends State<KimmiWaitressPer> {
       if (sendStatus == ChatSnapSendStatus.success.index) {
         child = Row(
           mainAxisAlignment: MainAxisAlignment.end,
-          children: [
-            snapView,
-          ],
+          children: [snapView],
         );
       } else {
         child = Row(
@@ -80,15 +84,17 @@ class _KimmiWaitressPerViking extends State<KimmiWaitressPer> {
             widget.snap.sendStatus == ChatSnapSendStatus.sending.index
                 ? const Padding(
                     padding: EdgeInsets.symmetric(horizontal: 8.0),
-                    child: CupertinoActivityIndicator(radius: 12.0))
+                    child: CupertinoActivityIndicator(radius: 12.0),
+                  )
                 : CupertinoButton(
                     minSize: 40.0,
                     padding: const EdgeInsets.all(0.0),
                     onPressed: _kimmiBrawny,
                     child: KimmiErnie.local(
-                        fileName: 'kimmi_hombre_uterus_viking_ball',
-                        width: 24.0,
-                        height: 24.0),
+                      fileName: 'kimmi_hombre_uterus_viking_ball',
+                      width: 24.0,
+                      height: 24.0,
+                    ),
                   ),
             snapView,
           ],
@@ -110,18 +116,22 @@ class _KimmiWaitressPerViking extends State<KimmiWaitressPer> {
         children: <Widget>[
           GestureDetector(
             child: KimmiErnie.circle(
-                url: widget.snap.ownerHead ?? "",
-                size: 48.0,
-                clip: ImageClipType.small,
-                fit: BoxFit.cover),
+              url: widget.snap.ownerHead ?? "",
+              size: 48.0,
+              clip: ImageClipType.small,
+              fit: BoxFit.cover,
+            ),
             onTap: () {
               if (widget.user != null &&
                   widget.user!.uid != KimmiPalate.kimmiAiTedCurveBacteria) {
-                KIMMI.toNamed(KimmiSully.KimmiSecurityContainer, arguments: {
-                  'uid': widget.user?.uid,
-                  'nickName': widget.user?.nickName,
-                  'avatarUrl': widget.user?.avatarUrl
-                });
+                KIMMI.toNamed(
+                  KimmiSully.KimmiSecurityContainer,
+                  arguments: {
+                    'uid': widget.user?.uid,
+                    'nickName': widget.user?.nickName,
+                    'avatarUrl': widget.user?.avatarUrl,
+                  },
+                );
               }
             },
           ),
@@ -141,12 +151,14 @@ class _KimmiWaitressPerViking extends State<KimmiWaitressPer> {
 
   void _kimmiBrawny() {
     KIMMI.eventBus.fire(
-        KimmiWaitressComponent(ChatEventType.snapResend, object: widget.snap));
+      KimmiWaitressComponent(ChatEventType.snapResend, object: widget.snap),
+    );
   }
 
   void _kimmiLinen() {
     KIMMI.eventBus.fire(
-        KimmiWaitressComponent(ChatEventType.snapRecall, object: widget.snap));
+      KimmiWaitressComponent(ChatEventType.snapRecall, object: widget.snap),
+    );
   }
 
   Widget _kimmiFeastPhoneUneven() {
@@ -157,23 +169,31 @@ class _KimmiWaitressPerViking extends State<KimmiWaitressPer> {
       var snapType = Snap_SnapType.valueOf(widget.snap.type ?? -1);
 
       if (Snap_SnapType.TXT_SNAP == snapType) {
-        snapView =
-            KimmiWaitressPerTamperUneven(key: _snapViewKey, snap: widget.snap);
+        snapView = KimmiWaitressPerTamperUneven(
+          key: _snapViewKey,
+          snap: widget.snap,
+        );
       } else if (Snap_SnapType.IMG_SNAP == snapType) {
-        snapView =
-            KimmiWaitressPerErnieUneven(key: _snapViewKey, snap: widget.snap);
+        snapView = KimmiWaitressPerErnieUneven(
+          key: _snapViewKey,
+          snap: widget.snap,
+        );
       } else if (Snap_SnapType.VIDEO_SNAP == snapType) {
-        snapView =
-            KimmiWaitressPerIndiaUneven(key: _snapViewKey, snap: widget.snap);
+        snapView = KimmiWaitressPerIndiaUneven(
+          key: _snapViewKey,
+          snap: widget.snap,
+        );
       } else if (Snap_SnapType.VOICE_SNAP == snapType) {
         snapView = KimmiWaitressPerCamUneven(
-            key: _snapViewKey,
-            snap: widget.snap,
-            cachePath: widget.cachePath ?? "");
+          key: _snapViewKey,
+          snap: widget.snap,
+          cachePath: widget.cachePath ?? "",
+        );
       } else if (Snap_SnapType.JSON_SNAP == snapType) {
         snapView = KimmiWaitressExpensiveSouthPhoneJuda.jsonContentView(
-            widget.snap,
-            key: _snapViewKey);
+          widget.snap,
+          key: _snapViewKey,
+        );
       }
     }
     return snapView ?? ChatCellUnSupportedView(snap: widget.snap);
@@ -188,8 +208,9 @@ class _KimmiWaitressPerViking extends State<KimmiWaitressPer> {
       if (Snap_SnapType.WEAK_SNAP == snapType) {
         view = ChatCellWeakView(snap: widget.snap);
       } else if (Snap_SnapType.JSON_SNAP == snapType) {
-        view =
-            KimmiWaitressExpensiveSouthPhoneJuda.jsonContentView(widget.snap);
+        view = KimmiWaitressExpensiveSouthPhoneJuda.jsonContentView(
+          widget.snap,
+        );
       }
     }
     return Center(child: view);
@@ -200,17 +221,19 @@ class ChatCellUnSupportedView extends StatelessWidget {
   final KimmiExpensive snap;
 
   const ChatCellUnSupportedView({Key? key, required this.snap})
-      : super(key: key);
+    : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     var decoration = snap.isMine
         ? BoxDecoration(
             borderRadius: KimmiWaitressJuda.kimmiWaitressPerTummyBySpine(),
-            color: KimmiDraftJuda.white_20p)
+            color: KimmiDraftJuda.white_20p,
+          )
         : BoxDecoration(
             borderRadius: KimmiWaitressJuda.kimmiWaitressPerTummyByJoshua(),
-            color: KimmiDraftJuda.white_20p);
+            color: KimmiDraftJuda.white_20p,
+          );
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 14.0),
       decoration: decoration,
@@ -238,12 +261,15 @@ class ChatCellUnSupportedWeakView extends StatelessWidget {
   }
 
   Widget _kimmiTamperFailed(context) {
-    return Text('kimmi_broderick_waitress_fellas_starbucks'.tr,
-        style: const TextStyle(
-            fontSize: AppDimen.font_sp14,
-            color: KimmiDraftJuda.b3,
-            fontFamily: AppText.fontFamily,
-            decoration: TextDecoration.none));
+    return Text(
+      'kimmi_broderick_waitress_fellas_starbucks'.tr,
+      style: const TextStyle(
+        fontSize: AppDimen.font_sp14,
+        color: KimmiDraftJuda.b3,
+        fontFamily: AppText.fontFamily,
+        decoration: TextDecoration.none,
+      ),
+    );
   }
 }
 
@@ -257,15 +283,17 @@ class ChatCellWeakView extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 24.0, vertical: 10.0),
       decoration: BoxDecoration(
-          color: KimmiDraftJuda.white,
-          borderRadius: BorderRadius.circular(18.0)),
+        color: KimmiDraftJuda.white,
+        borderRadius: BorderRadius.circular(18.0),
+      ),
       child: Text.rich(TextSpan(children: snap.richTexts)),
     );
   }
 
   static void kimmiSacredFellowUnicycleTamper(KimmiExpensive snap) {
-    snap.richTexts ??= KimmiUnicycleTamperJuda.getRichText(snap.textContent,
-        style:
-            KimmiTamperDaytime.style(color: KimmiDraftJuda.b1, fontSize: 14.0));
+    snap.richTexts ??= KimmiUnicycleTamperJuda.getRichText(
+      snap.textContent,
+      style: KimmiTamperDaytime.style(color: KimmiDraftJuda.b1, fontSize: 14.0),
+    );
   }
 }

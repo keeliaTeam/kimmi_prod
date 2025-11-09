@@ -1,18 +1,19 @@
 import '../proto/StringTranslate.dart';
 
 class KimmiStormAssertAdTux {
-  KimmiStormAssertAdTux(
-      [this.trackerToken,
-      this.trackerName,
-      this.network,
-      this.campaign,
-      this.adgroup,
-      this.creative,
-      this.clickLabel,
-      this.adid,
-      this.costType,
-      this.costAmount,
-      this.costCurrency]);
+  KimmiStormAssertAdTux([
+    this.trackerToken,
+    this.trackerName,
+    this.network,
+    this.campaign,
+    this.adgroup,
+    this.creative,
+    this.clickLabel,
+    this.adid,
+    this.costType,
+    this.costAmount,
+    this.costCurrency,
+  ]);
 
   String? trackerToken;
   String? trackerName;

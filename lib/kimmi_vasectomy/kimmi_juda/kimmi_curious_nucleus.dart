@@ -17,17 +17,26 @@ class KimmiCuriousNucleus extends LogPrinter {
 
   static final _webStackTraceRegex = RegExp(r'^((packages|dart-sdk)/\S+/)');
 
-  static final _browserStackTraceRegex =
-      RegExp(r'^(?:package:)?(dart:\S+|\S+)');
+  static final _browserStackTraceRegex = RegExp(
+    r'^(?:package:)?(dart:\S+|\S+)',
+  );
 
   @override
   List<String> log(LogEvent event) {
     AnsiColor? color = PrettyPrinter.defaultLevelColors[event.level];
 
-    String time =
-        formatDate(DateTime.now(), [HH, ':', 'nn', ':', ss, ',', SSS]);
+    String time = formatDate(DateTime.now(), [
+      HH,
+      ':',
+      'nn',
+      ':',
+      ss,
+      ',',
+      SSS,
+    ]);
     String method = const AnsiColor.fg(30)(
-        formatStackTrace(event.stackTrace ?? StackTrace.current));
+      formatStackTrace(event.stackTrace ?? StackTrace.current),
+    );
     String level = color!('${levelPrefixes[event.level]}');
     var output = StringBuffer('$time $level $method');
 

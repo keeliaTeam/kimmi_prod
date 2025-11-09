@@ -10,11 +10,11 @@ class KimmiStormPrivateEmbodimentMomentum {
   KimmiStormPrivateEmbodimentMomentum();
 
   factory KimmiStormPrivateEmbodimentMomentum.fromJson(
-          Map<String, dynamic> json) =>
-      KimmiStormPrivateEmbodimentMomentum()
-        ..img = KimmiKeyboardJuda.strDef(json, "img", "")
-        ..title = KimmiKeyboardJuda.strDef(json, "title", "")
-        ..desc = KimmiKeyboardJuda.strDef(json, "desc", "")
-        ..bigCardImg = KimmiKeyboardJuda.strDef(json, "big_card_img", "")
-        ..smallCardImg = KimmiKeyboardJuda.strDef(json, "small_card_img", "");
+    Map<String, dynamic> json,
+  ) => KimmiStormPrivateEmbodimentMomentum()
+    ..img = KimmiKeyboardJuda.strDef(json, "img", "")
+    ..title = KimmiKeyboardJuda.strDef(json, "title", "")
+    ..desc = KimmiKeyboardJuda.strDef(json, "desc", "")
+    ..bigCardImg = KimmiKeyboardJuda.strDef(json, "big_card_img", "")
+    ..smallCardImg = KimmiKeyboardJuda.strDef(json, "small_card_img", "");
 }

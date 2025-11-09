@@ -33,16 +33,17 @@ class KimmiFailedFeastQuitterMarvel extends StatefulWidget {
   final Widget? preWidget;
   final bool showLive;
 
-  const KimmiFailedFeastQuitterMarvel(
-      {super.key,
-      required this.uid,
-      this.height = 20,
-      this.color,
-      this.border,
-      this.isShowText = true,
-      this.showOffline = false,
-      this.preWidget,
-      this.showLive = false});
+  const KimmiFailedFeastQuitterMarvel({
+    super.key,
+    required this.uid,
+    this.height = 20,
+    this.color,
+    this.border,
+    this.isShowText = true,
+    this.showOffline = false,
+    this.preWidget,
+    this.showLive = false,
+  });
 
   @override
   State<KimmiFailedFeastQuitterMarvel> createState() =>
@@ -52,21 +53,21 @@ class KimmiFailedFeastQuitterMarvel extends StatefulWidget {
 class _KimmiFailedFeastQuitterMarvelViking
     extends State<KimmiFailedFeastQuitterMarvel> {
   StreamSubscription<KimmiFeastQuitterMarvelFantasyComponent>?
-      statuUpdateSubscription;
+  statuUpdateSubscription;
   late KimmiFeastQuitterMarvel _status;
 
   @override
   void initState() {
     super.initState();
     _status = KimmiFeastQuitterMarvelDock().getStatus(widget.uid);
-    statuUpdateSubscription =
-        KIMMI.listen<KimmiFeastQuitterMarvelFantasyComponent>((event) {
-      if (event.uid == widget.uid) {
-        setState(() {
-          _status = event.status;
+    statuUpdateSubscription = KIMMI
+        .listen<KimmiFeastQuitterMarvelFantasyComponent>((event) {
+          if (event.uid == widget.uid) {
+            setState(() {
+              _status = event.status;
+            });
+          }
         });
-      }
-    });
 
     KimmiFeastQuitterMarvelSleazy.instance.register(widget.uid);
   }
@@ -94,52 +95,76 @@ class _KimmiFailedFeastQuitterMarvelViking
     }
 
     Color color = widget.color ?? KimmiDraftJuda.black_60p;
-    return _kimmiQuitterMarvelMuseFailed(context,
-        color: color, border: widget.border);
+    return _kimmiQuitterMarvelMuseFailed(
+      context,
+      color: color,
+      border: widget.border,
+    );
   }
 
-  _kimmiQuitterMarvelMuseFailed(BuildContext context,
-      {Color color = KimmiDraftJuda.black_60p, Border? border}) {
+  _kimmiQuitterMarvelMuseFailed(
+    BuildContext context, {
+    Color color = KimmiDraftJuda.black_60p,
+    Border? border,
+  }) {
     Widget? onlineWidget;
     Widget? onlineText;
     double size = widget.isShowText ? 10 : 12;
     if (_status.status.isBusy()) {
       onlineWidget = Container(
-          width: size,
-          height: size,
-          decoration: const BoxDecoration(
-              shape: BoxShape.circle, color: Color(0xFFFFA61A)));
-      onlineText = Text("kimmi_broderick_garage".tr,
-          style: KimmiTamperDaytime.style(
-              fontSize: 12,
-              fontWeight: FontWeight.w500,
-              color: KimmiDraftJuda.white,
-              height: 1.1));
+        width: size,
+        height: size,
+        decoration: const BoxDecoration(
+          shape: BoxShape.circle,
+          color: Color(0xFFFFA61A),
+        ),
+      );
+      onlineText = Text(
+        "kimmi_broderick_garage".tr,
+        style: KimmiTamperDaytime.style(
+          fontSize: 12,
+          fontWeight: FontWeight.w500,
+          color: KimmiDraftJuda.white,
+          height: 1.1,
+        ),
+      );
     } else if (_status.status == KimmiFeastQuitterMarvelProcedure.online) {
       onlineWidget = Container(
-          width: size,
-          height: size,
-          decoration: const BoxDecoration(
-              shape: BoxShape.circle, color: Color(0xFF35FFBB)));
-      onlineText = Text("kimmi_broderick_quitter".tr,
-          style: KimmiTamperDaytime.style(
-              fontSize: 12,
-              fontWeight: FontWeight.w500,
-              color: KimmiDraftJuda.white,
-              height: 1.1));
+        width: size,
+        height: size,
+        decoration: const BoxDecoration(
+          shape: BoxShape.circle,
+          color: Color(0xFF35FFBB),
+        ),
+      );
+      onlineText = Text(
+        "kimmi_broderick_quitter".tr,
+        style: KimmiTamperDaytime.style(
+          fontSize: 12,
+          fontWeight: FontWeight.w500,
+          color: KimmiDraftJuda.white,
+          height: 1.1,
+        ),
+      );
     } else {
       if (widget.showOffline) {
         onlineWidget = Container(
-            width: size,
-            height: size,
-            decoration: const BoxDecoration(
-                shape: BoxShape.circle, color: Color(0xFFC4C4C4)));
-        onlineText = Text("kimmi_broderick_influence".tr,
-            style: KimmiTamperDaytime.style(
-                fontSize: 12,
-                fontWeight: FontWeight.w500,
-                color: KimmiDraftJuda.white,
-                height: 1.1));
+          width: size,
+          height: size,
+          decoration: const BoxDecoration(
+            shape: BoxShape.circle,
+            color: Color(0xFFC4C4C4),
+          ),
+        );
+        onlineText = Text(
+          "kimmi_broderick_influence".tr,
+          style: KimmiTamperDaytime.style(
+            fontSize: 12,
+            fontWeight: FontWeight.w500,
+            color: KimmiDraftJuda.white,
+            height: 1.1,
+          ),
+        );
       } else {
         onlineWidget = const SizedBox();
         onlineText = const SizedBox();
@@ -151,18 +176,20 @@ class _KimmiFailedFeastQuitterMarvelViking
         ? Container(
             height: widget.height,
             decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(12),
-                border: border,
-                color: color),
+              borderRadius: BorderRadius.circular(12),
+              border: border,
+              color: color,
+            ),
             padding: const EdgeInsetsDirectional.symmetric(horizontal: 4),
             child: Row(
               mainAxisSize: MainAxisSize.min,
               children: [
                 widget.preWidget != null ? widget.preWidget! : onlineWidget,
                 const SizedBox(width: 2),
-                onlineText
+                onlineText,
               ],
-            ))
+            ),
+          )
         : onlineWidget;
 
     if (widget.showLive && _status.isOnLiveStatus()) {

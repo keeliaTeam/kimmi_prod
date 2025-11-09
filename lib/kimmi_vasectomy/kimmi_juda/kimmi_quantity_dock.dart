@@ -23,32 +23,39 @@ class KimmiRTCDock {
   Future<void> init() async {
     engine = createAgoraRtcEngine();
 
-    await engine.initialize(RtcEngineContext(
-      appId: KIMMI.kimmiHump.configs.agoraAppId,
-      channelProfile: ChannelProfileType.channelProfileCommunication,
-    ));
+    await engine.initialize(
+      RtcEngineContext(
+        appId: KIMMI.kimmiHump.configs.agoraAppId,
+        channelProfile: ChannelProfileType.channelProfileCommunication,
+      ),
+    );
 
-    await engine.setVideoEncoderConfiguration(VideoEncoderConfiguration(
-      dimensions: VideoDimensions(
+    await engine.setVideoEncoderConfiguration(
+      VideoEncoderConfiguration(
+        dimensions: VideoDimensions(
           width: KIMMI.kimmiHump.configs.aWidth,
-          height: KIMMI.kimmiHump.configs.aHeight),
-      frameRate: KIMMI.kimmiHump.configs.aFrameRate,
-      bitrate: standardBitrate,
-      orientationMode: OrientationMode.orientationModeFixedPortrait,
-      degradationPreference: DegradationPreference.maintainBalanced,
-    ));
+          height: KIMMI.kimmiHump.configs.aHeight,
+        ),
+        frameRate: KIMMI.kimmiHump.configs.aFrameRate,
+        bitrate: standardBitrate,
+        orientationMode: OrientationMode.orientationModeFixedPortrait,
+        degradationPreference: DegradationPreference.maintainBalanced,
+      ),
+    );
     await engine.enableVideo();
     await engine.enableAudio();
     await engine.enableLocalVideo(true);
 
     await engine.setBeautyEffectOptions(
-        enabled: true,
-        options: const BeautyOptions(
-            lighteningContrastLevel:
-                LighteningContrastLevel.lighteningContrastNormal,
-            lighteningLevel: 0.7,
-            smoothnessLevel: 0.5,
-            rednessLevel: 0.1));
+      enabled: true,
+      options: const BeautyOptions(
+        lighteningContrastLevel:
+            LighteningContrastLevel.lighteningContrastNormal,
+        lighteningLevel: 0.7,
+        smoothnessLevel: 0.5,
+        rednessLevel: 0.1,
+      ),
+    );
 
     isEngineInitialized = true;
   }
@@ -59,24 +66,30 @@ class KimmiRTCDock {
 
   initChatCallWork() async {
     await engine.leaveChannel();
-    await engine
-        .setChannelProfile(ChannelProfileType.channelProfileCommunication);
-    await engine.setVideoEncoderConfiguration(VideoEncoderConfiguration(
-      dimensions: VideoDimensions(
+    await engine.setChannelProfile(
+      ChannelProfileType.channelProfileCommunication,
+    );
+    await engine.setVideoEncoderConfiguration(
+      VideoEncoderConfiguration(
+        dimensions: VideoDimensions(
           width: KIMMI.kimmiHump.configs.aWidth,
-          height: KIMMI.kimmiHump.configs.aHeight),
-      frameRate: KIMMI.kimmiHump.configs.aFrameRate,
-      bitrate: standardBitrate,
-      orientationMode: OrientationMode.orientationModeFixedPortrait,
-      degradationPreference: DegradationPreference.maintainBalanced,
-    ));
+          height: KIMMI.kimmiHump.configs.aHeight,
+        ),
+        frameRate: KIMMI.kimmiHump.configs.aFrameRate,
+        bitrate: standardBitrate,
+        orientationMode: OrientationMode.orientationModeFixedPortrait,
+        degradationPreference: DegradationPreference.maintainBalanced,
+      ),
+    );
     await engine.enableVideo();
     await engine.enableAudio();
     await engine.enableLocalVideo(true);
   }
 
   Future<void> joinChatCallChannel(
-      String channelToken, String channelName) async {
+    String channelToken,
+    String channelName,
+  ) async {
     initChatCallWork();
     ChannelMediaOptions channelMediaOptions = const ChannelMediaOptions(
       autoSubscribeVideo: true,
@@ -87,26 +100,31 @@ class KimmiRTCDock {
     );
 
     await engine.joinChannel(
-        token: channelToken,
-        channelId: channelName,
-        options: channelMediaOptions,
-        uid: KIMMI.uCodeInt());
+      token: channelToken,
+      channelId: channelName,
+      options: channelMediaOptions,
+      uid: KIMMI.uCodeInt(),
+    );
   }
 
   initLiveWork() async {
     await engine.leaveChannel();
-    await engine
-        .setChannelProfile(ChannelProfileType.channelProfileLiveBroadcasting);
+    await engine.setChannelProfile(
+      ChannelProfileType.channelProfileLiveBroadcasting,
+    );
     await engine.setClientRole(role: ClientRoleType.clientRoleAudience);
-    await engine.setVideoEncoderConfiguration(VideoEncoderConfiguration(
-      dimensions: VideoDimensions(
+    await engine.setVideoEncoderConfiguration(
+      VideoEncoderConfiguration(
+        dimensions: VideoDimensions(
           width: KIMMI.kimmiHump.configs.aWidth,
-          height: KIMMI.kimmiHump.configs.aHeight),
-      frameRate: KIMMI.kimmiHump.configs.aFrameRate,
-      bitrate: standardBitrate,
-      orientationMode: OrientationMode.orientationModeFixedPortrait,
-      degradationPreference: DegradationPreference.maintainBalanced,
-    ));
+          height: KIMMI.kimmiHump.configs.aHeight,
+        ),
+        frameRate: KIMMI.kimmiHump.configs.aFrameRate,
+        bitrate: standardBitrate,
+        orientationMode: OrientationMode.orientationModeFixedPortrait,
+        degradationPreference: DegradationPreference.maintainBalanced,
+      ),
+    );
     await engine.enableVideo();
     await engine.enableAudio();
     await engine.enableLocalVideo(true);
@@ -123,10 +141,11 @@ class KimmiRTCDock {
     );
 
     await engine.joinChannel(
-        token: channelToken,
-        channelId: channelName,
-        options: channelMediaOptions,
-        uid: KIMMI.uCodeInt());
+      token: channelToken,
+      channelId: channelName,
+      options: channelMediaOptions,
+      uid: KIMMI.uCodeInt(),
+    );
   }
 
   void dispose() {

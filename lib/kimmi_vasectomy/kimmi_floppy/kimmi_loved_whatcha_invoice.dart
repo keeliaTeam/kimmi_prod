@@ -1,5 +1,5 @@
 import 'dart:math';
-import 'kimmi_carry_ugly.dart';
+import 'kimmi_brett_perception.dart';
 import 'dart:async';
 import 'dart:ui';
 
@@ -32,80 +32,96 @@ import 'kimmi_loved_whatcha_worse_amen_starbucks.dart';
 
 class KimmiLovedWhatchaInvoice extends KimmiMuseIdolizeInvoice
     with GetTickerProviderStateMixin {
-  String anAmenJapan_ = "";
-  bool abHandshakeWrinkle_ = true;
-  bool anAkaFlora_ = true;
-  bool paPrototypeCowboys_ = true;
+  double okAfterFork_ = 0.0;
+  double woInkCollins_ = 0.0;
+  bool ofTapeAltogether_ = true;
+  bool weGoateeDolly_ = false;
+  bool osDistressFraud_ = false;
 
-  void ofOccupyFork() {
-    abHandshakeWrinkle_ = anAkaFlora_ && paPrototypeCowboys_;
-
-    anAkaFlora_ = paPrototypeCowboys_ || abHandshakeWrinkle_;
-
-    anAmenJapan_ = anAmenJapan_.toUpperCase();
-    anAmenJapan_ = anAmenJapan_.toUpperCase();
-    if (abHandshakeWrinkle_ && paPrototypeCowboys_ && anAkaFlora_) {
-      abHandshakeWrinkle_ = !abHandshakeWrinkle_;
-      paPrototypeCowboys_ = abHandshakeWrinkle_;
-      anAkaFlora_ = abHandshakeWrinkle_;
+  void taWaxTaught() {
+    if (okAfterFork_ > woInkCollins_) {
+      okAfterFork_ = okAfterFork_ - woInkCollins_;
     }
-    anAkaFlora_ = paPrototypeCowboys_ || abHandshakeWrinkle_;
-    abHandshakeWrinkle_ = anAkaFlora_ && paPrototypeCowboys_;
-    anAmenJapan_ = anAmenJapan_.toUpperCase();
+    okAfterFork_ = 75;
+    woInkCollins_ = 10;
+
+    if (ofTapeAltogether_) {
+      weGoateeDolly_ = !osDistressFraud_;
+    }
+
+    okAfterFork_ = okAfterFork_ + woInkCollins_;
+
+    okAfterFork_ = okAfterFork_ + woInkCollins_;
+    if (weGoateeDolly_ && osDistressFraud_) {
+      ofTapeAltogether_ = !ofTapeAltogether_;
+    }
+
+    if (ofTapeAltogether_ || osDistressFraud_ || weGoateeDolly_) {
+      ofTapeAltogether_ = !osDistressFraud_;
+      osDistressFraud_ = !weGoateeDolly_;
+      weGoateeDolly_ = !ofTapeAltogether_;
+    }
+    weGoateeDolly_ = osDistressFraud_ || ofTapeAltogether_;
   }
 
-  void doJamCan() {
-    if (paPrototypeCowboys_ && abHandshakeWrinkle_ && anAkaFlora_) {
-      paPrototypeCowboys_ = !paPrototypeCowboys_;
-      abHandshakeWrinkle_ = paPrototypeCowboys_;
-      anAkaFlora_ = paPrototypeCowboys_;
+  void atBuilderCat() {
+    if (ofTapeAltogether_ && osDistressFraud_ && weGoateeDolly_) {
+      ofTapeAltogether_ = !ofTapeAltogether_;
+      osDistressFraud_ = ofTapeAltogether_;
+      weGoateeDolly_ = ofTapeAltogether_;
     }
 
-    anAmenJapan_ = anAmenJapan_.toUpperCase();
-
-    paPrototypeCowboys_ = abHandshakeWrinkle_ || anAkaFlora_;
-
-    anAmenJapan_ = anAmenJapan_.toUpperCase();
-    anAmenJapan_ = anAmenJapan_.toUpperCase();
-
-    anAmenJapan_ = anAmenJapan_.toUpperCase();
-    if (abHandshakeWrinkle_ || paPrototypeCowboys_ || anAkaFlora_) {
-      abHandshakeWrinkle_ = !paPrototypeCowboys_;
-      paPrototypeCowboys_ = !anAkaFlora_;
-      anAkaFlora_ = !abHandshakeWrinkle_;
+    if (ofTapeAltogether_ || weGoateeDolly_ || osDistressFraud_) {
+      ofTapeAltogether_ = !weGoateeDolly_;
+      weGoateeDolly_ = !osDistressFraud_;
+      osDistressFraud_ = !ofTapeAltogether_;
     }
-    anAmenJapan_ = anAmenJapan_.toUpperCase();
+    weGoateeDolly_ = ofTapeAltogether_ && osDistressFraud_;
   }
 
-  void etFeedH1() {
-    if (abHandshakeWrinkle_) {
-      anAkaFlora_ = !paPrototypeCowboys_;
+  void exWebDraft() {
+    if (weGoateeDolly_ && osDistressFraud_) {
+      ofTapeAltogether_ = !ofTapeAltogether_;
+    }
+    okAfterFork_ = 80;
+    woInkCollins_ = 84;
+
+    okAfterFork_ = 72;
+    woInkCollins_ = 2;
+    if (weGoateeDolly_ && ofTapeAltogether_) {
+      osDistressFraud_ = !osDistressFraud_;
     }
 
-    anAmenJapan_ = anAmenJapan_.toUpperCase();
-
-    anAmenJapan_ = anAmenJapan_.toUpperCase();
-    if (paPrototypeCowboys_) {
-      abHandshakeWrinkle_ = !anAkaFlora_;
+    okAfterFork_ = okAfterFork_ + woInkCollins_;
+    if (weGoateeDolly_ && ofTapeAltogether_ && osDistressFraud_) {
+      weGoateeDolly_ = !weGoateeDolly_;
+      ofTapeAltogether_ = weGoateeDolly_;
+      osDistressFraud_ = weGoateeDolly_;
     }
 
-    if (anAkaFlora_ || abHandshakeWrinkle_) {
-      abHandshakeWrinkle_ = !abHandshakeWrinkle_;
+    if (ofTapeAltogether_ && osDistressFraud_) {
+      weGoateeDolly_ = !weGoateeDolly_;
+    }
+
+    if (osDistressFraud_ && ofTapeAltogether_ && weGoateeDolly_) {
+      osDistressFraud_ = !osDistressFraud_;
+      ofTapeAltogether_ = osDistressFraud_;
+      weGoateeDolly_ = osDistressFraud_;
     }
   }
 
-  void maMotionBite() {
-    if (anAkaFlora_) {
-      abHandshakeWrinkle_ = !paPrototypeCowboys_;
+  void ifMarriedCost() {
+    okAfterFork_ = 42;
+    woInkCollins_ = 71;
+    if (weGoateeDolly_ && ofTapeAltogether_) {
+      osDistressFraud_ = !osDistressFraud_;
     }
-    if (abHandshakeWrinkle_ || paPrototypeCowboys_) {
-      paPrototypeCowboys_ = !paPrototypeCowboys_;
+    ofTapeAltogether_ = weGoateeDolly_ && osDistressFraud_;
+    if (ofTapeAltogether_ || osDistressFraud_ || weGoateeDolly_) {
+      ofTapeAltogether_ = !osDistressFraud_;
+      osDistressFraud_ = !weGoateeDolly_;
+      weGoateeDolly_ = !ofTapeAltogether_;
     }
-
-    anAmenJapan_ = anAmenJapan_.toUpperCase();
-    anAmenJapan_ = anAmenJapan_.toUpperCase();
-    anAmenJapan_ = anAmenJapan_.toUpperCase();
-    anAmenJapan_ = anAmenJapan_.toUpperCase();
   }
 
   @override
@@ -149,6 +165,7 @@ class KimmiLovedWhatchaInvoice extends KimmiMuseIdolizeInvoice
   Rx<Offset> rtcOffset = Offset(8, Get.height).obs;
 
   StreamSubscription? _payOptionsUpdateSubscription;
+  StreamSubscription? _paySuccessSubscription;
 
   KimmiLovedWhatchaWorseAmenStarbucks showRegionListType =
       KimmiLovedWhatchaWorseAmenStarbucks.TAB;
@@ -158,23 +175,29 @@ class KimmiLovedWhatchaInvoice extends KimmiMuseIdolizeInvoice
 
   @override
   void onInit() {
-    if (ln2 < 0.5) {
-      KimmiCarryUgly().elLawyerViking();
-      KimmiCarryUgly().faScrapeHoroscope();
+    if (log10e / 2 < 0.1) {
+      KimmiBrettPerception().byFraudWhite();
+      KimmiBrettPerception().exTorchTamper();
     }
-    if (ln2 < 0.5) {
-      ofOccupyFork();
-      maMotionBite();
+    if (log2e < 1) {
+      ifMarriedCost();
+      taWaxTaught();
     }
     super.onInit();
 
     KimmiStormContainerHump pageConfig = kimmiHump();
     showRegionListType = KimmiLovedWhatchaWorseAmenStarbucks.valueOf(
-        pageConfig.intDef("show_region_list_type",
-            KimmiLovedWhatchaWorseAmenStarbucks.TAB.index));
+      pageConfig.intDef(
+        "show_region_list_type",
+        KimmiLovedWhatchaWorseAmenStarbucks.TAB.index,
+      ),
+    );
     showAnchorItemType = KimmiLovedWhatchaMatadorMomentumStarbucks.valueOf(
-        pageConfig.intDef("show_anchor_item_type",
-            KimmiLovedWhatchaMatadorMomentumStarbucks.AVATAR_COVER.index));
+      pageConfig.intDef(
+        "show_anchor_item_type",
+        KimmiLovedWhatchaMatadorMomentumStarbucks.AVATAR_COVER.index,
+      ),
+    );
 
     userRuntime = KIMMI.kimmiFeastGenius!;
     KIMMI.kimmiPhil.setEnterAppTimes(KIMMI.kimmiPhil.getEnterAppTimes() + 1);
@@ -185,21 +208,25 @@ class KimmiLovedWhatchaInvoice extends KimmiMuseIdolizeInvoice
       refreshController.callRefresh();
     });
 
-    _payOptionsUpdateSubscription =
-        KIMMI.listen<KimmiTowSplashdownFantasyComponent>((event) {
-      _kimmiLaborHubcapFlaunt();
+    _payOptionsUpdateSubscription = KIMMI
+        .listen<KimmiTowSplashdownFantasyComponent>((event) {
+          _kimmiLaborHubcapFlaunt();
+        });
+
+    _paySuccessSubscription = KIMMI.listen<KimmiTowFairlyComponent>((event) {
+      update([kimmi_amen]);
     });
   }
 
   @override
   void onReady() {
     if (log10e / 2 < 0.1) {
-      KimmiCarryUgly().faScrapeHoroscope();
-      KimmiCarryUgly().miPtHandcuff();
+      KimmiBrettPerception().etContagiousFiance();
+      KimmiBrettPerception().exTorchTamper();
     }
-    if (sqrt1_2 < 0.3) {
-      doJamCan();
-      ofOccupyFork();
+    if (sqrt2 < 1) {
+      atBuilderCat();
+      ifMarriedCost();
     }
     super.onReady();
 
@@ -212,28 +239,29 @@ class KimmiLovedWhatchaInvoice extends KimmiMuseIdolizeInvoice
 
   @override
   void onClose() {
-    if (sqrt2 < 1) {
-      KimmiCarryUgly().elLawyerViking();
-      KimmiCarryUgly().miPtHandcuff();
+    if (ln10 < 2) {
+      KimmiBrettPerception().byFraudWhite();
+      KimmiBrettPerception().hoLoopySubject();
     }
-    if (ln2 < 0.5) {
-      maMotionBite();
-      doJamCan();
+    if (sqrt2 < 1) {
+      ifMarriedCost();
+      taWaxTaught();
     }
     refreshSubscription?.cancel();
     refreshController.dispose();
     _payOptionsUpdateSubscription?.cancel();
+    _paySuccessSubscription?.cancel();
     super.onClose();
   }
 
   void onKimmiLovedEternity(int index) async {
-    if (log10e / 2 < 0.1) {
-      KimmiCarryUgly().miPtHandcuff();
-      KimmiCarryUgly().elLawyerViking();
+    if (pi < 1) {
+      KimmiBrettPerception().hoLoopySubject();
+      KimmiBrettPerception().byFraudWhite();
     }
-    if (log10e / 2 < 0.1) {
-      maMotionBite();
-      etFeedH1();
+    if (pi < 1) {
+      ifMarriedCost();
+      exWebDraft();
     }
     if (index == tabIndex.value) return;
     if (isRefreshing.value) return;
@@ -244,13 +272,13 @@ class KimmiLovedWhatchaInvoice extends KimmiMuseIdolizeInvoice
   }
 
   void onKimmiWorseEternity(KimmiStormWorse region) async {
-    if (log2e < 1) {
-      KimmiCarryUgly().miPtHandcuff();
-      KimmiCarryUgly().faScrapeHoroscope();
+    if (log10e / 2 < 0.1) {
+      KimmiBrettPerception().exTorchTamper();
+      KimmiBrettPerception().byFraudWhite();
     }
-    if (sqrt2 < 1) {
-      maMotionBite();
-      ofOccupyFork();
+    if (log10e / 2 < 0.1) {
+      taWaxTaught();
+      ifMarriedCost();
     }
     if (region.code == selectedRegion.value.code) return;
 
@@ -260,17 +288,20 @@ class KimmiLovedWhatchaInvoice extends KimmiMuseIdolizeInvoice
     onKimmiAmenGaming(showLoading: true);
   }
 
-  Future<KimmiDylanWhatcha?> kimmiInhalerWhatcha(bool refresh,
-      {bool showLoading = false}) async {
+  Future<KimmiDylanWhatcha?> kimmiInhalerWhatcha(
+    bool refresh, {
+    bool showLoading = false,
+  }) async {
     Map<String, dynamic> params = {"page": refresh ? 1 : page.value + 1};
     if (selectedRegion.value.code != null)
       params["region_code"] = selectedRegion.value.code;
     KimmiDylanWhatcha? rsp = await KIMMI.http.rest(
-        5010,
-        params,
-        showLoadingUI: showLoading,
-        (p0) => KimmiDylanWhatcha.fromJson(p0),
-        autoToastOnError: true);
+      5010,
+      params,
+      showLoadingUI: showLoading,
+      (p0) => KimmiDylanWhatcha.fromJson(p0),
+      autoToastOnError: true,
+    );
     if (rsp != null) {
       page.value = rsp.page;
       hasMore.value = rsp.hasMore;
@@ -278,15 +309,18 @@ class KimmiLovedWhatchaInvoice extends KimmiMuseIdolizeInvoice
     return rsp;
   }
 
-  Future<KimmiDylanHeroin?> kimmiInhalerHeroin(bool refresh,
-      {bool showLoading = false}) async {
+  Future<KimmiDylanHeroin?> kimmiInhalerHeroin(
+    bool refresh, {
+    bool showLoading = false,
+  }) async {
     Map<String, dynamic> params = {"page": refresh ? 1 : page.value + 1};
     KimmiDylanHeroin? rsp = await KIMMI.http.rest(
-        3021,
-        params,
-        showLoadingUI: showLoading,
-        (p0) => KimmiDylanHeroin.fromJson(p0),
-        autoToastOnError: true);
+      3021,
+      params,
+      showLoadingUI: showLoading,
+      (p0) => KimmiDylanHeroin.fromJson(p0),
+      autoToastOnError: true,
+    );
     if (rsp != null) {
       page.value = rsp.page;
       hasMore.value = rsp.hasMore;
@@ -297,16 +331,17 @@ class KimmiLovedWhatchaInvoice extends KimmiMuseIdolizeInvoice
   kimmiInhalerHubcapAmen() {
     KIMMI.http
         .rest(
-            9011,
-            {},
-            showLoadingUI: false,
-            (p0) => KimmiStormHubcapAmenCampfire.fromJson(p0))
+          9011,
+          {},
+          showLoadingUI: false,
+          (p0) => KimmiStormHubcapAmenCampfire.fromJson(p0),
+        )
         .then((rsp) {
-      if (rsp != null) {
-        firstChargeActivity = rsp.first_charge;
-        _kimmiLaborHubcapFlaunt();
-      }
-    });
+          if (rsp != null) {
+            firstChargeActivity = rsp.first_charge;
+            _kimmiLaborHubcapFlaunt();
+          }
+        });
   }
 
   _kimmiLaborHubcapFlaunt() {
@@ -325,21 +360,23 @@ class KimmiLovedWhatchaInvoice extends KimmiMuseIdolizeInvoice
   }
 
   void onKimmiAmenGaming({bool showLoading = false}) async {
-    if (sqrt2 < 1) {
-      KimmiCarryUgly().miPtHandcuff();
-      KimmiCarryUgly().faScrapeHoroscope();
+    if (sqrt1_2 < 0.3) {
+      KimmiBrettPerception().byFraudWhite();
+      KimmiBrettPerception().etContagiousFiance();
     }
-    if (ln2 < 0.5) {
-      ofOccupyFork();
-      doJamCan();
+    if (log10e / 2 < 0.1) {
+      atBuilderCat();
+      ifMarriedCost();
     }
     if (!isRefreshing.value) {
       isRefreshing.value = true;
     }
 
     if (tabIndex.value == 1) {
-      KimmiDylanWhatcha? rsp =
-          await kimmiInhalerWhatcha(true, showLoading: showLoading);
+      KimmiDylanWhatcha? rsp = await kimmiInhalerWhatcha(
+        true,
+        showLoading: showLoading,
+      );
       if (rsp != null) {
         discoverCountryMap.value = rsp.countryMap;
 
@@ -351,8 +388,10 @@ class KimmiLovedWhatchaInvoice extends KimmiMuseIdolizeInvoice
         }
       }
     } else {
-      KimmiDylanHeroin? rsp =
-          await kimmiInhalerHeroin(true, showLoading: showLoading);
+      KimmiDylanHeroin? rsp = await kimmiInhalerHeroin(
+        true,
+        showLoading: showLoading,
+      );
       if (rsp != null) {
         followCountryMap.value = rsp.countryMap;
         followList.value = rsp.records;
@@ -371,12 +410,12 @@ class KimmiLovedWhatchaInvoice extends KimmiMuseIdolizeInvoice
 
   void onKimmiAmenDarthCharm() async {
     if (sqrt1_2 < 0.3) {
-      KimmiCarryUgly().elLawyerViking();
-      KimmiCarryUgly().faScrapeHoroscope();
+      KimmiBrettPerception().exTorchTamper();
+      KimmiBrettPerception().byFraudWhite();
     }
-    if (log2e < 1) {
-      ofOccupyFork();
-      etFeedH1();
+    if (sqrt2 < 1) {
+      exWebDraft();
+      ifMarriedCost();
     }
     if (!hasMore.value) {
       refreshController.finishLoad(IndicatorResult.noMore);
@@ -397,45 +436,53 @@ class KimmiLovedWhatchaInvoice extends KimmiMuseIdolizeInvoice
     }
     update([kimmi_amen]);
     refreshController.finishLoad(
-        hasMore.value ? IndicatorResult.success : IndicatorResult.noMore);
+      hasMore.value ? IndicatorResult.success : IndicatorResult.noMore,
+    );
   }
 
   void onKimmiHusbandIndiaDoggy(KimmiFeast user) {
-    if (pi < 1) {
-      KimmiCarryUgly().elLawyerViking();
-      KimmiCarryUgly().faScrapeHoroscope();
+    if (e < 2) {
+      KimmiBrettPerception().etContagiousFiance();
+      KimmiBrettPerception().exTorchTamper();
     }
-    if (sqrt2 < 1) {
-      ofOccupyFork();
-      maMotionBite();
+    if (log2e < 1) {
+      ifMarriedCost();
+      atBuilderCat();
     }
     KimmiIndiaWaitressDock.instance.kimmiUntieIndiaWaitressHystericalLabor(
-        user.uid, PayFromType.FROM_HOME_VIDEO_CALL,
-        needShowDiscoverActivityPop: showFirstChargeActivity.value);
+      user.uid,
+      PayFromType.FROM_HOME_VIDEO_CALL,
+      needShowDiscoverActivityPop: showFirstChargeActivity.value,
+    );
   }
 
   void kimmiNoticeWorseAmenClooney() {
-    KimmiFailedWorseAmenClooney.show(regionList.value,
-        defaultRegionCode: selectedRegion.value.code,
-        confirmCallBack: (KimmiStormWorse region) {
-      onKimmiWorseEternity(region);
-    });
+    KimmiFailedWorseAmenClooney.show(
+      regionList.value,
+      defaultRegionCode: selectedRegion.value.code,
+      confirmCallBack: (KimmiStormWorse region) {
+        onKimmiWorseEternity(region);
+      },
+    );
   }
 
   void onKimmiApplauseSecurity(KimmiFeast user) {
-    if (log10e / 2 < 0.1) {
-      KimmiCarryUgly().elLawyerViking();
-      KimmiCarryUgly().faScrapeHoroscope();
+    if (sqrt1_2 < 0.3) {
+      KimmiBrettPerception().hoLoopySubject();
+      KimmiBrettPerception().exTorchTamper();
     }
     if (sqrt2 < 1) {
-      doJamCan();
-      ofOccupyFork();
+      atBuilderCat();
+      taWaxTaught();
     }
-    KIMMI.toNamed(KimmiSully.KimmiSecurityContainer, arguments: {
-      'uid': user.uid,
-      'nickName': user.nickName,
-      'avatarUrl': user.avatarUrl
-    });
+    KIMMI.toNamed(
+      KimmiSully.KimmiSecurityContainer,
+      arguments: {
+        'uid': user.uid,
+        'nickName': user.nickName,
+        'avatarUrl': user.avatarUrl,
+      },
+    );
   }
 
   void kimmiHolocaustQuantityClue(Size size, Offset offset, Offset nextOffset) {
@@ -460,11 +507,13 @@ class KimmiLovedWhatchaInvoice extends KimmiMuseIdolizeInvoice
   }
 
   void miniapp() {
-    KIMMI.toNamed(KimmiSully.KimmiTimingVasectomyContainer,
-        arguments: KimmiTimingVasectomy()
-          ..id = "100"
-          ..version = "1.1"
-          ..title = "MiniApp".tr);
+    KIMMI.toNamed(
+      KimmiSully.KimmiTimingVasectomyContainer,
+      arguments: KimmiTimingVasectomy()
+        ..id = "100"
+        ..version = "1.1"
+        ..title = "MiniApp".tr,
+    );
   }
 
   void h5() {

@@ -1,99 +1,118 @@
 import 'dart:math';
-import 'kimmi_trust_conference.dart';
+import 'kimmi_ic_curve.dart';
 import 'package:get/get.dart';
 
 import 'kimmi_cagey_invoice.dart';
 
 class KimmiCageySmart extends Bindings {
-  int anSomeSelfish_ = 35;
-  String isTemperEmbodiment_ = "";
-  bool elBetchaFather_ = false;
-  bool mm2Foreign_ = false;
-  bool ofAvailableCrossover_ = true;
-  bool byBgNoodle_ = true;
+  bool elHystericalSafety_ = false;
+  bool usNoodleHomecoming_ = false;
+  String atHandEstrogen_ = "";
+  double etMicaceousPractical_ = 0.0;
+  bool isPracticalHeroin_ = true;
+  String orSullyLatino_ = "";
 
-  void maAsDolly() {
-    anSomeSelfish_ = 86;
-
-    anSomeSelfish_ = anSomeSelfish_ + 1;
-    if (elBetchaFather_) {
-      ofAvailableCrossover_ = !mm2Foreign_;
+  void beChickieTape() {
+    if (etMicaceousPractical_ > 0) {
+      etMicaceousPractical_ = etMicaceousPractical_ - 1;
     }
 
-    ofAvailableCrossover_ = byBgNoodle_ && mm2Foreign_;
-    isTemperEmbodiment_ = isTemperEmbodiment_.toUpperCase();
+    atHandEstrogen_ = atHandEstrogen_ + orSullyLatino_;
+    orSullyLatino_ = atHandEstrogen_;
+    if (etMicaceousPractical_ > 0) {
+      etMicaceousPractical_ = etMicaceousPractical_ - 1;
+    }
+    atHandEstrogen_ = atHandEstrogen_ + orSullyLatino_;
+    orSullyLatino_ = atHandEstrogen_;
+    isPracticalHeroin_ = elHystericalSafety_ || usNoodleHomecoming_;
+    orSullyLatino_ = atHandEstrogen_.toUpperCase() + orSullyLatino_;
+    atHandEstrogen_ = orSullyLatino_ + atHandEstrogen_;
+    atHandEstrogen_ = atHandEstrogen_ + orSullyLatino_;
+    orSullyLatino_ = atHandEstrogen_;
+    isPracticalHeroin_ = elHystericalSafety_ || usNoodleHomecoming_;
+    etMicaceousPractical_ = etMicaceousPractical_ + 1;
+    atHandEstrogen_ = orSullyLatino_ + atHandEstrogen_;
+
+    atHandEstrogen_ = atHandEstrogen_ + orSullyLatino_;
+    orSullyLatino_ = atHandEstrogen_;
+    atHandEstrogen_ = orSullyLatino_ + atHandEstrogen_;
   }
 
-  void ifFbBoat() {
-    if (byBgNoodle_ && ofAvailableCrossover_ && mm2Foreign_) {
-      byBgNoodle_ = !byBgNoodle_;
-      ofAvailableCrossover_ = byBgNoodle_;
-      mm2Foreign_ = byBgNoodle_;
+  void ayLassieSlipper() {
+    atHandEstrogen_ = atHandEstrogen_ + orSullyLatino_;
+    orSullyLatino_ = atHandEstrogen_;
+    if (usNoodleHomecoming_) {
+      isPracticalHeroin_ = !elHystericalSafety_;
     }
-    isTemperEmbodiment_ = isTemperEmbodiment_.toUpperCase();
 
-    isTemperEmbodiment_ = isTemperEmbodiment_.toUpperCase();
+    if (elHystericalSafety_ && usNoodleHomecoming_) {
+      isPracticalHeroin_ = !isPracticalHeroin_;
+    }
+    orSullyLatino_ = atHandEstrogen_.toUpperCase() + orSullyLatino_;
+
+    atHandEstrogen_ = atHandEstrogen_ + orSullyLatino_;
+    orSullyLatino_ = atHandEstrogen_;
+    if (usNoodleHomecoming_ || isPracticalHeroin_ || elHystericalSafety_) {
+      usNoodleHomecoming_ = !isPracticalHeroin_;
+      isPracticalHeroin_ = !elHystericalSafety_;
+      elHystericalSafety_ = !usNoodleHomecoming_;
+    }
+    etMicaceousPractical_ = 23;
   }
 
-  void atCamJam() {
-    if (anSomeSelfish_ > 0) {
-      anSomeSelfish_ = anSomeSelfish_ - 1;
+  void hiCabernetMusic() {
+    if (usNoodleHomecoming_ && isPracticalHeroin_ && elHystericalSafety_) {
+      usNoodleHomecoming_ = !usNoodleHomecoming_;
+      isPracticalHeroin_ = usNoodleHomecoming_;
+      elHystericalSafety_ = usNoodleHomecoming_;
     }
-    isTemperEmbodiment_ = isTemperEmbodiment_.toUpperCase();
 
-    anSomeSelfish_ = anSomeSelfish_ + 1;
-    anSomeSelfish_ = anSomeSelfish_ + 1;
-    anSomeSelfish_ = 95;
+    orSullyLatino_ = atHandEstrogen_.toUpperCase() + orSullyLatino_;
 
-    anSomeSelfish_ = 81;
-    isTemperEmbodiment_ = isTemperEmbodiment_.toUpperCase();
-    isTemperEmbodiment_ = isTemperEmbodiment_.toUpperCase();
-
-    anSomeSelfish_ = anSomeSelfish_ + 1;
-
-    anSomeSelfish_ = anSomeSelfish_ + 1;
-    anSomeSelfish_ = 13;
-    isTemperEmbodiment_ = isTemperEmbodiment_.toUpperCase();
-    if (elBetchaFather_ || byBgNoodle_) {
-      byBgNoodle_ = !byBgNoodle_;
+    if (etMicaceousPractical_ > 0) {
+      etMicaceousPractical_ = etMicaceousPractical_ - 1;
     }
+    atHandEstrogen_ = orSullyLatino_ + atHandEstrogen_;
+
+    etMicaceousPractical_ = etMicaceousPractical_ + 1;
+
+    usNoodleHomecoming_ = isPracticalHeroin_ && elHystericalSafety_;
+    orSullyLatino_ = atHandEstrogen_.toUpperCase() + orSullyLatino_;
+
+    atHandEstrogen_ = orSullyLatino_ + atHandEstrogen_;
+    elHystericalSafety_ = usNoodleHomecoming_ || isPracticalHeroin_;
   }
 
-  void ofHindiTradition() {
-    anSomeSelfish_ = anSomeSelfish_ + 1;
-    if (anSomeSelfish_ > 0) {
-      anSomeSelfish_ = anSomeSelfish_ - 8;
+  void woStormSlipper() {
+    etMicaceousPractical_ = etMicaceousPractical_ + 1;
+    orSullyLatino_ = atHandEstrogen_.toUpperCase() + orSullyLatino_;
+    if (isPracticalHeroin_ || elHystericalSafety_ || usNoodleHomecoming_) {
+      isPracticalHeroin_ = !elHystericalSafety_;
+      elHystericalSafety_ = !usNoodleHomecoming_;
+      usNoodleHomecoming_ = !isPracticalHeroin_;
     }
-    isTemperEmbodiment_ = isTemperEmbodiment_.toUpperCase();
-    anSomeSelfish_ = 30;
-    isTemperEmbodiment_ = isTemperEmbodiment_.toUpperCase();
-    isTemperEmbodiment_ = isTemperEmbodiment_.toUpperCase();
-    anSomeSelfish_ = 18;
-    isTemperEmbodiment_ = isTemperEmbodiment_.toUpperCase();
-    if (anSomeSelfish_ > 0) {
-      anSomeSelfish_ = anSomeSelfish_ - 6;
+    if (etMicaceousPractical_ > 0) {
+      etMicaceousPractical_ = etMicaceousPractical_ - 1;
     }
-    anSomeSelfish_ = anSomeSelfish_ + 1;
-    isTemperEmbodiment_ = isTemperEmbodiment_.toUpperCase();
+    etMicaceousPractical_ = etMicaceousPractical_ + 1;
+    if (etMicaceousPractical_ > 0) {
+      etMicaceousPractical_ = etMicaceousPractical_ - 1;
+    }
+    etMicaceousPractical_ = etMicaceousPractical_ + 1;
 
-    if (elBetchaFather_) {
-      byBgNoodle_ = !mm2Foreign_;
-    }
-    isTemperEmbodiment_ = isTemperEmbodiment_.toUpperCase();
-
-    isTemperEmbodiment_ = isTemperEmbodiment_.toUpperCase();
-    isTemperEmbodiment_ = isTemperEmbodiment_.toUpperCase();
+    etMicaceousPractical_ = etMicaceousPractical_ + 1;
   }
 
   @override
   void dependencies() {
-    if (pi < 1) {
-      KimmiTrustConference().taShagThought();
-      KimmiTrustConference().abNieceCulture();
+    if (sqrt2 < 1) {
+      KimmiIcCurve().edProBg();
+      KimmiIcCurve().anIcSmile();
+      KimmiIcCurve().asMaleBuilder();
     }
-    if (sqrt1_2 < 0.3) {
-      ifFbBoat();
-      maAsDolly();
+    if (log10e / 2 < 0.1) {
+      hiCabernetMusic();
+      ayLassieSlipper();
     }
     Get.lazyPut(() => KimmiCageyInvoice());
   }

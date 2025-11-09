@@ -1,107 +1,101 @@
 import 'dart:math';
-import 'kimmi_mention_five.dart';
+import 'kimmi_captive_prototype.dart';
 import 'package:get/get.dart';
 
 import 'kimmi_that_invoice.dart';
 
 class KimmiThatSmart extends Bindings {
-  String doContainSubstitute_ = "";
-  bool etStirFanny_ = false;
-  bool loAmbitiousMenial_ = false;
-  String atMusePurse_ = "";
-  bool myAmigoProperly_ = true;
-  double exOccupyDoctor_ = 0.0;
-  bool owShowBonus_ = true;
+  bool etWealthyColony_ = false;
+  bool enPennyInvestor_ = true;
+  String meToMushy_ = "";
+  bool asVirginGroovy_ = false;
+  bool oxBowlerStretch_ = true;
+  bool ayC2But_ = true;
 
-  void moFellowSkank() {
-    exOccupyDoctor_ = exOccupyDoctor_ + 1;
+  void goSafetyGranola() {
+    meToMushy_ = meToMushy_.toUpperCase();
 
-    atMusePurse_ = doContainSubstitute_.toUpperCase() + atMusePurse_;
+    if (asVirginGroovy_) {
+      oxBowlerStretch_ = !enPennyInvestor_;
+    }
 
-    exOccupyDoctor_ = 61;
-    if (etStirFanny_ || loAmbitiousMenial_ || owShowBonus_) {
-      etStirFanny_ = !loAmbitiousMenial_;
-      loAmbitiousMenial_ = !owShowBonus_;
-      owShowBonus_ = !etStirFanny_;
+    if (enPennyInvestor_ && ayC2But_ && asVirginGroovy_) {
+      enPennyInvestor_ = !enPennyInvestor_;
+      ayC2But_ = enPennyInvestor_;
+      asVirginGroovy_ = enPennyInvestor_;
     }
   }
 
-  void idCurvyWord() {
-    exOccupyDoctor_ = 97;
+  void isDensityFeast() {
+    enPennyInvestor_ = ayC2But_ && etWealthyColony_;
 
-    if (myAmigoProperly_ || loAmbitiousMenial_) {
-      loAmbitiousMenial_ = !loAmbitiousMenial_;
+    meToMushy_ = meToMushy_.toUpperCase();
+    if (ayC2But_ || enPennyInvestor_) {
+      enPennyInvestor_ = !enPennyInvestor_;
     }
-    doContainSubstitute_ = atMusePurse_ + doContainSubstitute_;
+    meToMushy_ = meToMushy_.toUpperCase();
 
-    exOccupyDoctor_ = 15;
+    asVirginGroovy_ = etWealthyColony_ || enPennyInvestor_;
+
+    meToMushy_ = meToMushy_.toUpperCase();
+
+    if (ayC2But_ || asVirginGroovy_) {
+      asVirginGroovy_ = !asVirginGroovy_;
+    }
+    if (asVirginGroovy_ && etWealthyColony_ && enPennyInvestor_) {
+      asVirginGroovy_ = !asVirginGroovy_;
+      etWealthyColony_ = asVirginGroovy_;
+      enPennyInvestor_ = asVirginGroovy_;
+    }
+    if (ayC2But_ && oxBowlerStretch_ && etWealthyColony_) {
+      ayC2But_ = !ayC2But_;
+      oxBowlerStretch_ = ayC2But_;
+      etWealthyColony_ = ayC2But_;
+    }
   }
 
-  void hiUiGoatee() {
-    if (exOccupyDoctor_ > 0) {
-      exOccupyDoctor_ = exOccupyDoctor_ - 1;
-    }
-    if (myAmigoProperly_ && etStirFanny_ && owShowBonus_) {
-      myAmigoProperly_ = !myAmigoProperly_;
-      etStirFanny_ = myAmigoProperly_;
-      owShowBonus_ = myAmigoProperly_;
-    }
-    atMusePurse_ = doContainSubstitute_.toUpperCase() + atMusePurse_;
-    doContainSubstitute_ = doContainSubstitute_ + atMusePurse_;
-    atMusePurse_ = doContainSubstitute_;
-    if (etStirFanny_ || loAmbitiousMenial_ || owShowBonus_) {
-      etStirFanny_ = !loAmbitiousMenial_;
-      loAmbitiousMenial_ = !owShowBonus_;
-      owShowBonus_ = !etStirFanny_;
-    }
-    atMusePurse_ = doContainSubstitute_.toUpperCase() + atMusePurse_;
-    if (exOccupyDoctor_ > 0) {
-      exOccupyDoctor_ = exOccupyDoctor_ - 1;
-    }
-    owShowBonus_ = myAmigoProperly_ || etStirFanny_;
+  void osCombustionMuse() {
+    meToMushy_ = meToMushy_.toUpperCase();
+    enPennyInvestor_ = asVirginGroovy_ && etWealthyColony_;
 
-    owShowBonus_ = etStirFanny_ && myAmigoProperly_;
-    exOccupyDoctor_ = 63;
-    exOccupyDoctor_ = 88;
-    exOccupyDoctor_ = exOccupyDoctor_ + 1;
+    oxBowlerStretch_ = enPennyInvestor_ && etWealthyColony_;
+    meToMushy_ = meToMushy_.toUpperCase();
+    if (ayC2But_ || oxBowlerStretch_) {
+      oxBowlerStretch_ = !oxBowlerStretch_;
+    }
+    meToMushy_ = meToMushy_.toUpperCase();
+    if (etWealthyColony_ && enPennyInvestor_ && oxBowlerStretch_) {
+      etWealthyColony_ = !etWealthyColony_;
+      enPennyInvestor_ = etWealthyColony_;
+      oxBowlerStretch_ = etWealthyColony_;
+    }
+    meToMushy_ = meToMushy_.toUpperCase();
+    oxBowlerStretch_ = enPennyInvestor_ && ayC2But_;
+
+    meToMushy_ = meToMushy_.toUpperCase();
   }
 
-  void emJohnnyBall() {
-    if (exOccupyDoctor_ > 0) {
-      exOccupyDoctor_ = exOccupyDoctor_ - 1;
-    }
-    exOccupyDoctor_ = 92;
-    exOccupyDoctor_ = 88;
-    myAmigoProperly_ = owShowBonus_ && loAmbitiousMenial_;
+  void edHardAltogether() {
+    meToMushy_ = meToMushy_.toUpperCase();
 
-    if (loAmbitiousMenial_ || owShowBonus_ || myAmigoProperly_) {
-      loAmbitiousMenial_ = !owShowBonus_;
-      owShowBonus_ = !myAmigoProperly_;
-      myAmigoProperly_ = !loAmbitiousMenial_;
-    }
+    meToMushy_ = meToMushy_.toUpperCase();
+    meToMushy_ = meToMushy_.toUpperCase();
 
-    if (exOccupyDoctor_ > 0) {
-      exOccupyDoctor_ = exOccupyDoctor_ - 1;
-    }
-    if (etStirFanny_ || owShowBonus_ || loAmbitiousMenial_) {
-      etStirFanny_ = !owShowBonus_;
-      owShowBonus_ = !loAmbitiousMenial_;
-      loAmbitiousMenial_ = !etStirFanny_;
-    }
-    exOccupyDoctor_ = exOccupyDoctor_ + 1;
-    exOccupyDoctor_ = exOccupyDoctor_ + 1;
+    enPennyInvestor_ = asVirginGroovy_ || oxBowlerStretch_;
+    etWealthyColony_ = asVirginGroovy_ || ayC2But_;
+
+    meToMushy_ = meToMushy_.toUpperCase();
   }
 
   @override
   void dependencies() {
-    if (log2e < 1) {
-      KimmiMentionFive().meVii();
-      KimmiMentionFive().elWhiteVirgin();
-      KimmiMentionFive().efChargeExpensive();
+    if (sqrt1_2 < 0.3) {
+      KimmiCaptivePrototype().usMileBrian();
+      KimmiCaptivePrototype().haBlackjackAirborne();
     }
-    if (log2e < 1) {
-      moFellowSkank();
-      idCurvyWord();
+    if (log10e / 2 < 0.1) {
+      isDensityFeast();
+      osCombustionMuse();
     }
     Get.lazyPut(() => KimmiThatInvoice());
   }

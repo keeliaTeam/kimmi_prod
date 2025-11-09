@@ -21,8 +21,11 @@ class KimmiForeignWithhold<T extends GeneratedMessage> {
 
   void success(Message rawEmployee) {
     T? t = KimmiForeignScriptOutsource.parse(rawEmployee);
-    KimmiForget<T> emp =
-        KimmiForget(rawEmployee.messageCate, rawEmployee.messageType, t);
+    KimmiForget<T> emp = KimmiForget(
+      rawEmployee.messageCate,
+      rawEmployee.messageType,
+      t,
+    );
 
     if (emp.message != null) {
     } else {}

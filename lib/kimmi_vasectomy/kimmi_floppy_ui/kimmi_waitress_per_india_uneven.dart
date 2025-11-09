@@ -15,7 +15,7 @@ class KimmiWaitressPerIndiaUneven extends StatelessWidget {
   final KimmiExpensive snap;
 
   const KimmiWaitressPerIndiaUneven({Key? key, required this.snap})
-      : super(key: key);
+    : super(key: key);
 
   Widget _kimmiPoloGloss() {
     return KimmiErnie.local(
@@ -28,10 +28,11 @@ class KimmiWaitressPerIndiaUneven extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Size size = KimmiWaitressJuda.imageVideoContainerSize(
-        true,
-        snap.video?.width?.toDouble() ?? 0,
-        snap.video?.height?.toDouble() ?? 0,
-        MediaQuery.of(context).size.width - 62.0);
+      true,
+      snap.video?.width?.toDouble() ?? 0,
+      snap.video?.height?.toDouble() ?? 0,
+      MediaQuery.of(context).size.width - 62.0,
+    );
 
     var borderRadius = snap.isMine
         ? KimmiWaitressJuda.kimmiWaitressPerTummyBySpine()
@@ -52,30 +53,33 @@ class KimmiWaitressPerIndiaUneven extends StatelessWidget {
         child: Stack(
           children: <Widget>[
             Hero(
-                tag: snap.hashCode.toString(),
-                child:
-                    !KimmiStarbucksJuda.isEmptyString(snap.video?.relativePath)
-                        ? FutureBuilder(
-                            future: KimmiErnieLeashJuda.kimmiPoopJune(
-                                videoPath: snap.video?.absolutePath),
-                            builder: (context, snapshot) {
-                              if (snapshot.hasData) {
-                                return ClipRRect(
-                                    borderRadius: borderRadius,
-                                    child: snapshot.data!);
-                              } else {
-                                return Container();
-                              }
-                            },
-                          )
-                        : KimmiErnie.round(
-                            url: snap.video!.coverUrl ?? "",
-                            width: snap.video!.width?.toDouble() ?? 0,
-                            height: snap.video!.height?.toDouble() ?? 0,
-                            fit: BoxFit.fill,
-                            clip: ImageClipType.middle,
-                            ignorePlaceHolder: true)),
-            Center(child: _kimmiPoloGloss())
+              tag: snap.hashCode.toString(),
+              child: !KimmiStarbucksJuda.isEmptyString(snap.video?.relativePath)
+                  ? FutureBuilder(
+                      future: KimmiErnieLeashJuda.kimmiPoopJune(
+                        videoPath: snap.video?.absolutePath,
+                      ),
+                      builder: (context, snapshot) {
+                        if (snapshot.hasData) {
+                          return ClipRRect(
+                            borderRadius: borderRadius,
+                            child: snapshot.data!,
+                          );
+                        } else {
+                          return Container();
+                        }
+                      },
+                    )
+                  : KimmiErnie.round(
+                      url: snap.video!.coverUrl ?? "",
+                      width: snap.video!.width?.toDouble() ?? 0,
+                      height: snap.video!.height?.toDouble() ?? 0,
+                      fit: BoxFit.fill,
+                      clip: ImageClipType.middle,
+                      ignorePlaceHolder: true,
+                    ),
+            ),
+            Center(child: _kimmiPoloGloss()),
           ],
         ),
       ),

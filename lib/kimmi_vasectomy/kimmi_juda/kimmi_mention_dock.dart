@@ -67,16 +67,16 @@ class KimmiMentionDock {
   bool hasInit = false;
   bool hasUploadToken = false;
 
-  void init(KimmiMentionHump? cfg) {
+  void init(String? appId) {
     if (hasInit) {
       return;
     }
 
-    if (cfg == null || cfg.key == null || cfg.key == "") {
+    if (KimmiStarbucksJuda.isEmpty(appId)) {
       return;
     }
 
-    OneSignal.initialize(cfg.key!);
+    OneSignal.initialize(appId!);
     if (kDebugMode) {
       OneSignal.Debug.setLogLevel(OSLogLevel.verbose);
     }
@@ -146,7 +146,9 @@ class KimmiMentionDock {
 
     if (actionUrl.contains(kimmi_mention_waitress)) {
       String? goValue = _parseParameterValueFromKey(
-          actionUri, kimmi_mention_combustion_towel);
+        actionUri,
+        kimmi_mention_combustion_towel,
+      );
       int cid = _parseIntByValue(goValue);
       if (cid > 0) {
         KimmiWaitressContainerHusbandUp.open(cid: cid);

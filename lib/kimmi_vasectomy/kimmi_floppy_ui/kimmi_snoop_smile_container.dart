@@ -1,5 +1,5 @@
 import 'dart:math';
-import 'kimmi_joyous_thrive.dart';
+import 'kimmi_compelling_episode.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_floppy/kimmi_snoop_smile_amen_per.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_tonight/kimmi_draft_juda.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_hamill/kimmi_failed_juda.dart';
@@ -29,14 +29,18 @@ class KimmiSnoopSmileContainer
         backgroundColor: KimmiDraftJuda.color110022,
         padding: const EdgeInsetsDirectional.only(start: 0, end: 0),
         leading: CupertinoButton(
-            padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
-            onPressed: () => Get.back(),
-            child: KimmiFailedWebsite.kimmiDecafGloss()),
-        middle: Text("kimmi_broderick_snoop_smile".tr,
-            style: KimmiTamperDaytime.style(
-                color: KimmiDraftJuda.white,
-                fontSize: 18,
-                fontWeight: FontWeight.bold)),
+          padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
+          onPressed: () => Get.back(),
+          child: KimmiFailedWebsite.kimmiDecafGloss(),
+        ),
+        middle: Text(
+          "kimmi_broderick_snoop_smile".tr,
+          style: KimmiTamperDaytime.style(
+            color: KimmiDraftJuda.white,
+            fontSize: 18,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
       ),
       child: Container(
         color: KimmiDraftJuda.transparent,
@@ -47,16 +51,18 @@ class KimmiSnoopSmileContainer
 
   Widget notifyCell(BuildContext context) {
     return GetBuilder<KimmiSnoopSmileInvoice>(
-        id: logic.kimmi_snoop_smile_amen,
-        builder: (logic) {
-          return ListView.builder(
-            itemBuilder: (context, index) {
-              return KimmiSnoopSmileAmenPer(item: logic.chatList[index]);
-            },
-            padding: EdgeInsets.only(
-                bottom: 15.0 + MediaQuery.of(context).viewPadding.bottom),
-            itemCount: logic.chatList.length,
-          );
-        });
+      id: logic.kimmi_snoop_smile_amen,
+      builder: (logic) {
+        return ListView.builder(
+          itemBuilder: (context, index) {
+            return KimmiSnoopSmileAmenPer(item: logic.chatList[index]);
+          },
+          padding: EdgeInsets.only(
+            bottom: 15.0 + MediaQuery.of(context).viewPadding.bottom,
+          ),
+          itemCount: logic.chatList.length,
+        );
+      },
+    );
   }
 }

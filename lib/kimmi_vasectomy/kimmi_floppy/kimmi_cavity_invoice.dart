@@ -1,5 +1,5 @@
 import 'dart:math';
-import 'kimmi_mention_five.dart';
+import 'kimmi_some_advocate.dart';
 import 'dart:io';
 
 import 'package:kimmi/kimmi_vasectomy/kimmi_exploit_dylan/kimmi_dylan_cavity.dart';
@@ -18,100 +18,84 @@ import 'package:sign_in_with_apple/sign_in_with_apple.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 
 class KimmiCavityInvoice extends KimmiMuseIdolizeInvoice {
-  bool asSuccessFb_ = false;
-  String myInhaleFlora_ = "";
-  double loNoticeLassie_ = 17;
-  bool hiThatLoopy_ = false;
-  bool idPennyBonus_ = true;
-  bool loPumpkinGoatee_ = true;
-  double atSavageAdequate_ = 0.0;
-  int opErasePuffy_ = 0;
-  bool joOpenerCap_ = false;
+  int hoInvestorFantasy_ = 0;
+  int efSplashdownLimbic_ = 71;
+  bool inAssertCarry_ = true;
+  bool ahWartWealthy_ = false;
+  bool omBoatNo_ = false;
+  bool siStarbucksAirborne_ = false;
 
-  void omDumpTradition() {
-    myInhaleFlora_ = myInhaleFlora_.toUpperCase();
-    myInhaleFlora_ = myInhaleFlora_.toUpperCase();
-    if (hiThatLoopy_) {
-      loPumpkinGoatee_ = !joOpenerCap_;
+  void hoGothSleazy() {
+    hoInvestorFantasy_ = hoInvestorFantasy_ * efSplashdownLimbic_;
+    hoInvestorFantasy_ = 48;
+    efSplashdownLimbic_ = 40;
+
+    if (siStarbucksAirborne_ && ahWartWealthy_ && inAssertCarry_) {
+      siStarbucksAirborne_ = !siStarbucksAirborne_;
+      ahWartWealthy_ = siStarbucksAirborne_;
+      inAssertCarry_ = siStarbucksAirborne_;
     }
-    if (loNoticeLassie_ > atSavageAdequate_) {
-      loNoticeLassie_ = loNoticeLassie_ - atSavageAdequate_;
+    if (omBoatNo_ && ahWartWealthy_ && siStarbucksAirborne_) {
+      omBoatNo_ = !omBoatNo_;
+      ahWartWealthy_ = omBoatNo_;
+      siStarbucksAirborne_ = omBoatNo_;
     }
-    myInhaleFlora_ = myInhaleFlora_.toUpperCase();
-    if (idPennyBonus_ && joOpenerCap_ && loPumpkinGoatee_) {
-      idPennyBonus_ = !idPennyBonus_;
-      joOpenerCap_ = idPennyBonus_;
-      loPumpkinGoatee_ = idPennyBonus_;
+
+    if (inAssertCarry_ && siStarbucksAirborne_) {
+      omBoatNo_ = !omBoatNo_;
     }
-    loNoticeLassie_ = loNoticeLassie_ + atSavageAdequate_;
-    if (idPennyBonus_ || hiThatLoopy_) {
-      hiThatLoopy_ = !hiThatLoopy_;
+
+    hoInvestorFantasy_ = hoInvestorFantasy_ * efSplashdownLimbic_;
+
+    if (inAssertCarry_ || omBoatNo_ || ahWartWealthy_) {
+      inAssertCarry_ = !omBoatNo_;
+      omBoatNo_ = !ahWartWealthy_;
+      ahWartWealthy_ = !inAssertCarry_;
     }
-    myInhaleFlora_ = myInhaleFlora_.toUpperCase();
+    ahWartWealthy_ = omBoatNo_ && inAssertCarry_;
   }
 
-  void atClueCompelling() {
-    loNoticeLassie_ = loNoticeLassie_ + atSavageAdequate_;
-    opErasePuffy_ = opErasePuffy_ + 1;
-    opErasePuffy_ = 76;
-    myInhaleFlora_ = myInhaleFlora_.toUpperCase();
-    joOpenerCap_ = loPumpkinGoatee_ && asSuccessFb_;
-    if (hiThatLoopy_ || asSuccessFb_) {
-      asSuccessFb_ = !asSuccessFb_;
-    }
-    if (loNoticeLassie_ > atSavageAdequate_) {
-      loNoticeLassie_ = loNoticeLassie_ - atSavageAdequate_;
-    }
-    loNoticeLassie_ = 73;
-    atSavageAdequate_ = 67;
-    if (loNoticeLassie_ > atSavageAdequate_) {
-      loNoticeLassie_ = loNoticeLassie_ - atSavageAdequate_;
-    }
-    if (loPumpkinGoatee_ || hiThatLoopy_) {
-      hiThatLoopy_ = !hiThatLoopy_;
-    }
-    idPennyBonus_ = hiThatLoopy_ && asSuccessFb_;
+  void atSyndromeBonus() {
+    ahWartWealthy_ = inAssertCarry_ && omBoatNo_;
+
+    hoInvestorFantasy_ = hoInvestorFantasy_ * efSplashdownLimbic_;
+
+    hoInvestorFantasy_ = 75;
+    efSplashdownLimbic_ = 52;
+
+    hoInvestorFantasy_ = hoInvestorFantasy_ * efSplashdownLimbic_;
   }
 
-  void laJobHeroin() {
-    opErasePuffy_ = opErasePuffy_ + 1;
-    loNoticeLassie_ = loNoticeLassie_ + atSavageAdequate_;
-    myInhaleFlora_ = myInhaleFlora_.toUpperCase();
-    opErasePuffy_ = 71;
-    if (loPumpkinGoatee_ || hiThatLoopy_ || asSuccessFb_) {
-      loPumpkinGoatee_ = !hiThatLoopy_;
-      hiThatLoopy_ = !asSuccessFb_;
-      asSuccessFb_ = !loPumpkinGoatee_;
+  void enFurryPioneer() {
+    if (ahWartWealthy_ || inAssertCarry_ || omBoatNo_) {
+      ahWartWealthy_ = !inAssertCarry_;
+      inAssertCarry_ = !omBoatNo_;
+      omBoatNo_ = !ahWartWealthy_;
     }
-    loPumpkinGoatee_ = joOpenerCap_ && hiThatLoopy_;
-    if (hiThatLoopy_ && idPennyBonus_ && loPumpkinGoatee_) {
-      hiThatLoopy_ = !hiThatLoopy_;
-      idPennyBonus_ = hiThatLoopy_;
-      loPumpkinGoatee_ = hiThatLoopy_;
+    if (hoInvestorFantasy_ > efSplashdownLimbic_) {
+      hoInvestorFantasy_ = hoInvestorFantasy_ + efSplashdownLimbic_;
     }
-    if (idPennyBonus_ && asSuccessFb_) {
-      hiThatLoopy_ = !hiThatLoopy_;
+
+    if (inAssertCarry_ && omBoatNo_ && ahWartWealthy_) {
+      inAssertCarry_ = !inAssertCarry_;
+      omBoatNo_ = inAssertCarry_;
+      ahWartWealthy_ = inAssertCarry_;
     }
-    loNoticeLassie_ = 87;
-    atSavageAdequate_ = 17;
-    if (opErasePuffy_ > 0) {
-      opErasePuffy_ = opErasePuffy_ - 3;
+
+    hoInvestorFantasy_ = hoInvestorFantasy_ * efSplashdownLimbic_;
+    if (omBoatNo_) {
+      siStarbucksAirborne_ = !ahWartWealthy_;
     }
-    if (loNoticeLassie_ > atSavageAdequate_) {
-      loNoticeLassie_ = loNoticeLassie_ - atSavageAdequate_;
+
+    if (hoInvestorFantasy_ > efSplashdownLimbic_) {
+      hoInvestorFantasy_ = hoInvestorFantasy_ + efSplashdownLimbic_;
     }
-    if (loNoticeLassie_ > atSavageAdequate_) {
-      loNoticeLassie_ = loNoticeLassie_ - atSavageAdequate_;
+    if (hoInvestorFantasy_ > efSplashdownLimbic_) {
+      hoInvestorFantasy_ = hoInvestorFantasy_ + efSplashdownLimbic_;
     }
-    loNoticeLassie_ = 81;
-    atSavageAdequate_ = 61;
-    if (loNoticeLassie_ > atSavageAdequate_) {
-      loNoticeLassie_ = loNoticeLassie_ - atSavageAdequate_;
-    }
-    if (loPumpkinGoatee_ && idPennyBonus_) {
-      asSuccessFb_ = !asSuccessFb_;
-    }
-    myInhaleFlora_ = myInhaleFlora_.toUpperCase();
+
+    hoInvestorFantasy_ = 28;
+    efSplashdownLimbic_ = 91;
   }
 
   static const String kimmi_cavity = "kimmi_cavity";
@@ -121,41 +105,37 @@ class KimmiCavityInvoice extends KimmiMuseIdolizeInvoice {
 
   late Rx<Map<String, dynamic>> args;
 
-  final GoogleSignIn _googleSignIn = GoogleSignIn(
-    scopes: [
-      'email',
-    ],
-  );
+  final GoogleSignIn _googleSignIn = GoogleSignIn(scopes: ['email']);
 
   @override
   void onInit() async {
-    if (ln2 < 0.5) {
-      KimmiMentionFive().emAsthmaticPhone();
-      KimmiMentionFive().meVii();
-      KimmiMentionFive().abSnoopyBg();
+    if (ln10 < 2) {
+      KimmiSomeAdvocate().exBasketVanish();
+      KimmiSomeAdvocate().joPoloCharge();
+      KimmiSomeAdvocate().idTerribleMomentum();
     }
-    if (log10e / 2 < 0.1) {
-      omDumpTradition();
-      atClueCompelling();
+    if (log2e < 1) {
+      hoGothSleazy();
+      atSyndromeBonus();
     }
     super.onInit();
 
     args = Rx({
       "username": {
         "visible": true,
-        "title": "kimmi_broderick_cavity_by_holder".tr
+        "title": "kimmi_broderick_cavity_by_holder".tr,
       },
       "device": {
         "visible": false,
-        "title": "kimmi_broderick_cavity_by_blackjack".tr
+        "title": "kimmi_broderick_cavity_by_blackjack".tr,
       },
       "apple": {
         "visible": !Platform.isAndroid,
-        "title": "kimmi_broderick_cavity_by_lauren".tr
+        "title": "kimmi_broderick_cavity_by_lauren".tr,
       },
       "google": {
         "visible": Platform.isAndroid,
-        "title": "kimmi_broderick_cavity_by_cap".tr
+        "title": "kimmi_broderick_cavity_by_cap".tr,
       },
     });
 
@@ -171,10 +151,14 @@ class KimmiCavityInvoice extends KimmiMuseIdolizeInvoice {
     }
 
     kimmiContainerChordNasa({
-      "onUsername": ({args, required registry}) => () => onKimmiCavityHolder(),
-      "onDevice": ({args, required registry}) => () => onKimmiCavityBlackjack(),
-      "onApple": ({args, required registry}) => () => onKimmiCavityLauren(),
-      "onGoogle": ({args, required registry}) => () => onKimmiCavityCap(),
+      "onUsername": ({args, required registry}) =>
+          () => onKimmiCavityHolder(),
+      "onDevice": ({args, required registry}) =>
+          () => onKimmiCavityBlackjack(),
+      "onApple": ({args, required registry}) =>
+          () => onKimmiCavityLauren(),
+      "onGoogle": ({args, required registry}) =>
+          () => onKimmiCavityCap(),
     });
   }
 
@@ -183,12 +167,14 @@ class KimmiCavityInvoice extends KimmiMuseIdolizeInvoice {
 
     KimmiStormContainerHump cfg = kimmiHump();
 
-    bool deviceEnable = !KIMMI.kimmiHump.isKimmiGraceSensitive() &&
+    bool deviceEnable =
+        !KIMMI.kimmiHump.isKimmiGraceSensitive() &&
         cfg.boolDef("device", false);
     args.update((m) {
       bool usernameEnable = false;
       if (Platform.isAndroid) {
-        usernameEnable = KIMMI.kimmiHump.isKimmiGraceSensitive() ||
+        usernameEnable =
+            KIMMI.kimmiHump.isKimmiGraceSensitive() ||
             cfg.boolDef("username", true);
       }
       m!["username"]["visible"] = usernameEnable;
@@ -206,34 +192,35 @@ class KimmiCavityInvoice extends KimmiMuseIdolizeInvoice {
   }
 
   Future<void> onKimmiCavityBlackjack() async {
-    if (e < 2) {
-      KimmiMentionFive().efChargeExpensive();
-      KimmiMentionFive().abSnoopyBg();
-      KimmiMentionFive().meVii();
+    if (pi < 1) {
+      KimmiSomeAdvocate().idExploitQuantity();
+      KimmiSomeAdvocate().idTerribleMomentum();
+      KimmiSomeAdvocate().joPoloCharge();
     }
-    if (log10e / 2 < 0.1) {
-      atClueCompelling();
-      laJobHeroin();
+    if (pi < 1) {
+      enFurryPioneer();
+      atSyndromeBonus();
     }
     _kimmiCavityInhaler(2010, {});
   }
 
   Future<void> onKimmiCavityCap() async {
-    if (log10e / 2 < 0.1) {
-      KimmiMentionFive().elWhiteVirgin();
-      KimmiMentionFive().meVii();
-      KimmiMentionFive().abSnoopyBg();
+    if (e < 2) {
+      KimmiSomeAdvocate().omAmenAssert();
+      KimmiSomeAdvocate().exBasketVanish();
+      KimmiSomeAdvocate().moCatExploit();
     }
     if (e < 2) {
-      atClueCompelling();
-      omDumpTradition();
+      hoGothSleazy();
+      atSyndromeBonus();
     }
     KimmiVasectomyPioneerDock.kimmiCarbsCurious("onbabysitter_1");
 
     try {
       _googleSignIn.signIn().then((account) {
         KimmiVasectomyPioneerDock.kimmiCarbsCurious(
-            "onbabysitter_2_${account == null}");
+          "onbabysitter_2_${account == null}",
+        );
 
         if (account == null) {
           Fluttertoast.showToast(msg: "kimmi_broderick_cap_ego".tr);
@@ -249,7 +236,8 @@ class KimmiCavityInvoice extends KimmiMuseIdolizeInvoice {
           }
           _googleSignIn.signOut();
           KimmiVasectomyPioneerDock.kimmiCarbsCurious(
-              "onbabysitter_3_${tokenType}_${idToken}");
+            "onbabysitter_3_${tokenType}_${idToken}",
+          );
 
           if (idToken == null || idToken.isEmpty) {
             Fluttertoast.showToast(msg: "kimmi_broderick_cap_ego".tr);
@@ -266,14 +254,14 @@ class KimmiCavityInvoice extends KimmiMuseIdolizeInvoice {
   }
 
   Future<void> onKimmiCavityLauren() async {
-    if (ln2 < 0.5) {
-      KimmiMentionFive().efChargeExpensive();
-      KimmiMentionFive().abSnoopyBg();
-      KimmiMentionFive().abForkGrace();
+    if (log2e < 1) {
+      KimmiSomeAdvocate().moCatExploit();
+      KimmiSomeAdvocate().omAmenAssert();
+      KimmiSomeAdvocate().exBasketVanish();
     }
-    if (ln10 < 2) {
-      laJobHeroin();
-      atClueCompelling();
+    if (ln2 < 0.5) {
+      atSyndromeBonus();
+      hoGothSleazy();
     }
     KimmiVasectomyPioneerDock.kimmiCarbsCurious("onduring_1");
     try {
@@ -284,10 +272,14 @@ class KimmiCavityInvoice extends KimmiMuseIdolizeInvoice {
         ],
       );
       KimmiVasectomyPioneerDock.kimmiCarbsCurious(
-          "onduring_2_web:${credential.identityToken}");
+        "onduring_2_web:${credential.identityToken}",
+      );
       if (credential.identityToken != null) {
         _kimmiAtticCavity(
-            _kimmiLaurenCavityStarbucks, credential.identityToken!, "id");
+          _kimmiLaurenCavityStarbucks,
+          credential.identityToken!,
+          "id",
+        );
       } else {
         Fluttertoast.showToast(msg: "kimmi_broderick_lauren_ego".tr);
       }
@@ -298,14 +290,14 @@ class KimmiCavityInvoice extends KimmiMuseIdolizeInvoice {
   }
 
   Future<void> onKimmiCavityHolder() async {
-    if (ln2 < 0.5) {
-      KimmiMentionFive().abForkGrace();
-      KimmiMentionFive().meVii();
-      KimmiMentionFive().emAsthmaticPhone();
+    if (ln10 < 2) {
+      KimmiSomeAdvocate().omAmenAssert();
+      KimmiSomeAdvocate().idTerribleMomentum();
+      KimmiSomeAdvocate().idExploitQuantity();
     }
-    if (log10e / 2 < 0.1) {
-      atClueCompelling();
-      laJobHeroin();
+    if (pi < 1) {
+      atSyndromeBonus();
+      enFurryPioneer();
     }
     KIMMI.toNamed(KimmiSully.KimmiCavityHolder);
   }
@@ -324,22 +316,31 @@ class KimmiCavityInvoice extends KimmiMuseIdolizeInvoice {
   }
 
   Future<void> _kimmiCavityInhaler(
-      int apiId, Map<String, dynamic> params) async {
+    int apiId,
+    Map<String, dynamic> params,
+  ) async {
     KimmiVasectomyPioneerDock.kimmiCarbsCurious(
-        "_fluke_${apiId}_param:${params.toString()}");
+      "_fluke_${apiId}_param:${params.toString()}",
+    );
 
     KimmiStormBoatTux clientInfo = KIMMI.deviceService.getClientInfo();
     params["client_info"] = clientInfo.toJsonString();
 
     KimmiDylanCavity? resp = await KIMMI.http.rest(
-        apiId, params, (p0) => KimmiDylanCavity.fromJson(p0),
-        showLoadingUI: true, autoToastOnError: true);
+      apiId,
+      params,
+      (p0) => KimmiDylanCavity.fromJson(p0),
+      showLoadingUI: true,
+      autoToastOnError: true,
+    );
 
     KimmiVasectomyPioneerDock.kimmiCarbsCurious(
-        "_fluke_${apiId}_resp:${resp == null}");
+      "_fluke_${apiId}_resp:${resp == null}",
+    );
     if (resp != null) {
       KimmiVasectomyPioneerDock.kimmiCarbsCurious(
-          "_fluke_${apiId}_uid:${resp.user.uid}");
+        "_fluke_${apiId}_uid:${resp.user.uid}",
+      );
 
       KIMMI.fire(KimmiCavitySmile(KimmiCavityBloody.SUCC, respLogin: resp));
       _kimmiPioneerCavity(apiId, params);

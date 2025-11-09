@@ -14,30 +14,32 @@ class KimmiWaitressPerErnieUneven extends StatelessWidget {
   final KimmiExpensive snap;
 
   const KimmiWaitressPerErnieUneven({Key? key, required this.snap})
-      : super(key: key);
+    : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     Size size = KimmiWaitressJuda.imageVideoContainerSize(
-        true,
-        snap.image?.width?.toDouble() ?? 0,
-        snap.image?.height?.toDouble() ?? 0,
-        MediaQuery.of(context).size.width - 62.0);
+      true,
+      snap.image?.width?.toDouble() ?? 0,
+      snap.image?.height?.toDouble() ?? 0,
+      MediaQuery.of(context).size.width - 62.0,
+    );
     return GestureDetector(
       behavior: HitTestBehavior.opaque,
       onTap: () {
         KimmiWaitressStretchByeHazelnutPheromone.showViewer(context, snap);
       },
       child: Container(
-          width: size.width,
-          height: size.height,
-          decoration: BoxDecoration(
-            color: KimmiDraftJuda.white_20p,
-            borderRadius: snap.isMine
-                ? KimmiWaitressJuda.kimmiWaitressPerTummyBySpine()
-                : KimmiWaitressJuda.kimmiWaitressPerTummyByJoshua(),
-          ),
-          child: _kimmiKillerFailed(size)),
+        width: size.width,
+        height: size.height,
+        decoration: BoxDecoration(
+          color: KimmiDraftJuda.white_20p,
+          borderRadius: snap.isMine
+              ? KimmiWaitressJuda.kimmiWaitressPerTummyBySpine()
+              : KimmiWaitressJuda.kimmiWaitressPerTummyByJoshua(),
+        ),
+        child: _kimmiKillerFailed(size),
+      ),
     );
   }
 
@@ -47,19 +49,24 @@ class KimmiWaitressPerErnieUneven extends StatelessWidget {
         : KimmiWaitressJuda.kimmiWaitressPerTummyByJoshua();
 
     return Hero(
-        tag: snap.hashCode.toString(),
-        child: !KimmiStarbucksJuda.isEmptyString(snap.image?.relativePath)
-            ? Container(
-                decoration: BoxDecoration(
-                    borderRadius: borderRadius,
-                    image: DecorationImage(
-                        image: FileImage(File(snap.image!.absolutePath!)))))
-            : KimmiErnie.round(
-                url: snap.image?.imgUrl ?? "",
-                width: size.width,
-                height: size.height,
-                clip: ImageClipType.middle,
-                fit: BoxFit.fill,
-                ignorePlaceHolder: true));
+      tag: snap.hashCode.toString(),
+      child: !KimmiStarbucksJuda.isEmptyString(snap.image?.relativePath)
+          ? Container(
+              decoration: BoxDecoration(
+                borderRadius: borderRadius,
+                image: DecorationImage(
+                  image: FileImage(File(snap.image!.absolutePath!)),
+                ),
+              ),
+            )
+          : KimmiErnie.round(
+              url: snap.image?.imgUrl ?? "",
+              width: size.width,
+              height: size.height,
+              clip: ImageClipType.middle,
+              fit: BoxFit.fill,
+              ignorePlaceHolder: true,
+            ),
+    );
   }
 }

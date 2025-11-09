@@ -4,8 +4,7 @@ import '../kimmi_curvy/kimmi_africa.dart';
 enum KimmiSecurityDaytimeStarbucks {
   NORMAL,
 
-  SWIPER_BIG,
-  ;
+  SWIPER_BIG;
 
   static KimmiSecurityDaytimeStarbucks valueOf(int? statusIndex) {
     try {

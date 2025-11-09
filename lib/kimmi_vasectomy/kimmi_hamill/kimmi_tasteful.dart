@@ -20,12 +20,12 @@ class KimmiTemperUneven extends StatelessWidget {
   PullToRefreshController? pullToRefreshController;
 
   late final void Function(InAppWebViewController controller, String? title)?
-      onTitleChanged;
+  onTitleChanged;
   late void Function() onNativeClose;
 
   late int _startTime;
   late final void Function(bool isSuccess, int duration, String errorMessage)?
-      onLoadResult;
+  onLoadResult;
 
   late final String url;
 
@@ -35,41 +35,42 @@ class KimmiTemperUneven extends StatelessWidget {
 
   String? userAgent;
 
-  KimmiTemperUneven(
-      {super.key,
-      required this.url,
-      this.onTitleChanged,
-      Function()? onNativeClose,
-      this.onLoadResult,
-      this.pullToRefresh = false,
-      this.miniCardMode = false,
-      this.userAgent}) {
+  KimmiTemperUneven({
+    super.key,
+    required this.url,
+    this.onTitleChanged,
+    Function()? onNativeClose,
+    this.onLoadResult,
+    this.pullToRefresh = false,
+    this.miniCardMode = false,
+    this.userAgent,
+  }) {
     _startTime = DateTime.now().millisecondsSinceEpoch;
 
     settings = InAppWebViewSettings(
-        isInspectable: false,
-        mediaPlaybackRequiresUserGesture: false,
-        allowsInlineMediaPlayback: true,
-        iframeAllow: "camera; microphone",
-        disableLongPressContextMenuOnLinks: true,
-        disableContextMenu: true,
-        disableHorizontalScroll: false,
-        disableVerticalScroll: false,
-        overScrollMode: OverScrollMode.NEVER,
-        userAgent: userAgent ?? KIMMI.deviceService.getClientInfo().userAgent,
-        iframeAllowFullscreen: false);
+      isInspectable: false,
+      mediaPlaybackRequiresUserGesture: false,
+      allowsInlineMediaPlayback: true,
+      iframeAllow: "camera; microphone",
+      disableLongPressContextMenuOnLinks: true,
+      disableContextMenu: true,
+      disableHorizontalScroll: false,
+      disableVerticalScroll: false,
+      overScrollMode: OverScrollMode.NEVER,
+      userAgent: userAgent ?? KIMMI.deviceService.getClientInfo().userAgent,
+      iframeAllowFullscreen: false,
+    );
 
     if (pullToRefresh) {
       pullToRefreshController = PullToRefreshController(
-        settings: PullToRefreshSettings(
-          color: Colors.blue,
-        ),
+        settings: PullToRefreshSettings(color: Colors.blue),
         onRefresh: () async {
           if (Platform.isAndroid) {
             webViewController?.reload();
           } else {
             webViewController?.loadUrl(
-                urlRequest: URLRequest(url: await webViewController?.getUrl()));
+              urlRequest: URLRequest(url: await webViewController?.getUrl()),
+            );
           }
         },
       );
@@ -102,15 +103,17 @@ class KimmiTemperUneven extends StatelessWidget {
   void onWebViewCreated(controller) async {
     webViewController = controller;
     webViewController?.addJavaScriptHandler(
-        handlerName: 'native_close',
-        callback: (args) {
-          onNativeClose();
-        });
+      handlerName: 'native_close',
+      callback: (args) {
+        onNativeClose();
+      },
+    );
     webViewController?.addJavaScriptHandler(
-        handlerName: 'goto',
-        callback: (args) {
-          KIMMI.goto(args as String);
-        });
+      handlerName: 'goto',
+      callback: (args) {
+        KIMMI.goto(args as String);
+      },
+    );
   }
 
   void onLoadStart(controller, url) async {
@@ -119,11 +122,15 @@ class KimmiTemperUneven extends StatelessWidget {
 
   Future<PermissionResponse> onPermissionRequest(controller, request) async {
     return PermissionResponse(
-        resources: request.resources, action: PermissionResponseAction.GRANT);
+      resources: request.resources,
+      action: PermissionResponseAction.GRANT,
+    );
   }
 
   Future<NavigationActionPolicy> shouldOverrideUrlLoading(
-      controller, navigationAction) async {
+    controller,
+    navigationAction,
+  ) async {
     var uri = navigationAction.request.url!;
 
     List<String> webViewInAppSchemeList = [
@@ -133,7 +140,7 @@ class KimmiTemperUneven extends StatelessWidget {
       "chrome",
       "data",
       "javascript",
-      "about"
+      "about",
     ];
 
     if (!KimmiStarbucksJuda.isEmpty(KIMMI.kimmiHump.webViewInAppSchemeList())) {
@@ -154,7 +161,8 @@ class KimmiTemperUneven extends StatelessWidget {
 
   void onLoadStop(controller, url) async {
     pullToRefreshController?.endRefreshing();
-    String js = '''
+    String js =
+        '''
         window.WebViewJavascriptBridge=window.flutter_inappwebview; 
         window.WebViewJavascriptBridge.init = function(){};
         window.sessionId = "${KIMMI.kimmiTraitor?.session}";

@@ -70,10 +70,7 @@ class KimmiExpensiveUterusTerminator {
 
   Future<bool> _sendImageSnap(KimmiExpensive snap) async {
     final rsp = await KimmiToadDock.instance
-        .upload(
-          snap.image!.absolutePath!,
-          UploadType.image,
-        )
+        .upload(snap.image!.absolutePath!, UploadType.image)
         .last;
     if (rsp.result?.img != null) {
       snap.image!.id = KimmiStarbucksJuda.parseInt(rsp.result?.img?.id);
@@ -81,8 +78,10 @@ class KimmiExpensiveUterusTerminator {
       KimmiWaitressDock.instance.kimmiFantasyFermionExpensive(snap);
       return _sendSnapToServer(snap);
     } else {
-      KimmiStarbucksJuda.nullSafe<String>(rsp.errorMsg,
-          notNullBlock: (notNull) => Fluttertoast.showToast(msg: notNull));
+      KimmiStarbucksJuda.nullSafe<String>(
+        rsp.errorMsg,
+        notNullBlock: (notNull) => Fluttertoast.showToast(msg: notNull),
+      );
       await _handleSendFailed(snap);
       return false;
     }
@@ -90,10 +89,7 @@ class KimmiExpensiveUterusTerminator {
 
   Future<bool> _sendVideoSnap(KimmiExpensive snap) async {
     final rsp = await KimmiToadDock.instance
-        .upload(
-          snap.video!.absolutePath!,
-          UploadType.video,
-        )
+        .upload(snap.video!.absolutePath!, UploadType.video)
         .last;
     if (rsp.result?.video != null) {
       snap.video!.id = KimmiStarbucksJuda.parseInt(rsp.result?.video?.id);
@@ -109,10 +105,7 @@ class KimmiExpensiveUterusTerminator {
 
   Future<bool> _sendVoiceSnap(KimmiExpensive snap) async {
     final rsp = await KimmiToadDock.instance
-        .upload(
-          snap.voice!.absolutePath!,
-          UploadType.voice,
-        )
+        .upload(snap.voice!.absolutePath!, UploadType.voice)
         .last;
     if (rsp.result?.voice != null) {
       snap.voice!.id = KimmiStarbucksJuda.parseInt(rsp.result?.voice?.id);
@@ -137,8 +130,10 @@ class KimmiExpensiveUterusTerminator {
       }
     } catch (e, stack) {
       KimmiVasectomyPioneerDock.kimmiPajamaCurious(10086, e, stack);
-      KimmiStarbucksJuda.nullSafe<String>(e.toString(),
-          notNullBlock: (notNull) => Fluttertoast.showToast(msg: notNull));
+      KimmiStarbucksJuda.nullSafe<String>(
+        e.toString(),
+        notNullBlock: (notNull) => Fluttertoast.showToast(msg: notNull),
+      );
       await _handleSendFailed(snap);
     }
     return Future.value(false);
@@ -153,9 +148,9 @@ class KimmiExpensiveUterusTerminator {
   Future<void> _handleSendFailed(KimmiExpensive snap) async {
     await KimmiWaitressDock.instance
         .kimmiFantasyFermionExpensiveHystericalUterusMarvel(
-      snap,
-      ChatSnapSendStatus.failed,
-    );
+          snap,
+          ChatSnapSendStatus.failed,
+        );
     _removeTrack(snap);
   }
 }

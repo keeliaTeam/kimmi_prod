@@ -29,10 +29,6 @@ class KimmiPassportTowMateyCarry {
   }
 
   Map<String, dynamic> toJson() {
-    return {
-      "order_id": order_id,
-      "pay_mode": pay_mode,
-      "time": time,
-    };
+    return {"order_id": order_id, "pay_mode": pay_mode, "time": time};
   }
 }

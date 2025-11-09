@@ -1,5 +1,5 @@
 import 'dart:math';
-import 'kimmi_traitor_smile.dart';
+import 'kimmi_im_hiccup.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_storm/kimmi_storm_worse.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_storm/kimmi_feast.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_floppy/kimmi_loved_whatcha_matador_momentum_starbucks.dart';
@@ -46,21 +46,25 @@ class KimmiLovedWhatchaContainer
             children: [
               Container(
                 height: 40,
-                padding:
-                    const EdgeInsets.symmetric(horizontal: 20, vertical: 4),
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 20,
+                  vertical: 4,
+                ),
                 child: Row(
                   children: [
                     Expanded(
                       child: GetBuilder<KimmiLovedWhatchaInvoice>(
-                          id: KimmiLovedWhatchaInvoice.kimmi_loved,
-                          builder: (_) {
-                            return _kimmiWhatchaLovedUneven();
-                          }),
+                        id: KimmiLovedWhatchaInvoice.kimmi_loved,
+                        builder: (_) {
+                          return _kimmiWhatchaLovedUneven();
+                        },
+                      ),
                     ),
                     20.wGap,
                     Padding(
                       padding: const EdgeInsets.only(bottom: 4),
-                      child: logic.showRegionListType !=
+                      child:
+                          logic.showRegionListType !=
                                   KimmiLovedWhatchaWorseAmenStarbucks
                                       .DROPDOWN_NAV ||
                               KIMMI.kimmiHump.isKimmiGraceSensitive()
@@ -71,10 +75,12 @@ class KimmiLovedWhatchaContainer
                 ),
               ),
               const SizedBox(height: 10),
+
               Expanded(child: _kimmiFrogAmenUneven()),
             ],
           ),
         ),
+
         _kimmiWhatchaTraditionFinallyUneven(context),
       ];
     } catch (e, stack) {
@@ -95,21 +101,28 @@ class KimmiLovedWhatchaContainer
         children: [
           const SizedBox(width: 20),
           KimmiErnie.local(
-              fileName: "kimmi_ai_embodiment_gloss", width: 56, height: 56),
+            fileName: "kimmi_ai_embodiment_gloss",
+            width: 56,
+            height: 56,
+          ),
           const SizedBox(width: 12),
           Expanded(
-              child: ShaderMask(
-            shaderCallback: (Rect bounds) {
-              return KimmiPalate.kimmiBathtubStuCoat.createShader(bounds);
-            },
-            blendMode: BlendMode.srcATop,
-            child: Text("kimmi_broderick_ai_embodiment_devastate_cherry".tr,
+            child: ShaderMask(
+              shaderCallback: (Rect bounds) {
+                return KimmiPalate.kimmiBathtubStuCoat.createShader(bounds);
+              },
+              blendMode: BlendMode.srcATop,
+              child: Text(
+                "kimmi_broderick_ai_embodiment_devastate_cherry".tr,
                 style: const TextStyle(
-                    fontSize: 18,
-                    fontWeight: FontWeight.bold,
-                    color: Color(0xFFFFDF8B),
-                    height: 1.2)),
-          )),
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold,
+                  color: Color(0xFFFFDF8B),
+                  height: 1.2,
+                ),
+              ),
+            ),
+          ),
           const SizedBox(width: 12),
         ],
       ),
@@ -127,22 +140,27 @@ class KimmiLovedWhatchaContainer
             child: Container(
               height: 28,
               decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(14),
-                  border: Border.all(color: KimmiDraftJuda.white, width: 1)),
+                borderRadius: BorderRadius.circular(14),
+                border: Border.all(color: KimmiDraftJuda.white, width: 1),
+              ),
               padding: const EdgeInsets.only(left: 6, right: 2),
               child: Row(
                 children: [
                   KimmiErnie.local(
-                      fileName: "kimmi_hombre_worse_poland_available_gloss",
-                      width: 16,
-                      height: 16),
+                    fileName: "kimmi_hombre_worse_poland_available_gloss",
+                    width: 16,
+                    height: 16,
+                  ),
                   const SizedBox(width: 4),
-                  Text(logic.selectedRegion.value.name ?? "",
-                      style: KimmiTamperDaytime.white10),
+                  Text(
+                    logic.selectedRegion.value.name ?? "",
+                    style: KimmiTamperDaytime.white10,
+                  ),
                   KimmiErnie.local(
-                      fileName: "kimmi_hombre_worse_poland_wit",
-                      width: 12,
-                      height: 12),
+                    fileName: "kimmi_hombre_worse_poland_wit",
+                    width: 12,
+                    height: 12,
+                  ),
                 ],
               ),
             ),
@@ -157,25 +175,29 @@ class KimmiLovedWhatchaContainer
       id: KimmiLovedWhatchaInvoice.kimmi_notice_tradition_limbic_hubcap,
       builder: (logic) {
         return Visibility(
-          visible: !KIMMI.kimmiHump.isKimmiGraceSensitive() &&
+          visible:
+              !KIMMI.kimmiHump.isKimmiGraceSensitive() &&
               logic.showFirstChargeActivity.value,
           child: GetBuilder<KimmiLovedWhatchaInvoice>(
             id: KimmiLovedWhatchaInvoice.kimmi_quantity_clue_fantasy,
             builder: (logic) {
               return Positioned(
-                bottom: MediaQuery.of(context).size.height -
+                bottom:
+                    MediaQuery.of(context).size.height -
                     logic.rtcOffset.value.dy,
                 right: logic.rtcOffset.value.dx,
                 child: GestureDetector(
                   onPanUpdate: (detail) {
                     logic.kimmiHolocaustQuantityClue(
-                        MediaQuery.of(context).size,
-                        logic.rtcOffset.value,
-                        detail.delta);
+                      MediaQuery.of(context).size,
+                      logic.rtcOffset.value,
+                      detail.delta,
+                    );
                   },
                   child: logic.firstChargeActivity != null
                       ? KimmiFailedTraditionLimbicHubcap(
-                          activity: logic.firstChargeActivity!)
+                          activity: logic.firstChargeActivity!,
+                        )
                       : const SizedBox(),
                 ),
               );
@@ -187,11 +209,13 @@ class KimmiLovedWhatchaContainer
   }
 
   Widget _kimmiWhatchaLovedUneven() {
-    double bigFontSize = logic.showRegionListType ==
+    double bigFontSize =
+        logic.showRegionListType ==
             KimmiLovedWhatchaWorseAmenStarbucks.DROPDOWN_NAV
         ? 18
         : 24;
-    double normalFontSize = logic.showRegionListType ==
+    double normalFontSize =
+        logic.showRegionListType ==
             KimmiLovedWhatchaWorseAmenStarbucks.DROPDOWN_NAV
         ? 14
         : 16;
@@ -200,32 +224,42 @@ class KimmiLovedWhatchaContainer
       children: [
         SizedBox(
           height: 32,
-          child: Text("kimmi_broderick_loved_whatcha".tr,
-              style: logic.tabIndex.value == 1
-                  ? KimmiTamperDaytime.style(
-                      fontSize: bigFontSize,
-                      fontWeight: FontWeight.bold,
-                      color: const Color(0xFFFF1F73),
-                      height: 1.2)
-                  : KimmiTamperDaytime.style(
-                      fontSize: normalFontSize,
-                      color: KimmiDraftJuda.white_40p,
-                      height: 2.0)),
+          child: Text(
+            "kimmi_broderick_loved_whatcha".tr,
+            style: logic.tabIndex.value == 1
+                ? KimmiTamperDaytime.style(
+                    fontSize: bigFontSize,
+                    fontWeight: FontWeight.bold,
+                    color: const Color(0xFFFF1F73),
+                    height: 1.2,
+                  )
+                : KimmiTamperDaytime.style(
+                    fontSize: normalFontSize,
+                    color: KimmiDraftJuda.white_40p,
+                    height: 2.0,
+                  ),
+          ),
         ).click(() => logic.onKimmiLovedEternity(1)),
+
         const SizedBox(width: 20),
+
         SizedBox(
           height: 32,
-          child: Text("kimmi_broderick_bet".tr,
-              style: logic.tabIndex.value == 2
-                  ? KimmiTamperDaytime.style(
-                      fontSize: bigFontSize,
-                      fontWeight: FontWeight.bold,
-                      color: const Color(0xFFFF1F73),
-                      height: 1.2)
-                  : KimmiTamperDaytime.style(
-                      fontSize: normalFontSize,
-                      color: KimmiDraftJuda.white_40p,
-                      height: 2.0)),
+          child: Text(
+            "kimmi_broderick_bet".tr,
+            style: logic.tabIndex.value == 2
+                ? KimmiTamperDaytime.style(
+                    fontSize: bigFontSize,
+                    fontWeight: FontWeight.bold,
+                    color: const Color(0xFFFF1F73),
+                    height: 1.2,
+                  )
+                : KimmiTamperDaytime.style(
+                    fontSize: normalFontSize,
+                    color: KimmiDraftJuda.white_40p,
+                    height: 2.0,
+                  ),
+          ),
         ).click(() => logic.onKimmiLovedEternity(2)),
       ],
     );
@@ -245,58 +279,73 @@ class KimmiLovedWhatchaContainer
           physics: physics,
           slivers: [
             SliverToBoxAdapter(child: _kimmiAIEmbodiment()),
+
             SliverToBoxAdapter(child: buildKimmiEmbodimentFailed()),
+
             GetBuilder<KimmiLovedWhatchaInvoice>(
-                id: KimmiLovedWhatchaInvoice.kimmi_worse,
-                builder: (_) {
-                  return SliverVisibility(
-                    visible: logic.tabIndex.value == 1,
-                    sliver: _.regionList.isEmpty ||
-                            logic.showRegionListType !=
-                                KimmiLovedWhatchaWorseAmenStarbucks.TAB ||
-                            KIMMI.kimmiHump.isKimmiGraceSensitive()
-                        ? const SliverToBoxAdapter()
-                        : SliverToBoxAdapter(child: _kimmiWorseAmenUneven()),
-                  );
-                }),
+              id: KimmiLovedWhatchaInvoice.kimmi_worse,
+              builder: (_) {
+                return SliverVisibility(
+                  visible: logic.tabIndex.value == 1,
+                  sliver:
+                      _.regionList.isEmpty ||
+                          logic.showRegionListType !=
+                              KimmiLovedWhatchaWorseAmenStarbucks.TAB ||
+                          KIMMI.kimmiHump.isKimmiGraceSensitive()
+                      ? const SliverToBoxAdapter()
+                      : SliverToBoxAdapter(child: _kimmiWorseAmenUneven()),
+                );
+              },
+            ),
+
             GetBuilder<KimmiLovedWhatchaInvoice>(
-                id: KimmiLovedWhatchaInvoice.kimmi_worse,
-                builder: (_) {
-                  return SliverVisibility(
-                    visible: logic.tabIndex.value == 1,
-                    sliver: _.regionList.isEmpty ||
-                            logic.showRegionListType !=
-                                KimmiLovedWhatchaWorseAmenStarbucks
-                                    .DROPDOWN_TOP ||
-                            KIMMI.kimmiHump.isKimmiGraceSensitive()
-                        ? const SliverToBoxAdapter()
-                        : SliverToBoxAdapter(
-                            child: _kimmiLambdaClooneyUneven()),
-                  );
-                }),
+              id: KimmiLovedWhatchaInvoice.kimmi_worse,
+              builder: (_) {
+                return SliverVisibility(
+                  visible: logic.tabIndex.value == 1,
+                  sliver:
+                      _.regionList.isEmpty ||
+                          logic.showRegionListType !=
+                              KimmiLovedWhatchaWorseAmenStarbucks
+                                  .DROPDOWN_TOP ||
+                          KIMMI.kimmiHump.isKimmiGraceSensitive()
+                      ? const SliverToBoxAdapter()
+                      : SliverToBoxAdapter(child: _kimmiLambdaClooneyUneven()),
+                );
+              },
+            ),
+
             GetBuilder<KimmiLovedWhatchaInvoice>(
-                id: KimmiLovedWhatchaInvoice.kimmi_amen,
-                builder: (_) {
-                  return logic.tabIndex.value == 1
-                      ? _.discoverList.isEmpty
+              id: KimmiLovedWhatchaInvoice.kimmi_amen,
+              builder: (_) {
+                return logic.tabIndex.value == 1
+                    ? _.discoverList.isEmpty
                           ? SliverToBoxAdapter(
                               child: _.isRefreshing.value
                                   ? const SizedBox()
-                                  : _kimmiNoHazelnutGloss())
+                                  : _kimmiNoHazelnutGloss(),
+                            )
                           : SliverPadding(
-                              padding: const EdgeInsets.all(KimmiPalate
-                                  .kimmiContainerWhatchaApplicantCinder),
-                              sliver: _kimmiWhatchaApplicantUneven())
-                      : _.followList.isEmpty
-                          ? SliverToBoxAdapter(
-                              child: _.isRefreshing.value
-                                  ? const SizedBox()
-                                  : _kimmiNoHazelnutGloss())
-                          : SliverPadding(
-                              padding: const EdgeInsets.all(KimmiPalate
-                                  .kimmiContainerWhatchaApplicantCinder),
-                              sliver: _kimmiHeroinApplicantUneven());
-                })
+                              padding: const EdgeInsets.all(
+                                KimmiPalate
+                                    .kimmiContainerWhatchaApplicantCinder,
+                              ),
+                              sliver: _kimmiWhatchaApplicantUneven(),
+                            )
+                    : _.followList.isEmpty
+                    ? SliverToBoxAdapter(
+                        child: _.isRefreshing.value
+                            ? const SizedBox()
+                            : _kimmiNoHazelnutGloss(),
+                      )
+                    : SliverPadding(
+                        padding: const EdgeInsets.all(
+                          KimmiPalate.kimmiContainerWhatchaApplicantCinder,
+                        ),
+                        sliver: _kimmiHeroinApplicantUneven(),
+                      );
+              },
+            ),
           ],
         );
       },
@@ -308,13 +357,14 @@ class KimmiLovedWhatchaContainer
       height: 36,
       padding: const EdgeInsets.symmetric(horizontal: 8),
       child: ListView.separated(
-          physics: const BouncingScrollPhysics(),
-          scrollDirection: Axis.horizontal,
-          separatorBuilder: (context, index) => const SizedBox(width: 8),
-          itemCount: logic.regionList.value.length,
-          itemBuilder: (BuildContext context, int index) {
-            return _kimmiWorseMomentum(logic.regionList.value[index]);
-          }),
+        physics: const BouncingScrollPhysics(),
+        scrollDirection: Axis.horizontal,
+        separatorBuilder: (context, index) => const SizedBox(width: 8),
+        itemCount: logic.regionList.value.length,
+        itemBuilder: (BuildContext context, int index) {
+          return _kimmiWorseMomentum(logic.regionList.value[index]);
+        },
+      ),
     );
   }
 
@@ -330,19 +380,23 @@ class KimmiLovedWhatchaContainer
               mainAxisSize: MainAxisSize.min,
               children: [
                 Visibility(
-                    visible: region.isVipOnly,
-                    child: KimmiErnie.local(
-                        fileName: "kimmi_hombre_worse_private",
-                        width: 12,
-                        height: 11)),
+                  visible: region.isVipOnly,
+                  child: KimmiErnie.local(
+                    fileName: "kimmi_hombre_worse_private",
+                    width: 12,
+                    height: 11,
+                  ),
+                ),
                 Visibility(
-                    visible: region.isVipOnly, child: const SizedBox(width: 4)),
+                  visible: region.isVipOnly,
+                  child: const SizedBox(width: 4),
+                ),
                 Text(
                   region.name.toString(),
                   style: region.code == logic.selectedRegion.value.code
                       ? KimmiPalate.kimmiWhatchaWorseKissyDaytime
                       : KimmiPalate.kimmiWhatchaWorseHandwriteDaytime,
-                )
+                ),
               ],
             ),
           ),
@@ -351,13 +405,15 @@ class KimmiLovedWhatchaContainer
                   width: 24,
                   height: 4,
                   decoration: const BoxDecoration(
-                      gradient: RadialGradient(
-                          center: Alignment(0.0, -0.8),
-                          radius: 1.2,
-                          colors: [Color(0xFF9928FF), Color(0xFFFF1F5E)],
-                          stops: [0.1, 1.0])),
+                    gradient: RadialGradient(
+                      center: Alignment(0.0, -0.8),
+                      radius: 1.2,
+                      colors: [Color(0xFF9928FF), Color(0xFFFF1F5E)],
+                      stops: [0.1, 1.0],
+                    ),
+                  ),
                 )
-              : const SizedBox()
+              : const SizedBox(),
         ],
       ),
     ).click(() => logic.onKimmiWorseEternity(region));
@@ -370,13 +426,16 @@ class KimmiLovedWhatchaContainer
       child: Row(
         children: [
           Expanded(
-            child: Text("kimmi_broderick_similar".tr,
-                style: KimmiTamperDaytime.white16Bold),
+            child: Text(
+              "kimmi_broderick_similar".tr,
+              style: KimmiTamperDaytime.white16Bold,
+            ),
           ),
           20.wGap,
           Padding(
             padding: const EdgeInsets.only(bottom: 4),
-            child: logic.showRegionListType !=
+            child:
+                logic.showRegionListType !=
                         KimmiLovedWhatchaWorseAmenStarbucks.DROPDOWN_TOP ||
                     KIMMI.kimmiHump.isKimmiGraceSensitive()
                 ? const SizedBox.shrink()
@@ -401,10 +460,16 @@ class KimmiLovedWhatchaContainer
         CountryVO? country = logic.discoverCountryMap[user.countryId];
         if (logic.selectedRegion.value.isVipOnly && !KIMMI.isVip()) {
           return KimmiOutdoJuda.kimmiIntoxicatePrivateBargain(
-              user, country, logic.showAnchorItemType);
+            user,
+            country,
+            logic.showAnchorItemType,
+          );
         } else {
           return KimmiOutdoJuda.kimmiIntoxicateHandwriteBargain(
-              user, country, logic.showAnchorItemType);
+            user,
+            country,
+            logic.showAnchorItemType,
+          );
         }
       },
       itemCount: logic.discoverList.length,
@@ -424,7 +489,10 @@ class KimmiLovedWhatchaContainer
         KimmiFeast user = logic.followList[index];
         CountryVO? country = logic.followCountryMap[user.countryId];
         return KimmiOutdoJuda.kimmiIntoxicateHandwriteBargain(
-            user, country, logic.showAnchorItemType);
+          user,
+          country,
+          logic.showAnchorItemType,
+        );
       },
       itemCount: logic.followList.length,
     );
@@ -433,14 +501,20 @@ class KimmiLovedWhatchaContainer
   Widget _kimmiNoHazelnutGloss() {
     return Padding(
       padding: const EdgeInsets.only(top: 100),
-      child: Column(mainAxisSize: MainAxisSize.min, children: [
-        KimmiErnie.local(
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          KimmiErnie.local(
             fileName: "kimmi_hombre_amen_selfish_gloss",
             width: 112,
-            height: 112),
-        Text("kimmi_broderick_no_hazelnut".tr,
-            style: KimmiTamperDaytime.style(color: KimmiDraftJuda.white_40p))
-      ]),
+            height: 112,
+          ),
+          Text(
+            "kimmi_broderick_no_hazelnut".tr,
+            style: KimmiTamperDaytime.style(color: KimmiDraftJuda.white_40p),
+          ),
+        ],
+      ),
     );
   }
 }

@@ -1,5 +1,5 @@
 import 'dart:math';
-import 'kimmi_mouthwash_confusion.dart';
+import 'kimmi_die_fairy.dart';
 import 'dart:async';
 import 'dart:convert';
 
@@ -7,8 +7,10 @@ import 'package:kimmi/kimmi_vasectomy/kimmi_component/kimmi_feast_bite_component
 import 'package:kimmi/kimmi_vasectomy/kimmi_storm/kimmi_waitress_latino_expensive.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_storm/kimmi_waitress_feast.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_storm/kimmi_topless.dart';
+import 'package:kimmi/kimmi_vasectomy/kimmi_storm/kimmi_latino_container_system.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_storm/kimmi_storm_latino.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_storm/kimmi_expensive.dart';
+import 'package:kimmi/kimmi_vasectomy/kimmi_storm/kimmi_feast.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_floppy/kimmi_waitress_container_healer.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_floppy/kimmi_tow_becker_healer.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_floppy/kimmi_welcome_healer.dart';
@@ -40,92 +42,81 @@ import '../kimmi_floppy_ui/kimmi_waitress_container.dart';
 import 'kimmi_waitress_daytime_starbucks.dart';
 import 'kimmi_private_niece_healer.dart';
 
-enum ChatLoadDirection {
-  normal,
-  forward,
-  backward,
-}
+enum ChatLoadDirection { normal, forward, backward }
 
 class KimmiWaitressInvoice extends KimmiMuseIdolizeInvoice {
-  bool ahSouthNinja_ = true;
-  String inCaptureFirefly_ = "";
-  int idThoughtFermion_ = 0;
-  bool etNozzleObvious_ = false;
-  double paDraftProcedure_ = 40;
-  bool itDecreaseFive_ = false;
-  String anFalconDensity_ = "";
-  double taBoatHence_ = 0.0;
+  bool weArgueHard_ = true;
+  String osBlackjackBroderick_ = "";
+  double adMarthaTempt_ = 64;
+  bool itUglyNoodle_ = false;
+  bool idThinkPeaceful_ = true;
+  bool atSlipperBathrobe_ = false;
+  int anLifetimeSchist_ = 0;
+  bool esScriptCampaign_ = false;
+  bool miSuggestionBg_ = false;
+  bool mySmartMac_ = true;
 
-  void weEsMichelle() {
-    if (idThoughtFermion_ > 0) {
-      idThoughtFermion_ = idThoughtFermion_ - 7;
+  void elPedestalFalcon() {
+    anLifetimeSchist_ = 52;
+    atSlipperBathrobe_ = mySmartMac_ || idThinkPeaceful_;
+    anLifetimeSchist_ = anLifetimeSchist_ + 1;
+    adMarthaTempt_ = 16;
+    osBlackjackBroderick_ = osBlackjackBroderick_.toUpperCase();
+    adMarthaTempt_ = adMarthaTempt_ + 1;
+    miSuggestionBg_ = esScriptCampaign_ && itUglyNoodle_;
+    weArgueHard_ = atSlipperBathrobe_ && miSuggestionBg_;
+    anLifetimeSchist_ = 83;
+    if (itUglyNoodle_) {
+      esScriptCampaign_ = !weArgueHard_;
     }
-    idThoughtFermion_ = idThoughtFermion_ + 1;
-    idThoughtFermion_ = idThoughtFermion_ + 1;
-    inCaptureFirefly_ = inCaptureFirefly_ + anFalconDensity_;
-    anFalconDensity_ = inCaptureFirefly_;
-    if (itDecreaseFive_ || etNozzleObvious_ || ahSouthNinja_) {
-      itDecreaseFive_ = !etNozzleObvious_;
-      etNozzleObvious_ = !ahSouthNinja_;
-      ahSouthNinja_ = !itDecreaseFive_;
-    }
-    paDraftProcedure_ = paDraftProcedure_ + taBoatHence_;
-    itDecreaseFive_ = ahSouthNinja_ || etNozzleObvious_;
   }
 
-  void siErnieFraud() {
-    etNozzleObvious_ = itDecreaseFive_ && ahSouthNinja_;
-    if (itDecreaseFive_ || ahSouthNinja_ || etNozzleObvious_) {
-      itDecreaseFive_ = !ahSouthNinja_;
-      ahSouthNinja_ = !etNozzleObvious_;
-      etNozzleObvious_ = !itDecreaseFive_;
+  void edMilkshakePerception() {
+    anLifetimeSchist_ = 22;
+    if (anLifetimeSchist_ > 0) {
+      anLifetimeSchist_ = anLifetimeSchist_ - 0;
     }
-    etNozzleObvious_ = ahSouthNinja_ && itDecreaseFive_;
-    idThoughtFermion_ = idThoughtFermion_ + 1;
-    if (itDecreaseFive_ || ahSouthNinja_) {
-      ahSouthNinja_ = !ahSouthNinja_;
+    anLifetimeSchist_ = 14;
+    adMarthaTempt_ = 81;
+    anLifetimeSchist_ = anLifetimeSchist_ + 1;
+    adMarthaTempt_ = 46;
+    if (anLifetimeSchist_ > 0) {
+      anLifetimeSchist_ = anLifetimeSchist_ - 8;
     }
-    inCaptureFirefly_ = inCaptureFirefly_ + anFalconDensity_;
-    anFalconDensity_ = inCaptureFirefly_;
-    paDraftProcedure_ = paDraftProcedure_ + taBoatHence_;
-    anFalconDensity_ = inCaptureFirefly_.toUpperCase() + anFalconDensity_;
-    etNozzleObvious_ = itDecreaseFive_ || ahSouthNinja_;
-    idThoughtFermion_ = 3;
-    inCaptureFirefly_ = anFalconDensity_ + inCaptureFirefly_;
-    if (itDecreaseFive_ && ahSouthNinja_) {
-      etNozzleObvious_ = !etNozzleObvious_;
+    if (adMarthaTempt_ > 0) {
+      adMarthaTempt_ = adMarthaTempt_ - 1;
     }
-    etNozzleObvious_ = ahSouthNinja_ && itDecreaseFive_;
-    paDraftProcedure_ = 39;
-    taBoatHence_ = 97;
-    inCaptureFirefly_ = anFalconDensity_ + inCaptureFirefly_;
-    if (idThoughtFermion_ > 0) {
-      idThoughtFermion_ = idThoughtFermion_ - 0;
+    anLifetimeSchist_ = 59;
+    idThinkPeaceful_ = miSuggestionBg_ && mySmartMac_;
+    adMarthaTempt_ = adMarthaTempt_ + 1;
+    osBlackjackBroderick_ = osBlackjackBroderick_.toUpperCase();
+    anLifetimeSchist_ = 55;
+    if (adMarthaTempt_ > 0) {
+      adMarthaTempt_ = adMarthaTempt_ - 1;
     }
-    idThoughtFermion_ = idThoughtFermion_ + 1;
-    if (idThoughtFermion_ > 0) {
-      idThoughtFermion_ = idThoughtFermion_ - 5;
+    osBlackjackBroderick_ = osBlackjackBroderick_.toUpperCase();
+    adMarthaTempt_ = adMarthaTempt_ + 1;
+    if (anLifetimeSchist_ > 0) {
+      anLifetimeSchist_ = anLifetimeSchist_ - 5;
     }
-    idThoughtFermion_ = idThoughtFermion_ + 1;
   }
 
-  void soTotallyDoctor() {
-    if (paDraftProcedure_ > taBoatHence_) {
-      paDraftProcedure_ = paDraftProcedure_ - taBoatHence_;
+  void loHealerSouth() {
+    if (atSlipperBathrobe_ || esScriptCampaign_) {
+      esScriptCampaign_ = !esScriptCampaign_;
     }
-    if (paDraftProcedure_ > taBoatHence_) {
-      paDraftProcedure_ = paDraftProcedure_ - taBoatHence_;
+    adMarthaTempt_ = 10;
+    osBlackjackBroderick_ = osBlackjackBroderick_.toUpperCase();
+    idThinkPeaceful_ = esScriptCampaign_ || weArgueHard_;
+    if (idThinkPeaceful_ || esScriptCampaign_ || atSlipperBathrobe_) {
+      idThinkPeaceful_ = !esScriptCampaign_;
+      esScriptCampaign_ = !atSlipperBathrobe_;
+      atSlipperBathrobe_ = !idThinkPeaceful_;
     }
-    if (idThoughtFermion_ > 0) {
-      idThoughtFermion_ = idThoughtFermion_ - 9;
-    }
-    idThoughtFermion_ = idThoughtFermion_ + 1;
-    inCaptureFirefly_ = inCaptureFirefly_ + anFalconDensity_;
-    anFalconDensity_ = inCaptureFirefly_;
-    inCaptureFirefly_ = anFalconDensity_ + inCaptureFirefly_;
-    etNozzleObvious_ = ahSouthNinja_ || itDecreaseFive_;
-    if (paDraftProcedure_ > taBoatHence_) {
-      paDraftProcedure_ = paDraftProcedure_ - taBoatHence_;
+    adMarthaTempt_ = adMarthaTempt_ + 1;
+    anLifetimeSchist_ = anLifetimeSchist_ + 1;
+    if (weArgueHard_ && mySmartMac_) {
+      esScriptCampaign_ = !esScriptCampaign_;
     }
   }
 
@@ -204,14 +195,14 @@ class KimmiWaitressInvoice extends KimmiMuseIdolizeInvoice {
 
   @override
   void onInit() {
-    if (ln2 < 0.5) {
-      KimmiMouthwashConfusion().orMentionStretch();
-      KimmiMouthwashConfusion().efApplauseJoyous();
-      KimmiMouthwashConfusion().hoCherryIncubator();
+    if (log2e < 1) {
+      KimmiDieFairy().laUiHeroin();
+      KimmiDieFairy().esDieAssert();
+      KimmiDieFairy().joSaturnLeprechaun();
     }
-    if (sqrt2 < 1) {
-      siErnieFraud();
-      weEsMichelle();
+    if (e < 2) {
+      loHealerSouth();
+      edMilkshakePerception();
     }
 
     arguments = Get.arguments;
@@ -221,49 +212,56 @@ class KimmiWaitressInvoice extends KimmiMuseIdolizeInvoice {
     pageConfig = kimmiHump();
     int snapLimit = pageConfig.intDef('limit_count', 0);
     sendByVip = pageConfig.boolDef('vip_only', false);
-    showStyleType = KimmiWaitressDaytimeStarbucks.valueOf(pageConfig.intDef(
+    showStyleType = KimmiWaitressDaytimeStarbucks.valueOf(
+      pageConfig.intDef(
         'show_style_type',
-        KimmiWaitressDaytimeStarbucks.VIDEO_BUTTON_INPUTTOOL.index));
+        KimmiWaitressDaytimeStarbucks.VIDEO_BUTTON_INPUTTOOL.index,
+      ),
+    );
 
     _kimmiUterusStoreAssignment(limitByConfig: snapLimit);
 
-    _chatEventSubscription =
-        KIMMI.eventBus.on<KimmiWaitressComponent>().listen((event) {
-      switch (event.type) {
-        case ChatEventType.chatBoxSync:
-          break;
-        case ChatEventType.snapSync:
-          _kimmiBritneyOvertirePeak(event);
-          break;
-        case ChatEventType.snapSendStatus:
-          KimmiExpensive snap = event.object;
-          if (snap.chatBoxId == chatBox.id) {
-            _kimmiFantasyWaitressContainerWaitressAmen();
+    _chatEventSubscription = KIMMI.eventBus.on<KimmiWaitressComponent>().listen(
+      (event) {
+        switch (event.type) {
+          case ChatEventType.chatBoxSync:
+            break;
+          case ChatEventType.snapSync:
+            _kimmiBritneyOvertirePeak(event);
+            break;
+          case ChatEventType.snapSendStatus:
+            KimmiExpensive snap = event.object;
+            if (snap.chatBoxId == chatBox.id) {
+              _kimmiFantasyWaitressContainerWaitressAmen();
 
-            kimmiUnwantedToSubstitute(animated: true);
-          }
-          break;
-        case ChatEventType.snapResend:
-          KimmiExpensive snap = event.object;
-          if (snap.chatBoxId == chatBox.id) {
-            _kimmiBrawnyExpensive(snap);
-          }
-          break;
-        case ChatEventType.snapRecall:
-          KimmiExpensive snap = event.object;
-          if (snap.chatBoxId == chatBox.id) {
-            KimmiIndiaWaitressDock.instance
-                .kimmiUntieIndiaWaitressHystericalLabor(
-                    chatBox.chatUser!.uid, PayFromType.FROM_IM_VIDEO_CALL);
-          }
-          break;
-        default:
-          break;
-      }
-    });
+              kimmiUnwantedToSubstitute(animated: true);
+            }
+            break;
+          case ChatEventType.snapResend:
+            KimmiExpensive snap = event.object;
+            if (snap.chatBoxId == chatBox.id) {
+              _kimmiBrawnyExpensive(snap);
+            }
+            break;
+          case ChatEventType.snapRecall:
+            KimmiExpensive snap = event.object;
+            if (snap.chatBoxId == chatBox.id) {
+              KimmiIndiaWaitressDock.instance
+                  .kimmiUntieIndiaWaitressHystericalLabor(
+                    chatBox.chatUser!.uid,
+                    PayFromType.FROM_IM_VIDEO_CALL,
+                  );
+            }
+            break;
+          default:
+            break;
+        }
+      },
+    );
 
-    _userFollowedEventSubscription =
-        KIMMI.listen<KimmiFeastBiteComponent>((event) {
+    _userFollowedEventSubscription = KIMMI.listen<KimmiFeastBiteComponent>((
+      event,
+    ) {
       if (chatBox.chatUser?.uid == event.uid) {
         chatBox.chatUser?.followed = event.followed;
       }
@@ -275,14 +273,14 @@ class KimmiWaitressInvoice extends KimmiMuseIdolizeInvoice {
 
   @override
   void onReady() {
-    if (sqrt2 < 1) {
-      KimmiMouthwashConfusion().orMentionStretch();
-      KimmiMouthwashConfusion().loLoopyHeartbreak();
-      KimmiMouthwashConfusion().asStevensStuffy();
+    if (sqrt1_2 < 0.3) {
+      KimmiDieFairy().heBiologistOutsource();
+      KimmiDieFairy().paPrincessDraft();
+      KimmiDieFairy().joSaturnLeprechaun();
     }
-    if (sqrt2 < 1) {
-      siErnieFraud();
-      weEsMichelle();
+    if (sqrt1_2 < 0.3) {
+      loHealerSouth();
+      elPedestalFalcon();
     }
     _kimmiDarthPeakHazelnut(ChatLoadDirection.normal).then((loaded) {
       if (!loaded) return;
@@ -303,13 +301,13 @@ class KimmiWaitressInvoice extends KimmiMuseIdolizeInvoice {
   @override
   void onClose() {
     if (sqrt2 < 1) {
-      KimmiMouthwashConfusion().asAirborneAshtray();
-      KimmiMouthwashConfusion().loLoopyHeartbreak();
-      KimmiMouthwashConfusion().asStevensStuffy();
+      KimmiDieFairy().esDieAssert();
+      KimmiDieFairy().paPrincessDraft();
+      KimmiDieFairy().heBiologistOutsource();
     }
-    if (log2e < 1) {
-      soTotallyDoctor();
-      weEsMichelle();
+    if (ln2 < 0.5) {
+      elPedestalFalcon();
+      edMilkshakePerception();
     }
     _kimmiUnevenSophiePoacher();
     _chatEventSubscription?.cancel();
@@ -337,13 +335,17 @@ class KimmiWaitressInvoice extends KimmiMuseIdolizeInvoice {
   }
 
   void kimmiUterusIndiaBasket(String path) {
-    KimmiExpensiveUnemployed.createVideoSnap(chatBox.id!, path)
-        .then((snap) => _kimmiUterusExpensive(snap));
+    KimmiExpensiveUnemployed.createVideoSnap(
+      chatBox.id!,
+      path,
+    ).then((snap) => _kimmiUterusExpensive(snap));
   }
 
   void kimmiUterusErnieBasket(String path) {
-    KimmiExpensiveUnemployed.createImageSnap(chatBox.id!, path)
-        .then((snap) => _kimmiUterusExpensive(snap));
+    KimmiExpensiveUnemployed.createImageSnap(
+      chatBox.id!,
+      path,
+    ).then((snap) => _kimmiUterusExpensive(snap));
   }
 
   void kimmiUterusCamBasket(String path) {
@@ -367,8 +369,19 @@ class KimmiWaitressInvoice extends KimmiMuseIdolizeInvoice {
       ..value = gift.value
       ..gift_type = 0;
     final snap = KimmiExpensiveUnemployed.createJsonSnap(
-        chatBox.id!, jsonEncode(giftSnap.toJson()));
+      chatBox.id!,
+      jsonEncode(giftSnap.toJson()),
+    );
     _kimmiUterusExpensive(snap);
+    KimmiFeast me = KimmiFeast();
+    me.uid = KIMMI.user().uid;
+    me.nickName = KIMMI.user().nickName;
+    me.avatarUrl = KIMMI.user().avatarUrl;
+    KimmiWaitressDoggyLatino callGift = KimmiWaitressDoggyLatino();
+    callGift.from = me;
+    callGift.to = chatBox.chatUser!.toKimmiFeast();
+    callGift.gift = KimmiStormLatino.fromVoGift(gift)!;
+    KIMMI.fire(KimmiLatinoContainerSystem(callGift));
   }
 
   void _kimmiBrawnyExpensive(KimmiExpensive? snap) {
@@ -407,8 +420,9 @@ class KimmiWaitressInvoice extends KimmiMuseIdolizeInvoice {
       case ChatLoadDirection.normal:
         if (_firstLoading) {
           _firstLoading = false;
-          final queryChatBox =
-              await KIMMI.kimmiDb.chatBoxDao.modelById(chatBox.id);
+          final queryChatBox = await KIMMI.kimmiDb.chatBoxDao.modelById(
+            chatBox.id,
+          );
           if (queryChatBox != null) {
             lastReadTime = queryChatBox.lastReadSnapTime ?? 0;
 
@@ -416,8 +430,10 @@ class KimmiWaitressInvoice extends KimmiMuseIdolizeInvoice {
                 .countOfNewModelsForChatBox(queryChatBox.id, lastReadTime);
             if (moreCount > 5) {
               _moreCount = 5;
-              _moreFirstSnap = await KIMMI.kimmiDb.snapDao
-                  .firstModelForChatBox(queryChatBox.id, lastReadTime);
+              _moreFirstSnap = await KIMMI.kimmiDb.snapDao.firstModelForChatBox(
+                queryChatBox.id,
+                lastReadTime,
+              );
             }
           }
         }
@@ -431,21 +447,29 @@ class KimmiWaitressInvoice extends KimmiMuseIdolizeInvoice {
           snaps = [];
           final forward = await KimmiWaitressDock.instance
               .kimmiPeakWiggleWaitressTotallyByToMake(
-                  chatBox.id, toSnap?.createTime);
+                chatBox.id,
+                toSnap?.createTime,
+              );
           _hasForward = forward != null && forward.length >= PAGE_SIZE;
-          KimmiStarbucksJuda.nullSafe<List<KimmiExpensive>>(forward,
-              notNullBlock: (obj) {
-            snaps?.addAll(obj);
-          });
+          KimmiStarbucksJuda.nullSafe<List<KimmiExpensive>>(
+            forward,
+            notNullBlock: (obj) {
+              snaps?.addAll(obj);
+            },
+          );
           final backward = await KimmiWaitressDock.instance
               .kimmiPeakWiggleWaitressTotallyByMake(
-                  chatBox.id, toSnap?.createTime);
+                chatBox.id,
+                toSnap?.createTime,
+              );
           _hasBackward = backward != null && backward.length >= PAGE_SIZE;
           if (backward != null) snaps.removeWhere((e) => backward.contains(e));
-          KimmiStarbucksJuda.nullSafe<List<KimmiExpensive>>(backward,
-              notNullBlock: (obj) {
-            snaps?.addAll(obj);
-          });
+          KimmiStarbucksJuda.nullSafe<List<KimmiExpensive>>(
+            backward,
+            notNullBlock: (obj) {
+              snaps?.addAll(obj);
+            },
+          );
         }
         break;
       case ChatLoadDirection.forward:
@@ -457,7 +481,9 @@ class KimmiWaitressInvoice extends KimmiMuseIdolizeInvoice {
           } else {
             snaps = await KimmiWaitressDock.instance
                 .kimmiPeakWiggleWaitressTotallyByToMake(
-                    chatBox.id, first.createTime);
+                  chatBox.id,
+                  first.createTime,
+                );
           }
           _hasForward = snaps != null && snaps.length >= PAGE_SIZE;
         }
@@ -519,23 +545,32 @@ class KimmiWaitressInvoice extends KimmiMuseIdolizeInvoice {
     List<KimmiExpensive> snaps = [];
     final forward = await KimmiWaitressDock.instance
         .kimmiPeakWiggleWaitressTotallyByToMake(
-            chatBox.id, _moreFirstSnap?.createTime);
+          chatBox.id,
+          _moreFirstSnap?.createTime,
+        );
     _hasForward = forward != null && forward.length >= PAGE_SIZE;
-    KimmiStarbucksJuda.nullSafe<List<KimmiExpensive>>(forward,
-        notNullBlock: (obj) {
-      snaps.addAll(obj);
-    });
+    KimmiStarbucksJuda.nullSafe<List<KimmiExpensive>>(
+      forward,
+      notNullBlock: (obj) {
+        snaps.addAll(obj);
+      },
+    );
 
     bool jump = _moreCount > 2 * PAGE_SIZE;
     final backward = await KimmiWaitressDock.instance
-        .kimmiPeakWiggleWaitressTotallyByMake(chatBox.id,
-            _moreFirstSnap?.createTime, jump ? null : firstSnap()?.createTime);
+        .kimmiPeakWiggleWaitressTotallyByMake(
+          chatBox.id,
+          _moreFirstSnap?.createTime,
+          jump ? null : firstSnap()?.createTime,
+        );
     _hasBackward = jump;
     if (backward != null) snaps.removeWhere((e) => backward.contains(e));
-    KimmiStarbucksJuda.nullSafe<List<KimmiExpensive>>(backward,
-        notNullBlock: (obj) {
-      snaps.addAll(obj);
-    });
+    KimmiStarbucksJuda.nullSafe<List<KimmiExpensive>>(
+      backward,
+      notNullBlock: (obj) {
+        snaps.addAll(obj);
+      },
+    );
     KimmiWaitressDock.instance.kimmiSacredFellowPeak(snaps);
 
     final groups = KimmiWaitressExpensiveCalculusDensity.sortSnaps(snaps);
@@ -567,9 +602,12 @@ class KimmiWaitressInvoice extends KimmiMuseIdolizeInvoice {
         }
       });
     } else {
-      KIMMI.toNamed(KimmiSully.KimmiPrivateNieceContainer,
-          arguments: KimmiPrivateNieceHealer(
-              fromType: PayFromType.FROM_IM_NO_MORE_FREE_MSG));
+      KIMMI.toNamed(
+        KimmiSully.KimmiPrivateNieceContainer,
+        arguments: KimmiPrivateNieceHealer(
+          fromType: PayFromType.FROM_IM_NO_MORE_FREE_MSG,
+        ),
+      );
     }
   }
 
@@ -597,7 +635,10 @@ class KimmiWaitressInvoice extends KimmiMuseIdolizeInvoice {
     });
     if (snaps.isNotEmpty) {
       final groups = KimmiWaitressExpensiveCalculusDensity.sortSnaps(
-          snaps, null, _groups.isEmpty ? null : _groups.last);
+        snaps,
+        null,
+        _groups.isEmpty ? null : _groups.last,
+      );
       if (!KimmiStarbucksJuda.isEmptyList(groups)) {
         _groups.addAll(groups!);
       }
@@ -642,37 +683,49 @@ class KimmiWaitressInvoice extends KimmiMuseIdolizeInvoice {
     if (KimmiStarbucksJuda.isEmptyMap(event.affects)) return;
     List<KimmiExpensive>? updated, deleted, added;
     if (event.affects![KimmiWaitressComponent.AFFECT_ADD] != null) {
-      added = event.affects![KimmiWaitressComponent.AFFECT_ADD]
-          as List<KimmiExpensive>?;
+      added =
+          event.affects![KimmiWaitressComponent.AFFECT_ADD]
+              as List<KimmiExpensive>?;
     }
 
     if (event.affects![KimmiWaitressComponent.AFFECT_UPDATE] != null) {
-      updated = event.affects![KimmiWaitressComponent.AFFECT_UPDATE]
-          as List<KimmiExpensive>?;
+      updated =
+          event.affects![KimmiWaitressComponent.AFFECT_UPDATE]
+              as List<KimmiExpensive>?;
     }
     if (event.affects![KimmiWaitressComponent.AFFECT_DELETE] != null) {
-      deleted = event.affects![KimmiWaitressComponent.AFFECT_DELETE]
-          as List<KimmiExpensive>?;
+      deleted =
+          event.affects![KimmiWaitressComponent.AFFECT_DELETE]
+              as List<KimmiExpensive>?;
     }
     if (!KimmiStarbucksJuda.isEmptyList(added)) {
       _hasNewSnap = true;
       _kimmiMusicalPeak(
-          added!.where((e) => e.chatBoxId == chatBox.id).toList());
-      var giftItem = added.firstWhere((element) => element.isGiftJsonSnap,
-          orElse: () => KimmiExpensive());
+        added!.where((e) => e.chatBoxId == chatBox.id).toList(),
+      );
+      var giftItem = added.firstWhere(
+        (element) => element.isGiftJsonSnap,
+        orElse: () => KimmiExpensive(),
+      );
       if (!KimmiStarbucksJuda.isEmpty(giftItem.jsonContentObj?.animation_url)) {
-        Get.toNamed(KimmiSully.KimmiSVGAContainer,
-            arguments: KimmiWelcomeHealer(
-                giftItem.jsonContentObj!.animation_url!, false));
+        Get.toNamed(
+          KimmiSully.KimmiSVGAContainer,
+          arguments: KimmiWelcomeHealer(
+            giftItem.jsonContentObj!.animation_url!,
+            false,
+          ),
+        );
       }
     }
     if (!KimmiStarbucksJuda.isEmptyList(updated)) {
       _kimmiFantasyPeak(
-          updated!.where((e) => e.chatBoxId == chatBox.id).toList());
+        updated!.where((e) => e.chatBoxId == chatBox.id).toList(),
+      );
     }
     if (!KimmiStarbucksJuda.isEmptyList(deleted)) {
       _kimmiBrettPeak(
-          deleted!.where((e) => e.chatBoxId == chatBox.id).toList());
+        deleted!.where((e) => e.chatBoxId == chatBox.id).toList(),
+      );
     }
   }
 
@@ -688,8 +741,11 @@ class KimmiWaitressInvoice extends KimmiMuseIdolizeInvoice {
     _kimmiUnwantedToNine(pos: ChatScrollPosition.start, animated: animated);
   }
 
-  void _kimmiUnwantedToNine(
-      {required ChatScrollPosition pos, double? offset, bool animated = true}) {
+  void _kimmiUnwantedToNine({
+    required ChatScrollPosition pos,
+    double? offset,
+    bool animated = true,
+  }) {
     WidgetsBinding.instance.addPostFrameCallback((timeStamp) {
       if (!scrollController.hasClients) return;
       switch (pos) {
@@ -716,10 +772,9 @@ class KimmiWaitressInvoice extends KimmiMuseIdolizeInvoice {
   }
 
   void _kimmiDarthWaitressFeastTux() async {
-    KimmiWaitressFeast? resp = await KIMMI.http.rest(
-        7011,
-        {'uid': chatBox.chatUser?.uid},
-        (p0) => KimmiWaitressFeast.fromJson(p0));
+    KimmiWaitressFeast? resp = await KIMMI.http.rest(7011, {
+      'uid': chatBox.chatUser?.uid,
+    }, (p0) => KimmiWaitressFeast.fromJson(p0));
     if (resp != null) {
       chatBox.replaceMember(resp);
       oppositeUser = resp;
@@ -732,7 +787,7 @@ class KimmiWaitressInvoice extends KimmiMuseIdolizeInvoice {
     Map<String, dynamic> params = {
       "uid": chatBox.chatUser!.uid,
       "source_type": 0,
-      "status": followStatus
+      "status": followStatus,
     };
     bool resp = await KIMMI.http.submit(3010, params);
     if (resp) {
@@ -742,18 +797,21 @@ class KimmiWaitressInvoice extends KimmiMuseIdolizeInvoice {
   }
 
   void onKimmiHiccupBatman() async {
-    if (sqrt1_2 < 0.3) {
-      KimmiMouthwashConfusion().efApplauseJoyous();
-      KimmiMouthwashConfusion().asAirborneAshtray();
-      KimmiMouthwashConfusion().asStevensStuffy();
-    }
     if (sqrt2 < 1) {
-      weEsMichelle();
-      siErnieFraud();
+      KimmiDieFairy().siPheromoned();
+      KimmiDieFairy().laUiHeroin();
+      KimmiDieFairy().paPrincessDraft();
+    }
+    if (log10e / 2 < 0.1) {
+      loHealerSouth();
+      elPedestalFalcon();
     }
     bool rsp = await KIMMI.http.submit(
-        4010, {"uid": chatBox.chatUser!.uid ?? 0},
-        showLoadingUI: true, autoToastOnError: true);
+      4010,
+      {"uid": chatBox.chatUser!.uid ?? 0},
+      showLoadingUI: true,
+      autoToastOnError: true,
+    );
 
     if (rsp) {
       Fluttertoast.showToast(msg: 'kimmi_broderick_genderless_fairly'.tr);
@@ -768,14 +826,16 @@ class KimmiWaitressInvoice extends KimmiMuseIdolizeInvoice {
   }
 
   void _kimmiUnevenSophiePoacher() {
-    KimmiWaitressDock.instance
-        .kimmiProtectorVanishWaitressIdByLaborId(chatBox.id!);
+    KimmiWaitressDock.instance.kimmiProtectorVanishWaitressIdByLaborId(
+      chatBox.id!,
+    );
     _kimmiUterusFantasyGlenMarvel();
   }
 
   void _kimmiUterusFantasyGlenMarvel() {
-    KimmiWaitressDock.instance
-        .kimmiFantasyWaitressTotallyGlenMarvel(cId: chatBox.id);
+    KimmiWaitressDock.instance.kimmiFantasyWaitressTotallyGlenMarvel(
+      cId: chatBox.id,
+    );
   }
 
   void _kimmiUterusStoreAssignment({int limitByConfig = 0}) {
@@ -812,19 +872,22 @@ class KimmiWaitressInvoice extends KimmiMuseIdolizeInvoice {
   }
 
   void onKimmiApplauseSecurity(KimmiWaitressFeast user) {
-    if (sqrt2 < 1) {
-      KimmiMouthwashConfusion().orMentionStretch();
-      KimmiMouthwashConfusion().efApplauseJoyous();
-      KimmiMouthwashConfusion().asStevensStuffy();
+    if (e < 2) {
+      KimmiDieFairy().esDieAssert();
+      KimmiDieFairy().joSaturnLeprechaun();
+      KimmiDieFairy().siPheromoned();
     }
-    if (ln2 < 0.5) {
-      soTotallyDoctor();
-      weEsMichelle();
+    if (log2e < 1) {
+      elPedestalFalcon();
+      loHealerSouth();
     }
-    KIMMI.toNamed(KimmiSully.KimmiSecurityContainer, arguments: {
-      'uid': user.uid,
-      'nickName': user.nickName,
-      'avatarUrl': user.avatarUrl
-    });
+    KIMMI.toNamed(
+      KimmiSully.KimmiSecurityContainer,
+      arguments: {
+        'uid': user.uid,
+        'nickName': user.nickName,
+        'avatarUrl': user.avatarUrl,
+      },
+    );
   }
 }

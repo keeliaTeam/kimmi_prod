@@ -73,43 +73,58 @@ class User extends $pb.GeneratedMessage {
     return $result;
   }
   User._() : super();
-  factory User.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory User.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+  factory User.fromBuffer(
+    $core.List<$core.int> i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromBuffer(i, r);
+  factory User.fromJson(
+    $core.String i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'User',
-      package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockMuse()),
-      createEmptyInstance: create)
-    ..a<$fixnum.Int64>(1, _omitFieldNames ? '' : 'uid', $pb.PbFieldType.OU6,
-        defaultOrMaker: $fixnum.Int64.ZERO)
-    ..aOS(2, _omitFieldNames ? '' : 'nickName')
-    ..aOS(3, _omitFieldNames ? '' : 'displayName')
-    ..aOS(4, _omitFieldNames ? '' : 'avatarUrl')
-    ..aOS(5, _omitFieldNames ? '' : 'birthday')
-    ..a<$core.int>(6, _omitFieldNames ? '' : 'gender', $pb.PbFieldType.O3)
-    ..aOS(7, _omitFieldNames ? '' : 'mobile')
-    ..a<$core.int>(8, _omitFieldNames ? '' : 'relation', $pb.PbFieldType.O3)
-    ..aOS(9, _omitFieldNames ? '' : 'qrcodeUrl')
-    ..a<$core.int>(10, _omitFieldNames ? '' : 'status', $pb.PbFieldType.O3)
-    ..aOS(11, _omitFieldNames ? '' : 'ucode')
-    ..aOS(12, _omitFieldNames ? '' : 'tagJSON', protoName: 'tagJSON')
-    ..aOS(13, _omitFieldNames ? '' : 'signature')
-    ..aOS(14, _omitFieldNames ? '' : 'constellation')
-    ..aOM<$0.Any>(15, _omitFieldNames ? '' : 'extensions',
-        subBuilder: $0.Any.create)
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i =
+      $pb.BuilderInfo(
+          _omitMessageNames ? '' : 'User',
+          package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockMuse()),
+          createEmptyInstance: create,
+        )
+        ..a<$fixnum.Int64>(
+          1,
+          _omitFieldNames ? '' : 'uid',
+          $pb.PbFieldType.OU6,
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..aOS(2, _omitFieldNames ? '' : 'nickName')
+        ..aOS(3, _omitFieldNames ? '' : 'displayName')
+        ..aOS(4, _omitFieldNames ? '' : 'avatarUrl')
+        ..aOS(5, _omitFieldNames ? '' : 'birthday')
+        ..a<$core.int>(6, _omitFieldNames ? '' : 'gender', $pb.PbFieldType.O3)
+        ..aOS(7, _omitFieldNames ? '' : 'mobile')
+        ..a<$core.int>(8, _omitFieldNames ? '' : 'relation', $pb.PbFieldType.O3)
+        ..aOS(9, _omitFieldNames ? '' : 'qrcodeUrl')
+        ..a<$core.int>(10, _omitFieldNames ? '' : 'status', $pb.PbFieldType.O3)
+        ..aOS(11, _omitFieldNames ? '' : 'ucode')
+        ..aOS(12, _omitFieldNames ? '' : 'tagJSON', protoName: 'tagJSON')
+        ..aOS(13, _omitFieldNames ? '' : 'signature')
+        ..aOS(14, _omitFieldNames ? '' : 'constellation')
+        ..aOM<$0.Any>(
+          15,
+          _omitFieldNames ? '' : 'extensions',
+          subBuilder: $0.Any.create,
+        )
+        ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+    'Will be removed in next major version',
+  )
   User clone() => User()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+    'Will be removed in next major version',
+  )
   User copyWith(void Function(User) updates) =>
       super.copyWith((message) => updates(message as User)) as User;
 
@@ -330,30 +345,46 @@ class Location extends $pb.GeneratedMessage {
     return $result;
   }
   Location._() : super();
-  factory Location.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory Location.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+  factory Location.fromBuffer(
+    $core.List<$core.int> i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromBuffer(i, r);
+  factory Location.fromJson(
+    $core.String i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'Location',
-      package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockMuse()),
-      createEmptyInstance: create)
-    ..a<$core.double>(1, _omitFieldNames ? '' : 'longitude', $pb.PbFieldType.OD)
-    ..a<$core.double>(2, _omitFieldNames ? '' : 'latitude', $pb.PbFieldType.OD)
-    ..aOS(3, _omitFieldNames ? '' : 'name')
-    ..aOS(4, _omitFieldNames ? '' : 'desc')
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i =
+      $pb.BuilderInfo(
+          _omitMessageNames ? '' : 'Location',
+          package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockMuse()),
+          createEmptyInstance: create,
+        )
+        ..a<$core.double>(
+          1,
+          _omitFieldNames ? '' : 'longitude',
+          $pb.PbFieldType.OD,
+        )
+        ..a<$core.double>(
+          2,
+          _omitFieldNames ? '' : 'latitude',
+          $pb.PbFieldType.OD,
+        )
+        ..aOS(3, _omitFieldNames ? '' : 'name')
+        ..aOS(4, _omitFieldNames ? '' : 'desc')
+        ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+    'Will be removed in next major version',
+  )
   Location clone() => Location()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+    'Will be removed in next major version',
+  )
   Location copyWith(void Function(Location) updates) =>
       super.copyWith((message) => updates(message as Location)) as Location;
 
@@ -452,38 +483,60 @@ class Advertisement extends $pb.GeneratedMessage {
     return $result;
   }
   Advertisement._() : super();
-  factory Advertisement.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory Advertisement.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+  factory Advertisement.fromBuffer(
+    $core.List<$core.int> i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromBuffer(i, r);
+  factory Advertisement.fromJson(
+    $core.String i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'Advertisement',
-      package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockMuse()),
-      createEmptyInstance: create)
-    ..a<$fixnum.Int64>(1, _omitFieldNames ? '' : 'id', $pb.PbFieldType.OU6,
-        defaultOrMaker: $fixnum.Int64.ZERO)
-    ..a<$core.int>(2, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OU3)
-    ..aOS(3, _omitFieldNames ? '' : 'imgUrl')
-    ..aOS(4, _omitFieldNames ? '' : 'contentUrl')
-    ..a<$fixnum.Int64>(
-        5, _omitFieldNames ? '' : 'startTime', $pb.PbFieldType.OU6,
-        defaultOrMaker: $fixnum.Int64.ZERO)
-    ..a<$fixnum.Int64>(6, _omitFieldNames ? '' : 'endTime', $pb.PbFieldType.OU6,
-        defaultOrMaker: $fixnum.Int64.ZERO)
-    ..a<$core.int>(
-        7, _omitFieldNames ? '' : 'residenceTime', $pb.PbFieldType.O3)
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i =
+      $pb.BuilderInfo(
+          _omitMessageNames ? '' : 'Advertisement',
+          package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockMuse()),
+          createEmptyInstance: create,
+        )
+        ..a<$fixnum.Int64>(
+          1,
+          _omitFieldNames ? '' : 'id',
+          $pb.PbFieldType.OU6,
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..a<$core.int>(2, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OU3)
+        ..aOS(3, _omitFieldNames ? '' : 'imgUrl')
+        ..aOS(4, _omitFieldNames ? '' : 'contentUrl')
+        ..a<$fixnum.Int64>(
+          5,
+          _omitFieldNames ? '' : 'startTime',
+          $pb.PbFieldType.OU6,
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..a<$fixnum.Int64>(
+          6,
+          _omitFieldNames ? '' : 'endTime',
+          $pb.PbFieldType.OU6,
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..a<$core.int>(
+          7,
+          _omitFieldNames ? '' : 'residenceTime',
+          $pb.PbFieldType.O3,
+        )
+        ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+    'Will be removed in next major version',
+  )
   Advertisement clone() => Advertisement()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+    'Will be removed in next major version',
+  )
   Advertisement copyWith(void Function(Advertisement) updates) =>
       super.copyWith((message) => updates(message as Advertisement))
           as Advertisement;
@@ -604,29 +657,37 @@ class Country extends $pb.GeneratedMessage {
     return $result;
   }
   Country._() : super();
-  factory Country.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory Country.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+  factory Country.fromBuffer(
+    $core.List<$core.int> i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromBuffer(i, r);
+  factory Country.fromJson(
+    $core.String i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'Country',
-      package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockMuse()),
-      createEmptyInstance: create)
-    ..aOS(1, _omitFieldNames ? '' : 'code')
-    ..aOS(2, _omitFieldNames ? '' : 'name')
-    ..aOS(3, _omitFieldNames ? '' : 'icon')
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i =
+      $pb.BuilderInfo(
+          _omitMessageNames ? '' : 'Country',
+          package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockMuse()),
+          createEmptyInstance: create,
+        )
+        ..aOS(1, _omitFieldNames ? '' : 'code')
+        ..aOS(2, _omitFieldNames ? '' : 'name')
+        ..aOS(3, _omitFieldNames ? '' : 'icon')
+        ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+    'Will be removed in next major version',
+  )
   Country clone() => Country()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+    'Will be removed in next major version',
+  )
   Country copyWith(void Function(Country) updates) =>
       super.copyWith((message) => updates(message as Country)) as Country;
 
@@ -709,41 +770,68 @@ class UserCoupon extends $pb.GeneratedMessage {
     return $result;
   }
   UserCoupon._() : super();
-  factory UserCoupon.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory UserCoupon.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+  factory UserCoupon.fromBuffer(
+    $core.List<$core.int> i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromBuffer(i, r);
+  factory UserCoupon.fromJson(
+    $core.String i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'UserCoupon',
-      package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockMuse()),
-      createEmptyInstance: create)
-    ..a<$fixnum.Int64>(1, _omitFieldNames ? '' : 'id', $pb.PbFieldType.OU6,
-        defaultOrMaker: $fixnum.Int64.ZERO)
-    ..a<$fixnum.Int64>(
-        2, _omitFieldNames ? '' : 'couponId', $pb.PbFieldType.OU6,
-        protoName: 'couponId', defaultOrMaker: $fixnum.Int64.ZERO)
-    ..a<$core.int>(
-        3, _omitFieldNames ? '' : 'diamondAmount', $pb.PbFieldType.O3,
-        protoName: 'diamondAmount')
-    ..a<$core.int>(4, _omitFieldNames ? '' : 'status', $pb.PbFieldType.O3)
-    ..a<$fixnum.Int64>(
-        5, _omitFieldNames ? '' : 'vipDuration', $pb.PbFieldType.OU6,
-        protoName: 'vipDuration', defaultOrMaker: $fixnum.Int64.ZERO)
-    ..a<$fixnum.Int64>(
-        6, _omitFieldNames ? '' : 'expireTime', $pb.PbFieldType.OU6,
-        protoName: 'expireTime', defaultOrMaker: $fixnum.Int64.ZERO)
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i =
+      $pb.BuilderInfo(
+          _omitMessageNames ? '' : 'UserCoupon',
+          package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockMuse()),
+          createEmptyInstance: create,
+        )
+        ..a<$fixnum.Int64>(
+          1,
+          _omitFieldNames ? '' : 'id',
+          $pb.PbFieldType.OU6,
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..a<$fixnum.Int64>(
+          2,
+          _omitFieldNames ? '' : 'couponId',
+          $pb.PbFieldType.OU6,
+          protoName: 'couponId',
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..a<$core.int>(
+          3,
+          _omitFieldNames ? '' : 'diamondAmount',
+          $pb.PbFieldType.O3,
+          protoName: 'diamondAmount',
+        )
+        ..a<$core.int>(4, _omitFieldNames ? '' : 'status', $pb.PbFieldType.O3)
+        ..a<$fixnum.Int64>(
+          5,
+          _omitFieldNames ? '' : 'vipDuration',
+          $pb.PbFieldType.OU6,
+          protoName: 'vipDuration',
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..a<$fixnum.Int64>(
+          6,
+          _omitFieldNames ? '' : 'expireTime',
+          $pb.PbFieldType.OU6,
+          protoName: 'expireTime',
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+    'Will be removed in next major version',
+  )
   UserCoupon clone() => UserCoupon()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+    'Will be removed in next major version',
+  )
   UserCoupon copyWith(void Function(UserCoupon) updates) =>
       super.copyWith((message) => updates(message as UserCoupon)) as UserCoupon;
 
@@ -832,5 +920,6 @@ class UserCoupon extends $pb.GeneratedMessage {
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames =
-    $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames = $core.bool.fromEnvironment(
+  'protobuf.omit_message_names',
+);

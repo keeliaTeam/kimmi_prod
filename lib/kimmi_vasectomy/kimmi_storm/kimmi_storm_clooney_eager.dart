@@ -21,8 +21,10 @@ class KimmiStormClooneyEager {
     dynamic urls = json['urls'];
     if (urls != null) {
       win.urls = (urls! as List<dynamic>)
-          .map((e) =>
-              KimmiStormStreetcarScholar.fromJson(e as Map<String, dynamic>))
+          .map(
+            (e) =>
+                KimmiStormStreetcarScholar.fromJson(e as Map<String, dynamic>),
+          )
           .toList();
     }
     return win;

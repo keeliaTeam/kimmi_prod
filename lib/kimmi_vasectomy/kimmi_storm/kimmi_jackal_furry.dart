@@ -22,11 +22,11 @@ class KimmiJackalFurry {
             .toList();
 
   Map<String, dynamic> toJson(KimmiJackalFurry instance) => <String, dynamic>{
-        'id': instance.id,
-        'type': instance.type,
-        'name': instance.name,
-        'icon': instance.icon,
-        'selIcon': instance.selIcon,
-        'items': instance.items,
-      };
+    'id': instance.id,
+    'type': instance.type,
+    'name': instance.name,
+    'icon': instance.icon,
+    'selIcon': instance.selIcon,
+    'items': instance.items,
+  };
 }

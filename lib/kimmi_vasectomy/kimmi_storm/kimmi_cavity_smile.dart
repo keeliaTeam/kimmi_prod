@@ -11,8 +11,9 @@ enum KimmiCavityBloody {
   LOGOUT;
 
   static KimmiCavityBloody check(String name) {
-    return KimmiCavityBloody.values
-        .firstWhere((element) => element.name == name);
+    return KimmiCavityBloody.values.firstWhere(
+      (element) => element.name == name,
+    );
   }
 }
 

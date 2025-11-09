@@ -7,7 +7,7 @@ class KimmiDeceitJuda {
     '-',
     DateFormat.mm,
     '-',
-    DateFormat.dd
+    DateFormat.dd,
   ];
   static const FORMAT_YYYY_MM_DD_HH_MM_SS = [
     DateFormat.yyyy,
@@ -20,24 +20,31 @@ class KimmiDeceitJuda {
     ':',
     DateFormat.nn,
     ':',
-    DateFormat.ss
+    DateFormat.ss,
   ];
 
-  static String getFormatDateTime(DateTime dateTime,
-      {List<String> formats = FORMAT_YYYY_MM_DD_HH_MM_SS}) {
+  static String getFormatDateTime(
+    DateTime dateTime, {
+    List<String> formats = FORMAT_YYYY_MM_DD_HH_MM_SS,
+  }) {
     return DateFormat.formatDate(dateTime, formats);
   }
 
   static String formatDay(int timeInMills) {
     return DateFormat.formatDate(
-        DateTime.fromMillisecondsSinceEpoch(timeInMills),
-        ['yyyy', '-', 'mm', '-', 'dd']);
+      DateTime.fromMillisecondsSinceEpoch(timeInMills),
+      ['yyyy', '-', 'mm', '-', 'dd'],
+    );
   }
 
-  static String getFormatTimer(int seconds,
-      {List<String> formats = const [DateFormat.nn, ":", DateFormat.ss]}) {
+  static String getFormatTimer(
+    int seconds, {
+    List<String> formats = const [DateFormat.nn, ":", DateFormat.ss],
+  }) {
     return DateFormat.formatDate(
-        DateTime(0).add(Duration(seconds: seconds)), formats);
+      DateTime(0).add(Duration(seconds: seconds)),
+      formats,
+    );
   }
 
   static String formatDuration(Duration d) {

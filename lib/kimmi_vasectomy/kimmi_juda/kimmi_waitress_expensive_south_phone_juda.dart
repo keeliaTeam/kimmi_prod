@@ -126,21 +126,24 @@ class KimmiWaitressExpensiveSouthPhoneJuda {
     return ret;
   }
 
-  static Widget jsonContentView(
-    KimmiExpensive snap, {
-    Key? key,
-  }) {
+  static Widget jsonContentView(KimmiExpensive snap, {Key? key}) {
     Widget w = Container();
     if (snap.jsonContentObj?.category != null) {
-      switch (
-          ChatSnapJsonContentCategory.valueOf(snap.jsonContentObj!.category!)) {
+      switch (ChatSnapJsonContentCategory.valueOf(
+        snap.jsonContentObj!.category!,
+      )) {
         case ChatSnapJsonContentCategory.callCate:
           w = KimmiWaitressPerDoggyUneven(
-              key: key, content: snap.jsonContentObj!, chatSnap: snap);
+            key: key,
+            content: snap.jsonContentObj!,
+            chatSnap: snap,
+          );
           break;
         case ChatSnapJsonContentCategory.imGiftCate:
           w = KimmiWaitressPerLatinoUneven(
-              key: key, content: snap.jsonContentObj!);
+            key: key,
+            content: snap.jsonContentObj!,
+          );
           break;
         default:
           break;
@@ -150,7 +153,8 @@ class KimmiWaitressExpensiveSouthPhoneJuda {
   }
 
   static String jsonContentListMessage(
-      KimmiWaitressExpensiveSouthPhone? content) {
+    KimmiWaitressExpensiveSouthPhone? content,
+  ) {
     String ret = '';
     if (content?.category != null) {
       switch (ChatSnapJsonContentCategory.valueOf(content!.category)) {

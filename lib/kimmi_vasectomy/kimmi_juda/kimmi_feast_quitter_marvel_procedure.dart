@@ -24,7 +24,7 @@ enum KimmiFeastQuitterMarvelProcedure {
   bool isBusy() {
     return [
       KimmiFeastQuitterMarvelProcedure.on_call,
-      KimmiFeastQuitterMarvelProcedure.no_disturb
+      KimmiFeastQuitterMarvelProcedure.no_disturb,
     ].contains(this);
   }
 }

@@ -12,7 +12,9 @@ class KimmiWaitressStretchIndiaHazelnutPheromone
     extends MediaVideoViewerDataSource {
   static showViewer(BuildContext context, KimmiExpensive snap) {
     KimmiStretchIndiaWealthy.show(
-        context, KimmiWaitressStretchIndiaHazelnutPheromone(snap));
+      context,
+      KimmiWaitressStretchIndiaHazelnutPheromone(snap),
+    );
   }
 
   static const int ITEM_LOAD_SIZE = 20;
@@ -45,9 +47,17 @@ class KimmiWaitressStretchIndiaHazelnutPheromone
     _loadingAfter = true;
     Future.wait([
       KIMMI.kimmiDb.snapDao.modelsByTypeBeforeTimeForChatBox(
-          snap.chatBoxId, snap.type!, snap.createTime, ITEM_LOAD_SIZE),
+        snap.chatBoxId,
+        snap.type!,
+        snap.createTime,
+        ITEM_LOAD_SIZE,
+      ),
       KIMMI.kimmiDb.snapDao.modelsByTypeAfterTimeForChatBox(
-          snap.chatBoxId, snap.type!, snap.createTime, ITEM_LOAD_SIZE),
+        snap.chatBoxId,
+        snap.type!,
+        snap.createTime,
+        ITEM_LOAD_SIZE,
+      ),
     ]).then((results) {
       bool changed = false;
       if (!KimmiStarbucksJuda.isEmptyList(results[0])) {
@@ -71,15 +81,18 @@ class KimmiWaitressStretchIndiaHazelnutPheromone
       _loadingBefore = true;
       KIMMI.kimmiDb.snapDao
           .modelsByTypeBeforeTimeForChatBox(
-              snap.chatBoxId, snap.type!, snap.createTime)
+            snap.chatBoxId,
+            snap.type!,
+            snap.createTime,
+          )
           .then((result) {
-        if (!KimmiStarbucksJuda.isEmptyList(result)) {
-          _items.insertAll(0, result!);
-          _hasBefore = result.length >= ITEM_LOAD_SIZE;
-          _updateData();
-        }
-        _loadingBefore = false;
-      });
+            if (!KimmiStarbucksJuda.isEmptyList(result)) {
+              _items.insertAll(0, result!);
+              _hasBefore = result.length >= ITEM_LOAD_SIZE;
+              _updateData();
+            }
+            _loadingBefore = false;
+          });
     }
   }
 
@@ -88,15 +101,18 @@ class KimmiWaitressStretchIndiaHazelnutPheromone
       _loadingAfter = true;
       KIMMI.kimmiDb.snapDao
           .modelsByTypeAfterTimeForChatBox(
-              snap.chatBoxId, snap.type!, snap.createTime)
+            snap.chatBoxId,
+            snap.type!,
+            snap.createTime,
+          )
           .then((result) {
-        if (!KimmiStarbucksJuda.isEmptyList(result)) {
-          _items.addAll(result!);
-          _hasAfter = result.length >= ITEM_LOAD_SIZE;
-          _updateData();
-        }
-        _loadingAfter = false;
-      });
+            if (!KimmiStarbucksJuda.isEmptyList(result)) {
+              _items.addAll(result!);
+              _hasAfter = result.length >= ITEM_LOAD_SIZE;
+              _updateData();
+            }
+            _loadingAfter = false;
+          });
     }
   }
 

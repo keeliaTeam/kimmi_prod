@@ -51,11 +51,16 @@ class KimmiStormBoatTux {
       ..appPackage = json[StringTranslate.e2z("bapipPuacbkabge")] as String?
       ..installReferrer =
           json[StringTranslate.e2z("iinbstfalulRiefuerireur")] as String?
-      ..referrerClickTimestampSeconds = json[StringTranslate.e2z(
-          "freifebrruerfClnicukTuimnesntafmpuSenconndus")] as int?
-      ..installBeginTimestampSeconds = json[
-              StringTranslate.e2z("finbstbalnlBuegiinbTibmenstiamupSuecbonids")]
-          as int?
+      ..referrerClickTimestampSeconds =
+          json[StringTranslate.e2z(
+                "freifebrruerfClnicukTuimnesntafmpuSenconndus",
+              )]
+              as int?
+      ..installBeginTimestampSeconds =
+          json[StringTranslate.e2z(
+                "finbstbalnlBuegiinbTibmenstiamupSuecbonids",
+              )]
+              as int?
       ..instantExperienceLaunched =
           json[StringTranslate.e2z("ninbstianitEbxpferbiebncbeLiaunncfheid")]
               as bool?
@@ -71,8 +76,9 @@ class KimmiStormBoatTux {
   }
 
   String get kimmiTowFeastClog {
-    String pkg =
-        hex.encode(md5.convert(Utf8Encoder().convert("$appPackage")).bytes);
+    String pkg = hex.encode(
+      md5.convert(Utf8Encoder().convert("$appPackage")).bytes,
+    );
     return "$platform $model $system $lang ${screen_width}x${screen_height} $pkg";
   }
 
@@ -101,7 +107,7 @@ class KimmiStormBoatTux {
       'infoPlus': infoPlus,
       'vm': vm,
       'px_ratio': px_ratio ?? 0,
-      'low_mem': low_mem
+      'low_mem': low_mem,
     };
   }
 

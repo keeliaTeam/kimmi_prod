@@ -9,9 +9,6 @@ class KimmiStormEmbodiment {
   }
 
   Map<String, dynamic> toJson() {
-    return <String, dynamic>{
-      'img': img,
-      'url': url,
-    };
+    return <String, dynamic>{'img': img, 'url': url};
   }
 }

@@ -24,9 +24,12 @@ class KimmiWaitressTotallyCrossover
   final KimmiFeastCrossover _userDao;
   final KimmiWaitressSigningCrossover _chatBoxMemberDao;
 
-  KimmiWaitressTotallyCrossover(KimmiWaitressHazelnutMuse db, this._snapDao,
-      this._userDao, this._chatBoxMemberDao)
-      : super(db);
+  KimmiWaitressTotallyCrossover(
+    KimmiWaitressHazelnutMuse db,
+    this._snapDao,
+    this._userDao,
+    this._chatBoxMemberDao,
+  ) : super(db);
 
   Future saveOrUpdateModels(List<KimmiWaitressTotally>? models) async {
     if (models == null || models.isEmpty) return;
@@ -89,18 +92,21 @@ class KimmiWaitressTotallyCrossover
   Future<KimmiWaitressTotally?> _modelByEntity(kimmi_topless_cowboys? e) async {
     if (e == null) return null;
     final m = _modelFromEntity(e);
-    List<kimmi_waitress_signing_cowboys> memberIds =
-        await _chatBoxMemberDao.entitiesForChatBox(e.id);
+    List<kimmi_waitress_signing_cowboys> memberIds = await _chatBoxMemberDao
+        .entitiesForChatBox(e.id);
     List<int> ids = memberIds.map((e) => e.uid).toList();
     m?.members = await _userDao.modelsByIds(ids);
-    m?.unreadCount =
-        await _snapDao.countOfNewModelsForChatBox(m.id, m.lastReadSnapTime);
+    m?.unreadCount = await _snapDao.countOfNewModelsForChatBox(
+      m.id,
+      m.lastReadSnapTime,
+    );
     return m;
   }
 
   KimmiWaitressTotallyCowboysNerd? _modelToEntityCompanion(
-      KimmiWaitressTotally? m,
-      [KimmiWaitressTotally? e]) {
+    KimmiWaitressTotally? m, [
+    KimmiWaitressTotally? e,
+  ]) {
     if (m == null) return null;
     if (e != null) {
       if (m.lastReadSnapTime == null ||
@@ -126,20 +132,24 @@ class KimmiWaitressTotallyCrossover
       qrCodeURL: m.qrCodeURL != null ? Value(m.qrCodeURL) : Value.absent(),
       weight: m.weight != null ? Value(m.weight!) : Value.absent(),
       muted: m.muted != null ? Value(m.muted!) : Value.absent(),
-      unreadCount:
-          m.unreadCount != null ? Value(m.unreadCount!) : Value.absent(),
+      unreadCount: m.unreadCount != null
+          ? Value(m.unreadCount!)
+          : Value.absent(),
       updateTime: m.updateTime != null ? Value(m.updateTime!) : Value.absent(),
-      additionalInfo:
-          m.additionalInfo != null ? Value(m.additionalInfo) : Value.absent(),
+      additionalInfo: m.additionalInfo != null
+          ? Value(m.additionalInfo)
+          : Value.absent(),
       desc: m.desc != null ? Value(m.desc) : Value.absent(),
-      serviceChat:
-          m.serviceChat != null ? Value(m.serviceChat!) : Value.absent(),
+      serviceChat: m.serviceChat != null
+          ? Value(m.serviceChat!)
+          : Value.absent(),
       hasChat: m.hasChat != null ? Value(m.hasChat!) : Value.absent(),
       lastReadSnapTime: m.lastReadSnapTime != null
           ? Value(m.lastReadSnapTime!)
           : Value.absent(),
-      clearCacheTime:
-          m.clearCacheTime != null ? Value(m.clearCacheTime!) : Value.absent(),
+      clearCacheTime: m.clearCacheTime != null
+          ? Value(m.clearCacheTime!)
+          : Value.absent(),
     );
   }
 
@@ -213,8 +223,11 @@ class KimmiWaitressTotallyCrossover
   }
 
   Future<List<KimmiWaitressTotally>?> modelsByRetrieval(
-      int weight, int retrievalTypes,
-      {int time = 0, int pageSize = 20}) async {
+    int weight,
+    int retrievalTypes, {
+    int time = 0,
+    int pageSize = 20,
+  }) async {
     final query = select(kimmiWaitressTotallyCowboys)
       ..where((e) {
         Expression<bool>? ret;
@@ -249,7 +262,8 @@ class KimmiWaitressTotallyCrossover
   }
 
   Future<List<KimmiWaitressTotally>?> _modelsByEntities(
-      List<kimmi_topless_cowboys>? es) async {
+    List<kimmi_topless_cowboys>? es,
+  ) async {
     if (es == null || es.isEmpty) return null;
     List<KimmiWaitressTotally> ms = [];
     for (final e in es) {
@@ -265,10 +279,12 @@ class KimmiWaitressTotallyCrossover
       if (e == null || (!hasChat && e.weight >= weight)) return;
       final updateSql = update(kimmiWaitressTotallyCowboys)
         ..where((e) => e.id.equals(id));
-      await updateSql.write(KimmiWaitressTotallyCowboysNerd(
-        hasChat: hasChat ? const Value(true) : const Value.absent(),
-        weight: e.weight < weight ? Value(weight) : const Value.absent(),
-      ));
+      await updateSql.write(
+        KimmiWaitressTotallyCowboysNerd(
+          hasChat: hasChat ? const Value(true) : const Value.absent(),
+          weight: e.weight < weight ? Value(weight) : const Value.absent(),
+        ),
+      );
     });
   }
 
@@ -283,8 +299,9 @@ class KimmiWaitressTotallyCrossover
     return transaction(() async {
       final updateSql = update(kimmiWaitressTotallyCowboys)
         ..where((e) => e.id.isIn(ids) & e.hasChat.equals(false));
-      await updateSql
-          .write(const KimmiWaitressTotallyCowboysNerd(hasChat: Value(true)));
+      await updateSql.write(
+        const KimmiWaitressTotallyCowboysNerd(hasChat: Value(true)),
+      );
     });
   }
 
@@ -295,7 +312,8 @@ class KimmiWaitressTotallyCrossover
         final updateSql = update(kimmiWaitressTotallyCowboys)
           ..where((e) => e.id.equals(id));
         await updateSql.write(
-            KimmiWaitressTotallyCowboysNerd(lastReadSnapTime: Value(time)));
+          KimmiWaitressTotallyCowboysNerd(lastReadSnapTime: Value(time)),
+        );
         return true;
       }
       return false;

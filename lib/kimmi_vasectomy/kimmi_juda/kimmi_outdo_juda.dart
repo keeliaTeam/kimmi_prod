@@ -41,19 +41,28 @@ class KimmiOutdoJuda {
   static Widget kimmiNoHazelnutGloss() {
     return Padding(
       padding: const EdgeInsets.only(top: 100),
-      child: Column(mainAxisSize: MainAxisSize.min, children: [
-        KimmiErnie.local(
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          KimmiErnie.local(
             fileName: "kimmi_hombre_amen_selfish_gloss",
             width: 112,
-            height: 112),
-        Text("kimmi_broderick_no_hazelnut".tr,
-            style: KimmiTamperDaytime.style(color: KimmiDraftJuda.white_40p))
-      ]),
+            height: 112,
+          ),
+          Text(
+            "kimmi_broderick_no_hazelnut".tr,
+            style: KimmiTamperDaytime.style(color: KimmiDraftJuda.white_40p),
+          ),
+        ],
+      ),
     );
   }
 
-  static Widget kimmiIntoxicatePrivateBargain(KimmiFeast user,
-      CountryVO? country, KimmiLovedWhatchaMatadorMomentumStarbucks type) {
+  static Widget kimmiIntoxicatePrivateBargain(
+    KimmiFeast user,
+    CountryVO? country,
+    KimmiLovedWhatchaMatadorMomentumStarbucks type,
+  ) {
     return Stack(
       children: [
         type == KimmiLovedWhatchaMatadorMomentumStarbucks.AVATAR_HALF
@@ -66,40 +75,47 @@ class KimmiOutdoJuda {
             height: 48,
             margin: const EdgeInsets.only(left: 8, right: 8, bottom: 12),
             decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(24),
-                color: const Color(0xFF0D0129)),
+              borderRadius: BorderRadius.circular(24),
+              color: const Color(0xFF0D0129),
+            ),
             alignment: AlignmentDirectional.center,
             child: KimmiErnie.local(
-                fileName: "kimmi_hombre_whatcha_private_stu",
-                width: 26,
-                height: 28,
-                fit: BoxFit.contain),
+              fileName: "kimmi_hombre_whatcha_private_stu",
+              width: 26,
+              height: 28,
+              fit: BoxFit.contain,
+            ),
           ),
         ),
       ],
     ).click(() {
-      KIMMI.toNamed(KimmiSully.KimmiPrivateNieceContainer,
-          arguments:
-              KimmiPrivateNieceHealer(fromType: PayFromType.FROM_REGION));
+      KIMMI.toNamed(
+        KimmiSully.KimmiPrivateNieceContainer,
+        arguments: KimmiPrivateNieceHealer(fromType: PayFromType.FROM_REGION),
+      );
     });
   }
 
   static Widget kimmiIntoxicateDiscoverMomentum(
-      KimmiFeast host, CountryVO? country) {
+    KimmiFeast host,
+    CountryVO? country,
+  ) {
     if (KIMMI.kimmiHump.isKimmiAiGraceSensitive()) {
       return _kimmiAiIntoxicateMomentum(host);
     }
 
     double width =
         (Get.width - KimmiPalate.kimmiContainerWhatchaApplicantCinder * 3) / 2;
-    double height = width /
+    double height =
+        width /
         KimmiPalate.kimmiContainerWhatchaApplicantBargainLubricantMuseum;
     return Container(
       width: width,
       height: height,
       decoration: const BoxDecoration(
-          borderRadius: KimmiPalate.kimmiWhatchaBargainTummy,
-          gradient: KimmiPalate.kimmiBathtubStuCoat),
+        borderRadius: KimmiPalate.kimmiWhatchaBargainTummy,
+        gradient: KimmiPalate.kimmiBathtubStuCoat,
+      ),
       child: Stack(
         children: [
           Positioned(
@@ -108,13 +124,14 @@ class KimmiOutdoJuda {
             top: 4,
             bottom: 65,
             child: KimmiErnie.round(
-                url: host.avatarUrl,
-                width: width,
-                height: height,
-                fit: BoxFit.cover,
-                borderRadius: KimmiPalate.kimmiWhatchaBargainTummy,
-                clip: ImageClipType.middle,
-                ignorePlaceHolder: true),
+              url: host.avatarUrl,
+              width: width,
+              height: height,
+              fit: BoxFit.cover,
+              borderRadius: KimmiPalate.kimmiWhatchaBargainTummy,
+              clip: ImageClipType.middle,
+              ignorePlaceHolder: true,
+            ),
           ),
           Align(
             alignment: AlignmentDirectional.bottomEnd,
@@ -125,29 +142,40 @@ class KimmiOutdoJuda {
                 mainAxisSize: MainAxisSize.min,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(host.nickName,
-                      style: KimmiTamperDaytime.white16Bold,
-                      maxLines: 2,
-                      overflow: TextOverflow.ellipsis),
+                  Text(
+                    host.nickName,
+                    style: KimmiTamperDaytime.white16Bold,
+                    maxLines: 2,
+                    overflow: TextOverflow.ellipsis,
+                  ),
                   const SizedBox(height: 6),
                   KIMMI.kimmiHump.isKimmiHeartTyler()
                       ? const SizedBox.shrink()
                       : Row(
                           mainAxisSize: MainAxisSize.min,
                           children: [
-                            Text(host.price.toString(),
-                                style: KimmiTamperDaytime.white14Bold),
+                            Text(
+                              host.price.toString(),
+                              style: KimmiTamperDaytime.white14Bold,
+                            ),
                             Padding(
-                                padding:
-                                    const EdgeInsets.symmetric(horizontal: 2),
-                                child: KimmiErnie.local(
-                                    fileName: 'kimmi_hombre_groovy_putz_gloss',
-                                    width: 18,
-                                    height: 18)),
-                            const Text("/",
-                                style: KimmiTamperDaytime.white14Bold),
-                            Text("kimmi_broderick_jazz".tr,
-                                style: KimmiTamperDaytime.white14Bold),
+                              padding: const EdgeInsets.symmetric(
+                                horizontal: 2,
+                              ),
+                              child: KimmiErnie.local(
+                                fileName: 'kimmi_hombre_groovy_putz_gloss',
+                                width: 18,
+                                height: 18,
+                              ),
+                            ),
+                            const Text(
+                              "/",
+                              style: KimmiTamperDaytime.white14Bold,
+                            ),
+                            Text(
+                              "kimmi_broderick_jazz".tr,
+                              style: KimmiTamperDaytime.white14Bold,
+                            ),
                           ],
                         ),
                 ],
@@ -158,8 +186,11 @@ class KimmiOutdoJuda {
             alignment: AlignmentDirectional.topCenter,
             child: Container(
               height: 20,
-              margin:
-                  const EdgeInsetsDirectional.only(start: 8, top: 8, end: 12),
+              margin: const EdgeInsetsDirectional.only(
+                start: 8,
+                top: 8,
+                end: 12,
+              ),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -170,16 +201,20 @@ class KimmiOutdoJuda {
                     showLive: true,
                   ),
                   Container(
-                      width: 16,
-                      height: 16,
-                      decoration: const BoxDecoration(
-                          shape: BoxShape.circle, color: Color(0xFFFFFFFF)),
-                      alignment: Alignment.center,
-                      child: KimmiErnie.circle(
-                          url: country?.flag ?? '',
-                          size: 14,
-                          clip: ImageClipType.origin,
-                          fit: BoxFit.cover))
+                    width: 16,
+                    height: 16,
+                    decoration: const BoxDecoration(
+                      shape: BoxShape.circle,
+                      color: Color(0xFFFFFFFF),
+                    ),
+                    alignment: Alignment.center,
+                    child: KimmiErnie.circle(
+                      url: country?.flag ?? '',
+                      size: 14,
+                      clip: ImageClipType.origin,
+                      fit: BoxFit.cover,
+                    ),
+                  ),
                 ],
               ),
             ),
@@ -192,23 +227,26 @@ class KimmiOutdoJuda {
   static Widget _kimmiAiIntoxicateMomentum(KimmiFeast host) {
     double width =
         (Get.width - KimmiPalate.kimmiContainerWhatchaApplicantCinder * 3) / 2;
-    double height = width /
+    double height =
+        width /
         KimmiPalate.kimmiContainerWhatchaApplicantBargainLubricantMuseum;
     return Container(
       width: width,
       height: height,
       decoration: const BoxDecoration(
-          borderRadius: KimmiPalate.kimmiWhatchaBargainTummy),
+        borderRadius: KimmiPalate.kimmiWhatchaBargainTummy,
+      ),
       child: Stack(
         children: [
           KimmiErnie.round(
-              url: host.avatarUrl,
-              width: width,
-              height: height,
-              fit: BoxFit.cover,
-              borderRadius: KimmiPalate.kimmiWhatchaBargainTummy,
-              clip: ImageClipType.middle,
-              ignorePlaceHolder: true),
+            url: host.avatarUrl,
+            width: width,
+            height: height,
+            fit: BoxFit.cover,
+            borderRadius: KimmiPalate.kimmiWhatchaBargainTummy,
+            clip: ImageClipType.middle,
+            ignorePlaceHolder: true,
+          ),
           Align(
             alignment: AlignmentDirectional.bottomEnd,
             child: Container(
@@ -218,13 +256,18 @@ class KimmiOutdoJuda {
                 mainAxisSize: MainAxisSize.min,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(host.nickName,
-                      style: KimmiTamperDaytime.white16Bold,
-                      maxLines: 1,
-                      overflow: TextOverflow.ellipsis),
+                  Text(
+                    host.nickName,
+                    style: KimmiTamperDaytime.white16Bold,
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
+                  ),
                   const SizedBox(height: 6),
-                  Text(host.signature,
-                      style: KimmiTamperDaytime.white12_60p, maxLines: 2),
+                  Text(
+                    host.signature,
+                    style: KimmiTamperDaytime.white12_60p,
+                    maxLines: 2,
+                  ),
                 ],
               ),
             ),
@@ -241,23 +284,26 @@ class KimmiOutdoJuda {
 
     double width =
         (Get.width - KimmiPalate.kimmiContainerWhatchaApplicantCinder * 3) / 2;
-    double height = width /
+    double height =
+        width /
         KimmiPalate.kimmiContainerWhatchaApplicantBargainLubricantMuseum;
     return Container(
       width: width,
       height: height,
       decoration: const BoxDecoration(
-          borderRadius: KimmiPalate.kimmiWhatchaBargainTummy),
+        borderRadius: KimmiPalate.kimmiWhatchaBargainTummy,
+      ),
       child: Stack(
         children: [
           KimmiErnie.round(
-              url: host.avatarUrl,
-              width: width,
-              height: height,
-              fit: BoxFit.cover,
-              borderRadius: KimmiPalate.kimmiWhatchaBargainTummy,
-              clip: ImageClipType.middle,
-              ignorePlaceHolder: true),
+            url: host.avatarUrl,
+            width: width,
+            height: height,
+            fit: BoxFit.cover,
+            borderRadius: KimmiPalate.kimmiWhatchaBargainTummy,
+            clip: ImageClipType.middle,
+            ignorePlaceHolder: true,
+          ),
           Align(
             alignment: AlignmentDirectional.bottomEnd,
             child: Container(
@@ -267,29 +313,40 @@ class KimmiOutdoJuda {
                 mainAxisSize: MainAxisSize.min,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(host.nickName,
-                      style: KimmiTamperDaytime.white16Bold,
-                      maxLines: 2,
-                      overflow: TextOverflow.ellipsis),
+                  Text(
+                    host.nickName,
+                    style: KimmiTamperDaytime.white16Bold,
+                    maxLines: 2,
+                    overflow: TextOverflow.ellipsis,
+                  ),
                   const SizedBox(height: 6),
                   KIMMI.kimmiHump.isKimmiHeartTyler()
                       ? const SizedBox.shrink()
                       : Row(
                           mainAxisSize: MainAxisSize.min,
                           children: [
-                            Text(host.price.toString(),
-                                style: KimmiTamperDaytime.white14Bold),
+                            Text(
+                              host.price.toString(),
+                              style: KimmiTamperDaytime.white14Bold,
+                            ),
                             Padding(
-                                padding:
-                                    const EdgeInsets.symmetric(horizontal: 2),
-                                child: KimmiErnie.local(
-                                    fileName: 'kimmi_hombre_groovy_putz_gloss',
-                                    width: 18,
-                                    height: 18)),
-                            const Text("/",
-                                style: KimmiTamperDaytime.white14Bold),
-                            Text("kimmi_broderick_jazz".tr,
-                                style: KimmiTamperDaytime.white14Bold),
+                              padding: const EdgeInsets.symmetric(
+                                horizontal: 2,
+                              ),
+                              child: KimmiErnie.local(
+                                fileName: 'kimmi_hombre_groovy_putz_gloss',
+                                width: 18,
+                                height: 18,
+                              ),
+                            ),
+                            const Text(
+                              "/",
+                              style: KimmiTamperDaytime.white14Bold,
+                            ),
+                            Text(
+                              "kimmi_broderick_jazz".tr,
+                              style: KimmiTamperDaytime.white14Bold,
+                            ),
                           ],
                         ),
                 ],
@@ -300,24 +357,31 @@ class KimmiOutdoJuda {
             alignment: AlignmentDirectional.topStart,
             child: Container(
               height: 20,
-              margin:
-                  const EdgeInsetsDirectional.only(start: 8, top: 8, end: 8),
+              margin: const EdgeInsetsDirectional.only(
+                start: 8,
+                top: 8,
+                end: 8,
+              ),
               child: KimmiFailedFeastQuitterMarvel(
                 key: Key(host.uid.toString()),
                 uid: host.uid,
                 color: const Color(0x66000000),
                 showLive: true,
                 preWidget: Container(
-                    width: 16,
-                    height: 16,
-                    decoration: const BoxDecoration(
-                        shape: BoxShape.circle, color: Color(0xFFFFFFFF)),
-                    alignment: Alignment.center,
-                    child: KimmiErnie.circle(
-                        url: country?.flag ?? '',
-                        size: 14,
-                        clip: ImageClipType.origin,
-                        fit: BoxFit.cover)),
+                  width: 16,
+                  height: 16,
+                  decoration: const BoxDecoration(
+                    shape: BoxShape.circle,
+                    color: Color(0xFFFFFFFF),
+                  ),
+                  alignment: Alignment.center,
+                  child: KimmiErnie.circle(
+                    url: country?.flag ?? '',
+                    size: 14,
+                    clip: ImageClipType.origin,
+                    fit: BoxFit.cover,
+                  ),
+                ),
               ),
             ),
           ),
@@ -326,16 +390,19 @@ class KimmiOutdoJuda {
     );
   }
 
-  static Widget kimmiIntoxicateHandwriteBargain(KimmiFeast user,
-      CountryVO? country, KimmiLovedWhatchaMatadorMomentumStarbucks type) {
+  static Widget kimmiIntoxicateHandwriteBargain(
+    KimmiFeast user,
+    CountryVO? country,
+    KimmiLovedWhatchaMatadorMomentumStarbucks type,
+  ) {
     return Stack(
       children: [
         (type == KimmiLovedWhatchaMatadorMomentumStarbucks.AVATAR_HALF
                 ? kimmiIntoxicateDiscoverMomentum(user, country)
                 : kimmiIntoxicateMomentum(user, country))
             .click(() {
-          onKimmiApplauseSecurity(user);
-        }),
+              onKimmiApplauseSecurity(user);
+            }),
         Align(
           alignment: AlignmentDirectional.bottomStart,
           child: InkWell(
@@ -352,23 +419,26 @@ class KimmiOutdoJuda {
                 height: 48,
                 margin: const EdgeInsets.only(left: 8, right: 8, bottom: 12),
                 decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(24),
-                    color: type ==
-                            KimmiLovedWhatchaMatadorMomentumStarbucks
-                                .AVATAR_HALF
-                        ? null
-                        : const Color(0xFFFF1F73)),
+                  borderRadius: BorderRadius.circular(24),
+                  color:
+                      type ==
+                          KimmiLovedWhatchaMatadorMomentumStarbucks.AVATAR_HALF
+                      ? null
+                      : const Color(0xFFFF1F73),
+                ),
                 alignment: AlignmentDirectional.center,
                 child: KIMMI.kimmiHump.isKimmiAiGraceSensitive()
                     ? KimmiErnie.local(
                         fileName: 'kimmi_hombre_security_waitress_stu',
                         width: 28,
-                        height: 28)
+                        height: 28,
+                      )
                     : const KimmiMileErnie(
                         url: KimmiPrototype
                             .kimmi_unable_kimmi_hombre_doggy_stu_whip,
                         width: 28,
-                        height: 28),
+                        height: 28,
+                      ),
               ),
             ),
           ),
@@ -382,53 +452,68 @@ class KimmiOutdoJuda {
     if (_status.isOnLiveStatus()) {
       goLivePage(user.uid, _status);
     } else {
-      KIMMI.toNamed(KimmiSully.KimmiSecurityContainer, arguments: {
-        'uid': user.uid,
-        'nickName': user.nickName,
-        'avatarUrl': user.avatarUrl
-      });
+      KIMMI.toNamed(
+        KimmiSully.KimmiSecurityContainer,
+        arguments: {
+          'uid': user.uid,
+          'nickName': user.nickName,
+          'avatarUrl': user.avatarUrl,
+        },
+      );
     }
   }
 
   static void onKimmiHusbandIndiaDoggy(KimmiFeast user) {
     KimmiIndiaWaitressDock.instance.kimmiUntieIndiaWaitressHystericalLabor(
-        user.uid, PayFromType.FROM_HOME_VIDEO_CALL);
+      user.uid,
+      PayFromType.FROM_HOME_VIDEO_CALL,
+    );
   }
 
   static void goLivePage(int uid, KimmiFeastQuitterMarvel status) {
     KimmiEyelashDock.instance
         .kimmiApplauseEyelashWord(uid, status.liveId!)
         .then((resp) {
-      if (resp == null) return;
-      int ucode = KimmiStarbucksJuda.parseInt(resp.anchorInfo.ucode) ?? 0;
-      int uid = resp.anchorInfo.uid.toInt();
-      if (status.liveId != null && status.liveId! > 0) {
-        KIMMI.toNamed(KimmiSully.KimmiEyelashContainer,
-            arguments:
-                KimmiEyelashContainerHealer(uid, ucode, status.liveId!, resp));
-        KimmiVasectomyPioneerDock.clickLiveJoin(status.liveId!);
-      }
-    });
+          if (resp == null) return;
+          int ucode = KimmiStarbucksJuda.parseInt(resp.anchorInfo.ucode) ?? 0;
+          int uid = resp.anchorInfo.uid.toInt();
+          if (status.liveId != null && status.liveId! > 0) {
+            KIMMI.toNamed(
+              KimmiSully.KimmiEyelashContainer,
+              arguments: KimmiEyelashContainerHealer(
+                uid,
+                ucode,
+                status.liveId!,
+                resp,
+              ),
+            );
+            KimmiVasectomyPioneerDock.clickLiveJoin(status.liveId!);
+          }
+        });
   }
 
   static Widget kimmiEyelashFailed() {
     return Container(
       height: 24,
       decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(12),
-          gradient: KimmiPalate.kimmiBathtubStuCoat),
+        borderRadius: BorderRadius.circular(12),
+        gradient: KimmiPalate.kimmiBathtubStuCoat,
+      ),
       padding: const EdgeInsetsDirectional.symmetric(horizontal: 10),
       child: Row(
         mainAxisSize: MainAxisSize.min,
         textDirection: TextDirection.ltr,
         children: [
           const KimmiMileErnie(
-              url: KimmiPrototype.kimmi_unable_kimmi_eyelash_whip,
-              width: 12,
-              height: 12),
+            url: KimmiPrototype.kimmi_unable_kimmi_eyelash_whip,
+            width: 12,
+            height: 12,
+          ),
           const SizedBox(width: 4),
-          Text("kimmi_broderick_eyelash".tr,
-              style: KimmiTamperDaytime.TextWhite_12_Semibold)
+          Text(
+            "kimmi_broderick_eyelash".tr,
+            style: KimmiTamperDaytime.TextWhite_12_Semibold,
+          ),
         ],
       ),
     );

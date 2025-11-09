@@ -50,36 +50,44 @@ class AuthReq extends $pb.GeneratedMessage {
     return $result;
   }
   AuthReq._() : super();
-  factory AuthReq.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory AuthReq.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+  factory AuthReq.fromBuffer(
+    $core.List<$core.int> i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromBuffer(i, r);
+  factory AuthReq.fromJson(
+    $core.String i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'AuthReq',
-      package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockMuse()),
-      createEmptyInstance: create)
-    ..aOS(1, _omitFieldNames ? '' : 'session')
-    ..aOS(2, _omitFieldNames ? '' : 'version')
-    ..aOS(3, _omitFieldNames ? '' : 'deviceId')
-    ..aOS(4, _omitFieldNames ? '' : 'model')
-    ..aOS(5, _omitFieldNames ? '' : 'os')
-    ..aOS(6, _omitFieldNames ? '' : 'timestamp')
-    ..aOS(7, _omitFieldNames ? '' : 'sig')
-    ..a<$core.int>(8, _omitFieldNames ? '' : 'pVer', $pb.PbFieldType.O3)
-    ..aOS(9, _omitFieldNames ? '' : 'lang')
-    ..aOS(10, _omitFieldNames ? '' : 'packageName')
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i =
+      $pb.BuilderInfo(
+          _omitMessageNames ? '' : 'AuthReq',
+          package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockMuse()),
+          createEmptyInstance: create,
+        )
+        ..aOS(1, _omitFieldNames ? '' : 'session')
+        ..aOS(2, _omitFieldNames ? '' : 'version')
+        ..aOS(3, _omitFieldNames ? '' : 'deviceId')
+        ..aOS(4, _omitFieldNames ? '' : 'model')
+        ..aOS(5, _omitFieldNames ? '' : 'os')
+        ..aOS(6, _omitFieldNames ? '' : 'timestamp')
+        ..aOS(7, _omitFieldNames ? '' : 'sig')
+        ..a<$core.int>(8, _omitFieldNames ? '' : 'pVer', $pb.PbFieldType.O3)
+        ..aOS(9, _omitFieldNames ? '' : 'lang')
+        ..aOS(10, _omitFieldNames ? '' : 'packageName')
+        ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+    'Will be removed in next major version',
+  )
   AuthReq clone() => AuthReq()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+    'Will be removed in next major version',
+  )
   AuthReq copyWith(void Function(AuthReq) updates) =>
       super.copyWith((message) => updates(message as AuthReq)) as AuthReq;
 
@@ -216,10 +224,7 @@ class AuthReq extends $pb.GeneratedMessage {
 }
 
 class SessionInvalidNotify extends $pb.GeneratedMessage {
-  factory SessionInvalidNotify({
-    $core.int? code,
-    $core.String? msg,
-  }) {
+  factory SessionInvalidNotify({$core.int? code, $core.String? msg}) {
     final $result = create();
     if (code != null) {
       $result.code = code;
@@ -230,29 +235,37 @@ class SessionInvalidNotify extends $pb.GeneratedMessage {
     return $result;
   }
   SessionInvalidNotify._() : super();
-  factory SessionInvalidNotify.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory SessionInvalidNotify.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+  factory SessionInvalidNotify.fromBuffer(
+    $core.List<$core.int> i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromBuffer(i, r);
+  factory SessionInvalidNotify.fromJson(
+    $core.String i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'SessionInvalidNotify',
-      package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockMuse()),
-      createEmptyInstance: create)
-    ..a<$core.int>(1, _omitFieldNames ? '' : 'code', $pb.PbFieldType.OU3)
-    ..aOS(2, _omitFieldNames ? '' : 'msg')
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i =
+      $pb.BuilderInfo(
+          _omitMessageNames ? '' : 'SessionInvalidNotify',
+          package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockMuse()),
+          createEmptyInstance: create,
+        )
+        ..a<$core.int>(1, _omitFieldNames ? '' : 'code', $pb.PbFieldType.OU3)
+        ..aOS(2, _omitFieldNames ? '' : 'msg')
+        ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+    'Will be removed in next major version',
+  )
   SessionInvalidNotify clone() =>
       SessionInvalidNotify()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+    'Will be removed in next major version',
+  )
   SessionInvalidNotify copyWith(void Function(SessionInvalidNotify) updates) =>
       super.copyWith((message) => updates(message as SessionInvalidNotify))
           as SessionInvalidNotify;
@@ -337,35 +350,43 @@ class GuideAuthReq extends $pb.GeneratedMessage {
     return $result;
   }
   GuideAuthReq._() : super();
-  factory GuideAuthReq.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory GuideAuthReq.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+  factory GuideAuthReq.fromBuffer(
+    $core.List<$core.int> i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromBuffer(i, r);
+  factory GuideAuthReq.fromJson(
+    $core.String i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'GuideAuthReq',
-      package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockMuse()),
-      createEmptyInstance: create)
-    ..aOS(1, _omitFieldNames ? '' : 'uuid')
-    ..aOS(2, _omitFieldNames ? '' : 'version')
-    ..aOS(3, _omitFieldNames ? '' : 'deviceId')
-    ..aOS(4, _omitFieldNames ? '' : 'model')
-    ..aOS(5, _omitFieldNames ? '' : 'os')
-    ..aOS(6, _omitFieldNames ? '' : 'timestamp')
-    ..aOS(7, _omitFieldNames ? '' : 'sig')
-    ..a<$core.int>(8, _omitFieldNames ? '' : 'pVer', $pb.PbFieldType.O3)
-    ..aOS(9, _omitFieldNames ? '' : 'lang')
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i =
+      $pb.BuilderInfo(
+          _omitMessageNames ? '' : 'GuideAuthReq',
+          package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockMuse()),
+          createEmptyInstance: create,
+        )
+        ..aOS(1, _omitFieldNames ? '' : 'uuid')
+        ..aOS(2, _omitFieldNames ? '' : 'version')
+        ..aOS(3, _omitFieldNames ? '' : 'deviceId')
+        ..aOS(4, _omitFieldNames ? '' : 'model')
+        ..aOS(5, _omitFieldNames ? '' : 'os')
+        ..aOS(6, _omitFieldNames ? '' : 'timestamp')
+        ..aOS(7, _omitFieldNames ? '' : 'sig')
+        ..a<$core.int>(8, _omitFieldNames ? '' : 'pVer', $pb.PbFieldType.O3)
+        ..aOS(9, _omitFieldNames ? '' : 'lang')
+        ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+    'Will be removed in next major version',
+  )
   GuideAuthReq clone() => GuideAuthReq()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+    'Will be removed in next major version',
+  )
   GuideAuthReq copyWith(void Function(GuideAuthReq) updates) =>
       super.copyWith((message) => updates(message as GuideAuthReq))
           as GuideAuthReq;
@@ -518,31 +539,43 @@ class AuthRsp extends $pb.GeneratedMessage {
     return $result;
   }
   AuthRsp._() : super();
-  factory AuthRsp.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory AuthRsp.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+  factory AuthRsp.fromBuffer(
+    $core.List<$core.int> i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromBuffer(i, r);
+  factory AuthRsp.fromJson(
+    $core.String i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'AuthRsp',
-      package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockMuse()),
-      createEmptyInstance: create)
-    ..a<$core.int>(1, _omitFieldNames ? '' : 'code', $pb.PbFieldType.OU3)
-    ..aOS(2, _omitFieldNames ? '' : 'msg')
-    ..a<$core.int>(3, _omitFieldNames ? '' : 'needUpdate', $pb.PbFieldType.O3)
-    ..aOS(4, _omitFieldNames ? '' : 'updateIntro')
-    ..aOS(5, _omitFieldNames ? '' : 'appUrl')
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i =
+      $pb.BuilderInfo(
+          _omitMessageNames ? '' : 'AuthRsp',
+          package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockMuse()),
+          createEmptyInstance: create,
+        )
+        ..a<$core.int>(1, _omitFieldNames ? '' : 'code', $pb.PbFieldType.OU3)
+        ..aOS(2, _omitFieldNames ? '' : 'msg')
+        ..a<$core.int>(
+          3,
+          _omitFieldNames ? '' : 'needUpdate',
+          $pb.PbFieldType.O3,
+        )
+        ..aOS(4, _omitFieldNames ? '' : 'updateIntro')
+        ..aOS(5, _omitFieldNames ? '' : 'appUrl')
+        ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+    'Will be removed in next major version',
+  )
   AuthRsp clone() => AuthRsp()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+    'Will be removed in next major version',
+  )
   AuthRsp copyWith(void Function(AuthRsp) updates) =>
       super.copyWith((message) => updates(message as AuthRsp)) as AuthRsp;
 
@@ -619,5 +652,6 @@ class AuthRsp extends $pb.GeneratedMessage {
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames =
-    $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames = $core.bool.fromEnvironment(
+  'protobuf.omit_message_names',
+);

@@ -11,7 +11,8 @@ import '../kimmi_curvy/kimmi_vasectomy_pioneer_dock.dart';
 
 class KimmiIOJuda {
   static Future<double> getTotalSizeOfFilesInDir(
-      final FileSystemEntity file) async {
+    final FileSystemEntity file,
+  ) async {
     if (file is File && file.existsSync()) {
       int length = await file.length();
       return double.parse(length.toString());
@@ -36,8 +37,10 @@ class KimmiIOJuda {
 
   static Future<Null> delDir(FileSystemEntity file) async {
     if (file is Directory && file.existsSync()) {
-      final List<FileSystemEntity> children =
-          file.listSync(recursive: true, followLinks: true);
+      final List<FileSystemEntity> children = file.listSync(
+        recursive: true,
+        followLinks: true,
+      );
       for (final FileSystemEntity child in children) {
         await delDir(child);
       }

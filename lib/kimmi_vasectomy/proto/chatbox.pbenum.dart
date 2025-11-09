@@ -24,16 +24,16 @@ class CreateChatboxReq_SourceType extends $pb.ProtobufEnum {
 
   static const $core.List<CreateChatboxReq_SourceType> values =
       <CreateChatboxReq_SourceType>[
-    FROM_UNKNOWN,
-    FROM_PARTY,
-    FROM_CHATBOX,
-    FROM_SEARCH,
-    FROM_QRCODE,
-    FROM_SHARE,
-    FROM_CLUB,
-    FROM_RECOMMEND,
-    FROM_BUDDY,
-  ];
+        FROM_UNKNOWN,
+        FROM_PARTY,
+        FROM_CHATBOX,
+        FROM_SEARCH,
+        FROM_QRCODE,
+        FROM_SHARE,
+        FROM_CLUB,
+        FROM_RECOMMEND,
+        FROM_BUDDY,
+      ];
 
   static final $core.Map<$core.int, CreateChatboxReq_SourceType> _byValue =
       $pb.ProtobufEnum.initByValue(values);
@@ -41,29 +41,33 @@ class CreateChatboxReq_SourceType extends $pb.ProtobufEnum {
       _byValue[value];
 
   const CreateChatboxReq_SourceType._($core.int v, $core.String n)
-      : super(v, n);
+    : super(v, n);
 }
 
 class ReportChatboxReq_Type extends $pb.ProtobufEnum {
-  static const ReportChatboxReq_Type AD =
-      ReportChatboxReq_Type._(0, _omitEnumNames ? '' : 'AD');
-  static const ReportChatboxReq_Type CHEAT =
-      ReportChatboxReq_Type._(1, _omitEnumNames ? '' : 'CHEAT');
-  static const ReportChatboxReq_Type PORN =
-      ReportChatboxReq_Type._(2, _omitEnumNames ? '' : 'PORN');
-  static const ReportChatboxReq_Type ILLEGAL =
-      ReportChatboxReq_Type._(3, _omitEnumNames ? '' : 'ILLEGAL');
-  static const ReportChatboxReq_Type OTHER =
-      ReportChatboxReq_Type._(4, _omitEnumNames ? '' : 'OTHER');
+  static const ReportChatboxReq_Type AD = ReportChatboxReq_Type._(
+    0,
+    _omitEnumNames ? '' : 'AD',
+  );
+  static const ReportChatboxReq_Type CHEAT = ReportChatboxReq_Type._(
+    1,
+    _omitEnumNames ? '' : 'CHEAT',
+  );
+  static const ReportChatboxReq_Type PORN = ReportChatboxReq_Type._(
+    2,
+    _omitEnumNames ? '' : 'PORN',
+  );
+  static const ReportChatboxReq_Type ILLEGAL = ReportChatboxReq_Type._(
+    3,
+    _omitEnumNames ? '' : 'ILLEGAL',
+  );
+  static const ReportChatboxReq_Type OTHER = ReportChatboxReq_Type._(
+    4,
+    _omitEnumNames ? '' : 'OTHER',
+  );
 
   static const $core.List<ReportChatboxReq_Type> values =
-      <ReportChatboxReq_Type>[
-    AD,
-    CHEAT,
-    PORN,
-    ILLEGAL,
-    OTHER,
-  ];
+      <ReportChatboxReq_Type>[AD, CHEAT, PORN, ILLEGAL, OTHER];
 
   static final $core.Map<$core.int, ReportChatboxReq_Type> _byValue =
       $pb.ProtobufEnum.initByValue(values);

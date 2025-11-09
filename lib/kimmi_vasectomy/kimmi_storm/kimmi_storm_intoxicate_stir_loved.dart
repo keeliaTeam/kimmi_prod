@@ -16,5 +16,6 @@ class KimmiStormIntoxicateStirLoved {
         ..args = json["args"] == null
             ? null
             : KimmiStormStirLovedDecrease.fromJson(
-                json["args"] as Map<String, dynamic>);
+                json["args"] as Map<String, dynamic>,
+              );
 }

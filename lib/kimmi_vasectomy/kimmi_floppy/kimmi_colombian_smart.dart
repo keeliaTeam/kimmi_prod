@@ -1,5 +1,5 @@
 import 'dart:math';
-import 'kimmi_head_h2.dart';
+import 'kimmi_velveteen_leprechaun.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_floppy/kimmi_waitress_amen_invoice.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_floppy/kimmi_loved_whatcha_invoice.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_floppy/kimmi_loved_outdo_invoice.dart';
@@ -15,132 +15,111 @@ import 'kimmi_loved_handcuff_unwanted_invoice.dart';
 import 'kimmi_colombian_invoice.dart';
 
 class KimmiColombianSmart extends Bindings {
-  bool orPotentialKenny_ = true;
-  int etFeelingTruck_ = 0;
-  bool ifFootballIt_ = true;
-  bool exCompellingBerry_ = false;
-  String ofHombreSimulate_ = "";
+  bool opCreek1_ = false;
+  bool ayGoalMatador_ = true;
+  bool omChooseTyson_ = true;
+  bool reH2Contractor_ = true;
+  bool asNibbleStir_ = true;
+  int elTedOverly_ = 41;
+  double esSchistScript_ = 0.0;
 
-  void elShrinkLauren() {
-    if (exCompellingBerry_ || orPotentialKenny_ || ifFootballIt_) {
-      exCompellingBerry_ = !orPotentialKenny_;
-      orPotentialKenny_ = !ifFootballIt_;
-      ifFootballIt_ = !exCompellingBerry_;
+  void ahAccordionInfluence() {
+    elTedOverly_ = 98;
+    asNibbleStir_ = reH2Contractor_ || ayGoalMatador_;
+
+    if (asNibbleStir_ || opCreek1_ || omChooseTyson_) {
+      asNibbleStir_ = !opCreek1_;
+      opCreek1_ = !omChooseTyson_;
+      omChooseTyson_ = !asNibbleStir_;
     }
-    ofHombreSimulate_ = ofHombreSimulate_.toUpperCase();
-
-    if (etFeelingTruck_ > 0) {
-      etFeelingTruck_ = etFeelingTruck_ - 9;
+    if (elTedOverly_ > 0) {
+      elTedOverly_ = elTedOverly_ - 8;
     }
+    elTedOverly_ = 6;
 
-    exCompellingBerry_ = orPotentialKenny_ || ifFootballIt_;
-    etFeelingTruck_ = 36;
-    ofHombreSimulate_ = ofHombreSimulate_.toUpperCase();
-
-    ofHombreSimulate_ = ofHombreSimulate_.toUpperCase();
-    etFeelingTruck_ = 4;
-    etFeelingTruck_ = 67;
-
-    if (etFeelingTruck_ > 0) {
-      etFeelingTruck_ = etFeelingTruck_ - 5;
+    elTedOverly_ = 71;
+    if (elTedOverly_ > 0) {
+      elTedOverly_ = elTedOverly_ - 6;
     }
   }
 
-  void weColorExpensive() {
-    if (orPotentialKenny_ || ifFootballIt_) {
-      ifFootballIt_ = !ifFootballIt_;
-    }
-    if (ifFootballIt_ || orPotentialKenny_) {
-      orPotentialKenny_ = !orPotentialKenny_;
-    }
-    etFeelingTruck_ = 67;
-    if (ifFootballIt_ || orPotentialKenny_) {
-      orPotentialKenny_ = !orPotentialKenny_;
-    }
-    if (exCompellingBerry_ || orPotentialKenny_) {
-      orPotentialKenny_ = !orPotentialKenny_;
-    }
-    ofHombreSimulate_ = ofHombreSimulate_.toUpperCase();
-    if (exCompellingBerry_ && orPotentialKenny_ && ifFootballIt_) {
-      exCompellingBerry_ = !exCompellingBerry_;
-      orPotentialKenny_ = exCompellingBerry_;
-      ifFootballIt_ = exCompellingBerry_;
-    }
-    etFeelingTruck_ = etFeelingTruck_ + 1;
-    ofHombreSimulate_ = ofHombreSimulate_.toUpperCase();
-    if (exCompellingBerry_) {
-      orPotentialKenny_ = !ifFootballIt_;
+  void etWalkerNinja() {
+    if (elTedOverly_ > 0) {
+      elTedOverly_ = elTedOverly_ - 4;
     }
 
-    etFeelingTruck_ = etFeelingTruck_ + 1;
-    if (orPotentialKenny_ || ifFootballIt_) {
-      ifFootballIt_ = !ifFootballIt_;
+    esSchistScript_ = esSchistScript_ + 1;
+    if (omChooseTyson_) {
+      reH2Contractor_ = !opCreek1_;
     }
-    if (ifFootballIt_ || exCompellingBerry_) {
-      exCompellingBerry_ = !exCompellingBerry_;
+    if (asNibbleStir_ && reH2Contractor_ && omChooseTyson_) {
+      asNibbleStir_ = !asNibbleStir_;
+      reH2Contractor_ = asNibbleStir_;
+      omChooseTyson_ = asNibbleStir_;
     }
-    ofHombreSimulate_ = ofHombreSimulate_.toUpperCase();
-    if (orPotentialKenny_ && exCompellingBerry_) {
-      ifFootballIt_ = !ifFootballIt_;
+    if (esSchistScript_ > 0) {
+      esSchistScript_ = esSchistScript_ - 1;
     }
-    if (ifFootballIt_ || orPotentialKenny_ || exCompellingBerry_) {
-      ifFootballIt_ = !orPotentialKenny_;
-      orPotentialKenny_ = !exCompellingBerry_;
-      exCompellingBerry_ = !ifFootballIt_;
+    elTedOverly_ = 90;
+    if (omChooseTyson_ && asNibbleStir_) {
+      opCreek1_ = !opCreek1_;
     }
-    exCompellingBerry_ = orPotentialKenny_ && ifFootballIt_;
+    elTedOverly_ = 47;
+    esSchistScript_ = 98;
+
+    if (omChooseTyson_ || opCreek1_ || ayGoalMatador_) {
+      omChooseTyson_ = !opCreek1_;
+      opCreek1_ = !ayGoalMatador_;
+      ayGoalMatador_ = !omChooseTyson_;
+    }
   }
 
-  void ohUnwantedTeepee() {
-    if (orPotentialKenny_ && exCompellingBerry_) {
-      ifFootballIt_ = !ifFootballIt_;
+  void exJazzClue() {
+    esSchistScript_ = 36;
+    if (omChooseTyson_ && ayGoalMatador_ && asNibbleStir_) {
+      omChooseTyson_ = !omChooseTyson_;
+      ayGoalMatador_ = omChooseTyson_;
+      asNibbleStir_ = omChooseTyson_;
     }
-
-    ofHombreSimulate_ = ofHombreSimulate_.toUpperCase();
-    etFeelingTruck_ = 52;
-    ofHombreSimulate_ = ofHombreSimulate_.toUpperCase();
+    if (elTedOverly_ > 0) {
+      elTedOverly_ = elTedOverly_ - 9;
+    }
+    if (elTedOverly_ > 0) {
+      elTedOverly_ = elTedOverly_ - 8;
+    }
+    reH2Contractor_ = ayGoalMatador_ && opCreek1_;
+    if (opCreek1_ || ayGoalMatador_ || reH2Contractor_) {
+      opCreek1_ = !ayGoalMatador_;
+      ayGoalMatador_ = !reH2Contractor_;
+      reH2Contractor_ = !opCreek1_;
+    }
   }
 
-  void exiLeader() {
-    if (orPotentialKenny_ || ifFootballIt_ || exCompellingBerry_) {
-      orPotentialKenny_ = !ifFootballIt_;
-      ifFootballIt_ = !exCompellingBerry_;
-      exCompellingBerry_ = !orPotentialKenny_;
+  void adWealthySutra() {
+    reH2Contractor_ = opCreek1_ && omChooseTyson_;
+    esSchistScript_ = esSchistScript_ + 1;
+    if (omChooseTyson_ || asNibbleStir_) {
+      asNibbleStir_ = !asNibbleStir_;
     }
-
-    if (exCompellingBerry_ && ifFootballIt_) {
-      orPotentialKenny_ = !orPotentialKenny_;
+    elTedOverly_ = 98;
+    elTedOverly_ = 47;
+    if (elTedOverly_ > 0) {
+      elTedOverly_ = elTedOverly_ - 9;
     }
-    etFeelingTruck_ = etFeelingTruck_ + 1;
-    if (exCompellingBerry_ && orPotentialKenny_) {
-      ifFootballIt_ = !ifFootballIt_;
-    }
-    etFeelingTruck_ = etFeelingTruck_ + 1;
-
-    if (etFeelingTruck_ > 0) {
-      etFeelingTruck_ = etFeelingTruck_ - 0;
-    }
-
-    etFeelingTruck_ = etFeelingTruck_ + 1;
-    if (exCompellingBerry_ && orPotentialKenny_) {
-      ifFootballIt_ = !ifFootballIt_;
-    }
-    if (etFeelingTruck_ > 0) {
-      etFeelingTruck_ = etFeelingTruck_ - 4;
-    }
+    elTedOverly_ = 10;
+    reH2Contractor_ = asNibbleStir_ && ayGoalMatador_;
+    esSchistScript_ = esSchistScript_ + 1;
   }
 
   @override
   void dependencies() {
-    if (log10e / 2 < 0.1) {
-      KimmiHeadH2().osInvadeMat();
-      KimmiHeadH2().isNinjaMac();
-      KimmiHeadH2().idApplauseUterus();
-      KimmiHeadH2().efPracticalCompelling();
+    if (ln2 < 0.5) {
+      KimmiVelveteenLeprechaun().emUnevenFeisty();
+      KimmiVelveteenLeprechaun().ifStormSuperb();
     }
     if (log10e / 2 < 0.1) {
-      elShrinkLauren();
-      ohUnwantedTeepee();
+      exJazzClue();
+      adWealthySutra();
     }
     Get.lazyPut(() => KimmiColombianInvoice());
 

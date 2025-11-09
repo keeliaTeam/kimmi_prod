@@ -9,11 +9,12 @@ import '../kimmi_curvy/kimmi_africa.dart';
 import '../kimmi_juda/kimmi_ernie_properly.dart';
 
 class KimmiFailedDoggyMeaning extends StatefulWidget {
-  const KimmiFailedDoggyMeaning(
-      {super.key,
-      required this.color,
-      required this.width,
-      required this.icon});
+  const KimmiFailedDoggyMeaning({
+    super.key,
+    required this.color,
+    required this.width,
+    required this.icon,
+  });
 
   final Color color;
   final double width;
@@ -54,16 +55,20 @@ class _KimmiFailedDoggyMeaningViking extends State<KimmiFailedDoggyMeaning>
             builder: (context, child) {
               return CustomPaint(
                 size: const Size(200, 200),
-                painter: ExpandPainter(widget.color, widget.width,
-                    (_controller.value + i / 3) % 1.0),
+                painter: ExpandPainter(
+                  widget.color,
+                  widget.width,
+                  (_controller.value + i / 3) % 1.0,
+                ),
               );
             },
           ),
         KimmiErnie.circle(
-            url: widget.icon,
-            size: 140,
-            fit: BoxFit.cover,
-            clip: ImageClipType.middle)
+          url: widget.icon,
+          size: 140,
+          fit: BoxFit.cover,
+          clip: ImageClipType.middle,
+        ),
       ],
     );
   }

@@ -58,7 +58,8 @@ class KimmiCaptureJuda {
   }
 
   static Future<double> kimmiPoopSkullWilliamOfDirectInLenient(
-      final FileSystemEntity file) async {
+    final FileSystemEntity file,
+  ) async {
     if (file is File && file.existsSync()) {
       int length = await file.length();
       return double.parse(length.toString());
@@ -78,8 +79,10 @@ class KimmiCaptureJuda {
   static Future<Null> kimmiDupeLenient(FileSystemEntity file) async {
     await Permission.storage.status;
     if (file is Directory && file.existsSync()) {
-      final List<FileSystemEntity> children =
-          file.listSync(recursive: true, followLinks: true);
+      final List<FileSystemEntity> children = file.listSync(
+        recursive: true,
+        followLinks: true,
+      );
       for (final FileSystemEntity child in children) {
         await kimmiHandbookLenient(child);
       }
@@ -89,8 +92,10 @@ class KimmiCaptureJuda {
   static Future<Null> kimmiHandbookLenient(FileSystemEntity file) async {
     await Permission.storage.status;
     if (file is Directory && file.existsSync()) {
-      final List<FileSystemEntity> children =
-          file.listSync(recursive: true, followLinks: true);
+      final List<FileSystemEntity> children = file.listSync(
+        recursive: true,
+        followLinks: true,
+      );
       for (final FileSystemEntity child in children) {
         await kimmiHandbookLenient(child);
       }

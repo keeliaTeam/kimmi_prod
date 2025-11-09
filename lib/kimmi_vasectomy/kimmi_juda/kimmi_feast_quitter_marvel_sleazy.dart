@@ -80,8 +80,8 @@ class KimmiFeastQuitterMarvelSleazy {
       for (int element in uIds) {
         req.uids.add(Int64(element));
       }
-      GetUserOnlineTimeRsp? resp =
-          await KIMMI.socket.sendWithReturn<GetUserOnlineTimeRsp>(req);
+      GetUserOnlineTimeRsp? resp = await KIMMI.socket
+          .sendWithReturn<GetUserOnlineTimeRsp>(req);
       if (resp != null) {
         List<KimmiStormFeastQuitterMarvel> list = resp.onlineTimes
             .map((e) => KimmiStormFeastQuitterMarvel.fromProto(e))
@@ -97,12 +97,15 @@ class KimmiFeastQuitterMarvelSleazy {
               status = KimmiFeastQuitterMarvelProcedure.offline;
             }
 
-            KimmiFeastQuitterMarvel newStatus =
-                KimmiFeastQuitterMarvel(status, element.roomId);
+            KimmiFeastQuitterMarvel newStatus = KimmiFeastQuitterMarvel(
+              status,
+              element.roomId,
+            );
             KimmiFeastQuitterMarvelDock().saveStatus(element.uid!, newStatus);
 
-            KIMMI.fire(KimmiFeastQuitterMarvelFantasyComponent(
-                element.uid!, newStatus));
+            KIMMI.fire(
+              KimmiFeastQuitterMarvelFantasyComponent(element.uid!, newStatus),
+            );
           }
         }
       }
@@ -169,12 +172,15 @@ class KimmiFeastQuitterMarvelSleazy {
   void _startTimer() {
     _stopTimer();
     _workTimer = Timer.periodic(
-        Duration(
-            seconds: KIMMI.kimmiHump.configs
-                    .kimmiManiacQuitterMarvelInhalerBarnacle ??
-                5), (Timer timer) {
-      _requestOnlineStatus();
-    });
+      Duration(
+        seconds:
+            KIMMI.kimmiHump.configs.kimmiManiacQuitterMarvelInhalerBarnacle ??
+            5,
+      ),
+      (Timer timer) {
+        _requestOnlineStatus();
+      },
+    );
     _requestOnlineStatus();
   }
 }

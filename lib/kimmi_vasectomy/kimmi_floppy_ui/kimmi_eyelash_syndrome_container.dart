@@ -1,5 +1,5 @@
 import 'dart:math';
-import 'kimmi_deceit_mention.dart';
+import 'kimmi_purse_stevens.dart';
 import 'dart:ui';
 import 'package:kimmi/kimmi_vasectomy/kimmi_floppy/kimmi_eyelash_syndrome_healer.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_tonight/kimmi_stu_tamper.dart';
@@ -49,24 +49,31 @@ class KimmiEyelashSyndromeContainerViking
             children: [
               leaveStatus == LiveStatus.END
                   ? KimmiErnie.circle(
-                      url: userInfo.avatarUrl, size: 120, fit: BoxFit.cover)
+                      url: userInfo.avatarUrl,
+                      size: 120,
+                      fit: BoxFit.cover,
+                    )
                   : Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         KimmiErnie.circle(
-                            url: userInfo.avatarUrl,
-                            size: 120,
-                            fit: BoxFit.cover),
+                          url: userInfo.avatarUrl,
+                          size: 120,
+                          fit: BoxFit.cover,
+                        ),
                         const SizedBox(width: 16),
                         KimmiErnie.local(
-                            fileName: "kimmi_hombre_eyelash_letter_gloss",
-                            width: 120,
-                            height: 120)
+                          fileName: "kimmi_hombre_eyelash_letter_gloss",
+                          width: 120,
+                          height: 120,
+                        ),
                       ],
                     ),
               12.hGap,
-              Text(userInfo.nickName,
-                  style: KimmiTamperDaytime.TextWhite_24_Bold),
+              Text(
+                userInfo.nickName,
+                style: KimmiTamperDaytime.TextWhite_24_Bold,
+              ),
               8.hGap,
               leaveStatus == LiveStatus.CALL_END
                   ? Container(
@@ -74,48 +81,58 @@ class KimmiEyelashSyndromeContainerViking
                       child: Text(
                         'kimmi_broderick_eyelash_husband_scrap_waitress'.tr,
                         style: const TextStyle(
-                            fontSize: 28,
-                            color: Colors.orange,
-                            fontWeight: FontWeight.bold),
+                          fontSize: 28,
+                          color: Colors.orange,
+                          fontWeight: FontWeight.bold,
+                        ),
                       ),
                     )
                   : Container(),
               24.hGap,
               Visibility(
-                  visible: leaveStatus == LiveStatus.END,
-                  child: Container(
-                    margin: const EdgeInsets.only(bottom: 16),
-                    child: KimmiAsthmaticByDouble(
-                        width: 200,
-                        onTap: _kimmiToDoggy,
-                        child: _kimmiDoggyJohnny()),
-                  )),
+                visible: leaveStatus == LiveStatus.END,
+                child: Container(
+                  margin: const EdgeInsets.only(bottom: 16),
+                  child: KimmiAsthmaticByDouble(
+                    width: 200,
+                    onTap: _kimmiToDoggy,
+                    child: _kimmiDoggyJohnny(),
+                  ),
+                ),
+              ),
               KimmiAsthmaticByDouble(
-                  width: 200,
-                  onTap: _kimmiToBasket,
-                  colorFrom: KimmiDraftJuda.black_40p,
-                  colorTo: KimmiDraftJuda.black_40p,
-                  child: _kimmiBasketJohnny()),
+                width: 200,
+                onTap: _kimmiToBasket,
+                colorFrom: KimmiDraftJuda.black_40p,
+                colorTo: KimmiDraftJuda.black_40p,
+                child: _kimmiBasketJohnny(),
+              ),
             ],
           ),
+
           Positioned(
             top: 40,
             right: 16,
             child: KimmiErnieAsthmatic(
-                url: "kimmi_hombre_eyelash_maker_gloss",
-                width: 32,
-                height: 32,
-                splashColor: Colors.transparent,
-                onTap: Get.back),
+              url: "kimmi_hombre_eyelash_maker_gloss",
+              width: 32,
+              height: 32,
+              splashColor: Colors.transparent,
+              onTap: Get.back,
+            ),
           ),
+
           Positioned(
-              top: 40,
-              left: 24,
-              right: 68,
-              child: leaveStatus == LiveStatus.CALL_END
-                  ? Container()
-                  : Text("kimmi_broderick_eyelash_syndrome".tr,
-                      style: KimmiTamperDaytime.white28Bold))
+            top: 40,
+            left: 24,
+            right: 68,
+            child: leaveStatus == LiveStatus.CALL_END
+                ? Container()
+                : Text(
+                    "kimmi_broderick_eyelash_syndrome".tr,
+                    style: KimmiTamperDaytime.white28Bold,
+                  ),
+          ),
         ],
       ),
     );
@@ -123,22 +140,30 @@ class KimmiEyelashSyndromeContainerViking
 
   void _kimmiToDoggy() {
     KimmiIndiaWaitressDock.instance.kimmiUntieIndiaWaitressHystericalLabor(
-        userInfo.uid.toInt(), PayFromType.FROM_LIVE_END_CALL);
+      userInfo.uid.toInt(),
+      PayFromType.FROM_LIVE_END_CALL,
+    );
   }
 
   void _kimmiToBasket() {
     KimmiWaitressContainerHusbandUp.open(
-        uid: userInfo.uid.toInt(), isOffPage: true);
+      uid: userInfo.uid.toInt(),
+      isOffPage: true,
+    );
   }
 
   Widget _kimmiVanityJohnny() {
     return _kimmiBathtubJohnny(
-        "kimmi_hombre_eyelash_vanity_gloss", "kimmi_broderick_bet".tr);
+      "kimmi_hombre_eyelash_vanity_gloss",
+      "kimmi_broderick_bet".tr,
+    );
   }
 
   Widget _kimmiBasketJohnny() {
-    return _kimmiBathtubJohnny("kimmi_hombre_eyelash_syndrome_script_gloss",
-        "kimmi_broderick_loved_basket".tr);
+    return _kimmiBathtubJohnny(
+      "kimmi_hombre_eyelash_syndrome_script_gloss",
+      "kimmi_broderick_loved_basket".tr,
+    );
   }
 
   Widget _kimmiDoggyJohnny() {
@@ -146,34 +171,43 @@ class KimmiEyelashSyndromeContainerViking
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         KimmiErnie.local(
-            fileName: "kimmi_hombre_eyelash_syndrome_doggy_gloss",
-            width: 44,
-            height: 44),
+          fileName: "kimmi_hombre_eyelash_syndrome_doggy_gloss",
+          width: 44,
+          height: 44,
+        ),
         5.wGap,
         Column(
           mainAxisSize: MainAxisSize.min,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text('kimmi_broderick_doggy_me'.tr,
-                style: KimmiTamperDaytime.white14Bold),
+            Text(
+              'kimmi_broderick_doggy_me'.tr,
+              style: KimmiTamperDaytime.white14Bold,
+            ),
             Row(
               mainAxisSize: MainAxisSize.min,
               children: [
-                Text("${userInfo.chatPrice}",
-                    style: KimmiTamperDaytime.white12),
+                Text(
+                  "${userInfo.chatPrice}",
+                  style: KimmiTamperDaytime.white12,
+                ),
                 Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 2),
-                    child: KimmiErnie.local(
-                        fileName: 'kimmi_hombre_groovy_putz_gloss',
-                        width: 14,
-                        height: 14)),
+                  padding: const EdgeInsets.symmetric(horizontal: 2),
+                  child: KimmiErnie.local(
+                    fileName: 'kimmi_hombre_groovy_putz_gloss',
+                    width: 14,
+                    height: 14,
+                  ),
+                ),
                 const Text("/", style: KimmiTamperDaytime.white12),
-                Text("kimmi_broderick_jazz".tr,
-                    style: KimmiTamperDaytime.white12),
+                Text(
+                  "kimmi_broderick_jazz".tr,
+                  style: KimmiTamperDaytime.white12,
+                ),
               ],
-            )
+            ),
           ],
-        )
+        ),
       ],
     );
   }
@@ -184,10 +218,7 @@ class KimmiEyelashSyndromeContainerViking
       children: [
         KimmiErnie.local(fileName: fileName, width: 24, height: 24),
         5.wGap,
-        Text(
-          title,
-          style: KimmiTamperDaytime.TextWhite_16_Semibold,
-        )
+        Text(title, style: KimmiTamperDaytime.TextWhite_16_Semibold),
       ],
     );
   }
@@ -212,9 +243,7 @@ class BackgroundBlur extends StatelessWidget {
         ),
         BackdropFilter(
           filter: ImageFilter.blur(sigmaX: 10, sigmaY: 10),
-          child: Container(
-            color: Colors.black.withOpacity(0.5),
-          ),
+          child: Container(color: Colors.black.withOpacity(0.5)),
         ),
       ],
     );

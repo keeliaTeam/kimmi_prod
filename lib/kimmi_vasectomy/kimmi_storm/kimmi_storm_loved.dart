@@ -19,11 +19,6 @@ class KimmiStormLoved {
   }
 
   Map<String, dynamic> toJson() {
-    return {
-      "id": id,
-      "icon": icon,
-      "name": name,
-      "url": url,
-    };
+    return {"id": id, "icon": icon, "name": name, "url": url};
   }
 }

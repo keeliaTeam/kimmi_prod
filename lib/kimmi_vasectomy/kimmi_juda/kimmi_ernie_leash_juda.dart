@@ -15,8 +15,8 @@ import 'package:wechat_assets_picker/wechat_assets_picker.dart';
 import 'kimmi_stretch_juda.dart';
 import 'kimmi_starbucks_juda.dart';
 
-typedef ImagePickerCallBack = void Function(
-    MediaPickerType mediaType, List<dynamic> mediaList);
+typedef ImagePickerCallBack =
+    void Function(MediaPickerType mediaType, List<dynamic> mediaList);
 
 class ThumbnailResult {
   final Image? image;
@@ -47,27 +47,30 @@ class KimmiErnieLeashJuda {
       requestType = RequestType.video;
     }
     var textDelegate = assetPickerTextDelegateFromLocale(Get.deviceLocale);
-    AssetPicker.pickAssets(context,
-            pickerConfig: AssetPickerConfig(
-                maxAssets: maxCount,
-                requestType: requestType,
-                textDelegate: textDelegate == const AssetPickerTextDelegate()
-                    ? const EnglishAssetPickerTextDelegate()
-                    : textDelegate))
+    AssetPicker.pickAssets(
+          context,
+          pickerConfig: AssetPickerConfig(
+            maxAssets: maxCount,
+            requestType: requestType,
+            textDelegate: textDelegate == const AssetPickerTextDelegate()
+                ? const EnglishAssetPickerTextDelegate()
+                : textDelegate,
+          ),
+        )
         .then((result) {
-      KimmiStarbucksJuda.nullSafe<List<AssetEntity>>(result,
-          notNullBlock: (fileResult) async {
-        List<dynamic> selectedURLs = [];
-        for (var element in fileResult) {
-          var obj = await kimmiDeludeLifelongVirus(element);
-          selectedURLs.add(obj);
-        }
-        callback.call(
-          type,
-          selectedURLs,
-        );
-      });
-    }).onError((error, stackTrace) {});
+          KimmiStarbucksJuda.nullSafe<List<AssetEntity>>(
+            result,
+            notNullBlock: (fileResult) async {
+              List<dynamic> selectedURLs = [];
+              for (var element in fileResult) {
+                var obj = await kimmiDeludeLifelongVirus(element);
+                selectedURLs.add(obj);
+              }
+              callback.call(type, selectedURLs);
+            },
+          );
+        })
+        .onError((error, stackTrace) {});
   }
 
   static dynamic kimmiDeludeLifelongVirus(AssetEntity obj) async {
@@ -95,8 +98,10 @@ class KimmiErnieLeashJuda {
     return null;
   }
 
-  static Future<Uint8List> kimmiPoopJuneHazelnut(
-      {String? imagePath, String? videoPath}) async {
+  static Future<Uint8List> kimmiPoopJuneHazelnut({
+    String? imagePath,
+    String? videoPath,
+  }) async {
     Uint8List? bytes;
     final Completer<Uint8List> completer = Completer();
     if (imagePath != null) {
@@ -112,16 +117,23 @@ class KimmiErnieLeashJuda {
     return completer.future;
   }
 
-  static Future<Image> kimmiPoopJune(
-      {String? imagePath, String? videoPath, BoxFit fit = BoxFit.cover}) {
-    return kimmiPoopJuneHazelnut(imagePath: imagePath, videoPath: videoPath)
-        .then((data) {
+  static Future<Image> kimmiPoopJune({
+    String? imagePath,
+    String? videoPath,
+    BoxFit fit = BoxFit.cover,
+  }) {
+    return kimmiPoopJuneHazelnut(
+      imagePath: imagePath,
+      videoPath: videoPath,
+    ).then((data) {
       return Image.memory(data, fit: fit);
     });
   }
 
-  static Future<ThumbnailResult> kimmiPoopJuneFlowerTux(
-      {String? imagePath, String? videoPath}) async {
+  static Future<ThumbnailResult> kimmiPoopJuneFlowerTux({
+    String? imagePath,
+    String? videoPath,
+  }) async {
     Uint8List? bytes;
     final Completer<ThumbnailResult> completer = Completer();
     if (imagePath != null) {
@@ -139,14 +151,18 @@ class KimmiErnieLeashJuda {
       final _image = Image.memory(bytes);
       _image.image
           .resolve(const ImageConfiguration())
-          .addListener(ImageStreamListener((ImageInfo info, bool _) {
-        completer.complete(ThumbnailResult(
-          image: _image,
-          dataSize: _imageDataSize,
-          height: info.image.height,
-          width: info.image.width,
-        ));
-      }));
+          .addListener(
+            ImageStreamListener((ImageInfo info, bool _) {
+              completer.complete(
+                ThumbnailResult(
+                  image: _image,
+                  dataSize: _imageDataSize,
+                  height: info.image.height,
+                  width: info.image.width,
+                ),
+              );
+            }),
+          );
     }
 
     return completer.future;

@@ -13,7 +13,9 @@ class KimmiWaitressStretchByeHazelnutPheromone
     extends MediaVideoViewerDataSource {
   static showViewer(BuildContext context, KimmiExpensive snap) {
     KimmiStretchByeWealthy.show(
-        context, KimmiWaitressStretchByeHazelnutPheromone(snap));
+      context,
+      KimmiWaitressStretchByeHazelnutPheromone(snap),
+    );
   }
 
   static const int ITEM_LOAD_SIZE = 20;
@@ -47,9 +49,17 @@ class KimmiWaitressStretchByeHazelnutPheromone
     _loadingAfter = true;
     Future.wait([
       KIMMI.kimmiDb.snapDao.modelsByTypeBeforeTimeForChatBox(
-          snap.chatBoxId, snap.type!, snap.createTime, ITEM_LOAD_SIZE),
+        snap.chatBoxId,
+        snap.type!,
+        snap.createTime,
+        ITEM_LOAD_SIZE,
+      ),
       KIMMI.kimmiDb.snapDao.modelsByTypeAfterTimeForChatBox(
-          snap.chatBoxId, snap.type!, snap.createTime, ITEM_LOAD_SIZE),
+        snap.chatBoxId,
+        snap.type!,
+        snap.createTime,
+        ITEM_LOAD_SIZE,
+      ),
     ]).then((results) {
       bool changed = false;
       if (!KimmiStarbucksJuda.isEmptyList(results[0])) {
@@ -73,15 +83,18 @@ class KimmiWaitressStretchByeHazelnutPheromone
       _loadingBefore = true;
       KIMMI.kimmiDb.snapDao
           .modelsByTypeBeforeTimeForChatBox(
-              snap.chatBoxId, snap.type!, snap.createTime)
+            snap.chatBoxId,
+            snap.type!,
+            snap.createTime,
+          )
           .then((result) {
-        if (!KimmiStarbucksJuda.isEmptyList(result)) {
-          _items.insertAll(0, result!);
-          _hasBefore = result.length >= ITEM_LOAD_SIZE;
-          _updateData();
-        }
-        _loadingBefore = false;
-      });
+            if (!KimmiStarbucksJuda.isEmptyList(result)) {
+              _items.insertAll(0, result!);
+              _hasBefore = result.length >= ITEM_LOAD_SIZE;
+              _updateData();
+            }
+            _loadingBefore = false;
+          });
     }
   }
 
@@ -90,15 +103,18 @@ class KimmiWaitressStretchByeHazelnutPheromone
       _loadingAfter = true;
       KIMMI.kimmiDb.snapDao
           .modelsByTypeAfterTimeForChatBox(
-              snap.chatBoxId, snap.type!, snap.createTime)
+            snap.chatBoxId,
+            snap.type!,
+            snap.createTime,
+          )
           .then((result) {
-        if (!KimmiStarbucksJuda.isEmptyList(result)) {
-          _items.addAll(result!);
-          _hasAfter = result.length >= ITEM_LOAD_SIZE;
-          _updateData();
-        }
-        _loadingAfter = false;
-      });
+            if (!KimmiStarbucksJuda.isEmptyList(result)) {
+              _items.addAll(result!);
+              _hasAfter = result.length >= ITEM_LOAD_SIZE;
+              _updateData();
+            }
+            _loadingAfter = false;
+          });
     }
   }
 
@@ -123,11 +139,15 @@ class KimmiWaitressStretchByeHazelnutPheromone
       if (item.image!.width! < KIMMI.kimmiHump.imageSize.large &&
           item.image!.height! < KIMMI.kimmiHump.imageSize.large) {
         return CachedNetworkImageProvider(
-            KimmiErnieProperly.kimmiErnieURLMuch(item.image!.imgUrl!));
+          KimmiErnieProperly.kimmiErnieURLMuch(item.image!.imgUrl!),
+        );
       } else {
         return CachedNetworkImageProvider(
-            KimmiErnieProperly.kimmiErnieURLHystericalStarfish(
-                item.image!.imgUrl!, KIMMI.kimmiHump.imageSize.large));
+          KimmiErnieProperly.kimmiErnieURLHystericalStarfish(
+            item.image!.imgUrl!,
+            KIMMI.kimmiHump.imageSize.large,
+          ),
+        );
       }
     }
   }

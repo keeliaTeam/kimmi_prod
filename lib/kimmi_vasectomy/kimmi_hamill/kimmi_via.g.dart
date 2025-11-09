@@ -3,7 +3,7 @@ part of 'kimmi_via.dart';
 class KimmiViaDecode extends _KimmiViaDecode {
   const KimmiViaDecode({required super.args});
 
-  static const kType = 'visibility';
+  static const kType = 'kimmi_via';
 
   @override
   String get type => kType;
@@ -11,10 +11,7 @@ class KimmiViaDecode extends _KimmiViaDecode {
   static KimmiViaDecode fromDynamic(
     dynamic map, {
     JsonWidgetRegistry? registry,
-  }) =>
-      KimmiViaDecode(
-        args: map,
-      );
+  }) => KimmiViaDecode(args: map);
 
   @override
   KimmiViaDecodeStorm createModel({
@@ -36,18 +33,12 @@ class KimmiViaDecode extends _KimmiViaDecode {
     required JsonWidgetData data,
     Key? key,
   }) {
-    final model = createModel(
-      childBuilder: childBuilder,
-      data: data,
-    );
+    final model = createModel(childBuilder: childBuilder, data: data);
 
     return KimmiVia(
       key: key,
       visible: model.visible,
-      child: model.child.build(
-        childBuilder: childBuilder,
-        context: context,
-      ),
+      child: model.child.build(childBuilder: childBuilder, context: context),
     );
   }
 }
@@ -59,28 +50,20 @@ class JsonKimmiVia extends JsonWidgetData {
     required this.visible,
     required this.child,
   }) : super(
-          jsonWidgetArgs: KimmiViaDecodeStorm.fromDynamic(
-            {
-              'visible': visible,
-              'child': child,
-              ...args,
-            },
-            args: args,
-            registry: registry,
-          ),
-          jsonWidgetBuilder: () => KimmiViaDecode(
-            args: KimmiViaDecodeStorm.fromDynamic(
-              {
-                'visible': visible,
-                'child': child,
-                ...args,
-              },
-              args: args,
-              registry: registry,
-            ),
-          ),
-          jsonWidgetType: KimmiViaDecode.kType,
-        );
+         jsonWidgetArgs: KimmiViaDecodeStorm.fromDynamic(
+           {'visible': visible, 'child': child, ...args},
+           args: args,
+           registry: registry,
+         ),
+         jsonWidgetBuilder: () => KimmiViaDecode(
+           args: KimmiViaDecodeStorm.fromDynamic(
+             {'visible': visible, 'child': child, ...args},
+             args: args,
+             registry: registry,
+           ),
+         ),
+         jsonWidgetType: KimmiViaDecode.kType,
+       );
 
   final bool visible;
 
@@ -103,11 +86,7 @@ class KimmiViaDecodeStorm extends JsonWidgetBuilderModel {
     Map<String, dynamic> args = const {},
     JsonWidgetRegistry? registry,
   }) {
-    final result = maybeFromDynamic(
-      map,
-      args: args,
-      registry: registry,
-    );
+    final result = maybeFromDynamic(map, args: args, registry: registry);
 
     if (result == null) {
       throw Exception(
@@ -127,10 +106,7 @@ class KimmiViaDecodeStorm extends JsonWidgetBuilderModel {
 
     if (map != null) {
       if (map is String) {
-        map = yaon.parse(
-          map,
-          normalize: true,
-        );
+        map = yaon.parse(map, normalize: true);
       }
 
       if (map is KimmiViaDecodeStorm) {
@@ -140,10 +116,7 @@ class KimmiViaDecodeStorm extends JsonWidgetBuilderModel {
         map = registry.processArgs(map, <String>{}).value;
         result = KimmiViaDecodeStorm(
           args,
-          visible: JsonClass.parseBool(
-            map['visible'],
-            whenNull: false,
-          ),
+          visible: JsonClass.parseBool(map['visible'], whenNull: false),
           child: () {
             dynamic parsed = JsonWidgetData.fromDynamic(
               map['child'],
@@ -152,7 +125,8 @@ class KimmiViaDecodeStorm extends JsonWidgetBuilderModel {
 
             if (parsed == null) {
               throw Exception(
-                  'Null value encountered for required parameter: [child].');
+                'Null value encountered for required parameter: [child].',
+              );
             }
             return parsed;
           }(),
@@ -187,5 +161,6 @@ class KimmiViaMobster {
       'visible': SchemaHelper.boolSchema,
       'child': SchemaHelper.objectSchema(JsonWidgetDataSchema.id),
     },
+    'required': ['visible', 'child'],
   };
 }

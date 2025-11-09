@@ -9,10 +9,10 @@ class KimmiStormStreetcarTamperScholar {
   KimmiStormStreetcarTamperScholar();
 
   factory KimmiStormStreetcarTamperScholar.fromJson(
-          Map<String, dynamic> json) =>
-      KimmiStormStreetcarTamperScholar()
-        ..text = KimmiKeyboardJuda.strDef(json, "text", "")
-        ..img = KimmiKeyboardJuda.strDef(json, "img", "")
-        ..url = KimmiKeyboardJuda.strDef(json, "url", "")
-        ..tips = KimmiKeyboardJuda.str(json, "tips");
+    Map<String, dynamic> json,
+  ) => KimmiStormStreetcarTamperScholar()
+    ..text = KimmiKeyboardJuda.strDef(json, "text", "")
+    ..img = KimmiKeyboardJuda.strDef(json, "img", "")
+    ..url = KimmiKeyboardJuda.strDef(json, "url", "")
+    ..tips = KimmiKeyboardJuda.str(json, "tips");
 }

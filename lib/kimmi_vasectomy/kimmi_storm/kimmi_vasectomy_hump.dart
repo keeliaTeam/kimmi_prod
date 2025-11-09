@@ -12,6 +12,7 @@ import 'package:flutter/cupertino.dart';
 
 import '../kimmi_curvy/kimmi_vasectomy_pioneer_dock.dart';
 import 'kimmi_vasectomy_hump_bathtub.dart';
+import 'kimmi_storm_mention.dart';
 import 'kimmi_storm_loved.dart';
 
 class KimmiVasectomyHump implements KimmiStorm {
@@ -39,6 +40,8 @@ class KimmiVasectomyHump implements KimmiStorm {
   List<KimmiStormConcerned>? languages;
 
   List<KimmiStormTempt>? interests;
+
+  KimmiStormMention? push;
 
   KimmiVasectomyHumpBathtub? common;
 
@@ -69,6 +72,7 @@ class KimmiVasectomyHump implements KimmiStorm {
     _initAgoraConfig();
     _initLanguageConfig();
     _initInterestConfig();
+    _initPushConfig();
     _initCommon();
 
     dynamic items = _orig["kimmi_maniac_private_sarcasm"];
@@ -133,7 +137,10 @@ class KimmiVasectomyHump implements KimmiStorm {
           _orig["kimmi_maniac_quitter_marvel_inhaler_barnacle"] as String?;
       if (onlineStatusRequestDuration != null) {
         kimmiManiacQuitterMarvelInhalerBarnacle = KimmiKeyboardJuda.intDef(
-            json.decode(onlineStatusRequestDuration), "seconds", 5);
+          json.decode(onlineStatusRequestDuration),
+          "seconds",
+          5,
+        );
       }
     } catch (e, stack) {
       KimmiVasectomyPioneerDock.kimmiPajamaCurious(10014, e, stack);
@@ -178,6 +185,17 @@ class KimmiVasectomyHump implements KimmiStorm {
       }
     } catch (e, stack) {
       KimmiVasectomyPioneerDock.kimmiPajamaCurious(66006, e, stack);
+    }
+  }
+
+  void _initPushConfig() {
+    try {
+      String? cfg = _orig["kimmi_maniac_mention"] as String?;
+      if (cfg != null) {
+        push = KimmiStormMention.fromJson(json.decode(cfg));
+      }
+    } catch (e, stack) {
+      KimmiVasectomyPioneerDock.kimmiPajamaCurious(66008, e, stack);
     }
   }
 

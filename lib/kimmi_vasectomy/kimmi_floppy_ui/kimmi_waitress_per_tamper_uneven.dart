@@ -13,7 +13,7 @@ class KimmiWaitressPerTamperUneven extends StatelessWidget {
   final KimmiExpensive snap;
 
   const KimmiWaitressPerTamperUneven({Key? key, required this.snap})
-      : super(key: key);
+    : super(key: key);
 
   static void kimmiSacredFellowUnicycleTamper(KimmiExpensive snap) {
     snap.richTexts ??= KimmiUnicycleTamperJuda.getRichText(
@@ -29,10 +29,12 @@ class KimmiWaitressPerTamperUneven extends StatelessWidget {
     var decoration = snap.isMine
         ? BoxDecoration(
             borderRadius: KimmiWaitressJuda.kimmiWaitressPerTummyBySpine(),
-            gradient: KimmiWaitressJuda.kimmiWaitressPerSunCoatBySpine())
+            gradient: KimmiWaitressJuda.kimmiWaitressPerSunCoatBySpine(),
+          )
         : BoxDecoration(
             borderRadius: KimmiWaitressJuda.kimmiWaitressPerTummyByJoshua(),
-            color: KimmiWaitressJuda.kimmiWaitressPerSunYummyByJoshua());
+            color: KimmiWaitressJuda.kimmiWaitressPerSunYummyByJoshua(),
+          );
     return GestureDetector(
       behavior: HitTestBehavior.opaque,
       onTap: () {},
@@ -43,15 +45,12 @@ class KimmiWaitressPerTamperUneven extends StatelessWidget {
   Widget _kimmiUnicycleFailed(decoration, context) {
     return Container(
       constraints: BoxConstraints(
-          minHeight: 48.0, maxWidth: MediaQuery.of(context).size.width - 93),
-      padding: const EdgeInsets.symmetric(
-        horizontal: 16.0,
-        vertical: 14.0,
+        minHeight: 48.0,
+        maxWidth: MediaQuery.of(context).size.width - 93,
       ),
+      padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 14.0),
       decoration: decoration,
-      child: Text.rich(
-        TextSpan(children: snap.richTexts),
-      ),
+      child: Text.rich(TextSpan(children: snap.richTexts)),
     );
   }
 }

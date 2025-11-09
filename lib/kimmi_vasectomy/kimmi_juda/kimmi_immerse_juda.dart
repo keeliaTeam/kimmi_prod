@@ -32,10 +32,11 @@ class KimmiImmerseJuda {
     return hasPermission ?? false;
   }
 
-  KimmiImmerseJuda(
-      {required this.cachePath,
-      this.maxInterval = 90,
-      this.timeInterval = 0.05}) {
+  KimmiImmerseJuda({
+    required this.cachePath,
+    this.maxInterval = 90,
+    this.timeInterval = 0.05,
+  }) {
     _initFileName();
   }
 
@@ -52,8 +53,10 @@ class KimmiImmerseJuda {
   }
 
   _initRecorder() {
-    recorderModule =
-        AnotherAudioRecorder(_storePath, audioFormat: AudioFormat.AAC);
+    recorderModule = AnotherAudioRecorder(
+      _storePath,
+      audioFormat: AudioFormat.AAC,
+    );
     _count = 0;
   }
 
@@ -106,13 +109,15 @@ class KimmiImmerseJuda {
   _startTimer() async {
     _endTimer();
     _timer = Timer.periodic(
-        Duration(milliseconds: (timeInterval * 1000).toInt()), (Timer timer) {
-      _count++;
-      _callBack();
-      if (_count * timeInterval >= maxInterval) {
-        stopRecorder();
-      }
-    });
+      Duration(milliseconds: (timeInterval * 1000).toInt()),
+      (Timer timer) {
+        _count++;
+        _callBack();
+        if (_count * timeInterval >= maxInterval) {
+          stopRecorder();
+        }
+      },
+    );
   }
 
   _callBack() async {

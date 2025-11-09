@@ -61,20 +61,20 @@ class KimmiWaitressFeast {
   }
 
   Map<String, dynamic> toJson() => <String, dynamic>{
-        "uid": uid,
-        "nick_name": nickName,
-        "avatar_url": avatarUrl,
-        "countryId": countryId,
-        "price": price,
-        "signature": signature,
-        "followed": _followed,
-        "followed_count": followedCount,
-        "gender": gender,
-        "age": age,
-        "tag_ids": tagIds,
-        "languages": languages,
-        "country": country?.toJson(),
-      };
+    "uid": uid,
+    "nick_name": nickName,
+    "avatar_url": avatarUrl,
+    "countryId": countryId,
+    "price": price,
+    "signature": signature,
+    "followed": _followed,
+    "followed_count": followedCount,
+    "gender": gender,
+    "age": age,
+    "tag_ids": tagIds,
+    "languages": languages,
+    "country": country?.toJson(),
+  };
 
   KimmiFeast toKimmiFeast() {
     return KimmiFeast()

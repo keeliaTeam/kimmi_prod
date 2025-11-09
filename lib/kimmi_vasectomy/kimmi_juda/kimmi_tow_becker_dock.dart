@@ -23,7 +23,7 @@ class KimmiTowBeckerDock {
   bool _isRegister = false;
   StreamSubscription<KimmiTowFairlyComponent>? _paySuccessSubscription;
   StreamSubscription<KimmiTowLaborWhizBallComponent>?
-      _payCheckNetworkErrorSubscription;
+  _payCheckNetworkErrorSubscription;
 
   kimmiOutsource() {
     _isRegister = true;
@@ -33,15 +33,15 @@ class KimmiTowBeckerDock {
       }
     });
 
-    _payCheckNetworkErrorSubscription =
-        KIMMI.listen<KimmiTowLaborWhizBallComponent>((event) {
-      if (event.orderId == _currentOrder?.order_id) {
-        if (!_currentOrderHasShowDialog) {
-          _currentOrderHasShowDialog = true;
-          _kimmiNoticeEarNiece();
-        }
-      }
-    });
+    _payCheckNetworkErrorSubscription = KIMMI
+        .listen<KimmiTowLaborWhizBallComponent>((event) {
+          if (event.orderId == _currentOrder?.order_id) {
+            if (!_currentOrderHasShowDialog) {
+              _currentOrderHasShowDialog = true;
+              _kimmiNoticeEarNiece();
+            }
+          }
+        });
   }
 
   void _kimmiNoticeEarNiece() {
@@ -78,10 +78,14 @@ class KimmiTowBeckerDock {
     _payCheckNetworkErrorSubscription?.cancel();
   }
 
-  kimmiGoToTowBecker(
-      {required KimmiDeportFlaunt option, required int fromType}) {
-    KimmiVasectomyPioneerDock.kimmiLoinsNeural(option.id.toString(),
-        priceStr: option.trackIapPriceStr);
+  kimmiGoToTowBecker({
+    required KimmiDeportFlaunt option,
+    required int fromType,
+  }) {
+    KimmiVasectomyPioneerDock.kimmiLoinsNeural(
+      option.id.toString(),
+      priceStr: option.trackIapPriceStr,
+    );
     if (KIMMI.kimmiHump.isKimmiIOSGraceSensitive()) {
       _currentOrderHasShowDialog = false;
       _currentOrder = null;
@@ -90,16 +94,22 @@ class KimmiTowBeckerDock {
       }
       KimmiDeportSophomore paymentMethod = KimmiDeportSophomore();
       paymentMethod.pay_mode = KimmiTowUnclogStarbucks.applePay.value;
-      KimmiTowDock.instance.kimmiGoTow(option, fromType, paymentMethod,
-          onCreateOrderSuccess: (KimmiTowCarry? order) {
-        if (order != null) {
-          _currentOrder = order;
-          _currentOrderHasShowDialog = false;
-        }
-      });
+      KimmiTowDock.instance.kimmiGoTow(
+        option,
+        fromType,
+        paymentMethod,
+        onCreateOrderSuccess: (KimmiTowCarry? order) {
+          if (order != null) {
+            _currentOrder = order;
+            _currentOrderHasShowDialog = false;
+          }
+        },
+      );
     } else {
-      KIMMI.toNamed(KimmiSully.KimmiTowBeckerContainer,
-          arguments: KimmiTowBeckerHealer(option, fromType));
+      KIMMI.toNamed(
+        KimmiSully.KimmiTowBeckerContainer,
+        arguments: KimmiTowBeckerHealer(option, fromType),
+      );
     }
   }
 }

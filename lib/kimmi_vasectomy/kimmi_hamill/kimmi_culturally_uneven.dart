@@ -41,9 +41,7 @@ class KimmiCulturallyUneven extends StatefulWidget {
         context: context,
         barrierColor: KimmiDraftJuda.black_60p,
         builder: (context) {
-          return const KimmiCulturallyUneven(
-            isFake: true,
-          );
+          return const KimmiCulturallyUneven(isFake: true);
         },
       );
     } else if (seconds >= 50) {
@@ -68,9 +66,7 @@ class KimmiCulturallyUneven extends StatefulWidget {
         context: context,
         barrierColor: KimmiDraftJuda.black_60p,
         builder: (context) {
-          return const KimmiCulturallyUneven(
-            isFake: false,
-          );
+          return const KimmiCulturallyUneven(isFake: false);
         },
       );
     }
@@ -93,8 +89,9 @@ class _KimmiCulturallyUnevenViking extends State<KimmiCulturallyUneven> {
       child: Container(
         width: Get.width - 56,
         decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(24),
-            color: KimmiDraftJuda.white),
+          borderRadius: BorderRadius.circular(24),
+          color: KimmiDraftJuda.white,
+        ),
         padding: const EdgeInsets.all(20),
         child: Column(
           mainAxisSize: MainAxisSize.min,
@@ -103,38 +100,48 @@ class _KimmiCulturallyUnevenViking extends State<KimmiCulturallyUneven> {
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
                 GestureDetector(
-                    onTap: () {
-                      Get.back();
-                    },
-                    child: KimmiErnie.local(
-                        fileName: 'kimmi_hombre_culturally_maker_comprehend',
-                        width: 16,
-                        height: 16))
+                  onTap: () {
+                    Get.back();
+                  },
+                  child: KimmiErnie.local(
+                    fileName: 'kimmi_hombre_culturally_maker_comprehend',
+                    width: 16,
+                    height: 16,
+                  ),
+                ),
               ],
             ),
             const SizedBox(height: 20),
             ClipRRect(
-                borderRadius: BorderRadius.circular(24),
-                child:
-                    KimmiErnie.local(fileName: 'logo', width: 84, height: 84)),
+              borderRadius: BorderRadius.circular(24),
+              child: KimmiErnie.local(fileName: 'logo', width: 84, height: 84),
+            ),
             const SizedBox(height: 20),
             Text(
-                "kimmi_broderick_culturally_devastate"
-                    .tr
-                    .replaceFirst("%s", KimmiPalate.kimmiVasectomyNinja),
-                style: KimmiTamperDaytime.style(
-                    color: const Color(0xFF884DFF),
-                    fontSize: 24,
-                    fontWeight: FontWeight.bold)),
+              "kimmi_broderick_culturally_devastate".tr.replaceFirst(
+                "%s",
+                KimmiPalate.kimmiVasectomyNinja,
+              ),
+              style: KimmiTamperDaytime.style(
+                color: const Color(0xFF884DFF),
+                fontSize: 24,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
             const SizedBox(height: 8),
             Text(
-                "kimmi_broderick_culturally_mrs"
-                    .tr
-                    .replaceFirst("%s", KimmiPalate.kimmiVasectomyNinja),
-                textAlign: TextAlign.center,
-                style: KimmiTamperDaytime.style(
-                    color: const Color(0xFF333333), fontSize: 16)),
+              "kimmi_broderick_culturally_mrs".tr.replaceFirst(
+                "%s",
+                KimmiPalate.kimmiVasectomyNinja,
+              ),
+              textAlign: TextAlign.center,
+              style: KimmiTamperDaytime.style(
+                color: const Color(0xFF333333),
+                fontSize: 16,
+              ),
+            ),
             const SizedBox(height: 24),
+
             Row(
               mainAxisSize: MainAxisSize.min,
               mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -147,11 +154,11 @@ class _KimmiCulturallyUnevenViking extends State<KimmiCulturallyUneven> {
                 const SizedBox(width: 8),
                 _starButton(3),
                 const SizedBox(width: 8),
-                _starButton(4)
+                _starButton(4),
               ],
             ),
             const SizedBox(height: 24),
-            _rateConfirmButton()
+            _rateConfirmButton(),
           ],
         ),
       ),
@@ -160,15 +167,16 @@ class _KimmiCulturallyUnevenViking extends State<KimmiCulturallyUneven> {
 
   _rateConfirmButton() {
     return KimmiAsthmaticDesk(
-        title: "kimmi_broderick_culturally".tr,
-        width: 200,
-        height: 56,
-        onTap: () {
-          if (selectedIndex == 4 && !widget.isFake) {
-            _goToAppReview();
-          }
-          Get.back();
-        });
+      title: "kimmi_broderick_culturally".tr,
+      width: 200,
+      height: 56,
+      onTap: () {
+        if (selectedIndex == 4 && !widget.isFake) {
+          _goToAppReview();
+        }
+        Get.back();
+      },
+    );
   }
 
   _goToAppReview() async {
@@ -186,12 +194,13 @@ class _KimmiCulturallyUnevenViking extends State<KimmiCulturallyUneven> {
         });
       },
       child: KimmiErnie.local(
-          fileName: selectedIndex >= index
-              ? 'kimmi_hombre_culturally_still_biologist'
-              : 'kimmi_hombre_culturally_still_hard',
-          width: 40,
-          height: 40,
-          fit: BoxFit.contain),
+        fileName: selectedIndex >= index
+            ? 'kimmi_hombre_culturally_still_biologist'
+            : 'kimmi_hombre_culturally_still_hard',
+        width: 40,
+        height: 40,
+        fit: BoxFit.contain,
+      ),
     );
   }
 }

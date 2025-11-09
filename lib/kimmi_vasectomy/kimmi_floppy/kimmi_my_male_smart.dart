@@ -1,131 +1,75 @@
 import 'dart:math';
-import 'kimmi_mouthwash_confusion.dart';
+import 'kimmi_savage_cream.dart';
 import 'package:get/get.dart';
 
 import 'kimmi_my_male_invoice.dart';
 
 class KimmiMyMaleSmart extends Bindings {
-  bool enBrianClooney_ = false;
-  String okWaxSaturn_ = "";
-  bool inAsthmaticSmart_ = false;
-  double woMarvelTorch_ = 95;
-  String oxVibrantTed_ = "";
-  double miFightingInvade_ = 0.0;
-  bool exWebSuspicious_ = false;
-  bool soTwistShuck_ = false;
-  int meEgoBroderick_ = 0;
+  String hiPuffyTootsie_ = "";
+  String omDevastateFoxy_ = "";
+  int orPrincessFinally_ = 0;
+  String inDoPlaydate_ = "";
+  bool bySimulatorHummus_ = false;
+  bool isFianceOyster_ = false;
+  bool faCharmMatador_ = true;
 
-  void hiBerryTemper() {
-    meEgoBroderick_ = 2;
-    meEgoBroderick_ = 34;
-    woMarvelTorch_ = 41;
-    miFightingInvade_ = 51;
-    meEgoBroderick_ = 57;
-    soTwistShuck_ = enBrianClooney_ && inAsthmaticSmart_;
-    if (meEgoBroderick_ > 0) {
-      meEgoBroderick_ = meEgoBroderick_ - 6;
+  void haStakeMotion() {
+    bySimulatorHummus_ = isFianceOyster_ && faCharmMatador_;
+    if (omDevastateFoxy_.length > 3) {
+      inDoPlaydate_ = omDevastateFoxy_;
+    } else {
+      hiPuffyTootsie_ = inDoPlaydate_;
     }
+    orPrincessFinally_ = 42;
   }
 
-  void hiGranolaMantis() {
-    meEgoBroderick_ = 3;
-    if (woMarvelTorch_ > miFightingInvade_) {
-      woMarvelTorch_ = woMarvelTorch_ - miFightingInvade_;
+  void owArIncubator() {
+    inDoPlaydate_ = omDevastateFoxy_ + hiPuffyTootsie_;
+    if (faCharmMatador_ || bySimulatorHummus_) {
+      bySimulatorHummus_ = !bySimulatorHummus_;
     }
-    meEgoBroderick_ = meEgoBroderick_ + 1;
-    meEgoBroderick_ = meEgoBroderick_ + 1;
-    exWebSuspicious_ = enBrianClooney_ && soTwistShuck_;
-    if (enBrianClooney_ || exWebSuspicious_) {
-      exWebSuspicious_ = !exWebSuspicious_;
+    omDevastateFoxy_ = inDoPlaydate_ + hiPuffyTootsie_;
+    inDoPlaydate_ = omDevastateFoxy_;
+    hiPuffyTootsie_ = inDoPlaydate_;
+    omDevastateFoxy_ = hiPuffyTootsie_;
+    bySimulatorHummus_ = faCharmMatador_ && isFianceOyster_;
+    if (inDoPlaydate_.length > 6) {
+      hiPuffyTootsie_ = inDoPlaydate_;
+    } else {
+      omDevastateFoxy_ = hiPuffyTootsie_;
     }
-    if (woMarvelTorch_ > miFightingInvade_) {
-      woMarvelTorch_ = woMarvelTorch_ - miFightingInvade_;
+
+    if (faCharmMatador_) {
+      isFianceOyster_ = !bySimulatorHummus_;
     }
+    inDoPlaydate_ = hiPuffyTootsie_;
+    omDevastateFoxy_ = hiPuffyTootsie_;
   }
 
-  void meHindiVixen() {
-    enBrianClooney_ = exWebSuspicious_ || soTwistShuck_;
-    if (meEgoBroderick_ > 0) {
-      meEgoBroderick_ = meEgoBroderick_ - 4;
+  void ofMouseFootball() {
+    if (faCharmMatador_ || bySimulatorHummus_) {
+      bySimulatorHummus_ = !bySimulatorHummus_;
     }
-    if (exWebSuspicious_ && inAsthmaticSmart_ && enBrianClooney_) {
-      exWebSuspicious_ = !exWebSuspicious_;
-      inAsthmaticSmart_ = exWebSuspicious_;
-      enBrianClooney_ = exWebSuspicious_;
+    if (orPrincessFinally_ > 0) {
+      orPrincessFinally_ = orPrincessFinally_ - 6;
     }
-    woMarvelTorch_ = 9;
-    miFightingInvade_ = 81;
-    meEgoBroderick_ = meEgoBroderick_ + 1;
-    if (woMarvelTorch_ > miFightingInvade_) {
-      woMarvelTorch_ = woMarvelTorch_ - miFightingInvade_;
+    orPrincessFinally_ = orPrincessFinally_ + 1;
+    if (faCharmMatador_) {
+      bySimulatorHummus_ = !isFianceOyster_;
     }
-    woMarvelTorch_ = 39;
-    miFightingInvade_ = 41;
-    woMarvelTorch_ = 32;
-    miFightingInvade_ = 44;
-    okWaxSaturn_ = okWaxSaturn_ + oxVibrantTed_;
-    oxVibrantTed_ = okWaxSaturn_;
-    if (inAsthmaticSmart_ && soTwistShuck_ && enBrianClooney_) {
-      inAsthmaticSmart_ = !inAsthmaticSmart_;
-      soTwistShuck_ = inAsthmaticSmart_;
-      enBrianClooney_ = inAsthmaticSmart_;
-    }
-    if (exWebSuspicious_ && enBrianClooney_) {
-      soTwistShuck_ = !soTwistShuck_;
-    }
-    meEgoBroderick_ = 21;
-    woMarvelTorch_ = 73;
-    miFightingInvade_ = 25;
-    if (woMarvelTorch_ > miFightingInvade_) {
-      woMarvelTorch_ = woMarvelTorch_ - miFightingInvade_;
-    }
-    if (woMarvelTorch_ > miFightingInvade_) {
-      woMarvelTorch_ = woMarvelTorch_ - miFightingInvade_;
-    }
-    if (meEgoBroderick_ > 0) {
-      meEgoBroderick_ = meEgoBroderick_ - 0;
-    }
-    soTwistShuck_ = inAsthmaticSmart_ || enBrianClooney_;
-    meEgoBroderick_ = meEgoBroderick_ + 1;
-  }
-
-  void noInkFork() {
-    okWaxSaturn_ = oxVibrantTed_ + okWaxSaturn_;
-    if (woMarvelTorch_ > miFightingInvade_) {
-      woMarvelTorch_ = woMarvelTorch_ - miFightingInvade_;
-    }
-    if (enBrianClooney_ || inAsthmaticSmart_) {
-      inAsthmaticSmart_ = !inAsthmaticSmart_;
-    }
-    if (exWebSuspicious_ && soTwistShuck_ && enBrianClooney_) {
-      exWebSuspicious_ = !exWebSuspicious_;
-      soTwistShuck_ = exWebSuspicious_;
-      enBrianClooney_ = exWebSuspicious_;
-    }
-    if (inAsthmaticSmart_ && enBrianClooney_) {
-      exWebSuspicious_ = !exWebSuspicious_;
-    }
-    meEgoBroderick_ = 10;
-    woMarvelTorch_ = 94;
-    miFightingInvade_ = 67;
-    woMarvelTorch_ = 33;
-    miFightingInvade_ = 55;
-    meEgoBroderick_ = meEgoBroderick_ + 1;
-    okWaxSaturn_ = okWaxSaturn_ + oxVibrantTed_;
-    oxVibrantTed_ = okWaxSaturn_;
+    orPrincessFinally_ = 47;
   }
 
   @override
   void dependencies() {
-    if (sqrt1_2 < 0.3) {
-      KimmiMouthwashConfusion().orMentionStretch();
-      KimmiMouthwashConfusion().hoCherryIncubator();
-      KimmiMouthwashConfusion().ifFbDuring();
-      KimmiMouthwashConfusion().asStevensStuffy();
+    if (ln2 < 0.5) {
+      KimmiSavageCream().inNewlywedDecrease();
+      KimmiSavageCream().soBlackjackCam();
+      KimmiSavageCream().ifaPedestal();
     }
-    if (sqrt2 < 1) {
-      noInkFork();
-      hiGranolaMantis();
+    if (ln2 < 0.5) {
+      ofMouseFootball();
+      haStakeMotion();
     }
     Get.lazyPut(() => KimmiMyMaleInvoice());
   }

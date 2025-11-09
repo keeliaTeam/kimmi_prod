@@ -34,7 +34,8 @@ class KimmiStormFeastTrustCoccyxCondescend {
   String? gift_icon;
 
   static KimmiStormFeastTrustCoccyxCondescend fromJson(
-      Map<String, dynamic> json) {
+    Map<String, dynamic> json,
+  ) {
     return KimmiStormFeastTrustCoccyxCondescend()
       ..duration = KimmiKeyboardJuda.intDef(json, "duration", 0)
       ..gift_icon = KimmiKeyboardJuda.strDef(json, "gift_icon", "");

@@ -1,5 +1,5 @@
 import 'dart:math';
-import 'kimmi_feature_confusion.dart';
+import 'kimmi_colombian_nibble.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
 

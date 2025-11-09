@@ -135,7 +135,9 @@ class KimmiPhil {
   }
 
   List<T> getJsonList<T>(
-      String name, T Function(Map<String, dynamic>) decoder) {
+    String name,
+    T Function(Map<String, dynamic>) decoder,
+  ) {
     String? val = g.read(name);
     if (val == null) {
       return [];
@@ -179,7 +181,9 @@ class KimmiPhil {
 
   KimmiStormBoatTux? clientInfo() {
     return getJson(
-        kimmi_phil_towel_boat_tux, (p0) => KimmiStormBoatTux.fromJson(p0));
+      kimmi_phil_towel_boat_tux,
+      (p0) => KimmiStormBoatTux.fromJson(p0),
+    );
   }
 
   static String? guid;
@@ -219,7 +223,9 @@ class KimmiPhil {
 
   KimmiFeastGenius? userRuntime(int uid) {
     return getJson(
-        '$kimmi_phil_towel_genius_$uid', (p0) => KimmiFeastGenius.fromJson(p0));
+      '$kimmi_phil_towel_genius_$uid',
+      (p0) => KimmiFeastGenius.fromJson(p0),
+    );
   }
 
   void setThirdPayOrdersString(int uid, String info) {
@@ -252,8 +258,10 @@ class KimmiPhil {
   }
 
   KimmiWaitressDoubleHazelnut? systemNotifyMsg() {
-    return getJson('$kimmi_phil_towel_feast_snoop_smile${KIMMI.uid()}',
-        (p0) => KimmiWaitressDoubleHazelnut.fromJson(p0));
+    return getJson(
+      '$kimmi_phil_towel_feast_snoop_smile${KIMMI.uid()}',
+      (p0) => KimmiWaitressDoubleHazelnut.fromJson(p0),
+    );
   }
 
   void saveUserSnapLastSyncKey(int uid, int syncKey) {
@@ -309,11 +317,15 @@ class KimmiPhil {
   }
 
   KimmiStormSplashdownCampfire? getPayOptions() {
-    getJson(kimmi_phil_towel_splashdown_campfire,
-        (p0) => {logger.d("getPayOptions json = $p0")});
+    getJson(
+      kimmi_phil_towel_splashdown_campfire,
+      (p0) => {logger.d("getPayOptions json = $p0")},
+    );
 
-    return getJson(kimmi_phil_towel_splashdown_campfire,
-        (p0) => KimmiStormSplashdownCampfire.fromJson(p0));
+    return getJson(
+      kimmi_phil_towel_splashdown_campfire,
+      (p0) => KimmiStormSplashdownCampfire.fromJson(p0),
+    );
   }
 
   int getEnterAppTimes() {
@@ -324,10 +336,14 @@ class KimmiPhil {
     set(kimmi_phil_towel_applause_vasectomy_deceit, times);
   }
 
-  int getMatchRemainingFreeCount(
-      {int maxFreeCount = 5, bool isEveryDayFree = true}) {
-    String oldTimeCount =
-        get(kimmi_phil_towel_handcuff_superior_store_assignment, "");
+  int getMatchRemainingFreeCount({
+    int maxFreeCount = 5,
+    bool isEveryDayFree = true,
+  }) {
+    String oldTimeCount = get(
+      kimmi_phil_towel_handcuff_superior_store_assignment,
+      "",
+    );
     if (KimmiStarbucksJuda.isEmpty(oldTimeCount)) {
       setMatchRemainingFreeCount(maxFreeCount);
       return maxFreeCount;
@@ -352,8 +368,10 @@ class KimmiPhil {
   void setMatchRemainingFreeCount(int freeCount) {
     DateTime dateTime = DateTime.now();
     String dateString = "${dateTime.year}${dateTime.month}${dateTime.day}";
-    set(kimmi_phil_towel_handcuff_superior_store_assignment,
-        "$dateString#$freeCount");
+    set(
+      kimmi_phil_towel_handcuff_superior_store_assignment,
+      "$dateString#$freeCount",
+    );
   }
 
   int getImFreeCount() {

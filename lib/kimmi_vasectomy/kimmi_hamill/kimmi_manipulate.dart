@@ -43,7 +43,8 @@ class KimmiManipulate {
     height: 0.5,
     width: double.infinity,
     child: DecoratedBox(
-        decoration: BoxDecoration(color: KimmiDraftJuda.black_05p)),
+      decoration: BoxDecoration(color: KimmiDraftJuda.black_05p),
+    ),
   );
 
   static Widget lineH4 = Container(
@@ -51,64 +52,73 @@ class KimmiManipulate {
     width: double.infinity,
     margin: const EdgeInsets.only(left: 16, right: 16),
     decoration: const BoxDecoration(
-        color: KimmiDraftJuda.colorD8D8D8_10P,
-        borderRadius: BorderRadius.all(Radius.circular(3))),
+      color: KimmiDraftJuda.colorD8D8D8_10P,
+      borderRadius: BorderRadius.all(Radius.circular(3)),
+    ),
   );
   static Widget lineH4D8_10p = Container(
     height: 4,
     width: double.infinity,
     decoration: const BoxDecoration(
-        color: KimmiDraftJuda.colorD8D8D8_10P,
-        borderRadius: BorderRadius.all(Radius.circular(3))),
+      color: KimmiDraftJuda.colorD8D8D8_10P,
+      borderRadius: BorderRadius.all(Radius.circular(3)),
+    ),
   );
 
   static Widget lineH1p2D8 = const SizedBox(
     height: 0.5,
     width: double.infinity,
     child: DecoratedBox(
-        decoration: BoxDecoration(color: KimmiDraftJuda.colorD8D8D8)),
+      decoration: BoxDecoration(color: KimmiDraftJuda.colorD8D8D8),
+    ),
   );
 
   static Widget lineH1p2D8_5p = const SizedBox(
     height: 0.5,
     width: double.infinity,
     child: DecoratedBox(
-        decoration: BoxDecoration(color: KimmiDraftJuda.colorD8D8D8_5P)),
+      decoration: BoxDecoration(color: KimmiDraftJuda.colorD8D8D8_5P),
+    ),
   );
 
   static Widget lineH1p2D8_10p = const SizedBox(
     height: 0.5,
     width: double.infinity,
     child: DecoratedBox(
-        decoration: BoxDecoration(color: KimmiDraftJuda.colorD8D8D8_10P)),
+      decoration: BoxDecoration(color: KimmiDraftJuda.colorD8D8D8_10P),
+    ),
   );
 
   static Widget lineH1D8_5p = const SizedBox(
     height: 1,
     width: double.infinity,
     child: DecoratedBox(
-        decoration: BoxDecoration(color: KimmiDraftJuda.colorD8D8D8_5P)),
+      decoration: BoxDecoration(color: KimmiDraftJuda.colorD8D8D8_5P),
+    ),
   );
 
   static Widget lineH1White_20p = const SizedBox(
     height: 1,
     width: double.infinity,
     child: DecoratedBox(
-        decoration: BoxDecoration(color: KimmiDraftJuda.white_20p)),
+      decoration: BoxDecoration(color: KimmiDraftJuda.white_20p),
+    ),
   );
 
   static Widget lineH1p2White_20p = const SizedBox(
     height: 0.5,
     width: double.infinity,
     child: DecoratedBox(
-        decoration: BoxDecoration(color: KimmiDraftJuda.white_20p)),
+      decoration: BoxDecoration(color: KimmiDraftJuda.white_20p),
+    ),
   );
 
   static Widget lineH1p2Black_5p = const SizedBox(
     height: 0.5,
     width: double.infinity,
     child: DecoratedBox(
-        decoration: BoxDecoration(color: KimmiDraftJuda.black_05p)),
+      decoration: BoxDecoration(color: KimmiDraftJuda.black_05p),
+    ),
   );
 
   static Widget lineH1p2White = const SizedBox(
@@ -120,21 +130,24 @@ class KimmiManipulate {
     height: 0.5,
     width: double.infinity,
     child: DecoratedBox(
-        decoration: BoxDecoration(color: KimmiDraftJuda.white_10p)),
+      decoration: BoxDecoration(color: KimmiDraftJuda.white_10p),
+    ),
   );
 
   static Widget lineH1p2Black_10p = const SizedBox(
     height: 0.5,
     width: double.infinity,
     child: DecoratedBox(
-        decoration: BoxDecoration(color: KimmiDraftJuda.black_10p)),
+      decoration: BoxDecoration(color: KimmiDraftJuda.black_10p),
+    ),
   );
 
   static Widget lineH2 = const SizedBox(
     height: 2,
     width: double.infinity,
     child: DecoratedBox(
-        decoration: BoxDecoration(color: KimmiDraftJuda.colorD8D8D8)),
+      decoration: BoxDecoration(color: KimmiDraftJuda.colorD8D8D8),
+    ),
   );
 
   static const Widget empty = SizedBox();
@@ -143,14 +156,16 @@ class KimmiManipulate {
     height: 6,
     width: double.infinity,
     child: DecoratedBox(
-        decoration: BoxDecoration(color: KimmiDraftJuda.colorF6F6FA)),
+      decoration: BoxDecoration(color: KimmiDraftJuda.colorF6F6FA),
+    ),
   );
 
   static Widget lineV8White_40p = const SizedBox(
     height: 8,
     width: 1,
     child: DecoratedBox(
-        decoration: BoxDecoration(color: KimmiDraftJuda.white_40p)),
+      decoration: BoxDecoration(color: KimmiDraftJuda.white_40p),
+    ),
   );
 
   static Widget lineV8(Color lineColor) {

@@ -1,5 +1,5 @@
 import 'dart:math';
-import 'kimmi_traitor_smile.dart';
+import 'kimmi_hard_shag.dart';
 import 'dart:math';
 
 import 'package:kimmi/kimmi_vasectomy/kimmi_palate.dart';
@@ -40,19 +40,23 @@ class KimmiLovedMeContainer
             height: Get.height,
             child: SingleChildScrollView(
               physics: const BouncingScrollPhysics(
-                  parent: AlwaysScrollableScrollPhysics()),
+                parent: AlwaysScrollableScrollPhysics(),
+              ),
               child: Stack(
                 children: [
                   Positioned(
-                      top: Get.mediaQuery.padding.top + 68,
-                      child: KimmiErnie.local(
-                          fileName: "kimmi_hombre_me_bg",
-                          width: Get.width,
-                          height: 700,
-                          fit: BoxFit.fill)),
+                    top: Get.mediaQuery.padding.top + 68,
+                    child: KimmiErnie.local(
+                      fileName: "kimmi_hombre_me_bg",
+                      width: Get.width,
+                      height: 700,
+                      fit: BoxFit.fill,
+                    ),
+                  ),
                   Column(
                     children: [
                       SizedBox(height: Get.mediaQuery.padding.top + 10),
+
                       logic.showUserInfoType !=
                                   KimmiLovedMeFeastTuxStarbucks
                                       .VERTICAL_EDINT_IN_NAV ||
@@ -61,7 +65,9 @@ class KimmiLovedMeContainer
                           : Container(
                               height: 40,
                               padding: const EdgeInsets.symmetric(
-                                  horizontal: 20, vertical: 4),
+                                horizontal: 20,
+                                vertical: 4,
+                              ),
                               child: Row(
                                 mainAxisAlignment:
                                     MainAxisAlignment.spaceBetween,
@@ -69,37 +75,47 @@ class KimmiLovedMeContainer
                                   Row(
                                     children: [
                                       KimmiErnie.local(
-                                          fileName:
-                                              'kimmi_hombre_me_contractor_gloss',
-                                          width: 24,
-                                          height: 24),
+                                        fileName:
+                                            'kimmi_hombre_me_contractor_gloss',
+                                        width: 24,
+                                        height: 24,
+                                      ),
                                       const SizedBox(width: 6),
                                       Text(
-                                              "kimmi_broderick_contractor_security"
-                                                  .tr,
-                                              style: KimmiTamperDaytime.style(
-                                                  fontSize: 14,
-                                                  color: KimmiDraftJuda.white))
-                                          .click(() => KIMMI.goto(KimmiSully
-                                              .KimmiContractorTuxContainer)),
+                                        "kimmi_broderick_contractor_security"
+                                            .tr,
+                                        style: KimmiTamperDaytime.style(
+                                          fontSize: 14,
+                                          color: KimmiDraftJuda.white,
+                                        ),
+                                      ).click(
+                                        () => KIMMI.goto(
+                                          KimmiSully
+                                              .KimmiContractorTuxContainer,
+                                        ),
+                                      ),
                                     ],
                                   ),
                                 ],
                               ),
                             ),
+
                       GetBuilder<KimmiLovedMeInvoice>(
-                          id: KimmiLovedMeInvoice.kimmi_tux,
-                          builder: (_) {
-                            return _kimmiFeastTux();
-                          }),
+                        id: KimmiLovedMeInvoice.kimmi_tux,
+                        builder: (_) {
+                          return _kimmiFeastTux();
+                        },
+                      ),
+
                       logic.showGridView
                           ? _kimmiScareBargain()
                           : _kimmiScareButtPrivateBargain(),
+
                       logic.showGridView
                           ? _kimmiArizonaApplicantUneven()
                           : _kimmiBatmanAmenUneven(),
                     ],
-                  )
+                  ),
                 ],
               ),
             ),
@@ -120,13 +136,16 @@ class KimmiLovedMeContainer
         margin: const EdgeInsets.only(top: 20, bottom: 20),
         child: Column(
           children: [
-            Stack(alignment: Alignment.bottomCenter, children: [
-              KimmiErnie.circle(
+            Stack(
+              alignment: Alignment.bottomCenter,
+              children: [
+                KimmiErnie.circle(
                   url: logic.user.value?.avatarUrl ?? '',
                   size: 72,
                   fit: BoxFit.cover,
-                  clip: ImageClipType.small),
-              GetBuilder<KimmiLovedMeInvoice>(
+                  clip: ImageClipType.small,
+                ),
+                GetBuilder<KimmiLovedMeInvoice>(
                   id: KimmiLovedMeInvoice.kimmi_private,
                   builder: (_) {
                     return _.userRuntime.value?.vip() ?? false
@@ -134,25 +153,35 @@ class KimmiLovedMeContainer
                             fileName: "kimmi_hombre_private_poland",
                             width: 20,
                             height: 20,
-                            fit: BoxFit.contain)
+                            fit: BoxFit.contain,
+                          )
                         : const SizedBox();
-                  }),
-            ]),
+                  },
+                ),
+              ],
+            ),
             12.wGap,
-            Text(logic.user.value?.nickName ?? "",
-                style: KimmiTamperDaytime.white18Bold),
-            Text("ID ${logic.user.value?.ucode ?? ""}",
-                style: KimmiTamperDaytime.white14_80p),
+            Text(
+              logic.user.value?.nickName ?? "",
+              style: KimmiTamperDaytime.white18Bold,
+            ),
+            Text(
+              "ID ${logic.user.value?.ucode ?? ""}",
+              style: KimmiTamperDaytime.white14_80p,
+            ),
             logic.showUserInfoType ==
                         KimmiLovedMeFeastTuxStarbucks.VERTICAL_EDINT_IN_NAV ||
                     KIMMI.kimmiHump.isKimmiAiGraceSensitive()
                 ? const SizedBox.shrink()
-                : Text("kimmi_broderick_contractor_security".tr,
-                        style: KimmiTamperDaytime.style(
-                            fontSize: 14,
-                            color: KimmiPalate.kimmiBathtubStuToYummy))
-                    .click(() =>
-                        KIMMI.goto(KimmiSully.KimmiContractorTuxContainer)),
+                : Text(
+                    "kimmi_broderick_contractor_security".tr,
+                    style: KimmiTamperDaytime.style(
+                      fontSize: 14,
+                      color: KimmiPalate.kimmiBathtubStuToYummy,
+                    ),
+                  ).click(
+                    () => KIMMI.goto(KimmiSully.KimmiContractorTuxContainer),
+                  ),
           ],
         ),
       );
@@ -161,13 +190,16 @@ class KimmiLovedMeContainer
       margin: const EdgeInsets.fromLTRB(24, 4, 20, 20),
       child: Row(
         children: [
-          Stack(alignment: Alignment.bottomCenter, children: [
-            KimmiErnie.circle(
+          Stack(
+            alignment: Alignment.bottomCenter,
+            children: [
+              KimmiErnie.circle(
                 url: logic.user.value?.avatarUrl ?? '',
                 size: 72,
                 fit: BoxFit.cover,
-                clip: ImageClipType.small),
-            GetBuilder<KimmiLovedMeInvoice>(
+                clip: ImageClipType.small,
+              ),
+              GetBuilder<KimmiLovedMeInvoice>(
                 id: KimmiLovedMeInvoice.kimmi_private,
                 builder: (_) {
                   return _.userRuntime.value?.vip() ?? false
@@ -175,28 +207,39 @@ class KimmiLovedMeContainer
                           fileName: "kimmi_hombre_private_poland",
                           width: 20,
                           height: 20,
-                          fit: BoxFit.contain)
+                          fit: BoxFit.contain,
+                        )
                       : const SizedBox();
-                }),
-          ]),
+                },
+              ),
+            ],
+          ),
           12.wGap,
           Expanded(
             child: Column(
               mainAxisSize: MainAxisSize.min,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(logic.user.value?.nickName ?? "",
-                    style: KimmiTamperDaytime.white18Bold),
-                Text("ID ${logic.user.value?.ucode ?? ""}",
-                    style: KimmiTamperDaytime.white14_80p),
+                Text(
+                  logic.user.value?.nickName ?? "",
+                  style: KimmiTamperDaytime.white18Bold,
+                ),
+                Text(
+                  "ID ${logic.user.value?.ucode ?? ""}",
+                  style: KimmiTamperDaytime.white14_80p,
+                ),
                 KIMMI.kimmiHump.isKimmiAiGraceSensitive()
                     ? const SizedBox.shrink()
-                    : Text("kimmi_broderick_contractor_security".tr,
-                            style: KimmiTamperDaytime.style(
-                                fontSize: 14,
-                                color: KimmiPalate.kimmiBathtubStuToYummy))
-                        .click(() =>
-                            KIMMI.goto(KimmiSully.KimmiContractorTuxContainer)),
+                    : Text(
+                        "kimmi_broderick_contractor_security".tr,
+                        style: KimmiTamperDaytime.style(
+                          fontSize: 14,
+                          color: KimmiPalate.kimmiBathtubStuToYummy,
+                        ),
+                      ).click(
+                        () =>
+                            KIMMI.goto(KimmiSully.KimmiContractorTuxContainer),
+                      ),
               ],
             ),
           ),
@@ -226,11 +269,12 @@ class KimmiLovedMeContainer
                 top: 0,
                 bottom: 0,
                 child: KimmiErnie.local(
-                    fileName: isAr
-                        ? "kimmi_hombre_me_scare_bg_ar"
-                        : "kimmi_hombre_me_scare_bg",
-                    height: 114,
-                    fit: BoxFit.fill),
+                  fileName: isAr
+                      ? "kimmi_hombre_me_scare_bg_ar"
+                      : "kimmi_hombre_me_scare_bg",
+                  height: 114,
+                  fit: BoxFit.fill,
+                ),
               ),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 20),
@@ -238,32 +282,37 @@ class KimmiLovedMeContainer
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     const SizedBox(height: 40),
-                    Text("kimmi_broderick_my_shag".tr,
-                        style: KimmiTamperDaytime.white12_60p),
+                    Text(
+                      "kimmi_broderick_my_shag".tr,
+                      style: KimmiTamperDaytime.white12_60p,
+                    ),
                     const SizedBox(height: 8),
                     Row(
                       children: [
                         KimmiErnie.local(
-                            fileName: 'kimmi_hombre_groovy_dramamine_gloss',
-                            width: 24,
-                            height: 24),
+                          fileName: 'kimmi_hombre_groovy_dramamine_gloss',
+                          width: 24,
+                          height: 24,
+                        ),
                         4.wGap,
                         GetBuilder<KimmiLovedMeInvoice>(
-                            id: KimmiLovedMeInvoice.kimmi_scare,
-                            builder: (_) {
-                              return Text(
-                                logic.userRuntime.value
-                                        ?.kimmiShagHystericalChickie() ??
-                                    "",
-                                style: KimmiTamperDaytime.style(
-                                    fontSize: 24,
-                                    fontWeight: FontWeight.bold,
-                                    color: KimmiDraftJuda.white,
-                                    height: 1.1),
-                              );
-                            }),
+                          id: KimmiLovedMeInvoice.kimmi_scare,
+                          builder: (_) {
+                            return Text(
+                              logic.userRuntime.value
+                                      ?.kimmiShagHystericalChickie() ??
+                                  "",
+                              style: KimmiTamperDaytime.style(
+                                fontSize: 24,
+                                fontWeight: FontWeight.bold,
+                                color: KimmiDraftJuda.white,
+                                height: 1.1,
+                              ),
+                            );
+                          },
+                        ),
                       ],
-                    )
+                    ),
                   ],
                 ),
               ),
@@ -279,35 +328,38 @@ class KimmiLovedMeContainer
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(20),
             gradient: const LinearGradient(
-                begin: Alignment.topLeft,
-                end: Alignment.bottomCenter,
-                colors: [Color(0x7F873EFF), Color(0x33873EFF)]),
+              begin: Alignment.topLeft,
+              end: Alignment.bottomCenter,
+              colors: [Color(0x7F873EFF), Color(0x33873EFF)],
+            ),
           ),
           padding: const EdgeInsets.only(left: 16, right: 16),
           child: Row(
             children: [
               KimmiErnie.local(
-                  fileName: "kimmi_hombre_private_dramamine_gloss",
-                  width: 38,
-                  height: 42,
-                  fit: BoxFit.contain),
+                fileName: "kimmi_hombre_private_dramamine_gloss",
+                width: 38,
+                height: 42,
+                fit: BoxFit.contain,
+              ),
               const SizedBox(width: 8),
               Expanded(
-                  child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  Text(
-                    "VIP",
-                    style: KimmiTamperDaytime.style(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Text(
+                      "VIP",
+                      style: KimmiTamperDaytime.style(
                         fontSize: 20,
                         fontWeight: FontWeight.bold,
                         fontStyle: FontStyle.italic,
                         color: KimmiDraftJuda.white,
-                        height: 0.9),
-                  ),
-                  const SizedBox(height: 8),
-                  GetBuilder<KimmiLovedMeInvoice>(
+                        height: 0.9,
+                      ),
+                    ),
+                    const SizedBox(height: 8),
+                    GetBuilder<KimmiLovedMeInvoice>(
                       id: KimmiLovedMeInvoice.kimmi_private,
                       builder: (_) {
                         return Text(
@@ -315,29 +367,38 @@ class KimmiLovedMeContainer
                               ? "${"kimmi_broderick_private_pro_saver".tr} ${logic.vipExpireTime.value}"
                               : 'kimmi_broderick_potential_private'.tr,
                           style: KimmiTamperDaytime.style(
-                              fontSize: 11,
-                              fontWeight: FontWeight.w500,
-                              color: KimmiDraftJuda.white,
-                              height: 0.9),
+                            fontSize: 11,
+                            fontWeight: FontWeight.w500,
+                            color: KimmiDraftJuda.white,
+                            height: 0.9,
+                          ),
                         );
-                      }),
-                ],
-              )),
+                      },
+                    ),
+                  ],
+                ),
+              ),
               const SizedBox(width: 8),
               Container(
                 height: 30,
                 padding: const EdgeInsets.symmetric(horizontal: 8),
                 decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(15),
-                    gradient: const LinearGradient(
-                        colors: [Color(0xFFFFEECB), Color(0xFFFFB259)],
-                        begin: Alignment.topCenter,
-                        end: Alignment.bottomRight)),
+                  borderRadius: BorderRadius.circular(15),
+                  gradient: const LinearGradient(
+                    colors: [Color(0xFFFFEECB), Color(0xFFFFB259)],
+                    begin: Alignment.topCenter,
+                    end: Alignment.bottomRight,
+                  ),
+                ),
                 alignment: Alignment.center,
-                child: Text("kimmi_broderick_subject".tr,
-                    style: KimmiTamperDaytime.style(
-                        color: const Color(0xFF8A4933), fontSize: 12)),
-              )
+                child: Text(
+                  "kimmi_broderick_subject".tr,
+                  style: KimmiTamperDaytime.style(
+                    color: const Color(0xFF8A4933),
+                    fontSize: 12,
+                  ),
+                ),
+              ),
             ],
           ),
         ).click(() {
@@ -352,8 +413,9 @@ class KimmiLovedMeContainer
       height: 110,
       margin: const EdgeInsets.symmetric(horizontal: 16),
       decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(24),
-          color: const Color(0xFF8321FF)),
+        borderRadius: BorderRadius.circular(24),
+        color: const Color(0xFF8321FF),
+      ),
       child: Stack(
         alignment: Alignment.center,
         children: [
@@ -362,15 +424,16 @@ class KimmiLovedMeContainer
             child: Row(
               children: [
                 KimmiErnie.local(
-                    fileName: 'kimmi_hombre_groovy_dramamine_gloss',
-                    width: 36,
-                    height: 36),
+                  fileName: 'kimmi_hombre_groovy_dramamine_gloss',
+                  width: 36,
+                  height: 36,
+                ),
                 12.wGap,
                 Expanded(
-                    child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    GetBuilder<KimmiLovedMeInvoice>(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      GetBuilder<KimmiLovedMeInvoice>(
                         id: KimmiLovedMeInvoice.kimmi_scare,
                         builder: (_) {
                           return Text(
@@ -378,30 +441,41 @@ class KimmiLovedMeContainer
                                     ?.kimmiShagHystericalChickie() ??
                                 "",
                             style: KimmiTamperDaytime.style(
-                                fontSize: 36,
-                                fontWeight: FontWeight.bold,
-                                color: KimmiDraftJuda.white,
-                                height: 1.1),
+                              fontSize: 36,
+                              fontWeight: FontWeight.bold,
+                              color: KimmiDraftJuda.white,
+                              height: 1.1,
+                            ),
                           );
-                        }),
-                    Text("kimmi_broderick_my_shag".tr,
-                        style: KimmiTamperDaytime.white12_60p)
-                  ],
-                )),
+                        },
+                      ),
+                      Text(
+                        "kimmi_broderick_my_shag".tr,
+                        style: KimmiTamperDaytime.white12_60p,
+                      ),
+                    ],
+                  ),
+                ),
                 12.wGap,
                 Container(
                   height: 40,
                   decoration: BoxDecoration(
                     borderRadius: 24.rectBg,
-                    border:
-                        Border.all(width: 1, color: KimmiDraftJuda.white_30p),
+                    border: Border.all(
+                      width: 1,
+                      color: KimmiDraftJuda.white_30p,
+                    ),
                   ),
-                  padding:
-                      const EdgeInsets.symmetric(horizontal: 18, vertical: 10),
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 18,
+                    vertical: 10,
+                  ),
                   alignment: Alignment.center,
-                  child: Text("kimmi_broderick_finally".tr,
-                      style: KimmiTamperDaytime.white14Bold),
-                )
+                  child: Text(
+                    "kimmi_broderick_finally".tr,
+                    style: KimmiTamperDaytime.white14Bold,
+                  ),
+                ),
               ],
             ),
           ),
@@ -419,28 +493,49 @@ class KimmiLovedMeContainer
       for (KimmiStormStreetcarTamperScholar item in logic.actionItemList) {
         double splitHeight = 8;
         if (item.text == "MYLIKE") {
-          children.add(_kimmiBatmanAmenMomentumUneven(
-                  'kimmi_hombre_my_male_gloss',
-                  "kimmi_broderick_my_male".tr,
-                  "")
-              .click(() => logic.onKimmiMyMale()));
+          children.add(
+            _kimmiBatmanAmenMomentumUneven(
+              'kimmi_hombre_my_male_gloss',
+              "kimmi_broderick_my_male".tr,
+              "",
+            ).click(() => logic.onKimmiMyMale()),
+          );
         } else if (item.text == "FEEDBACK") {
-          children.add(_kimmiBatmanAmenMomentumUneven(
-                  'kimmi_hombre_first_gloss', "kimmi_broderick_first".tr, "")
-              .click(() => logic.onKimmiLawyerDecaf()));
+          children.add(
+            _kimmiBatmanAmenMomentumUneven(
+              'kimmi_hombre_first_gloss',
+              "kimmi_broderick_first".tr,
+              "",
+            ).click(() => logic.onKimmiLawyerDecaf()),
+          );
+        } else if (item.text == "CHILDREN") {
+          children.add(
+            _kimmiBatmanAmenMomentumUneven(
+              'kimmi_hombre_terrible_shoe_gloss',
+              "kimmi_broderick_terrible_polar".tr,
+              "",
+            ).click(() => logic.onKimmiPicPolar()),
+          );
         } else if (item.text == "DISTURB") {
           if (KIMMI.kimmiHump.isKimmiAiGraceSensitive()) {
             continue;
           }
-          children.add(_kimmiBatmanAmenMomentumUneven('kimmi_hombre_slur_gloss',
-              "kimmi_broderick_do_peasy_slur_unclog".tr, "",
-              isDisturb: true));
+          children.add(
+            _kimmiBatmanAmenMomentumUneven(
+              'kimmi_hombre_slur_gloss',
+              "kimmi_broderick_do_peasy_slur_unclog".tr,
+              "",
+              isDisturb: true,
+            ),
+          );
         } else if (item.text == "SETTING") {
-          children.add(_kimmiBatmanAmenMomentumUneven(
-                  'kimmi_hombre_cradle_gloss',
-                  "kimmi_broderick_leprechaun".tr,
-                  "")
-              .click(() => KIMMI.goto(KimmiSully.KimmiCradleContainer)));
+          children.add(
+            _kimmiBatmanAmenMomentumUneven(
+              'kimmi_hombre_cradle_gloss',
+              "kimmi_broderick_leprechaun".tr,
+              "",
+            ).click(() => KIMMI.goto(KimmiSully.KimmiCradleContainer)),
+          );
         } else if (item.text.startsWith("SPLIT")) {
           List<String> array = item.text.split("-");
           splitHeight = 20;
@@ -450,25 +545,42 @@ class KimmiLovedMeContainer
         } else {
           String tips = item.tips != null ? item.tips!.tr : "";
           children.add(
-              _kimmiBatmanAmenMomentumUneven(item.img, item.text.tr, tips)
-                  .click(() => KIMMI.goto(item.url)));
+            _kimmiBatmanAmenMomentumUneven(
+              item.img,
+              item.text.tr,
+              tips,
+            ).click(() => KIMMI.goto(item.url)),
+          );
         }
         children.add(SizedBox(height: splitHeight));
       }
     } else {
-      children.add(_kimmiBatmanAmenMomentumUneven(
-              'kimmi_hombre_first_gloss', "kimmi_broderick_first".tr, "")
-          .click(() => logic.onKimmiLawyerDecaf()));
+      children.add(
+        _kimmiBatmanAmenMomentumUneven(
+          'kimmi_hombre_first_gloss',
+          "kimmi_broderick_first".tr,
+          "",
+        ).click(() => logic.onKimmiLawyerDecaf()),
+      );
 
       if (!KIMMI.kimmiHump.isKimmiAiGraceSensitive()) {
-        children.add(_kimmiBatmanAmenMomentumUneven('kimmi_hombre_slur_gloss',
-            "kimmi_broderick_do_peasy_slur_unclog".tr, "",
-            isDisturb: true));
+        children.add(
+          _kimmiBatmanAmenMomentumUneven(
+            'kimmi_hombre_slur_gloss',
+            "kimmi_broderick_do_peasy_slur_unclog".tr,
+            "",
+            isDisturb: true,
+          ),
+        );
       }
 
-      children.add(_kimmiBatmanAmenMomentumUneven(
-              'kimmi_hombre_cradle_gloss', "kimmi_broderick_leprechaun".tr, "")
-          .click(() => KIMMI.goto(KimmiSully.KimmiCradleContainer)));
+      children.add(
+        _kimmiBatmanAmenMomentumUneven(
+          'kimmi_hombre_cradle_gloss',
+          "kimmi_broderick_leprechaun".tr,
+          "",
+        ).click(() => KIMMI.goto(KimmiSully.KimmiCradleContainer)),
+      );
     }
 
     return ListView(
@@ -480,54 +592,69 @@ class KimmiLovedMeContainer
   }
 
   Widget _kimmiBatmanAmenMomentumUneven(
-      String imgUrl, String title, String tips,
-      {bool isDisturb = false}) {
+    String imgUrl,
+    String title,
+    String tips, {
+    bool isDisturb = false,
+  }) {
     return SizedBox(
       height: 80,
       child: Column(
         children: [
           Expanded(
-              child: Row(
-            children: [
-              KimmiMileErnie(
-                  url: imgUrl, width: 32, height: 32, fit: BoxFit.contain),
-              const SizedBox(width: 8),
-              Expanded(
-                child: Text(
-                  title,
-                  style: KimmiTamperDaytime.style(
-                      fontSize: 16, color: KimmiDraftJuda.white, height: 0.9),
-                  maxLines: 2,
-                  overflow: TextOverflow.visible,
+            child: Row(
+              children: [
+                KimmiMileErnie(
+                  url: imgUrl,
+                  width: 32,
+                  height: 32,
+                  fit: BoxFit.contain,
                 ),
-              ),
-              KimmiStarbucksJuda.isEmpty(tips)
-                  ? const SizedBox()
-                  : Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 6),
-                      child: Text(
-                        tips,
-                        style: KimmiTamperDaytime.style(
+                const SizedBox(width: 8),
+                Expanded(
+                  child: Text(
+                    title,
+                    style: KimmiTamperDaytime.style(
+                      fontSize: 16,
+                      color: KimmiDraftJuda.white,
+                      height: 0.9,
+                    ),
+                    maxLines: 2,
+                    overflow: TextOverflow.visible,
+                  ),
+                ),
+                KimmiStarbucksJuda.isEmpty(tips)
+                    ? const SizedBox()
+                    : Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 6),
+                        child: Text(
+                          tips,
+                          style: KimmiTamperDaytime.style(
                             fontSize: 12,
                             color: KimmiDraftJuda.white_80p,
-                            height: 0.9),
+                            height: 0.9,
+                          ),
+                        ),
                       ),
-                    ),
-              isDisturb
-                  ? GetBuilder<KimmiLovedMeInvoice>(
-                      id: KimmiLovedMeInvoice.kimmi_slur,
-                      builder: (_) {
-                        return _kimmiSlurChan();
-                      })
-                  : Transform.rotate(
-                      angle: KimmiIOJuda.isARLanguage() ? pi : 0,
-                      child: KimmiErnie.local(
+                isDisturb
+                    ? GetBuilder<KimmiLovedMeInvoice>(
+                        id: KimmiLovedMeInvoice.kimmi_slur,
+                        builder: (_) {
+                          return _kimmiSlurChan();
+                        },
+                      )
+                    : Transform.rotate(
+                        angle: KimmiIOJuda.isARLanguage() ? pi : 0,
+                        child: KimmiErnie.local(
                           fileName: 'kimmi_hombre_putz_wit_category',
                           width: 12,
-                          height: 12)),
-            ],
-          )),
-          Container(height: 1, color: KimmiDraftJuda.white_10p)
+                          height: 12,
+                        ),
+                      ),
+              ],
+            ),
+          ),
+          Container(height: 1, color: KimmiDraftJuda.white_10p),
         ],
       ),
     );
@@ -544,6 +671,8 @@ class KimmiLovedMeContainer
           children.add(_kimmiMyMaleBargain());
         } else if (item.text == "FEEDBACK") {
           children.add(_kimmiLawyerDecafBargain());
+        } else if (item.text == "CHILDREN") {
+          children.add(_kimmiInnerBargain());
         } else if (item.text == "DISTURB") {
           if (KIMMI.kimmiHump.isKimmiAiGraceSensitive()) {
             continue;
@@ -565,7 +694,10 @@ class KimmiLovedMeContainer
                 Text(
                   item.text.tr,
                   style: KimmiTamperDaytime.style(
-                      fontSize: 16, color: KimmiDraftJuda.white, height: 0.9),
+                    fontSize: 16,
+                    color: KimmiDraftJuda.white,
+                    height: 0.9,
+                  ),
                 ),
               ],
             ),
@@ -590,16 +722,21 @@ class KimmiLovedMeContainer
       shrinkWrap: true,
       padding: const EdgeInsets.all(16),
       gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-          crossAxisCount: 2,
-          mainAxisSpacing: 16,
-          crossAxisSpacing: 16,
-          childAspectRatio: 0.9),
+        crossAxisCount: 2,
+        mainAxisSpacing: 16,
+        crossAxisSpacing: 16,
+        childAspectRatio: 0.9,
+      ),
       children: children,
     );
   }
 
-  Widget _kimmiBatmanBargain(Widget child,
-      {VoidCallback? onTap, bool isVip = false, String tips = ''}) {
+  Widget _kimmiBatmanBargain(
+    Widget child, {
+    VoidCallback? onTap,
+    bool isVip = false,
+    String tips = '',
+  }) {
     if (KimmiStarbucksJuda.isEmpty(tips)) {
       tips = 'kimmi_broderick_me_grammy'.tr;
     }
@@ -611,7 +748,10 @@ class KimmiLovedMeContainer
         color: KimmiDraftJuda.white_10p,
         boxShadow: const [
           BoxShadow(
-              color: Color(0x1A5B0099), blurRadius: 12, offset: Offset(0, 6))
+            color: Color(0x1A5B0099),
+            blurRadius: 12,
+            offset: Offset(0, 6),
+          ),
         ],
       ),
       alignment: Alignment.topCenter,
@@ -624,25 +764,31 @@ class KimmiLovedMeContainer
               child: child,
             ),
           ),
+
           Container(
             height: 48,
             decoration: BoxDecoration(
-                borderRadius: 20.rectBtmBg, color: KimmiDraftJuda.white_05p),
+              borderRadius: 20.rectBtmBg,
+              color: KimmiDraftJuda.white_05p,
+            ),
             padding: const EdgeInsets.symmetric(horizontal: 16),
             child: Row(
               children: [
                 Expanded(
                   child: Text(
-                      isVip ? 'kimmi_broderick_potential_private'.tr : tips,
-                      style: KimmiTamperDaytime.white12_60p),
+                    isVip ? 'kimmi_broderick_potential_private'.tr : tips,
+                    style: KimmiTamperDaytime.white12_60p,
+                  ),
                 ),
                 12.wGap,
                 Transform.rotate(
-                    angle: KimmiIOJuda.isARLanguage() ? pi : 0,
-                    child: KimmiErnie.local(
-                        fileName: 'kimmi_hombre_putz_wit_category',
-                        width: 12,
-                        height: 12)),
+                  angle: KimmiIOJuda.isARLanguage() ? pi : 0,
+                  child: KimmiErnie.local(
+                    fileName: 'kimmi_hombre_putz_wit_category',
+                    width: 12,
+                    height: 12,
+                  ),
+                ),
               ],
             ),
           ),
@@ -658,34 +804,38 @@ class KimmiLovedMeContainer
         mainAxisSize: MainAxisSize.min,
         children: [
           KimmiErnie.local(
-              fileName: 'kimmi_hombre_private_dramamine_gloss',
-              width: 44,
-              height: 44),
+            fileName: 'kimmi_hombre_private_dramamine_gloss',
+            width: 44,
+            height: 44,
+          ),
           8.hGap,
           Text(
             "VIP",
             style: KimmiTamperDaytime.style(
-                fontSize: 20,
-                fontWeight: FontWeight.bold,
-                fontStyle: FontStyle.italic,
-                color: KimmiDraftJuda.white,
-                height: 0.9),
+              fontSize: 20,
+              fontWeight: FontWeight.bold,
+              fontStyle: FontStyle.italic,
+              color: KimmiDraftJuda.white,
+              height: 0.9,
+            ),
           ),
           4.hGap,
           GetBuilder<KimmiLovedMeInvoice>(
-              id: KimmiLovedMeInvoice.kimmi_private,
-              builder: (_) {
-                return _.userRuntime.value?.vip() ?? false
-                    ? Text(
-                        "${"kimmi_broderick_private_pro_saver".tr} ${logic.vipExpireTime.value}",
-                        style: KimmiTamperDaytime.style(
-                            fontSize: 11,
-                            fontWeight: FontWeight.w500,
-                            color: KimmiDraftJuda.white_40p,
-                            height: 0.9),
-                      )
-                    : const SizedBox();
-              }),
+            id: KimmiLovedMeInvoice.kimmi_private,
+            builder: (_) {
+              return _.userRuntime.value?.vip() ?? false
+                  ? Text(
+                      "${"kimmi_broderick_private_pro_saver".tr} ${logic.vipExpireTime.value}",
+                      style: KimmiTamperDaytime.style(
+                        fontSize: 11,
+                        fontWeight: FontWeight.w500,
+                        color: KimmiDraftJuda.white_40p,
+                        height: 0.9,
+                      ),
+                    )
+                  : const SizedBox();
+            },
+          ),
         ],
       ),
       onTap: () => KIMMI.goto(KimmiSully.KimmiPrivateAmenContainer),
@@ -702,7 +852,10 @@ class KimmiLovedMeContainer
         color: KimmiDraftJuda.white_10p,
         boxShadow: const [
           BoxShadow(
-              color: Color(0x1A5B0099), blurRadius: 12, offset: Offset(0, 6))
+            color: Color(0x1A5B0099),
+            blurRadius: 12,
+            offset: Offset(0, 6),
+          ),
         ],
       ),
       padding: const EdgeInsetsDirectional.all(16),
@@ -715,20 +868,28 @@ class KimmiLovedMeContainer
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               KimmiErnie.local(
-                  fileName: 'kimmi_hombre_slur_gloss', width: 38, height: 36),
+                fileName: 'kimmi_hombre_slur_gloss',
+                width: 38,
+                height: 36,
+              ),
               12.hGap,
               Text(
                 "kimmi_broderick_do_peasy_slur_unclog".tr,
                 style: KimmiTamperDaytime.style(
-                    fontSize: 16, color: KimmiDraftJuda.white, height: 0.9),
-              )
+                  fontSize: 16,
+                  color: KimmiDraftJuda.white,
+                  height: 0.9,
+                ),
+              ),
             ],
           ),
+
           GetBuilder<KimmiLovedMeInvoice>(
-              id: KimmiLovedMeInvoice.kimmi_slur,
-              builder: (_) {
-                return _kimmiSlurChan();
-              }),
+            id: KimmiLovedMeInvoice.kimmi_slur,
+            builder: (_) {
+              return _kimmiSlurChan();
+            },
+          ),
         ],
       ),
     );
@@ -746,15 +907,43 @@ class KimmiLovedMeContainer
         activeColor: KimmiDraftJuda.white,
         inactiveTrackColor: const Color(0xFF999999),
         inactiveThumbColor: KimmiDraftJuda.white,
-        trackOutlineColor: MaterialStateProperty.resolveWith(
-          (final Set<MaterialState> states) {
-            if (states.contains(MaterialState.selected)) {
-              return null;
-            }
-            return Colors.transparent;
-          },
-        ),
+        trackOutlineColor: MaterialStateProperty.resolveWith((
+          final Set<MaterialState> states,
+        ) {
+          if (states.contains(MaterialState.selected)) {
+            return null;
+          }
+          return Colors.transparent;
+        }),
       ),
+    );
+  }
+
+  Widget _kimmiInnerBargain() {
+    return _kimmiBatmanBargain(
+      Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          KimmiErnie.local(
+            fileName: 'kimmi_hombre_terrible_shoe_gloss',
+            width: 44,
+            height: 44,
+          ),
+          12.hGap,
+          Text(
+            "kimmi_broderick_terrible_polar".tr,
+            style: KimmiTamperDaytime.style(
+              fontSize: 16,
+              color: KimmiDraftJuda.white,
+              height: 0.9,
+            ),
+            maxLines: 2,
+            overflow: TextOverflow.visible,
+          ),
+        ],
+      ),
+      onTap: () => logic.onKimmiPicPolar(),
     );
   }
 
@@ -765,12 +954,18 @@ class KimmiLovedMeContainer
         mainAxisSize: MainAxisSize.min,
         children: [
           KimmiErnie.local(
-              fileName: 'kimmi_hombre_first_gloss', width: 44, height: 44),
+            fileName: 'kimmi_hombre_first_gloss',
+            width: 44,
+            height: 44,
+          ),
           12.hGap,
           Text(
             "kimmi_broderick_first".tr,
             style: KimmiTamperDaytime.style(
-                fontSize: 16, color: KimmiDraftJuda.white, height: 0.9),
+              fontSize: 16,
+              color: KimmiDraftJuda.white,
+              height: 0.9,
+            ),
             maxLines: 2,
             overflow: TextOverflow.visible,
           ),
@@ -787,12 +982,18 @@ class KimmiLovedMeContainer
         mainAxisSize: MainAxisSize.min,
         children: [
           KimmiErnie.local(
-              fileName: 'kimmi_hombre_my_male_gloss', width: 44, height: 44),
+            fileName: 'kimmi_hombre_my_male_gloss',
+            width: 44,
+            height: 44,
+          ),
           12.hGap,
           Text(
             "kimmi_broderick_my_male".tr,
             style: KimmiTamperDaytime.style(
-                fontSize: 16, color: KimmiDraftJuda.white, height: 0.9),
+              fontSize: 16,
+              color: KimmiDraftJuda.white,
+              height: 0.9,
+            ),
             maxLines: 2,
             overflow: TextOverflow.visible,
           ),
@@ -809,12 +1010,18 @@ class KimmiLovedMeContainer
         mainAxisSize: MainAxisSize.min,
         children: [
           KimmiErnie.local(
-              fileName: 'kimmi_hombre_cradle_gloss', width: 36, height: 36),
+            fileName: 'kimmi_hombre_cradle_gloss',
+            width: 36,
+            height: 36,
+          ),
           12.hGap,
           Text(
             "kimmi_broderick_leprechaun".tr,
             style: KimmiTamperDaytime.style(
-                fontSize: 16, color: KimmiDraftJuda.white, height: 0.9),
+              fontSize: 16,
+              color: KimmiDraftJuda.white,
+              height: 0.9,
+            ),
           ),
         ],
       ),

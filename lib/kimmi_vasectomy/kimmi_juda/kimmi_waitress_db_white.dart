@@ -10,7 +10,8 @@ class KimmiErnieTexture extends TypeConverter<KimmiStormErnie, String> {
   @override
   KimmiStormErnie fromSql(String fromDb) {
     return KimmiStormErnie.fromJson(
-        json.decode(fromDb) as Map<String, dynamic>);
+      json.decode(fromDb) as Map<String, dynamic>,
+    );
   }
 
   @override
@@ -42,7 +43,8 @@ class KimmiIndiaTexture extends TypeConverter<KimmiStormIndia, String> {
   @override
   KimmiStormIndia fromSql(String fromDb) {
     return KimmiStormIndia.fromJson(
-        json.decode(fromDb) as Map<String, dynamic>);
+      json.decode(fromDb) as Map<String, dynamic>,
+    );
   }
 
   @override

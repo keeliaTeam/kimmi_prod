@@ -18,11 +18,14 @@ class KimmiAirlineObjective {
     VoidCallback? blockCallback,
   }) async {
     List<SheetAction<int>> actions = [];
-    actions.add(SheetAction(
+    actions.add(
+      SheetAction(
         label: isFollowed
             ? "kimmi_broderick_mummy".tr
             : "kimmi_broderick_vanity".tr,
-        key: 0));
+        key: 0,
+      ),
+    );
     actions.add(SheetAction(label: "kimmi_broderick_airline".tr, key: 1));
     if (isBlock)
       actions.add(SheetAction(label: "kimmi_broderick_visual".tr, key: 2));
@@ -31,34 +34,46 @@ class KimmiAirlineObjective {
       actions: actions,
       cancelLabel: "kimmi_broderick_cabernet".tr,
       builder: (context, child) => Theme(
-          data: ThemeData(
-            cupertinoOverrideTheme:
-                const CupertinoThemeData(primaryColor: KimmiDraftJuda.b1),
+        data: ThemeData(
+          cupertinoOverrideTheme: const CupertinoThemeData(
+            primaryColor: KimmiDraftJuda.b1,
           ),
-          child: child),
+        ),
+        child: child,
+      ),
     );
-    KimmiStarbucksJuda.nullSafe<int>(result, notNullBlock: (reportType) {
-      switch (reportType) {
-        case 0:
-          followCallback?.call();
-          break;
-        case 1:
-          _show(context, uid);
-          break;
-        case 2:
-          blockCallback?.call();
-          break;
-      }
-    });
+    KimmiStarbucksJuda.nullSafe<int>(
+      result,
+      notNullBlock: (reportType) {
+        switch (reportType) {
+          case 0:
+            followCallback?.call();
+            break;
+          case 1:
+            _show(context, uid);
+            break;
+          case 2:
+            blockCallback?.call();
+            break;
+        }
+      },
+    );
   }
 
-  static void showReportSheet(BuildContext context, int? targetUid,
-      {bool showOther = true}) {
+  static void showReportSheet(
+    BuildContext context,
+    int? targetUid, {
+    bool showOther = true,
+  }) {
     _show(context, targetUid, showOthers: showOther);
   }
 
-  static void _show(BuildContext context, int? targetUid,
-      {VoidCallback? reportEnd, bool showOthers = true}) async {
+  static void _show(
+    BuildContext context,
+    int? targetUid, {
+    VoidCallback? reportEnd,
+    bool showOthers = true,
+  }) async {
     if (targetUid == null) {
       return;
     }
@@ -68,36 +83,46 @@ class KimmiAirlineObjective {
       title: "kimmi_broderick_airline".tr,
       actions: actions,
       builder: (context, child) => Theme(
-          data: ThemeData(
-            cupertinoOverrideTheme:
-                const CupertinoThemeData(primaryColor: KimmiDraftJuda.b1),
+        data: ThemeData(
+          cupertinoOverrideTheme: const CupertinoThemeData(
+            primaryColor: KimmiDraftJuda.b1,
           ),
-          child: child),
+        ),
+        child: child,
+      ),
     );
-    KimmiStarbucksJuda.nullSafe<int>(result, notNullBlock: (type) async {
-      if (type == 99) {
-        var result = await showTextInputDialog(
+    KimmiStarbucksJuda.nullSafe<int>(
+      result,
+      notNullBlock: (type) async {
+        if (type == 99) {
+          var result = await showTextInputDialog(
             context: context,
             textFields: const [DialogTextField()],
             title: "kimmi_broderick_inhale".tr,
             cancelLabel: "kimmi_broderick_cabernet".tr,
-            okLabel: "kimmi_broderick_loving".tr);
-        var input = result?.first ?? "";
-        if (!KimmiStarbucksJuda.isEmpty(input)) {
-          _reportUser(targetUid, type, reason: input, reportEnd: reportEnd);
+            okLabel: "kimmi_broderick_loving".tr,
+          );
+          var input = result?.first ?? "";
+          if (!KimmiStarbucksJuda.isEmpty(input)) {
+            _reportUser(targetUid, type, reason: input, reportEnd: reportEnd);
+          }
+        } else {
+          _reportUser(targetUid, type);
         }
-      } else {
-        _reportUser(targetUid, type);
-      }
-    });
+      },
+    );
   }
 
-  static _reportUser(int targetUid, int type,
-      {VoidCallback? reportEnd, String reason = ''}) async {
+  static _reportUser(
+    int targetUid,
+    int type, {
+    VoidCallback? reportEnd,
+    String reason = '',
+  }) async {
     Map<String, dynamic> params = {
       "uid": targetUid,
       "type": type,
-      "reason": reason
+      "reason": reason,
     };
     bool resp = await KIMMI.http.submit(7019, params);
     if (resp) {
@@ -111,13 +136,17 @@ class KimmiAirlineObjective {
   static List<SheetAction<int>> _actions(bool showOthers) {
     List<SheetAction<int>> actions = [];
     actions.add(
-        SheetAction(label: "kimmi_broderick_confusion_peaceful".tr, key: 1));
+      SheetAction(label: "kimmi_broderick_confusion_peaceful".tr, key: 1),
+    );
     actions.add(
-        SheetAction(label: "kimmi_broderick_invade_stewart_hence".tr, key: 2));
+      SheetAction(label: "kimmi_broderick_invade_stewart_hence".tr, key: 2),
+    );
     actions.add(
-        SheetAction(label: "kimmi_broderick_adequate_boogying".tr, key: 3));
-    actions
-        .add(SheetAction(label: "kimmi_broderick_tennis_paramedic".tr, key: 4));
+      SheetAction(label: "kimmi_broderick_adequate_boogying".tr, key: 3),
+    );
+    actions.add(
+      SheetAction(label: "kimmi_broderick_tennis_paramedic".tr, key: 4),
+    );
     if (showOthers) {
       actions.add(SheetAction(label: "kimmi_broderick_knob".tr, key: 99));
     }

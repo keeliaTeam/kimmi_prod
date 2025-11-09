@@ -25,9 +25,13 @@ abstract class MediaVideoViewerDataSource {
 
 class KimmiStretchByeWealthy extends StatefulWidget {
   static Future? show(
-      BuildContext context, MediaVideoViewerDataSource dataSource) {
-    return Get.to(KimmiStretchByeWealthy(dataSource),
-        transition: Transition.fadeIn);
+    BuildContext context,
+    MediaVideoViewerDataSource dataSource,
+  ) {
+    return Get.to(
+      KimmiStretchByeWealthy(dataSource),
+      transition: Transition.fadeIn,
+    );
   }
 
   final MediaVideoViewerDataSource dataSource;

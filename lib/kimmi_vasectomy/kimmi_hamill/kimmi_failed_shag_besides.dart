@@ -25,15 +25,17 @@ class KimmiFailedShagBesides extends StatelessWidget {
       height: 22,
       padding: const EdgeInsets.symmetric(horizontal: 8),
       decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(11),
-          color: KimmiPalate.kimmiBathtubStuToYummy),
+        borderRadius: BorderRadius.circular(11),
+        color: KimmiPalate.kimmiBathtubStuToYummy,
+      ),
       child: Center(
         child: Text(
           title,
           style: KimmiTamperDaytime.style(
-              fontSize: 12,
-              color: KimmiDraftJuda.white,
-              fontWeight: FontWeight.bold),
+            fontSize: 12,
+            color: KimmiDraftJuda.white,
+            fontWeight: FontWeight.bold,
+          ),
         ),
       ),
     );

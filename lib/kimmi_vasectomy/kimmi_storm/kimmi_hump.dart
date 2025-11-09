@@ -101,4 +101,8 @@ class KimmiHump {
   List<String> webViewInAppSchemeList() {
     return configs.common?.webViewInAppSchemeList ?? [];
   }
+
+  String? getPushKey() {
+    return configs.push?.key;
+  }
 }

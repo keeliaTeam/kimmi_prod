@@ -9,5 +9,9 @@ class KimmiEyelashContainerHealer {
   late EnterLiveRsp enterLiveData;
 
   KimmiEyelashContainerHealer(
-      this.uid, this.ucode, this.liveId, this.enterLiveData);
+    this.uid,
+    this.ucode,
+    this.liveId,
+    this.enterLiveData,
+  );
 }

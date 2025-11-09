@@ -11,9 +11,7 @@ part 'kimmi_cradle_johnny.g.dart';
 
 @jsonWidget
 abstract class _KimmiCradleJohnnyDecode extends JsonWidgetBuilder {
-  const _KimmiCradleJohnnyDecode({
-    required super.args,
-  });
+  const _KimmiCradleJohnnyDecode({required super.args});
 
   @override
   KimmiCradleJohnny buildCustom({
@@ -38,18 +36,21 @@ class KimmiCradleJohnny extends StatelessWidget {
         border: KimmiPalate.kimmiCradleJohnnyNanny,
       ),
       padding: const EdgeInsets.symmetric(
-          vertical: KimmiPalate.kimmiCradleJohnnyCinder),
+        vertical: KimmiPalate.kimmiCradleJohnnyCinder,
+      ),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           title ?? const SizedBox(),
           action ??
               Transform.rotate(
-                  angle: KimmiIOJuda.isARLanguage() ? pi : 0,
-                  child: KimmiErnie.local(
-                      fileName: 'kimmi_hombre_cradle_wit',
-                      width: 12,
-                      height: 12)),
+                angle: KimmiIOJuda.isARLanguage() ? pi : 0,
+                child: KimmiErnie.local(
+                  fileName: 'kimmi_hombre_cradle_wit',
+                  width: 12,
+                  height: 12,
+                ),
+              ),
         ],
       ),
     );

@@ -48,11 +48,7 @@ class KimmiTimingVasectomy {
   }
 
   Map<String, dynamic> toJson() {
-    Map<String, dynamic> map = {
-      "id": id,
-      "title": title,
-      "version": version,
-    };
+    Map<String, dynamic> map = {"id": id, "title": title, "version": version};
 
     map['width_percent'] = widthPercent;
 

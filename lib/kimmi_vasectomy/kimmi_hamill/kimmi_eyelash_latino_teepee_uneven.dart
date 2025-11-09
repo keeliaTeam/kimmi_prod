@@ -14,9 +14,7 @@ import '../kimmi_sully.dart';
 import '../kimmi_curvy/kimmi_africa.dart';
 
 class KimmiEyelashLatinoTeepeeUneven extends StatefulWidget {
-  const KimmiEyelashLatinoTeepeeUneven({
-    Key? key,
-  }) : super(key: key);
+  const KimmiEyelashLatinoTeepeeUneven({Key? key}) : super(key: key);
 
   @override
   State<KimmiEyelashLatinoTeepeeUneven> createState() =>
@@ -61,8 +59,10 @@ class _KimmiEyelashLatinoTeepeeUnevenViking
     _isProcessing = true;
     giftFeed = _queue.removeFirst();
     if (giftFeed?.animationUrl?.isNotEmpty == true) {
-      Get.toNamed(KimmiSully.KimmiSVGAContainer,
-          arguments: KimmiWelcomeHealer(giftFeed!.animationUrl ?? "", false));
+      Get.toNamed(
+        KimmiSully.KimmiSVGAContainer,
+        arguments: KimmiWelcomeHealer(giftFeed!.animationUrl ?? "", false),
+      );
     }
     setState(() {
       _startPosition = _outInitPosition;
@@ -81,10 +81,7 @@ class _KimmiEyelashLatinoTeepeeUnevenViking
           tween: Tween<double>(begin: _startPosition, end: _endPosition),
           duration: const Duration(milliseconds: 500),
           builder: (context, value, child) {
-            return Transform.translate(
-              offset: Offset(value, 0),
-              child: child,
-            );
+            return Transform.translate(offset: Offset(value, 0), child: child);
           },
           onEnd: () {
             if (_endPosition == _inInitPosition) {
@@ -102,32 +99,39 @@ class _KimmiEyelashLatinoTeepeeUnevenViking
             width: 200,
             padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 8),
             decoration: BoxDecoration(
-                color: Colors.black54,
-                borderRadius: BorderRadius.circular(33),
-                border: Border.all(width: 2, color: "4384FF".toColor())),
+              color: Colors.black54,
+              borderRadius: BorderRadius.circular(33),
+              border: Border.all(width: 2, color: "4384FF".toColor()),
+            ),
             child: Row(
               children: [
                 KimmiErnie.small(
-                    url: giftFeed!.icon,
-                    width: 50,
-                    height: 50,
-                    fit: BoxFit.cover),
+                  url: giftFeed!.icon,
+                  width: 50,
+                  height: 50,
+                  fit: BoxFit.cover,
+                ),
                 4.wGap,
                 Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Container(
-                        width: 120,
-                        child: Text(giftFeed!.sender.nickName,
-                            style: KimmiTamperDaytime.TextWhite_60p_14,
-                            overflow: TextOverflow.ellipsis,
-                            maxLines: 1)),
+                      width: 120,
+                      child: Text(
+                        giftFeed!.sender.nickName,
+                        style: KimmiTamperDaytime.TextWhite_60p_14,
+                        overflow: TextOverflow.ellipsis,
+                        maxLines: 1,
+                      ),
+                    ),
                     3.hGap,
-                    Text(giftFeed!.name,
-                        style: KimmiTamperDaytime.TextWhite_14),
+                    Text(
+                      giftFeed!.name,
+                      style: KimmiTamperDaytime.TextWhite_14,
+                    ),
                   ],
-                )
+                ),
               ],
             ),
           ),
@@ -135,9 +139,7 @@ class _KimmiEyelashLatinoTeepeeUnevenViking
       );
     }
 
-    return Stack(children: [
-      mainWidget,
-    ]);
+    return Stack(children: [mainWidget]);
   }
 
   void _animationOut() {

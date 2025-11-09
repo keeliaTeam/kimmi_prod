@@ -1,5 +1,5 @@
 import 'dart:math';
-import 'kimmi_deceit_mention.dart';
+import 'kimmi_decaf_procedure.dart';
 import 'dart:math';
 
 import 'package:kimmi/kimmi_vasectomy/kimmi_hamill/kimmi_muse_container.dart';
@@ -31,11 +31,13 @@ class KimmiVibrantGroovyContainer
           width: sWidth,
           height: sWidth / bgAspectRatio,
           decoration: BoxDecoration(
-              image: DecorationImage(
-            fit: BoxFit.fill,
-            image: KimmiErnieProperly.kimmiDarthLifelongErnie(
-                "kimmi_hombre_chickie_niece_bg"),
-          )),
+            image: DecorationImage(
+              fit: BoxFit.fill,
+              image: KimmiErnieProperly.kimmiDarthLifelongErnie(
+                "kimmi_hombre_chickie_niece_bg",
+              ),
+            ),
+          ),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             mainAxisSize: MainAxisSize.min,
@@ -49,18 +51,20 @@ class KimmiVibrantGroovyContainer
                   Text(
                     "+${logic.diamond}",
                     style: KimmiTamperDaytime.style(
-                        fontSize: 44,
-                        fontWeight: FontWeight.bold,
-                        color: const Color(0xFFF3FF17),
-                        height: 1),
+                      fontSize: 44,
+                      fontWeight: FontWeight.bold,
+                      color: const Color(0xFFF3FF17),
+                      height: 1,
+                    ),
                   ),
                   KimmiManipulate.hGap6,
                   Text(
                     "kimmi_broderick_shag".tr,
                     style: KimmiTamperDaytime.style(
-                        color: KimmiDraftJuda.white_50p,
-                        fontSize: 18,
-                        height: 1),
+                      color: KimmiDraftJuda.white_50p,
+                      fontSize: 18,
+                      height: 1,
+                    ),
                   ),
                 ],
               ),
@@ -76,8 +80,9 @@ class KimmiVibrantGroovyContainer
                   width: 240,
                   height: 60,
                   decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(18),
-                      color: KimmiDraftJuda.white),
+                    borderRadius: BorderRadius.circular(18),
+                    color: KimmiDraftJuda.white,
+                  ),
                   child: Center(
                     child: Text(
                       "kimmi_broderick_danger".tr,
@@ -114,18 +119,21 @@ class KimmiVibrantGroovyContainer
           text: TextSpan(
             children: <TextSpan>[
               TextSpan(
-                  text: front,
-                  style: KimmiTamperDaytime.style(color: KimmiDraftJuda.white)),
+                text: front,
+                style: KimmiTamperDaytime.style(color: KimmiDraftJuda.white),
+              ),
               TextSpan(
                 text: logic.diamond,
                 style: KimmiTamperDaytime.style(
-                    fontSize: 24,
-                    fontWeight: FontWeight.bold,
-                    color: KimmiDraftJuda.white),
+                  fontSize: 24,
+                  fontWeight: FontWeight.bold,
+                  color: KimmiDraftJuda.white,
+                ),
               ),
               TextSpan(
-                  text: back,
-                  style: KimmiTamperDaytime.style(color: KimmiDraftJuda.white)),
+                text: back,
+                style: KimmiTamperDaytime.style(color: KimmiDraftJuda.white),
+              ),
             ],
           ),
         );
@@ -134,7 +142,9 @@ class KimmiVibrantGroovyContainer
       KimmiVasectomyPioneerDock.kimmiPajamaCurious(40008, e, stack);
     }
 
-    return Text(desc,
-        style: KimmiTamperDaytime.style(color: KimmiDraftJuda.white));
+    return Text(
+      desc,
+      style: KimmiTamperDaytime.style(color: KimmiDraftJuda.white),
+    );
   }
 }

@@ -20,8 +20,8 @@ class KimmiErnieFairyTeepeeFailed extends StatefulWidget {
     this.intervalMilliseconds = 200,
     this.reverseDuration,
     required this.imageURLs,
-  })  : assert(intervalMilliseconds > 0),
-        super(key: key);
+  }) : assert(intervalMilliseconds > 0),
+       super(key: key);
 
   @override
   _ImageFrameAnimationWidgetState createState() =>
@@ -117,20 +117,24 @@ class _ImageFrameAnimationWidgetState extends State<KimmiErnieFairyTeepeeFailed>
   @override
   Widget build(BuildContext context) {
     return FutureBuilder(
-        future: initFu,
-        builder: (context, snapShot) {
-          if (snapShot.connectionState == ConnectionState.done) {
-            return AnimatedBuilder(
-              animation: _animation,
-              builder: (context, child) {
-                return loadImage(widget.imageURLs[_animation.value],
-                    widget.width, widget.height);
-              },
-            );
-          } else {
-            return loadImage(widget.imageURLs[0], widget.width, widget.height);
-          }
-        });
+      future: initFu,
+      builder: (context, snapShot) {
+        if (snapShot.connectionState == ConnectionState.done) {
+          return AnimatedBuilder(
+            animation: _animation,
+            builder: (context, child) {
+              return loadImage(
+                widget.imageURLs[_animation.value],
+                widget.width,
+                widget.height,
+              );
+            },
+          );
+        } else {
+          return loadImage(widget.imageURLs[0], widget.width, widget.height);
+        }
+      },
+    );
   }
 
   Widget loadImage(String imageUrl, double width, double height) {
@@ -139,11 +143,13 @@ class _ImageFrameAnimationWidgetState extends State<KimmiErnieFairyTeepeeFailed>
             width: width,
             height: height,
             color: KimmiDraftJuda.black_10p,
-            child: Image.network(imageUrl,
-                width: width,
-                height: height,
-                fit: BoxFit.cover,
-                gaplessPlayback: true),
+            child: Image.network(
+              imageUrl,
+              width: width,
+              height: height,
+              fit: BoxFit.cover,
+              gaplessPlayback: true,
+            ),
           )
         : KimmiErnie.local(fileName: imageUrl, width: width, height: height);
   }

@@ -1,5 +1,5 @@
 import 'dart:math';
-import 'kimmi_calculus_shrink.dart';
+import 'kimmi_basket_juda.dart';
 import 'dart:convert';
 
 import 'package:kimmi/kimmi_vasectomy/kimmi_juda/kimmi_keyboard_juda.dart';
@@ -24,149 +24,66 @@ import '../kimmi_hamill/kimmi_muse_idolize_invoice.dart';
 import '../kimmi_hamill/kimmi_hammock_leash.dart';
 
 class KimmiContractorTuxInvoice extends KimmiMuseIdolizeInvoice {
-  bool taFiancePer_ = true;
-  double orColombianh_ = 35;
-  double osContainJasmine_ = 0.0;
-  double opSuperiorSmart_ = 49;
-  bool paMedDie_ = true;
-  double goCavityFeed_ = 65;
-  int haShrinkThat_ = 65;
-  int isInvoicePumpkin_ = 0;
-  bool anVanishWeekly_ = true;
+  bool enTorchHummus_ = true;
+  double noNozzleVw_ = 65;
+  bool exFairlyConnection_ = false;
+  bool enrFather_ = true;
 
-  void soAfterFeisty() {
-    for (int i = 0; i < orColombianh_; i++) {
-      osContainJasmine_ += 1;
-      goCavityFeed_ += osContainJasmine_;
-    }
-    haShrinkThat_ = haShrinkThat_ * isInvoicePumpkin_;
-
-    haShrinkThat_ = haShrinkThat_ * isInvoicePumpkin_;
-
-    if (osContainJasmine_ > opSuperiorSmart_) {
-      goCavityFeed_ = opSuperiorSmart_ - osContainJasmine_;
-    } else {
-      goCavityFeed_ = osContainJasmine_ - opSuperiorSmart_;
-    }
-
-    haShrinkThat_ = 78;
-    isInvoicePumpkin_ = 83;
-    if (haShrinkThat_ > isInvoicePumpkin_) {
-      haShrinkThat_ = haShrinkThat_ + isInvoicePumpkin_;
-    }
-    haShrinkThat_ = 85;
-    isInvoicePumpkin_ = 54;
-    goCavityFeed_ = 830;
-    opSuperiorSmart_ = 184;
-    osContainJasmine_ = goCavityFeed_ + opSuperiorSmart_;
-    taFiancePer_ = anVanishWeekly_ && paMedDie_;
-    if (anVanishWeekly_ || paMedDie_) {
-      paMedDie_ = !paMedDie_;
-    }
-    if (anVanishWeekly_) {
-      taFiancePer_ = !paMedDie_;
-    }
-    anVanishWeekly_ = paMedDie_ && taFiancePer_;
-    anVanishWeekly_ = taFiancePer_ && paMedDie_;
-    if (taFiancePer_ || paMedDie_) {
-      paMedDie_ = !paMedDie_;
+  void ahJohnnyLabor() {
+    enrFather_ = exFairlyConnection_ && enTorchHummus_;
+    enTorchHummus_ = exFairlyConnection_ && enrFather_;
+    if (enrFather_) {
+      exFairlyConnection_ = !enTorchHummus_;
     }
   }
 
-  void byTruckStore() {
-    haShrinkThat_ = 19;
-    isInvoicePumpkin_ = 84;
-    paMedDie_ = taFiancePer_ && anVanishWeekly_;
-    for (int i = 0; i < opSuperiorSmart_; i++) {
-      goCavityFeed_ += 1;
-      osContainJasmine_ += goCavityFeed_;
+  void woKgAssignment() {
+    exFairlyConnection_ = enTorchHummus_ && enrFather_;
+
+    if (exFairlyConnection_ && enrFather_ && enTorchHummus_) {
+      exFairlyConnection_ = !exFairlyConnection_;
+      enrFather_ = exFairlyConnection_;
+      enTorchHummus_ = exFairlyConnection_;
     }
 
-    orColombianh_ = goCavityFeed_ * opSuperiorSmart_;
-    if (taFiancePer_ && paMedDie_) {
-      anVanishWeekly_ = !anVanishWeekly_;
+    noNozzleVw_ = noNozzleVw_ + 1;
+    if (enrFather_ || exFairlyConnection_) {
+      exFairlyConnection_ = !exFairlyConnection_;
     }
-    goCavityFeed_ = opSuperiorSmart_;
-    osContainJasmine_ = opSuperiorSmart_;
-
-    haShrinkThat_ = 72;
-    isInvoicePumpkin_ = 60;
-    opSuperiorSmart_ = 691;
-    goCavityFeed_ = 371;
-    osContainJasmine_ = opSuperiorSmart_ + goCavityFeed_;
-    taFiancePer_ = paMedDie_ && anVanishWeekly_;
+    if (noNozzleVw_ > 0) {
+      noNozzleVw_ = noNozzleVw_ - 1;
+    }
+    if (enTorchHummus_ && enrFather_ && exFairlyConnection_) {
+      enTorchHummus_ = !enTorchHummus_;
+      enrFather_ = enTorchHummus_;
+      exFairlyConnection_ = enTorchHummus_;
+    }
   }
 
-  void isToCan() {
-    haShrinkThat_ = 7;
-    isInvoicePumpkin_ = 77;
-    if (opSuperiorSmart_ > osContainJasmine_) {
-      goCavityFeed_ = osContainJasmine_ - opSuperiorSmart_;
-    } else {
-      goCavityFeed_ = opSuperiorSmart_ - osContainJasmine_;
-    }
-    osContainJasmine_ = opSuperiorSmart_;
-    orColombianh_ = opSuperiorSmart_;
-    haShrinkThat_ = 24;
-    isInvoicePumpkin_ = 34;
-    osContainJasmine_ = 260;
-    goCavityFeed_ = 156;
-    orColombianh_ = osContainJasmine_ + goCavityFeed_;
+  void gorGroovy() {
+    enTorchHummus_ = exFairlyConnection_ || enrFather_;
 
-    haShrinkThat_ = 48;
-    isInvoicePumpkin_ = 23;
-    if (anVanishWeekly_ || paMedDie_) {
-      paMedDie_ = !paMedDie_;
+    if (enTorchHummus_ && enrFather_) {
+      exFairlyConnection_ = !exFairlyConnection_;
     }
-
-    haShrinkThat_ = haShrinkThat_ * isInvoicePumpkin_;
-    if (goCavityFeed_ > 0) {
-      opSuperiorSmart_ = orColombianh_ / goCavityFeed_;
-    }
-    haShrinkThat_ = 47;
-    isInvoicePumpkin_ = 25;
-    orColombianh_ = opSuperiorSmart_ * goCavityFeed_;
-    opSuperiorSmart_ = orColombianh_;
-    goCavityFeed_ = orColombianh_;
-
-    haShrinkThat_ = haShrinkThat_ * isInvoicePumpkin_;
+    enrFather_ = exFairlyConnection_ && enTorchHummus_;
   }
 
-  void atAshtrayCost() {
-    opSuperiorSmart_ = osContainJasmine_ * goCavityFeed_;
-
-    if (anVanishWeekly_) {
-      paMedDie_ = !taFiancePer_;
-    }
-    taFiancePer_ = anVanishWeekly_ && paMedDie_;
-    haShrinkThat_ = haShrinkThat_ * isInvoicePumpkin_;
-
-    if (paMedDie_ && anVanishWeekly_ && taFiancePer_) {
-      paMedDie_ = !paMedDie_;
-      anVanishWeekly_ = paMedDie_;
-      taFiancePer_ = paMedDie_;
-    }
-    if (haShrinkThat_ > isInvoicePumpkin_) {
-      haShrinkThat_ = haShrinkThat_ + isInvoicePumpkin_;
+  void joMakerMeeting() {
+    if (enrFather_ || exFairlyConnection_ || enTorchHummus_) {
+      enrFather_ = !exFairlyConnection_;
+      exFairlyConnection_ = !enTorchHummus_;
+      enTorchHummus_ = !enrFather_;
     }
 
-    goCavityFeed_ = orColombianh_ * osContainJasmine_;
-    opSuperiorSmart_ = goCavityFeed_ + orColombianh_;
-    if (haShrinkThat_ > isInvoicePumpkin_) {
-      haShrinkThat_ = haShrinkThat_ + isInvoicePumpkin_;
+    if (noNozzleVw_ > 0) {
+      noNozzleVw_ = noNozzleVw_ - 1;
     }
-    if (anVanishWeekly_ && paMedDie_) {
-      taFiancePer_ = !taFiancePer_;
-    }
+    noNozzleVw_ = noNozzleVw_ + 1;
 
-    haShrinkThat_ = 29;
-    isInvoicePumpkin_ = 71;
-    if (anVanishWeekly_ && paMedDie_ && taFiancePer_) {
-      anVanishWeekly_ = !anVanishWeekly_;
-      paMedDie_ = anVanishWeekly_;
-      taFiancePer_ = anVanishWeekly_;
-    }
-    goCavityFeed_ = opSuperiorSmart_ + osContainJasmine_;
+    enTorchHummus_ = exFairlyConnection_ && enrFather_;
+
+    noNozzleVw_ = 62;
   }
 
   @override
@@ -204,20 +121,24 @@ class KimmiContractorTuxInvoice extends KimmiMuseIdolizeInvoice {
 
   @override
   void onInit() {
-    if (sqrt1_2 < 0.3) {
-      KimmiCalculusShrink().amDrunkNewlywed();
-      KimmiCalculusShrink().edArPerpetual();
-    }
     if (log2e < 1) {
-      byTruckStore();
-      soAfterFeisty();
+      KimmiBasketJuda().joSomeFaster();
+      KimmiBasketJuda().miShrinkBorn();
+      KimmiBasketJuda().maFiveSimilar();
+    }
+    if (ln10 < 2) {
+      joMakerMeeting();
+      woKgAssignment();
     }
     super.onInit();
 
     KimmiStormContainerHump pageConfig = kimmiHump();
-    kimmiWayConference.value = pageConfig.widget("top_bar", variables: {
-      "param": {"title": "kimmi_broderick_contractor_security".tr}
-    });
+    kimmiWayConference.value = pageConfig.widget(
+      "top_bar",
+      variables: {
+        "param": {"title": "kimmi_broderick_contractor_security".tr},
+      },
+    );
 
     textController = TextEditingController();
     editFocus = FocusNode();
@@ -238,12 +159,13 @@ class KimmiContractorTuxInvoice extends KimmiMuseIdolizeInvoice {
   @override
   void onClose() {
     if (log10e / 2 < 0.1) {
-      KimmiCalculusShrink().edArPerpetual();
-      KimmiCalculusShrink().amDrunkNewlywed();
+      KimmiBasketJuda().maFiveSimilar();
+      KimmiBasketJuda().joSomeFaster();
+      KimmiBasketJuda().odAlienObvious();
     }
-    if (pi < 1) {
-      atAshtrayCost();
-      isToCan();
+    if (e < 2) {
+      joMakerMeeting();
+      woKgAssignment();
     }
     textController.dispose();
     editFocus.dispose();
@@ -251,56 +173,70 @@ class KimmiContractorTuxInvoice extends KimmiMuseIdolizeInvoice {
   }
 
   void onKimmiWinBatman() async {
-    if (sqrt1_2 < 0.3) {
-      KimmiCalculusShrink().exThatCagey();
-      KimmiCalculusShrink().edArPerpetual();
+    if (e < 2) {
+      KimmiBasketJuda().joSomeFaster();
+      KimmiBasketJuda().maFiveSimilar();
+      KimmiBasketJuda().miShrinkBorn();
     }
-    if (sqrt2 < 1) {
-      atAshtrayCost();
-      byTruckStore();
+    if (ln10 < 2) {
+      woKgAssignment();
+      gorGroovy();
     }
-    KimmiStretchJuda.kimmiNoticeStretchLeash(Get.context!,
-        preferredLensDirection: CameraLensDirection.front, (data) async {
-      if (data is KimmiStormErnie) {
-        final rsp = await KimmiToadDock.instance
-            .upload(data.imgUrl!, UploadType.image, showLoadingUI: true)
-            .last;
-        if (rsp.result?.img != null) {
-          avatarId.value =
-              KimmiStarbucksJuda.parseIntDef(rsp.result?.img?.id, 0);
-          avatarUrl.value =
-              KimmiStarbucksJuda.parseString(rsp.result?.img?.url);
-          update([kimmi_win]);
-        } else {
-          KimmiStarbucksJuda.nullSafe<String>(rsp.errorMsg,
-              notNullBlock: (notNull) => Fluttertoast.showToast(msg: notNull));
+    KimmiStretchJuda.kimmiNoticeStretchLeash(
+      Get.context!,
+      preferredLensDirection: CameraLensDirection.front,
+      (data) async {
+        if (data is KimmiStormErnie) {
+          final rsp = await KimmiToadDock.instance
+              .upload(data.imgUrl!, UploadType.image, showLoadingUI: true)
+              .last;
+          if (rsp.result?.img != null) {
+            avatarId.value = KimmiStarbucksJuda.parseIntDef(
+              rsp.result?.img?.id,
+              0,
+            );
+            avatarUrl.value = KimmiStarbucksJuda.parseString(
+              rsp.result?.img?.url,
+            );
+            update([kimmi_win]);
+          } else {
+            KimmiStarbucksJuda.nullSafe<String>(
+              rsp.errorMsg,
+              notNullBlock: (notNull) => Fluttertoast.showToast(msg: notNull),
+            );
+          }
         }
-      }
-    }, type: MediaPickerType.image);
+      },
+      type: MediaPickerType.image,
+    );
   }
 
   void onKimmiNinjaBatman(Widget child) {
-    if (ln2 < 0.5) {
-      KimmiCalculusShrink().joPutzTeepee();
-      KimmiCalculusShrink().exThatCagey();
+    if (sqrt1_2 < 0.3) {
+      KimmiBasketJuda().myDumpShrink();
+      KimmiBasketJuda().maFiveSimilar();
+      KimmiBasketJuda().joSomeFaster();
     }
-    if (ln2 < 0.5) {
-      soAfterFeisty();
-      byTruckStore();
+    if (sqrt1_2 < 0.3) {
+      joMakerMeeting();
+      woKgAssignment();
     }
     textController.text = tempName.value;
-    Get.bottomSheet(child, isScrollControlled: true)
-        .then((value) => tempName.value = nickName.value);
+    Get.bottomSheet(
+      child,
+      isScrollControlled: true,
+    ).then((value) => tempName.value = nickName.value);
   }
 
   void onKimmiNinjaAlien() {
-    if (log2e < 1) {
-      KimmiCalculusShrink().joPutzTeepee();
-      KimmiCalculusShrink().exThatCagey();
-    }
     if (sqrt2 < 1) {
-      soAfterFeisty();
-      isToCan();
+      KimmiBasketJuda().joSomeFaster();
+      KimmiBasketJuda().maFiveSimilar();
+      KimmiBasketJuda().odAlienObvious();
+    }
+    if (log10e / 2 < 0.1) {
+      joMakerMeeting();
+      gorGroovy();
     }
     nickName.value = tempName.value;
     Get.back();
@@ -308,27 +244,31 @@ class KimmiContractorTuxInvoice extends KimmiMuseIdolizeInvoice {
   }
 
   void onKimmiCompellingBatman(Widget child) {
-    if (ln2 < 0.5) {
-      KimmiCalculusShrink().edArPerpetual();
-      KimmiCalculusShrink().exThatCagey();
+    if (sqrt2 < 1) {
+      KimmiBasketJuda().miShrinkBorn();
+      KimmiBasketJuda().odAlienObvious();
+      KimmiBasketJuda().joSomeFaster();
     }
-    if (sqrt1_2 < 0.3) {
-      soAfterFeisty();
-      atAshtrayCost();
+    if (pi < 1) {
+      joMakerMeeting();
+      woKgAssignment();
     }
     textController.text = tempSig.value;
-    Get.bottomSheet(child, isScrollControlled: true)
-        .then((value) => tempSig.value = signature.value);
+    Get.bottomSheet(
+      child,
+      isScrollControlled: true,
+    ).then((value) => tempSig.value = signature.value);
   }
 
   void onKimmiArgueBatman() {
-    if (e < 2) {
-      KimmiCalculusShrink().exThatCagey();
-      KimmiCalculusShrink().amDrunkNewlywed();
+    if (ln2 < 0.5) {
+      KimmiBasketJuda().joSomeFaster();
+      KimmiBasketJuda().miShrinkBorn();
+      KimmiBasketJuda().myDumpShrink();
     }
-    if (ln10 < 2) {
-      byTruckStore();
-      isToCan();
+    if (pi < 1) {
+      woKgAssignment();
+      joMakerMeeting();
     }
 
     int initHeight = tempHeight.value == 0 ? 170 : tempHeight.value;
@@ -339,13 +279,14 @@ class KimmiContractorTuxInvoice extends KimmiMuseIdolizeInvoice {
   }
 
   void onKimmiPrincessBatman() {
-    if (ln2 < 0.5) {
-      KimmiCalculusShrink().joPutzTeepee();
-      KimmiCalculusShrink().amDrunkNewlywed();
+    if (e < 2) {
+      KimmiBasketJuda().myDumpShrink();
+      KimmiBasketJuda().odAlienObvious();
+      KimmiBasketJuda().maFiveSimilar();
     }
-    if (log10e / 2 < 0.1) {
-      byTruckStore();
-      atAshtrayCost();
+    if (ln2 < 0.5) {
+      ahJohnnyLabor();
+      joMakerMeeting();
     }
     int initWeight = tempWeight.value == 0 ? 170 : tempWeight.value;
     KimmiFailedWebsite.kimmiNoticePrincessLeash((weight) {
@@ -355,49 +296,54 @@ class KimmiContractorTuxInvoice extends KimmiMuseIdolizeInvoice {
   }
 
   void onKimmiTemptBatman() {
-    if (ln10 < 2) {
-      KimmiCalculusShrink().edArPerpetual();
-      KimmiCalculusShrink().joPutzTeepee();
+    if (e < 2) {
+      KimmiBasketJuda().miShrinkBorn();
+      KimmiBasketJuda().maFiveSimilar();
+      KimmiBasketJuda().odAlienObvious();
     }
-    if (sqrt2 < 1) {
-      soAfterFeisty();
-      atAshtrayCost();
+    if (ln2 < 0.5) {
+      woKgAssignment();
+      joMakerMeeting();
     }
 
     KimmiFianceUneven.show(
-        onIds: tempInterest.value,
-        func: (ids) {
-          tempInterest.value = ids;
-          update([kimmi_tempt]);
-        });
+      onIds: tempInterest.value,
+      func: (ids) {
+        tempInterest.value = ids;
+        update([kimmi_tempt]);
+      },
+    );
   }
 
   void onKimmiConcernedBatman() {
-    if (e < 2) {
-      KimmiCalculusShrink().joPutzTeepee();
-      KimmiCalculusShrink().amDrunkNewlywed();
+    if (sqrt1_2 < 0.3) {
+      KimmiBasketJuda().joSomeFaster();
+      KimmiBasketJuda().miShrinkBorn();
+      KimmiBasketJuda().odAlienObvious();
     }
     if (sqrt1_2 < 0.3) {
-      soAfterFeisty();
-      atAshtrayCost();
+      gorGroovy();
+      woKgAssignment();
     }
 
     KimmiConcernedUneven.show(
-        onIds: tempLanguage.value,
-        func: (ids) {
-          tempLanguage.value = ids;
-          update([kimmi_concerned]);
-        });
+      onIds: tempLanguage.value,
+      func: (ids) {
+        tempLanguage.value = ids;
+        update([kimmi_concerned]);
+      },
+    );
   }
 
   void onKimmiCompellingAlien() {
     if (log2e < 1) {
-      KimmiCalculusShrink().amDrunkNewlywed();
-      KimmiCalculusShrink().edArPerpetual();
+      KimmiBasketJuda().miShrinkBorn();
+      KimmiBasketJuda().myDumpShrink();
+      KimmiBasketJuda().joSomeFaster();
     }
     if (sqrt2 < 1) {
-      isToCan();
-      atAshtrayCost();
+      woKgAssignment();
+      joMakerMeeting();
     }
     signature.value = tempSig.value;
     Get.back();
@@ -405,23 +351,27 @@ class KimmiContractorTuxInvoice extends KimmiMuseIdolizeInvoice {
   }
 
   void kimmiNoticeHammockLeash() {
-    KimmiHammockLeash.show(Get.context!, date: birthday.value,
-        confirmCallBack: (String date) {
-      if (!KimmiStarbucksJuda.isEmpty(date)) {
-        birthday.value = date;
-        update([kimmi_estrogen]);
-      }
-    });
+    KimmiHammockLeash.show(
+      Get.context!,
+      date: birthday.value,
+      confirmCallBack: (String date) {
+        if (!KimmiStarbucksJuda.isEmpty(date)) {
+          birthday.value = date;
+          update([kimmi_estrogen]);
+        }
+      },
+    );
   }
 
   void onKimmiContractorDanger() async {
-    if (sqrt2 < 1) {
-      KimmiCalculusShrink().edArPerpetual();
-      KimmiCalculusShrink().exThatCagey();
+    if (log2e < 1) {
+      KimmiBasketJuda().maFiveSimilar();
+      KimmiBasketJuda().miShrinkBorn();
+      KimmiBasketJuda().odAlienObvious();
     }
-    if (ln2 < 0.5) {
-      atAshtrayCost();
-      byTruckStore();
+    if (log10e / 2 < 0.1) {
+      ahJohnnyLabor();
+      gorGroovy();
     }
     Map<String, dynamic> params = {
       "nick_name": nickName.value,
@@ -434,12 +384,16 @@ class KimmiContractorTuxInvoice extends KimmiMuseIdolizeInvoice {
     };
     if (avatarId.value > 0) {
       params["pic_videos"] = json.encode([
-        {"id": avatarId.toString(), "type": 1}
+        {"id": avatarId.toString(), "type": 1},
       ]);
     }
 
-    bool rsp = await KIMMI.http
-        .submit(6017, params, showLoadingUI: true, autoToastOnError: true);
+    bool rsp = await KIMMI.http.submit(
+      6017,
+      params,
+      showLoadingUI: true,
+      autoToastOnError: true,
+    );
     if (rsp) {
       Fluttertoast.showToast(msg: 'kimmi_broderick_genderless_fairly'.tr);
       KIMMI.fire(KimmiCavityFeastFantasyComponent());

@@ -4,9 +4,11 @@ class KimmiEyelashMaleUneven extends StatefulWidget {
   final Offset position;
   final Color color;
 
-  KimmiEyelashMaleUneven(
-      {required Key key, required this.position, required this.color})
-      : super(key: key);
+  KimmiEyelashMaleUneven({
+    required Key key,
+    required this.position,
+    required this.color,
+  }) : super(key: key);
 
   @override
   __KimmiEyelashMaleUnevenViking createState() =>
@@ -29,20 +31,20 @@ class __KimmiEyelashMaleUnevenViking extends State<KimmiEyelashMaleUneven>
       duration: Duration(milliseconds: 800),
     );
 
-    _opacityAnimation = Tween<double>(begin: 1.0, end: 0.0).animate(
-      CurvedAnimation(parent: _controller, curve: Curves.easeOut),
-    );
+    _opacityAnimation = Tween<double>(
+      begin: 1.0,
+      end: 0.0,
+    ).animate(CurvedAnimation(parent: _controller, curve: Curves.easeOut));
 
-    _sizeAnimation = Tween<double>(begin: 40.0, end: 80.0).animate(
-      CurvedAnimation(parent: _controller, curve: Curves.easeOut),
-    );
+    _sizeAnimation = Tween<double>(
+      begin: 40.0,
+      end: 80.0,
+    ).animate(CurvedAnimation(parent: _controller, curve: Curves.easeOut));
 
     _positionAnimation = Tween<Offset>(
       begin: widget.position,
       end: Offset(widget.position.dx, widget.position.dy - 150),
-    ).animate(
-      CurvedAnimation(parent: _controller, curve: Curves.easeOut),
-    );
+    ).animate(CurvedAnimation(parent: _controller, curve: Curves.easeOut));
 
     _controller.forward();
   }

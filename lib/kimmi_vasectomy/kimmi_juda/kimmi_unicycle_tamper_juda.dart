@@ -43,8 +43,11 @@ class KimmiUnicycleTamperJuda {
     return ret;
   }
 
-  static List<InlineSpan> getRichText(String? text,
-      {TextStyle? style, Color? atColor}) {
+  static List<InlineSpan> getRichText(
+    String? text, {
+    TextStyle? style,
+    Color? atColor,
+  }) {
     style ??= const TextStyle(
       fontSize: 15,
       color: Color(0xFF666666),
@@ -52,14 +55,16 @@ class KimmiUnicycleTamperJuda {
     );
     List<InlineSpan> texts = <InlineSpan>[];
     if (text != null) {
-      List<dynamic> atList = matchATText(text,
-          style: TextStyle(
-            color: const Color(0xFF3CC1F6),
-            fontSize: style.fontSize,
-            fontWeight: style.fontWeight,
-            fontFamily: AppText.fontFamily,
-          ),
-          atColor: atColor);
+      List<dynamic> atList = matchATText(
+        text,
+        style: TextStyle(
+          color: const Color(0xFF3CC1F6),
+          fontSize: style.fontSize,
+          fontWeight: style.fontWeight,
+          fontFamily: AppText.fontFamily,
+        ),
+        atColor: atColor,
+      );
       for (dynamic atObj in atList) {
         if (atObj is String) {
           List<dynamic> emojiList = matchEmojiText(atObj, style: style);
@@ -78,8 +83,11 @@ class KimmiUnicycleTamperJuda {
     return texts;
   }
 
-  static List<dynamic> matchATText(String text,
-      {TextStyle? style, Color? atColor}) {
+  static List<dynamic> matchATText(
+    String text, {
+    TextStyle? style,
+    Color? atColor,
+  }) {
     style ??= const TextStyle(
       fontSize: 15,
       color: Color(0xFF666666),
@@ -110,9 +118,11 @@ class KimmiUnicycleTamperJuda {
         bool isBold = true;
         String colorStr = "";
         bool isPerson = true;
-        for (int i = 0;
-            i < atInfoList.length && i < TTRichTextAtParamType.values.length;
-            i++) {
+        for (
+          int i = 0;
+          i < atInfoList.length && i < TTRichTextAtParamType.values.length;
+          i++
+        ) {
           String configStr = atInfoList[i];
           switch (TTRichTextAtParamType.values[i]) {
             case TTRichTextAtParamType.TTRichTextAtParamTypeType:
@@ -154,12 +164,16 @@ class KimmiUnicycleTamperJuda {
         }
 
         if (atType == TTRichTextAtType.TTRichTextAtTypeAll) {
-          atTextsList.add(TextSpan(
+          atTextsList.add(
+            TextSpan(
               text: atString,
               style: TextStyle(
-                  fontSize: style.fontSize,
-                  color: atColor ?? Color(0xFF333333),
-                  fontWeight: FontWeight.w600)));
+                fontSize: style.fontSize,
+                color: atColor ?? Color(0xFF333333),
+                fontWeight: FontWeight.w600,
+              ),
+            ),
+          );
         } else {
           if (isPerson &&
               atType == TTRichTextAtType.TTRichTextAtTypeUser &&
@@ -173,14 +187,19 @@ class KimmiUnicycleTamperJuda {
             atString = atString.replaceFirst('@', '');
           }
 
-          atColor ??=
-              colorStr.isNotEmpty ? KimmiDraftJuda.transparent : style.color;
-          atTextsList.add(TextSpan(
+          atColor ??= colorStr.isNotEmpty
+              ? KimmiDraftJuda.transparent
+              : style.color;
+          atTextsList.add(
+            TextSpan(
               text: atString,
               style: TextStyle(
-                  fontSize: style.fontSize,
-                  color: atColor,
-                  fontWeight: isBold ? FontWeight.w600 : style.fontWeight)));
+                fontSize: style.fontSize,
+                color: atColor,
+                fontWeight: isBold ? FontWeight.w600 : style.fontWeight,
+              ),
+            ),
+          );
         }
       }
 
@@ -247,9 +266,11 @@ class KimmiUnicycleTamperJuda {
         bool showAt = true;
         bool showSpace = true;
         bool isPerson = true;
-        for (int i = 0;
-            i < atInfoList.length && i < TTRichTextAtParamType.values.length;
-            i++) {
+        for (
+          int i = 0;
+          i < atInfoList.length && i < TTRichTextAtParamType.values.length;
+          i++
+        ) {
           String configStr = atInfoList[i];
           switch (TTRichTextAtParamType.values[i]) {
             case TTRichTextAtParamType.TTRichTextAtParamTypeType:
@@ -392,47 +413,59 @@ class KimmiUnicycleTamperJuda {
       }
 
       KimmiStarbucksJuda.nullSafe<RegExpMatch>(
-          RegExp(kEmojiNameRegular).firstMatch(match),
-          notNullBlock: (expMatch) {
-        if (RegExp(kEmojiIconRegular).hasMatch(match)) {
-          String? emojiName = expMatch.group(0) ?? "";
-          String? emojiIconPath;
-          if (KimmiWaitressJackalJuda.instance.dic[emojiName] != null) {
-            emojiIconPath = KimmiWaitressJackalJuda.instance.basePath +
-                KimmiWaitressJackalJuda.instance.dic[emojiName]!.icon!;
-          }
-          if (emojiIconPath != null && emojiIconPath.isNotEmpty) {
-            double width = style!.fontSize ?? 15;
-            width += 2;
-            Image image = Image.file(
-              File(emojiIconPath),
-              fit: BoxFit.fitWidth,
-              width: width,
-              height: width,
+        RegExp(kEmojiNameRegular).firstMatch(match),
+        notNullBlock: (expMatch) {
+          if (RegExp(kEmojiIconRegular).hasMatch(match)) {
+            String? emojiName = expMatch.group(0) ?? "";
+            String? emojiIconPath;
+            if (KimmiWaitressJackalJuda.instance.dic[emojiName] != null) {
+              emojiIconPath =
+                  KimmiWaitressJackalJuda.instance.basePath +
+                  KimmiWaitressJackalJuda.instance.dic[emojiName]!.icon!;
+            }
+            if (emojiIconPath != null && emojiIconPath.isNotEmpty) {
+              double width = style!.fontSize ?? 15;
+              width += 2;
+              Image image = Image.file(
+                File(emojiIconPath),
+                fit: BoxFit.fitWidth,
+                width: width,
+                height: width,
+              );
+              texts.add(
+                WidgetSpan(
+                  alignment: PlaceholderAlignment.middle,
+                  child: image,
+                ),
+              );
+            } else {
+              texts.add(match);
+            }
+          } else if (match.length > expMatch.end + 1) {
+            String urlString = match.substring(
+              expMatch.end + 1,
+              match.length - 1,
             );
-            texts.add(WidgetSpan(
-                alignment: PlaceholderAlignment.middle, child: image));
-          } else {
-            texts.add(match);
+            if (urlString.isNotEmpty) {
+              double width = style!.fontSize ?? 15;
+              Image image = Image(
+                image: CachedNetworkImageProvider(urlString),
+                fit: BoxFit.fitWidth,
+                width: width,
+                height: width,
+              );
+              texts.add(
+                WidgetSpan(
+                  alignment: PlaceholderAlignment.middle,
+                  child: image,
+                ),
+              );
+            } else {
+              texts.add(match);
+            }
           }
-        } else if (match.length > expMatch.end + 1) {
-          String urlString =
-              match.substring(expMatch.end + 1, match.length - 1);
-          if (urlString.isNotEmpty) {
-            double width = style!.fontSize ?? 15;
-            Image image = Image(
-              image: CachedNetworkImageProvider(urlString),
-              fit: BoxFit.fitWidth,
-              width: width,
-              height: width,
-            );
-            texts.add(WidgetSpan(
-                alignment: PlaceholderAlignment.middle, child: image));
-          } else {
-            texts.add(match);
-          }
-        }
-      });
+        },
+      );
 
       start = m.end;
     }

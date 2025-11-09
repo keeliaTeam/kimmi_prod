@@ -1,5 +1,5 @@
 import 'dart:math';
-import 'kimmi_deceit_mention.dart';
+import 'kimmi_concerned_prototype.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_storm/kimmi_handcuff_india_fighting_amen_campfire.dart';
 
 import 'package:kimmi/kimmi_vasectomy/kimmi_juda/kimmi_starbucks_juda.dart';
@@ -50,10 +50,11 @@ class KimmiLovedHandcuffUnwantedContainer
         children: [
           const SizedBox(height: 300),
           KimmiErnie.local(
-              fileName: "kimmi_hombre_loved_handcuff_unwanted_bg",
-              width: Get.width,
-              height: 300,
-              fit: BoxFit.cover),
+            fileName: "kimmi_hombre_loved_handcuff_unwanted_bg",
+            width: Get.width,
+            height: 300,
+            fit: BoxFit.cover,
+          ),
           KIMMI.kimmiHump.isKimmiAiGraceSensitive()
               ? const SizedBox.shrink()
               : Column(
@@ -65,30 +66,37 @@ class KimmiLovedHandcuffUnwantedContainer
                         itemBuilder: (BuildContext context, int index) {
                           KimmiHandcuffFeast matchUser =
                               logic.matchUserList[index];
-                          return Stack(alignment: Alignment.center, children: [
-                            GetBuilder<KimmiLovedHandcuffUnwantedInvoice>(
-                              id: logic.kimmi_vendor,
-                              builder: (logic) {
-                                return Container(
-                                  width: size,
-                                  height: size,
-                                  decoration: BoxDecoration(
+                          return Stack(
+                            alignment: Alignment.center,
+                            children: [
+                              GetBuilder<KimmiLovedHandcuffUnwantedInvoice>(
+                                id: logic.kimmi_vendor,
+                                builder: (logic) {
+                                  return Container(
+                                    width: size,
+                                    height: size,
+                                    decoration: BoxDecoration(
                                       border: Border.all(
-                                          color: logic.currentIndex == index
-                                              ? const Color(0xFF6E3EFB)
-                                              : KimmiDraftJuda.transparent,
-                                          width: 6),
-                                      borderRadius:
-                                          BorderRadius.circular(size / 2)),
-                                  child: KimmiErnie.circle(
+                                        color: logic.currentIndex == index
+                                            ? const Color(0xFF6E3EFB)
+                                            : KimmiDraftJuda.transparent,
+                                        width: 6,
+                                      ),
+                                      borderRadius: BorderRadius.circular(
+                                        size / 2,
+                                      ),
+                                    ),
+                                    child: KimmiErnie.circle(
                                       url: matchUser.user?.avatarUrl ?? '',
                                       size: size,
                                       fit: BoxFit.cover,
-                                      clip: ImageClipType.small),
-                                );
-                              },
-                            )
-                          ]);
+                                      clip: ImageClipType.small,
+                                    ),
+                                  );
+                                },
+                              ),
+                            ],
+                          );
                         },
                         onIndexChanged: (int index) {
                           logic.onKimmiGodCommercial(index);
@@ -111,15 +119,19 @@ class KimmiLovedHandcuffUnwantedContainer
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Container(
-                              constraints:
-                                  const BoxConstraints(maxWidth: 200.0),
-                              child: Text(matchUser.user?.nickName ?? "",
-                                  overflow: TextOverflow.ellipsis,
-                                  softWrap: true,
-                                  maxLines: 1,
-                                  style: KimmiTamperDaytime.style(
-                                      color: KimmiDraftJuda.white,
-                                      fontSize: 18)),
+                              constraints: const BoxConstraints(
+                                maxWidth: 200.0,
+                              ),
+                              child: Text(
+                                matchUser.user?.nickName ?? "",
+                                overflow: TextOverflow.ellipsis,
+                                softWrap: true,
+                                maxLines: 1,
+                                style: KimmiTamperDaytime.style(
+                                  color: KimmiDraftJuda.white,
+                                  fontSize: 18,
+                                ),
+                              ),
                             ),
                             const SizedBox(width: 6),
                             (matchUser.country != null)
@@ -127,14 +139,15 @@ class KimmiLovedHandcuffUnwantedContainer
                                     url: matchUser.country?.flag ?? "",
                                     size: 20,
                                     fit: BoxFit.cover,
-                                    clip: ImageClipType.origin)
+                                    clip: ImageClipType.origin,
+                                  )
                                 : const SizedBox.shrink(),
                           ],
                         );
                       },
-                    )
+                    ),
                   ],
-                )
+                ),
         ],
       ),
     );
@@ -162,12 +175,15 @@ class KimmiLovedHandcuffUnwantedContainer
         return KimmiPalate.kimmiBathtubStuCoat.createShader(bounds);
       },
       blendMode: BlendMode.srcATop,
-      child: Text("kimmi_broderick_bathrobe_handcuff".tr,
-          style: const TextStyle(
-              fontSize: 24,
-              fontWeight: FontWeight.bold,
-              color: Color(0xFFFFDF8B),
-              height: 1.2)),
+      child: Text(
+        "kimmi_broderick_bathrobe_handcuff".tr,
+        style: const TextStyle(
+          fontSize: 24,
+          fontWeight: FontWeight.bold,
+          color: Color(0xFFFFDF8B),
+          height: 1.2,
+        ),
+      ),
     );
   }
 
@@ -184,26 +200,29 @@ class KimmiLovedHandcuffUnwantedContainer
                   child: Container(
                     width: Get.width - 60,
                     decoration: BoxDecoration(
-                        color: KimmiDraftJuda.white_10p,
-                        borderRadius: BorderRadius.circular(16)),
+                      color: KimmiDraftJuda.white_10p,
+                      borderRadius: BorderRadius.circular(16),
+                    ),
                     padding: const EdgeInsets.all(16),
                     child: Column(
                       children: [
                         Text(
                           "kimmi_broderick_born".tr,
                           style: KimmiTamperDaytime.style(
-                              color: KimmiPalate.kimmiTamperDeskYummy,
-                              fontWeight: FontWeight.bold,
-                              fontSize: 12),
+                            color: KimmiPalate.kimmiTamperDeskYummy,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 12,
+                          ),
                         ),
                         Text(
                           "kimmi_broderick_handcuff_unwanted_saver".tr,
                           textAlign: TextAlign.center,
                           maxLines: 3,
                           style: KimmiTamperDaytime.style(
-                              color: KimmiPalate.kimmiTamperDeskYummy,
-                              fontSize: 12),
-                        )
+                            color: KimmiPalate.kimmiTamperDeskYummy,
+                            fontSize: 12,
+                          ),
+                        ),
                       ],
                     ),
                   ),
@@ -217,11 +236,12 @@ class KimmiLovedHandcuffUnwantedContainer
                 Positioned(
                   top: 14,
                   child: KimmiAsthmaticDesk(
-                      title: 'kimmi_broderick_husband'.tr,
-                      width: 215,
-                      height: 56,
-                      radius: 16,
-                      onTap: logic.onKimmiHusbandAsthmatic),
+                    title: 'kimmi_broderick_husband'.tr,
+                    width: 215,
+                    height: 56,
+                    radius: 16,
+                    onTap: logic.onKimmiHusbandAsthmatic,
+                  ),
                 ),
                 GetBuilder<KimmiLovedHandcuffUnwantedInvoice>(
                   id: logic.kimmi_handshake_is_private,
@@ -232,28 +252,33 @@ class KimmiLovedHandcuffUnwantedContainer
                             right: isAR ? null : 0,
                             left: isAR ? 0 : null,
                             child: Container(
-                                height: 28,
-                                padding: const EdgeInsets.only(
-                                    left: 14, right: 14, top: 5, bottom: 7),
-                                decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(14),
-                                    gradient: KimmiPalate.kimmiStoreBgCoat),
-                                child: GetBuilder<
-                                    KimmiLovedHandcuffUnwantedInvoice>(
-                                  id: logic.kimmi_handshake_store_assignment,
-                                  builder: (logic) {
-                                    return Text(
-                                        '${'kimmi_broderick_store'.tr} x${logic.remainingFreeCount}',
-                                        style: KimmiPalate
-                                            .kimmiStoreTamperDaytime);
-                                  },
-                                )),
+                              height: 28,
+                              padding: const EdgeInsets.only(
+                                left: 14,
+                                right: 14,
+                                top: 5,
+                                bottom: 7,
+                              ),
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(14),
+                                gradient: KimmiPalate.kimmiStoreBgCoat,
+                              ),
+                              child: GetBuilder<KimmiLovedHandcuffUnwantedInvoice>(
+                                id: logic.kimmi_handshake_store_assignment,
+                                builder: (logic) {
+                                  return Text(
+                                    '${'kimmi_broderick_store'.tr} x${logic.remainingFreeCount}',
+                                    style: KimmiPalate.kimmiStoreTamperDaytime,
+                                  );
+                                },
+                              ),
+                            ),
                           );
                   },
-                )
+                ),
               ],
             ),
-          )
+          ),
         ],
       ),
     );

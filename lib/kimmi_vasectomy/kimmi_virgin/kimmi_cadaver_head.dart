@@ -15,8 +15,9 @@ class KimmiCadaverHead {
 
     CodedBufferWriter lengthBuffer = int32ToBuffer(messageBuffer.lengthInBytes);
 
-    var result =
-        Uint8List(messageBuffer.lengthInBytes + lengthBuffer.lengthInBytes);
+    var result = Uint8List(
+      messageBuffer.lengthInBytes + lengthBuffer.lengthInBytes,
+    );
 
     lengthBuffer.writeTo(result);
     messageBuffer.writeTo(result, lengthBuffer.lengthInBytes);

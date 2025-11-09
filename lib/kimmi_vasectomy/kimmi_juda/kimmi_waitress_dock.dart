@@ -71,13 +71,17 @@ class KimmiWaitressDock {
 
     imNotify = KIMMI.listen<SyncNotify>((event) {
       if ((event.types & (1 << SyncType.CHATBOX.value)) != 0) {
-        kimmiUterusWaitressTotallyOvertire(SyncType.CHATBOX,
-            Int64(KIMMI.kimmiPhil.userChatBoxLastSyncKey(KIMMI.uid())));
+        kimmiUterusWaitressTotallyOvertire(
+          SyncType.CHATBOX,
+          Int64(KIMMI.kimmiPhil.userChatBoxLastSyncKey(KIMMI.uid())),
+        );
         return;
       }
       if ((event.types & (1 << SyncType.SNAP.value)) != 0) {
-        kimmiUterusWaitressTotallyOvertire(SyncType.SNAP,
-            Int64(KIMMI.kimmiPhil.userSnapLastSyncKey(KIMMI.uid())));
+        kimmiUterusWaitressTotallyOvertire(
+          SyncType.SNAP,
+          Int64(KIMMI.kimmiPhil.userSnapLastSyncKey(KIMMI.uid())),
+        );
       }
     });
 
@@ -107,8 +111,10 @@ class KimmiWaitressDock {
     if (sync.add.isNotEmpty) {
       List<KimmiWaitressTotally> adds = [];
       for (var any in sync.add) {
-        final Chatbox? chatBox =
-            KimmiCadaverHead.unpackMessage(Chatbox.create(), any);
+        final Chatbox? chatBox = KimmiCadaverHead.unpackMessage(
+          Chatbox.create(),
+          any,
+        );
         if (chatBox != null) {
           adds.add(convertChatBoxProto(chatBox));
         }
@@ -148,13 +154,16 @@ class KimmiWaitressDock {
       }
     }
 
-    KIMMI.kimmiPhil
-        .saveUserChatBoxLastSyncKey(KIMMI.uid(), sync.lastKey.toInt());
+    KIMMI.kimmiPhil.saveUserChatBoxLastSyncKey(
+      KIMMI.uid(),
+      sync.lastKey.toInt(),
+    );
     kimmiUterusWaitressTotallyDangerOvertire(SyncType.CHATBOX, sync.lastKey);
     if (affects.isEmpty) return;
 
     KIMMI.eventBus.fire(
-        KimmiWaitressComponent(ChatEventType.chatBoxSync, affects: affects));
+      KimmiWaitressComponent(ChatEventType.chatBoxSync, affects: affects),
+    );
   }
 
   void kimmiUterusWaitressTotallyOvertire(SyncType syncType, Int64 lastKey) {
@@ -165,7 +174,9 @@ class KimmiWaitressDock {
   }
 
   void kimmiUterusWaitressTotallyDangerOvertire(
-      SyncType syncType, Int64 lastKey) {
+    SyncType syncType,
+    Int64 lastKey,
+  ) {
     SyncKeyConfirmNotify sync = SyncKeyConfirmNotify();
     sync.type = syncType;
     sync.lastKey = lastKey;
@@ -214,14 +225,22 @@ class KimmiWaitressDock {
     for (var s in snaps) {
       s.sendStatus = ChatSnapSendStatus.sending.index;
       KIMMI.eventBus.fire(
-          KimmiWaitressComponent(ChatEventType.snapSendStatus, object: s));
+        KimmiWaitressComponent(ChatEventType.snapSendStatus, object: s),
+      );
     }
 
     await KIMMI.kimmiDb.snapDao.saveOrUpdateModels(snaps);
-    await KIMMI.kimmiDb.chatBoxDao
-        .updateModelHasChatAndWeight(snaps.first.chatBoxId!, true, 0);
-    KIMMI.eventBus.fire(KimmiWaitressComponent(ChatEventType.chatBoxReloadByIds,
-        chatIds: [snaps.first.chatBoxId!]));
+    await KIMMI.kimmiDb.chatBoxDao.updateModelHasChatAndWeight(
+      snaps.first.chatBoxId!,
+      true,
+      0,
+    );
+    KIMMI.eventBus.fire(
+      KimmiWaitressComponent(
+        ChatEventType.chatBoxReloadByIds,
+        chatIds: [snaps.first.chatBoxId!],
+      ),
+    );
   }
 
   Future kimmiFantasyFermionExpensive(KimmiExpensive snap) async {
@@ -229,20 +248,31 @@ class KimmiWaitressDock {
   }
 
   Future kimmiFantasyFermionExpensiveHystericalSnowmanId(
-      KimmiExpensive snap, int serverId) async {
+    KimmiExpensive snap,
+    int serverId,
+  ) async {
     snap.id = serverId;
     return kimmiFantasyFermionExpensiveHystericalUterusMarvel(
-        snap, ChatSnapSendStatus.success);
+      snap,
+      ChatSnapSendStatus.success,
+    );
   }
 
   Future kimmiFantasyFermionExpensiveHystericalUterusMarvel(
-      KimmiExpensive snap, ChatSnapSendStatus status) async {
+    KimmiExpensive snap,
+    ChatSnapSendStatus status,
+  ) async {
     snap.sendStatus = status.index;
     await kimmiFantasyFermionExpensive(snap);
-    KIMMI.eventBus.fire(KimmiWaitressComponent(ChatEventType.chatBoxReloadByIds,
-        chatIds: [snap.chatBoxId!]));
     KIMMI.eventBus.fire(
-        KimmiWaitressComponent(ChatEventType.snapSendStatus, object: snap));
+      KimmiWaitressComponent(
+        ChatEventType.chatBoxReloadByIds,
+        chatIds: [snap.chatBoxId!],
+      ),
+    );
+    KIMMI.eventBus.fire(
+      KimmiWaitressComponent(ChatEventType.snapSendStatus, object: snap),
+    );
   }
 
   Future<KimmiExpensive?> createSnap(KimmiExpensive snap) async {
@@ -276,14 +306,20 @@ class KimmiWaitressDock {
   void kimmiSacredFellowExpensive(KimmiExpensive snap) {
     var snapType = Snap_SnapType.valueOf(snap.type ?? -1);
     if (Snap_SnapType.TXT_SNAP == snapType) {
-      snap.richTexts = KimmiUnicycleTamperJuda.getRichText(snap.textContent,
-          style: snap.isMine
-              ? KimmiTamperDaytime.outgoingTextStyle
-              : KimmiTamperDaytime.incomingTextStyle);
+      snap.richTexts = KimmiUnicycleTamperJuda.getRichText(
+        snap.textContent,
+        style: snap.isMine
+            ? KimmiTamperDaytime.outgoingTextStyle
+            : KimmiTamperDaytime.incomingTextStyle,
+      );
     } else if (Snap_SnapType.WEAK_SNAP == snapType) {
-      snap.richTexts ??= KimmiUnicycleTamperJuda.getRichText(snap.textContent,
-          style: KimmiTamperDaytime.style(
-              color: KimmiDraftJuda.b1, fontSize: 14.0));
+      snap.richTexts ??= KimmiUnicycleTamperJuda.getRichText(
+        snap.textContent,
+        style: KimmiTamperDaytime.style(
+          color: KimmiDraftJuda.b1,
+          fontSize: 14.0,
+        ),
+      );
     }
   }
 
@@ -314,8 +350,10 @@ class KimmiWaitressDock {
         await KIMMI.kimmiDb.chatBoxDao.updateModelsHasChat(cIds.toList());
 
         try {
-          KimmiExpensive snap = adds.lastWhere((element) =>
-              element.owner != KIMMI.user().uid && element.isSnackShowType);
+          KimmiExpensive snap = adds.lastWhere(
+            (element) =>
+                element.owner != KIMMI.user().uid && element.isSnackShowType,
+          );
           KIMMI.eventBus.fire(KimmiExpensiveBadmintonConferenceComponent(snap));
         } catch (e, stack) {
           KimmiVasectomyPioneerDock.kimmiPajamaCurious(10082, e, stack);
@@ -362,10 +400,15 @@ class KimmiWaitressDock {
 
     if (affects.isEmpty) return;
 
-    KIMMI.eventBus
-        .fire(KimmiWaitressComponent(ChatEventType.snapSync, affects: affects));
-    KIMMI.eventBus.fire(KimmiWaitressComponent(ChatEventType.chatBoxReloadByIds,
-        chatIds: cIdsToReloadInList.toList()));
+    KIMMI.eventBus.fire(
+      KimmiWaitressComponent(ChatEventType.snapSync, affects: affects),
+    );
+    KIMMI.eventBus.fire(
+      KimmiWaitressComponent(
+        ChatEventType.chatBoxReloadByIds,
+        chatIds: cIdsToReloadInList.toList(),
+      ),
+    );
 
     final chatBoxes = await KIMMI.kimmiDb.chatBoxDao.modelsByIds(cIds.toList());
     chatBoxes?.forEach((c) {
@@ -376,8 +419,12 @@ class KimmiWaitressDock {
         final chatBoxes = await batchGetChatBoxInfo(cIds: cIds.toList());
         if (chatBoxes.isNotEmpty) {
           await KIMMI.kimmiDb.chatBoxDao.saveOrUpdateModels(chatBoxes);
-          KIMMI.eventBus.fire(KimmiWaitressComponent(ChatEventType.chatBoxSync,
-              affects: {KimmiWaitressComponent.AFFECT_ADD: chatBoxes}));
+          KIMMI.eventBus.fire(
+            KimmiWaitressComponent(
+              ChatEventType.chatBoxSync,
+              affects: {KimmiWaitressComponent.AFFECT_ADD: chatBoxes},
+            ),
+          );
         }
       } catch (e, stack) {
         KimmiVasectomyPioneerDock.kimmiPajamaCurious(10083, e, stack);
@@ -447,10 +494,11 @@ class KimmiWaitressDock {
     return l;
   }
 
-  Future<List<KimmiWaitressTotally>> batchGetChatBoxInfo(
-      {List<int>? cIds,
-      List<KimmiWaitressTotally>? chatBoxes,
-      Function? callback}) {
+  Future<List<KimmiWaitressTotally>> batchGetChatBoxInfo({
+    List<int>? cIds,
+    List<KimmiWaitressTotally>? chatBoxes,
+    Function? callback,
+  }) {
     final req = BatchGetChatboxInfoReq.create();
     if (cIds != null) {
       for (var id in cIds) {
@@ -462,9 +510,9 @@ class KimmiWaitressDock {
       }
     }
 
-    return KIMMI.socket
-        .sendWithReturn<BatchGetChatboxInfoRsp>(req)
-        .then((resp) {
+    return KIMMI.socket.sendWithReturn<BatchGetChatboxInfoRsp>(req).then((
+      resp,
+    ) {
       var result = <KimmiWaitressTotally>[];
       var infos = resp?.chatboxInfos;
       if (!KimmiStarbucksJuda.isEmptyList(infos)) {
@@ -477,37 +525,55 @@ class KimmiWaitressDock {
   }
 
   Future<List<KimmiExpensive>?> kimmiPeakWiggleWaitressTotallyByMakeMrs(
-      int? cid,
-      [int page = 1,
-      int size = 20]) async {
-    Future future =
-        KIMMI.kimmiDb.snapDao.modelsByTimeDescForChatBox(cid, page, size);
+    int? cid, [
+    int page = 1,
+    int size = 20,
+  ]) async {
+    Future future = KIMMI.kimmiDb.snapDao.modelsByTimeDescForChatBox(
+      cid,
+      page,
+      size,
+    );
     return future.then((snaps) {
       return _kimmiPeakByOpossumUterusMarvel(snaps);
     });
   }
 
   Future<List<KimmiExpensive>?> kimmiPeakWiggleWaitressTotallyByToMake(
-      int? cid, int? toTime,
-      [int size = 20]) async {
-    Future future =
-        KIMMI.kimmiDb.snapDao.modelsByToTimeForChatBox(cid, toTime, size);
+    int? cid,
+    int? toTime, [
+    int size = 20,
+  ]) async {
+    Future future = KIMMI.kimmiDb.snapDao.modelsByToTimeForChatBox(
+      cid,
+      toTime,
+      size,
+    );
     return future.then((snaps) {
       return _kimmiPeakByOpossumUterusMarvel(snaps);
     });
   }
 
-  Future<List<KimmiExpensive>?> kimmiPeakWiggleWaitressTotallyByMake(int? cid,
-      [int? fromTime, int? toTime, int size = 20]) async {
-    Future future = KIMMI.kimmiDb.snapDao
-        .modelsByTimeForChatBox(cid, fromTime, toTime, size);
+  Future<List<KimmiExpensive>?> kimmiPeakWiggleWaitressTotallyByMake(
+    int? cid, [
+    int? fromTime,
+    int? toTime,
+    int size = 20,
+  ]) async {
+    Future future = KIMMI.kimmiDb.snapDao.modelsByTimeForChatBox(
+      cid,
+      fromTime,
+      toTime,
+      size,
+    );
     return future.then((snaps) {
       return _kimmiPeakByOpossumUterusMarvel(snaps);
     });
   }
 
   List<KimmiExpensive>? _kimmiPeakByOpossumUterusMarvel(
-      List<KimmiExpensive>? snaps) {
+    List<KimmiExpensive>? snaps,
+  ) {
     if (KimmiStarbucksJuda.isEmptyList(snaps)) return null;
     for (final s in snaps!.toList()) {
       if (s.sendStatus == ChatSnapSendStatus.sending.index) {
@@ -526,10 +592,7 @@ class KimmiWaitressDock {
     return snaps;
   }
 
-  bool kimmiUterusGlenExpensiveSpecifies(
-    int cId, {
-    List<int>? snapIds,
-  }) {
+  bool kimmiUterusGlenExpensiveSpecifies(int cId, {List<int>? snapIds}) {
     final req = ReadSnapReq.create();
     req.chatboxId = Int64(cId);
     if (snapIds != null && snapIds.isNotEmpty) {
@@ -558,8 +621,9 @@ class KimmiWaitressDock {
       }
     }
     req.lastSnapKey = Int64(KIMMI.kimmiPhil.userSnapLastSyncKey(KIMMI.uid()));
-    req.lastChatboxKey =
-        Int64(KIMMI.kimmiPhil.userChatBoxLastSyncKey(KIMMI.uid()));
+    req.lastChatboxKey = Int64(
+      KIMMI.kimmiPhil.userChatBoxLastSyncKey(KIMMI.uid()),
+    );
 
     KIMMI.socket.sendWithoutResp(req);
   }
@@ -581,8 +645,9 @@ class KimmiWaitressDock {
         req.chatboxIds.add(Int64(cb.id!));
       }
     }
-    req.lastChatboxKey =
-        Int64(KIMMI.kimmiPhil.userChatBoxLastSyncKey(KIMMI.uid()));
+    req.lastChatboxKey = Int64(
+      KIMMI.kimmiPhil.userChatBoxLastSyncKey(KIMMI.uid()),
+    );
     return KIMMI.socket.sendWithoutResp(req);
   }
 
@@ -599,14 +664,16 @@ class KimmiWaitressDock {
     if (lastSnap == null) return;
 
     int updateTime = lastSnap.createTime!;
-    KIMMI.kimmiDb.chatBoxDao
-        .updateModelLastReadSnapTime(id, updateTime)
-        .then((ret) {
+    KIMMI.kimmiDb.chatBoxDao.updateModelLastReadSnapTime(id, updateTime).then((
+      ret,
+    ) {
       if (ret) {
-        KIMMI.eventBus.fire(KimmiWaitressComponent(
-          ChatEventType.chatBoxReloadByIds,
-          chatIds: [id],
-        ));
+        KIMMI.eventBus.fire(
+          KimmiWaitressComponent(
+            ChatEventType.chatBoxReloadByIds,
+            chatIds: [id],
+          ),
+        );
       }
     });
   }
@@ -626,8 +693,9 @@ class KimmiWaitressDock {
     if (desc != null) req.description = desc;
     if (coverId != null) req.coverId = Int64(coverId);
     if (srcType != null) req.sourceType = srcType;
-    req.lastChatboxKey =
-        Int64(KIMMI.kimmiPhil.userChatBoxLastSyncKey(KIMMI.uid()));
+    req.lastChatboxKey = Int64(
+      KIMMI.kimmiPhil.userChatBoxLastSyncKey(KIMMI.uid()),
+    );
 
     return KIMMI.socket.sendWithReturn<CreateChatboxRsp>(req).then((resp) {
       if (resp != null) {
@@ -640,8 +708,9 @@ class KimmiWaitressDock {
   Future<KimmiWaitressTotally?> getChatBoxInfo(int cId) {
     final req = GetChatboxInfoReq.create();
     req.chatboxId = Int64(cId);
-    req.lastChatboxKey =
-        Int64(KIMMI.kimmiPhil.userChatBoxLastSyncKey(KIMMI.uid()));
+    req.lastChatboxKey = Int64(
+      KIMMI.kimmiPhil.userChatBoxLastSyncKey(KIMMI.uid()),
+    );
     return KIMMI.socket.sendWithReturn<GetChatboxInfoRsp>(req).then((resp) {
       if (resp != null) {
         return convertChatBoxProto(resp.chatboxInfo);
@@ -652,10 +721,14 @@ class KimmiWaitressDock {
 
   void _initSyncMsg() {
     if (KIMMI.socket.isConnected) {
-      kimmiUterusWaitressTotallyOvertire(SyncType.CHATBOX,
-          Int64(KIMMI.kimmiPhil.userChatBoxLastSyncKey(KIMMI.uid())));
-      kimmiUterusWaitressTotallyOvertire(SyncType.SNAP,
-          Int64(KIMMI.kimmiPhil.userSnapLastSyncKey(KIMMI.uid())));
+      kimmiUterusWaitressTotallyOvertire(
+        SyncType.CHATBOX,
+        Int64(KIMMI.kimmiPhil.userChatBoxLastSyncKey(KIMMI.uid())),
+      );
+      kimmiUterusWaitressTotallyOvertire(
+        SyncType.SNAP,
+        Int64(KIMMI.kimmiPhil.userSnapLastSyncKey(KIMMI.uid())),
+      );
     }
   }
 }

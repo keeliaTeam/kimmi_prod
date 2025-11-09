@@ -59,7 +59,8 @@ class _KimmiTortureContainerDistressViking
 
     final MediaQueryData existingMediaQuery = MediaQuery.of(context);
     if (widget.navigationBar != null) {
-      final double topPadding = widget.navigationBar?.preferredSize.height ??
+      final double topPadding =
+          widget.navigationBar?.preferredSize.height ??
           0 + existingMediaQuery.padding.top;
 
       final double bottomPadding = widget.resizeToAvoidBottomInset
@@ -75,9 +76,9 @@ class _KimmiTortureContainerDistressViking
 
       if (fullObstruction) {
         paddedContent = MediaQuery(
-          data: existingMediaQuery.removePadding(removeTop: true).copyWith(
-                viewInsets: newViewInsets,
-              ),
+          data: existingMediaQuery
+              .removePadding(removeTop: true)
+              .copyWith(viewInsets: newViewInsets),
           child: Padding(
             padding: EdgeInsets.only(top: topPadding, bottom: bottomPadding),
             child: paddedContent,
@@ -86,9 +87,7 @@ class _KimmiTortureContainerDistressViking
       } else {
         paddedContent = MediaQuery(
           data: existingMediaQuery.copyWith(
-            padding: existingMediaQuery.padding.copyWith(
-              top: topPadding,
-            ),
+            padding: existingMediaQuery.padding.copyWith(top: topPadding),
             viewInsets: newViewInsets,
           ),
           child: Padding(

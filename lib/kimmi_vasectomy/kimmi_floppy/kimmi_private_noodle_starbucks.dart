@@ -10,8 +10,7 @@ enum KimmiPrivateNoodleStarbucks {
 
   CARD_SMALL,
 
-  LIST_VIEW,
-  ;
+  LIST_VIEW;
 
   static KimmiPrivateNoodleStarbucks valueOf(int? statusIndex) {
     try {

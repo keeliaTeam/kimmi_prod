@@ -32,8 +32,9 @@ class _KimmiSmileCradleUnevenViking extends State<KimmiSmileCradleUneven> {
       child: Container(
         width: Get.width - 56,
         decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(24),
-            color: KimmiDraftJuda.white),
+          borderRadius: BorderRadius.circular(24),
+          color: KimmiDraftJuda.white,
+        ),
         padding: const EdgeInsets.all(20),
         child: Column(
           mainAxisSize: MainAxisSize.min,
@@ -43,36 +44,47 @@ class _KimmiSmileCradleUnevenViking extends State<KimmiSmileCradleUneven> {
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
                 GestureDetector(
-                    onTap: () {
-                      Get.back();
-                    },
-                    child: KimmiErnie.local(
-                        fileName: 'kimmi_hombre_culturally_maker_comprehend',
-                        width: 16,
-                        height: 16))
+                  onTap: () {
+                    Get.back();
+                  },
+                  child: KimmiErnie.local(
+                    fileName: 'kimmi_hombre_culturally_maker_comprehend',
+                    width: 16,
+                    height: 16,
+                  ),
+                ),
               ],
             ),
             const SizedBox(height: 20),
             ClipRRect(
-                borderRadius: BorderRadius.circular(24),
-                child: KimmiErnie.local(
-                    fileName: 'kimmi_hombre_smile_niece_ducky',
-                    width: 130,
-                    height: 130)),
+              borderRadius: BorderRadius.circular(24),
+              child: KimmiErnie.local(
+                fileName: 'kimmi_hombre_smile_niece_ducky',
+                width: 130,
+                height: 130,
+              ),
+            ),
             const SizedBox(height: 18),
-            Text("kimmi_broderick_micaceous_smile".tr,
-                textAlign: TextAlign.center,
-                style: KimmiTamperDaytime.style(
-                    color: const Color(0xFF333333),
-                    fontSize: 18,
-                    fontWeight: FontWeight.bold)),
+            Text(
+              "kimmi_broderick_micaceous_smile".tr,
+              textAlign: TextAlign.center,
+              style: KimmiTamperDaytime.style(
+                color: const Color(0xFF333333),
+                fontSize: 18,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
             const SizedBox(height: 7),
-            Text("kimmi_broderick_builder_smile_born".tr,
-                textAlign: TextAlign.center,
-                style: KimmiTamperDaytime.style(
-                    color: const Color(0xFF666666), fontSize: 16)),
+            Text(
+              "kimmi_broderick_builder_smile_born".tr,
+              textAlign: TextAlign.center,
+              style: KimmiTamperDaytime.style(
+                color: const Color(0xFF666666),
+                fontSize: 16,
+              ),
+            ),
             const SizedBox(height: 24),
-            _rateConfirmButton()
+            _rateConfirmButton(),
           ],
         ),
       ),
@@ -81,13 +93,14 @@ class _KimmiSmileCradleUnevenViking extends State<KimmiSmileCradleUneven> {
 
   _rateConfirmButton() {
     return KimmiAsthmaticDesk(
-        title: "kimmi_broderick_builder".tr,
-        width: 200,
-        height: 56,
-        onTap: () {
-          _requestPermission();
-          Get.back();
-        });
+      title: "kimmi_broderick_builder".tr,
+      width: 200,
+      height: 56,
+      onTap: () {
+        _requestPermission();
+        Get.back();
+      },
+    );
   }
 
   Future<void> _requestPermission() async {

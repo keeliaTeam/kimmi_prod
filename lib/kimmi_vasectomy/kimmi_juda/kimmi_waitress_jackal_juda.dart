@@ -46,8 +46,10 @@ class KimmiWaitressJackalJuda {
         String tempText = text.substring(start, m.start);
         returnText += tempText;
       }
-      KimmiStarbucksJuda.nullSafe<String>(match,
-          notNullBlock: (obj) => returnText += obj);
+      KimmiStarbucksJuda.nullSafe<String>(
+        match,
+        notNullBlock: (obj) => returnText += obj,
+      );
       if (dic[match] != null) {
         returnText += '()';
       }
@@ -168,6 +170,8 @@ class KimmiWaitressJackalJuda {
 
   String chatEmojiPath() {
     return Path.join(
-        KIMMI.rootPath, '$kAppConfigPathResourcePath/$kChatEmojiResName/');
+      KIMMI.rootPath,
+      '$kAppConfigPathResourcePath/$kChatEmojiResName/',
+    );
   }
 }

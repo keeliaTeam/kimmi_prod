@@ -8,8 +8,10 @@ class KimmiStormFeastSuggestionCampfire {
     var records = json['records'];
     if (records != null) {
       rsp.records = (records as List<dynamic>?)!
-          .map((e) =>
-              KimmiStormFeastTrustCoccyx.fromJson(e as Map<String, dynamic>))
+          .map(
+            (e) =>
+                KimmiStormFeastTrustCoccyx.fromJson(e as Map<String, dynamic>),
+          )
           .toList();
     }
     return rsp;

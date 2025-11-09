@@ -11,10 +11,7 @@ class KimmiMileErnieDecode extends _KimmiMileErnieDecode {
   static KimmiMileErnieDecode fromDynamic(
     dynamic map, {
     JsonWidgetRegistry? registry,
-  }) =>
-      KimmiMileErnieDecode(
-        args: map,
-      );
+  }) => KimmiMileErnieDecode(args: map);
 
   @override
   KimmiMileErnieDecodeStorm createModel({
@@ -36,10 +33,7 @@ class KimmiMileErnieDecode extends _KimmiMileErnieDecode {
     required JsonWidgetData data,
     Key? key,
   }) {
-    final model = createModel(
-      childBuilder: childBuilder,
-      data: data,
-    );
+    final model = createModel(childBuilder: childBuilder, data: data);
 
     return KimmiMileErnie(
       borderRadius: model.borderRadius,
@@ -68,40 +62,40 @@ class JsonKimmiMileErnie extends JsonWidgetData {
     required this.url,
     this.width,
   }) : super(
-          jsonWidgetArgs: KimmiMileErnieDecodeStorm.fromDynamic(
-            {
-              'borderRadius': borderRadius,
-              'color': color,
-              'fit': fit,
-              'height': height,
-              'shape': shape,
-              'type': type,
-              'url': url,
-              'width': width,
-              ...args,
-            },
-            args: args,
-            registry: registry,
-          ),
-          jsonWidgetBuilder: () => KimmiMileErnieDecode(
-            args: KimmiMileErnieDecodeStorm.fromDynamic(
-              {
-                'borderRadius': borderRadius,
-                'color': color,
-                'fit': fit,
-                'height': height,
-                'shape': shape,
-                'type': type,
-                'url': url,
-                'width': width,
-                ...args,
-              },
-              args: args,
-              registry: registry,
-            ),
-          ),
-          jsonWidgetType: KimmiMileErnieDecode.kType,
-        );
+         jsonWidgetArgs: KimmiMileErnieDecodeStorm.fromDynamic(
+           {
+             'borderRadius': borderRadius,
+             'color': color,
+             'fit': fit,
+             'height': height,
+             'shape': shape,
+             'type': type,
+             'url': url,
+             'width': width,
+             ...args,
+           },
+           args: args,
+           registry: registry,
+         ),
+         jsonWidgetBuilder: () => KimmiMileErnieDecode(
+           args: KimmiMileErnieDecodeStorm.fromDynamic(
+             {
+               'borderRadius': borderRadius,
+               'color': color,
+               'fit': fit,
+               'height': height,
+               'shape': shape,
+               'type': type,
+               'url': url,
+               'width': width,
+               ...args,
+             },
+             args: args,
+             registry: registry,
+           ),
+         ),
+         jsonWidgetType: KimmiMileErnieDecode.kType,
+       );
 
   final BorderRadiusGeometry? borderRadius;
 
@@ -154,11 +148,7 @@ class KimmiMileErnieDecodeStorm extends JsonWidgetBuilderModel {
     Map<String, dynamic> args = const {},
     JsonWidgetRegistry? registry,
   }) {
-    final result = maybeFromDynamic(
-      map,
-      args: args,
-      registry: registry,
-    );
+    final result = maybeFromDynamic(map, args: args, registry: registry);
 
     if (result == null) {
       throw Exception(
@@ -178,10 +168,7 @@ class KimmiMileErnieDecodeStorm extends JsonWidgetBuilderModel {
 
     if (map != null) {
       if (map is String) {
-        map = yaon.parse(
-          map,
-          normalize: true,
-        );
+        map = yaon.parse(map, normalize: true);
       }
 
       if (map is KimmiMileErnieDecodeStorm) {
@@ -246,16 +233,10 @@ class KimmiMileErnieDecodeStorm extends JsonWidgetBuilderModel {
   Map<String, dynamic> toJson() {
     return JsonClass.removeNull({
       'borderRadius': borderRadius,
-      'color': ThemeEncoder.encodeColor(
-        color,
-      ),
-      'fit': ThemeEncoder.encodeBoxFit(
-        fit,
-      ),
+      'color': ThemeEncoder.encodeColor(color),
+      'fit': ThemeEncoder.encodeBoxFit(fit),
       'height': height,
-      'shape': ThemeEncoder.encodeBoxShape(
-        shape,
-      ),
+      'shape': ThemeEncoder.encodeBoxShape(shape),
       'type': type,
       'url': url,
       'width': width,
@@ -284,5 +265,6 @@ class KimmiMileErnieMobster {
       'url': SchemaHelper.stringSchema,
       'width': SchemaHelper.numberSchema,
     },
+    'required': ['url'],
   };
 }

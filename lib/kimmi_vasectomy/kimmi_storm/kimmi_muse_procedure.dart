@@ -6,7 +6,8 @@ class KimmiMuseProcedure {
   const KimmiMuseProcedure(this.value, this.name);
 
   static Map<int, T> initByValue<T extends KimmiMuseProcedure>(
-      List<T> byIndex) {
+    List<T> byIndex,
+  ) {
     var byValue = <int, T>{};
     for (T v in byIndex) {
       byValue[v.value] = v;

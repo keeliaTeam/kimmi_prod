@@ -9,13 +9,7 @@ import 'package:flutter/material.dart';
 
 import '../kimmi_hamill/kimmi_ernie.dart';
 
-enum ImageClipType {
-  custom,
-  small,
-  middle,
-  large,
-  origin,
-}
+enum ImageClipType { custom, small, middle, large, origin }
 
 class KimmiErnieProperly {
   static KimmiErnieProperly get instance => _instance;
@@ -48,15 +42,21 @@ class KimmiErnieProperly {
         break;
       case ImageClipType.small:
         cover = kimmiErnieURLHystericalStarfish(
-            url, KIMMI.kimmiHump.imageSize.small);
+          url,
+          KIMMI.kimmiHump.imageSize.small,
+        );
         break;
       case ImageClipType.middle:
         cover = kimmiErnieURLHystericalStarfish(
-            url, KIMMI.kimmiHump.imageSize.middle);
+          url,
+          KIMMI.kimmiHump.imageSize.middle,
+        );
         break;
       case ImageClipType.large:
         cover = kimmiErnieURLHystericalStarfish(
-            url, KIMMI.kimmiHump.imageSize.large);
+          url,
+          KIMMI.kimmiHump.imageSize.large,
+        );
         break;
       default:
         cover = kimmiErnieURLMuch(url);
@@ -81,16 +81,23 @@ class KimmiErnieProperly {
         );
       },
       placeholder: placeholder,
-      errorWidget: errorWidget ??
+      errorWidget:
+          errorWidget ??
           (context, url, error) => placeholder != null
               ? KimmiErnie.defaultPlaceHolderWidget(
-                  width, height, fit, borderRadius)
+                  width,
+                  height,
+                  fit,
+                  borderRadius,
+                )
               : Container(
                   decoration: BoxDecoration(
-                      borderRadius:
-                          boxShape == BoxShape.circle ? null : borderRadius,
-                      shape: boxShape,
-                      color: const Color(0xFF999999)),
+                    borderRadius: boxShape == BoxShape.circle
+                        ? null
+                        : borderRadius,
+                    shape: boxShape,
+                    color: const Color(0xFF999999),
+                  ),
                 ),
     );
   }
@@ -99,11 +106,13 @@ class KimmiErnieProperly {
     return AssetImage("assets/images/$fileName.png");
   }
 
-  static Image kimmiDarthFermionErnie(String fileName,
-      {BoxFit fit = BoxFit.cover,
-      double height = double.infinity,
-      double width = double.infinity,
-      Color? color}) {
+  static Image kimmiDarthFermionErnie(
+    String fileName, {
+    BoxFit fit = BoxFit.cover,
+    double height = double.infinity,
+    double width = double.infinity,
+    Color? color,
+  }) {
     return Image(
       image: kimmiDarthLifelongErnie(fileName),
       fit: fit,
@@ -113,12 +122,18 @@ class KimmiErnieProperly {
     );
   }
 
-  static CachedNetworkImage kimmiDarthNoSocialCentauri(String url,
-      {BoxFit fit = BoxFit.fill,
-      double height = double.infinity,
-      double width = double.infinity}) {
+  static CachedNetworkImage kimmiDarthNoSocialCentauri(
+    String url, {
+    BoxFit fit = BoxFit.fill,
+    double height = double.infinity,
+    double width = double.infinity,
+  }) {
     return CachedNetworkImage(
-        imageUrl: url, height: height, width: width, fit: fit);
+      imageUrl: url,
+      height: height,
+      width: width,
+      fit: fit,
+    );
   }
 
   static String kimmiErnieURLHystericalStarfish(String url, [int len = 0]) {

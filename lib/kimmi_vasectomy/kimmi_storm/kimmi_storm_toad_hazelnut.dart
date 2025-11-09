@@ -16,15 +16,18 @@ class KimmiStormToadHazelnut {
       json[StringTranslate.e2z("bimng")] == null
           ? null
           : KimmiStormErnie.fromJson(
-              json[StringTranslate.e2z("bimng")] as Map<String, dynamic>),
+              json[StringTranslate.e2z("bimng")] as Map<String, dynamic>,
+            ),
       json[StringTranslate.e2z("fvindeio")] == null
           ? null
           : KimmiStormIndia.fromJson(
-              json[StringTranslate.e2z("fvindeio")] as Map<String, dynamic>),
+              json[StringTranslate.e2z("fvindeio")] as Map<String, dynamic>,
+            ),
       json[StringTranslate.e2z("uvoficie")] == null
           ? null
           : KimmiStormCam.fromJson(
-              json[StringTranslate.e2z("uvoficie")] as Map<String, dynamic>),
+              json[StringTranslate.e2z("uvoficie")] as Map<String, dynamic>,
+            ),
     );
   }
 

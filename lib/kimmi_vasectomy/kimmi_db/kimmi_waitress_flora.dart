@@ -16,12 +16,14 @@ import '../kimmi_juda/kimmi_waitress_db_white.dart';
 
 part 'kimmi_waitress_flora.g.dart';
 
-@DriftDatabase(tables: [
-  KimmiFeastCowboys,
-  KimmiWaitressTotallyCowboys,
-  KimmiWaitressSigningCowboys,
-  KimmiExpensiveCowboys
-])
+@DriftDatabase(
+  tables: [
+    KimmiFeastCowboys,
+    KimmiWaitressTotallyCowboys,
+    KimmiWaitressSigningCowboys,
+    KimmiExpensiveCowboys,
+  ],
+)
 class KimmiWaitressHazelnutMuse extends _$KimmiWaitressHazelnutMuse {
   KimmiWaitressHazelnutMuse._(super.e);
 
@@ -38,8 +40,10 @@ class KimmiWaitressHazelnutMuse extends _$KimmiWaitressHazelnutMuse {
 
   @override
   MigrationStrategy get migration {
-    return MigrationStrategy(onCreate: (Migrator m) {
-      return m.createAll();
-    });
+    return MigrationStrategy(
+      onCreate: (Migrator m) {
+        return m.createAll();
+      },
+    );
   }
 }

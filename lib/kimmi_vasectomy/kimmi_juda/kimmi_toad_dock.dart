@@ -33,8 +33,11 @@ class KimmiToadDock {
 
   final Storage storage = Storage();
 
-  Stream<UploadEvent> upload(String filePath, UploadType type,
-      {bool showLoadingUI = false}) {
+  Stream<UploadEvent> upload(
+    String filePath,
+    UploadType type, {
+    bool showLoadingUI = false,
+  }) {
     StreamController<UploadEvent> controller = StreamController<UploadEvent>();
     var event = UploadEvent(UploadStatus.progress);
     controller.add(event);
@@ -63,31 +66,33 @@ class KimmiToadDock {
       storage
           .putFile(File(filePath), token!, options: putOptions)
           .then((response) {
-        if (showLoadingUI) {
-          EasyLoading.dismiss();
-        }
-        KimmiStormToadDylan uploadJsonResp =
-            KimmiStormToadDylan.fromJson(response.rawData);
-        if (uploadJsonResp.code == 0) {
-          event.status = UploadStatus.success;
-          event.result = uploadJsonResp.data;
-          controller.add(event);
-          controller.close();
-        } else {
-          event.status = UploadStatus.error;
-          event.errorMsg = "${uploadJsonResp.code}->${uploadJsonResp.msg}";
-          controller.add(event);
-          controller.close();
-        }
-      }).catchError((e) {
-        if (showLoadingUI) {
-          EasyLoading.dismiss();
-        }
-        event.status = UploadStatus.error;
-        event.errorMsg = e.toString();
-        controller.add(event);
-        controller.close();
-      });
+            if (showLoadingUI) {
+              EasyLoading.dismiss();
+            }
+            KimmiStormToadDylan uploadJsonResp = KimmiStormToadDylan.fromJson(
+              response.rawData,
+            );
+            if (uploadJsonResp.code == 0) {
+              event.status = UploadStatus.success;
+              event.result = uploadJsonResp.data;
+              controller.add(event);
+              controller.close();
+            } else {
+              event.status = UploadStatus.error;
+              event.errorMsg = "${uploadJsonResp.code}->${uploadJsonResp.msg}";
+              controller.add(event);
+              controller.close();
+            }
+          })
+          .catchError((e) {
+            if (showLoadingUI) {
+              EasyLoading.dismiss();
+            }
+            event.status = UploadStatus.error;
+            event.errorMsg = e.toString();
+            controller.add(event);
+            controller.close();
+          });
     });
     return controller.stream;
   }
@@ -100,8 +105,12 @@ class KimmiToadDock {
       return token;
     } else {
       KimmiStormEpisodeWeb? resp = await KIMMI.http.rest(
-          1016, {}, (p0) => KimmiStormEpisodeWeb.fromJson(p0),
-          showLoadingUI: false, autoToastOnError: true);
+        1016,
+        {},
+        (p0) => KimmiStormEpisodeWeb.fromJson(p0),
+        showLoadingUI: false,
+        autoToastOnError: true,
+      );
       if (resp != null) {
         KIMMI.kimmiPhil.setUploadImageToken(resp.imageToken!);
         KIMMI.kimmiPhil.setUploadVideoToken(resp.videoToken!);

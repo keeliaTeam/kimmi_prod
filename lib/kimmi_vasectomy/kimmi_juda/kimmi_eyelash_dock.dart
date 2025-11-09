@@ -74,7 +74,9 @@ class KimmiEyelashDock {
       }
       if (resp?.code == 30003) {
         KimmiVasectomyPioneerDock.clickLiveEvent(
-            "LIVE_JOIN_REJECT_KICK_OUT", liveId);
+          "LIVE_JOIN_REJECT_KICK_OUT",
+          liveId,
+        );
         Fluttertoast.showToast(msg: "kimmi_broderick_omaha_eyelash_prolong".tr);
       } else {
         KimmiVasectomyPioneerDock.clickLiveEvent("LIVE_JOIN_ERROR", liveId);

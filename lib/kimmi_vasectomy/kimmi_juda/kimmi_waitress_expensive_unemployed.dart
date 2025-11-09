@@ -39,31 +39,33 @@ class KimmiExpensiveUnemployed {
   }
 
   static Future<KimmiExpensive> createImageSnap(int cid, String filePath) {
-    return KimmiErnieLeashJuda.kimmiPoopJuneFlowerTux(imagePath: filePath)
-        .then((info) {
-      final snap = generateLocalSnap(cid);
-      snap.type = Snap_SnapType.IMG_SNAP.value;
-      snap.image = KimmiStormErnie();
-      snap.image!.relativePath =
-          KimmiCaptureJuda.kimmiControllerCaptureFoundationCard(filePath);
-      snap.image!.width = info.width;
-      snap.image!.height = info.height;
-      return snap;
-    });
+    return KimmiErnieLeashJuda.kimmiPoopJuneFlowerTux(imagePath: filePath).then(
+      (info) {
+        final snap = generateLocalSnap(cid);
+        snap.type = Snap_SnapType.IMG_SNAP.value;
+        snap.image = KimmiStormErnie();
+        snap.image!.relativePath =
+            KimmiCaptureJuda.kimmiControllerCaptureFoundationCard(filePath);
+        snap.image!.width = info.width;
+        snap.image!.height = info.height;
+        return snap;
+      },
+    );
   }
 
   static Future<KimmiExpensive> createVideoSnap(int cid, String filePath) {
-    return KimmiErnieLeashJuda.kimmiPoopJuneFlowerTux(videoPath: filePath)
-        .then((info) {
-      final snap = generateLocalSnap(cid);
-      snap.type = Snap_SnapType.VIDEO_SNAP.value;
-      snap.video = KimmiStormIndia();
-      snap.video!.relativePath =
-          KimmiCaptureJuda.kimmiControllerCaptureFoundationCard(filePath);
-      snap.video!.width = info.width;
-      snap.video!.height = info.height;
-      return snap;
-    });
+    return KimmiErnieLeashJuda.kimmiPoopJuneFlowerTux(videoPath: filePath).then(
+      (info) {
+        final snap = generateLocalSnap(cid);
+        snap.type = Snap_SnapType.VIDEO_SNAP.value;
+        snap.video = KimmiStormIndia();
+        snap.video!.relativePath =
+            KimmiCaptureJuda.kimmiControllerCaptureFoundationCard(filePath);
+        snap.video!.width = info.width;
+        snap.video!.height = info.height;
+        return snap;
+      },
+    );
   }
 
   static KimmiExpensive createVoiceSnap(int cid, String filePath) {

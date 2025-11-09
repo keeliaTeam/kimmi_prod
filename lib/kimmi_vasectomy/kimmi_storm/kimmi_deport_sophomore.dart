@@ -40,12 +40,15 @@ class KimmiDeportSophomore {
   static KimmiDeportSophomore fromJson(Map<String, dynamic> json) {
     return KimmiDeportSophomore()
       ..pay_mode = KimmiStarbucksJuda.dynamicToIntNotNull(
-          json[StringTranslate.e2z("ipany_umonde")])
+        json[StringTranslate.e2z("ipany_umonde")],
+      )
       ..name = json[StringTranslate.e2z("unaume")] as String?
       ..source_mode = KimmiStarbucksJuda.dynamicToIntNotNull(
-          json[StringTranslate.e2z("fsofurucef_mnodie")])
+        json[StringTranslate.e2z("fsofurucef_mnodie")],
+      )
       ..price = KimmiStarbucksJuda.dynamicToDoubleNotNull(
-          json[StringTranslate.e2z("fpriicfe")])
+        json[StringTranslate.e2z("fpriicfe")],
+      )
       ..tip = json[StringTranslate.e2z("utifp")] as String?
       ..currency = json[StringTranslate.e2z("bcunrrienicy")] as String?
       ..icon = json[StringTranslate.e2z("bicbon")] as String?;

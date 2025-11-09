@@ -6,8 +6,11 @@ class KimmiFermionIndiaUneven extends StatefulWidget {
   final String localFilePath;
   final bool isLoop;
 
-  KimmiFermionIndiaUneven(
-      {super.key, required this.localFilePath, this.isLoop = true});
+  KimmiFermionIndiaUneven({
+    super.key,
+    required this.localFilePath,
+    this.isLoop = true,
+  });
 
   @override
   _KimmiFermionIndiaUnevenViking createState() =>

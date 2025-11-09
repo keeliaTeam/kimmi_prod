@@ -97,29 +97,34 @@ class _KimmiWelcomeUnevenViking extends State<KimmiWelcomeUneven>
       content = SVGAImage(_animationController);
     }
     return Scaffold(
-        backgroundColor: Colors.transparent,
-        body: GestureDetector(
-          onTap: () {
-            if (!_animationController.isAnimating) {
-              _closedPage();
-            }
-          },
-          child: Container(
-              color: Colors.transparent, child: Center(child: content)),
-        ));
+      backgroundColor: Colors.transparent,
+      body: GestureDetector(
+        onTap: () {
+          if (!_animationController.isAnimating) {
+            _closedPage();
+          }
+        },
+        child: Container(
+          color: Colors.transparent,
+          child: Center(child: content),
+        ),
+      ),
+    );
   }
 
   _bytes() async {
-    _animationController.videoItem =
-        await SVGAParser.shared.decodeFromBuffer(bytesData!.toList());
+    _animationController.videoItem = await SVGAParser.shared.decodeFromBuffer(
+      bytesData!.toList(),
+    );
     _animationController.forward().whenCompleteOrCancel(() {
       _closedPage();
     });
   }
 
   _asset() async {
-    _animationController.videoItem =
-        await SVGAParser.shared.decodeFromAssets(url);
+    _animationController.videoItem = await SVGAParser.shared.decodeFromAssets(
+      url,
+    );
     _kimmiPoloUnclog().whenCompleteOrCancel(() {
       _closedPage();
     });

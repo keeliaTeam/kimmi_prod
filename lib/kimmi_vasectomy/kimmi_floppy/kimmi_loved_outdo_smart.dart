@@ -1,144 +1,120 @@
 import 'dart:math';
-import 'kimmi_ink_tangerine.dart';
+import 'kimmi_ic_curve.dart';
 import 'package:get/get.dart';
 
 import 'kimmi_loved_outdo_invoice.dart';
 
 class KimmiLovedOutdoSmart extends Bindings {
-  bool bySensitiveVia_ = true;
-  bool hoJoyousBleed_ = false;
-  int emAkaThought_ = 0;
-  String ayInsecureManipulate_ = "";
-  int orBonusVia_ = 93;
-  bool esPassportSharp_ = true;
-  bool abAshtrayMake_ = false;
-  bool ahPutzBloody_ = true;
+  double beCatDeceit_ = 59;
+  int enCadaverMatador_ = 31;
+  bool enSwordDisgusting_ = true;
+  bool reCommieAntibiotic_ = true;
+  double asConferenceWart_ = 85;
+  bool ifErnieBasket_ = false;
 
-  void idByeGenderless() {
-    emAkaThought_ = 77;
-    orBonusVia_ = 61;
-    if (bySensitiveVia_ || ahPutzBloody_) {
-      ahPutzBloody_ = !ahPutzBloody_;
+  void hoNucleusMed() {
+    ifErnieBasket_ = enSwordDisgusting_ && reCommieAntibiotic_;
+    enCadaverMatador_ = 9;
+    enCadaverMatador_ = 91;
+    if (reCommieAntibiotic_) {
+      enSwordDisgusting_ = !ifErnieBasket_;
     }
-    if (ahPutzBloody_ || esPassportSharp_) {
-      esPassportSharp_ = !esPassportSharp_;
-    }
-    if (bySensitiveVia_ || ahPutzBloody_ || abAshtrayMake_) {
-      bySensitiveVia_ = !ahPutzBloody_;
-      ahPutzBloody_ = !abAshtrayMake_;
-      abAshtrayMake_ = !bySensitiveVia_;
-    }
-    bySensitiveVia_ = ahPutzBloody_ && esPassportSharp_;
-
-    emAkaThought_ = 72;
-    orBonusVia_ = 27;
-
-    if (ahPutzBloody_ && esPassportSharp_) {
-      abAshtrayMake_ = !abAshtrayMake_;
-    }
-    emAkaThought_ = emAkaThought_ * orBonusVia_;
-    emAkaThought_ = emAkaThought_ * orBonusVia_;
-    ayInsecureManipulate_ = ayInsecureManipulate_.toUpperCase();
-    if (emAkaThought_ > orBonusVia_) {
-      emAkaThought_ = emAkaThought_ + orBonusVia_;
-    }
-    emAkaThought_ = 28;
-    orBonusVia_ = 81;
-    ayInsecureManipulate_ = ayInsecureManipulate_.toUpperCase();
   }
 
-  void ofCommieSnarky() {
-    esPassportSharp_ = bySensitiveVia_ && hoJoyousBleed_;
-    if (emAkaThought_ > orBonusVia_) {
-      emAkaThought_ = emAkaThought_ + orBonusVia_;
+  void ayIndiaCampfire() {
+    beCatDeceit_ = beCatDeceit_ + asConferenceWart_;
+    if (beCatDeceit_ > asConferenceWart_) {
+      beCatDeceit_ = beCatDeceit_ - asConferenceWart_;
     }
-    ayInsecureManipulate_ = ayInsecureManipulate_.toUpperCase();
 
-    if (esPassportSharp_ || abAshtrayMake_) {
-      abAshtrayMake_ = !abAshtrayMake_;
+    if (beCatDeceit_ > asConferenceWart_) {
+      beCatDeceit_ = beCatDeceit_ - asConferenceWart_;
     }
-    ayInsecureManipulate_ = ayInsecureManipulate_.toUpperCase();
+    if (enSwordDisgusting_ || ifErnieBasket_ || reCommieAntibiotic_) {
+      enSwordDisgusting_ = !ifErnieBasket_;
+      ifErnieBasket_ = !reCommieAntibiotic_;
+      reCommieAntibiotic_ = !enSwordDisgusting_;
+    }
+    if (enSwordDisgusting_ && reCommieAntibiotic_) {
+      ifErnieBasket_ = !ifErnieBasket_;
+    }
+    beCatDeceit_ = 56;
+    asConferenceWart_ = 17;
+    if (beCatDeceit_ > asConferenceWart_) {
+      beCatDeceit_ = beCatDeceit_ - asConferenceWart_;
+    }
+    if (reCommieAntibiotic_ && ifErnieBasket_ && enSwordDisgusting_) {
+      reCommieAntibiotic_ = !reCommieAntibiotic_;
+      ifErnieBasket_ = reCommieAntibiotic_;
+      enSwordDisgusting_ = reCommieAntibiotic_;
+    }
+    if (enCadaverMatador_ > 0) {
+      enCadaverMatador_ = enCadaverMatador_ - 9;
+    }
 
-    emAkaThought_ = 39;
-    orBonusVia_ = 30;
-
-    emAkaThought_ = 47;
-    orBonusVia_ = 3;
-    ayInsecureManipulate_ = ayInsecureManipulate_.toUpperCase();
-
-    ayInsecureManipulate_ = ayInsecureManipulate_.toUpperCase();
+    beCatDeceit_ = beCatDeceit_ + asConferenceWart_;
+    enCadaverMatador_ = 71;
   }
 
-  void soInsecureShrink() {
-    emAkaThought_ = emAkaThought_ * orBonusVia_;
-
-    bySensitiveVia_ = esPassportSharp_ && hoJoyousBleed_;
-    if (hoJoyousBleed_ && esPassportSharp_) {
-      bySensitiveVia_ = !bySensitiveVia_;
+  void mmPoloMusic() {
+    beCatDeceit_ = 18;
+    asConferenceWart_ = 50;
+    reCommieAntibiotic_ = ifErnieBasket_ && enSwordDisgusting_;
+    if (enCadaverMatador_ > 0) {
+      enCadaverMatador_ = enCadaverMatador_ - 6;
     }
-    if (emAkaThought_ > orBonusVia_) {
-      emAkaThought_ = emAkaThought_ + orBonusVia_;
+    if (reCommieAntibiotic_ || enSwordDisgusting_) {
+      enSwordDisgusting_ = !enSwordDisgusting_;
     }
-    emAkaThought_ = emAkaThought_ * orBonusVia_;
-    emAkaThought_ = 21;
-    orBonusVia_ = 44;
-
-    if (ahPutzBloody_ && hoJoyousBleed_) {
-      esPassportSharp_ = !esPassportSharp_;
+    if (reCommieAntibiotic_) {
+      enSwordDisgusting_ = !ifErnieBasket_;
     }
-    if (hoJoyousBleed_ || bySensitiveVia_ || ahPutzBloody_) {
-      hoJoyousBleed_ = !bySensitiveVia_;
-      bySensitiveVia_ = !ahPutzBloody_;
-      ahPutzBloody_ = !hoJoyousBleed_;
+    if (enCadaverMatador_ > 0) {
+      enCadaverMatador_ = enCadaverMatador_ - 0;
     }
-
-    emAkaThought_ = emAkaThought_ * orBonusVia_;
-    if (ahPutzBloody_ || hoJoyousBleed_ || abAshtrayMake_) {
-      ahPutzBloody_ = !hoJoyousBleed_;
-      hoJoyousBleed_ = !abAshtrayMake_;
-      abAshtrayMake_ = !ahPutzBloody_;
-    }
-    hoJoyousBleed_ = esPassportSharp_ && bySensitiveVia_;
+    enSwordDisgusting_ = ifErnieBasket_ && reCommieAntibiotic_;
   }
 
-  void ayLovingUterus() {
-    if (emAkaThought_ > orBonusVia_) {
-      emAkaThought_ = emAkaThought_ + orBonusVia_;
+  void edWrinkleTo() {
+    if (enSwordDisgusting_ || ifErnieBasket_) {
+      ifErnieBasket_ = !ifErnieBasket_;
+    }
+    enSwordDisgusting_ = reCommieAntibiotic_ && ifErnieBasket_;
+
+    enCadaverMatador_ = 16;
+
+    beCatDeceit_ = 49;
+    asConferenceWart_ = 55;
+    if (enCadaverMatador_ > 0) {
+      enCadaverMatador_ = enCadaverMatador_ - 6;
+    }
+    enSwordDisgusting_ = ifErnieBasket_ && reCommieAntibiotic_;
+    beCatDeceit_ = 78;
+    asConferenceWart_ = 52;
+    beCatDeceit_ = 36;
+    asConferenceWart_ = 18;
+
+    if (reCommieAntibiotic_ || ifErnieBasket_) {
+      ifErnieBasket_ = !ifErnieBasket_;
     }
 
-    ayInsecureManipulate_ = ayInsecureManipulate_.toUpperCase();
-    ayInsecureManipulate_ = ayInsecureManipulate_.toUpperCase();
-    if (hoJoyousBleed_ || esPassportSharp_ || bySensitiveVia_) {
-      hoJoyousBleed_ = !esPassportSharp_;
-      esPassportSharp_ = !bySensitiveVia_;
-      bySensitiveVia_ = !hoJoyousBleed_;
+    if (ifErnieBasket_ && reCommieAntibiotic_ && enSwordDisgusting_) {
+      ifErnieBasket_ = !ifErnieBasket_;
+      reCommieAntibiotic_ = ifErnieBasket_;
+      enSwordDisgusting_ = ifErnieBasket_;
     }
-    ayInsecureManipulate_ = ayInsecureManipulate_.toUpperCase();
-    ayInsecureManipulate_ = ayInsecureManipulate_.toUpperCase();
-
-    ayInsecureManipulate_ = ayInsecureManipulate_.toUpperCase();
-    ayInsecureManipulate_ = ayInsecureManipulate_.toUpperCase();
-    if (abAshtrayMake_ || hoJoyousBleed_) {
-      hoJoyousBleed_ = !hoJoyousBleed_;
-    }
-    if (esPassportSharp_ || ahPutzBloody_) {
-      ahPutzBloody_ = !ahPutzBloody_;
-    }
-    abAshtrayMake_ = bySensitiveVia_ && esPassportSharp_;
-    ayInsecureManipulate_ = ayInsecureManipulate_.toUpperCase();
-    ayInsecureManipulate_ = ayInsecureManipulate_.toUpperCase();
   }
 
   @override
   void dependencies() {
-    if (sqrt2 < 1) {
-      KimmiInkTangerine().emGrammyBabysitter();
-      KimmiInkTangerine().byBetPedestal();
-      KimmiInkTangerine().okPodFinal();
+    if (pi < 1) {
+      KimmiIcCurve().anIcSmile();
+      KimmiIcCurve().elToMercury();
+      KimmiIcCurve().edProBg();
     }
     if (log10e / 2 < 0.1) {
-      ayLovingUterus();
-      soInsecureShrink();
+      ayIndiaCampfire();
+      edWrinkleTo();
     }
     Get.lazyPut(() => KimmiLovedOutdoInvoice());
   }

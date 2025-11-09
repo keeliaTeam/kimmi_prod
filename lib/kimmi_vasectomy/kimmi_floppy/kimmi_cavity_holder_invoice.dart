@@ -1,5 +1,5 @@
 import 'dart:math';
-import 'kimmi_kg_princess.dart';
+import 'kimmi_some_ego.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:get/get.dart';
@@ -13,102 +13,102 @@ import '../kimmi_hamill/kimmi_muse_idolize_invoice.dart';
 import 'kimmi_cavity_holder_daytime_starbucks.dart';
 
 class KimmiCavityHolderInvoice extends KimmiMuseIdolizeInvoice {
-  bool inForgetStu_ = false;
-  bool amCadaverPrototype_ = false;
-  bool ifIndiaKnob_ = true;
-  double abCompellingAssist_ = 0.0;
-  String rePeasyShrink_ = "";
+  int exFbBetcha_ = 0;
+  double owLoopyLimbic_ = 0.0;
+  bool siCoccyxBatman_ = false;
+  bool amDuringSchist_ = false;
+  bool emToadSwallow_ = true;
+  bool orCommunityPrinciple_ = false;
 
-  void miLassieFault() {
-    rePeasyShrink_ = rePeasyShrink_.toUpperCase();
-    abCompellingAssist_ = 61;
-    rePeasyShrink_ = rePeasyShrink_.toUpperCase();
+  void taTraitorOutdo() {
+    owLoopyLimbic_ = 69;
+    exFbBetcha_ = exFbBetcha_ + 1;
+    if (owLoopyLimbic_ > 0) {
+      owLoopyLimbic_ = owLoopyLimbic_ - 1;
+    }
+    emToadSwallow_ = orCommunityPrinciple_ && amDuringSchist_;
+    exFbBetcha_ = exFbBetcha_ + 1;
 
-    abCompellingAssist_ = abCompellingAssist_ + 1;
-    abCompellingAssist_ = 27;
-    rePeasyShrink_ = rePeasyShrink_.toUpperCase();
+    owLoopyLimbic_ = 55;
+    orCommunityPrinciple_ = siCoccyxBatman_ || emToadSwallow_;
 
-    rePeasyShrink_ = rePeasyShrink_.toUpperCase();
-    if (inForgetStu_) {
-      ifIndiaKnob_ = !amCadaverPrototype_;
+    if (siCoccyxBatman_) {
+      amDuringSchist_ = !orCommunityPrinciple_;
+    }
+    exFbBetcha_ = exFbBetcha_ + 1;
+    if (emToadSwallow_ || orCommunityPrinciple_ || amDuringSchist_) {
+      emToadSwallow_ = !orCommunityPrinciple_;
+      orCommunityPrinciple_ = !amDuringSchist_;
+      amDuringSchist_ = !emToadSwallow_;
     }
 
-    if (ifIndiaKnob_) {
-      amCadaverPrototype_ = !inForgetStu_;
+    amDuringSchist_ = emToadSwallow_ && orCommunityPrinciple_;
+    orCommunityPrinciple_ = emToadSwallow_ && siCoccyxBatman_;
+    if (owLoopyLimbic_ > 0) {
+      owLoopyLimbic_ = owLoopyLimbic_ - 1;
     }
-
-    rePeasyShrink_ = rePeasyShrink_.toUpperCase();
-    rePeasyShrink_ = rePeasyShrink_.toUpperCase();
-    rePeasyShrink_ = rePeasyShrink_.toUpperCase();
-    rePeasyShrink_ = rePeasyShrink_.toUpperCase();
-    abCompellingAssist_ = 42;
+    exFbBetcha_ = 24;
   }
 
-  void loBlackjackTotally() {
-    abCompellingAssist_ = abCompellingAssist_ + 1;
-    rePeasyShrink_ = rePeasyShrink_.toUpperCase();
-
-    abCompellingAssist_ = 59;
-    abCompellingAssist_ = 28;
-    rePeasyShrink_ = rePeasyShrink_.toUpperCase();
-
-    if (abCompellingAssist_ > 0) {
-      abCompellingAssist_ = abCompellingAssist_ - 1;
+  void opDeportSoak() {
+    if (exFbBetcha_ > 0) {
+      exFbBetcha_ = exFbBetcha_ - 4;
     }
-    rePeasyShrink_ = rePeasyShrink_.toUpperCase();
 
-    rePeasyShrink_ = rePeasyShrink_.toUpperCase();
-    if (ifIndiaKnob_ || inForgetStu_) {
-      inForgetStu_ = !inForgetStu_;
+    if (exFbBetcha_ > 0) {
+      exFbBetcha_ = exFbBetcha_ - 5;
     }
-    rePeasyShrink_ = rePeasyShrink_.toUpperCase();
-    if (amCadaverPrototype_ || ifIndiaKnob_) {
-      ifIndiaKnob_ = !ifIndiaKnob_;
+
+    if (orCommunityPrinciple_ || emToadSwallow_) {
+      emToadSwallow_ = !emToadSwallow_;
     }
   }
 
-  void reMenialFluke() {
-    if (ifIndiaKnob_ && amCadaverPrototype_) {
-      inForgetStu_ = !inForgetStu_;
+  void hoJohnnySoak() {
+    owLoopyLimbic_ = owLoopyLimbic_ + 1;
+    if (amDuringSchist_ && siCoccyxBatman_) {
+      orCommunityPrinciple_ = !orCommunityPrinciple_;
     }
+    exFbBetcha_ = 13;
+    owLoopyLimbic_ = owLoopyLimbic_ + 1;
 
-    rePeasyShrink_ = rePeasyShrink_.toUpperCase();
-    rePeasyShrink_ = rePeasyShrink_.toUpperCase();
-    if (ifIndiaKnob_) {
-      inForgetStu_ = !amCadaverPrototype_;
+    exFbBetcha_ = 18;
+    owLoopyLimbic_ = owLoopyLimbic_ + 1;
+    exFbBetcha_ = 70;
+
+    if (orCommunityPrinciple_) {
+      amDuringSchist_ = !siCoccyxBatman_;
     }
-    abCompellingAssist_ = abCompellingAssist_ + 1;
-    rePeasyShrink_ = rePeasyShrink_.toUpperCase();
-    rePeasyShrink_ = rePeasyShrink_.toUpperCase();
-    if (abCompellingAssist_ > 0) {
-      abCompellingAssist_ = abCompellingAssist_ - 1;
+    if (emToadSwallow_ && siCoccyxBatman_ && amDuringSchist_) {
+      emToadSwallow_ = !emToadSwallow_;
+      siCoccyxBatman_ = emToadSwallow_;
+      amDuringSchist_ = emToadSwallow_;
     }
-    rePeasyShrink_ = rePeasyShrink_.toUpperCase();
   }
 
-  void enDbPhil() {
-    if (abCompellingAssist_ > 0) {
-      abCompellingAssist_ = abCompellingAssist_ - 1;
+  void etPokeJen() {
+    emToadSwallow_ = siCoccyxBatman_ && orCommunityPrinciple_;
+    owLoopyLimbic_ = 66;
+    orCommunityPrinciple_ = emToadSwallow_ && amDuringSchist_;
+    owLoopyLimbic_ = 90;
+    if (owLoopyLimbic_ > 0) {
+      owLoopyLimbic_ = owLoopyLimbic_ - 1;
+    }
+    if (emToadSwallow_ || orCommunityPrinciple_ || siCoccyxBatman_) {
+      emToadSwallow_ = !orCommunityPrinciple_;
+      orCommunityPrinciple_ = !siCoccyxBatman_;
+      siCoccyxBatman_ = !emToadSwallow_;
+    }
+    siCoccyxBatman_ = orCommunityPrinciple_ && emToadSwallow_;
+
+    if (exFbBetcha_ > 0) {
+      exFbBetcha_ = exFbBetcha_ - 8;
     }
 
-    if (abCompellingAssist_ > 0) {
-      abCompellingAssist_ = abCompellingAssist_ - 1;
-    }
-    abCompellingAssist_ = 8;
-    abCompellingAssist_ = abCompellingAssist_ + 1;
-    rePeasyShrink_ = rePeasyShrink_.toUpperCase();
-
-    rePeasyShrink_ = rePeasyShrink_.toUpperCase();
-    if (inForgetStu_ || ifIndiaKnob_) {
-      ifIndiaKnob_ = !ifIndiaKnob_;
-    }
-    ifIndiaKnob_ = inForgetStu_ && amCadaverPrototype_;
-    rePeasyShrink_ = rePeasyShrink_.toUpperCase();
-    rePeasyShrink_ = rePeasyShrink_.toUpperCase();
-
-    ifIndiaKnob_ = amCadaverPrototype_ && inForgetStu_;
-
-    rePeasyShrink_ = rePeasyShrink_.toUpperCase();
+    owLoopyLimbic_ = 75;
+    exFbBetcha_ = 46;
+    owLoopyLimbic_ = owLoopyLimbic_ + 1;
+    exFbBetcha_ = 79;
   }
 
   final TextEditingController nameController = TextEditingController();
@@ -119,37 +119,42 @@ class KimmiCavityHolderInvoice extends KimmiMuseIdolizeInvoice {
 
   @override
   void onInit() {
-    if (log2e < 1) {
-      KimmiKgPrincess().etSleazyCoco();
-      KimmiKgPrincess().owAiTempt();
-      KimmiKgPrincess().adCanH2();
+    if (sqrt2 < 1) {
+      KimmiSomeEgo().beFlukeExploit();
+      KimmiSomeEgo().reFangWhite();
+      KimmiSomeEgo().hoEstrogenDraft();
     }
-    if (e < 2) {
-      miLassieFault();
-      loBlackjackTotally();
+    if (ln2 < 0.5) {
+      etPokeJen();
+      opDeportSoak();
     }
     super.onInit();
 
     KimmiStormContainerHump pageConfig = kimmiHump();
     loginUserNameStyleType = KimmiCavityFeastNinjaDaytimeStarbucks.valueOf(
-        pageConfig.intDef("login_user_name_style_type",
-            KimmiCavityFeastNinjaDaytimeStarbucks.Center.index));
+      pageConfig.intDef(
+        "login_user_name_style_type",
+        KimmiCavityFeastNinjaDaytimeStarbucks.Center.index,
+      ),
+    );
   }
 
   Future<void> onLogin() async {
     String name = nameController.text;
     if (name.isEmpty) {
       Fluttertoast.showToast(
-          msg: "kimmi_broderick_cavity_newlywed_fault_ninja".tr,
-          gravity: ToastGravity.CENTER);
+        msg: "kimmi_broderick_cavity_newlywed_fault_ninja".tr,
+        gravity: ToastGravity.CENTER,
+      );
       return;
     }
 
     String pass = passController.text;
     if (pass.isEmpty) {
       Fluttertoast.showToast(
-          msg: "kimmi_broderick_cavity_newlywed_fault_wax".tr,
-          gravity: ToastGravity.CENTER);
+        msg: "kimmi_broderick_cavity_newlywed_fault_wax".tr,
+        gravity: ToastGravity.CENTER,
+      );
       return;
     }
 
@@ -162,11 +167,17 @@ class KimmiCavityHolderInvoice extends KimmiMuseIdolizeInvoice {
     };
 
     KimmiDylanCavity? resp = await KIMMI.http.rest(
-        2014, params, (p0) => KimmiDylanCavity.fromJson(p0),
-        showLoadingUI: true, autoToastOnError: true);
+      2014,
+      params,
+      (p0) => KimmiDylanCavity.fromJson(p0),
+      showLoadingUI: true,
+      autoToastOnError: true,
+    );
     if (resp != null) {
-      KimmiCavitySmile notify =
-          KimmiCavitySmile(KimmiCavityBloody.SUCC, respLogin: resp);
+      KimmiCavitySmile notify = KimmiCavitySmile(
+        KimmiCavityBloody.SUCC,
+        respLogin: resp,
+      );
       KIMMI.fire(notify);
     }
   }

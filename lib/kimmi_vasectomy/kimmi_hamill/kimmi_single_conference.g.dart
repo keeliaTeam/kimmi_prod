@@ -11,10 +11,7 @@ class KimmiSingleConferenceDecode extends _KimmiSingleConferenceDecode {
   static KimmiSingleConferenceDecode fromDynamic(
     dynamic map, {
     JsonWidgetRegistry? registry,
-  }) =>
-      KimmiSingleConferenceDecode(
-        args: map,
-      );
+  }) => KimmiSingleConferenceDecode(args: map);
 
   @override
   KimmiSingleConferenceDecodeStorm createModel({
@@ -36,26 +33,17 @@ class KimmiSingleConferenceDecode extends _KimmiSingleConferenceDecode {
     required JsonWidgetData data,
     Key? key,
   }) {
-    final model = createModel(
-      childBuilder: childBuilder,
-      data: data,
-    );
+    final model = createModel(childBuilder: childBuilder, data: data);
 
     return KimmiSingleConference(
-      action: model.action?.build(
-        childBuilder: childBuilder,
-        context: context,
-      ),
+      action: model.action?.build(childBuilder: childBuilder, context: context),
       color: model.color,
       key: key,
       leading: model.leading?.build(
         childBuilder: childBuilder,
         context: context,
       ),
-      middle: model.middle?.build(
-        childBuilder: childBuilder,
-        context: context,
-      ),
+      middle: model.middle?.build(childBuilder: childBuilder, context: context),
     );
   }
 }
@@ -69,32 +57,32 @@ class JsonKimmiSingleConference extends JsonWidgetData {
     required this.leading,
     this.middle,
   }) : super(
-          jsonWidgetArgs: KimmiSingleConferenceDecodeStorm.fromDynamic(
-            {
-              'action': action,
-              'color': color,
-              'leading': leading,
-              'middle': middle,
-              ...args,
-            },
-            args: args,
-            registry: registry,
-          ),
-          jsonWidgetBuilder: () => KimmiSingleConferenceDecode(
-            args: KimmiSingleConferenceDecodeStorm.fromDynamic(
-              {
-                'action': action,
-                'color': color,
-                'leading': leading,
-                'middle': middle,
-                ...args,
-              },
-              args: args,
-              registry: registry,
-            ),
-          ),
-          jsonWidgetType: KimmiSingleConferenceDecode.kType,
-        );
+         jsonWidgetArgs: KimmiSingleConferenceDecodeStorm.fromDynamic(
+           {
+             'action': action,
+             'color': color,
+             'leading': leading,
+             'middle': middle,
+             ...args,
+           },
+           args: args,
+           registry: registry,
+         ),
+         jsonWidgetBuilder: () => KimmiSingleConferenceDecode(
+           args: KimmiSingleConferenceDecodeStorm.fromDynamic(
+             {
+               'action': action,
+               'color': color,
+               'leading': leading,
+               'middle': middle,
+               ...args,
+             },
+             args: args,
+             registry: registry,
+           ),
+         ),
+         jsonWidgetType: KimmiSingleConferenceDecode.kType,
+       );
 
   final JsonWidgetData? action;
 
@@ -127,17 +115,7 @@ class KimmiSingleConferenceDecodeStorm extends JsonWidgetBuilderModel {
     Map<String, dynamic> args = const {},
     JsonWidgetRegistry? registry,
   }) {
-    if (map["middle"] != null &&
-        map["middle"]["args"] != null &&
-        map["middle"]["args"]["text"] != null) {
-      String text = map["middle"]["args"]["text"];
-      map["middle"]["args"]["text"] = text.tr;
-    }
-    final result = maybeFromDynamic(
-      map,
-      args: args,
-      registry: registry,
-    );
+    final result = maybeFromDynamic(map, args: args, registry: registry);
 
     if (result == null) {
       throw Exception(
@@ -157,10 +135,7 @@ class KimmiSingleConferenceDecodeStorm extends JsonWidgetBuilderModel {
 
     if (map != null) {
       if (map is String) {
-        map = yaon.parse(
-          map,
-          normalize: true,
-        );
+        map = yaon.parse(map, normalize: true);
       }
 
       if (map is KimmiSingleConferenceDecodeStorm) {
@@ -213,12 +188,30 @@ class KimmiSingleConferenceDecodeStorm extends JsonWidgetBuilderModel {
   Map<String, dynamic> toJson() {
     return JsonClass.removeNull({
       'action': action?.toJson(),
-      'color': ThemeEncoder.encodeColor(
-        color,
-      ),
+      'color': ThemeEncoder.encodeColor(color),
       'leading': leading?.toJson(),
       'middle': middle?.toJson(),
       ...args,
     });
   }
+}
+
+class KimmiSingleConferenceMobster {
+  static const id =
+      'https://peiffer-innovations.github.io/flutter_json_schemas/schemas/kimmi/kimmi_single_conference.json';
+
+  static final schema = <String, Object>{
+    r'$schema': 'http://json-schema.org/draft-07/schema#',
+    r'$id': id,
+    'title': 'KimmiSingleConference',
+    'type': 'object',
+    'additionalProperties': false,
+    'properties': {
+      'action': SchemaHelper.objectSchema(JsonWidgetDataSchema.id),
+      'color': SchemaHelper.objectSchema(ColorSchema.id),
+      'leading': SchemaHelper.objectSchema(JsonWidgetDataSchema.id),
+      'middle': SchemaHelper.objectSchema(JsonWidgetDataSchema.id),
+    },
+    'required': ['leading'],
+  };
 }

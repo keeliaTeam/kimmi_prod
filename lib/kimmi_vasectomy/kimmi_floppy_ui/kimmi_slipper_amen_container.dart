@@ -1,5 +1,5 @@
 import 'dart:math';
-import 'kimmi_traitor_smile.dart';
+import 'kimmi_michelle_superior.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_hamill/kimmi_ernie.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_tonight/kimmi_defrost.dart';
 import 'package:easy_refresh/easy_refresh.dart';
@@ -23,10 +23,16 @@ class KimmiSlipperAmenContainer
     return [
       SafeArea(
         child: Container(
-          decoration:
-              const BoxDecoration(border: KimmiPalate.kimmiCradleJohnnyNanny),
-          margin: const EdgeInsets.fromLTRB(KimmiPalate.kimmiCradleAmenSash, 56,
-              KimmiPalate.kimmiCradleAmenSash, KimmiPalate.kimmiCradleAmenSash),
+          decoration: const BoxDecoration(
+            border: KimmiPalate.kimmiCradleJohnnyNanny,
+          ),
+          margin: const EdgeInsets.fromLTRB(
+            KimmiPalate.kimmiCradleAmenSash,
+            56,
+            KimmiPalate.kimmiCradleAmenSash,
+            KimmiPalate.kimmiCradleAmenSash,
+          ),
+
           child: EasyRefresh.builder(
             onRefresh: logic.onKimmiAmenGaming,
             onLoad: logic.onKimmiAmenTangerine,
@@ -37,25 +43,27 @@ class KimmiSlipperAmenContainer
             footer: KimmiFailedWebsite.kimmiGamingAbu(),
             childBuilder: (BuildContext context, ScrollPhysics physics) {
               return GetBuilder<KimmiSlipperAmenInvoice>(
-                  id: KimmiSlipperAmenInvoice.kimmi_amen,
-                  builder: (_) {
-                    return _.blackList.value.isEmpty
-                        ? SingleChildScrollView(
-                            physics: physics,
-                            child: _.isRefreshing.value
-                                ? const SizedBox()
-                                : _kimmiNoHazelnutGloss())
-                        : ListView.separated(
-                            physics: physics,
-                            padding: const EdgeInsets.symmetric(vertical: 8),
-                            separatorBuilder: (context, index) =>
-                                const SizedBox(height: 8),
-                            itemBuilder: (context, index) {
-                              return _kimmiFeastJohnny(index);
-                            },
-                            itemCount: _.blackList.value.length,
-                          );
-                  });
+                id: KimmiSlipperAmenInvoice.kimmi_amen,
+                builder: (_) {
+                  return _.blackList.value.isEmpty
+                      ? SingleChildScrollView(
+                          physics: physics,
+                          child: _.isRefreshing.value
+                              ? const SizedBox()
+                              : _kimmiNoHazelnutGloss(),
+                        )
+                      : ListView.separated(
+                          physics: physics,
+                          padding: const EdgeInsets.symmetric(vertical: 8),
+                          separatorBuilder: (context, index) =>
+                              const SizedBox(height: 8),
+                          itemBuilder: (context, index) {
+                            return _kimmiFeastJohnny(index);
+                          },
+                          itemCount: _.blackList.value.length,
+                        );
+                },
+              );
             },
           ),
         ),
@@ -71,14 +79,16 @@ class KimmiSlipperAmenContainer
         motion: const ScrollMotion(),
         children: [
           SlidableAction(
-              flex: 1,
-              onPressed: (context) => logic.onKimmiBrettSlipper(user, index),
-              backgroundColor: const Color(0xFFFF0000),
-              foregroundColor: Colors.white,
-              spacing: 0,
-              label: 'kimmi_broderick_brett'.tr),
+            flex: 1,
+            onPressed: (context) => logic.onKimmiBrettSlipper(user, index),
+            backgroundColor: const Color(0xFFFF0000),
+            foregroundColor: Colors.white,
+            spacing: 0,
+            label: 'kimmi_broderick_brett'.tr,
+          ),
         ],
       ),
+
       child: SizedBox(
         width: Get.width,
         height: 64,
@@ -99,14 +109,20 @@ class KimmiSlipperAmenContainer
       height: Get.height,
       alignment: Alignment.topCenter,
       padding: const EdgeInsets.only(top: 100),
-      child: Column(mainAxisSize: MainAxisSize.min, children: [
-        KimmiErnie.local(
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          KimmiErnie.local(
             fileName: "kimmi_hombre_amen_selfish_gloss",
             width: 112,
-            height: 112),
-        Text("kimmi_broderick_no_hazelnut".tr,
-            style: KimmiTamperDaytime.style(color: KimmiDraftJuda.white_40p))
-      ]),
+            height: 112,
+          ),
+          Text(
+            "kimmi_broderick_no_hazelnut".tr,
+            style: KimmiTamperDaytime.style(color: KimmiDraftJuda.white_40p),
+          ),
+        ],
+      ),
     );
   }
 }

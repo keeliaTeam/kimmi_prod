@@ -18,14 +18,11 @@ class KimmiStormToadDylan {
       json['data'] == null
           ? null
           : KimmiToadSouthHazelnut.fromJson(
-              json['data'] as Map<String, dynamic>),
+              json['data'] as Map<String, dynamic>,
+            ),
     );
   }
   Map<String, dynamic> toJson() {
-    return <String, dynamic>{
-      "code": code,
-      "msg": msg,
-      'data': data?.toJson(),
-    };
+    return <String, dynamic>{"code": code, "msg": msg, 'data': data?.toJson()};
   }
 }

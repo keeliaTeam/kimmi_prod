@@ -6,8 +6,7 @@ enum KimmiLovedMeFeastTuxStarbucks {
 
   VERTICAL,
 
-  VERTICAL_EDINT_IN_NAV,
-  ;
+  VERTICAL_EDINT_IN_NAV;
 
   static KimmiLovedMeFeastTuxStarbucks valueOf(int? statusIndex) {
     try {

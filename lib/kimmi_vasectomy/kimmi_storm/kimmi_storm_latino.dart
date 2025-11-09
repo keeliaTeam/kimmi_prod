@@ -94,7 +94,7 @@ class KimmiStormLatino {
       "max_duration": maxDuration,
       "animation_type": animationType,
       "animation_url": animationUrl,
-      "total_count": totalCount
+      "total_count": totalCount,
     };
   }
 }

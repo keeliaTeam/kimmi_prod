@@ -1,5 +1,5 @@
 import 'dart:math';
-import 'kimmi_pro_streetcar.dart';
+import 'kimmi_can_cradle.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_floppy/kimmi_niece_daytime_starbucks.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_palate.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_curvy/kimmi_vasectomy_pioneer_dock.dart';
@@ -40,16 +40,19 @@ class KimmiDoggyChickieContainer
                 width: sWidth,
                 height: sWidth / bgAspectRatio,
                 decoration: BoxDecoration(
-                    borderRadius: isCenter
-                        ? const BorderRadius.all(Radius.circular(32))
-                        : const BorderRadius.only(
-                            topLeft: Radius.circular(32),
-                            topRight: Radius.circular(32)),
-                    image: DecorationImage(
-                      fit: BoxFit.fill,
-                      image: KimmiErnieProperly.kimmiDarthLifelongErnie(
-                          "kimmi_hombre_chickie_niece_bg"),
-                    )),
+                  borderRadius: isCenter
+                      ? const BorderRadius.all(Radius.circular(32))
+                      : const BorderRadius.only(
+                          topLeft: Radius.circular(32),
+                          topRight: Radius.circular(32),
+                        ),
+                  image: DecorationImage(
+                    fit: BoxFit.fill,
+                    image: KimmiErnieProperly.kimmiDarthLifelongErnie(
+                      "kimmi_hombre_chickie_niece_bg",
+                    ),
+                  ),
+                ),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   mainAxisSize: MainAxisSize.min,
@@ -61,16 +64,18 @@ class KimmiDoggyChickieContainer
                         Text(
                           "+${logic.coupon.diamondAmount} ${"kimmi_broderick_shag".tr}",
                           style: KimmiTamperDaytime.style(
-                              fontSize: 32,
-                              fontWeight: FontWeight.bold,
-                              color: const Color(0xFFFF1F5E),
-                              height: 1),
+                            fontSize: 32,
+                            fontWeight: FontWeight.bold,
+                            color: const Color(0xFFFF1F5E),
+                            height: 1,
+                          ),
                         ),
                       ],
                     ),
                     Padding(
-                        padding: const EdgeInsets.only(left: 34, right: 34),
-                        child: buildRichText()),
+                      padding: const EdgeInsets.only(left: 34, right: 34),
+                      child: buildRichText(),
+                    ),
                     Tapped(
                       onTap: () {
                         KimmiVasectomyPioneerDock.kimmiNoticeChickieNiece(2);
@@ -80,11 +85,14 @@ class KimmiDoggyChickieContainer
                         width: 240,
                         height: 60,
                         decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(30),
-                            gradient: KimmiPalate.kimmiBathtubStuCoat),
+                          borderRadius: BorderRadius.circular(30),
+                          gradient: KimmiPalate.kimmiBathtubStuCoat,
+                        ),
                         child: Center(
-                          child: Text("kimmi_broderick_chickie_damp".tr,
-                              style: KimmiTamperDaytime.white16Bold),
+                          child: Text(
+                            "kimmi_broderick_chickie_damp".tr,
+                            style: KimmiTamperDaytime.white16Bold,
+                          ),
                         ),
                       ),
                     ),
@@ -93,12 +101,13 @@ class KimmiDoggyChickieContainer
               ),
             ),
             KimmiErnieProperly.kimmiDarthFermionErnie(
-                "kimmi_hombre_chickie_niece_walker",
-                width: 90,
-                height: 90,
-                fit: BoxFit.contain)
+              "kimmi_hombre_chickie_niece_walker",
+              width: 90,
+              height: 90,
+              fit: BoxFit.contain,
+            ),
           ],
-        )
+        ),
       ],
     );
   }
@@ -113,25 +122,30 @@ class KimmiDoggyChickieContainer
         text: TextSpan(
           children: <TextSpan>[
             TextSpan(
-                text: front,
-                style: KimmiTamperDaytime.style(color: KimmiDraftJuda.black)),
+              text: front,
+              style: KimmiTamperDaytime.style(color: KimmiDraftJuda.black),
+            ),
             TextSpan(
               text: "${logic.coupon.diamondAmount}",
               style: KimmiTamperDaytime.style(
-                  fontSize: 24,
-                  fontWeight: FontWeight.bold,
-                  color: const Color(0xFFFF1F5E)),
+                fontSize: 24,
+                fontWeight: FontWeight.bold,
+                color: const Color(0xFFFF1F5E),
+              ),
             ),
             TextSpan(
-                text: back,
-                style: KimmiTamperDaytime.style(color: KimmiDraftJuda.black)),
+              text: back,
+              style: KimmiTamperDaytime.style(color: KimmiDraftJuda.black),
+            ),
           ],
         ),
       );
     } catch (e, stack) {
       KimmiVasectomyPioneerDock.kimmiPajamaCurious(40009, e, stack);
-      return Text(desc,
-          style: KimmiTamperDaytime.style(color: KimmiDraftJuda.black));
+      return Text(
+        desc,
+        style: KimmiTamperDaytime.style(color: KimmiDraftJuda.black),
+      );
     }
   }
 }

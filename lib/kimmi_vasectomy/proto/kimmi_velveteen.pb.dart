@@ -39,36 +39,55 @@ class UserOnlineTime extends $pb.GeneratedMessage {
     return $result;
   }
   UserOnlineTime._() : super();
-  factory UserOnlineTime.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory UserOnlineTime.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+  factory UserOnlineTime.fromBuffer(
+    $core.List<$core.int> i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromBuffer(i, r);
+  factory UserOnlineTime.fromJson(
+    $core.String i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'UserOnlineTime',
-      package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockC9()),
-      createEmptyInstance: create)
-    ..a<$fixnum.Int64>(1, _omitFieldNames ? '' : 'uid', $pb.PbFieldType.OU6,
-        defaultOrMaker: $fixnum.Int64.ZERO)
-    ..aOB(2, _omitFieldNames ? '' : 'isOnline')
-    ..a<$fixnum.Int64>(
-        3, _omitFieldNames ? '' : 'onlineTime', $pb.PbFieldType.OU6,
-        defaultOrMaker: $fixnum.Int64.ZERO)
-    ..aOB(4, _omitFieldNames ? '' : 'isOnLive')
-    ..a<$fixnum.Int64>(5, _omitFieldNames ? '' : 'roomId', $pb.PbFieldType.OU6,
-        defaultOrMaker: $fixnum.Int64.ZERO)
-    ..aOB(6, _omitFieldNames ? '' : 'isOnCall')
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i =
+      $pb.BuilderInfo(
+          _omitMessageNames ? '' : 'UserOnlineTime',
+          package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockC9()),
+          createEmptyInstance: create,
+        )
+        ..a<$fixnum.Int64>(
+          1,
+          _omitFieldNames ? '' : 'uid',
+          $pb.PbFieldType.OU6,
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..aOB(2, _omitFieldNames ? '' : 'isOnline')
+        ..a<$fixnum.Int64>(
+          3,
+          _omitFieldNames ? '' : 'onlineTime',
+          $pb.PbFieldType.OU6,
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..aOB(4, _omitFieldNames ? '' : 'isOnLive')
+        ..a<$fixnum.Int64>(
+          5,
+          _omitFieldNames ? '' : 'roomId',
+          $pb.PbFieldType.OU6,
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..aOB(6, _omitFieldNames ? '' : 'isOnCall')
+        ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+    'Will be removed in next major version',
+  )
   UserOnlineTime clone() => UserOnlineTime()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+    'Will be removed in next major version',
+  )
   UserOnlineTime copyWith(void Function(UserOnlineTime) updates) =>
       super.copyWith((message) => updates(message as UserOnlineTime))
           as UserOnlineTime;
@@ -225,45 +244,88 @@ class RoomMember extends $pb.GeneratedMessage {
     return $result;
   }
   RoomMember._() : super();
-  factory RoomMember.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory RoomMember.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+  factory RoomMember.fromBuffer(
+    $core.List<$core.int> i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromBuffer(i, r);
+  factory RoomMember.fromJson(
+    $core.String i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'RoomMember',
-      package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockC9()),
-      createEmptyInstance: create)
-    ..a<$fixnum.Int64>(1, _omitFieldNames ? '' : 'uid', $pb.PbFieldType.OU6,
-        defaultOrMaker: $fixnum.Int64.ZERO)
-    ..aOS(2, _omitFieldNames ? '' : 'ucode')
-    ..a<$fixnum.Int64>(3, _omitFieldNames ? '' : 'roomId', $pb.PbFieldType.OU6,
-        defaultOrMaker: $fixnum.Int64.ZERO)
-    ..aOS(4, _omitFieldNames ? '' : 'nickName')
-    ..aOS(5, _omitFieldNames ? '' : 'avatarUrl')
-    ..a<$core.int>(6, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OU3)
-    ..a<$core.int>(7, _omitFieldNames ? '' : 'chatStatus', $pb.PbFieldType.OU3)
-    ..a<$core.int>(8, _omitFieldNames ? '' : 'micStatus', $pb.PbFieldType.OU3)
-    ..a<$core.int>(9, _omitFieldNames ? '' : 'camStatus', $pb.PbFieldType.OU3)
-    ..a<$fixnum.Int64>(
-        10, _omitFieldNames ? '' : 'joinTime', $pb.PbFieldType.OU6,
-        defaultOrMaker: $fixnum.Int64.ZERO)
-    ..a<$core.int>(11, _omitFieldNames ? '' : 'levelCate', $pb.PbFieldType.OU3)
-    ..a<$core.int>(12, _omitFieldNames ? '' : 'levelNum', $pb.PbFieldType.OU3)
-    ..a<$core.int>(13, _omitFieldNames ? '' : 'roleId', $pb.PbFieldType.OU3)
-    ..a<$core.int>(14, _omitFieldNames ? '' : 'micNo', $pb.PbFieldType.O3)
-    ..a<$core.int>(15, _omitFieldNames ? '' : 'micBaned', $pb.PbFieldType.OU3)
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i =
+      $pb.BuilderInfo(
+          _omitMessageNames ? '' : 'RoomMember',
+          package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockC9()),
+          createEmptyInstance: create,
+        )
+        ..a<$fixnum.Int64>(
+          1,
+          _omitFieldNames ? '' : 'uid',
+          $pb.PbFieldType.OU6,
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..aOS(2, _omitFieldNames ? '' : 'ucode')
+        ..a<$fixnum.Int64>(
+          3,
+          _omitFieldNames ? '' : 'roomId',
+          $pb.PbFieldType.OU6,
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..aOS(4, _omitFieldNames ? '' : 'nickName')
+        ..aOS(5, _omitFieldNames ? '' : 'avatarUrl')
+        ..a<$core.int>(6, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OU3)
+        ..a<$core.int>(
+          7,
+          _omitFieldNames ? '' : 'chatStatus',
+          $pb.PbFieldType.OU3,
+        )
+        ..a<$core.int>(
+          8,
+          _omitFieldNames ? '' : 'micStatus',
+          $pb.PbFieldType.OU3,
+        )
+        ..a<$core.int>(
+          9,
+          _omitFieldNames ? '' : 'camStatus',
+          $pb.PbFieldType.OU3,
+        )
+        ..a<$fixnum.Int64>(
+          10,
+          _omitFieldNames ? '' : 'joinTime',
+          $pb.PbFieldType.OU6,
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..a<$core.int>(
+          11,
+          _omitFieldNames ? '' : 'levelCate',
+          $pb.PbFieldType.OU3,
+        )
+        ..a<$core.int>(
+          12,
+          _omitFieldNames ? '' : 'levelNum',
+          $pb.PbFieldType.OU3,
+        )
+        ..a<$core.int>(13, _omitFieldNames ? '' : 'roleId', $pb.PbFieldType.OU3)
+        ..a<$core.int>(14, _omitFieldNames ? '' : 'micNo', $pb.PbFieldType.O3)
+        ..a<$core.int>(
+          15,
+          _omitFieldNames ? '' : 'micBaned',
+          $pb.PbFieldType.OU3,
+        )
+        ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+    'Will be removed in next major version',
+  )
   RoomMember clone() => RoomMember()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+    'Will be removed in next major version',
+  )
   RoomMember copyWith(void Function(RoomMember) updates) =>
       super.copyWith((message) => updates(message as RoomMember)) as RoomMember;
 
@@ -498,41 +560,71 @@ class RoomMessage extends $pb.GeneratedMessage {
     return $result;
   }
   RoomMessage._() : super();
-  factory RoomMessage.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory RoomMessage.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+  factory RoomMessage.fromBuffer(
+    $core.List<$core.int> i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromBuffer(i, r);
+  factory RoomMessage.fromJson(
+    $core.String i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'RoomMessage',
-      package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockC9()),
-      createEmptyInstance: create)
-    ..a<$fixnum.Int64>(1, _omitFieldNames ? '' : 'uid', $pb.PbFieldType.OU6,
-        defaultOrMaker: $fixnum.Int64.ZERO)
-    ..a<$fixnum.Int64>(2, _omitFieldNames ? '' : 'msgId', $pb.PbFieldType.OU6,
-        defaultOrMaker: $fixnum.Int64.ZERO)
-    ..a<$fixnum.Int64>(3, _omitFieldNames ? '' : 'localId', $pb.PbFieldType.OU6,
-        defaultOrMaker: $fixnum.Int64.ZERO)
-    ..a<$fixnum.Int64>(4, _omitFieldNames ? '' : 'roomId', $pb.PbFieldType.OU6,
-        defaultOrMaker: $fixnum.Int64.ZERO)
-    ..aOM<RoomMember>(5, _omitFieldNames ? '' : 'member',
-        subBuilder: RoomMember.create)
-    ..aOS(6, _omitFieldNames ? '' : 'textContent')
-    ..a<$fixnum.Int64>(
-        7, _omitFieldNames ? '' : 'createTime', $pb.PbFieldType.OU6,
-        defaultOrMaker: $fixnum.Int64.ZERO)
-    ..a<$core.int>(8, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OU3)
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i =
+      $pb.BuilderInfo(
+          _omitMessageNames ? '' : 'RoomMessage',
+          package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockC9()),
+          createEmptyInstance: create,
+        )
+        ..a<$fixnum.Int64>(
+          1,
+          _omitFieldNames ? '' : 'uid',
+          $pb.PbFieldType.OU6,
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..a<$fixnum.Int64>(
+          2,
+          _omitFieldNames ? '' : 'msgId',
+          $pb.PbFieldType.OU6,
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..a<$fixnum.Int64>(
+          3,
+          _omitFieldNames ? '' : 'localId',
+          $pb.PbFieldType.OU6,
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..a<$fixnum.Int64>(
+          4,
+          _omitFieldNames ? '' : 'roomId',
+          $pb.PbFieldType.OU6,
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..aOM<RoomMember>(
+          5,
+          _omitFieldNames ? '' : 'member',
+          subBuilder: RoomMember.create,
+        )
+        ..aOS(6, _omitFieldNames ? '' : 'textContent')
+        ..a<$fixnum.Int64>(
+          7,
+          _omitFieldNames ? '' : 'createTime',
+          $pb.PbFieldType.OU6,
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..a<$core.int>(8, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OU3)
+        ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+    'Will be removed in next major version',
+  )
   RoomMessage clone() => RoomMessage()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+    'Will be removed in next major version',
+  )
   RoomMessage copyWith(void Function(RoomMessage) updates) =>
       super.copyWith((message) => updates(message as RoomMessage))
           as RoomMessage;
@@ -690,37 +782,60 @@ class Gift extends $pb.GeneratedMessage {
     return $result;
   }
   Gift._() : super();
-  factory Gift.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory Gift.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+  factory Gift.fromBuffer(
+    $core.List<$core.int> i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromBuffer(i, r);
+  factory Gift.fromJson(
+    $core.String i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'Gift',
-      package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockC9()),
-      createEmptyInstance: create)
-    ..a<$fixnum.Int64>(1, _omitFieldNames ? '' : 'id', $pb.PbFieldType.OU6,
-        defaultOrMaker: $fixnum.Int64.ZERO)
-    ..aOS(2, _omitFieldNames ? '' : 'name')
-    ..aOS(3, _omitFieldNames ? '' : 'icon')
-    ..a<$core.int>(4, _omitFieldNames ? '' : 'price', $pb.PbFieldType.OU3)
-    ..a<$core.int>(5, _omitFieldNames ? '' : 'value', $pb.PbFieldType.OU3)
-    ..a<$core.int>(6, _omitFieldNames ? '' : 'minDuration', $pb.PbFieldType.OU3)
-    ..a<$core.int>(7, _omitFieldNames ? '' : 'maxDuration', $pb.PbFieldType.OU3)
-    ..a<$core.int>(
-        8, _omitFieldNames ? '' : 'animationType', $pb.PbFieldType.OU3)
-    ..aOS(9, _omitFieldNames ? '' : 'animationUrl')
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i =
+      $pb.BuilderInfo(
+          _omitMessageNames ? '' : 'Gift',
+          package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockC9()),
+          createEmptyInstance: create,
+        )
+        ..a<$fixnum.Int64>(
+          1,
+          _omitFieldNames ? '' : 'id',
+          $pb.PbFieldType.OU6,
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..aOS(2, _omitFieldNames ? '' : 'name')
+        ..aOS(3, _omitFieldNames ? '' : 'icon')
+        ..a<$core.int>(4, _omitFieldNames ? '' : 'price', $pb.PbFieldType.OU3)
+        ..a<$core.int>(5, _omitFieldNames ? '' : 'value', $pb.PbFieldType.OU3)
+        ..a<$core.int>(
+          6,
+          _omitFieldNames ? '' : 'minDuration',
+          $pb.PbFieldType.OU3,
+        )
+        ..a<$core.int>(
+          7,
+          _omitFieldNames ? '' : 'maxDuration',
+          $pb.PbFieldType.OU3,
+        )
+        ..a<$core.int>(
+          8,
+          _omitFieldNames ? '' : 'animationType',
+          $pb.PbFieldType.OU3,
+        )
+        ..aOS(9, _omitFieldNames ? '' : 'animationUrl')
+        ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+    'Will be removed in next major version',
+  )
   Gift clone() => Gift()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+    'Will be removed in next major version',
+  )
   Gift copyWith(void Function(Gift) updates) =>
       super.copyWith((message) => updates(message as Gift)) as Gift;
 
@@ -871,32 +986,44 @@ class Skill extends $pb.GeneratedMessage {
     return $result;
   }
   Skill._() : super();
-  factory Skill.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory Skill.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+  factory Skill.fromBuffer(
+    $core.List<$core.int> i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromBuffer(i, r);
+  factory Skill.fromJson(
+    $core.String i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'Skill',
-      package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockC9()),
-      createEmptyInstance: create)
-    ..a<$fixnum.Int64>(1, _omitFieldNames ? '' : 'id', $pb.PbFieldType.OU6,
-        defaultOrMaker: $fixnum.Int64.ZERO)
-    ..aOS(2, _omitFieldNames ? '' : 'name')
-    ..aOS(3, _omitFieldNames ? '' : 'icon')
-    ..a<$core.int>(4, _omitFieldNames ? '' : 'price', $pb.PbFieldType.OU3)
-    ..aOS(6, _omitFieldNames ? '' : 'unit')
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i =
+      $pb.BuilderInfo(
+          _omitMessageNames ? '' : 'Skill',
+          package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockC9()),
+          createEmptyInstance: create,
+        )
+        ..a<$fixnum.Int64>(
+          1,
+          _omitFieldNames ? '' : 'id',
+          $pb.PbFieldType.OU6,
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..aOS(2, _omitFieldNames ? '' : 'name')
+        ..aOS(3, _omitFieldNames ? '' : 'icon')
+        ..a<$core.int>(4, _omitFieldNames ? '' : 'price', $pb.PbFieldType.OU3)
+        ..aOS(6, _omitFieldNames ? '' : 'unit')
+        ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+    'Will be removed in next major version',
+  )
   Skill clone() => Skill()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+    'Will be removed in next major version',
+  )
   Skill copyWith(void Function(Skill) updates) =>
       super.copyWith((message) => updates(message as Skill)) as Skill;
 
@@ -973,10 +1100,7 @@ class Skill extends $pb.GeneratedMessage {
 }
 
 class Topic extends $pb.GeneratedMessage {
-  factory Topic({
-    $fixnum.Int64? id,
-    $core.String? name,
-  }) {
+  factory Topic({$fixnum.Int64? id, $core.String? name}) {
     final $result = create();
     if (id != null) {
       $result.id = id;
@@ -987,29 +1111,41 @@ class Topic extends $pb.GeneratedMessage {
     return $result;
   }
   Topic._() : super();
-  factory Topic.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory Topic.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+  factory Topic.fromBuffer(
+    $core.List<$core.int> i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromBuffer(i, r);
+  factory Topic.fromJson(
+    $core.String i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'Topic',
-      package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockC9()),
-      createEmptyInstance: create)
-    ..a<$fixnum.Int64>(1, _omitFieldNames ? '' : 'id', $pb.PbFieldType.OU6,
-        defaultOrMaker: $fixnum.Int64.ZERO)
-    ..aOS(2, _omitFieldNames ? '' : 'name')
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i =
+      $pb.BuilderInfo(
+          _omitMessageNames ? '' : 'Topic',
+          package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockC9()),
+          createEmptyInstance: create,
+        )
+        ..a<$fixnum.Int64>(
+          1,
+          _omitFieldNames ? '' : 'id',
+          $pb.PbFieldType.OU6,
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..aOS(2, _omitFieldNames ? '' : 'name')
+        ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+    'Will be removed in next major version',
+  )
   Topic clone() => Topic()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+    'Will be removed in next major version',
+  )
   Topic copyWith(void Function(Topic) updates) =>
       super.copyWith((message) => updates(message as Topic)) as Topic;
 
@@ -1076,32 +1212,44 @@ class Scene extends $pb.GeneratedMessage {
     return $result;
   }
   Scene._() : super();
-  factory Scene.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory Scene.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+  factory Scene.fromBuffer(
+    $core.List<$core.int> i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromBuffer(i, r);
+  factory Scene.fromJson(
+    $core.String i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'Scene',
-      package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockC9()),
-      createEmptyInstance: create)
-    ..a<$fixnum.Int64>(1, _omitFieldNames ? '' : 'id', $pb.PbFieldType.OU6,
-        defaultOrMaker: $fixnum.Int64.ZERO)
-    ..aOS(2, _omitFieldNames ? '' : 'name')
-    ..aOS(3, _omitFieldNames ? '' : 'coverUrl')
-    ..aOS(4, _omitFieldNames ? '' : 'animationUrl')
-    ..aOS(5, _omitFieldNames ? '' : 'smallCoverUrl')
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i =
+      $pb.BuilderInfo(
+          _omitMessageNames ? '' : 'Scene',
+          package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockC9()),
+          createEmptyInstance: create,
+        )
+        ..a<$fixnum.Int64>(
+          1,
+          _omitFieldNames ? '' : 'id',
+          $pb.PbFieldType.OU6,
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..aOS(2, _omitFieldNames ? '' : 'name')
+        ..aOS(3, _omitFieldNames ? '' : 'coverUrl')
+        ..aOS(4, _omitFieldNames ? '' : 'animationUrl')
+        ..aOS(5, _omitFieldNames ? '' : 'smallCoverUrl')
+        ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+    'Will be removed in next major version',
+  )
   Scene clone() => Scene()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+    'Will be removed in next major version',
+  )
   Scene copyWith(void Function(Scene) updates) =>
       super.copyWith((message) => updates(message as Scene)) as Scene;
 
@@ -1208,37 +1356,62 @@ class RoomGift extends $pb.GeneratedMessage {
     return $result;
   }
   RoomGift._() : super();
-  factory RoomGift.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory RoomGift.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+  factory RoomGift.fromBuffer(
+    $core.List<$core.int> i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromBuffer(i, r);
+  factory RoomGift.fromJson(
+    $core.String i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'RoomGift',
-      package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockC9()),
-      createEmptyInstance: create)
-    ..a<$fixnum.Int64>(1, _omitFieldNames ? '' : 'roomId', $pb.PbFieldType.OU6,
-        defaultOrMaker: $fixnum.Int64.ZERO)
-    ..aOM<RoomMember>(2, _omitFieldNames ? '' : 'from',
-        subBuilder: RoomMember.create)
-    ..aOM<RoomMember>(3, _omitFieldNames ? '' : 'to',
-        subBuilder: RoomMember.create)
-    ..aOM<Gift>(4, _omitFieldNames ? '' : 'gift', subBuilder: Gift.create)
-    ..a<$core.int>(5, _omitFieldNames ? '' : 'quantity', $pb.PbFieldType.OU3)
-    ..a<$fixnum.Int64>(
-        6, _omitFieldNames ? '' : 'createTime', $pb.PbFieldType.OU6,
-        defaultOrMaker: $fixnum.Int64.ZERO)
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i =
+      $pb.BuilderInfo(
+          _omitMessageNames ? '' : 'RoomGift',
+          package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockC9()),
+          createEmptyInstance: create,
+        )
+        ..a<$fixnum.Int64>(
+          1,
+          _omitFieldNames ? '' : 'roomId',
+          $pb.PbFieldType.OU6,
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..aOM<RoomMember>(
+          2,
+          _omitFieldNames ? '' : 'from',
+          subBuilder: RoomMember.create,
+        )
+        ..aOM<RoomMember>(
+          3,
+          _omitFieldNames ? '' : 'to',
+          subBuilder: RoomMember.create,
+        )
+        ..aOM<Gift>(4, _omitFieldNames ? '' : 'gift', subBuilder: Gift.create)
+        ..a<$core.int>(
+          5,
+          _omitFieldNames ? '' : 'quantity',
+          $pb.PbFieldType.OU3,
+        )
+        ..a<$fixnum.Int64>(
+          6,
+          _omitFieldNames ? '' : 'createTime',
+          $pb.PbFieldType.OU6,
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+    'Will be removed in next major version',
+  )
   RoomGift clone() => RoomGift()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+    'Will be removed in next major version',
+  )
   RoomGift copyWith(void Function(RoomGift) updates) =>
       super.copyWith((message) => updates(message as RoomGift)) as RoomGift;
 
@@ -1395,53 +1568,94 @@ class RoomChatApply extends $pb.GeneratedMessage {
     return $result;
   }
   RoomChatApply._() : super();
-  factory RoomChatApply.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory RoomChatApply.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+  factory RoomChatApply.fromBuffer(
+    $core.List<$core.int> i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromBuffer(i, r);
+  factory RoomChatApply.fromJson(
+    $core.String i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'RoomChatApply',
-      package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockC9()),
-      createEmptyInstance: create)
-    ..a<$fixnum.Int64>(1, _omitFieldNames ? '' : 'applyId', $pb.PbFieldType.OU6,
-        defaultOrMaker: $fixnum.Int64.ZERO)
-    ..a<$fixnum.Int64>(2, _omitFieldNames ? '' : 'roomId', $pb.PbFieldType.OU6,
-        defaultOrMaker: $fixnum.Int64.ZERO)
-    ..aOM<RoomMember>(3, _omitFieldNames ? '' : 'member',
-        subBuilder: RoomMember.create)
-    ..aOM<RoomMember>(4, _omitFieldNames ? '' : 'applicant',
-        subBuilder: RoomMember.create)
-    ..a<$fixnum.Int64>(
-        5, _omitFieldNames ? '' : 'applyTime', $pb.PbFieldType.OU6,
-        defaultOrMaker: $fixnum.Int64.ZERO)
-    ..aOM<RoomMember>(6, _omitFieldNames ? '' : 'inviter',
-        subBuilder: RoomMember.create)
-    ..a<$fixnum.Int64>(
-        7, _omitFieldNames ? '' : 'inviteTime', $pb.PbFieldType.OU6,
-        defaultOrMaker: $fixnum.Int64.ZERO)
-    ..a<$fixnum.Int64>(
-        8, _omitFieldNames ? '' : 'confirmTime', $pb.PbFieldType.OU6,
-        defaultOrMaker: $fixnum.Int64.ZERO)
-    ..a<$core.int>(9, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OU3)
-    ..a<$core.int>(10, _omitFieldNames ? '' : 'duration', $pb.PbFieldType.OU3)
-    ..a<$core.int>(11, _omitFieldNames ? '' : 'cost', $pb.PbFieldType.OU3)
-    ..a<$core.int>(12, _omitFieldNames ? '' : 'price', $pb.PbFieldType.OU3)
-    ..a<$fixnum.Int64>(
-        13, _omitFieldNames ? '' : 'expireTime', $pb.PbFieldType.OU6,
-        defaultOrMaker: $fixnum.Int64.ZERO)
-    ..a<$core.int>(14, _omitFieldNames ? '' : 'micNo', $pb.PbFieldType.OU3)
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i =
+      $pb.BuilderInfo(
+          _omitMessageNames ? '' : 'RoomChatApply',
+          package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockC9()),
+          createEmptyInstance: create,
+        )
+        ..a<$fixnum.Int64>(
+          1,
+          _omitFieldNames ? '' : 'applyId',
+          $pb.PbFieldType.OU6,
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..a<$fixnum.Int64>(
+          2,
+          _omitFieldNames ? '' : 'roomId',
+          $pb.PbFieldType.OU6,
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..aOM<RoomMember>(
+          3,
+          _omitFieldNames ? '' : 'member',
+          subBuilder: RoomMember.create,
+        )
+        ..aOM<RoomMember>(
+          4,
+          _omitFieldNames ? '' : 'applicant',
+          subBuilder: RoomMember.create,
+        )
+        ..a<$fixnum.Int64>(
+          5,
+          _omitFieldNames ? '' : 'applyTime',
+          $pb.PbFieldType.OU6,
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..aOM<RoomMember>(
+          6,
+          _omitFieldNames ? '' : 'inviter',
+          subBuilder: RoomMember.create,
+        )
+        ..a<$fixnum.Int64>(
+          7,
+          _omitFieldNames ? '' : 'inviteTime',
+          $pb.PbFieldType.OU6,
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..a<$fixnum.Int64>(
+          8,
+          _omitFieldNames ? '' : 'confirmTime',
+          $pb.PbFieldType.OU6,
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..a<$core.int>(9, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OU3)
+        ..a<$core.int>(
+          10,
+          _omitFieldNames ? '' : 'duration',
+          $pb.PbFieldType.OU3,
+        )
+        ..a<$core.int>(11, _omitFieldNames ? '' : 'cost', $pb.PbFieldType.OU3)
+        ..a<$core.int>(12, _omitFieldNames ? '' : 'price', $pb.PbFieldType.OU3)
+        ..a<$fixnum.Int64>(
+          13,
+          _omitFieldNames ? '' : 'expireTime',
+          $pb.PbFieldType.OU6,
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..a<$core.int>(14, _omitFieldNames ? '' : 'micNo', $pb.PbFieldType.OU3)
+        ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+    'Will be removed in next major version',
+  )
   RoomChatApply clone() => RoomChatApply()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+    'Will be removed in next major version',
+  )
   RoomChatApply copyWith(void Function(RoomChatApply) updates) =>
       super.copyWith((message) => updates(message as RoomChatApply))
           as RoomChatApply;
@@ -1648,31 +1862,46 @@ class RoomChatAlert extends $pb.GeneratedMessage {
     return $result;
   }
   RoomChatAlert._() : super();
-  factory RoomChatAlert.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory RoomChatAlert.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+  factory RoomChatAlert.fromBuffer(
+    $core.List<$core.int> i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromBuffer(i, r);
+  factory RoomChatAlert.fromJson(
+    $core.String i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'RoomChatAlert',
-      package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockC9()),
-      createEmptyInstance: create)
-    ..a<$fixnum.Int64>(1, _omitFieldNames ? '' : 'applyId', $pb.PbFieldType.OU6,
-        defaultOrMaker: $fixnum.Int64.ZERO)
-    ..a<$fixnum.Int64>(
-        2, _omitFieldNames ? '' : 'estimatedEndTime', $pb.PbFieldType.OU6,
-        defaultOrMaker: $fixnum.Int64.ZERO)
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i =
+      $pb.BuilderInfo(
+          _omitMessageNames ? '' : 'RoomChatAlert',
+          package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockC9()),
+          createEmptyInstance: create,
+        )
+        ..a<$fixnum.Int64>(
+          1,
+          _omitFieldNames ? '' : 'applyId',
+          $pb.PbFieldType.OU6,
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..a<$fixnum.Int64>(
+          2,
+          _omitFieldNames ? '' : 'estimatedEndTime',
+          $pb.PbFieldType.OU6,
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+    'Will be removed in next major version',
+  )
   RoomChatAlert clone() => RoomChatAlert()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+    'Will be removed in next major version',
+  )
   RoomChatAlert copyWith(void Function(RoomChatAlert) updates) =>
       super.copyWith((message) => updates(message as RoomChatAlert))
           as RoomChatAlert;
@@ -1757,39 +1986,73 @@ class RoomStats extends $pb.GeneratedMessage {
     return $result;
   }
   RoomStats._() : super();
-  factory RoomStats.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory RoomStats.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+  factory RoomStats.fromBuffer(
+    $core.List<$core.int> i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromBuffer(i, r);
+  factory RoomStats.fromJson(
+    $core.String i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'RoomStats',
-      package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockC9()),
-      createEmptyInstance: create)
-    ..a<$fixnum.Int64>(1, _omitFieldNames ? '' : 'roomId', $pb.PbFieldType.OU6,
-        defaultOrMaker: $fixnum.Int64.ZERO)
-    ..a<$core.int>(2, _omitFieldNames ? '' : 'seq', $pb.PbFieldType.OU3)
-    ..a<$fixnum.Int64>(
-        3, _omitFieldNames ? '' : 'duration', $pb.PbFieldType.OU6,
-        defaultOrMaker: $fixnum.Int64.ZERO)
-    ..a<$core.int>(4, _omitFieldNames ? '' : 'viewCount', $pb.PbFieldType.OU3)
-    ..a<$core.int>(5, _omitFieldNames ? '' : 'chatCount', $pb.PbFieldType.OU3)
-    ..a<$core.int>(6, _omitFieldNames ? '' : 'giftCount', $pb.PbFieldType.OU3)
-    ..a<$core.int>(7, _omitFieldNames ? '' : 'income', $pb.PbFieldType.OU3)
-    ..a<$core.int>(8, _omitFieldNames ? '' : 'followCount', $pb.PbFieldType.OU3)
-    ..a<$core.double>(
-        9, _omitFieldNames ? '' : 'totalIncome', $pb.PbFieldType.OD)
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i =
+      $pb.BuilderInfo(
+          _omitMessageNames ? '' : 'RoomStats',
+          package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockC9()),
+          createEmptyInstance: create,
+        )
+        ..a<$fixnum.Int64>(
+          1,
+          _omitFieldNames ? '' : 'roomId',
+          $pb.PbFieldType.OU6,
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..a<$core.int>(2, _omitFieldNames ? '' : 'seq', $pb.PbFieldType.OU3)
+        ..a<$fixnum.Int64>(
+          3,
+          _omitFieldNames ? '' : 'duration',
+          $pb.PbFieldType.OU6,
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..a<$core.int>(
+          4,
+          _omitFieldNames ? '' : 'viewCount',
+          $pb.PbFieldType.OU3,
+        )
+        ..a<$core.int>(
+          5,
+          _omitFieldNames ? '' : 'chatCount',
+          $pb.PbFieldType.OU3,
+        )
+        ..a<$core.int>(
+          6,
+          _omitFieldNames ? '' : 'giftCount',
+          $pb.PbFieldType.OU3,
+        )
+        ..a<$core.int>(7, _omitFieldNames ? '' : 'income', $pb.PbFieldType.OU3)
+        ..a<$core.int>(
+          8,
+          _omitFieldNames ? '' : 'followCount',
+          $pb.PbFieldType.OU3,
+        )
+        ..a<$core.double>(
+          9,
+          _omitFieldNames ? '' : 'totalIncome',
+          $pb.PbFieldType.OD,
+        )
+        ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+    'Will be removed in next major version',
+  )
   RoomStats clone() => RoomStats()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+    'Will be removed in next major version',
+  )
   RoomStats copyWith(void Function(RoomStats) updates) =>
       super.copyWith((message) => updates(message as RoomStats)) as RoomStats;
 
@@ -2040,71 +2303,152 @@ class Room extends $pb.GeneratedMessage {
     return $result;
   }
   Room._() : super();
-  factory Room.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory Room.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+  factory Room.fromBuffer(
+    $core.List<$core.int> i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromBuffer(i, r);
+  factory Room.fromJson(
+    $core.String i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'Room',
-      package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockC9()),
-      createEmptyInstance: create)
-    ..a<$fixnum.Int64>(1, _omitFieldNames ? '' : 'id', $pb.PbFieldType.OU6,
-        defaultOrMaker: $fixnum.Int64.ZERO)
-    ..aOS(2, _omitFieldNames ? '' : 'title')
-    ..aOM<Skill>(3, _omitFieldNames ? '' : 'skill', subBuilder: Skill.create)
-    ..aOS(4, _omitFieldNames ? '' : 'coverUrl')
-    ..aOM<RoomMember>(5, _omitFieldNames ? '' : 'creator',
-        subBuilder: RoomMember.create)
-    ..pc<RoomMember>(6, _omitFieldNames ? '' : 'memberList', $pb.PbFieldType.PM,
-        subBuilder: RoomMember.create)
-    ..pc<RoomMember>(7, _omitFieldNames ? '' : 'chatList', $pb.PbFieldType.PM,
-        subBuilder: RoomMember.create)
-    ..pc<RoomMessage>(8, _omitFieldNames ? '' : 'messages', $pb.PbFieldType.PM,
-        subBuilder: RoomMessage.create)
-    ..pc<RoomGift>(9, _omitFieldNames ? '' : 'gifts', $pb.PbFieldType.PM,
-        subBuilder: RoomGift.create)
-    ..pc<RoomChatApply>(
-        10, _omitFieldNames ? '' : 'chatApplies', $pb.PbFieldType.PM,
-        subBuilder: RoomChatApply.create)
-    ..a<$core.int>(11, _omitFieldNames ? '' : 'vipPrice', $pb.PbFieldType.OU3)
-    ..aOS(12, _omitFieldNames ? '' : 'channelKey')
-    ..a<$core.int>(13, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OU3)
-    ..aOB(14, _omitFieldNames ? '' : 'isPrivate')
-    ..a<$core.int>(
-        15, _omitFieldNames ? '' : 'onlineCount', $pb.PbFieldType.OU3)
-    ..a<$core.int>(16, _omitFieldNames ? '' : 'speakScope', $pb.PbFieldType.OU3)
-    ..aOS(17, _omitFieldNames ? '' : 'password')
-    ..a<$core.int>(18, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OU3)
-    ..aOM<Topic>(19, _omitFieldNames ? '' : 'topic', subBuilder: Topic.create)
-    ..aOM<Scene>(20, _omitFieldNames ? '' : 'scene', subBuilder: Scene.create)
-    ..a<$core.int>(21, _omitFieldNames ? '' : 'micMode', $pb.PbFieldType.OU3)
-    ..a<$core.int>(
-        22, _omitFieldNames ? '' : 'hasHonoredGuest', $pb.PbFieldType.OU3)
-    ..p<$core.int>(23, _omitFieldNames ? '' : 'lockedMics', $pb.PbFieldType.KU3)
-    ..a<$fixnum.Int64>(
-        24, _omitFieldNames ? '' : 'recruitCd', $pb.PbFieldType.OU6,
-        defaultOrMaker: $fixnum.Int64.ZERO)
-    ..a<$core.int>(25, _omitFieldNames ? '' : 'collected', $pb.PbFieldType.OU3)
-    ..a<$core.int>(26, _omitFieldNames ? '' : 'roomNo', $pb.PbFieldType.OU3)
-    ..pc<RoomMember>(
-        27, _omitFieldNames ? '' : 'managerList', $pb.PbFieldType.PM,
-        subBuilder: RoomMember.create)
-    ..aOM<RoomStats>(28, _omitFieldNames ? '' : 'stats',
-        subBuilder: RoomStats.create)
-    ..aOS(29, _omitFieldNames ? '' : 'announcement')
-    ..aOS(30, _omitFieldNames ? '' : 'warningTip')
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i =
+      $pb.BuilderInfo(
+          _omitMessageNames ? '' : 'Room',
+          package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockC9()),
+          createEmptyInstance: create,
+        )
+        ..a<$fixnum.Int64>(
+          1,
+          _omitFieldNames ? '' : 'id',
+          $pb.PbFieldType.OU6,
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..aOS(2, _omitFieldNames ? '' : 'title')
+        ..aOM<Skill>(
+          3,
+          _omitFieldNames ? '' : 'skill',
+          subBuilder: Skill.create,
+        )
+        ..aOS(4, _omitFieldNames ? '' : 'coverUrl')
+        ..aOM<RoomMember>(
+          5,
+          _omitFieldNames ? '' : 'creator',
+          subBuilder: RoomMember.create,
+        )
+        ..pc<RoomMember>(
+          6,
+          _omitFieldNames ? '' : 'memberList',
+          $pb.PbFieldType.PM,
+          subBuilder: RoomMember.create,
+        )
+        ..pc<RoomMember>(
+          7,
+          _omitFieldNames ? '' : 'chatList',
+          $pb.PbFieldType.PM,
+          subBuilder: RoomMember.create,
+        )
+        ..pc<RoomMessage>(
+          8,
+          _omitFieldNames ? '' : 'messages',
+          $pb.PbFieldType.PM,
+          subBuilder: RoomMessage.create,
+        )
+        ..pc<RoomGift>(
+          9,
+          _omitFieldNames ? '' : 'gifts',
+          $pb.PbFieldType.PM,
+          subBuilder: RoomGift.create,
+        )
+        ..pc<RoomChatApply>(
+          10,
+          _omitFieldNames ? '' : 'chatApplies',
+          $pb.PbFieldType.PM,
+          subBuilder: RoomChatApply.create,
+        )
+        ..a<$core.int>(
+          11,
+          _omitFieldNames ? '' : 'vipPrice',
+          $pb.PbFieldType.OU3,
+        )
+        ..aOS(12, _omitFieldNames ? '' : 'channelKey')
+        ..a<$core.int>(13, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OU3)
+        ..aOB(14, _omitFieldNames ? '' : 'isPrivate')
+        ..a<$core.int>(
+          15,
+          _omitFieldNames ? '' : 'onlineCount',
+          $pb.PbFieldType.OU3,
+        )
+        ..a<$core.int>(
+          16,
+          _omitFieldNames ? '' : 'speakScope',
+          $pb.PbFieldType.OU3,
+        )
+        ..aOS(17, _omitFieldNames ? '' : 'password')
+        ..a<$core.int>(18, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OU3)
+        ..aOM<Topic>(
+          19,
+          _omitFieldNames ? '' : 'topic',
+          subBuilder: Topic.create,
+        )
+        ..aOM<Scene>(
+          20,
+          _omitFieldNames ? '' : 'scene',
+          subBuilder: Scene.create,
+        )
+        ..a<$core.int>(
+          21,
+          _omitFieldNames ? '' : 'micMode',
+          $pb.PbFieldType.OU3,
+        )
+        ..a<$core.int>(
+          22,
+          _omitFieldNames ? '' : 'hasHonoredGuest',
+          $pb.PbFieldType.OU3,
+        )
+        ..p<$core.int>(
+          23,
+          _omitFieldNames ? '' : 'lockedMics',
+          $pb.PbFieldType.KU3,
+        )
+        ..a<$fixnum.Int64>(
+          24,
+          _omitFieldNames ? '' : 'recruitCd',
+          $pb.PbFieldType.OU6,
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..a<$core.int>(
+          25,
+          _omitFieldNames ? '' : 'collected',
+          $pb.PbFieldType.OU3,
+        )
+        ..a<$core.int>(26, _omitFieldNames ? '' : 'roomNo', $pb.PbFieldType.OU3)
+        ..pc<RoomMember>(
+          27,
+          _omitFieldNames ? '' : 'managerList',
+          $pb.PbFieldType.PM,
+          subBuilder: RoomMember.create,
+        )
+        ..aOM<RoomStats>(
+          28,
+          _omitFieldNames ? '' : 'stats',
+          subBuilder: RoomStats.create,
+        )
+        ..aOS(29, _omitFieldNames ? '' : 'announcement')
+        ..aOS(30, _omitFieldNames ? '' : 'warningTip')
+        ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+    'Will be removed in next major version',
+  )
   Room clone() => Room()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+    'Will be removed in next major version',
+  )
   Room copyWith(void Function(Room) updates) =>
       super.copyWith((message) => updates(message as Room)) as Room;
 
@@ -2490,44 +2834,90 @@ class RoomSetting extends $pb.GeneratedMessage {
     return $result;
   }
   RoomSetting._() : super();
-  factory RoomSetting.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory RoomSetting.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+  factory RoomSetting.fromBuffer(
+    $core.List<$core.int> i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromBuffer(i, r);
+  factory RoomSetting.fromJson(
+    $core.String i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'RoomSetting',
-      package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockC9()),
-      createEmptyInstance: create)
-    ..a<$fixnum.Int64>(1, _omitFieldNames ? '' : 'id', $pb.PbFieldType.OU6,
-        defaultOrMaker: $fixnum.Int64.ZERO)
-    ..aOS(2, _omitFieldNames ? '' : 'title')
-    ..aOM<Skill>(3, _omitFieldNames ? '' : 'skill', subBuilder: Skill.create)
-    ..aOS(4, _omitFieldNames ? '' : 'coverUrl')
-    ..a<$core.int>(5, _omitFieldNames ? '' : 'vipPrice', $pb.PbFieldType.OU3)
-    ..aOB(6, _omitFieldNames ? '' : 'isPrivate')
-    ..a<$core.int>(7, _omitFieldNames ? '' : 'speakScope', $pb.PbFieldType.OU3)
-    ..aOS(8, _omitFieldNames ? '' : 'password')
-    ..aOM<Topic>(9, _omitFieldNames ? '' : 'topic', subBuilder: Topic.create)
-    ..aOM<Scene>(10, _omitFieldNames ? '' : 'scene', subBuilder: Scene.create)
-    ..a<$core.int>(11, _omitFieldNames ? '' : 'micMode', $pb.PbFieldType.OU3)
-    ..a<$core.int>(
-        12, _omitFieldNames ? '' : 'hasHonoredGuest', $pb.PbFieldType.OU3)
-    ..p<$core.int>(13, _omitFieldNames ? '' : 'lockedMics', $pb.PbFieldType.KU3)
-    ..a<$fixnum.Int64>(
-        14, _omitFieldNames ? '' : 'recruitCd', $pb.PbFieldType.OU6,
-        defaultOrMaker: $fixnum.Int64.ZERO)
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i =
+      $pb.BuilderInfo(
+          _omitMessageNames ? '' : 'RoomSetting',
+          package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockC9()),
+          createEmptyInstance: create,
+        )
+        ..a<$fixnum.Int64>(
+          1,
+          _omitFieldNames ? '' : 'id',
+          $pb.PbFieldType.OU6,
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..aOS(2, _omitFieldNames ? '' : 'title')
+        ..aOM<Skill>(
+          3,
+          _omitFieldNames ? '' : 'skill',
+          subBuilder: Skill.create,
+        )
+        ..aOS(4, _omitFieldNames ? '' : 'coverUrl')
+        ..a<$core.int>(
+          5,
+          _omitFieldNames ? '' : 'vipPrice',
+          $pb.PbFieldType.OU3,
+        )
+        ..aOB(6, _omitFieldNames ? '' : 'isPrivate')
+        ..a<$core.int>(
+          7,
+          _omitFieldNames ? '' : 'speakScope',
+          $pb.PbFieldType.OU3,
+        )
+        ..aOS(8, _omitFieldNames ? '' : 'password')
+        ..aOM<Topic>(
+          9,
+          _omitFieldNames ? '' : 'topic',
+          subBuilder: Topic.create,
+        )
+        ..aOM<Scene>(
+          10,
+          _omitFieldNames ? '' : 'scene',
+          subBuilder: Scene.create,
+        )
+        ..a<$core.int>(
+          11,
+          _omitFieldNames ? '' : 'micMode',
+          $pb.PbFieldType.OU3,
+        )
+        ..a<$core.int>(
+          12,
+          _omitFieldNames ? '' : 'hasHonoredGuest',
+          $pb.PbFieldType.OU3,
+        )
+        ..p<$core.int>(
+          13,
+          _omitFieldNames ? '' : 'lockedMics',
+          $pb.PbFieldType.KU3,
+        )
+        ..a<$fixnum.Int64>(
+          14,
+          _omitFieldNames ? '' : 'recruitCd',
+          $pb.PbFieldType.OU6,
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+    'Will be removed in next major version',
+  )
   RoomSetting clone() => RoomSetting()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+    'Will be removed in next major version',
+  )
   RoomSetting copyWith(void Function(RoomSetting) updates) =>
       super.copyWith((message) => updates(message as RoomSetting))
           as RoomSetting;
@@ -2728,30 +3118,42 @@ class RoomKickOut extends $pb.GeneratedMessage {
     return $result;
   }
   RoomKickOut._() : super();
-  factory RoomKickOut.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory RoomKickOut.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+  factory RoomKickOut.fromBuffer(
+    $core.List<$core.int> i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromBuffer(i, r);
+  factory RoomKickOut.fromJson(
+    $core.String i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'RoomKickOut',
-      package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockC9()),
-      createEmptyInstance: create)
-    ..a<$fixnum.Int64>(1, _omitFieldNames ? '' : 'roomId', $pb.PbFieldType.OU6,
-        defaultOrMaker: $fixnum.Int64.ZERO)
-    ..a<$core.int>(2, _omitFieldNames ? '' : 'reason', $pb.PbFieldType.OU3)
-    ..aOS(3, _omitFieldNames ? '' : 'msg')
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i =
+      $pb.BuilderInfo(
+          _omitMessageNames ? '' : 'RoomKickOut',
+          package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockC9()),
+          createEmptyInstance: create,
+        )
+        ..a<$fixnum.Int64>(
+          1,
+          _omitFieldNames ? '' : 'roomId',
+          $pb.PbFieldType.OU6,
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..a<$core.int>(2, _omitFieldNames ? '' : 'reason', $pb.PbFieldType.OU3)
+        ..aOS(3, _omitFieldNames ? '' : 'msg')
+        ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+    'Will be removed in next major version',
+  )
   RoomKickOut clone() => RoomKickOut()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+    'Will be removed in next major version',
+  )
   RoomKickOut copyWith(void Function(RoomKickOut) updates) =>
       super.copyWith((message) => updates(message as RoomKickOut))
           as RoomKickOut;
@@ -2823,31 +3225,46 @@ class SysNotify extends $pb.GeneratedMessage {
     return $result;
   }
   SysNotify._() : super();
-  factory SysNotify.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory SysNotify.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+  factory SysNotify.fromBuffer(
+    $core.List<$core.int> i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromBuffer(i, r);
+  factory SysNotify.fromJson(
+    $core.String i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'SysNotify',
-      package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockC9()),
-      createEmptyInstance: create)
-    ..a<$core.int>(1, _omitFieldNames ? '' : 'unreadCount', $pb.PbFieldType.OU3)
-    ..aOS(2, _omitFieldNames ? '' : 'title')
-    ..a<$fixnum.Int64>(
-        3, _omitFieldNames ? '' : 'updateTime', $pb.PbFieldType.OU6,
-        defaultOrMaker: $fixnum.Int64.ZERO)
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i =
+      $pb.BuilderInfo(
+          _omitMessageNames ? '' : 'SysNotify',
+          package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockC9()),
+          createEmptyInstance: create,
+        )
+        ..a<$core.int>(
+          1,
+          _omitFieldNames ? '' : 'unreadCount',
+          $pb.PbFieldType.OU3,
+        )
+        ..aOS(2, _omitFieldNames ? '' : 'title')
+        ..a<$fixnum.Int64>(
+          3,
+          _omitFieldNames ? '' : 'updateTime',
+          $pb.PbFieldType.OU6,
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+    'Will be removed in next major version',
+  )
   SysNotify clone() => SysNotify()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+    'Will be removed in next major version',
+  )
   SysNotify copyWith(void Function(SysNotify) updates) =>
       super.copyWith((message) => updates(message as SysNotify)) as SysNotify;
 
@@ -2900,10 +3317,7 @@ class SysNotify extends $pb.GeneratedMessage {
 }
 
 class MarkUserStarReq extends $pb.GeneratedMessage {
-  factory MarkUserStarReq({
-    $fixnum.Int64? targetUid,
-    $core.int? mark,
-  }) {
+  factory MarkUserStarReq({$fixnum.Int64? targetUid, $core.int? mark}) {
     final $result = create();
     if (targetUid != null) {
       $result.targetUid = targetUid;
@@ -2914,30 +3328,41 @@ class MarkUserStarReq extends $pb.GeneratedMessage {
     return $result;
   }
   MarkUserStarReq._() : super();
-  factory MarkUserStarReq.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory MarkUserStarReq.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+  factory MarkUserStarReq.fromBuffer(
+    $core.List<$core.int> i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromBuffer(i, r);
+  factory MarkUserStarReq.fromJson(
+    $core.String i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'MarkUserStarReq',
-      package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockC9()),
-      createEmptyInstance: create)
-    ..a<$fixnum.Int64>(
-        1, _omitFieldNames ? '' : 'targetUid', $pb.PbFieldType.OU6,
-        defaultOrMaker: $fixnum.Int64.ZERO)
-    ..a<$core.int>(2, _omitFieldNames ? '' : 'mark', $pb.PbFieldType.OU3)
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i =
+      $pb.BuilderInfo(
+          _omitMessageNames ? '' : 'MarkUserStarReq',
+          package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockC9()),
+          createEmptyInstance: create,
+        )
+        ..a<$fixnum.Int64>(
+          1,
+          _omitFieldNames ? '' : 'targetUid',
+          $pb.PbFieldType.OU6,
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..a<$core.int>(2, _omitFieldNames ? '' : 'mark', $pb.PbFieldType.OU3)
+        ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+    'Will be removed in next major version',
+  )
   MarkUserStarReq clone() => MarkUserStarReq()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+    'Will be removed in next major version',
+  )
   MarkUserStarReq copyWith(void Function(MarkUserStarReq) updates) =>
       super.copyWith((message) => updates(message as MarkUserStarReq))
           as MarkUserStarReq;
@@ -3070,63 +3495,128 @@ class ChatCall extends $pb.GeneratedMessage {
     return $result;
   }
   ChatCall._() : super();
-  factory ChatCall.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory ChatCall.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+  factory ChatCall.fromBuffer(
+    $core.List<$core.int> i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromBuffer(i, r);
+  factory ChatCall.fromJson(
+    $core.String i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'ChatCall',
-      package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockC9()),
-      createEmptyInstance: create)
-    ..a<$fixnum.Int64>(1, _omitFieldNames ? '' : 'id', $pb.PbFieldType.OU6,
-        defaultOrMaker: $fixnum.Int64.ZERO)
-    ..a<$fixnum.Int64>(2, _omitFieldNames ? '' : 'localId', $pb.PbFieldType.OU6,
-        defaultOrMaker: $fixnum.Int64.ZERO)
-    ..a<$fixnum.Int64>(3, _omitFieldNames ? '' : 'chatId', $pb.PbFieldType.OU6,
-        defaultOrMaker: $fixnum.Int64.ZERO)
-    ..a<$fixnum.Int64>(4, _omitFieldNames ? '' : 'from', $pb.PbFieldType.OU6,
-        defaultOrMaker: $fixnum.Int64.ZERO)
-    ..a<$core.int>(5, _omitFieldNames ? '' : 'media', $pb.PbFieldType.OU3)
-    ..aOS(6, _omitFieldNames ? '' : 'channelKey')
-    ..e<ChatCall_Status>(7, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE,
-        defaultOrMaker: ChatCall_Status.TRYING,
-        valueOf: ChatCall_Status.valueOf,
-        enumValues: ChatCall_Status.values)
-    ..a<$core.int>(8, _omitFieldNames ? '' : 'duration', $pb.PbFieldType.OU3)
-    ..a<$core.int>(9, _omitFieldNames ? '' : 'cost', $pb.PbFieldType.OU3)
-    ..a<$fixnum.Int64>(
-        10, _omitFieldNames ? '' : 'deductionTime', $pb.PbFieldType.OU6,
-        defaultOrMaker: $fixnum.Int64.ZERO)
-    ..aOM<ChatCallRating>(11, _omitFieldNames ? '' : 'ratingCard',
-        protoName: 'ratingCard', subBuilder: ChatCallRating.create)
-    ..a<$core.int>(12, _omitFieldNames ? '' : 'income', $pb.PbFieldType.OU3)
-    ..a<$fixnum.Int64>(
-        13, _omitFieldNames ? '' : 'balance', $pb.PbFieldType.OU6,
-        defaultOrMaker: $fixnum.Int64.ZERO)
-    ..a<$core.int>(14, _omitFieldNames ? '' : 'chatPrice', $pb.PbFieldType.OU3)
-    ..aOB(15, _omitFieldNames ? '' : 'isInduce')
-    ..aOS(16, _omitFieldNames ? '' : 'induceVideo')
-    ..a<$core.int>(17, _omitFieldNames ? '' : 'chatIncome', $pb.PbFieldType.OU3,
-        protoName: 'chatIncome')
-    ..a<$core.int>(18, _omitFieldNames ? '' : 'giftIncome', $pb.PbFieldType.OU3,
-        protoName: 'giftIncome')
-    ..a<$core.int>(19, _omitFieldNames ? '' : 'byeReason', $pb.PbFieldType.OU3)
-    ..a<$core.int>(20, _omitFieldNames ? '' : 'sourceType', $pb.PbFieldType.OU3)
-    ..a<$fixnum.Int64>(
-        21, _omitFieldNames ? '' : 'sourceId', $pb.PbFieldType.OU6,
-        defaultOrMaker: $fixnum.Int64.ZERO)
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i =
+      $pb.BuilderInfo(
+          _omitMessageNames ? '' : 'ChatCall',
+          package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockC9()),
+          createEmptyInstance: create,
+        )
+        ..a<$fixnum.Int64>(
+          1,
+          _omitFieldNames ? '' : 'id',
+          $pb.PbFieldType.OU6,
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..a<$fixnum.Int64>(
+          2,
+          _omitFieldNames ? '' : 'localId',
+          $pb.PbFieldType.OU6,
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..a<$fixnum.Int64>(
+          3,
+          _omitFieldNames ? '' : 'chatId',
+          $pb.PbFieldType.OU6,
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..a<$fixnum.Int64>(
+          4,
+          _omitFieldNames ? '' : 'from',
+          $pb.PbFieldType.OU6,
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..a<$core.int>(5, _omitFieldNames ? '' : 'media', $pb.PbFieldType.OU3)
+        ..aOS(6, _omitFieldNames ? '' : 'channelKey')
+        ..e<ChatCall_Status>(
+          7,
+          _omitFieldNames ? '' : 'status',
+          $pb.PbFieldType.OE,
+          defaultOrMaker: ChatCall_Status.TRYING,
+          valueOf: ChatCall_Status.valueOf,
+          enumValues: ChatCall_Status.values,
+        )
+        ..a<$core.int>(
+          8,
+          _omitFieldNames ? '' : 'duration',
+          $pb.PbFieldType.OU3,
+        )
+        ..a<$core.int>(9, _omitFieldNames ? '' : 'cost', $pb.PbFieldType.OU3)
+        ..a<$fixnum.Int64>(
+          10,
+          _omitFieldNames ? '' : 'deductionTime',
+          $pb.PbFieldType.OU6,
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..aOM<ChatCallRating>(
+          11,
+          _omitFieldNames ? '' : 'ratingCard',
+          protoName: 'ratingCard',
+          subBuilder: ChatCallRating.create,
+        )
+        ..a<$core.int>(12, _omitFieldNames ? '' : 'income', $pb.PbFieldType.OU3)
+        ..a<$fixnum.Int64>(
+          13,
+          _omitFieldNames ? '' : 'balance',
+          $pb.PbFieldType.OU6,
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..a<$core.int>(
+          14,
+          _omitFieldNames ? '' : 'chatPrice',
+          $pb.PbFieldType.OU3,
+        )
+        ..aOB(15, _omitFieldNames ? '' : 'isInduce')
+        ..aOS(16, _omitFieldNames ? '' : 'induceVideo')
+        ..a<$core.int>(
+          17,
+          _omitFieldNames ? '' : 'chatIncome',
+          $pb.PbFieldType.OU3,
+          protoName: 'chatIncome',
+        )
+        ..a<$core.int>(
+          18,
+          _omitFieldNames ? '' : 'giftIncome',
+          $pb.PbFieldType.OU3,
+          protoName: 'giftIncome',
+        )
+        ..a<$core.int>(
+          19,
+          _omitFieldNames ? '' : 'byeReason',
+          $pb.PbFieldType.OU3,
+        )
+        ..a<$core.int>(
+          20,
+          _omitFieldNames ? '' : 'sourceType',
+          $pb.PbFieldType.OU3,
+        )
+        ..a<$fixnum.Int64>(
+          21,
+          _omitFieldNames ? '' : 'sourceId',
+          $pb.PbFieldType.OU6,
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+    'Will be removed in next major version',
+  )
   ChatCall clone() => ChatCall()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+    'Will be removed in next major version',
+  )
   ChatCall copyWith(void Function(ChatCall) updates) =>
       super.copyWith((message) => updates(message as ChatCall)) as ChatCall;
 
@@ -3415,33 +3905,52 @@ class ChatCallRating extends $pb.GeneratedMessage {
     return $result;
   }
   ChatCallRating._() : super();
-  factory ChatCallRating.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory ChatCallRating.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+  factory ChatCallRating.fromBuffer(
+    $core.List<$core.int> i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromBuffer(i, r);
+  factory ChatCallRating.fromJson(
+    $core.String i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'ChatCallRating',
-      package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockC9()),
-      createEmptyInstance: create)
-    ..a<$fixnum.Int64>(1, _omitFieldNames ? '' : 'callId', $pb.PbFieldType.OU6,
-        defaultOrMaker: $fixnum.Int64.ZERO)
-    ..a<$fixnum.Int64>(2, _omitFieldNames ? '' : 'snapId', $pb.PbFieldType.OU6,
-        defaultOrMaker: $fixnum.Int64.ZERO)
-    ..pc<ChatCallRatingTag>(
-        3, _omitFieldNames ? '' : 'tags', $pb.PbFieldType.PM,
-        subBuilder: ChatCallRatingTag.create)
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i =
+      $pb.BuilderInfo(
+          _omitMessageNames ? '' : 'ChatCallRating',
+          package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockC9()),
+          createEmptyInstance: create,
+        )
+        ..a<$fixnum.Int64>(
+          1,
+          _omitFieldNames ? '' : 'callId',
+          $pb.PbFieldType.OU6,
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..a<$fixnum.Int64>(
+          2,
+          _omitFieldNames ? '' : 'snapId',
+          $pb.PbFieldType.OU6,
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..pc<ChatCallRatingTag>(
+          3,
+          _omitFieldNames ? '' : 'tags',
+          $pb.PbFieldType.PM,
+          subBuilder: ChatCallRatingTag.create,
+        )
+        ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+    'Will be removed in next major version',
+  )
   ChatCallRating clone() => ChatCallRating()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+    'Will be removed in next major version',
+  )
   ChatCallRating copyWith(void Function(ChatCallRating) updates) =>
       super.copyWith((message) => updates(message as ChatCallRating))
           as ChatCallRating;
@@ -3487,10 +3996,7 @@ class ChatCallRating extends $pb.GeneratedMessage {
 }
 
 class ChatCallRatingTag extends $pb.GeneratedMessage {
-  factory ChatCallRatingTag({
-    $fixnum.Int64? id,
-    $core.String? tag,
-  }) {
+  factory ChatCallRatingTag({$fixnum.Int64? id, $core.String? tag}) {
     final $result = create();
     if (id != null) {
       $result.id = id;
@@ -3501,29 +4007,41 @@ class ChatCallRatingTag extends $pb.GeneratedMessage {
     return $result;
   }
   ChatCallRatingTag._() : super();
-  factory ChatCallRatingTag.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory ChatCallRatingTag.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+  factory ChatCallRatingTag.fromBuffer(
+    $core.List<$core.int> i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromBuffer(i, r);
+  factory ChatCallRatingTag.fromJson(
+    $core.String i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'ChatCallRatingTag',
-      package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockC9()),
-      createEmptyInstance: create)
-    ..a<$fixnum.Int64>(1, _omitFieldNames ? '' : 'id', $pb.PbFieldType.OU6,
-        defaultOrMaker: $fixnum.Int64.ZERO)
-    ..aOS(2, _omitFieldNames ? '' : 'tag')
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i =
+      $pb.BuilderInfo(
+          _omitMessageNames ? '' : 'ChatCallRatingTag',
+          package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockC9()),
+          createEmptyInstance: create,
+        )
+        ..a<$fixnum.Int64>(
+          1,
+          _omitFieldNames ? '' : 'id',
+          $pb.PbFieldType.OU6,
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..aOS(2, _omitFieldNames ? '' : 'tag')
+        ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+    'Will be removed in next major version',
+  )
   ChatCallRatingTag clone() => ChatCallRatingTag()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+    'Will be removed in next major version',
+  )
   ChatCallRatingTag copyWith(void Function(ChatCallRatingTag) updates) =>
       super.copyWith((message) => updates(message as ChatCallRatingTag))
           as ChatCallRatingTag;
@@ -3580,35 +4098,53 @@ class PicVideosAuditStatusChangeNotify extends $pb.GeneratedMessage {
     return $result;
   }
   PicVideosAuditStatusChangeNotify._() : super();
-  factory PicVideosAuditStatusChangeNotify.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory PicVideosAuditStatusChangeNotify.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+  factory PicVideosAuditStatusChangeNotify.fromBuffer(
+    $core.List<$core.int> i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromBuffer(i, r);
+  factory PicVideosAuditStatusChangeNotify.fromJson(
+    $core.String i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'PicVideosAuditStatusChangeNotify',
-      package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockC9()),
-      createEmptyInstance: create)
-    ..a<$fixnum.Int64>(1, _omitFieldNames ? '' : 'uid', $pb.PbFieldType.OU6,
-        defaultOrMaker: $fixnum.Int64.ZERO)
-    ..a<$fixnum.Int64>(2, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OU6,
-        defaultOrMaker: $fixnum.Int64.ZERO)
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i =
+      $pb.BuilderInfo(
+          _omitMessageNames ? '' : 'PicVideosAuditStatusChangeNotify',
+          package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockC9()),
+          createEmptyInstance: create,
+        )
+        ..a<$fixnum.Int64>(
+          1,
+          _omitFieldNames ? '' : 'uid',
+          $pb.PbFieldType.OU6,
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..a<$fixnum.Int64>(
+          2,
+          _omitFieldNames ? '' : 'status',
+          $pb.PbFieldType.OU6,
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+    'Will be removed in next major version',
+  )
   PicVideosAuditStatusChangeNotify clone() =>
       PicVideosAuditStatusChangeNotify()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+    'Will be removed in next major version',
+  )
   PicVideosAuditStatusChangeNotify copyWith(
-          void Function(PicVideosAuditStatusChangeNotify) updates) =>
+    void Function(PicVideosAuditStatusChangeNotify) updates,
+  ) =>
       super.copyWith(
-              (message) => updates(message as PicVideosAuditStatusChangeNotify))
+            (message) => updates(message as PicVideosAuditStatusChangeNotify),
+          )
           as PicVideosAuditStatusChangeNotify;
 
   $pb.BuilderInfo get info_ => _i;
@@ -3622,7 +4158,8 @@ class PicVideosAuditStatusChangeNotify extends $pb.GeneratedMessage {
   @$core.pragma('dart2js:noInline')
   static PicVideosAuditStatusChangeNotify getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<PicVideosAuditStatusChangeNotify>(
-          create);
+        create,
+      );
   static PicVideosAuditStatusChangeNotify? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -3651,9 +4188,7 @@ class PicVideosAuditStatusChangeNotify extends $pb.GeneratedMessage {
 }
 
 class AlertNotify extends $pb.GeneratedMessage {
-  factory AlertNotify({
-    $core.String? msg,
-  }) {
+  factory AlertNotify({$core.String? msg}) {
     final $result = create();
     if (msg != null) {
       $result.msg = msg;
@@ -3661,27 +4196,35 @@ class AlertNotify extends $pb.GeneratedMessage {
     return $result;
   }
   AlertNotify._() : super();
-  factory AlertNotify.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory AlertNotify.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+  factory AlertNotify.fromBuffer(
+    $core.List<$core.int> i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromBuffer(i, r);
+  factory AlertNotify.fromJson(
+    $core.String i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'AlertNotify',
-      package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockC9()),
-      createEmptyInstance: create)
-    ..aOS(1, _omitFieldNames ? '' : 'msg')
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i =
+      $pb.BuilderInfo(
+          _omitMessageNames ? '' : 'AlertNotify',
+          package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockC9()),
+          createEmptyInstance: create,
+        )
+        ..aOS(1, _omitFieldNames ? '' : 'msg')
+        ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+    'Will be removed in next major version',
+  )
   AlertNotify clone() => AlertNotify()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+    'Will be removed in next major version',
+  )
   AlertNotify copyWith(void Function(AlertNotify) updates) =>
       super.copyWith((message) => updates(message as AlertNotify))
           as AlertNotify;
@@ -3711,5 +4254,6 @@ class AlertNotify extends $pb.GeneratedMessage {
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames =
-    $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames = $core.bool.fromEnvironment(
+  'protobuf.omit_message_names',
+);

@@ -10,12 +10,7 @@ class ChatInputFuncItem {
   ChatInputFuncItem(this.type, this.name, this.icon);
 }
 
-enum ChatInputFuncType {
-  voice,
-  video,
-  card,
-  location,
-}
+enum ChatInputFuncType { voice, video, card, location }
 
 class KimmiWaitressDoctorNoodleSharp extends StatelessWidget {
   static final List<ChatInputFuncItem> _configItems = [];
@@ -23,7 +18,7 @@ class KimmiWaitressDoctorNoodleSharp extends StatelessWidget {
   final ValueChanged<ChatInputFuncType>? selectFunc;
 
   const KimmiWaitressDoctorNoodleSharp({Key? key, this.selectFunc})
-      : super(key: key);
+    : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -66,10 +61,7 @@ class KimmiWaitressDoctorNoodleSharp extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 8.0),
-          Text(
-            item.name,
-            style: KimmiTamperDaytime.TextB3_12,
-          ),
+          Text(item.name, style: KimmiTamperDaytime.TextB3_12),
         ],
       ),
       onPressed: () => selectFunc?.call(item.type),

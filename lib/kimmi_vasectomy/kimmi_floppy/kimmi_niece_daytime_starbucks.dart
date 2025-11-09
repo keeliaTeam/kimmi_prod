@@ -4,8 +4,7 @@ import '../kimmi_curvy/kimmi_africa.dart';
 enum KimmiNieceDaytimeStarbucks {
   Center,
 
-  Bottom,
-  ;
+  Bottom;
 
   static KimmiNieceDaytimeStarbucks valueOf(int? statusIndex) {
     try {

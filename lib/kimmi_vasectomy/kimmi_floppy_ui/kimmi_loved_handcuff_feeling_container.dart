@@ -1,5 +1,5 @@
 import 'dart:math';
-import 'kimmi_joyous_thrive.dart';
+import 'kimmi_tyson_letter.dart';
 import 'dart:math';
 
 import 'package:kimmi/kimmi_vasectomy/kimmi_storm/kimmi_handcuff_india_fighting_amen_campfire.dart';
@@ -53,38 +53,43 @@ class KimmiLovedHandcuffFeelingContainer
         alignment: Alignment.center,
         children: [
           SizedBox(
-              width: Get.width,
-              height: 240,
-              child: Swiper(
-                  itemBuilder: (BuildContext context, int index) {
-                    double angle = 0;
-                    if (index < _currentIndex ||
-                        (_currentIndex == 0 &&
-                            index == logic.matchUserList.length - 1)) {
-                      angle = -pi / 18;
-                    } else if (index > _currentIndex) {
-                      angle = pi / 18;
-                    }
-                    return Stack(alignment: Alignment.center, children: [
-                      Transform.rotate(
-                        angle: angle,
-                        child: Opacity(
-                          opacity: index == _currentIndex ? 1 : 0.6,
-                          child: _kimmiFeastBargain(index),
-                        ),
-                      )
-                    ]);
-                  },
-                  onIndexChanged: (int currentIndex) {
-                    _currentIndex = currentIndex;
-                  },
-                  viewportFraction: 0.4,
-                  scale: 0.7,
-                  autoplay: true,
-                  itemCount: logic.matchUserList.length,
-                  duration: 300,
-                  scrollDirection: Axis.horizontal,
-                  pagination: null))
+            width: Get.width,
+            height: 240,
+            child: Swiper(
+              itemBuilder: (BuildContext context, int index) {
+                double angle = 0;
+                if (index < _currentIndex ||
+                    (_currentIndex == 0 &&
+                        index == logic.matchUserList.length - 1)) {
+                  angle = -pi / 18;
+                } else if (index > _currentIndex) {
+                  angle = pi / 18;
+                }
+                return Stack(
+                  alignment: Alignment.center,
+                  children: [
+                    Transform.rotate(
+                      angle: angle,
+                      child: Opacity(
+                        opacity: index == _currentIndex ? 1 : 0.6,
+                        child: _kimmiFeastBargain(index),
+                      ),
+                    ),
+                  ],
+                );
+              },
+              onIndexChanged: (int currentIndex) {
+                _currentIndex = currentIndex;
+              },
+              viewportFraction: 0.4,
+              scale: 0.7,
+              autoplay: true,
+              itemCount: logic.matchUserList.length,
+              duration: 300,
+              scrollDirection: Axis.horizontal,
+              pagination: null,
+            ),
+          ),
         ],
       ),
     );
@@ -96,42 +101,45 @@ class KimmiLovedHandcuffFeelingContainer
       width: 140,
       height: 200,
       decoration: BoxDecoration(
-          color: KimmiDraftJuda.white,
-          borderRadius: BorderRadius.circular(16),
-          border: Border.all(color: KimmiDraftJuda.white, width: 2),
-          boxShadow: index == _currentIndex
-              ? const [
-                  BoxShadow(
-                      color: Color(0xFFFF3EB5),
-                      offset: Offset(0.0, 0.0),
-                      blurRadius: 20,
-                      spreadRadius: 0)
-                ]
-              : []),
+        color: KimmiDraftJuda.white,
+        borderRadius: BorderRadius.circular(16),
+        border: Border.all(color: KimmiDraftJuda.white, width: 2),
+        boxShadow: index == _currentIndex
+            ? const [
+                BoxShadow(
+                  color: Color(0xFFFF3EB5),
+                  offset: Offset(0.0, 0.0),
+                  blurRadius: 20,
+                  spreadRadius: 0,
+                ),
+              ]
+            : [],
+      ),
       child: Stack(
         alignment: Alignment.bottomCenter,
         children: [
           KimmiErnie.round(
-              url: matchUser.user?.avatarUrl ?? "",
-              width: 140,
-              height: 200,
-              fit: BoxFit.cover,
-              borderRadius: BorderRadius.circular(16),
-              clip: ImageClipType.small),
+            url: matchUser.user?.avatarUrl ?? "",
+            width: 140,
+            height: 200,
+            fit: BoxFit.cover,
+            borderRadius: BorderRadius.circular(16),
+            clip: ImageClipType.small,
+          ),
           Container(
             width: 140,
             height: 100,
             decoration: const BoxDecoration(
-                borderRadius: BorderRadius.only(
-                    bottomRight: Radius.circular(16),
-                    bottomLeft: Radius.circular(16)),
-                gradient: LinearGradient(
-                    begin: Alignment.topCenter,
-                    end: Alignment.bottomCenter,
-                    colors: [
-                      KimmiDraftJuda.black_00p,
-                      KimmiDraftJuda.black_60p
-                    ])),
+              borderRadius: BorderRadius.only(
+                bottomRight: Radius.circular(16),
+                bottomLeft: Radius.circular(16),
+              ),
+              gradient: LinearGradient(
+                begin: Alignment.topCenter,
+                end: Alignment.bottomCenter,
+                colors: [KimmiDraftJuda.black_00p, KimmiDraftJuda.black_60p],
+              ),
+            ),
           ),
           index != _currentIndex
               ? const SizedBox.shrink()
@@ -142,11 +150,14 @@ class KimmiLovedHandcuffFeelingContainer
                   child: Row(
                     children: [
                       KimmiFailedWebsite.kimmiThongLowellTamper(
-                          Text(matchUser.user?.nickName ?? '',
-                              style: KimmiTamperDaytime.white16Bold,
-                              maxLines: 1,
-                              overflow: TextOverflow.ellipsis),
-                          94),
+                        Text(
+                          matchUser.user?.nickName ?? '',
+                          style: KimmiTamperDaytime.white16Bold,
+                          maxLines: 1,
+                          overflow: TextOverflow.ellipsis,
+                        ),
+                        94,
+                      ),
                       const SizedBox(width: 2),
                       KIMMI.kimmiHump.isKimmiAiGraceSensitive()
                           ? const SizedBox.shrink()
@@ -154,16 +165,20 @@ class KimmiLovedHandcuffFeelingContainer
                               width: 16,
                               height: 16,
                               decoration: const BoxDecoration(
-                                  shape: BoxShape.circle,
-                                  color: Color(0xFFFFFFFF)),
+                                shape: BoxShape.circle,
+                                color: Color(0xFFFFFFFF),
+                              ),
                               alignment: Alignment.center,
                               child: KimmiErnie.circle(
-                                  url: matchUser.country?.flag ?? '',
-                                  size: 14,
-                                  clip: ImageClipType.origin,
-                                  fit: BoxFit.cover)),
+                                url: matchUser.country?.flag ?? '',
+                                size: 14,
+                                clip: ImageClipType.origin,
+                                fit: BoxFit.cover,
+                              ),
+                            ),
                     ],
-                  ))
+                  ),
+                ),
         ],
       ),
     );
@@ -191,12 +206,15 @@ class KimmiLovedHandcuffFeelingContainer
         return KimmiPalate.kimmiBathtubStuCoat.createShader(bounds);
       },
       blendMode: BlendMode.srcATop,
-      child: Text("kimmi_broderick_bathrobe_handcuff".tr,
-          style: const TextStyle(
-              fontSize: 24,
-              fontWeight: FontWeight.bold,
-              color: Color(0xFFFFDF8B),
-              height: 1.2)),
+      child: Text(
+        "kimmi_broderick_bathrobe_handcuff".tr,
+        style: const TextStyle(
+          fontSize: 24,
+          fontWeight: FontWeight.bold,
+          color: Color(0xFFFFDF8B),
+          height: 1.2,
+        ),
+      ),
     );
   }
 
@@ -213,26 +231,29 @@ class KimmiLovedHandcuffFeelingContainer
                   child: Container(
                     width: Get.width - 60,
                     decoration: BoxDecoration(
-                        color: KimmiDraftJuda.white_10p,
-                        borderRadius: BorderRadius.circular(16)),
+                      color: KimmiDraftJuda.white_10p,
+                      borderRadius: BorderRadius.circular(16),
+                    ),
                     padding: const EdgeInsets.all(16),
                     child: Column(
                       children: [
                         Text(
                           "kimmi_broderick_born".tr,
                           style: KimmiTamperDaytime.style(
-                              color: KimmiPalate.kimmiTamperDeskYummy,
-                              fontWeight: FontWeight.bold,
-                              fontSize: 12),
+                            color: KimmiPalate.kimmiTamperDeskYummy,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 12,
+                          ),
                         ),
                         Text(
                           "kimmi_broderick_handcuff_unwanted_saver".tr,
                           textAlign: TextAlign.center,
                           maxLines: 3,
                           style: KimmiTamperDaytime.style(
-                              color: KimmiPalate.kimmiTamperDeskYummy,
-                              fontSize: 12),
-                        )
+                            color: KimmiPalate.kimmiTamperDeskYummy,
+                            fontSize: 12,
+                          ),
+                        ),
                       ],
                     ),
                   ),
@@ -246,11 +267,12 @@ class KimmiLovedHandcuffFeelingContainer
                 Positioned(
                   top: 14,
                   child: KimmiAsthmaticDesk(
-                      title: 'kimmi_broderick_husband'.tr,
-                      width: 215,
-                      height: 56,
-                      radius: 28,
-                      onTap: logic.onKimmiHusbandAsthmatic),
+                    title: 'kimmi_broderick_husband'.tr,
+                    width: 215,
+                    height: 56,
+                    radius: 28,
+                    onTap: logic.onKimmiHusbandAsthmatic,
+                  ),
                 ),
                 GetBuilder<KimmiLovedHandcuffFeelingInvoice>(
                   id: logic.kimmi_handshake_is_private,
@@ -261,28 +283,33 @@ class KimmiLovedHandcuffFeelingContainer
                             right: isAR ? null : 0,
                             left: isAR ? 0 : null,
                             child: Container(
-                                height: 28,
-                                padding: const EdgeInsets.only(
-                                    left: 14, right: 14, top: 5, bottom: 7),
-                                decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(14),
-                                    gradient: KimmiPalate.kimmiStoreBgCoat),
-                                child: GetBuilder<
-                                    KimmiLovedHandcuffFeelingInvoice>(
-                                  id: logic.kimmi_handshake_store_assignment,
-                                  builder: (logic) {
-                                    return Text(
-                                        '${'kimmi_broderick_store'.tr} x${logic.remainingFreeCount}',
-                                        style: KimmiPalate
-                                            .kimmiStoreTamperDaytime);
-                                  },
-                                )),
+                              height: 28,
+                              padding: const EdgeInsets.only(
+                                left: 14,
+                                right: 14,
+                                top: 5,
+                                bottom: 7,
+                              ),
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(14),
+                                gradient: KimmiPalate.kimmiStoreBgCoat,
+                              ),
+                              child: GetBuilder<KimmiLovedHandcuffFeelingInvoice>(
+                                id: logic.kimmi_handshake_store_assignment,
+                                builder: (logic) {
+                                  return Text(
+                                    '${'kimmi_broderick_store'.tr} x${logic.remainingFreeCount}',
+                                    style: KimmiPalate.kimmiStoreTamperDaytime,
+                                  );
+                                },
+                              ),
+                            ),
                           );
                   },
-                )
+                ),
               ],
             ),
-          )
+          ),
         ],
       ),
     );

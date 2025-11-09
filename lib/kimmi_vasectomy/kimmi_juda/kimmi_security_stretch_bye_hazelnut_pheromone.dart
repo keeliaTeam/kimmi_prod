@@ -20,11 +20,17 @@ import 'kimmi_security_stretch_india_hazelnut_pheromone.dart';
 
 class KimmiSecurityStretchByeHazelnutPheromone
     extends MediaVideoViewerDataSource {
-  static showViewer(BuildContext context,
-      {List<dynamic>? list, dynamic? selectItem, int? uid}) {
+  static showViewer(
+    BuildContext context, {
+    List<dynamic>? list,
+    dynamic? selectItem,
+    int? uid,
+  }) {
     if ((list == null || list.isEmpty) && selectItem == null) return;
-    KimmiStretchByeWealthy.show(context,
-        KimmiSecurityStretchByeHazelnutPheromone(list, selectItem, uid));
+    KimmiStretchByeWealthy.show(
+      context,
+      KimmiSecurityStretchByeHazelnutPheromone(list, selectItem, uid),
+    );
   }
 
   final List<dynamic>? _items;
@@ -32,8 +38,10 @@ class KimmiSecurityStretchByeHazelnutPheromone
   final int? _uid;
 
   KimmiSecurityStretchByeHazelnutPheromone(
-      this._items, this._currentItem, this._uid)
-      : super() {
+    this._items,
+    this._currentItem,
+    this._uid,
+  ) : super() {
     super.showCustomChild = true;
     super.isHero = true;
     super.itemCount = _items != null ? _items!.length : 1;
@@ -63,11 +71,15 @@ class KimmiSecurityStretchByeHazelnutPheromone
     if (item!.width! < KIMMI.kimmiHump.imageSize.large &&
         item!.height! < KIMMI.kimmiHump.imageSize.large) {
       return CachedNetworkImageProvider(
-          KimmiErnieProperly.kimmiErnieURLMuch(imageUrl));
+        KimmiErnieProperly.kimmiErnieURLMuch(imageUrl),
+      );
     } else {
       return CachedNetworkImageProvider(
-          KimmiErnieProperly.kimmiErnieURLHystericalStarfish(
-              imageUrl, KIMMI.kimmiHump.imageSize.large));
+        KimmiErnieProperly.kimmiErnieURLHystericalStarfish(
+          imageUrl,
+          KIMMI.kimmiHump.imageSize.large,
+        ),
+      );
     }
   }
 
@@ -94,15 +106,20 @@ class KimmiSecurityStretchByeHazelnutPheromone
       children: [
         KimmiErnie.large(url: imageUrlString, fit: BoxFit.contain),
         Visibility(
-            visible: isVideo,
-            child: KimmiErnie.local(
-                    fileName: "kimmi_hombre_india_simulator_gloss",
-                    width: 48,
-                    height: 48)
-                .click(() {
-              KimmiSecurityStretchIndiaHazelnutPheromone.showViewer(
-                  Get.context!, [item], item);
-            })),
+          visible: isVideo,
+          child:
+              KimmiErnie.local(
+                fileName: "kimmi_hombre_india_simulator_gloss",
+                width: 48,
+                height: 48,
+              ).click(() {
+                KimmiSecurityStretchIndiaHazelnutPheromone.showViewer(
+                  Get.context!,
+                  [item],
+                  item,
+                );
+              }),
+        ),
         Visibility(
           visible: item.isVipOnly() && !KIMMI.isVip(),
           child: Stack(
@@ -116,19 +133,23 @@ class KimmiSecurityStretchByeHazelnutPheromone
                 width: 250,
                 padding: const EdgeInsets.all(24),
                 decoration: BoxDecoration(
-                    color: KimmiDraftJuda.black_60p,
-                    borderRadius: BorderRadius.circular(24)),
+                  color: KimmiDraftJuda.black_60p,
+                  borderRadius: BorderRadius.circular(24),
+                ),
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   children: [
                     KimmiErnie.local(
-                        fileName: "kimmi_hombre_private_dramamine_gloss",
-                        width: 40,
-                        height: 40),
+                      fileName: "kimmi_hombre_private_dramamine_gloss",
+                      width: 40,
+                      height: 40,
+                    ),
                     const SizedBox(height: 6),
-                    Text("kimmi_broderick_security_bye_private_saver".tr,
-                        style: KimmiTamperDaytime.TextWhite_16_Medium,
-                        textAlign: TextAlign.center),
+                    Text(
+                      "kimmi_broderick_security_bye_private_saver".tr,
+                      style: KimmiTamperDaytime.TextWhite_16_Medium,
+                      textAlign: TextAlign.center,
+                    ),
                     const SizedBox(height: 10),
                     Container(
                       width: 180,
@@ -137,21 +158,29 @@ class KimmiSecurityStretchByeHazelnutPheromone
                         borderRadius: BorderRadius.circular(20),
                         color: const Color(0xFF6900BE),
                         border: Border.all(
-                            color: const Color(0xFFFFBF44), width: 2),
+                          color: const Color(0xFFFFBF44),
+                          width: 2,
+                        ),
                       ),
                       alignment: Alignment.center,
-                      child: Text("kimmi_broderick_drunk_private".tr,
-                          style: KimmiTamperDaytime.white14),
-                    ).click(() => KIMMI.toNamed(
+                      child: Text(
+                        "kimmi_broderick_drunk_private".tr,
+                        style: KimmiTamperDaytime.white14,
+                      ),
+                    ).click(
+                      () => KIMMI.toNamed(
                         KimmiSully.KimmiPrivateNieceContainer,
                         arguments: KimmiPrivateNieceHealer(
-                            fromType: PayFromType.FROM_PROFILE_ALBUM)))
+                          fromType: PayFromType.FROM_PROFILE_ALBUM,
+                        ),
+                      ),
+                    ),
                   ],
                 ),
-              )
+              ),
             ],
           ),
-        )
+        ),
       ],
     );
   }

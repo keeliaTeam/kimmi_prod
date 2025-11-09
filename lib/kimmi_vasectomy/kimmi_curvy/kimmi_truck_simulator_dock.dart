@@ -32,8 +32,11 @@ class KimmiTruckSimulatorDock {
     await audioPlayer.play(volume: 1, DeviceFileSource(file.path));
   }
 
-  Future<AudioPlayer> startPlayAssertAudio(String fileName,
-      {bool loop = false, double volume = 1}) async {
+  Future<AudioPlayer> startPlayAssertAudio(
+    String fileName, {
+    bool loop = false,
+    double volume = 1,
+  }) async {
     AudioPlayer assertPlayer = AudioPlayer();
     if (loop) {
       assertPlayer.setReleaseMode(ReleaseMode.loop);

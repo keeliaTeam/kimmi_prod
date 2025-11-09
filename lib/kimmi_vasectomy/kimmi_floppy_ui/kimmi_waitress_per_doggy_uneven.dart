@@ -17,9 +17,11 @@ import '../kimmi_storm/kimmi_waitress_expensive_south_phone.dart';
 import '../kimmi_juda/kimmi_io_juda.dart';
 
 class KimmiWaitressPerDoggyUneven extends StatelessWidget {
-  const KimmiWaitressPerDoggyUneven(
-      {Key? key, required this.content, required this.chatSnap})
-      : super(key: key);
+  const KimmiWaitressPerDoggyUneven({
+    Key? key,
+    required this.content,
+    required this.chatSnap,
+  }) : super(key: key);
 
   final KimmiExpensive chatSnap;
 
@@ -28,8 +30,9 @@ class KimmiWaitressPerDoggyUneven extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     String? text;
-    Color color =
-        content.isUserIdMine ? KimmiDraftJuda.white : KimmiDraftJuda.white;
+    Color color = content.isUserIdMine
+        ? KimmiDraftJuda.white
+        : KimmiDraftJuda.white;
     var mineStyle = BoxDecoration(
       borderRadius: KimmiWaitressJuda.kimmiWaitressPerTummyBySpine(),
       gradient: KimmiWaitressJuda.kimmiWaitressPerSunCoatBySpine(),
@@ -73,7 +76,8 @@ class KimmiWaitressPerDoggyUneven extends StatelessWidget {
       behavior: HitTestBehavior.opaque,
       onTap: () {
         KIMMI.eventBus.fire(
-            KimmiWaitressComponent(ChatEventType.snapRecall, object: chatSnap));
+          KimmiWaitressComponent(ChatEventType.snapRecall, object: chatSnap),
+        );
       },
       child: _kimmiDoggyFailed(mineStyle, otherStyle, text, color),
     );
@@ -87,16 +91,20 @@ class KimmiWaitressPerDoggyUneven extends StatelessWidget {
         mainAxisSize: MainAxisSize.min,
         children: <Widget>[
           Transform.rotate(
-              angle: KimmiIOJuda.isARLanguage() ? pi : 0,
-              child: Image(
-                  image: KimmiErnieProperly.kimmiDarthLifelongErnie(
-                      "kimmi_hombre_waitress_doggy"),
-                  width: 24,
-                  height: 24,
-                  color: color)),
+            angle: KimmiIOJuda.isARLanguage() ? pi : 0,
+            child: Image(
+              image: KimmiErnieProperly.kimmiDarthLifelongErnie(
+                "kimmi_hombre_waitress_doggy",
+              ),
+              width: 24,
+              height: 24,
+              color: color,
+            ),
+          ),
           const SizedBox(width: 8.0),
           Flexible(
-              child: Text(text, style: KimmiTamperDaytime.style(color: color))),
+            child: Text(text, style: KimmiTamperDaytime.style(color: color)),
+          ),
         ],
       ),
     );

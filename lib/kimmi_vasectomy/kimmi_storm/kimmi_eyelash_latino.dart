@@ -14,8 +14,9 @@ enum KimmiEyelashLawyerStarbucks {
   const KimmiEyelashLawyerStarbucks(this.value);
 
   static KimmiEyelashLawyerStarbucks? getByValue(int value) {
-    return KimmiEyelashLawyerStarbucks.values
-        .firstWhere((status) => status.value == value);
+    return KimmiEyelashLawyerStarbucks.values.firstWhere(
+      (status) => status.value == value,
+    );
   }
 }
 
@@ -32,28 +33,29 @@ class KimmiEyelashLatino {
   final String? animationUrl;
 
   KimmiEyelashLatino(
-      this.sender,
-      this.id,
-      this.name,
-      this.icon,
-      this.price,
-      this.value,
-      this.minDuration,
-      this.maxDuration,
-      this.animationType,
-      this.animationUrl);
+    this.sender,
+    this.id,
+    this.name,
+    this.icon,
+    this.price,
+    this.value,
+    this.minDuration,
+    this.maxDuration,
+    this.animationType,
+    this.animationUrl,
+  );
 
   KimmiEyelashLatino.fromFeed(LiveFeed feed)
-      : sender = KimmiEyelashFeast.fromUserInfo(feed.user),
-        id = feed.gift.id.toInt(),
-        name = feed.gift.name,
-        icon = feed.gift.icon,
-        price = feed.gift.price,
-        value = feed.gift.value,
-        minDuration = feed.gift.minDuration,
-        maxDuration = feed.gift.maxDuration,
-        animationType = feed.gift.animationType,
-        animationUrl = feed.gift.animationUrl;
+    : sender = KimmiEyelashFeast.fromUserInfo(feed.user),
+      id = feed.gift.id.toInt(),
+      name = feed.gift.name,
+      icon = feed.gift.icon,
+      price = feed.gift.price,
+      value = feed.gift.value,
+      minDuration = feed.gift.minDuration,
+      maxDuration = feed.gift.maxDuration,
+      animationType = feed.gift.animationType,
+      animationUrl = feed.gift.animationUrl;
 }
 
 class KimmiEyelashFeast {
@@ -70,14 +72,20 @@ class KimmiEyelashFeast {
 
   KimmiEyelashFeast.name(this.uid, this.nickName, this.avatarUrl);
 
-  KimmiEyelashFeast(this.uid, this.nickName, this.avatarUrl, this.coin,
-      this.coinFake, this.type);
+  KimmiEyelashFeast(
+    this.uid,
+    this.nickName,
+    this.avatarUrl,
+    this.coin,
+    this.coinFake,
+    this.type,
+  );
 
   KimmiEyelashFeast.fromUserInfo(UserInfo feedUser)
-      : uid = feedUser.uid.toInt(),
-        nickName = feedUser.nickName,
-        avatarUrl = feedUser.avatarUrl,
-        coin = feedUser.coin,
-        coinFake = feedUser.coinFake,
-        type = feedUser.type;
+    : uid = feedUser.uid.toInt(),
+      nickName = feedUser.nickName,
+      avatarUrl = feedUser.avatarUrl,
+      coin = feedUser.coin,
+      coinFake = feedUser.coinFake,
+      type = feedUser.type;
 }

@@ -8,9 +8,7 @@ import 'kimmi_velveteen.pb.dart' as $1;
 import 'im_object.pb.dart' as $3;
 
 class GetUserOnlineTimeReq extends $pb.GeneratedMessage {
-  factory GetUserOnlineTimeReq({
-    $core.Iterable<$fixnum.Int64>? uids,
-  }) {
+  factory GetUserOnlineTimeReq({$core.Iterable<$fixnum.Int64>? uids}) {
     final $result = create();
     if (uids != null) {
       $result.uids.addAll(uids);
@@ -18,28 +16,40 @@ class GetUserOnlineTimeReq extends $pb.GeneratedMessage {
     return $result;
   }
   GetUserOnlineTimeReq._() : super();
-  factory GetUserOnlineTimeReq.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory GetUserOnlineTimeReq.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+  factory GetUserOnlineTimeReq.fromBuffer(
+    $core.List<$core.int> i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromBuffer(i, r);
+  factory GetUserOnlineTimeReq.fromJson(
+    $core.String i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'GetUserOnlineTimeReq',
-      package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockC9()),
-      createEmptyInstance: create)
-    ..p<$fixnum.Int64>(1, _omitFieldNames ? '' : 'uids', $pb.PbFieldType.KU6)
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i =
+      $pb.BuilderInfo(
+          _omitMessageNames ? '' : 'GetUserOnlineTimeReq',
+          package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockC9()),
+          createEmptyInstance: create,
+        )
+        ..p<$fixnum.Int64>(
+          1,
+          _omitFieldNames ? '' : 'uids',
+          $pb.PbFieldType.KU6,
+        )
+        ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+    'Will be removed in next major version',
+  )
   GetUserOnlineTimeReq clone() =>
       GetUserOnlineTimeReq()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+    'Will be removed in next major version',
+  )
   GetUserOnlineTimeReq copyWith(void Function(GetUserOnlineTimeReq) updates) =>
       super.copyWith((message) => updates(message as GetUserOnlineTimeReq))
           as GetUserOnlineTimeReq;
@@ -79,32 +89,43 @@ class GetUserOnlineTimeRsp extends $pb.GeneratedMessage {
     return $result;
   }
   GetUserOnlineTimeRsp._() : super();
-  factory GetUserOnlineTimeRsp.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory GetUserOnlineTimeRsp.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+  factory GetUserOnlineTimeRsp.fromBuffer(
+    $core.List<$core.int> i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromBuffer(i, r);
+  factory GetUserOnlineTimeRsp.fromJson(
+    $core.String i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'GetUserOnlineTimeRsp',
-      package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockC9()),
-      createEmptyInstance: create)
-    ..a<$core.int>(1, _omitFieldNames ? '' : 'code', $pb.PbFieldType.OU3)
-    ..aOS(2, _omitFieldNames ? '' : 'msg')
-    ..pc<$1.UserOnlineTime>(
-        3, _omitFieldNames ? '' : 'onlineTimes', $pb.PbFieldType.PM,
-        subBuilder: $1.UserOnlineTime.create)
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i =
+      $pb.BuilderInfo(
+          _omitMessageNames ? '' : 'GetUserOnlineTimeRsp',
+          package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockC9()),
+          createEmptyInstance: create,
+        )
+        ..a<$core.int>(1, _omitFieldNames ? '' : 'code', $pb.PbFieldType.OU3)
+        ..aOS(2, _omitFieldNames ? '' : 'msg')
+        ..pc<$1.UserOnlineTime>(
+          3,
+          _omitFieldNames ? '' : 'onlineTimes',
+          $pb.PbFieldType.PM,
+          subBuilder: $1.UserOnlineTime.create,
+        )
+        ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+    'Will be removed in next major version',
+  )
   GetUserOnlineTimeRsp clone() =>
       GetUserOnlineTimeRsp()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+    'Will be removed in next major version',
+  )
   GetUserOnlineTimeRsp copyWith(void Function(GetUserOnlineTimeRsp) updates) =>
       super.copyWith((message) => updates(message as GetUserOnlineTimeRsp))
           as GetUserOnlineTimeRsp;
@@ -152,26 +173,32 @@ class GetUserOnlineTimeRsp extends $pb.GeneratedMessage {
 class CustomerServiceReq extends $pb.GeneratedMessage {
   factory CustomerServiceReq() => create();
   CustomerServiceReq._() : super();
-  factory CustomerServiceReq.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory CustomerServiceReq.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+  factory CustomerServiceReq.fromBuffer(
+    $core.List<$core.int> i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromBuffer(i, r);
+  factory CustomerServiceReq.fromJson(
+    $core.String i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'CustomerServiceReq',
-      package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockC9()),
-      createEmptyInstance: create)
-    ..hasRequiredFields = false;
+    _omitMessageNames ? '' : 'CustomerServiceReq',
+    package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockC9()),
+    createEmptyInstance: create,
+  )..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+    'Will be removed in next major version',
+  )
   CustomerServiceReq clone() => CustomerServiceReq()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+    'Will be removed in next major version',
+  )
   CustomerServiceReq copyWith(void Function(CustomerServiceReq) updates) =>
       super.copyWith((message) => updates(message as CustomerServiceReq))
           as CustomerServiceReq;
@@ -208,30 +235,41 @@ class CustomerServiceRsp extends $pb.GeneratedMessage {
     return $result;
   }
   CustomerServiceRsp._() : super();
-  factory CustomerServiceRsp.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory CustomerServiceRsp.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+  factory CustomerServiceRsp.fromBuffer(
+    $core.List<$core.int> i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromBuffer(i, r);
+  factory CustomerServiceRsp.fromJson(
+    $core.String i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'CustomerServiceRsp',
-      package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockC9()),
-      createEmptyInstance: create)
-    ..a<$core.int>(1, _omitFieldNames ? '' : 'code', $pb.PbFieldType.OU3)
-    ..aOS(2, _omitFieldNames ? '' : 'msg')
-    ..aOM<$3.Chatbox>(3, _omitFieldNames ? '' : 'chatbox',
-        subBuilder: $3.Chatbox.create)
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i =
+      $pb.BuilderInfo(
+          _omitMessageNames ? '' : 'CustomerServiceRsp',
+          package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockC9()),
+          createEmptyInstance: create,
+        )
+        ..a<$core.int>(1, _omitFieldNames ? '' : 'code', $pb.PbFieldType.OU3)
+        ..aOS(2, _omitFieldNames ? '' : 'msg')
+        ..aOM<$3.Chatbox>(
+          3,
+          _omitFieldNames ? '' : 'chatbox',
+          subBuilder: $3.Chatbox.create,
+        )
+        ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+    'Will be removed in next major version',
+  )
   CustomerServiceRsp clone() => CustomerServiceRsp()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+    'Will be removed in next major version',
+  )
   CustomerServiceRsp copyWith(void Function(CustomerServiceRsp) updates) =>
       super.copyWith((message) => updates(message as CustomerServiceRsp))
           as CustomerServiceRsp;
@@ -288,10 +326,7 @@ class CustomerServiceRsp extends $pb.GeneratedMessage {
 }
 
 class TipNotify extends $pb.GeneratedMessage {
-  factory TipNotify({
-    $core.String? iconUrl,
-    $core.String? msg,
-  }) {
+  factory TipNotify({$core.String? iconUrl, $core.String? msg}) {
     final $result = create();
     if (iconUrl != null) {
       $result.iconUrl = iconUrl;
@@ -302,28 +337,36 @@ class TipNotify extends $pb.GeneratedMessage {
     return $result;
   }
   TipNotify._() : super();
-  factory TipNotify.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory TipNotify.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+  factory TipNotify.fromBuffer(
+    $core.List<$core.int> i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromBuffer(i, r);
+  factory TipNotify.fromJson(
+    $core.String i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'TipNotify',
-      package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockC9()),
-      createEmptyInstance: create)
-    ..aOS(1, _omitFieldNames ? '' : 'iconUrl')
-    ..aOS(2, _omitFieldNames ? '' : 'msg')
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i =
+      $pb.BuilderInfo(
+          _omitMessageNames ? '' : 'TipNotify',
+          package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockC9()),
+          createEmptyInstance: create,
+        )
+        ..aOS(1, _omitFieldNames ? '' : 'iconUrl')
+        ..aOS(2, _omitFieldNames ? '' : 'msg')
+        ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+    'Will be removed in next major version',
+  )
   TipNotify clone() => TipNotify()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+    'Will be removed in next major version',
+  )
   TipNotify copyWith(void Function(TipNotify) updates) =>
       super.copyWith((message) => updates(message as TipNotify)) as TipNotify;
 
@@ -364,9 +407,7 @@ class TipNotify extends $pb.GeneratedMessage {
 }
 
 class BalanceInsufficientNotify extends $pb.GeneratedMessage {
-  factory BalanceInsufficientNotify({
-    $fixnum.Int64? balance,
-  }) {
+  factory BalanceInsufficientNotify({$fixnum.Int64? balance}) {
     final $result = create();
     if (balance != null) {
       $result.balance = balance;
@@ -374,31 +415,44 @@ class BalanceInsufficientNotify extends $pb.GeneratedMessage {
     return $result;
   }
   BalanceInsufficientNotify._() : super();
-  factory BalanceInsufficientNotify.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory BalanceInsufficientNotify.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+  factory BalanceInsufficientNotify.fromBuffer(
+    $core.List<$core.int> i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromBuffer(i, r);
+  factory BalanceInsufficientNotify.fromJson(
+    $core.String i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'BalanceInsufficientNotify',
-      package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockC9()),
-      createEmptyInstance: create)
-    ..a<$fixnum.Int64>(1, _omitFieldNames ? '' : 'balance', $pb.PbFieldType.OU6,
-        defaultOrMaker: $fixnum.Int64.ZERO)
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i =
+      $pb.BuilderInfo(
+          _omitMessageNames ? '' : 'BalanceInsufficientNotify',
+          package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockC9()),
+          createEmptyInstance: create,
+        )
+        ..a<$fixnum.Int64>(
+          1,
+          _omitFieldNames ? '' : 'balance',
+          $pb.PbFieldType.OU6,
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+    'Will be removed in next major version',
+  )
   BalanceInsufficientNotify clone() =>
       BalanceInsufficientNotify()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+    'Will be removed in next major version',
+  )
   BalanceInsufficientNotify copyWith(
-          void Function(BalanceInsufficientNotify) updates) =>
+    void Function(BalanceInsufficientNotify) updates,
+  ) =>
       super.copyWith((message) => updates(message as BalanceInsufficientNotify))
           as BalanceInsufficientNotify;
 
@@ -428,9 +482,7 @@ class BalanceInsufficientNotify extends $pb.GeneratedMessage {
 }
 
 class CustomerOnlineNotify extends $pb.GeneratedMessage {
-  factory CustomerOnlineNotify({
-    $fixnum.Int64? uid,
-  }) {
+  factory CustomerOnlineNotify({$fixnum.Int64? uid}) {
     final $result = create();
     if (uid != null) {
       $result.uid = uid;
@@ -438,29 +490,41 @@ class CustomerOnlineNotify extends $pb.GeneratedMessage {
     return $result;
   }
   CustomerOnlineNotify._() : super();
-  factory CustomerOnlineNotify.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory CustomerOnlineNotify.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+  factory CustomerOnlineNotify.fromBuffer(
+    $core.List<$core.int> i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromBuffer(i, r);
+  factory CustomerOnlineNotify.fromJson(
+    $core.String i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'CustomerOnlineNotify',
-      package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockC9()),
-      createEmptyInstance: create)
-    ..a<$fixnum.Int64>(1, _omitFieldNames ? '' : 'uid', $pb.PbFieldType.OU6,
-        defaultOrMaker: $fixnum.Int64.ZERO)
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i =
+      $pb.BuilderInfo(
+          _omitMessageNames ? '' : 'CustomerOnlineNotify',
+          package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockC9()),
+          createEmptyInstance: create,
+        )
+        ..a<$fixnum.Int64>(
+          1,
+          _omitFieldNames ? '' : 'uid',
+          $pb.PbFieldType.OU6,
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+    'Will be removed in next major version',
+  )
   CustomerOnlineNotify clone() =>
       CustomerOnlineNotify()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+    'Will be removed in next major version',
+  )
   CustomerOnlineNotify copyWith(void Function(CustomerOnlineNotify) updates) =>
       super.copyWith((message) => updates(message as CustomerOnlineNotify))
           as CustomerOnlineNotify;
@@ -493,26 +557,32 @@ class CustomerOnlineNotify extends $pb.GeneratedMessage {
 class RecoverStateReq extends $pb.GeneratedMessage {
   factory RecoverStateReq() => create();
   RecoverStateReq._() : super();
-  factory RecoverStateReq.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory RecoverStateReq.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+  factory RecoverStateReq.fromBuffer(
+    $core.List<$core.int> i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromBuffer(i, r);
+  factory RecoverStateReq.fromJson(
+    $core.String i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'RecoverStateReq',
-      package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockC9()),
-      createEmptyInstance: create)
-    ..hasRequiredFields = false;
+    _omitMessageNames ? '' : 'RecoverStateReq',
+    package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockC9()),
+    createEmptyInstance: create,
+  )..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+    'Will be removed in next major version',
+  )
   RecoverStateReq clone() => RecoverStateReq()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+    'Will be removed in next major version',
+  )
   RecoverStateReq copyWith(void Function(RecoverStateReq) updates) =>
       super.copyWith((message) => updates(message as RecoverStateReq))
           as RecoverStateReq;
@@ -531,9 +601,7 @@ class RecoverStateReq extends $pb.GeneratedMessage {
 }
 
 class UserStatusPSH extends $pb.GeneratedMessage {
-  factory UserStatusPSH({
-    $core.Iterable<UserStatus>? list,
-  }) {
+  factory UserStatusPSH({$core.Iterable<UserStatus>? list}) {
     final $result = create();
     if (list != null) {
       $result.list.addAll(list);
@@ -541,28 +609,40 @@ class UserStatusPSH extends $pb.GeneratedMessage {
     return $result;
   }
   UserStatusPSH._() : super();
-  factory UserStatusPSH.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory UserStatusPSH.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+  factory UserStatusPSH.fromBuffer(
+    $core.List<$core.int> i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromBuffer(i, r);
+  factory UserStatusPSH.fromJson(
+    $core.String i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'UserStatusPSH',
-      package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockC9()),
-      createEmptyInstance: create)
-    ..pc<UserStatus>(1, _omitFieldNames ? '' : 'list', $pb.PbFieldType.PM,
-        subBuilder: UserStatus.create)
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i =
+      $pb.BuilderInfo(
+          _omitMessageNames ? '' : 'UserStatusPSH',
+          package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockC9()),
+          createEmptyInstance: create,
+        )
+        ..pc<UserStatus>(
+          1,
+          _omitFieldNames ? '' : 'list',
+          $pb.PbFieldType.PM,
+          subBuilder: UserStatus.create,
+        )
+        ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+    'Will be removed in next major version',
+  )
   UserStatusPSH clone() => UserStatusPSH()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+    'Will be removed in next major version',
+  )
   UserStatusPSH copyWith(void Function(UserStatusPSH) updates) =>
       super.copyWith((message) => updates(message as UserStatusPSH))
           as UserStatusPSH;
@@ -584,10 +664,7 @@ class UserStatusPSH extends $pb.GeneratedMessage {
 }
 
 class UserStatus extends $pb.GeneratedMessage {
-  factory UserStatus({
-    $fixnum.Int64? uid,
-    $core.int? status,
-  }) {
+  factory UserStatus({$fixnum.Int64? uid, $core.int? status}) {
     final $result = create();
     if (uid != null) {
       $result.uid = uid;
@@ -598,29 +675,41 @@ class UserStatus extends $pb.GeneratedMessage {
     return $result;
   }
   UserStatus._() : super();
-  factory UserStatus.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory UserStatus.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+  factory UserStatus.fromBuffer(
+    $core.List<$core.int> i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromBuffer(i, r);
+  factory UserStatus.fromJson(
+    $core.String i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'UserStatus',
-      package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockC9()),
-      createEmptyInstance: create)
-    ..a<$fixnum.Int64>(1, _omitFieldNames ? '' : 'uid', $pb.PbFieldType.OU6,
-        defaultOrMaker: $fixnum.Int64.ZERO)
-    ..a<$core.int>(2, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OU3)
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i =
+      $pb.BuilderInfo(
+          _omitMessageNames ? '' : 'UserStatus',
+          package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockC9()),
+          createEmptyInstance: create,
+        )
+        ..a<$fixnum.Int64>(
+          1,
+          _omitFieldNames ? '' : 'uid',
+          $pb.PbFieldType.OU6,
+          defaultOrMaker: $fixnum.Int64.ZERO,
+        )
+        ..a<$core.int>(2, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OU3)
+        ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+    'Will be removed in next major version',
+  )
   UserStatus clone() => UserStatus()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+    'Will be removed in next major version',
+  )
   UserStatus copyWith(void Function(UserStatus) updates) =>
       super.copyWith((message) => updates(message as UserStatus)) as UserStatus;
 
@@ -661,5 +750,6 @@ class UserStatus extends $pb.GeneratedMessage {
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames =
-    $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames = $core.bool.fromEnvironment(
+  'protobuf.omit_message_names',
+);

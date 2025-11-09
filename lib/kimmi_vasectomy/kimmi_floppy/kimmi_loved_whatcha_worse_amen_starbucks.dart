@@ -6,8 +6,7 @@ enum KimmiLovedWhatchaWorseAmenStarbucks {
 
   DROPDOWN_NAV,
 
-  DROPDOWN_TOP,
-  ;
+  DROPDOWN_TOP;
 
   static KimmiLovedWhatchaWorseAmenStarbucks valueOf(int? statusIndex) {
     try {

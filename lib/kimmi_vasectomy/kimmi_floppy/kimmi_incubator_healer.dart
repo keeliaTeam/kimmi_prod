@@ -9,6 +9,7 @@ class KimmiInkHealer {
     this.title,
     this.url, {
     this.showNavbar = true,
+
     this.showHtmlTitle = false,
   });
 }

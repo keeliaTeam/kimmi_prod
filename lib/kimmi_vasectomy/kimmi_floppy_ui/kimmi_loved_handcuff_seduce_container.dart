@@ -1,5 +1,5 @@
 import 'dart:math';
-import 'kimmi_script_stewart.dart';
+import 'kimmi_distress_timing.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_palate.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -44,7 +44,8 @@ class KimmiLovedHandcuffSeduceContainer
         builder: (logic) {
           return AspectRatio(
             aspectRatio: logic.playController?.value.aspectRatio ?? 1.0,
-            child: logic.playController == null ||
+            child:
+                logic.playController == null ||
                     !logic.playController!.value.isInitialized
                 ? const SizedBox()
                 : VideoPlayer(logic.playController!),
@@ -76,20 +77,22 @@ class KimmiLovedHandcuffSeduceContainer
       width: 220,
       child: ShaderMask(
         shaderCallback: (Rect bounds) {
-          return const LinearGradient(colors: [
-            Color(0xFFA635F8),
-            Color(0xFFFF1F73),
-            Color(0xFFFF8729)
-          ], begin: Alignment.topLeft, end: Alignment.bottomRight)
-              .createShader(bounds);
+          return const LinearGradient(
+            colors: [Color(0xFFA635F8), Color(0xFFFF1F73), Color(0xFFFF8729)],
+            begin: Alignment.topLeft,
+            end: Alignment.bottomRight,
+          ).createShader(bounds);
         },
         blendMode: BlendMode.srcATop,
-        child: Text("kimmi_broderick_bathrobe_handcuff".tr,
-            style: KimmiTamperDaytime.style(
-                color: KimmiDraftJuda.white,
-                fontSize: KimmiIOJuda.isIDLanguage() ? 38 : 44,
-                fontWeight: FontWeight.bold,
-                height: 1.1)),
+        child: Text(
+          "kimmi_broderick_bathrobe_handcuff".tr,
+          style: KimmiTamperDaytime.style(
+            color: KimmiDraftJuda.white,
+            fontSize: KimmiIOJuda.isIDLanguage() ? 38 : 44,
+            fontWeight: FontWeight.bold,
+            height: 1.1,
+          ),
+        ),
       ),
     );
   }
@@ -107,10 +110,11 @@ class KimmiLovedHandcuffSeduceContainer
             Positioned(
               top: 14,
               child: KimmiAsthmaticDesk(
-                  title: 'kimmi_broderick_husband_handcuff'.tr,
-                  width: 215,
-                  height: 56,
-                  onTap: logic.onKimmiHusbandAsthmatic),
+                title: 'kimmi_broderick_husband_handcuff'.tr,
+                width: 215,
+                height: 56,
+                onTap: logic.onKimmiHusbandAsthmatic,
+              ),
             ),
             GetBuilder<KimmiLovedHandcuffSeduceInvoice>(
               id: logic.kimmi_handshake_is_private,
@@ -121,23 +125,30 @@ class KimmiLovedHandcuffSeduceContainer
                         right: isAR ? null : 0,
                         left: isAR ? 0 : null,
                         child: Container(
-                            height: 28,
-                            padding: const EdgeInsets.only(
-                                left: 14, right: 14, top: 5, bottom: 7),
-                            decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(14),
-                                gradient: KimmiPalate.kimmiStoreBgCoat),
-                            child: GetBuilder<KimmiLovedHandcuffSeduceInvoice>(
-                              id: logic.kimmi_handshake_store_assignment,
-                              builder: (logic) {
-                                return Text(
-                                    '${'kimmi_broderick_store'.tr} x${logic.remainingFreeCount}',
-                                    style: KimmiPalate.kimmiStoreTamperDaytime);
-                              },
-                            )),
+                          height: 28,
+                          padding: const EdgeInsets.only(
+                            left: 14,
+                            right: 14,
+                            top: 5,
+                            bottom: 7,
+                          ),
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(14),
+                            gradient: KimmiPalate.kimmiStoreBgCoat,
+                          ),
+                          child: GetBuilder<KimmiLovedHandcuffSeduceInvoice>(
+                            id: logic.kimmi_handshake_store_assignment,
+                            builder: (logic) {
+                              return Text(
+                                '${'kimmi_broderick_store'.tr} x${logic.remainingFreeCount}',
+                                style: KimmiPalate.kimmiStoreTamperDaytime,
+                              );
+                            },
+                          ),
+                        ),
                       );
               },
-            )
+            ),
           ],
         ),
       ),

@@ -14,39 +14,39 @@ class KimmiBroderickSoften extends Translations {
 
   @override
   Map<String, Map<String, String>> get keys => {
-        "en": {
-          "kimmi_broderick_bathtub_virgin_fault_jasmine":
-              "Operation failed, please check the network settings",
-        },
-        "ar": {
-          "kimmi_broderick_bathtub_virgin_fault_jasmine":
-              "فشلت العملية، يرجى التحقق من إعدادات الشبكة أو إعادة المحاولة",
-        },
-        "es": {
-          "kimmi_broderick_bathtub_virgin_fault_jasmine":
-              "Operación fallida, por favor verifique la configuración de red o vuelva a intentarlo",
-        },
-        "hi": {
-          "kimmi_broderick_bathtub_virgin_fault_jasmine":
-              "ऑपरेशन विफल, कृपया नेटवर्क सेटिंग की जाँच करें या पुनः प्रयास करें",
-        },
-        "in": {
-          "kimmi_broderick_bathtub_virgin_fault_jasmine":
-              "operasi gagal, silakan periksa pengaturan jaringan atau coba lagi",
-        },
-        "pt": {
-          "kimmi_broderick_bathtub_virgin_fault_jasmine":
-              "Falha na operação, verifique as configurações de rede ou tente novamente",
-        },
-        "vi": {
-          "kimmi_broderick_bathtub_virgin_fault_jasmine":
-              "hoạt động không thành công, vui lòng kiểm tra cài đặt mạng hoặc thử lại",
-        },
-        "ur": {
-          "kimmi_broderick_bathtub_virgin_fault_jasmine":
-              "آپریشن ناکام ہوگیا، براہ کرم نیٹ ورک کی ترتیبات چیک کریں یا دوبارہ کوشش کریں",
-        }
-      };
+    "en": {
+      "kimmi_broderick_bathtub_virgin_fault_jasmine":
+          "Operation failed, please check the network settings",
+    },
+    "ar": {
+      "kimmi_broderick_bathtub_virgin_fault_jasmine":
+          "فشلت العملية، يرجى التحقق من إعدادات الشبكة أو إعادة المحاولة",
+    },
+    "es": {
+      "kimmi_broderick_bathtub_virgin_fault_jasmine":
+          "Operación fallida, por favor verifique la configuración de red o vuelva a intentarlo",
+    },
+    "hi": {
+      "kimmi_broderick_bathtub_virgin_fault_jasmine":
+          "ऑपरेशन विफल, कृपया नेटवर्क सेटिंग की जाँच करें या पुनः प्रयास करें",
+    },
+    "in": {
+      "kimmi_broderick_bathtub_virgin_fault_jasmine":
+          "operasi gagal, silakan periksa pengaturan jaringan atau coba lagi",
+    },
+    "pt": {
+      "kimmi_broderick_bathtub_virgin_fault_jasmine":
+          "Falha na operação, verifique as configurações de rede ou tente novamente",
+    },
+    "vi": {
+      "kimmi_broderick_bathtub_virgin_fault_jasmine":
+          "hoạt động không thành công, vui lòng kiểm tra cài đặt mạng hoặc thử lại",
+    },
+    "ur": {
+      "kimmi_broderick_bathtub_virgin_fault_jasmine":
+          "آپریشن ناکام ہوگیا، براہ کرم نیٹ ورک کی ترتیبات چیک کریں یا دوبارہ کوشش کریں",
+    },
+  };
 
   int _version = 0;
 

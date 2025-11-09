@@ -13,7 +13,8 @@ class KimmiFeastQuitterMarvel {
   KimmiFeastQuitterMarvel(this.status, this.liveId);
 
   static KimmiFeastQuitterMarvel simple(
-      KimmiFeastQuitterMarvelProcedure status) {
+    KimmiFeastQuitterMarvelProcedure status,
+  ) {
     return KimmiFeastQuitterMarvel(status, null);
   }
 

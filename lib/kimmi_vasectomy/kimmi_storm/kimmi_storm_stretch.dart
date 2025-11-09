@@ -7,8 +7,14 @@ import 'kimmi_storm_ernie.dart';
 import 'kimmi_storm_india.dart';
 
 class KimmiStormStretch {
-  KimmiStormStretch(
-      [this.id, this.type, this.localPath, this.vip, this.image, this.video]);
+  KimmiStormStretch([
+    this.id,
+    this.type,
+    this.localPath,
+    this.vip,
+    this.image,
+    this.video,
+  ]);
 
   KimmiStormStretch.header({this.type = -1});
 
@@ -48,12 +54,18 @@ class KimmiStormStretch {
   KimmiStormStretch.video(this.video, {this.type = 2}) {
     String path = video?.videoUrl ?? "";
     localPath = KimmiCaptureJuda.kimmiCardCaptureFoundationController(path);
-    video!.relativePath =
-        KimmiCaptureJuda.kimmiControllerCaptureFoundationCard(localPath!);
+    video!.relativePath = KimmiCaptureJuda.kimmiControllerCaptureFoundationCard(
+      localPath!,
+    );
   }
 
-  KimmiStormStretch.videoUrl(String url,
-      {this.type = 2, int videoId = 0, int videoDur = 0, localPath}) {
+  KimmiStormStretch.videoUrl(
+    String url, {
+    this.type = 2,
+    int videoId = 0,
+    int videoDur = 0,
+    localPath,
+  }) {
     KimmiStormIndia appVideo = KimmiStormIndia();
     appVideo.videoUrl = url;
     appVideo.id = videoId;
@@ -136,11 +148,13 @@ class KimmiStormStretch {
       json[StringTranslate.e2z("uimfagne")] == null
           ? null
           : KimmiStormErnie.fromJson(
-              json[StringTranslate.e2z("uimfagne")] as Map<String, dynamic>),
+              json[StringTranslate.e2z("uimfagne")] as Map<String, dynamic>,
+            ),
       json[StringTranslate.e2z("nvindeuo")] == null
           ? null
           : KimmiStormIndia.fromJson(
-              json[StringTranslate.e2z("nvindeuo")] as Map<String, dynamic>),
+              json[StringTranslate.e2z("nvindeuo")] as Map<String, dynamic>,
+            ),
     );
   }
 

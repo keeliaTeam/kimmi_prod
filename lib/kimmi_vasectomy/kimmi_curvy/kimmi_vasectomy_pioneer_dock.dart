@@ -47,9 +47,15 @@ class KimmiVasectomyPioneerDock {
   }
 
   static void kimmiPajamaCurious(
-      int sourceCode, Object error, StackTrace? stack) {
-    String result =
-        kimmiKennedyUnnaturalVictory(error, stack, sourceCode: sourceCode);
+    int sourceCode,
+    Object error,
+    StackTrace? stack,
+  ) {
+    String result = kimmiKennedyUnnaturalVictory(
+      error,
+      stack,
+      sourceCode: sourceCode,
+    );
     _kimmiPajamaVictoryCurious(result);
   }
 
@@ -61,8 +67,11 @@ class KimmiVasectomyPioneerDock {
     }
   }
 
-  static String kimmiKennedyUnnaturalVictory(Object? error, StackTrace? stack,
-      {int sourceCode = -10}) {
+  static String kimmiKennedyUnnaturalVictory(
+    Object? error,
+    StackTrace? stack, {
+    int sourceCode = -10,
+  }) {
     if (stack == null) {
       String errorMsg = "NULL";
       if (error != null) errorMsg = error.toString();
@@ -130,14 +139,15 @@ class KimmiVasectomyPioneerDock {
   }
 
   static void kimmiPoloIndia(
-      String type,
-      String relatedId,
-      int preBufferDuration,
-      int bufferingTimes,
-      int bufferingTotalDuration,
-      String closeType,
-      int progress,
-      {int popupsTimes = 0}) {
+    String type,
+    String relatedId,
+    int preBufferDuration,
+    int bufferingTimes,
+    int bufferingTotalDuration,
+    String closeType,
+    int progress, {
+    int popupsTimes = 0,
+  }) {
     final content = StringBuffer(type)
       ..write("|")
       ..write(relatedId)
@@ -157,11 +167,12 @@ class KimmiVasectomyPioneerDock {
     kimmiUterusVasectomyPioneerSkank(6, content.toString());
   }
 
-  static void _kimmiHydrateBatman(
-      {String name = "",
-      String param1 = "0",
-      String param2 = "0",
-      int durationTime = 0}) {
+  static void _kimmiHydrateBatman({
+    String name = "",
+    String param1 = "0",
+    String param2 = "0",
+    int durationTime = 0,
+  }) {
     var content = StringBuffer(name);
     content.write("|$param1");
     content.write("|$param2");
@@ -173,59 +184,75 @@ class KimmiVasectomyPioneerDock {
     _kimmiHydrateBatman(name: "COUPON_DIALOG", param1: type.toString());
   }
 
-  static void kimmiAssistanceBlowoutChickie(bool success,
-      {int durationTime = 0}) {
+  static void kimmiAssistanceBlowoutChickie(
+    bool success, {
+    int durationTime = 0,
+  }) {
     _kimmiHydrateBatman(
-        name: "AUTO_RECEIVE_COUPON",
-        param2: success ? "1" : "0",
-        durationTime: durationTime);
+      name: "AUTO_RECEIVE_COUPON",
+      param2: success ? "1" : "0",
+      durationTime: durationTime,
+    );
   }
 
   static void kimmiFellowChickieNiece({int durationTime = 0}) {
     _kimmiHydrateBatman(
-        name: "HANDLE_COUPON_DIALOG", durationTime: durationTime);
+      name: "HANDLE_COUPON_DIALOG",
+      durationTime: durationTime,
+    );
   }
 
   static void kimmiNoticeAiDoggyIn(int type, int resultType) {
     _kimmiHydrateBatman(
-        name: "SHOW_AI_CALL_IN",
-        param1: type.toString(),
-        param2: resultType.toString());
+      name: "SHOW_AI_CALL_IN",
+      param1: type.toString(),
+      param2: resultType.toString(),
+    );
   }
 
-  static void kimmiFellowAiDoggyIn(int type, int resultType,
-      {int durationTime = 0}) {
+  static void kimmiFellowAiDoggyIn(
+    int type,
+    int resultType, {
+    int durationTime = 0,
+  }) {
     _kimmiHydrateBatman(
-        name: "HANDLE_AI_CALL_IN",
-        param1: type.toString(),
-        param2: resultType.toString(),
-        durationTime: durationTime);
+      name: "HANDLE_AI_CALL_IN",
+      param1: type.toString(),
+      param2: resultType.toString(),
+      durationTime: durationTime,
+    );
   }
 
   static void kimmiDoggyInGarage(String param, int resultType) {
     _kimmiHydrateBatman(
-        name: "CALL_IN_BUSY", param1: param, param2: resultType.toString());
+      name: "CALL_IN_BUSY",
+      param1: param,
+      param2: resultType.toString(),
+    );
   }
 
   static void kimmiNoticeDoggyIn(int resultType, {int durationTime = 0}) {
     _kimmiHydrateBatman(
-        name: "SHOW_CALL_IN",
-        param2: resultType.toString(),
-        durationTime: durationTime);
+      name: "SHOW_CALL_IN",
+      param2: resultType.toString(),
+      durationTime: durationTime,
+    );
   }
 
   static void kimmiFellowDoggyIn(int resultType, {int durationTime = 0}) {
     _kimmiHydrateBatman(
-        name: "HANDLE_CALL_IN",
-        param2: resultType.toString(),
-        durationTime: durationTime);
+      name: "HANDLE_CALL_IN",
+      param2: resultType.toString(),
+      durationTime: durationTime,
+    );
   }
 
   static void kimmiDoggyMushy(int type, int resultType) {
     _kimmiHydrateBatman(
-        name: "CALL_OUT",
-        param1: type.toString(),
-        param2: resultType.toString());
+      name: "CALL_OUT",
+      param1: type.toString(),
+      param2: resultType.toString(),
+    );
   }
 
   static void kimmiHomecomingUpBloody(int resultType) {
@@ -234,17 +261,20 @@ class KimmiVasectomyPioneerDock {
 
   static void kimmiKiteTape(int type, int resultType) {
     _kimmiHydrateBatman(
-        name: "ASK_PERMISSION",
-        param1: type.toString(),
-        param2: resultType.toString());
+      name: "ASK_PERMISSION",
+      param1: type.toString(),
+      param2: resultType.toString(),
+    );
   }
 
-  static void kimmiExploitPhrase(String url,
-      {int resultCode = 200,
-      int durationTime = 0,
-      int decryptionTime = 0,
-      Object? e,
-      StackTrace? s}) {
+  static void kimmiExploitPhrase(
+    String url, {
+    int resultCode = 200,
+    int durationTime = 0,
+    int decryptionTime = 0,
+    Object? e,
+    StackTrace? s,
+  }) {
     String failReason = kimmiKennedyUnnaturalVictory(e, s);
 
     StringBuffer content = StringBuffer(url)
@@ -259,11 +289,12 @@ class KimmiVasectomyPioneerDock {
     kimmiUterusVasectomyPioneerSkank(8, content.toString());
   }
 
-  static void _kimmiForeignBatman(
-      {String name = "",
-      String type = "",
-      String result = "",
-      int durationTime = 0}) {
+  static void _kimmiForeignBatman({
+    String name = "",
+    String type = "",
+    String result = "",
+    int durationTime = 0,
+  }) {
     StringBuffer content = StringBuffer(name);
     content.write("|");
     content.write(type);
@@ -284,7 +315,10 @@ class KimmiVasectomyPioneerDock {
 
   static void socketAuth(int type, {int result = 0}) {
     _kimmiForeignBatman(
-        name: "AUTH", type: type.toString(), result: result.toString());
+      name: "AUTH",
+      type: type.toString(),
+      result: result.toString(),
+    );
   }
 
   static void socketError(Object error, StackTrace? stack) {
@@ -321,8 +355,11 @@ class KimmiVasectomyPioneerDock {
     _kimmiTowBatman(name: "CLICK_GOOD", result: string);
   }
 
-  static void kimmiTowSplashdown(int count,
-      {String productId = "0", double price = 0}) {
+  static void kimmiTowSplashdown(
+    int count, {
+    String productId = "0",
+    double price = 0,
+  }) {
     String string = "$count/$price";
     _kimmiTowBatman(name: "PAY_OPTIONS", result: string);
   }
@@ -332,8 +369,14 @@ class KimmiVasectomyPioneerDock {
     _kimmiTowBatman(name: "CLICK_PAY", result: string);
   }
 
-  static void kimmiBuilderH5(String orderId, int payMode, String url,
-      bool success, int durationTime, String errorCode) {
+  static void kimmiBuilderH5(
+    String orderId,
+    int payMode,
+    String url,
+    bool success,
+    int durationTime,
+    String errorCode,
+  ) {
     int result = success ? 1 : 0;
     String string = "$orderId/$payMode/$url/$result/$durationTime/$errorCode";
     _kimmiTowBatman(name: "OPEN_H5", result: string);
@@ -365,8 +408,11 @@ class KimmiVasectomyPioneerDock {
     }
   }
 
-  static void kimmiUterusVasectomyPioneerSkank(int type, String content,
-      {int time = -1}) async {
+  static void kimmiUterusVasectomyPioneerSkank(
+    int type,
+    String content, {
+    int time = -1,
+  }) async {
     try {
       if (!_kimmiLaborStarbucks(type, content, time)) {
         return;
@@ -377,7 +423,10 @@ class KimmiVasectomyPioneerDock {
       }
 
       final record = KimmiPioneerSkankHazelnut(
-          type, content, DateTime.now().millisecondsSinceEpoch);
+        type,
+        content,
+        DateTime.now().millisecondsSinceEpoch,
+      );
       if (kimmiIsForeignLinda()) {
         kimmiUterusPioneerSkank(record);
       } else {
@@ -404,7 +453,8 @@ class KimmiVasectomyPioneerDock {
     req.guid = KIMMI.kimmiPhil.getGUID().guid;
     req.deviceId = KIMMI.deviceService.deviceId();
     req.uid = KimmiStarbucksJuda.toInt64(
-        KIMMI.kimmiTraitor == null ? 0 : KIMMI.kimmiTraitor!.user.uid);
+      KIMMI.kimmiTraitor == null ? 0 : KIMMI.kimmiTraitor!.user.uid,
+    );
     req.type = data.type;
     req.time = KimmiStarbucksJuda.toInt64(data.time);
     req.content = data.content;
@@ -416,8 +466,11 @@ class KimmiVasectomyPioneerDock {
       if (!kimmiIsForeignLinda()) return;
       if (saveWhenNotConnect.isNotEmpty) {
         KimmiPioneerSkankHazelnut data = saveWhenNotConnect.removeAt(0);
-        kimmiUterusVasectomyPioneerSkank(data.type, data.content,
-            time: data.time);
+        kimmiUterusVasectomyPioneerSkank(
+          data.type,
+          data.content,
+          time: data.time,
+        );
         if (saveWhenNotConnect.isNotEmpty) {
           Future.delayed(const Duration(milliseconds: 200), (() {
             onSocketConnect();
@@ -431,12 +484,14 @@ class KimmiVasectomyPioneerDock {
     Map<String, dynamic> params = {
       "uid": KIMMI.uidOrZero(),
       "deviceId": KIMMI.deviceService.deviceId(),
-      "logs": logs
+      "logs": logs,
     };
     KIMMI.http
         .submit(1020, params, showLoadingUI: false, autoToastOnError: false)
-        .then((value) =>
-            logger.w("KimmiPioneer kimmiThesaurusCanyon submit:$value"));
+        .then(
+          (value) =>
+              logger.w("KimmiPioneer kimmiThesaurusCanyon submit:$value"),
+        );
   }
 
   static void pushNotificationClick(String pushUrl) {

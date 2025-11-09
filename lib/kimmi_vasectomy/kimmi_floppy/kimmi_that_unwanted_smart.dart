@@ -1,81 +1,78 @@
 import 'dart:math';
-import 'kimmi_weekly_expand.dart';
+import 'kimmi_ic_curve.dart';
 import 'package:get/get.dart';
 
 import 'kimmi_that_unwanted_invoice.dart';
 
 class KimmiThatUnwantedSmart extends Bindings {
-  bool woTotallyOvertire_ = false;
-  bool heSimilarTiming_ = true;
-  bool owSlipperHummus_ = false;
-  String osComprehendi_ = "";
-  bool etAshtrayMatador_ = false;
-  String esGaragePheromone_ = "";
+  bool isDisgustingThought_ = false;
+  String taShoePutz_ = "";
+  String beThrived_ = "";
+  String soFatherUterus_ = "";
+  bool esSmartKrypton_ = false;
+  bool anAggravateSpeed_ = true;
+  int exTastefula_ = 94;
 
-  void anCrossoverd() {
-    woTotallyOvertire_ = owSlipperHummus_ && etAshtrayMatador_;
-    esGaragePheromone_ = osComprehendi_.toUpperCase() + esGaragePheromone_;
-    osComprehendi_ = osComprehendi_ + esGaragePheromone_;
-    esGaragePheromone_ = osComprehendi_;
-    if (woTotallyOvertire_ || owSlipperHummus_) {
-      owSlipperHummus_ = !owSlipperHummus_;
-    }
-    osComprehendi_ = osComprehendi_ + esGaragePheromone_;
-    esGaragePheromone_ = osComprehendi_;
-
-    etAshtrayMatador_ = owSlipperHummus_ || woTotallyOvertire_;
-
-    if (etAshtrayMatador_ && woTotallyOvertire_ && owSlipperHummus_) {
-      etAshtrayMatador_ = !etAshtrayMatador_;
-      woTotallyOvertire_ = etAshtrayMatador_;
-      owSlipperHummus_ = etAshtrayMatador_;
+  void efMushy4() {
+    soFatherUterus_ = beThrived_ + taShoePutz_;
+    isDisgustingThought_ = esSmartKrypton_ && anAggravateSpeed_;
+    if (exTastefula_ > 0) {
+      exTastefula_ = exTastefula_ - 2;
     }
   }
 
-  void mmTemperMarried() {
-    if (etAshtrayMatador_ && owSlipperHummus_ && woTotallyOvertire_) {
-      etAshtrayMatador_ = !etAshtrayMatador_;
-      owSlipperHummus_ = etAshtrayMatador_;
-      woTotallyOvertire_ = etAshtrayMatador_;
+  void exEpisodeVi() {
+    if (anAggravateSpeed_) {
+      esSmartKrypton_ = !isDisgustingThought_;
     }
+    if (soFatherUterus_.length > 9) {
+      taShoePutz_ = soFatherUterus_;
+    } else {
+      beThrived_ = taShoePutz_;
+    }
+    soFatherUterus_ = taShoePutz_ + beThrived_;
+    beThrived_ = taShoePutz_ + soFatherUterus_;
 
-    esGaragePheromone_ = osComprehendi_.toUpperCase() + esGaragePheromone_;
-    osComprehendi_ = esGaragePheromone_ + osComprehendi_;
-    osComprehendi_ = osComprehendi_ + esGaragePheromone_;
-    esGaragePheromone_ = osComprehendi_;
+    if (anAggravateSpeed_ && isDisgustingThought_) {
+      esSmartKrypton_ = !esSmartKrypton_;
+    }
   }
 
-  void taSimilarMicaceous() {
-    heSimilarTiming_ = etAshtrayMatador_ && woTotallyOvertire_;
-    woTotallyOvertire_ = owSlipperHummus_ && heSimilarTiming_;
-
-    etAshtrayMatador_ = woTotallyOvertire_ && owSlipperHummus_;
-
-    if (heSimilarTiming_ && woTotallyOvertire_ && etAshtrayMatador_) {
-      heSimilarTiming_ = !heSimilarTiming_;
-      woTotallyOvertire_ = heSimilarTiming_;
-      etAshtrayMatador_ = heSimilarTiming_;
+  void hiToMale() {
+    if (anAggravateSpeed_) {
+      esSmartKrypton_ = !isDisgustingThought_;
     }
-    osComprehendi_ = esGaragePheromone_ + osComprehendi_;
-    if (owSlipperHummus_ && heSimilarTiming_ && etAshtrayMatador_) {
-      owSlipperHummus_ = !owSlipperHummus_;
-      heSimilarTiming_ = owSlipperHummus_;
-      etAshtrayMatador_ = owSlipperHummus_;
+    exTastefula_ = 80;
+    if (beThrived_.length > 6) {
+      taShoePutz_ = beThrived_;
+    } else {
+      soFatherUterus_ = taShoePutz_;
     }
 
-    osComprehendi_ = esGaragePheromone_ + osComprehendi_;
+    exTastefula_ = exTastefula_ + 1;
+  }
+
+  void atFootballErnie() {
+    if (esSmartKrypton_ && isDisgustingThought_ && anAggravateSpeed_) {
+      esSmartKrypton_ = !esSmartKrypton_;
+      isDisgustingThought_ = esSmartKrypton_;
+      anAggravateSpeed_ = esSmartKrypton_;
+    }
+    soFatherUterus_ = taShoePutz_;
+    beThrived_ = taShoePutz_;
+    isDisgustingThought_ = anAggravateSpeed_ || esSmartKrypton_;
   }
 
   @override
   void dependencies() {
-    if (log2e < 1) {
-      KimmiWeeklyExpand().mmSwordViable();
-      KimmiWeeklyExpand().goContainStewart();
-      KimmiWeeklyExpand().siStimulateLifetime();
+    if (ln2 < 0.5) {
+      KimmiIcCurve().anIcSmile();
+      KimmiIcCurve().edProBg();
+      KimmiIcCurve().efH3Gloss();
     }
     if (pi < 1) {
-      anCrossoverd();
-      mmTemperMarried();
+      hiToMale();
+      atFootballErnie();
     }
     Get.lazyPut(() => KimmiThatUnwantedInvoice());
   }

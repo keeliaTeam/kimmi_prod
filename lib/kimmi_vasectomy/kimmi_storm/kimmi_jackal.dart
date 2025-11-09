@@ -11,8 +11,8 @@ class KimmiJackal {
     ..icon = json['icon'] as String?;
 
   Map<String, dynamic> toJson(KimmiJackal instance) => <String, dynamic>{
-        'id': instance.id,
-        'name': instance.name,
-        'icon': instance.icon,
-      };
+    'id': instance.id,
+    'name': instance.name,
+    'icon': instance.icon,
+  };
 }

@@ -5,14 +5,14 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 class KimmiShimmyTeepee extends StatefulWidget {
-  KimmiShimmyTeepee(
-      {Key? key,
-      required this.child,
-      this.alphaStart = 0,
-      this.alphaEnd = 1,
-      this.repeat = false,
-      this.duration = const Duration(seconds: 1)})
-      : super(key: key);
+  KimmiShimmyTeepee({
+    Key? key,
+    required this.child,
+    this.alphaStart = 0,
+    this.alphaEnd = 1,
+    this.repeat = false,
+    this.duration = const Duration(seconds: 1),
+  }) : super(key: key);
 
   Widget child;
   double alphaStart;
@@ -32,10 +32,13 @@ class _KimmiShimmyTeepeeViking extends State<KimmiShimmyTeepee>
   @override
   void initState() {
     super.initState();
-    _animationController =
-        AnimationController(vsync: this, duration: widget.duration);
+    _animationController = AnimationController(
+      vsync: this,
+      duration: widget.duration,
+    );
     _animation = Tween(begin: widget.alphaStart, end: widget.alphaEnd).animate(
-        CurvedAnimation(parent: _animationController, curve: Curves.linear));
+      CurvedAnimation(parent: _animationController, curve: Curves.linear),
+    );
     if (widget.repeat) {
       _animationController.repeat();
     } else {
@@ -55,10 +58,7 @@ class _KimmiShimmyTeepeeViking extends State<KimmiShimmyTeepee>
       animation: _animation,
       child: widget.child,
       builder: (BuildContext ctx, child) {
-        return Opacity(
-          opacity: _animation.value,
-          child: child,
-        );
+        return Opacity(opacity: _animation.value, child: child);
       },
     );
   }
@@ -78,77 +78,127 @@ class KimmiTwistTeepeeDecode {
     if (animateDuration.inMilliseconds + startDelay.inMilliseconds >
         duration.inMilliseconds) {
       duration = Duration(
-          milliseconds:
-              animateDuration.inMilliseconds + startDelay.inMilliseconds);
+        milliseconds:
+            animateDuration.inMilliseconds + startDelay.inMilliseconds,
+      );
     }
   }
 
-  KimmiTwistTeepeeDecode alpha(List<double> alphaValues,
-      {Duration duration = const Duration(seconds: 1),
-      Curve curve = Curves.linear,
-      Duration startDelay = const Duration(milliseconds: 0)}) {
-    animations.add(PropertyAnimation<double>(
-        AnimationProperty.alpha, alphaValues, duration, curve));
+  KimmiTwistTeepeeDecode alpha(
+    List<double> alphaValues, {
+    Duration duration = const Duration(seconds: 1),
+    Curve curve = Curves.linear,
+    Duration startDelay = const Duration(milliseconds: 0),
+  }) {
+    animations.add(
+      PropertyAnimation<double>(
+        AnimationProperty.alpha,
+        alphaValues,
+        duration,
+        curve,
+      ),
+    );
     _increaseDurationIfNeed(duration, startDelay);
     return this;
   }
 
-  KimmiTwistTeepeeDecode scale(List<double> scaleValues,
-      {Duration duration = const Duration(seconds: 1),
-      Curve curve = Curves.linear,
-      Duration startDelay = const Duration(milliseconds: 0)}) {
-    animations.add(PropertyAnimation<double>(
-        AnimationProperty.scale, scaleValues, duration, curve));
+  KimmiTwistTeepeeDecode scale(
+    List<double> scaleValues, {
+    Duration duration = const Duration(seconds: 1),
+    Curve curve = Curves.linear,
+    Duration startDelay = const Duration(milliseconds: 0),
+  }) {
+    animations.add(
+      PropertyAnimation<double>(
+        AnimationProperty.scale,
+        scaleValues,
+        duration,
+        curve,
+      ),
+    );
     _increaseDurationIfNeed(duration, startDelay);
     return this;
   }
 
-  KimmiTwistTeepeeDecode scaleX(List<double> scaleValues,
-      {Duration duration = const Duration(seconds: 1),
-      Curve curve = Curves.linear,
-      Duration startDelay = const Duration(milliseconds: 0)}) {
-    animations.add(PropertyAnimation<double>(
-        AnimationProperty.scaleX, scaleValues, duration, curve));
+  KimmiTwistTeepeeDecode scaleX(
+    List<double> scaleValues, {
+    Duration duration = const Duration(seconds: 1),
+    Curve curve = Curves.linear,
+    Duration startDelay = const Duration(milliseconds: 0),
+  }) {
+    animations.add(
+      PropertyAnimation<double>(
+        AnimationProperty.scaleX,
+        scaleValues,
+        duration,
+        curve,
+      ),
+    );
     _increaseDurationIfNeed(duration, startDelay);
     return this;
   }
 
-  KimmiTwistTeepeeDecode scaleY(List<double> scaleValues,
-      {Duration duration = const Duration(seconds: 1),
-      Curve curve = Curves.linear,
-      Duration startDelay = const Duration(milliseconds: 0)}) {
-    animations.add(PropertyAnimation<double>(
-        AnimationProperty.scaleY, scaleValues, duration, curve));
+  KimmiTwistTeepeeDecode scaleY(
+    List<double> scaleValues, {
+    Duration duration = const Duration(seconds: 1),
+    Curve curve = Curves.linear,
+    Duration startDelay = const Duration(milliseconds: 0),
+  }) {
+    animations.add(
+      PropertyAnimation<double>(
+        AnimationProperty.scaleY,
+        scaleValues,
+        duration,
+        curve,
+      ),
+    );
     _increaseDurationIfNeed(duration, startDelay);
     return this;
   }
 
-  KimmiTwistTeepeeDecode translate(List<Offset> translateValues,
-      {Duration duration = const Duration(seconds: 1),
-      Curve curve = Curves.linear,
-      Duration startDelay = const Duration(milliseconds: 0)}) {
-    animations.add(PropertyAnimation<Offset>(
-        AnimationProperty.translation, translateValues, duration, curve));
+  KimmiTwistTeepeeDecode translate(
+    List<Offset> translateValues, {
+    Duration duration = const Duration(seconds: 1),
+    Curve curve = Curves.linear,
+    Duration startDelay = const Duration(milliseconds: 0),
+  }) {
+    animations.add(
+      PropertyAnimation<Offset>(
+        AnimationProperty.translation,
+        translateValues,
+        duration,
+        curve,
+      ),
+    );
     _increaseDurationIfNeed(duration, startDelay);
     return this;
   }
 
-  KimmiTwistTeepeeDecode rotation(List<double> rotationValues,
-      {Duration duration = const Duration(seconds: 1),
-      Curve curve = Curves.linear,
-      Duration startDelay = const Duration(milliseconds: 0)}) {
-    animations.add(PropertyAnimation<double>(
-        AnimationProperty.rotation, rotationValues, duration, curve));
+  KimmiTwistTeepeeDecode rotation(
+    List<double> rotationValues, {
+    Duration duration = const Duration(seconds: 1),
+    Curve curve = Curves.linear,
+    Duration startDelay = const Duration(milliseconds: 0),
+  }) {
+    animations.add(
+      PropertyAnimation<double>(
+        AnimationProperty.rotation,
+        rotationValues,
+        duration,
+        curve,
+      ),
+    );
     _increaseDurationIfNeed(duration, startDelay);
     return this;
   }
 
   Widget build({int repeatTime = 1}) {
     return EasyAnimation(
-        child: child,
-        animations: animations,
-        duration: duration,
-        repeatTime: repeatTime);
+      child: child,
+      animations: animations,
+      duration: duration,
+      repeatTime: repeatTime,
+    );
   }
 }
 
@@ -168,18 +218,24 @@ class PropertyAnimation<T> {
     this.animationController = animationController;
     List<TweenSequenceItem<T>> tweens = [];
     for (int i = 0; i < values.length - 1; i++) {
-      tweens.add(TweenSequenceItem<T>(
+      tweens.add(
+        TweenSequenceItem<T>(
           tween: Tween(begin: values[i], end: values[i + 1]),
-          weight: 100.0 / values.length));
+          weight: 100.0 / values.length,
+        ),
+      );
     }
-    _animation = TweenSequence(tweens).animate(CurvedAnimation(
-      parent: animationController,
-      curve: Interval(
+    _animation = TweenSequence(tweens).animate(
+      CurvedAnimation(
+        parent: animationController,
+        curve: Interval(
           startTime.inMilliseconds /
               animationController.duration!.inMilliseconds,
           (startTime.inMilliseconds + duration.inMilliseconds) /
-              animationController.duration!.inMilliseconds),
-    ));
+              animationController.duration!.inMilliseconds,
+        ),
+      ),
+    );
   }
 
   Widget buildAnimationWidget(Widget child) {
@@ -225,8 +281,13 @@ class PropertyAnimation<T> {
     return result;
   }
 
-  PropertyAnimation(this.propertyName, this.values, this.duration, this.curve,
-      {this.startTime = const Duration(milliseconds: 0)});
+  PropertyAnimation(
+    this.propertyName,
+    this.values,
+    this.duration,
+    this.curve, {
+    this.startTime = const Duration(milliseconds: 0),
+  });
 }
 
 class EasyAnimation extends StatefulWidget {
@@ -258,8 +319,10 @@ class _EasyAnimationState extends State<EasyAnimation>
   void initState() {
     super.initState();
     animations = widget.animations;
-    _animationController =
-        AnimationController(vsync: this, duration: widget.duration);
+    _animationController = AnimationController(
+      vsync: this,
+      duration: widget.duration,
+    );
     _animationController.addStatusListener((status) {
       if (status == AnimationStatus.completed) {
         animatedTimes++;

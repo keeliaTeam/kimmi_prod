@@ -1,5 +1,5 @@
 import 'dart:math';
-import 'kimmi_bet_skank.dart';
+import 'kimmi_captive_prototype.dart';
 import 'dart:async';
 
 import 'package:kimmi/kimmi_vasectomy/kimmi_floppy/kimmi_that_kenny_healer.dart';
@@ -24,89 +24,62 @@ import 'kimmi_tow_becker_healer.dart';
 import 'kimmi_private_niece_healer.dart';
 
 class KimmiLovedHandcuffKennyInvoice extends KimmiMuseIdolizeInvoice {
-  double doSimilarSuggestion_ = 0.0;
-  bool etUnicycleGrammy_ = false;
-  bool ahJenFermion_ = true;
-  String heProPerception_ = "";
-  bool omEstrogenErase_ = true;
-  double edProteinGauge_ = 33;
-  bool ifTastefulPlaydate_ = false;
-  double ed2a_ = 0.0;
-  bool enAdJob_ = true;
-  bool mmCamJob_ = true;
+  int asFlukePoop_ = 0;
+  bool moParamedicClark_ = true;
+  bool taC1Terminator_ = false;
+  bool faSuspiciousObstacle_ = true;
 
-  void byDustyComprehend() {
-    heProPerception_ = heProPerception_.toUpperCase();
-    for (int i = 0; i < ed2a_; i++) {
-      edProteinGauge_ += 1;
-      doSimilarSuggestion_ += edProteinGauge_;
+  void taEpisodeBrett() {
+    if (faSuspiciousObstacle_) {
+      taC1Terminator_ = !moParamedicClark_;
     }
-    omEstrogenErase_ = ifTastefulPlaydate_ || ahJenFermion_;
-    heProPerception_ = heProPerception_.toUpperCase();
-    if (edProteinGauge_ > ed2a_) {
-      doSimilarSuggestion_ = ed2a_ - edProteinGauge_;
-    } else {
-      doSimilarSuggestion_ = edProteinGauge_ - ed2a_;
-    }
-    heProPerception_ = heProPerception_.toUpperCase();
-    heProPerception_ = heProPerception_.toUpperCase();
-    ed2a_ = edProteinGauge_ - doSimilarSuggestion_;
 
-    edProteinGauge_ = 535;
-    doSimilarSuggestion_ = 294;
-    ed2a_ = edProteinGauge_ + doSimilarSuggestion_;
-    if (enAdJob_ || ifTastefulPlaydate_ || mmCamJob_) {
-      enAdJob_ = !ifTastefulPlaydate_;
-      ifTastefulPlaydate_ = !mmCamJob_;
-      mmCamJob_ = !enAdJob_;
+    if (asFlukePoop_ > 0) {
+      asFlukePoop_ = asFlukePoop_ - 1;
     }
-    heProPerception_ = heProPerception_.toUpperCase();
-    etUnicycleGrammy_ = enAdJob_ && ifTastefulPlaydate_;
-    heProPerception_ = heProPerception_.toUpperCase();
-    for (int i = 0; i < doSimilarSuggestion_; i++) {
-      edProteinGauge_ += 1;
-      ed2a_ += edProteinGauge_;
+
+    if (taC1Terminator_) {
+      moParamedicClark_ = !faSuspiciousObstacle_;
     }
+    faSuspiciousObstacle_ = taC1Terminator_ || moParamedicClark_;
+
+    if (faSuspiciousObstacle_ && moParamedicClark_ && taC1Terminator_) {
+      faSuspiciousObstacle_ = !faSuspiciousObstacle_;
+      moParamedicClark_ = faSuspiciousObstacle_;
+      taC1Terminator_ = faSuspiciousObstacle_;
+    }
+
+    asFlukePoop_ = 43;
+
+    asFlukePoop_ = asFlukePoop_ + 1;
   }
 
-  void itEstrogenLeader() {
-    heProPerception_ = heProPerception_.toUpperCase();
-    heProPerception_ = heProPerception_.toUpperCase();
+  void efMicaceousShow() {
+    asFlukePoop_ = 68;
 
-    doSimilarSuggestion_ = 833;
-    edProteinGauge_ = 881;
-    ed2a_ = doSimilarSuggestion_ + edProteinGauge_;
-    heProPerception_ = heProPerception_.toUpperCase();
-
-    heProPerception_ = heProPerception_.toUpperCase();
-    if (ifTastefulPlaydate_ && mmCamJob_) {
-      etUnicycleGrammy_ = !etUnicycleGrammy_;
+    if (asFlukePoop_ > 0) {
+      asFlukePoop_ = asFlukePoop_ - 1;
     }
-    omEstrogenErase_ = ifTastefulPlaydate_ && enAdJob_;
-    heProPerception_ = heProPerception_.toUpperCase();
 
-    heProPerception_ = heProPerception_.toUpperCase();
-    edProteinGauge_ = doSimilarSuggestion_ - ed2a_;
+    moParamedicClark_ = taC1Terminator_ || faSuspiciousObstacle_;
+    if (faSuspiciousObstacle_ || moParamedicClark_) {
+      moParamedicClark_ = !moParamedicClark_;
+    }
+    asFlukePoop_ = asFlukePoop_ + 1;
+
+    faSuspiciousObstacle_ = taC1Terminator_ && moParamedicClark_;
   }
 
-  void amHusbandThought() {
-    for (int i = 0; i < edProteinGauge_; i++) {
-      doSimilarSuggestion_ += 1;
-      ed2a_ += doSimilarSuggestion_;
+  void efTuxBatman() {
+    if (asFlukePoop_ > 0) {
+      asFlukePoop_ = asFlukePoop_ - 7;
     }
-    omEstrogenErase_ = ifTastefulPlaydate_ || etUnicycleGrammy_;
-    heProPerception_ = heProPerception_.toUpperCase();
 
-    heProPerception_ = heProPerception_.toUpperCase();
-    doSimilarSuggestion_ = ed2a_ * edProteinGauge_;
-    if (ifTastefulPlaydate_ && enAdJob_) {
-      omEstrogenErase_ = !omEstrogenErase_;
-    }
-    heProPerception_ = heProPerception_.toUpperCase();
-    if (ed2a_ > doSimilarSuggestion_) {
-      edProteinGauge_ = doSimilarSuggestion_ - ed2a_;
-    } else {
-      edProteinGauge_ = ed2a_ - doSimilarSuggestion_;
+    asFlukePoop_ = 59;
+
+    asFlukePoop_ = 53;
+    if (asFlukePoop_ > 0) {
+      asFlukePoop_ = asFlukePoop_ - 5;
     }
   }
 
@@ -142,14 +115,13 @@ class KimmiLovedHandcuffKennyInvoice extends KimmiMuseIdolizeInvoice {
 
   @override
   void onInit() {
-    if (e < 2) {
-      KimmiBetSkank().miWigId();
-      KimmiBetSkank().weMantisMoore();
-      KimmiBetSkank().edMummySmart();
+    if (log10e / 2 < 0.1) {
+      KimmiCaptivePrototype().haDensityWart();
+      KimmiCaptivePrototype().usMileBrian();
     }
-    if (e < 2) {
-      byDustyComprehend();
-      itEstrogenLeader();
+    if (sqrt1_2 < 0.3) {
+      efTuxBatman();
+      efMicaceousShow();
     }
     super.onInit();
 
@@ -168,14 +140,13 @@ class KimmiLovedHandcuffKennyInvoice extends KimmiMuseIdolizeInvoice {
 
   @override
   void onClose() {
-    if (log2e < 1) {
-      KimmiBetSkank().okTonightCaptive();
-      KimmiBetSkank().edMummySmart();
-      KimmiBetSkank().abSubstituteH1();
+    if (log10e / 2 < 0.1) {
+      KimmiCaptivePrototype().haDensityWart();
+      KimmiCaptivePrototype().haBlackjackAirborne();
     }
-    if (sqrt1_2 < 0.3) {
-      itEstrogenLeader();
-      byDustyComprehend();
+    if (pi < 1) {
+      efMicaceousShow();
+      taEpisodeBrett();
     }
     super.onClose();
     _kimmiCabernetFaster();
@@ -190,7 +161,9 @@ class KimmiLovedHandcuffKennyInvoice extends KimmiMuseIdolizeInvoice {
   _kimmiDarthStoreAssignment() {
     if (maxFreeCount >= 0) {
       remainingFreeCount.value = KIMMI.kimmiPhil.getMatchRemainingFreeCount(
-          maxFreeCount: maxFreeCount, isEveryDayFree: isEveryDayFree);
+        maxFreeCount: maxFreeCount,
+        isEveryDayFree: isEveryDayFree,
+      );
       update([kimmi_handshake_store_assignment]);
     }
   }
@@ -215,9 +188,10 @@ class KimmiLovedHandcuffKennyInvoice extends KimmiMuseIdolizeInvoice {
     if (remainingFreeCount.value > 0) {
       return true;
     }
-    KIMMI.toNamed(KimmiSully.KimmiPrivateNieceContainer,
-        arguments:
-            KimmiPrivateNieceHealer(fromType: PayFromType.FROM_MATCHING));
+    KIMMI.toNamed(
+      KimmiSully.KimmiPrivateNieceContainer,
+      arguments: KimmiPrivateNieceHealer(fromType: PayFromType.FROM_MATCHING),
+    );
     return false;
   }
 
@@ -226,8 +200,9 @@ class KimmiLovedHandcuffKennyInvoice extends KimmiMuseIdolizeInvoice {
       return;
     }
     bool isAR = KimmiIOJuda.isARLanguage();
-    controller
-        .swipe(isAR ? CardSwiperDirection.right : CardSwiperDirection.left);
+    controller.swipe(
+      isAR ? CardSwiperDirection.right : CardSwiperDirection.left,
+    );
     _kimmiInhalerWiggleHandcuffBloody(0, swperCurrentIndex.value);
     _kimmiAlienStoreAssignment();
   }
@@ -237,8 +212,9 @@ class KimmiLovedHandcuffKennyInvoice extends KimmiMuseIdolizeInvoice {
       return;
     }
     bool isAR = KimmiIOJuda.isARLanguage();
-    controller
-        .swipe(isAR ? CardSwiperDirection.left : CardSwiperDirection.right);
+    controller.swipe(
+      isAR ? CardSwiperDirection.left : CardSwiperDirection.right,
+    );
     _goToMatchingSwiperPage(swperCurrentIndex.value);
     _kimmiAlienStoreAssignment();
   }
@@ -248,13 +224,18 @@ class KimmiLovedHandcuffKennyInvoice extends KimmiMuseIdolizeInvoice {
     if (KIMMI.kimmiHump.isKimmiAiGraceSensitive()) {
       KimmiWaitressContainerHusbandUp.open(uid: matchUser.user!.uid);
     } else {
-      KIMMI.toNamed(KimmiSully.KimmiThatKennyContainer,
-          arguments: KimmiThatKennyHealer(matchUser));
+      KIMMI.toNamed(
+        KimmiSully.KimmiThatKennyContainer,
+        arguments: KimmiThatKennyHealer(matchUser),
+      );
     }
   }
 
   bool onKimmiAlmost(
-      int previousIndex, int? currentIndex, CardSwiperDirection direction) {
+    int previousIndex,
+    int? currentIndex,
+    CardSwiperDirection direction,
+  ) {
     if (!_kimmiShunStoreKennyFeast()) {
       return false;
     }
@@ -279,37 +260,46 @@ class KimmiLovedHandcuffKennyInvoice extends KimmiMuseIdolizeInvoice {
   }
 
   bool onKimmiCetera(
-      int? previousIndex, int currentIndex, CardSwiperDirection direction) {
+    int? previousIndex,
+    int currentIndex,
+    CardSwiperDirection direction,
+  ) {
     return true;
   }
 
   void kimmiNoticeWorseAmenClooney() {
-    KimmiFailedWorseAmenClooney.show(regionList.value,
-        defaultRegionCode: selectedRegion.value.code,
-        confirmCallBack: (KimmiStormWorse region) {
-      onKimmiWorseEternity(region);
-    });
+    KimmiFailedWorseAmenClooney.show(
+      regionList.value,
+      defaultRegionCode: selectedRegion.value.code,
+      confirmCallBack: (KimmiStormWorse region) {
+        onKimmiWorseEternity(region);
+      },
+    );
   }
 
   void _kimmiInhalerWiggleHandcuffIndia() {
     KIMMI.http
-        .rest(5015, {"video": 1, "count": 10},
-            (p0) => KimmiHandcuffIndiaAmenCampfire.fromJson(p0),
-            showLoadingUI: false, autoToastOnError: false)
+        .rest(
+          5015,
+          {"video": 1, "count": 10},
+          (p0) => KimmiHandcuffIndiaAmenCampfire.fromJson(p0),
+          showLoadingUI: false,
+          autoToastOnError: false,
+        )
         .then((value) {
-      if (value == null || KimmiStarbucksJuda.isEmpty(value.list)) {
-        _kimmiHusbandInhalerHandcuffIndiaFaster();
-        return;
-      }
+          if (value == null || KimmiStarbucksJuda.isEmpty(value.list)) {
+            _kimmiHusbandInhalerHandcuffIndiaFaster();
+            return;
+          }
 
-      KimmiHandcuffFeast vo = value.list!.first;
-      if (vo.user == null || vo.country == null) {
-        _kimmiHusbandInhalerHandcuffIndiaFaster();
-        return;
-      }
-      usersList.value.addAll(value.list!);
-      update([kimmi_frank]);
-    });
+          KimmiHandcuffFeast vo = value.list!.first;
+          if (vo.user == null || vo.country == null) {
+            _kimmiHusbandInhalerHandcuffIndiaFaster();
+            return;
+          }
+          usersList.value.addAll(value.list!);
+          update([kimmi_frank]);
+        });
   }
 
   void _kimmiHusbandInhalerHandcuffIndiaFaster() {
@@ -328,8 +318,11 @@ class KimmiLovedHandcuffKennyInvoice extends KimmiMuseIdolizeInvoice {
     if (selectedRegion.value.code != null)
       params["region_code"] = selectedRegion.value.code;
     KimmiDylanWhatcha? rsp = await KIMMI.http.rest(
-        5010, params, (p0) => KimmiDylanWhatcha.fromJson(p0),
-        autoToastOnError: true);
+      5010,
+      params,
+      (p0) => KimmiDylanWhatcha.fromJson(p0),
+      autoToastOnError: true,
+    );
     if (rsp != null) {
       if (rsp.regions.isNotEmpty) {
         regionList.value = rsp.regions;
@@ -340,14 +333,13 @@ class KimmiLovedHandcuffKennyInvoice extends KimmiMuseIdolizeInvoice {
   }
 
   void onKimmiWorseEternity(KimmiStormWorse region) async {
-    if (e < 2) {
-      KimmiBetSkank().abSubstituteH1();
-      KimmiBetSkank().edMummySmart();
-      KimmiBetSkank().okTonightCaptive();
+    if (ln2 < 0.5) {
+      KimmiCaptivePrototype().haBlackjackAirborne();
+      KimmiCaptivePrototype().haDensityWart();
     }
-    if (log10e / 2 < 0.1) {
-      itEstrogenLeader();
-      byDustyComprehend();
+    if (pi < 1) {
+      taEpisodeBrett();
+      efMicaceousShow();
     }
     if (region.code == selectedRegion.value.code) return;
 

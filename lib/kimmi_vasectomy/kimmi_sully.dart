@@ -150,7 +150,7 @@ class KimmiSully {
       KimmiSaturnScareNieceContainer,
       KimmiPrivateNieceContainer,
       KimmiScareAmenContainer,
-      KimmiTowBeckerContainer
+      KimmiTowBeckerContainer,
     ].contains(Get.currentRoute);
   }
 }
@@ -160,162 +160,202 @@ class KimmiFloppy {
 
   static final routes = [
     GetPage(
-        name: KimmiSully.KimmiCageyContainer,
-        page: () => KimmiCageyContainer(),
-        binding: KimmiCageySmart()),
+      name: KimmiSully.KimmiCageyContainer,
+      page: () => KimmiCageyContainer(),
+      binding: KimmiCageySmart(),
+    ),
     GetPage(
-        name: KimmiSully.KimmiColombianContainer,
-        page: () => KimmiColombianContainer(),
-        binding: KimmiColombianSmart(),
-        transition: Transition.fadeIn),
+      name: KimmiSully.KimmiColombianContainer,
+      page: () => KimmiColombianContainer(),
+      binding: KimmiColombianSmart(),
+      transition: Transition.fadeIn,
+    ),
     GetPage(
-        name: KimmiSully.KimmiCavityContainer,
-        page: () => KimmiCavityContainer(),
-        binding: KimmiCavitySmart(),
-        transition: Transition.fadeIn),
+      name: KimmiSully.KimmiCavityContainer,
+      page: () => KimmiCavityContainer(),
+      binding: KimmiCavitySmart(),
+      transition: Transition.fadeIn,
+    ),
     GetPage(
-        name: KimmiSully.KimmiCavityHolder,
-        page: () => KimmiCavityHolderContainer(),
-        binding: KimmiCavityHolderSmart(),
-        opaque: false,
-        transition: Transition.downToUp),
+      name: KimmiSully.KimmiCavityHolder,
+      page: () => KimmiCavityHolderContainer(),
+      binding: KimmiCavityHolderSmart(),
+      opaque: false,
+      transition: Transition.downToUp,
+    ),
     GetPage(
-        name: KimmiSully.KimmiDoggySmileContainer,
-        page: () => const KimmiDoggySmileContainer(),
-        binding: KimmiDoggySmileSmart()),
+      name: KimmiSully.KimmiDoggySmileContainer,
+      page: () => const KimmiDoggySmileContainer(),
+      binding: KimmiDoggySmileSmart(),
+    ),
     GetPage(
-        name: KimmiSully.KimmiIndiaWaitressContainer,
-        page: () => const KimmiIndiaWaitressContainer(),
-        binding: KimmiIndiaWaitressSmart()),
+      name: KimmiSully.KimmiIndiaWaitressContainer,
+      page: () => const KimmiIndiaWaitressContainer(),
+      binding: KimmiIndiaWaitressSmart(),
+    ),
     GetPage(
-        name: KimmiSully.KimmiIndiaWaitressSyndromeContainer,
-        page: () => KimmiIndiaWaitressSyndromeContainer(),
-        binding: KimmiIndiaWaitressSyndromeSmart()),
+      name: KimmiSully.KimmiIndiaWaitressSyndromeContainer,
+      page: () => KimmiIndiaWaitressSyndromeContainer(),
+      binding: KimmiIndiaWaitressSyndromeSmart(),
+    ),
+
     GetPage(
-        name: KimmiSully.KimmiInkContainer,
-        page: () => KimmiInkContainer(),
-        binding: KimmiInkSmart()),
+      name: KimmiSully.KimmiInkContainer,
+      page: () => KimmiInkContainer(),
+      binding: KimmiInkSmart(),
+    ),
     GetPage(
-        name: KimmiSully.KimmiTimingVasectomyContainer,
-        page: () => KimmiTimingVasectomyContainer(),
-        binding: KimmiTimingVasectomySmart()),
+      name: KimmiSully.KimmiTimingVasectomyContainer,
+      page: () => KimmiTimingVasectomyContainer(),
+      binding: KimmiTimingVasectomySmart(),
+    ),
     GetPage(
-        name: KimmiSully.KimmiSecurityContainer,
-        page: () => KimmiSecurityContainer(),
-        binding: KimmiSecuritySmart()),
+      name: KimmiSully.KimmiSecurityContainer,
+      page: () => KimmiSecurityContainer(),
+      binding: KimmiSecuritySmart(),
+    ),
     GetPage(
-        name: KimmiSully.KimmiThatContainer,
-        page: () => KimmiThatContainer(),
-        binding: KimmiThatSmart(),
-        transition: Transition.noTransition),
+      name: KimmiSully.KimmiThatContainer,
+      page: () => KimmiThatContainer(),
+      binding: KimmiThatSmart(),
+      transition: Transition.noTransition,
+    ),
     GetPage(
-        name: KimmiSully.KimmiThatKennyContainer,
-        page: () => const KimmiThatKennyContainer(),
-        binding: KimmiThatKennySmart(),
-        transition: Transition.noTransition),
+      name: KimmiSully.KimmiThatKennyContainer,
+      page: () => const KimmiThatKennyContainer(),
+      binding: KimmiThatKennySmart(),
+      transition: Transition.noTransition,
+    ),
     GetPage(
-        name: KimmiSully.KimmiThatSeduceContainer,
-        page: () => KimmiThatSeduceContainer(),
-        binding: KimmiThatSeduceSmart(),
-        transition: Transition.noTransition),
+      name: KimmiSully.KimmiThatSeduceContainer,
+      page: () => KimmiThatSeduceContainer(),
+      binding: KimmiThatSeduceSmart(),
+      transition: Transition.noTransition,
+    ),
     GetPage(
-        name: KimmiSully.KimmiThatUnwantedContainer,
-        page: () => KimmiThatUnwantedContainer(),
-        binding: KimmiThatUnwantedSmart(),
-        transition: Transition.noTransition),
+      name: KimmiSully.KimmiThatUnwantedContainer,
+      page: () => KimmiThatUnwantedContainer(),
+      binding: KimmiThatUnwantedSmart(),
+      transition: Transition.noTransition,
+    ),
     GetPage(
-        name: KimmiSully.KimmiThatFeelingContainer,
-        page: () => KimmiThatFeelingContainer(),
-        binding: KimmiThatFeelingSmart(),
-        transition: Transition.noTransition),
+      name: KimmiSully.KimmiThatFeelingContainer,
+      page: () => KimmiThatFeelingContainer(),
+      binding: KimmiThatFeelingSmart(),
+      transition: Transition.noTransition,
+    ),
     GetPage(
-        name: KimmiSully.KimmiScareAmenContainer,
-        page: () => const KimmiScareAmenContainer(),
-        binding: KimmiScareAmenSmart()),
+      name: KimmiSully.KimmiScareAmenContainer,
+      page: () => const KimmiScareAmenContainer(),
+      binding: KimmiScareAmenSmart(),
+    ),
     GetPage(
-        name: KimmiSully.KimmiSaturnScareNieceContainer,
-        page: () => KimmiSaturnScareNieceContainer(),
-        binding: KimmiSaturnScareNieceSmart(),
-        opaque: false,
-        transition: Transition.downToUp),
+      name: KimmiSully.KimmiSaturnScareNieceContainer,
+      page: () => KimmiSaturnScareNieceContainer(),
+      binding: KimmiSaturnScareNieceSmart(),
+      opaque: false,
+      transition: Transition.downToUp,
+    ),
     GetPage(
-        name: KimmiSully.KimmiPrivateAmenContainer,
-        page: () => const KimmiPrivateAmenContainer(),
-        binding: KimmiPrivateAmenSmart()),
+      name: KimmiSully.KimmiPrivateAmenContainer,
+      page: () => const KimmiPrivateAmenContainer(),
+      binding: KimmiPrivateAmenSmart(),
+    ),
     GetPage(
-        name: KimmiSully.KimmiPrivateNieceContainer,
-        page: () => KimmiPrivateNieceContainer(),
-        binding: KimmiPrivateNieceSmart(),
-        opaque: false,
-        transition: Transition.downToUp),
+      name: KimmiSully.KimmiPrivateNieceContainer,
+      page: () => KimmiPrivateNieceContainer(),
+      binding: KimmiPrivateNieceSmart(),
+      opaque: false,
+      transition: Transition.downToUp,
+    ),
     GetPage(
-        name: KimmiSully.KimmiDoggyChickieContainer,
-        page: () => const KimmiDoggyChickieContainer(),
-        binding: KimmiDoggyChickieSmart(),
-        opaque: false,
-        transition: Transition.downToUp),
+      name: KimmiSully.KimmiDoggyChickieContainer,
+      page: () => const KimmiDoggyChickieContainer(),
+      binding: KimmiDoggyChickieSmart(),
+      opaque: false,
+      transition: Transition.downToUp,
+    ),
     GetPage(
-        name: KimmiSully.KimmiTowBeckerContainer,
-        page: () => const KimmiTowBeckerContainer(),
-        binding: KimmiTowBeckerSmart()),
+      name: KimmiSully.KimmiTowBeckerContainer,
+      page: () => const KimmiTowBeckerContainer(),
+      binding: KimmiTowBeckerSmart(),
+    ),
     GetPage(
-        name: KimmiSully.KimmiCradleContainer,
-        page: () => const KimmiCradleContainer(),
-        binding: KimmiCradleSmart()),
+      name: KimmiSully.KimmiCradleContainer,
+      page: () => const KimmiCradleContainer(),
+      binding: KimmiCradleSmart(),
+    ),
     GetPage(
-        name: KimmiSully.KimmiContractorTuxContainer,
-        page: () => const KimmiContractorTuxContainer(),
-        binding: KimmiContractorTuxSmart()),
+      name: KimmiSully.KimmiContractorTuxContainer,
+      page: () => const KimmiContractorTuxContainer(),
+      binding: KimmiContractorTuxSmart(),
+    ),
     GetPage(
-        name: KimmiSully.KimmiSlipperAmenContainer,
-        page: () => const KimmiSlipperAmenContainer(),
-        binding: KimmiSlipperAmenSmart()),
+      name: KimmiSully.KimmiSlipperAmenContainer,
+      page: () => const KimmiSlipperAmenContainer(),
+      binding: KimmiSlipperAmenSmart(),
+    ),
     GetPage(
-        name: KimmiSully.KimmiPassportTowTemperContainer,
-        page: () => KimmiPassportTowTemperContainer(),
-        binding: KimmiPassportTowTemperSmart()),
+      name: KimmiSully.KimmiPassportTowTemperContainer,
+      page: () => KimmiPassportTowTemperContainer(),
+      binding: KimmiPassportTowTemperSmart(),
+    ),
     GetPage(
-        name: KimmiSully.KimmiOccupyAmenContainer,
-        page: () => KimmiOccupyAmenContainer(),
-        binding: KimmiOccupyAmenSmart()),
+      name: KimmiSully.KimmiOccupyAmenContainer,
+      page: () => KimmiOccupyAmenContainer(),
+      binding: KimmiOccupyAmenSmart(),
+    ),
+
     GetPage(
-        name: KimmiSully.KimmiWaitressAmenContainer,
-        page: () => KimmiWaitressAmenContainer(),
-        binding: KimmiWaitressAmenSmart()),
+      name: KimmiSully.KimmiWaitressAmenContainer,
+      page: () => KimmiWaitressAmenContainer(),
+      binding: KimmiWaitressAmenSmart(),
+    ),
     GetPage(
-        name: KimmiSully.KimmiWaitressContainer,
-        page: () => KimmiWaitressContainer(),
-        binding: KimmiWaitressSmart()),
+      name: KimmiSully.KimmiWaitressContainer,
+      page: () => KimmiWaitressContainer(),
+      binding: KimmiWaitressSmart(),
+    ),
     GetPage(
-        name: KimmiSully.KimmiSnoopSmileContainer,
-        page: () => const KimmiSnoopSmileContainer(),
-        binding: KimmiSnoopSmileSmart()),
+      name: KimmiSully.KimmiSnoopSmileContainer,
+      page: () => const KimmiSnoopSmileContainer(),
+      binding: KimmiSnoopSmileSmart(),
+    ),
+
     GetPage(
-        name: KimmiSully.KimmiVibrantGroovyContainer,
-        page: () => const KimmiVibrantGroovyContainer(),
-        binding: KimmiVibrantGroovySmart(),
-        opaque: false,
-        transition: Transition.downToUp),
+      name: KimmiSully.KimmiVibrantGroovyContainer,
+      page: () => const KimmiVibrantGroovyContainer(),
+      binding: KimmiVibrantGroovySmart(),
+      opaque: false,
+      transition: Transition.downToUp,
+    ),
+
     GetPage(
-        name: KimmiSully.KimmiSVGAContainer,
-        page: () => KimmiWelcomeUneven(),
-        opaque: false,
-        transition: Transition.fade),
+      name: KimmiSully.KimmiSVGAContainer,
+      page: () => KimmiWelcomeUneven(),
+      opaque: false,
+      transition: Transition.fade,
+    ),
     GetPage(
-        name: KimmiSully.KimmiEyelashSyndromeContainer,
-        page: () => KimmiEyelashSyndromeContainer(),
-        opaque: false,
-        transition: Transition.fade),
+      name: KimmiSully.KimmiEyelashSyndromeContainer,
+      page: () => KimmiEyelashSyndromeContainer(),
+      opaque: false,
+      transition: Transition.fade,
+    ),
+
     GetPage(
-        name: KimmiSully.KimmiMyMaleContainer,
-        page: () => KimmiMyMaleContainer(),
-        binding: KimmiMyMaleSmart(),
-        opaque: false,
-        transition: Transition.fade),
+      name: KimmiSully.KimmiMyMaleContainer,
+      page: () => KimmiMyMaleContainer(),
+      binding: KimmiMyMaleSmart(),
+      opaque: false,
+      transition: Transition.fade,
+    ),
+
     GetPage(
-        name: KimmiSully.KimmiEyelashContainer,
-        page: () => KimmiEyelashContainer(),
-        binding: KimmiEyelashSmart()),
+      name: KimmiSully.KimmiEyelashContainer,
+      page: () => KimmiEyelashContainer(),
+      binding: KimmiEyelashSmart(),
+    ),
   ];
 }
 
@@ -326,10 +366,34 @@ class KimmiSingleScottish extends NavigatorObserver {
 
   factory KimmiSingleScottish() => _instance;
 
-  Route<dynamic>? videoChatRoute;
-
   static KimmiSingleScottish getInstance() {
     return _instance;
+  }
+
+  static final List<Route> _appRoutes = [];
+
+  void _addRoute(Route? route) {
+    if (route == null) return;
+    _appRoutes.add(route);
+  }
+
+  static void _removeRoute(Route? route) {
+    _appRoutes.remove(route);
+  }
+
+  static bool hasPageRoute(String routeName) {
+    return _appRoutes
+            .where((element) => element.settings.name == routeName)
+            .lastOrNull !=
+        null;
+  }
+
+  static void removeRoute(String routeName) {
+    Route? route = _appRoutes
+        .where((element) => element.settings.name == routeName)
+        .lastOrNull;
+    if (route == null) return;
+    Get.removeRoute(route);
   }
 
   @override
@@ -337,18 +401,14 @@ class KimmiSingleScottish extends NavigatorObserver {
     super.didPush(route, previousRoute);
     onPause(previousRoute?.settings.name);
     onResume(route.settings.name);
-    if (route.settings.name == KimmiSully.KimmiIndiaWaitressContainer) {
-      videoChatRoute = route;
-    }
+    _addRoute(route);
   }
 
   @override
   void didPop(Route<dynamic> route, Route<dynamic>? previousRoute) {
     super.didPop(route, previousRoute);
     onPause(route.settings.name);
-    if (route.settings.name == KimmiSully.KimmiIndiaWaitressContainer) {
-      videoChatRoute = null;
-    }
+    _removeRoute(route);
     onResume(previousRoute?.settings.name);
   }
 
@@ -356,9 +416,7 @@ class KimmiSingleScottish extends NavigatorObserver {
   void didRemove(Route<dynamic> route, Route<dynamic>? previousRoute) {
     super.didRemove(route, previousRoute);
     onPause(route.settings.name);
-    if (route.settings.name == KimmiSully.KimmiIndiaWaitressContainer) {
-      videoChatRoute = null;
-    }
+    _removeRoute(route);
     onResume(previousRoute?.settings.name);
   }
 
@@ -366,15 +424,16 @@ class KimmiSingleScottish extends NavigatorObserver {
   void didReplace({Route<dynamic>? newRoute, Route<dynamic>? oldRoute}) {
     super.didReplace(newRoute: newRoute, oldRoute: oldRoute);
     onPause(oldRoute?.settings.name);
-    if (oldRoute?.settings.name == KimmiSully.KimmiIndiaWaitressContainer) {
-      videoChatRoute = null;
-    }
+    _removeRoute(oldRoute);
     onResume(newRoute?.settings.name);
+    _addRoute(newRoute);
   }
 
   @override
   void didStartUserGesture(
-      Route<dynamic> route, Route<dynamic>? previousRoute) {
+    Route<dynamic> route,
+    Route<dynamic>? previousRoute,
+  ) {
     super.didStartUserGesture(route, previousRoute);
   }
 
@@ -434,7 +493,8 @@ class KimmiSingleScottish extends NavigatorObserver {
         routeName.contains(KimmiSully.KimmiPrivateNieceContainer) ||
         routeName.contains(KimmiSully.KimmiPrivateAmenContainer) ||
         routeName.contains(KimmiSully.KimmiTowBeckerContainer) ||
-        routeName.contains(KimmiSully.KimmiOccupyAmenContainer)) {
+        routeName.contains(KimmiSully.KimmiOccupyAmenContainer) ||
+        routeName.contains(KimmiSully.KimmiPassportTowTemperContainer)) {
       return true;
     }
     return false;

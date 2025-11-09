@@ -4,11 +4,15 @@ import 'package:protobuf/protobuf.dart' as $pb;
 
 class SyncType extends $pb.ProtobufEnum {
   static const SyncType BUDDY = SyncType._(0, _omitEnumNames ? '' : 'BUDDY');
-  static const SyncType CHATBOX =
-      SyncType._(1, _omitEnumNames ? '' : 'CHATBOX');
+  static const SyncType CHATBOX = SyncType._(
+    1,
+    _omitEnumNames ? '' : 'CHATBOX',
+  );
   static const SyncType SNAP = SyncType._(2, _omitEnumNames ? '' : 'SNAP');
-  static const SyncType BUDDY_REQUEST =
-      SyncType._(3, _omitEnumNames ? '' : 'BUDDY_REQUEST');
+  static const SyncType BUDDY_REQUEST = SyncType._(
+    3,
+    _omitEnumNames ? '' : 'BUDDY_REQUEST',
+  );
 
   static const $core.List<SyncType> values = <SyncType>[
     BUDDY,
@@ -25,10 +29,14 @@ class SyncType extends $pb.ProtobufEnum {
 }
 
 class Sync_AfterSyncToDo extends $pb.ProtobufEnum {
-  static const Sync_AfterSyncToDo TODO_NOTHING =
-      Sync_AfterSyncToDo._(0, _omitEnumNames ? '' : 'TODO_NOTHING');
-  static const Sync_AfterSyncToDo TODO_UPDATE_PARTYLIST =
-      Sync_AfterSyncToDo._(1, _omitEnumNames ? '' : 'TODO_UPDATE_PARTYLIST');
+  static const Sync_AfterSyncToDo TODO_NOTHING = Sync_AfterSyncToDo._(
+    0,
+    _omitEnumNames ? '' : 'TODO_NOTHING',
+  );
+  static const Sync_AfterSyncToDo TODO_UPDATE_PARTYLIST = Sync_AfterSyncToDo._(
+    1,
+    _omitEnumNames ? '' : 'TODO_UPDATE_PARTYLIST',
+  );
 
   static const $core.List<Sync_AfterSyncToDo> values = <Sync_AfterSyncToDo>[
     TODO_NOTHING,

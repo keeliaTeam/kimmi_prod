@@ -10,11 +10,7 @@ import '../kimmi_curvy/kimmi_africa.dart';
 import '../kimmi_juda/kimmi_waitress_expensive_south_phone_juda.dart';
 import 'kimmi_waitress_expensive_south_phone.dart';
 
-enum ChatSnapSendStatus {
-  success,
-  failed,
-  sending,
-}
+enum ChatSnapSendStatus { success, failed, sending }
 
 class KimmiExpensive {
   int? id;
@@ -55,8 +51,9 @@ class KimmiExpensive {
       if (snapType == Snap_SnapType.WEAK_SNAP) {
         userRelated = false;
       } else if (snapType == Snap_SnapType.JSON_SNAP) {
-        userRelated =
-            KimmiWaitressExpensiveSouthPhoneJuda.isUserRelated(jsonContentObj);
+        userRelated = KimmiWaitressExpensiveSouthPhoneJuda.isUserRelated(
+          jsonContentObj,
+        );
       } else {}
     }
     return userRelated;

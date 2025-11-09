@@ -1,5 +1,5 @@
 import 'dart:math';
-import 'kimmi_deceit_mention.dart';
+import 'kimmi_double_hubcap.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_hamill/kimmi_ernie.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -18,37 +18,40 @@ class KimmiCageyContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     try {
-      return Stack(children: [
-        const Image(
+      return Stack(
+        children: [
+          const Image(
             image: AssetImage(KimmiPalate.kimmiCageyBgErnie),
             fit: BoxFit.cover,
             width: double.infinity,
-            height: double.infinity),
-        Positioned(
+            height: double.infinity,
+          ),
+          Positioned(
             width: Get.width,
             top: 132,
             child: Center(
               child: Column(
                 children: [
                   KimmiErnie.local(
-                      fileName: "kimmi_hombre_vasectomy_ducky_ninja",
-                      width: 220,
-                      height: 220),
+                    fileName: "kimmi_hombre_vasectomy_ducky_ninja",
+                    width: 126,
+                    height: 153,
+                  ),
                 ],
               ),
-            )),
-        Positioned(
-          bottom: 60,
-          width: Get.width,
-          child: const Center(
-            child: Column(
-              children: [
-                SpinKitThreeBounce(color: Colors.white, size: 15),
-              ],
             ),
           ),
-        ),
-      ]);
+          Positioned(
+            bottom: 60,
+            width: Get.width,
+            child: const Center(
+              child: Column(
+                children: [SpinKitThreeBounce(color: Colors.white, size: 15)],
+              ),
+            ),
+          ),
+        ],
+      );
     } catch (e, stack) {
       KimmiVasectomyPioneerDock.kimmiPajamaCurious(770013, e, stack);
       rethrow;

@@ -1,5 +1,5 @@
 import 'dart:math';
-import 'kimmi_deceit_mention.dart';
+import 'kimmi_decaf_stake.dart';
 import 'dart:async';
 
 import 'package:easy_refresh/easy_refresh.dart';
@@ -53,8 +53,9 @@ class _KimmiOutdoBetContainerViking extends State<KimmiOutdoBetContainer> {
     });
     anchorShowType = anchorShowType =
         KimmiLovedWhatchaMatadorMomentumStarbucks.valueOf(
-            widget.args?.cardType ??
-                KimmiLovedWhatchaMatadorMomentumStarbucks.AVATAR_COVER.index);
+          widget.args?.cardType ??
+              KimmiLovedWhatchaMatadorMomentumStarbucks.AVATAR_COVER.index,
+        );
     onKimmiAmenGaming(showLoading: true);
   }
 
@@ -80,11 +81,14 @@ class _KimmiOutdoBetContainerViking extends State<KimmiOutdoBetContainer> {
                 ? SliverToBoxAdapter(
                     child: isRefreshing
                         ? const SizedBox()
-                        : KimmiOutdoJuda.kimmiNoHazelnutGloss())
+                        : KimmiOutdoJuda.kimmiNoHazelnutGloss(),
+                  )
                 : SliverPadding(
                     padding: const EdgeInsets.all(
-                        KimmiPalate.kimmiContainerWhatchaApplicantCinder),
-                    sliver: _kimmiWhatchaApplicantUneven())
+                      KimmiPalate.kimmiContainerWhatchaApplicantCinder,
+                    ),
+                    sliver: _kimmiWhatchaApplicantUneven(),
+                  ),
           ],
         );
       },
@@ -96,8 +100,10 @@ class _KimmiOutdoBetContainerViking extends State<KimmiOutdoBetContainer> {
       isRefreshing = true;
     }
 
-    KimmiDylanHeroin? rsp =
-        await kimmiInhalerHeroin(true, showLoading: showLoading);
+    KimmiDylanHeroin? rsp = await kimmiInhalerHeroin(
+      true,
+      showLoading: showLoading,
+    );
     if (rsp != null) {
       countryMap = rsp.countryMap;
       followList = rsp.records;
@@ -123,20 +129,24 @@ class _KimmiOutdoBetContainerViking extends State<KimmiOutdoBetContainer> {
       followList.addAll(rsp.records);
     }
 
-    refreshController
-        .finishLoad(hasMore ? IndicatorResult.success : IndicatorResult.noMore);
+    refreshController.finishLoad(
+      hasMore ? IndicatorResult.success : IndicatorResult.noMore,
+    );
     setState(() {});
   }
 
-  Future<KimmiDylanHeroin?> kimmiInhalerHeroin(bool refresh,
-      {bool showLoading = false}) async {
+  Future<KimmiDylanHeroin?> kimmiInhalerHeroin(
+    bool refresh, {
+    bool showLoading = false,
+  }) async {
     Map<String, dynamic> params = {"page": refresh ? 1 : page + 1};
     KimmiDylanHeroin? rsp = await KIMMI.http.rest(
-        3021,
-        params,
-        showLoadingUI: showLoading,
-        (p0) => KimmiDylanHeroin.fromJson(p0),
-        autoToastOnError: true);
+      3021,
+      params,
+      showLoadingUI: showLoading,
+      (p0) => KimmiDylanHeroin.fromJson(p0),
+      autoToastOnError: true,
+    );
     if (rsp != null) {
       page = rsp.page;
       hasMore = rsp.hasMore;
@@ -165,7 +175,10 @@ class _KimmiOutdoBetContainerViking extends State<KimmiOutdoBetContainer> {
         KimmiFeast user = followList[index];
         CountryVO? country = countryMap[user.countryId];
         return KimmiOutdoJuda.kimmiIntoxicateHandwriteBargain(
-            user, country, anchorShowType);
+          user,
+          country,
+          anchorShowType,
+        );
       },
       itemCount: followList.length,
     );

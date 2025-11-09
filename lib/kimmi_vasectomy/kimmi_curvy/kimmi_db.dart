@@ -30,7 +30,11 @@ class KimmiDb {
     _snapDao = KimmiExpensiveCrossover(_chatDB, KIMMI.uid());
     _chatBoxMemberDao = KimmiWaitressSigningCrossover(_chatDB);
     _chatBoxDao = KimmiWaitressTotallyCrossover(
-        _chatDB, _snapDao, _userDao, _chatBoxMemberDao);
+      _chatDB,
+      _snapDao,
+      _userDao,
+      _chatBoxMemberDao,
+    );
   }
 
   Future<void> dispose() async {

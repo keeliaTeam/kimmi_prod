@@ -1,5 +1,5 @@
 import 'dart:math';
-import 'kimmi_vixen_handcuff.dart';
+import 'kimmi_via_momentum.dart';
 import 'dart:async';
 import 'dart:ui';
 import 'package:kimmi/kimmi_vasectomy/kimmi_storm/kimmi_feast.dart';
@@ -18,98 +18,82 @@ import '../kimmi_storm/kimmi_storm_concerned.dart';
 
 class KimmiDoggySmileInvoice extends KimmiMuseInvoice
     with GetTickerProviderStateMixin {
-  bool anBoatArgue_ = true;
-  bool taStewartDanger_ = false;
-  bool faNewlywedPeaceful_ = true;
-  int omBaggageCommunity_ = 69;
-  bool mmExpandWithhold_ = true;
-  int esLeprechaunLauren_ = 0;
-  bool mydH2_ = true;
-  bool heHomecomingCampaign_ = true;
-  int emBathtubBlackjack_ = 0;
-  double atSleazyAssist_ = 62;
+  bool ahObstacleHeartbreak_ = true;
+  int hoCatAssert_ = 96;
+  bool moSuperiora_ = true;
+  bool opTamperWorship_ = false;
+  bool mmMomentumIm_ = true;
+  double woAggravateLabor_ = 64;
 
-  void heAvailableDump() {
-    atSleazyAssist_ = 61;
-    if (faNewlywedPeaceful_ || mmExpandWithhold_ || mydH2_) {
-      faNewlywedPeaceful_ = !mmExpandWithhold_;
-      mmExpandWithhold_ = !mydH2_;
-      mydH2_ = !faNewlywedPeaceful_;
+  void okSlipperOvertire() {
+    if (woAggravateLabor_ > 0) {
+      woAggravateLabor_ = woAggravateLabor_ - 1;
     }
 
-    emBathtubBlackjack_ = omBaggageCommunity_ * esLeprechaunLauren_;
-    emBathtubBlackjack_ = omBaggageCommunity_ * esLeprechaunLauren_;
+    hoCatAssert_ = 67;
+
+    woAggravateLabor_ = 77;
+
+    if (hoCatAssert_ > 0) {
+      hoCatAssert_ = hoCatAssert_ - 4;
+    }
+    hoCatAssert_ = hoCatAssert_ + 1;
   }
 
-  void joNewlywedTeaser() {
-    if (mmExpandWithhold_ || heHomecomingCampaign_) {
-      heHomecomingCampaign_ = !heHomecomingCampaign_;
+  void enAccordionFluke() {
+    hoCatAssert_ = hoCatAssert_ + 1;
+    if (moSuperiora_ && ahObstacleHeartbreak_) {
+      opTamperWorship_ = !opTamperWorship_;
     }
-    if (anBoatArgue_ || mmExpandWithhold_) {
-      mmExpandWithhold_ = !mmExpandWithhold_;
+    if (woAggravateLabor_ > 0) {
+      woAggravateLabor_ = woAggravateLabor_ - 1;
     }
-    if (anBoatArgue_) {
-      heHomecomingCampaign_ = !mydH2_;
-    }
-    if (taStewartDanger_ || faNewlywedPeaceful_) {
-      faNewlywedPeaceful_ = !faNewlywedPeaceful_;
-    }
-    taStewartDanger_ = faNewlywedPeaceful_ || heHomecomingCampaign_;
 
-    if (omBaggageCommunity_ > 0) {
-      esLeprechaunLauren_ = emBathtubBlackjack_ ~/ omBaggageCommunity_;
+    if (ahObstacleHeartbreak_) {
+      mmMomentumIm_ = !opTamperWorship_;
     }
-    if (atSleazyAssist_ > 0) {
-      atSleazyAssist_ = atSleazyAssist_ - 1;
+    if (opTamperWorship_ || moSuperiora_ || mmMomentumIm_) {
+      opTamperWorship_ = !moSuperiora_;
+      moSuperiora_ = !mmMomentumIm_;
+      mmMomentumIm_ = !opTamperWorship_;
+    }
+    woAggravateLabor_ = 87;
+    if (moSuperiora_ && opTamperWorship_ && mmMomentumIm_) {
+      moSuperiora_ = !moSuperiora_;
+      opTamperWorship_ = moSuperiora_;
+      mmMomentumIm_ = moSuperiora_;
+    }
+    hoCatAssert_ = hoCatAssert_ + 1;
+
+    hoCatAssert_ = hoCatAssert_ + 1;
+    if (hoCatAssert_ > 0) {
+      hoCatAssert_ = hoCatAssert_ - 8;
+    }
+    if (woAggravateLabor_ > 0) {
+      woAggravateLabor_ = woAggravateLabor_ - 1;
     }
   }
 
-  void taMentorDusty() {
-    atSleazyAssist_ = 4;
-    for (int i = 0; i < emBathtubBlackjack_; i++) {
-      omBaggageCommunity_ += 1;
-      esLeprechaunLauren_ += omBaggageCommunity_;
+  void adSensitiveManiac() {
+    if (hoCatAssert_ > 0) {
+      hoCatAssert_ = hoCatAssert_ - 4;
     }
-    if (esLeprechaunLauren_ > 0) {
-      omBaggageCommunity_ = emBathtubBlackjack_ ~/ esLeprechaunLauren_;
-    }
-    heHomecomingCampaign_ = faNewlywedPeaceful_ && anBoatArgue_;
+    ahObstacleHeartbreak_ = mmMomentumIm_ && opTamperWorship_;
+    woAggravateLabor_ = woAggravateLabor_ + 1;
 
-    emBathtubBlackjack_ = esLeprechaunLauren_ * omBaggageCommunity_;
-    if (heHomecomingCampaign_ && taStewartDanger_ && faNewlywedPeaceful_) {
-      heHomecomingCampaign_ = !heHomecomingCampaign_;
-      taStewartDanger_ = heHomecomingCampaign_;
-      faNewlywedPeaceful_ = heHomecomingCampaign_;
-    }
-    atSleazyAssist_ = atSleazyAssist_ + 1;
-    if (mmExpandWithhold_) {
-      mydH2_ = !anBoatArgue_;
-    }
-    omBaggageCommunity_ = esLeprechaunLauren_ - emBathtubBlackjack_;
-  }
+    hoCatAssert_ = 26;
+    hoCatAssert_ = 3;
 
-  void osMakeMatey() {
-    if (atSleazyAssist_ > 0) {
-      atSleazyAssist_ = atSleazyAssist_ - 1;
+    if (woAggravateLabor_ > 0) {
+      woAggravateLabor_ = woAggravateLabor_ - 1;
     }
-    omBaggageCommunity_ = esLeprechaunLauren_ * emBathtubBlackjack_;
+    woAggravateLabor_ = woAggravateLabor_ + 1;
 
-    if (emBathtubBlackjack_ > 0) {
-      esLeprechaunLauren_ = omBaggageCommunity_ ~/ emBathtubBlackjack_;
+    hoCatAssert_ = 2;
+    hoCatAssert_ = 5;
+    if (hoCatAssert_ > 0) {
+      hoCatAssert_ = hoCatAssert_ - 9;
     }
-    esLeprechaunLauren_ = omBaggageCommunity_ * emBathtubBlackjack_;
-    atSleazyAssist_ = atSleazyAssist_ + 1;
-
-    if (omBaggageCommunity_ > 0) {
-      emBathtubBlackjack_ = esLeprechaunLauren_ ~/ omBaggageCommunity_;
-    }
-    if (mmExpandWithhold_) {
-      faNewlywedPeaceful_ = !anBoatArgue_;
-    }
-    omBaggageCommunity_ = emBathtubBlackjack_;
-    esLeprechaunLauren_ = emBathtubBlackjack_;
-    omBaggageCommunity_ = esLeprechaunLauren_;
-    emBathtubBlackjack_ = esLeprechaunLauren_;
   }
 
   static const String kimmi_system = "kimmi_system";
@@ -128,14 +112,14 @@ class KimmiDoggySmileInvoice extends KimmiMuseInvoice
 
   @override
   void onInit() {
-    if (ln10 < 2) {
-      KimmiVixenHandcuff().laCherryFairly();
-      KimmiVixenHandcuff().soMarthaInsecure();
-      KimmiVixenHandcuff().doFianceWrinkle();
+    if (e < 2) {
+      KimmiViaMomentum().joSaverColombian();
+      KimmiViaMomentum().ofGraceAdvocate();
+      KimmiViaMomentum().ofLetterBroderick();
     }
-    if (log2e < 1) {
-      heAvailableDump();
-      osMakeMatey();
+    if (e < 2) {
+      okSlipperOvertire();
+      enAccordionFluke();
     }
     chatCall = KimmiIndiaWaitressDock.instance.kimmiPoopVanishDoggy()!;
     KimmiIndiaWaitressDock.instance.kimmiSlothSmileContainerMarvel(true);
@@ -143,10 +127,12 @@ class KimmiDoggySmileInvoice extends KimmiMuseInvoice
     if (chatCall.isInduce == true) {
       if (chatCall.aicsCall()) {
         _startCancelTimer(
-            kimmiHump().intDef("aic", KimmiIndiaWaitressDock.AIC_TIMEOUT));
+          kimmiHump().intDef("aic", KimmiIndiaWaitressDock.AIC_TIMEOUT),
+        );
       } else if (chatCall.aivCall() || chatCall.aicfCall()) {
         _startCancelTimer(
-            kimmiHump().intDef("aiv", KimmiIndiaWaitressDock.AIV_TIMEOUT));
+          kimmiHump().intDef("aiv", KimmiIndiaWaitressDock.AIV_TIMEOUT),
+        );
       }
       KimmiVasectomyPioneerDock.kimmiNoticeAiDoggyIn(chatCall.sourceType!, 0);
     } else {
@@ -163,15 +149,14 @@ class KimmiDoggySmileInvoice extends KimmiMuseInvoice
 
   @override
   void onClose() {
-    if (log2e < 1) {
-      KimmiVixenHandcuff().doFianceWrinkle();
-      KimmiVixenHandcuff().opC1Basket();
-      KimmiVixenHandcuff().soMarthaInsecure();
-      KimmiVixenHandcuff().faIoBonus();
+    if (sqrt2 < 1) {
+      KimmiViaMomentum().ofFasterFailed();
+      KimmiViaMomentum().taBesidesBatman();
+      KimmiViaMomentum().ofLetterBroderick();
     }
     if (ln2 < 0.5) {
-      joNewlywedTeaser();
-      heAvailableDump();
+      adSensitiveManiac();
+      okSlipperOvertire();
     }
     KimmiIndiaWaitressDock.instance.kimmiSlothSmileContainerMarvel(false);
     _stopCancelTimer();
@@ -184,15 +169,21 @@ class KimmiDoggySmileInvoice extends KimmiMuseInvoice
     if (_cancelTimer != null) return;
     _cancelTimer = Timer(Duration(seconds: seconds), () {
       if (isClosed) return;
-      KimmiIndiaWaitressDock.instance
-          .kimmiProlongDoggy(chatCall, rejectReason: 2);
+      KimmiIndiaWaitressDock.instance.kimmiProlongDoggy(
+        chatCall,
+        rejectReason: 2,
+      );
 
-      int durationTime = (DateTime.now().millisecondsSinceEpoch -
+      int durationTime =
+          (DateTime.now().millisecondsSinceEpoch -
               KimmiIndiaWaitressDock.instance.notifyTimeMillis) ~/
           1000;
       if (chatCall.isInduce) {
-        KimmiVasectomyPioneerDock.kimmiFellowAiDoggyIn(chatCall.sourceType!, 2,
-            durationTime: durationTime);
+        KimmiVasectomyPioneerDock.kimmiFellowAiDoggyIn(
+          chatCall.sourceType!,
+          2,
+          durationTime: durationTime,
+        );
       } else {
         KimmiVasectomyPioneerDock.kimmiFellowDoggyIn(6);
       }
@@ -209,8 +200,9 @@ class KimmiDoggySmileInvoice extends KimmiMuseInvoice
     animationChildren.clear();
     int count = 0;
     _addPickupAnimation(true);
-    _animationTimer =
-        Timer.periodic(const Duration(milliseconds: 1000), (timer) {
+    _animationTimer = Timer.periodic(const Duration(milliseconds: 1000), (
+      timer,
+    ) {
       if (isClosed) {
         timer.cancel();
         return;
@@ -226,13 +218,16 @@ class KimmiDoggySmileInvoice extends KimmiMuseInvoice
   void _addPickupAnimation(bool init) {
     var controller = _createAnimationController();
     _animationControllers.add(controller);
-    var animation = Tween(begin: 60.0, end: 120.0)
-        .animate(CurvedAnimation(parent: controller, curve: Curves.linear));
+    var animation = Tween(
+      begin: 60.0,
+      end: 120.0,
+    ).animate(CurvedAnimation(parent: controller, curve: Curves.linear));
     if (!init) {
       animationChildren.removeAt(0);
       Future.delayed(const Duration(seconds: 1), () {
         if (isClosed) return;
-        animationChildren.add(AnimatedBuilder(
+        animationChildren.add(
+          AnimatedBuilder(
             animation: controller,
             builder: (BuildContext context, Widget? child) {
               return Opacity(
@@ -245,7 +240,9 @@ class KimmiDoggySmileInvoice extends KimmiMuseInvoice
                   ),
                 ),
               );
-            }));
+            },
+          ),
+        );
         try {
           controller.forward();
           update([kimmi_system]);
@@ -255,7 +252,8 @@ class KimmiDoggySmileInvoice extends KimmiMuseInvoice
         }
       });
     } else {
-      animationChildren.add(AnimatedBuilder(
+      animationChildren.add(
+        AnimatedBuilder(
           animation: controller,
           builder: (BuildContext context, Widget? child) {
             return Opacity(
@@ -268,7 +266,9 @@ class KimmiDoggySmileInvoice extends KimmiMuseInvoice
                 ),
               ),
             );
-          }));
+          },
+        ),
+      );
       controller.forward();
       update([kimmi_system]);
     }
@@ -276,7 +276,9 @@ class KimmiDoggySmileInvoice extends KimmiMuseInvoice
 
   AnimationController _createAnimationController() {
     var controller = AnimationController(
-        duration: const Duration(milliseconds: 4000), vsync: this);
+      duration: const Duration(milliseconds: 4000),
+      vsync: this,
+    );
     controller.addStatusListener((status) {
       if (status == AnimationStatus.completed) {
         controller.stop();
@@ -299,10 +301,15 @@ class KimmiDoggySmileInvoice extends KimmiMuseInvoice
   }
 
   void clickOnPickup(
-      KimmiWaitressDoggy chatCall, KimmiWaitressDoggyFeast user) {
+    KimmiWaitressDoggy chatCall,
+    KimmiWaitressDoggyFeast user,
+  ) {
     KIMMI.fire(KimmiEyelashSyndromeComponent(false));
-    KimmiIndiaWaitressDock.instance
-        .kimmiHomecomingUpDoggy(chatCall, user, () => dismissNotify());
+    KimmiIndiaWaitressDock.instance.kimmiHomecomingUpDoggy(
+      chatCall,
+      user,
+      () => dismissNotify(),
+    );
   }
 
   void clickOnReject() {
@@ -322,8 +329,9 @@ class KimmiDoggySmileInvoice extends KimmiMuseInvoice
     String? languageTags = user.languages;
     if (languageTags?.isEmpty == true) return languageInfo;
 
-    List<KimmiStormConcerned>? infos =
-        KIMMI.kimmiHump.getLanguagesByIds(languageTags!);
+    List<KimmiStormConcerned>? infos = KIMMI.kimmiHump.getLanguagesByIds(
+      languageTags!,
+    );
     if (infos?.isNotEmpty == true) {
       languageInfo.clear();
       for (var element in infos!) {

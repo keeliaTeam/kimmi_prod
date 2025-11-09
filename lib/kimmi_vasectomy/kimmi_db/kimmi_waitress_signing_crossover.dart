@@ -14,8 +14,10 @@ class KimmiWaitressSigningCrossover
     with _$KimmiWaitressSigningCrossoverSew {
   KimmiWaitressSigningCrossover(super.attachedDatabase);
 
-  Future deleteEntitiesForChatBox(int cid,
-      [List<KimmiWaitressFeast>? members]) async {
+  Future deleteEntitiesForChatBox(
+    int cid, [
+    List<KimmiWaitressFeast>? members,
+  ]) async {
     return transaction(() async {
       if (members == null || members.isEmpty) {
         final del = delete(attachedDatabase.kimmiWaitressSigningCowboys)
@@ -28,9 +30,13 @@ class KimmiWaitressSigningCrossover
           final result = await query.get();
           if (result.isNotEmpty) {
             final e = kimmi_waitress_signing_cowboys(
-                cu: result[0].cu, cid: cid, uid: m.uid);
-            await delete(attachedDatabase.kimmiWaitressSigningCowboys)
-                .delete(e);
+              cu: result[0].cu,
+              cid: cid,
+              uid: m.uid,
+            );
+            await delete(
+              attachedDatabase.kimmiWaitressSigningCowboys,
+            ).delete(e);
           }
         }
       }
@@ -45,7 +51,9 @@ class KimmiWaitressSigningCrossover
   }
 
   Future saveEntitiesForChatBox(
-      int cid, List<KimmiWaitressFeast> members) async {
+    int cid,
+    List<KimmiWaitressFeast> members,
+  ) async {
     if (members.isEmpty) return;
     return transaction(() async {
       for (final m in members) {
@@ -54,7 +62,10 @@ class KimmiWaitressSigningCrossover
         final result = await query.get();
         if (result.isEmpty) {
           final ec = KimmiWaitressSigningCowboysNerd(
-              cu: const Value.absent(), cid: Value(cid), uid: Value(m.uid));
+            cu: const Value.absent(),
+            cid: Value(cid),
+            uid: Value(m.uid),
+          );
           await into(kimmiWaitressSigningCowboys).insert(ec);
         }
       }
@@ -62,7 +73,8 @@ class KimmiWaitressSigningCrossover
   }
 
   Future<List<kimmi_waitress_signing_cowboys>> entitiesForChatBox(
-      int cid) async {
+    int cid,
+  ) async {
     final query = select(kimmiWaitressSigningCowboys)
       ..where((e) => e.cid.equals(cid));
     return await query.get();

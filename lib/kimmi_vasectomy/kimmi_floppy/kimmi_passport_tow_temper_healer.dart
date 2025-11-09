@@ -13,6 +13,7 @@ class KimmiPassportTowTemperHealer {
     this.orderId,
     this.payMode, {
     this.showNavbar = true,
+
     this.showHtmlTitle = false,
   });
 }

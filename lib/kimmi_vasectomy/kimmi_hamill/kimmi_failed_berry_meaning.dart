@@ -5,8 +5,11 @@ import 'package:flutter/cupertino.dart';
 import '../kimmi_curvy/kimmi_vasectomy_pioneer_dock.dart';
 
 class KimmiFailedBerryMeaning extends StatefulWidget {
-  const KimmiFailedBerryMeaning(
-      {super.key, required this.color, required this.width});
+  const KimmiFailedBerryMeaning({
+    super.key,
+    required this.color,
+    required this.width,
+  });
 
   final Color color;
   final double width;
@@ -43,10 +46,7 @@ class _KimmiFailedBerryMeaningViking extends State<KimmiFailedBerryMeaning>
     return SizedBox(
       width: widget.width,
       height: widget.width,
-      child: Stack(
-        alignment: Alignment.center,
-        children: _children,
-      ),
+      child: Stack(alignment: Alignment.center, children: _children),
     );
   }
 
@@ -54,8 +54,9 @@ class _KimmiFailedBerryMeaningViking extends State<KimmiFailedBerryMeaning>
     _children.clear();
     int count = 0;
     _addSearchAnimation(true);
-    _searchBluetoothTimer =
-        Timer.periodic(const Duration(milliseconds: 1000), (timer) {
+    _searchBluetoothTimer = Timer.periodic(const Duration(milliseconds: 1000), (
+      timer,
+    ) {
       if (!mounted) {
         timer.cancel();
         return;
@@ -71,13 +72,16 @@ class _KimmiFailedBerryMeaningViking extends State<KimmiFailedBerryMeaning>
   void _addSearchAnimation(bool init) {
     var controller = _createController();
     _controllers.add(controller);
-    var animation = Tween(begin: 50.0, end: 290.0)
-        .animate(CurvedAnimation(parent: controller, curve: Curves.linear));
+    var animation = Tween(
+      begin: 50.0,
+      end: 290.0,
+    ).animate(CurvedAnimation(parent: controller, curve: Curves.linear));
     if (!init) {
       _children.removeAt(0);
       Future.delayed(const Duration(seconds: 1), () {
         if (!mounted) return;
-        _children.add(AnimatedBuilder(
+        _children.add(
+          AnimatedBuilder(
             animation: controller,
             builder: (BuildContext context, Widget? child) {
               return Opacity(
@@ -90,7 +94,9 @@ class _KimmiFailedBerryMeaningViking extends State<KimmiFailedBerryMeaning>
                   ),
                 ),
               );
-            }));
+            },
+          ),
+        );
         try {
           controller.forward();
           setState(() {});
@@ -100,7 +106,8 @@ class _KimmiFailedBerryMeaningViking extends State<KimmiFailedBerryMeaning>
         }
       });
     } else {
-      _children.add(AnimatedBuilder(
+      _children.add(
+        AnimatedBuilder(
           animation: controller,
           builder: (BuildContext context, Widget? child) {
             return Opacity(
@@ -113,7 +120,9 @@ class _KimmiFailedBerryMeaningViking extends State<KimmiFailedBerryMeaning>
                 ),
               ),
             );
-          }));
+          },
+        ),
+      );
       controller.forward();
       setState(() {});
     }
@@ -121,7 +130,9 @@ class _KimmiFailedBerryMeaningViking extends State<KimmiFailedBerryMeaning>
 
   AnimationController _createController() {
     var controller = AnimationController(
-        duration: const Duration(milliseconds: 4000), vsync: this);
+      duration: const Duration(milliseconds: 4000),
+      vsync: this,
+    );
     controller.addStatusListener((status) {
       if (status == AnimationStatus.completed) {
         controller.dispose();

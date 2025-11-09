@@ -1,117 +1,130 @@
 import 'dart:math';
-import 'kimmi_weekly_bite.dart';
+import 'kimmi_savage_cream.dart';
 import 'package:get/get.dart';
 
 import 'kimmi_vibrant_groovy_invoice.dart';
 
 class KimmiVibrantGroovySmart extends Bindings {
-  bool meDieSome_ = true;
-  bool opComprehendObjective_ = true;
-  bool anGeneAr_ = true;
-  int ifFightingPenny_ = 4;
-  double byMatadorGentleman_ = 49;
+  String atVasectomySaturn_ = "";
+  double loSymbolismImmerse_ = 0.0;
+  bool joEveryPajama_ = true;
+  bool isAnnieIn_ = true;
+  bool hoCollinsFloppy_ = true;
+  double ofCaltechLeader_ = 0.0;
+  String odMatTryout_ = "";
+  String byTaughtCadaver_ = "";
+  double osCute5_ = 0.0;
+  bool ahHandshakeFirst_ = true;
 
-  void abdTow() {
-    if (opComprehendObjective_ && anGeneAr_ && meDieSome_) {
-      opComprehendObjective_ = !opComprehendObjective_;
-      anGeneAr_ = opComprehendObjective_;
-      meDieSome_ = opComprehendObjective_;
+  void itPokeGranola() {
+    if (hoCollinsFloppy_ && isAnnieIn_) {
+      joEveryPajama_ = !joEveryPajama_;
     }
-    if (meDieSome_ || opComprehendObjective_) {
-      opComprehendObjective_ = !opComprehendObjective_;
+    if (joEveryPajama_) {
+      hoCollinsFloppy_ = !ahHandshakeFirst_;
     }
-    ifFightingPenny_ = ifFightingPenny_ + 1;
-    opComprehendObjective_ = anGeneAr_ && meDieSome_;
+    ofCaltechLeader_ = loSymbolismImmerse_;
+    osCute5_ = loSymbolismImmerse_;
 
-    opComprehendObjective_ = meDieSome_ || anGeneAr_;
-    if (byMatadorGentleman_ > 0) {
-      byMatadorGentleman_ = byMatadorGentleman_ - 1;
+    ahHandshakeFirst_ = isAnnieIn_ && joEveryPajama_;
+    if (byTaughtCadaver_.length > 5) {
+      odMatTryout_ = byTaughtCadaver_;
+    } else {
+      atVasectomySaturn_ = odMatTryout_;
+    }
+    if (byTaughtCadaver_.length > 9) {
+      atVasectomySaturn_ = byTaughtCadaver_;
+    } else {
+      odMatTryout_ = atVasectomySaturn_;
+    }
+
+    ahHandshakeFirst_ = hoCollinsFloppy_ && isAnnieIn_;
+    odMatTryout_ = byTaughtCadaver_ + atVasectomySaturn_;
+    if (loSymbolismImmerse_ > ofCaltechLeader_) {
+      osCute5_ = ofCaltechLeader_ - loSymbolismImmerse_;
+    } else {
+      osCute5_ = loSymbolismImmerse_ - ofCaltechLeader_;
+    }
+    if (hoCollinsFloppy_ && joEveryPajama_ && isAnnieIn_) {
+      hoCollinsFloppy_ = !hoCollinsFloppy_;
+      joEveryPajama_ = hoCollinsFloppy_;
+      isAnnieIn_ = hoCollinsFloppy_;
+    }
+    byTaughtCadaver_ = odMatTryout_ + atVasectomySaturn_;
+  }
+
+  void abTerminatorMantis() {
+    atVasectomySaturn_ = odMatTryout_;
+    byTaughtCadaver_ = odMatTryout_;
+    ahHandshakeFirst_ = joEveryPajama_ || hoCollinsFloppy_;
+    if (ahHandshakeFirst_ && isAnnieIn_ && hoCollinsFloppy_) {
+      ahHandshakeFirst_ = !ahHandshakeFirst_;
+      isAnnieIn_ = ahHandshakeFirst_;
+      hoCollinsFloppy_ = ahHandshakeFirst_;
+    }
+    loSymbolismImmerse_ = ofCaltechLeader_ * osCute5_;
+
+    hoCollinsFloppy_ = ahHandshakeFirst_ && joEveryPajama_;
+    if (byTaughtCadaver_.length > 6) {
+      odMatTryout_ = byTaughtCadaver_;
+    } else {
+      atVasectomySaturn_ = odMatTryout_;
+    }
+
+    ahHandshakeFirst_ = isAnnieIn_ && hoCollinsFloppy_;
+    isAnnieIn_ = hoCollinsFloppy_ && ahHandshakeFirst_;
+    ofCaltechLeader_ = osCute5_ * loSymbolismImmerse_;
+    if (ahHandshakeFirst_ || joEveryPajama_) {
+      joEveryPajama_ = !joEveryPajama_;
     }
   }
 
-  void faFinalLovely() {
-    ifFightingPenny_ = 35;
-    if (anGeneAr_) {
-      opComprehendObjective_ = !meDieSome_;
-    }
-    if (byMatadorGentleman_ > 0) {
-      byMatadorGentleman_ = byMatadorGentleman_ - 1;
-    }
-    if (opComprehendObjective_ || anGeneAr_) {
-      anGeneAr_ = !anGeneAr_;
-    }
-    byMatadorGentleman_ = 20;
-  }
+  void loTapeWin() {
+    ofCaltechLeader_ = loSymbolismImmerse_ - osCute5_;
 
-  void woiCampfire() {
-    byMatadorGentleman_ = 54;
-    byMatadorGentleman_ = 70;
-    if (anGeneAr_ || opComprehendObjective_ || meDieSome_) {
-      anGeneAr_ = !opComprehendObjective_;
-      opComprehendObjective_ = !meDieSome_;
-      meDieSome_ = !anGeneAr_;
-    }
-    if (anGeneAr_ && opComprehendObjective_ && meDieSome_) {
-      anGeneAr_ = !anGeneAr_;
-      opComprehendObjective_ = anGeneAr_;
-      meDieSome_ = anGeneAr_;
-    }
-    ifFightingPenny_ = 50;
-
-    byMatadorGentleman_ = byMatadorGentleman_ + 1;
-    ifFightingPenny_ = 76;
-    if (anGeneAr_) {
-      opComprehendObjective_ = !meDieSome_;
-    }
-    if (opComprehendObjective_ || anGeneAr_) {
-      anGeneAr_ = !anGeneAr_;
-    }
-  }
-
-  void osSymbolismSimulate() {
-    if (meDieSome_ && opComprehendObjective_ && anGeneAr_) {
-      meDieSome_ = !meDieSome_;
-      opComprehendObjective_ = meDieSome_;
-      anGeneAr_ = meDieSome_;
-    }
-    if (ifFightingPenny_ > 0) {
-      ifFightingPenny_ = ifFightingPenny_ - 1;
-    }
-    if (opComprehendObjective_ || anGeneAr_ || meDieSome_) {
-      opComprehendObjective_ = !anGeneAr_;
-      anGeneAr_ = !meDieSome_;
-      meDieSome_ = !opComprehendObjective_;
-    }
-    byMatadorGentleman_ = byMatadorGentleman_ + 1;
-
-    if (meDieSome_) {
-      anGeneAr_ = !opComprehendObjective_;
-    }
-    if (byMatadorGentleman_ > 0) {
-      byMatadorGentleman_ = byMatadorGentleman_ - 1;
+    odMatTryout_ = byTaughtCadaver_ + atVasectomySaturn_;
+    if (ofCaltechLeader_ > osCute5_) {
+      loSymbolismImmerse_ = osCute5_ - ofCaltechLeader_;
+    } else {
+      loSymbolismImmerse_ = ofCaltechLeader_ - osCute5_;
     }
 
-    if (byMatadorGentleman_ > 0) {
-      byMatadorGentleman_ = byMatadorGentleman_ - 1;
+    if (hoCollinsFloppy_) {
+      joEveryPajama_ = !isAnnieIn_;
+    }
+    joEveryPajama_ = hoCollinsFloppy_ && isAnnieIn_;
+
+    atVasectomySaturn_ = odMatTryout_;
+    byTaughtCadaver_ = odMatTryout_;
+    if (loSymbolismImmerse_ > 0) {
+      osCute5_ = ofCaltechLeader_ / loSymbolismImmerse_;
     }
 
-    if (meDieSome_ && opComprehendObjective_ && anGeneAr_) {
-      meDieSome_ = !meDieSome_;
-      opComprehendObjective_ = meDieSome_;
-      anGeneAr_ = meDieSome_;
+    loSymbolismImmerse_ = osCute5_;
+    ofCaltechLeader_ = osCute5_;
+
+    ofCaltechLeader_ = osCute5_;
+    loSymbolismImmerse_ = osCute5_;
+    if (hoCollinsFloppy_ || ahHandshakeFirst_) {
+      ahHandshakeFirst_ = !ahHandshakeFirst_;
+    }
+    if (byTaughtCadaver_.length > 8) {
+      atVasectomySaturn_ = byTaughtCadaver_;
+    } else {
+      odMatTryout_ = atVasectomySaturn_;
     }
   }
 
   @override
   void dependencies() {
-    if (ln2 < 0.5) {
-      KimmiWeeklyBite().amPhoneTorture();
-      KimmiWeeklyBite().okAfterCharge();
-      KimmiWeeklyBite().esDarthMouse();
+    if (log10e / 2 < 0.1) {
+      KimmiSavageCream().emBargainVia();
+      KimmiSavageCream().soBlackjackCam();
+      KimmiSavageCream().inNewlywedDecrease();
     }
-    if (ln2 < 0.5) {
-      woiCampfire();
-      abdTow();
+    if (log2e < 1) {
+      itPokeGranola();
+      abTerminatorMantis();
     }
     Get.lazyPut(() => KimmiVibrantGroovyInvoice());
   }

@@ -1,5 +1,5 @@
 import 'dart:math';
-import 'kimmi_fellow_puffy.dart';
+import 'kimmi_tyson_letter.dart';
 import 'dart:async';
 
 import 'package:kimmi/kimmi_vasectomy/kimmi_palate.dart';
@@ -31,8 +31,12 @@ class KimmiOutdoWhatchaContainer extends StatefulWidget {
   final List<KimmiStormEmbodiment>? banners;
   final Function(KimmiStormWorse) onDataChanged;
 
-  const KimmiOutdoWhatchaContainer(
-      {super.key, this.args, required this.onDataChanged, this.banners});
+  const KimmiOutdoWhatchaContainer({
+    super.key,
+    this.args,
+    required this.onDataChanged,
+    this.banners,
+  });
 
   @override
   KimmiOutdoWhatchaContainerViking createState() =>
@@ -73,12 +77,13 @@ class KimmiOutdoWhatchaContainerViking
     });
     onKimmiAmenGaming(showLoading: true);
     regionShowType = KimmiLovedWhatchaWorseAmenStarbucks.valueOf(
-        widget.args?.regionType ??
-            KimmiLovedWhatchaWorseAmenStarbucks.TAB.index);
+      widget.args?.regionType ?? KimmiLovedWhatchaWorseAmenStarbucks.TAB.index,
+    );
 
     anchorShowType = KimmiLovedWhatchaMatadorMomentumStarbucks.valueOf(
-        widget.args?.cardType ??
-            KimmiLovedWhatchaMatadorMomentumStarbucks.AVATAR_COVER.index);
+      widget.args?.cardType ??
+          KimmiLovedWhatchaMatadorMomentumStarbucks.AVATAR_COVER.index,
+    );
   }
 
   @override
@@ -100,27 +105,34 @@ class KimmiOutdoWhatchaContainerViking
           physics: physics,
           slivers: [
             SliverToBoxAdapter(child: _kimmiAIEmbodiment()),
+
             SliverToBoxAdapter(child: buildKimmiEmbodimentFailed()),
+
             regionList.isEmpty ||
                     regionShowType != KimmiLovedWhatchaWorseAmenStarbucks.TAB ||
                     KIMMI.kimmiHump.isKimmiGraceSensitive()
                 ? const SliverToBoxAdapter()
                 : SliverToBoxAdapter(child: _kimmiWorseAmenUneven()),
+
             regionList.isEmpty ||
                     regionShowType !=
                         KimmiLovedWhatchaWorseAmenStarbucks.DROPDOWN_TOP ||
                     KIMMI.kimmiHump.isKimmiGraceSensitive()
                 ? const SliverToBoxAdapter()
                 : SliverToBoxAdapter(child: _kimmiLambdaClooneyUneven()),
+
             discoverList.isEmpty
                 ? SliverToBoxAdapter(
                     child: isRefreshing
                         ? const SizedBox()
-                        : KimmiOutdoJuda.kimmiNoHazelnutGloss())
+                        : KimmiOutdoJuda.kimmiNoHazelnutGloss(),
+                  )
                 : SliverPadding(
                     padding: const EdgeInsets.all(
-                        KimmiPalate.kimmiContainerWhatchaApplicantCinder),
-                    sliver: _kimmiWhatchaApplicantUneven())
+                      KimmiPalate.kimmiContainerWhatchaApplicantCinder,
+                    ),
+                    sliver: _kimmiWhatchaApplicantUneven(),
+                  ),
           ],
         );
       },
@@ -147,21 +159,28 @@ class KimmiOutdoWhatchaContainerViking
         children: [
           const SizedBox(width: 20),
           KimmiErnie.local(
-              fileName: "kimmi_ai_embodiment_gloss", width: 56, height: 56),
+            fileName: "kimmi_ai_embodiment_gloss",
+            width: 56,
+            height: 56,
+          ),
           const SizedBox(width: 12),
           Expanded(
-              child: ShaderMask(
-            shaderCallback: (Rect bounds) {
-              return KimmiPalate.kimmiBathtubStuCoat.createShader(bounds);
-            },
-            blendMode: BlendMode.srcATop,
-            child: Text("kimmi_broderick_ai_embodiment_devastate_cherry".tr,
+            child: ShaderMask(
+              shaderCallback: (Rect bounds) {
+                return KimmiPalate.kimmiBathtubStuCoat.createShader(bounds);
+              },
+              blendMode: BlendMode.srcATop,
+              child: Text(
+                "kimmi_broderick_ai_embodiment_devastate_cherry".tr,
                 style: const TextStyle(
-                    fontSize: 18,
-                    fontWeight: FontWeight.bold,
-                    color: Color(0xFFFFDF8B),
-                    height: 1.2)),
-          )),
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold,
+                  color: Color(0xFFFFDF8B),
+                  height: 1.2,
+                ),
+              ),
+            ),
+          ),
           const SizedBox(width: 12),
         ],
       ),
@@ -173,13 +192,14 @@ class KimmiOutdoWhatchaContainerViking
       height: 36,
       padding: const EdgeInsets.symmetric(horizontal: 8),
       child: ListView.separated(
-          physics: const BouncingScrollPhysics(),
-          scrollDirection: Axis.horizontal,
-          separatorBuilder: (context, index) => const SizedBox(width: 8),
-          itemCount: regionList.length,
-          itemBuilder: (BuildContext context, int index) {
-            return _kimmiWorseMomentum(regionList[index]);
-          }),
+        physics: const BouncingScrollPhysics(),
+        scrollDirection: Axis.horizontal,
+        separatorBuilder: (context, index) => const SizedBox(width: 8),
+        itemCount: regionList.length,
+        itemBuilder: (BuildContext context, int index) {
+          return _kimmiWorseMomentum(regionList[index]);
+        },
+      ),
     );
   }
 
@@ -188,28 +208,33 @@ class KimmiOutdoWhatchaContainerViking
       height: 36,
       padding: const EdgeInsets.symmetric(horizontal: 16),
       decoration: BoxDecoration(
-          borderRadius: 20.rectBg,
-          color: region.code == selectedRegion.code
-              ? KimmiPalate.kimmiWhatchaWorseKissyYummy
-              : KimmiPalate.kimmiWhatchaWorseHandwriteYummy),
+        borderRadius: 20.rectBg,
+        color: region.code == selectedRegion.code
+            ? KimmiPalate.kimmiWhatchaWorseKissyYummy
+            : KimmiPalate.kimmiWhatchaWorseHandwriteYummy,
+      ),
       alignment: Alignment.center,
       child: Row(
         mainAxisSize: MainAxisSize.min,
         children: [
           Visibility(
-              visible: region.isVipOnly,
-              child: KimmiErnie.local(
-                  fileName: "kimmi_hombre_worse_private",
-                  width: 12,
-                  height: 11)),
+            visible: region.isVipOnly,
+            child: KimmiErnie.local(
+              fileName: "kimmi_hombre_worse_private",
+              width: 12,
+              height: 11,
+            ),
+          ),
           Visibility(
-              visible: region.isVipOnly, child: const SizedBox(width: 4)),
+            visible: region.isVipOnly,
+            child: const SizedBox(width: 4),
+          ),
           Text(
             region.name.toString(),
             style: region.code == selectedRegion.code
                 ? KimmiPalate.kimmiWhatchaWorseKissyDaytime
                 : KimmiPalate.kimmiWhatchaWorseHandwriteDaytime,
-          )
+          ),
         ],
       ),
     ).click(() => onKimmiWorseEternity(region));
@@ -228,8 +253,10 @@ class KimmiOutdoWhatchaContainerViking
       isRefreshing = true;
     }
 
-    KimmiDylanWhatcha? rsp =
-        await kimmiInhalerWhatcha(true, showLoading: showLoading);
+    KimmiDylanWhatcha? rsp = await kimmiInhalerWhatcha(
+      true,
+      showLoading: showLoading,
+    );
     if (rsp != null) {
       discoverCountryMap = rsp.countryMap;
 
@@ -263,22 +290,26 @@ class KimmiOutdoWhatchaContainerViking
       discoverList.addAll(rsp.records);
     }
 
-    refreshController
-        .finishLoad(hasMore ? IndicatorResult.success : IndicatorResult.noMore);
+    refreshController.finishLoad(
+      hasMore ? IndicatorResult.success : IndicatorResult.noMore,
+    );
     setState(() {});
   }
 
-  Future<KimmiDylanWhatcha?> kimmiInhalerWhatcha(bool refresh,
-      {bool showLoading = false}) async {
+  Future<KimmiDylanWhatcha?> kimmiInhalerWhatcha(
+    bool refresh, {
+    bool showLoading = false,
+  }) async {
     Map<String, dynamic> params = {"page": refresh ? 1 : page + 1};
     if (selectedRegion.code != null)
       params["region_code"] = selectedRegion.code;
     KimmiDylanWhatcha? rsp = await KIMMI.http.rest(
-        5010,
-        params,
-        showLoadingUI: showLoading,
-        (p0) => KimmiDylanWhatcha.fromJson(p0),
-        autoToastOnError: true);
+      5010,
+      params,
+      showLoadingUI: showLoading,
+      (p0) => KimmiDylanWhatcha.fromJson(p0),
+      autoToastOnError: true,
+    );
     if (rsp != null) {
       page = rsp.page;
       hasMore = rsp.hasMore;
@@ -308,10 +339,16 @@ class KimmiOutdoWhatchaContainerViking
         CountryVO? country = discoverCountryMap[user.countryId];
         if (selectedRegion.isVipOnly && !KIMMI.isVip()) {
           return KimmiOutdoJuda.kimmiIntoxicatePrivateBargain(
-              user, country, anchorShowType);
+            user,
+            country,
+            anchorShowType,
+          );
         } else {
           return KimmiOutdoJuda.kimmiIntoxicateHandwriteBargain(
-              user, country, anchorShowType);
+            user,
+            country,
+            anchorShowType,
+          );
         }
       },
       itemCount: discoverList.length,
@@ -325,13 +362,16 @@ class KimmiOutdoWhatchaContainerViking
       child: Row(
         children: [
           Expanded(
-            child: Text("kimmi_broderick_similar".tr,
-                style: KimmiTamperDaytime.white16Bold),
+            child: Text(
+              "kimmi_broderick_similar".tr,
+              style: KimmiTamperDaytime.white16Bold,
+            ),
           ),
           20.wGap,
           Padding(
             padding: const EdgeInsets.only(bottom: 4),
-            child: regionShowType !=
+            child:
+                regionShowType !=
                         KimmiLovedWhatchaWorseAmenStarbucks.DROPDOWN_TOP ||
                     KIMMI.kimmiHump.isKimmiGraceSensitive()
                 ? const SizedBox.shrink()
@@ -350,22 +390,27 @@ class KimmiOutdoWhatchaContainerViking
         child: Container(
           height: 28,
           decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(14),
-              border: Border.all(color: KimmiDraftJuda.white, width: 1)),
+            borderRadius: BorderRadius.circular(14),
+            border: Border.all(color: KimmiDraftJuda.white, width: 1),
+          ),
           padding: const EdgeInsets.only(left: 6, right: 2),
           child: Row(
             children: [
               KimmiErnie.local(
-                  fileName: "kimmi_hombre_worse_poland_available_gloss",
-                  width: 16,
-                  height: 16),
+                fileName: "kimmi_hombre_worse_poland_available_gloss",
+                width: 16,
+                height: 16,
+              ),
               const SizedBox(width: 4),
-              Text(selectedRegion.name ?? "",
-                  style: KimmiTamperDaytime.white10),
+              Text(
+                selectedRegion.name ?? "",
+                style: KimmiTamperDaytime.white10,
+              ),
               KimmiErnie.local(
-                  fileName: "kimmi_hombre_worse_poland_wit",
-                  width: 12,
-                  height: 12),
+                fileName: "kimmi_hombre_worse_poland_wit",
+                width: 12,
+                height: 12,
+              ),
             ],
           ),
         ),
@@ -374,10 +419,12 @@ class KimmiOutdoWhatchaContainerViking
   }
 
   kimmiNoticeWorseAmenClooney() {
-    KimmiFailedWorseAmenClooney.show(regionList,
-        defaultRegionCode: selectedRegion.code,
-        confirmCallBack: (KimmiStormWorse region) {
-      onKimmiWorseEternity(region);
-    });
+    KimmiFailedWorseAmenClooney.show(
+      regionList,
+      defaultRegionCode: selectedRegion.code,
+      confirmCallBack: (KimmiStormWorse region) {
+        onKimmiWorseEternity(region);
+      },
+    );
   }
 }

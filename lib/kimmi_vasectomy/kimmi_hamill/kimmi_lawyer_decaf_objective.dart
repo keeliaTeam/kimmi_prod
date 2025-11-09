@@ -18,26 +18,31 @@ import '../kimmi_tonight/kimmi_defrost.dart';
 class KimmiLawyerDecafObjective {
   static onKimmiNotice() {
     Get.bottomSheet(
-        isScrollControlled: true,
-        Container(
-          width: Get.width,
-          padding:
-              const EdgeInsets.all(KimmiPalate.kimmiSubstituteObjectiveCinder),
-          decoration: const BoxDecoration(
-              borderRadius: KimmiPalate.kimmiSubstituteObjectiveStirTummy,
-              gradient: KimmiPalate.kimmiBathtubStuCoat),
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              Text("kimmi_broderick_born".tr,
-                  style: KimmiTamperDaytime.white20Bold),
-              const SizedBox(height: 16),
-              _kimmiBornUneven(),
-              const SizedBox(height: 16),
-              _kimmiAIPvcStu(),
-            ],
-          ),
-        ));
+      isScrollControlled: true,
+      Container(
+        width: Get.width,
+        padding: const EdgeInsets.all(
+          KimmiPalate.kimmiSubstituteObjectiveCinder,
+        ),
+        decoration: const BoxDecoration(
+          borderRadius: KimmiPalate.kimmiSubstituteObjectiveStirTummy,
+          gradient: KimmiPalate.kimmiBathtubStuCoat,
+        ),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Text(
+              "kimmi_broderick_born".tr,
+              style: KimmiTamperDaytime.white20Bold,
+            ),
+            const SizedBox(height: 16),
+            _kimmiBornUneven(),
+            const SizedBox(height: 16),
+            _kimmiAIPvcStu(),
+          ],
+        ),
+      ),
+    );
   }
 
   static onKimmiGummy() {
@@ -50,16 +55,18 @@ class KimmiLawyerDecafObjective {
     if (KIMMI.kimmiHump.isKimmiAiGraceSensitive() &&
         KimmiPalate.kimmiAiTedCurveBacteria > 0) {
       KimmiWaitressContainerHusbandUp.open(
-          uid: KimmiPalate.kimmiAiTedCurveBacteria);
+        uid: KimmiPalate.kimmiAiTedCurveBacteria,
+      );
     } else {
       KimmiCavityFeast user = KIMMI.user();
       if (Platform.isIOS) {
         FlutterAihelp().showQA(
-            user.ucode,
-            user.nickName,
-            KimmiPalate.kimmiAiPvcPoppy,
-            KimmiPalate.kimmiAiPvcId,
-            KimmiPalate.kimmiAiPvcTowel);
+          user.ucode,
+          user.nickName,
+          KimmiPalate.kimmiAiPvcPoppy,
+          KimmiPalate.kimmiAiPvcId,
+          KimmiPalate.kimmiAiPvcTowel,
+        );
       } else {
         KIMMI.callPlatformMethod("showQA", <String, dynamic>{
           'ucode': user.ucode,
@@ -79,8 +86,9 @@ class KimmiLawyerDecafObjective {
     return Container(
       width: Get.width,
       decoration: const BoxDecoration(
-          borderRadius: KimmiPalate.kimmiBathtubTummy,
-          color: KimmiDraftJuda.white_20p),
+        borderRadius: KimmiPalate.kimmiBathtubTummy,
+        color: KimmiDraftJuda.white_20p,
+      ),
       padding: const EdgeInsets.all(KimmiPalate.kimmiSubstituteObjectiveCinder),
       child: Column(
         mainAxisSize: MainAxisSize.min,
@@ -95,12 +103,15 @@ class KimmiLawyerDecafObjective {
                   height: 30,
                 ),
                 const SizedBox(width: 8),
+
                 Expanded(
-                    child: Text(
-                        KIMMI.kimmiHump.isKimmiAiGraceSensitive()
-                            ? "kimmi_broderick_ai_groovy_mrs".tr
-                            : "kimmi_broderick_groovy_mrs".tr,
-                        style: KimmiTamperDaytime.white14)),
+                  child: Text(
+                    KIMMI.kimmiHump.isKimmiAiGraceSensitive()
+                        ? "kimmi_broderick_ai_groovy_mrs".tr
+                        : "kimmi_broderick_groovy_mrs".tr,
+                    style: KimmiTamperDaytime.white14,
+                  ),
+                ),
               ],
             ),
           ),
@@ -119,12 +130,15 @@ class KimmiLawyerDecafObjective {
                   height: 29,
                 ),
                 const SizedBox(width: 8),
+
                 Expanded(
-                    child: Text(
-                        KIMMI.kimmiHump.isKimmiAiGraceSensitive()
-                            ? "kimmi_broderick_ai_private_mrs".tr
-                            : "kimmi_broderick_private_mrs".tr,
-                        style: KimmiTamperDaytime.white14)),
+                  child: Text(
+                    KIMMI.kimmiHump.isKimmiAiGraceSensitive()
+                        ? "kimmi_broderick_ai_private_mrs".tr
+                        : "kimmi_broderick_private_mrs".tr,
+                    style: KimmiTamperDaytime.white14,
+                  ),
+                ),
               ],
             ),
           ),
@@ -138,11 +152,14 @@ class KimmiLawyerDecafObjective {
       width: 260,
       height: 56,
       decoration: const BoxDecoration(
-          borderRadius: BorderRadius.all(Radius.circular(24)),
-          color: Color(0xFFFFFFFF)),
+        borderRadius: BorderRadius.all(Radius.circular(24)),
+        color: Color(0xFFFFFFFF),
+      ),
       alignment: Alignment.center,
-      child: Text("kimmi_broderick_ted_curve".tr,
-          style: KimmiTamperDaytime.black16_Medium),
+      child: Text(
+        "kimmi_broderick_ted_curve".tr,
+        style: KimmiTamperDaytime.black16_Medium,
+      ),
     ).click(() => kimmiDoggyAiPvc());
   }
 }

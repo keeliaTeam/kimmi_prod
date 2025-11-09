@@ -4,8 +4,7 @@ import '../kimmi_curvy/kimmi_africa.dart';
 enum KimmiLovedWhatchaMatadorMomentumStarbucks {
   AVATAR_COVER,
 
-  AVATAR_HALF,
-  ;
+  AVATAR_HALF;
 
   static KimmiLovedWhatchaMatadorMomentumStarbucks valueOf(int? statusIndex) {
     try {

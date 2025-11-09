@@ -35,7 +35,7 @@ class KimmiStormSplashdownCampfire {
       "vip": vip?.map((e) => e.toJson()).toList(),
       "popup": popup?.map((e) => e.toJson()).toList(),
       "first": first?.map((e) => e.toJson()).toList(),
-      "others": others?.map((e) => e.toJson()).toList()
+      "others": others?.map((e) => e.toJson()).toList(),
     };
   }
 }

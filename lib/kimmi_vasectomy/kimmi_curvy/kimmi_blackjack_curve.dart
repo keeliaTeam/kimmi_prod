@@ -41,14 +41,15 @@ class KimmiBlackjackCurve {
 
   void initAdjust() {
     AdjustConfig config = AdjustConfig(
-        KimmiPalate.kimmiAssertId,
-        KimmiPalate.kimmiMotion
-            ? AdjustEnvironment.production
-            : AdjustEnvironment.sandbox);
+      KimmiPalate.kimmiAssertId,
+      KimmiPalate.kimmiMotion
+          ? AdjustEnvironment.production
+          : AdjustEnvironment.sandbox,
+    );
     config.logLevel = KimmiPalate.kimmiMotion
         ? AdjustLogLevel.suppress
         : AdjustLogLevel.verbose;
-    config.sendInBackground = true;
+    config.isSendingInBackgroundEnabled = true;
     try {
       config.externalDeviceId = _clientInfo.device_id!;
     } catch (e, stack) {
@@ -56,7 +57,8 @@ class KimmiBlackjackCurve {
     }
 
     config.attributionCallback = (AdjustAttribution attributionChangedData) {
-      _adjustAdInfo = KimmiStormAssertAdTux(
+      Adjust.getAdid().then((String? adid) {
+        _adjustAdInfo = KimmiStormAssertAdTux(
           attributionChangedData.trackerToken,
           attributionChangedData.trackerName,
           attributionChangedData.network,
@@ -64,21 +66,23 @@ class KimmiBlackjackCurve {
           attributionChangedData.adgroup,
           attributionChangedData.creative,
           attributionChangedData.clickLabel,
-          attributionChangedData.adid,
+          adid,
           attributionChangedData.costType,
           attributionChangedData.costAmount?.toString(),
-          attributionChangedData.costCurrency);
+          attributionChangedData.costCurrency,
+        );
 
-      _clientInfo.ad_info = json.encode(_adjustAdInfo);
-      storage.saveClientInfo(_clientInfo);
+        _clientInfo.ad_info = json.encode(_adjustAdInfo);
+        storage.saveClientInfo(_clientInfo);
 
-      uploadAdjustInfo();
+        uploadAdjustInfo();
+      });
     };
 
     if (KIMMI.kimmiFeastGenius != null) {
-      Adjust.addSessionCallbackParameter("user_id", "${KIMMI.uid()}");
+      Adjust.addGlobalCallbackParameter("user_id", "${KIMMI.uid()}");
     }
-    Adjust.start(config);
+    Adjust.initSdk(config);
   }
 
   void onResume() {
@@ -181,7 +185,8 @@ class KimmiBlackjackCurve {
   Future<KimmiStormAssertAdTux?> _loadAdjustAdInfo() async {
     if (_adjustAdInfo == null) {
       AdjustAttribution attribution = await Adjust.getAttribution();
-      if (attribution.adid != null && attribution.adid!.isNotEmpty) {
+      final String? adid = await Adjust.getAdid();
+      if (adid != null && adid.isNotEmpty) {
         _adjustAdInfo = KimmiStormAssertAdTux(
           attribution.trackerToken,
           attribution.trackerName,
@@ -190,7 +195,7 @@ class KimmiBlackjackCurve {
           attribution.adgroup,
           attribution.creative,
           attribution.clickLabel,
-          attribution.adid,
+          adid,
           attribution.costType,
           attribution.costAmount?.toString(),
           attribution.costCurrency,
@@ -215,8 +220,9 @@ class KimmiBlackjackCurve {
         return;
       }
 
-      bool result = await KIMMI.http
-          .submit(1017, {"ad_info": json.encode(value.toJson())});
+      bool result = await KIMMI.http.submit(1017, {
+        "ad_info": json.encode(value.toJson()),
+      });
       if (result) {
         _kimmiSlothObstacleToadAssertTux();
       }
@@ -228,7 +234,8 @@ class KimmiBlackjackCurve {
       return true;
     }
 
-    String key = KimmiPhil.kimmi_phil_towel_obstacle_toad_assert_tux +
+    String key =
+        KimmiPhil.kimmi_phil_towel_obstacle_toad_assert_tux +
         KIMMI.uid().toString();
     int val = storage.get(key, 0);
     _kimmiObstacleToadAssertTux = val > 0;
@@ -237,7 +244,8 @@ class KimmiBlackjackCurve {
 
   void _kimmiSlothObstacleToadAssertTux() {
     _kimmiObstacleToadAssertTux = true;
-    String key = KimmiPhil.kimmi_phil_towel_obstacle_toad_assert_tux +
+    String key =
+        KimmiPhil.kimmi_phil_towel_obstacle_toad_assert_tux +
         KIMMI.uid().toString();
     storage.set(key, 1);
   }

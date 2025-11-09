@@ -22,7 +22,10 @@ class KimmiStormStirLovedDecrease {
         ..freeType = KimmiKeyboardJuda.intDef(json, "free_type", 0)
         ..freeTypeCount = KimmiKeyboardJuda.intDef(json, "free_type_count", 0)
         ..timeInterval = KimmiKeyboardJuda.intDef(json, "time_interval", 0)
-        ..freeTimeoutCount =
-            KimmiKeyboardJuda.intDef(json, "free_timeout_count", 0)
+        ..freeTimeoutCount = KimmiKeyboardJuda.intDef(
+          json,
+          "free_timeout_count",
+          0,
+        )
         ..bgColor = KimmiKeyboardJuda.strDef(json, "bg_color", "");
 }

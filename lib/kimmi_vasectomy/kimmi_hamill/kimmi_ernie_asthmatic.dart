@@ -8,9 +8,7 @@ part 'kimmi_ernie_asthmatic.g.dart';
 
 @jsonWidget
 abstract class _KimmiErnieAsthmaticDecode extends JsonWidgetBuilder {
-  const _KimmiErnieAsthmaticDecode({
-    required super.args,
-  });
+  const _KimmiErnieAsthmaticDecode({required super.args});
 
   @override
   KimmiErnieAsthmatic buildCustom({
@@ -22,17 +20,18 @@ abstract class _KimmiErnieAsthmaticDecode extends JsonWidgetBuilder {
 }
 
 class KimmiErnieAsthmatic extends StatelessWidget {
-  const KimmiErnieAsthmatic(
-      {super.key,
-      required this.url,
-      this.color = Colors.transparent,
-      this.height,
-      this.width,
-      this.fit = BoxFit.contain,
-      this.borderRadius,
-      this.splashColor,
-      this.highlightColor,
-      this.onTap});
+  const KimmiErnieAsthmatic({
+    super.key,
+    required this.url,
+    this.color = Colors.transparent,
+    this.height,
+    this.width,
+    this.fit = BoxFit.contain,
+    this.borderRadius,
+    this.splashColor,
+    this.highlightColor,
+    this.onTap,
+  });
 
   final String url;
   final Color? color;
@@ -63,21 +62,27 @@ class KimmiErnieAsthmatic extends StatelessWidget {
   Widget _image() {
     if (url.startsWith("http://") || url.startsWith("https://")) {
       return Ink.image(
-          image: CachedNetworkImageProvider(url),
-          width: width,
-          height: height,
-          fit: fit);
+        image: CachedNetworkImageProvider(url),
+        width: width,
+        height: height,
+        fit: fit,
+      );
     }
 
     if (url.startsWith("/")) {
       return Ink.image(
-          image: FileImage(File(url)), width: width, height: height, fit: fit);
+        image: FileImage(File(url)),
+        width: width,
+        height: height,
+        fit: fit,
+      );
     }
 
     return Ink.image(
-        image: AssetImage("assets/images/$url.png"),
-        width: width,
-        height: height,
-        fit: fit);
+      image: AssetImage("assets/images/$url.png"),
+      width: width,
+      height: height,
+      fit: fit,
+    );
   }
 }

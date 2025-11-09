@@ -44,39 +44,39 @@ class KimmiWaitressExpensiveSouthPhone {
   KimmiWaitressExpensiveSouthPhone();
 
   factory KimmiWaitressExpensiveSouthPhone.fromJson(
-          Map<String, dynamic> json) =>
-      KimmiWaitressExpensiveSouthPhone()
-        ..category = (json['category'] as num?)?.toInt()
-        ..type = (json['type'] as num?)?.toInt()
-        ..title = json['title'] as String?
-        ..desc = json['desc'] as String?
-        ..cover = json['cover'] as String?
-        ..count = (json['count'] as num?)?.toInt()
-        ..status = (json['status'] as num?)?.toInt()
-        ..userId = (json['user_id'] as num?)?.toInt()
-        ..userName = json['userName'] as String?
-        ..userHead = json['userHead'] as String?
-        ..gender = (json['gender'] as num?)?.toInt()
-        ..userLevel = (json['userLevel'] as num?)?.toInt()
-        ..constellation = json['constellation'] as String?
-        ..age = (json['age'] as num?)?.toInt()
-        ..area = json['area'] as String?
-        ..orderId = (json['orderId'] as num?)?.toInt()
-        ..evaluateId = (json['evaluateId'] as num?)?.toInt()
-        ..star = (json['star'] as num?)?.toInt()
-        ..orderUserType = (json['orderUserType'] as num?)?.toInt()
-        ..starText = json['starText'] as String?
-        ..id = (json['id'] as num?)?.toInt()
-        ..to_uid = (json['to_uid'] as num?)?.toInt()
-        ..quantity = (json['quantity'] as num?)?.toInt()
-        ..icon = json['icon'] as String?
-        ..name = json['name'] as String?
-        ..price = (json['price'] as num?)?.toInt()
-        ..value = (json['value'] as num?)?.toInt()
-        ..min_duration = (json['min_duration'] as num?)?.toInt()
-        ..max_duration = (json['max_duration'] as num?)?.toInt()
-        ..animation_type = (json['animation_type'] as num?)?.toInt()
-        ..animation_url = json['animation_url'] as String?;
+    Map<String, dynamic> json,
+  ) => KimmiWaitressExpensiveSouthPhone()
+    ..category = (json['category'] as num?)?.toInt()
+    ..type = (json['type'] as num?)?.toInt()
+    ..title = json['title'] as String?
+    ..desc = json['desc'] as String?
+    ..cover = json['cover'] as String?
+    ..count = (json['count'] as num?)?.toInt()
+    ..status = (json['status'] as num?)?.toInt()
+    ..userId = (json['user_id'] as num?)?.toInt()
+    ..userName = json['userName'] as String?
+    ..userHead = json['userHead'] as String?
+    ..gender = (json['gender'] as num?)?.toInt()
+    ..userLevel = (json['userLevel'] as num?)?.toInt()
+    ..constellation = json['constellation'] as String?
+    ..age = (json['age'] as num?)?.toInt()
+    ..area = json['area'] as String?
+    ..orderId = (json['orderId'] as num?)?.toInt()
+    ..evaluateId = (json['evaluateId'] as num?)?.toInt()
+    ..star = (json['star'] as num?)?.toInt()
+    ..orderUserType = (json['orderUserType'] as num?)?.toInt()
+    ..starText = json['starText'] as String?
+    ..id = (json['id'] as num?)?.toInt()
+    ..to_uid = (json['to_uid'] as num?)?.toInt()
+    ..quantity = (json['quantity'] as num?)?.toInt()
+    ..icon = json['icon'] as String?
+    ..name = json['name'] as String?
+    ..price = (json['price'] as num?)?.toInt()
+    ..value = (json['value'] as num?)?.toInt()
+    ..min_duration = (json['min_duration'] as num?)?.toInt()
+    ..max_duration = (json['max_duration'] as num?)?.toInt()
+    ..animation_type = (json['animation_type'] as num?)?.toInt()
+    ..animation_url = json['animation_url'] as String?;
 
   Map<String, dynamic> toJson(KimmiWaitressExpensiveSouthPhone instance) =>
       <String, dynamic>{
@@ -166,7 +166,8 @@ class KimmiWaitressExpensiveSouthPhone {
   }
 
   static String jsonContentListMessage(
-      KimmiWaitressExpensiveSouthPhone? content) {
+    KimmiWaitressExpensiveSouthPhone? content,
+  ) {
     String ret = '';
     if (content?.category != null) {
       switch (ChatSnapJsonContentCategory.valueOf(content!.category)) {
@@ -196,32 +197,36 @@ class KimmiWaitressExpensiveSouthPhone {
 
 class ChatSnapJsonContentCategory extends KimmiMuseProcedure {
   static const orderCate = ChatSnapJsonContentCategory._(1, 'orderCate');
-  static const liveVideoCate =
-      ChatSnapJsonContentCategory._(2, 'liveVideoCate');
+  static const liveVideoCate = ChatSnapJsonContentCategory._(
+    2,
+    'liveVideoCate',
+  );
   static const feedCate = ChatSnapJsonContentCategory._(3, 'feedCate');
   static const cardCate = ChatSnapJsonContentCategory._(4, 'cardCate');
   static const skillCate = ChatSnapJsonContentCategory._(5, 'skillCate');
   static const callCate = ChatSnapJsonContentCategory._(6, 'callCate');
-  static const liveVoiceCate =
-      ChatSnapJsonContentCategory._(7, 'liveVoiceCate');
+  static const liveVoiceCate = ChatSnapJsonContentCategory._(
+    7,
+    'liveVoiceCate',
+  );
   static const imGiftCate = ChatSnapJsonContentCategory._(8, 'imGiftCate');
 
   static final Map<int, ChatSnapJsonContentCategory> _byValue =
       KimmiMuseProcedure.initByValue(<ChatSnapJsonContentCategory>[
-    orderCate,
-    liveVideoCate,
-    feedCate,
-    cardCate,
-    skillCate,
-    callCate,
-    liveVoiceCate,
-    imGiftCate,
-  ]);
+        orderCate,
+        liveVideoCate,
+        feedCate,
+        cardCate,
+        skillCate,
+        callCate,
+        liveVoiceCate,
+        imGiftCate,
+      ]);
 
   static ChatSnapJsonContentCategory? valueOf(int? value) => _byValue[value];
 
   const ChatSnapJsonContentCategory._(int value, String name)
-      : super(value, name);
+    : super(value, name);
 }
 
 class ChatSnapJsonContentType {

@@ -32,18 +32,18 @@ class KimmiWaitressLatinoExpensive {
         ..gift_type = (json['gift_type'] as num?)?.toInt();
 
   Map<String, dynamic> toJson() => <String, dynamic>{
-        'category': category,
-        'id': id,
-        'to_uid': to_uid,
-        'quantity': quantity,
-        'icon': icon,
-        'name': name,
-        'price': price,
-        'value': value,
-        'min_duration': min_duration,
-        'max_duration': max_duration,
-        'animation_type': animation_type,
-        'animation_url': animation_url,
-        'gift_type': gift_type,
-      };
+    'category': category,
+    'id': id,
+    'to_uid': to_uid,
+    'quantity': quantity,
+    'icon': icon,
+    'name': name,
+    'price': price,
+    'value': value,
+    'min_duration': min_duration,
+    'max_duration': max_duration,
+    'animation_type': animation_type,
+    'animation_url': animation_url,
+    'gift_type': gift_type,
+  };
 }

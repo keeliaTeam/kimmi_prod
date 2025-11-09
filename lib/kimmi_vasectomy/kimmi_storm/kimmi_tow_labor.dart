@@ -13,8 +13,9 @@ class KimmiTowLabor {
       ..result = KimmiStarbucksJuda.dynamicToIntNotNull(json['result'])
       ..timeout = KimmiStarbucksJuda.dynamicToBoolNotNull(json['timeout'])
       ..currency = json['currency']
-      ..total_price =
-          KimmiStarbucksJuda.dynamicToDoubleNotNull(json['total_price'])
+      ..total_price = KimmiStarbucksJuda.dynamicToDoubleNotNull(
+        json['total_price'],
+      )
       ..order_id = KimmiStarbucksJuda.dynamicToIntNotNull(json['order_id']);
   }
 
@@ -24,7 +25,7 @@ class KimmiTowLabor {
       "timeout": timeout,
       "currency": currency,
       "total_price": total_price,
-      "order_id": order_id
+      "order_id": order_id,
     };
   }
 }

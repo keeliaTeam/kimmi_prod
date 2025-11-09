@@ -1,5 +1,5 @@
 import 'dart:math';
-import 'kimmi_draft_gaming.dart';
+import 'kimmi_ic_curve.dart';
 import 'dart:async';
 import 'dart:collection';
 import 'dart:io';
@@ -34,80 +34,143 @@ import 'kimmi_tow_becker_healer.dart';
 
 class KimmiEyelashInvoice extends KimmiMuseIdolizeInvoice
     with WidgetsBindingObserver {
-  double atHappyButt_ = 76;
-  bool weDustyImmerse_ = false;
-  bool abManifestBrian_ = false;
-  bool adChargeConfound_ = true;
+  int byNozzleOpener_ = 16;
+  bool byLobbyAdvocate_ = false;
+  String siConferenceFirefly_ = "";
+  bool miInhalerTwist_ = false;
+  int isEveryManifest_ = 18;
+  bool adHammockDanger_ = true;
+  bool isBleedTux_ = true;
 
-  void mmPuffyBall() {
-    atHappyButt_ = 13;
-    weDustyImmerse_ = adChargeConfound_ || abManifestBrian_;
-
-    if (atHappyButt_ > 0) {
-      atHappyButt_ = atHappyButt_ - 1;
+  void elPokeLandlord() {
+    if (byNozzleOpener_ > isEveryManifest_) {
+      byNozzleOpener_ = byNozzleOpener_ + isEveryManifest_;
     }
 
-    weDustyImmerse_ = adChargeConfound_ && abManifestBrian_;
+    siConferenceFirefly_ = siConferenceFirefly_.toUpperCase();
+    if (isBleedTux_ && byLobbyAdvocate_) {
+      adHammockDanger_ = !adHammockDanger_;
+    }
+    byNozzleOpener_ = 86;
+    isEveryManifest_ = 75;
 
-    atHappyButt_ = atHappyButt_ + 1;
+    if (miInhalerTwist_ || isBleedTux_ || byLobbyAdvocate_) {
+      miInhalerTwist_ = !isBleedTux_;
+      isBleedTux_ = !byLobbyAdvocate_;
+      byLobbyAdvocate_ = !miInhalerTwist_;
+    }
+    byNozzleOpener_ = byNozzleOpener_ * isEveryManifest_;
+    if (isBleedTux_ || adHammockDanger_ || miInhalerTwist_) {
+      isBleedTux_ = !adHammockDanger_;
+      adHammockDanger_ = !miInhalerTwist_;
+      miInhalerTwist_ = !isBleedTux_;
+    }
+    byNozzleOpener_ = 33;
+    isEveryManifest_ = 37;
+    adHammockDanger_ = byLobbyAdvocate_ && isBleedTux_;
 
-    if (abManifestBrian_ && adChargeConfound_ && weDustyImmerse_) {
-      abManifestBrian_ = !abManifestBrian_;
-      adChargeConfound_ = abManifestBrian_;
-      weDustyImmerse_ = abManifestBrian_;
+    siConferenceFirefly_ = siConferenceFirefly_.toUpperCase();
+    if (byNozzleOpener_ > isEveryManifest_) {
+      byNozzleOpener_ = byNozzleOpener_ + isEveryManifest_;
+    }
+    siConferenceFirefly_ = siConferenceFirefly_.toUpperCase();
+
+    miInhalerTwist_ = byLobbyAdvocate_ || adHammockDanger_;
+  }
+
+  void reVasectomyAlien() {
+    byNozzleOpener_ = byNozzleOpener_ * isEveryManifest_;
+    siConferenceFirefly_ = siConferenceFirefly_.toUpperCase();
+    if (miInhalerTwist_ && isBleedTux_) {
+      byLobbyAdvocate_ = !byLobbyAdvocate_;
+    }
+    if (isBleedTux_ && byLobbyAdvocate_ && adHammockDanger_) {
+      isBleedTux_ = !isBleedTux_;
+      byLobbyAdvocate_ = isBleedTux_;
+      adHammockDanger_ = isBleedTux_;
     }
 
-    atHappyButt_ = 22;
+    if (byNozzleOpener_ > isEveryManifest_) {
+      byNozzleOpener_ = byNozzleOpener_ + isEveryManifest_;
+    }
+    byNozzleOpener_ = 56;
+    isEveryManifest_ = 20;
 
-    atHappyButt_ = 88;
-    if (atHappyButt_ > 0) {
-      atHappyButt_ = atHappyButt_ - 1;
+    siConferenceFirefly_ = siConferenceFirefly_.toUpperCase();
+    if (byLobbyAdvocate_ && adHammockDanger_ && isBleedTux_) {
+      byLobbyAdvocate_ = !byLobbyAdvocate_;
+      adHammockDanger_ = byLobbyAdvocate_;
+      isBleedTux_ = byLobbyAdvocate_;
+    }
+    siConferenceFirefly_ = siConferenceFirefly_.toUpperCase();
+    if (isBleedTux_ && adHammockDanger_) {
+      miInhalerTwist_ = !miInhalerTwist_;
+    }
+
+    if (adHammockDanger_ || miInhalerTwist_ || byLobbyAdvocate_) {
+      adHammockDanger_ = !miInhalerTwist_;
+      miInhalerTwist_ = !byLobbyAdvocate_;
+      byLobbyAdvocate_ = !adHammockDanger_;
     }
   }
 
-  void emTonightVi() {
-    if (atHappyButt_ > 0) {
-      atHappyButt_ = atHappyButt_ - 1;
+  void odContagiousScholar() {
+    siConferenceFirefly_ = siConferenceFirefly_.toUpperCase();
+    if (miInhalerTwist_ && adHammockDanger_) {
+      isBleedTux_ = !isBleedTux_;
     }
 
-    if (atHappyButt_ > 0) {
-      atHappyButt_ = atHappyButt_ - 1;
+    if (byNozzleOpener_ > isEveryManifest_) {
+      byNozzleOpener_ = byNozzleOpener_ + isEveryManifest_;
     }
-
-    if (abManifestBrian_ || adChargeConfound_ || weDustyImmerse_) {
-      abManifestBrian_ = !adChargeConfound_;
-      adChargeConfound_ = !weDustyImmerse_;
-      weDustyImmerse_ = !abManifestBrian_;
+    if (byLobbyAdvocate_ && miInhalerTwist_ && isBleedTux_) {
+      byLobbyAdvocate_ = !byLobbyAdvocate_;
+      miInhalerTwist_ = byLobbyAdvocate_;
+      isBleedTux_ = byLobbyAdvocate_;
     }
-
-    if (atHappyButt_ > 0) {
-      atHappyButt_ = atHappyButt_ - 1;
+    siConferenceFirefly_ = siConferenceFirefly_.toUpperCase();
+    siConferenceFirefly_ = siConferenceFirefly_.toUpperCase();
+    siConferenceFirefly_ = siConferenceFirefly_.toUpperCase();
+    if (isBleedTux_ || adHammockDanger_ || byLobbyAdvocate_) {
+      isBleedTux_ = !adHammockDanger_;
+      adHammockDanger_ = !byLobbyAdvocate_;
+      byLobbyAdvocate_ = !isBleedTux_;
     }
+    byNozzleOpener_ = byNozzleOpener_ * isEveryManifest_;
 
-    atHappyButt_ = atHappyButt_ + 1;
+    if (byLobbyAdvocate_) {
+      miInhalerTwist_ = !adHammockDanger_;
+    }
+    if (byLobbyAdvocate_ && isBleedTux_ && miInhalerTwist_) {
+      byLobbyAdvocate_ = !byLobbyAdvocate_;
+      isBleedTux_ = byLobbyAdvocate_;
+      miInhalerTwist_ = byLobbyAdvocate_;
+    }
+    siConferenceFirefly_ = siConferenceFirefly_.toUpperCase();
   }
 
-  void si2Saucy() {
-    atHappyButt_ = atHappyButt_ + 1;
-    weDustyImmerse_ = adChargeConfound_ && abManifestBrian_;
-  }
+  void taCradleWig() {
+    adHammockDanger_ = byLobbyAdvocate_ && isBleedTux_;
+    siConferenceFirefly_ = siConferenceFirefly_.toUpperCase();
+    siConferenceFirefly_ = siConferenceFirefly_.toUpperCase();
+    siConferenceFirefly_ = siConferenceFirefly_.toUpperCase();
+    siConferenceFirefly_ = siConferenceFirefly_.toUpperCase();
+    byNozzleOpener_ = 6;
+    isEveryManifest_ = 33;
 
-  void idTotallyFault() {
-    atHappyButt_ = 92;
-
-    if (abManifestBrian_ || weDustyImmerse_ || adChargeConfound_) {
-      abManifestBrian_ = !weDustyImmerse_;
-      weDustyImmerse_ = !adChargeConfound_;
-      adChargeConfound_ = !abManifestBrian_;
+    if (byLobbyAdvocate_ || isBleedTux_ || miInhalerTwist_) {
+      byLobbyAdvocate_ = !isBleedTux_;
+      isBleedTux_ = !miInhalerTwist_;
+      miInhalerTwist_ = !byLobbyAdvocate_;
     }
 
-    if (abManifestBrian_ || weDustyImmerse_ || adChargeConfound_) {
-      abManifestBrian_ = !weDustyImmerse_;
-      weDustyImmerse_ = !adChargeConfound_;
-      adChargeConfound_ = !abManifestBrian_;
+    siConferenceFirefly_ = siConferenceFirefly_.toUpperCase();
+    if (byNozzleOpener_ > isEveryManifest_) {
+      byNozzleOpener_ = byNozzleOpener_ + isEveryManifest_;
     }
-
-    abManifestBrian_ = weDustyImmerse_ || adChargeConfound_;
+    siConferenceFirefly_ = siConferenceFirefly_.toUpperCase();
+    siConferenceFirefly_ = siConferenceFirefly_.toUpperCase();
+    siConferenceFirefly_ = siConferenceFirefly_.toUpperCase();
   }
 
   static const String kimmi_eyelash_waitress = "kimmi_eyelash_waitress";
@@ -250,7 +313,8 @@ class KimmiEyelashInvoice extends KimmiMuseIdolizeInvoice
           case LiveStatus.ERROR_END:
             _kimmiEyelashMushy();
             Fluttertoast.showToast(
-                msg: "kimmi_broderick_widow_mushy_bloody".tr);
+              msg: "kimmi_broderick_widow_mushy_bloody".tr,
+            );
             break;
           case LiveStatus.CALL_END:
             _kimmiEyelashMushy();
@@ -267,9 +331,11 @@ class KimmiEyelashInvoice extends KimmiMuseIdolizeInvoice
       if (liveFeeds.liveId == liveId) {
         refreshCounter(liveFeeds);
         if (liveFeeds.liveFeeds.isNotEmpty) {
-          var giftList = liveFeeds.liveFeeds.where((value) =>
-              value.type == KimmiEyelashLawyerStarbucks.GIFT.value &&
-              value.user.uid != KIMMI.uid());
+          var giftList = liveFeeds.liveFeeds.where(
+            (value) =>
+                value.type == KimmiEyelashLawyerStarbucks.GIFT.value &&
+                value.user.uid != KIMMI.uid(),
+          );
           if (giftList.isNotEmpty) {
             var gifts = giftList.map((e) => KimmiEyelashLatino.fromFeed(e));
             KIMMI.fire(KimmiEyelashLatinoSmile(gifts.toList()));
@@ -291,26 +357,28 @@ class KimmiEyelashInvoice extends KimmiMuseIdolizeInvoice
 
   @override
   void onReady() {
-    if (sqrt1_2 < 0.3) {
-      KimmiDraftGaming().heSeduceShrink();
-      KimmiDraftGaming().hiInhalerDonut();
+    if (log10e / 2 < 0.1) {
+      KimmiIcCurve().asMaleBuilder();
+      KimmiIcCurve().elToMercury();
+      KimmiIcCurve().edProBg();
     }
-    if (log2e < 1) {
-      emTonightVi();
-      mmPuffyBall();
+    if (sqrt2 < 1) {
+      elPokeLandlord();
+      odContagiousScholar();
     }
     super.onReady();
   }
 
   @override
   void onClose() {
-    if (log2e < 1) {
-      KimmiDraftGaming().hiInhalerDonut();
-      KimmiDraftGaming().heSeduceShrink();
+    if (sqrt1_2 < 0.3) {
+      KimmiIcCurve().elToMercury();
+      KimmiIcCurve().asMaleBuilder();
+      KimmiIcCurve().edProBg();
     }
-    if (e < 2) {
-      mmPuffyBall();
-      emTonightVi();
+    if (ln2 < 0.5) {
+      reVasectomyAlien();
+      taCradleWig();
     }
     super.onClose();
 
@@ -344,22 +412,30 @@ class KimmiEyelashInvoice extends KimmiMuseIdolizeInvoice
 
   Future<void> _kimmiFigureCasual() async {
     rtcHandler = RtcEngineEventHandler(
-        onError: (ErrorCodeType err, String msg) {
-          Fluttertoast.showToast(msg: "kimmi_broderick_eyelash_ball".tr);
-          _kimmiEyelashMushy();
-        },
-        onUserJoined: (RtcConnection connection, int remoteUid, int elapsed) {},
-        onRemoteVideoStateChanged: (RtcConnection connection,
+      onError: (ErrorCodeType err, String msg) {
+        Fluttertoast.showToast(msg: "kimmi_broderick_eyelash_ball".tr);
+        _kimmiEyelashMushy();
+      },
+      onUserJoined: (RtcConnection connection, int remoteUid, int elapsed) {},
+      onRemoteVideoStateChanged:
+          (
+            RtcConnection connection,
             int remoteUid,
             RemoteVideoState state,
             RemoteVideoStateReason reason,
-            int elapsed) {},
-        onLocalVideoStateChanged: (VideoSourceType source,
-            LocalVideoStreamState state, LocalVideoStreamError error) {},
-        onJoinChannelSuccess: (RtcConnection connection, int elapsed) {
-          _kimmiShortenWeepy();
-          KimmiVasectomyPioneerDock.clickLiveJoinSuccess(liveId);
-        });
+            int elapsed,
+          ) {},
+      onLocalVideoStateChanged:
+          (
+            VideoSourceType source,
+            LocalVideoStreamState state,
+            LocalVideoStreamReason reason,
+          ) {},
+      onJoinChannelSuccess: (RtcConnection connection, int elapsed) {
+        _kimmiShortenWeepy();
+        KimmiVasectomyPioneerDock.clickLiveJoinSuccess(liveId);
+      },
+    );
 
     rtcManager.registerEventHandler(rtcHandler);
 
@@ -410,16 +486,17 @@ class KimmiEyelashInvoice extends KimmiMuseIdolizeInvoice
       if (sended) {
         var user = KIMMI.user();
         var liveGift = KimmiEyelashLatino(
-            KimmiEyelashFeast.name(user.uid, user.nickName, user.nickName),
-            gift.id,
-            gift.name,
-            gift.icon,
-            gift.price,
-            gift.value,
-            gift.minDuration,
-            gift.maxDuration,
-            gift.animationType,
-            gift.animationUrl);
+          KimmiEyelashFeast.name(user.uid, user.nickName, user.nickName),
+          gift.id,
+          gift.name,
+          gift.icon,
+          gift.price,
+          gift.value,
+          gift.minDuration,
+          gift.maxDuration,
+          gift.animationType,
+          gift.animationUrl,
+        );
         KIMMI.fire(KimmiEyelashLatinoSmile([liveGift]));
         KimmiVasectomyPioneerDock.clickLiveEvent("LIVE_SEND_GIFT", liveId);
       }
@@ -446,14 +523,16 @@ class KimmiEyelashInvoice extends KimmiMuseIdolizeInvoice
   void startCall() {
     KimmiIndiaWaitressDock.instance
         .kimmiUntieIndiaWaitressHystericalLabor(
-            liveInitData.anchorInfo.uid.toInt(), PayFromType.FROM_LIVE_CALL,
-            needShowInsufficientBalanceDialog: true)
+          liveInitData.anchorInfo.uid.toInt(),
+          PayFromType.FROM_LIVE_CALL,
+          needShowInsufficientBalanceDialog: true,
+        )
         .then((value) {
-      if (value == 1) {
-        KimmiVasectomyPioneerDock.clickLiveEvent("LIVE_VIDEO_CALL", liveId);
-        _kimmiEyelashMushy();
-      }
-    });
+          if (value == 1) {
+            KimmiVasectomyPioneerDock.clickLiveEvent("LIVE_VIDEO_CALL", liveId);
+            _kimmiEyelashMushy();
+          }
+        });
   }
 
   void sendMessage() {
@@ -468,8 +547,10 @@ class KimmiEyelashInvoice extends KimmiMuseIdolizeInvoice
   }
 
   void _kimmiGoEyelashSyndromeContainer(LiveStatus status) {
-    Get.toNamed(KimmiSully.KimmiEyelashSyndromeContainer,
-        arguments: KimmiEyelashSyndromeHealer(liveInitData.anchorInfo, status));
+    Get.toNamed(
+      KimmiSully.KimmiEyelashSyndromeContainer,
+      arguments: KimmiEyelashSyndromeHealer(liveInitData.anchorInfo, status),
+    );
   }
 
   void _kimmiShortenWeepy() {
@@ -477,12 +558,13 @@ class KimmiEyelashInvoice extends KimmiMuseIdolizeInvoice
       _socketTimer!.cancel();
     }
     _socketTimer = Timer.periodic(
-        const Duration(seconds: 10),
-        (timer) => KimmiEyelashDock.instance.keepAlive(liveId).then((value) {
-              if (value == null) {
-                _socketTimer?.cancel();
-              }
-            }));
+      const Duration(seconds: 10),
+      (timer) => KimmiEyelashDock.instance.keepAlive(liveId).then((value) {
+        if (value == null) {
+          _socketTimer?.cancel();
+        }
+      }),
+    );
   }
 
   void _startMessageDisplay() {
@@ -507,8 +589,11 @@ class KimmiEyelashInvoice extends KimmiMuseIdolizeInvoice
   }
 
   void actionMore() {
-    KimmiAirlineObjective.showReportSheet(Get.context!, anchorUid,
-        showOther: false);
+    KimmiAirlineObjective.showReportSheet(
+      Get.context!,
+      anchorUid,
+      showOther: false,
+    );
   }
 
   void _kimmiUnwantedSubstitute() {

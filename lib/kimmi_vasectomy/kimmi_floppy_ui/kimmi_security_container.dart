@@ -1,5 +1,5 @@
 import 'dart:math';
-import 'kimmi_pro_streetcar.dart';
+import 'kimmi_chickie_splashdown.dart';
 import 'dart:math';
 import 'dart:ui';
 
@@ -50,12 +50,10 @@ class KimmiSecurityContainer
       return [
         SingleChildScrollView(
           child: Stack(
-            children: [
-              _kimmiStirFailed(),
-              _kimmiSecurityAmenUneven(),
-            ],
+            children: [_kimmiStirFailed(), _kimmiSecurityAmenUneven()],
           ),
         ),
+
         _kimmiStirConference(),
       ];
     } catch (e, stack) {
@@ -70,41 +68,49 @@ class KimmiSecurityContainer
         children: [
           SizedBox(height: Get.mediaQuery.padding.top + 64),
           GetBuilder<KimmiSecurityInvoice>(
-              id: KimmiSecurityInvoice.kimmi_stretch,
-              builder: (_) {
-                return _.medias.isNotEmpty
-                    ? _kimmiBransonStretchKennyUneven()
-                    : SizedBox(height: _topAvatarHeight);
-              }),
+            id: KimmiSecurityInvoice.kimmi_stretch,
+            builder: (_) {
+              return _.medias.isNotEmpty
+                  ? _kimmiBransonStretchKennyUneven()
+                  : SizedBox(height: _topAvatarHeight);
+            },
+          ),
           const SizedBox(height: 24),
         ],
       );
     } else {
       return GetBuilder<KimmiSecurityInvoice>(
-          id: KimmiSecurityInvoice.kimmi_feast,
-          builder: (_) {
-            return Stack(
-              alignment: Alignment.bottomCenter,
-              children: [
-                SizedBox(width: Get.width, height: _topAvatarHeight),
-                KimmiErnie.large(
-                    url: _.profile.value != null
-                        ? _.profile.value!.avatarUrl
-                        : _.avatarUrl ?? '',
-                    width: Get.width,
-                    height: _topAvatarHeight,
-                    fit: BoxFit.cover,
-                    placeHolder: (context, url) => KimmiErnie.network(
-                        url: _.profile.value != null
-                            ? _.profile.value!.avatarUrl
-                            : _.avatarUrl ?? '',
-                        fit: BoxFit.cover,
-                        clip: ImageClipType.middle)),
-                Positioned(
-                    left: 32, right: 32, bottom: 16, child: _kimmiTuxUneven())
-              ],
-            );
-          });
+        id: KimmiSecurityInvoice.kimmi_feast,
+        builder: (_) {
+          return Stack(
+            alignment: Alignment.bottomCenter,
+            children: [
+              SizedBox(width: Get.width, height: _topAvatarHeight),
+              KimmiErnie.large(
+                url: _.profile.value != null
+                    ? _.profile.value!.avatarUrl
+                    : _.avatarUrl ?? '',
+                width: Get.width,
+                height: _topAvatarHeight,
+                fit: BoxFit.cover,
+                placeHolder: (context, url) => KimmiErnie.network(
+                  url: _.profile.value != null
+                      ? _.profile.value!.avatarUrl
+                      : _.avatarUrl ?? '',
+                  fit: BoxFit.cover,
+                  clip: ImageClipType.middle,
+                ),
+              ),
+              Positioned(
+                left: 32,
+                right: 32,
+                bottom: 16,
+                child: _kimmiTuxUneven(),
+              ),
+            ],
+          );
+        },
+      );
     }
   }
 
@@ -116,9 +122,13 @@ class KimmiSecurityContainer
         itemBuilder: (BuildContext context, int index) {
           var media = logic.medias[index];
           return Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 8),
-              child: _kimmiBransonStretchBargain(
-                  media, Get.width, _topAvatarHeight));
+            padding: const EdgeInsets.symmetric(horizontal: 8),
+            child: _kimmiBransonStretchBargain(
+              media,
+              Get.width,
+              _topAvatarHeight,
+            ),
+          );
         },
         viewportFraction: 0.8,
         scale: 1,
@@ -135,8 +145,13 @@ class KimmiSecurityContainer
       children: [
         media is PhotoVO
             ? _kimmiByeBargain(media, width, height)
-            : _kimmiIndiaBargain(media as VideoVO, width, height,
-                canPlay: true),
+            : _kimmiIndiaBargain(
+                media as VideoVO,
+                width,
+                height,
+                canPlay: true,
+              ),
+
         Visibility(
           visible: media.isVipOnly() && !KIMMI.isVip(),
           child: Stack(
@@ -153,48 +168,61 @@ class KimmiSecurityContainer
                 width: 250,
                 padding: const EdgeInsets.all(24),
                 decoration: BoxDecoration(
-                    color: KimmiDraftJuda.black_60p,
-                    borderRadius: BorderRadius.circular(24)),
+                  color: KimmiDraftJuda.black_60p,
+                  borderRadius: BorderRadius.circular(24),
+                ),
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   children: [
                     KimmiErnie.local(
-                        fileName: "kimmi_hombre_private_bravery_gloss",
-                        width: 40,
-                        height: 40),
+                      fileName: "kimmi_hombre_private_bravery_gloss",
+                      width: 40,
+                      height: 40,
+                    ),
                     const SizedBox(height: 6),
-                    Text("kimmi_broderick_security_bye_private_saver".tr,
-                        style: KimmiTamperDaytime.TextWhite_12_Medium,
-                        textAlign: TextAlign.center),
+                    Text(
+                      "kimmi_broderick_security_bye_private_saver".tr,
+                      style: KimmiTamperDaytime.TextWhite_12_Medium,
+                      textAlign: TextAlign.center,
+                    ),
                     const SizedBox(height: 10),
                     Container(
                       width: 180,
                       height: 40,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(20),
-                        border:
-                            Border.all(color: KimmiDraftJuda.white, width: 1),
+                        border: Border.all(
+                          color: KimmiDraftJuda.white,
+                          width: 1,
+                        ),
                       ),
                       alignment: Alignment.center,
                       child: Row(
                         mainAxisSize: MainAxisSize.min,
                         children: [
                           KimmiErnie.local(
-                              fileName: "kimmi_hombre_private_dramamine_gloss",
-                              width: 16,
-                              height: 16),
+                            fileName: "kimmi_hombre_private_dramamine_gloss",
+                            width: 16,
+                            height: 16,
+                          ),
                           const SizedBox(width: 2),
-                          Text("kimmi_broderick_drunk_private".tr,
-                              style: KimmiTamperDaytime.white14)
+                          Text(
+                            "kimmi_broderick_drunk_private".tr,
+                            style: KimmiTamperDaytime.white14,
+                          ),
                         ],
                       ),
-                    ).click(() => KIMMI.toNamed(
+                    ).click(
+                      () => KIMMI.toNamed(
                         KimmiSully.KimmiPrivateNieceContainer,
                         arguments: KimmiPrivateNieceHealer(
-                            fromType: PayFromType.FROM_PROFILE_ALBUM)))
+                          fromType: PayFromType.FROM_PROFILE_ALBUM,
+                        ),
+                      ),
+                    ),
                   ],
                 ),
-              )
+              ),
             ],
           ),
         ),
@@ -204,24 +232,27 @@ class KimmiSecurityContainer
 
   Widget _kimmiStirConference() {
     return GetBuilder<KimmiSecurityInvoice>(
-        id: KimmiSecurityInvoice.kimmi_feast,
-        builder: (_) {
-          return Padding(
-              padding: EdgeInsets.only(top: Get.context!.mediaQueryPadding.top),
-              child: KimmiSingleConference(
-                leading: KimmiErnie.local(
-                    fileName: "kimmi_hombre_vasectomy_conference_decaf",
+      id: KimmiSecurityInvoice.kimmi_feast,
+      builder: (_) {
+        return Padding(
+          padding: EdgeInsets.only(top: Get.context!.mediaQueryPadding.top),
+          child: KimmiSingleConference(
+            leading: KimmiErnie.local(
+              fileName: "kimmi_hombre_vasectomy_conference_decaf",
+              width: 24,
+              height: 24,
+            ),
+            action: KIMMI.kimmiHump.isKimmiAiGraceSensitive()
+                ? null
+                : KimmiErnie.local(
+                    fileName: "kimmi_hombre_vasectomy_conference_charm",
                     width: 24,
-                    height: 24),
-                action: KIMMI.kimmiHump.isKimmiAiGraceSensitive()
-                    ? null
-                    : KimmiErnie.local(
-                            fileName: "kimmi_hombre_vasectomy_conference_charm",
-                            width: 24,
-                            height: 24)
-                        .click(() => _.onKimmiStirConferenceBatman()),
-              ));
-        });
+                    height: 24,
+                  ).click(() => _.onKimmiStirConferenceBatman()),
+          ),
+        );
+      },
+    );
   }
 
   Widget _kimmiSecurityAmenUneven() {
@@ -238,32 +269,47 @@ class KimmiSecurityContainer
           logic.showStyleType == KimmiSecurityDaytimeStarbucks.NORMAL
               ? const SizedBox.shrink()
               : _kimmiTuxUneven(),
+
           GetBuilder<KimmiSecurityInvoice>(
-              id: KimmiSecurityInvoice.kimmi_stretch,
-              builder: (_) {
-                return Visibility(
-                    visible: _.medias.isNotEmpty,
-                    child: _kimmiStretchApplicantUneven());
-              }),
+            id: KimmiSecurityInvoice.kimmi_stretch,
+            builder: (_) {
+              return Visibility(
+                visible: _.medias.isNotEmpty,
+                child: _kimmiStretchApplicantUneven(),
+              );
+            },
+          ),
+
           GetBuilder<KimmiSecurityInvoice>(
-              id: KimmiSecurityInvoice.kimmi_tempt,
-              builder: (_) {
-                return Visibility(
-                    visible: _.showInterests(), child: _kimmiTemptUneven());
-              }),
+            id: KimmiSecurityInvoice.kimmi_tempt,
+            builder: (_) {
+              return Visibility(
+                visible: _.showInterests(),
+                child: _kimmiTemptUneven(),
+              );
+            },
+          ),
+
           GetBuilder<KimmiSecurityInvoice>(
-              id: KimmiSecurityInvoice.kimmi_tux,
-              builder: (_) {
-                return Visibility(
-                    visible: _.showInfos(), child: _kimmiHoroscopeTuxUneven());
-              }),
+            id: KimmiSecurityInvoice.kimmi_tux,
+            builder: (_) {
+              return Visibility(
+                visible: _.showInfos(),
+                child: _kimmiHoroscopeTuxUneven(),
+              );
+            },
+          ),
+
           GetBuilder<KimmiSecurityInvoice>(
-              id: KimmiSecurityInvoice.kimmi_latino,
-              builder: (_) {
-                return Visibility(
-                    visible: _.gifts.isNotEmpty,
-                    child: _kimmiForeheadApplicantUneven());
-              }),
+            id: KimmiSecurityInvoice.kimmi_latino,
+            builder: (_) {
+              return Visibility(
+                visible: _.gifts.isNotEmpty,
+                child: _kimmiForeheadApplicantUneven(),
+              );
+            },
+          ),
+
           const SizedBox(height: 60),
         ],
       ),
@@ -276,71 +322,84 @@ class KimmiSecurityContainer
       children: [
         Expanded(
           child: GetBuilder<KimmiSecurityInvoice>(
-              id: KimmiSecurityInvoice.kimmi_feast,
-              builder: (_) {
-                return Column(
-                  mainAxisSize: MainAxisSize.min,
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Row(
-                      mainAxisSize: MainAxisSize.min,
-                      children: [
-                        KimmiFailedWebsite.kimmiThongLowellTamper(
-                            Text(
-                                _.profile.value != null
-                                    ? _.profile.value!.nickName
-                                    : _.nickName ?? '',
-                                style: KimmiTamperDaytime.white20Bold,
-                                maxLines: 2,
-                                overflow: TextOverflow.ellipsis),
-                            200),
-                        const SizedBox(width: 4),
-                        (_.country.value != null &&
-                                !KIMMI.kimmiHump.isKimmiAiGraceSensitive())
-                            ? KimmiErnie.circle(
-                                url: _.country.value!.flag,
-                                size: 20,
-                                fit: BoxFit.cover,
-                                clip: ImageClipType.origin)
-                            : const SizedBox.shrink(),
-                      ],
-                    ),
-                    const SizedBox(height: 8),
-                    (KIMMI.kimmiHump.isKimmiAiGraceSensitive())
-                        ? const SizedBox.shrink()
-                        : SizedBox(
-                            height: 24,
-                            child:
-                                Row(mainAxisSize: MainAxisSize.min, children: [
+            id: KimmiSecurityInvoice.kimmi_feast,
+            builder: (_) {
+              return Column(
+                mainAxisSize: MainAxisSize.min,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      KimmiFailedWebsite.kimmiThongLowellTamper(
+                        Text(
+                          _.profile.value != null
+                              ? _.profile.value!.nickName
+                              : _.nickName ?? '',
+                          style: KimmiTamperDaytime.white20Bold,
+                          maxLines: 2,
+                          overflow: TextOverflow.ellipsis,
+                        ),
+                        200,
+                      ),
+                      const SizedBox(width: 4),
+
+                      (_.country.value != null &&
+                              !KIMMI.kimmiHump.isKimmiAiGraceSensitive())
+                          ? KimmiErnie.circle(
+                              url: _.country.value!.flag,
+                              size: 20,
+                              fit: BoxFit.cover,
+                              clip: ImageClipType.origin,
+                            )
+                          : const SizedBox.shrink(),
+                    ],
+                  ),
+                  const SizedBox(height: 8),
+                  (KIMMI.kimmiHump.isKimmiAiGraceSensitive())
+                      ? const SizedBox.shrink()
+                      : SizedBox(
+                          height: 24,
+                          child: Row(
+                            mainAxisSize: MainAxisSize.min,
+                            children: [
                               KimmiFailedFeastQuitterMarvel(
-                                  uid: _.uid ?? 0,
-                                  height: 24,
-                                  color: color,
-                                  showOffline: true),
+                                uid: _.uid ?? 0,
+                                height: 24,
+                                color: color,
+                                showOffline: true,
+                              ),
                               const SizedBox(width: 8),
                               _.profile.value != null
-                                  ? KimmiFailedWebsite
-                                      .kimmiSecurityWhimsicalStaturePoland(
+                                  ? KimmiFailedWebsite.kimmiSecurityWhimsicalStaturePoland(
                                       _.profile.value!.gender,
                                       _.profile.value!.age,
                                     )
                                   : const SizedBox(),
                               const SizedBox(width: 8),
+
                               _kimmiVanityAssignmentFailed(color: color),
-                            ])),
-                    _.profile.value != null
-                        ? Padding(
-                            padding: const EdgeInsets.only(top: 8),
-                            child: KimmiFailedWebsite.kimmiThongLowellTamper(
-                                Text(_.profile.value!.signature,
-                                    style: KimmiTamperDaytime.white14,
-                                    maxLines: 3,
-                                    overflow: TextOverflow.ellipsis),
-                                240))
-                        : const SizedBox(),
-                  ],
-                );
-              }),
+                            ],
+                          ),
+                        ),
+                  _.profile.value != null
+                      ? Padding(
+                          padding: const EdgeInsets.only(top: 8),
+                          child: KimmiFailedWebsite.kimmiThongLowellTamper(
+                            Text(
+                              _.profile.value!.signature,
+                              style: KimmiTamperDaytime.white14,
+                              maxLines: 3,
+                              overflow: TextOverflow.ellipsis,
+                            ),
+                            240,
+                          ),
+                        )
+                      : const SizedBox(),
+                ],
+              );
+            },
+          ),
         ),
         const SizedBox(width: 12),
         Column(
@@ -349,84 +408,97 @@ class KimmiSecurityContainer
             const SizedBox(height: 16),
             _kimmiHusbandWaitressStu(),
             const SizedBox(height: 16),
-            _kimmiSecurityBatmanBrutal()
+            _kimmiSecurityBatmanBrutal(),
           ],
-        )
+        ),
       ],
     );
   }
 
   Widget _kimmiVanityStu({Color color = KimmiDraftJuda.white_20p}) {
     return GetBuilder<KimmiSecurityInvoice>(
-        id: KimmiSecurityInvoice.kimmi_vanity,
-        builder: (_) {
-          return Container(
-            width: 52,
-            height: 52,
-            decoration: BoxDecoration(
-                borderRadius: const BorderRadius.all(Radius.circular(26)),
-                color: _.followed.value
-                    ? const Color(0xFFFF1F73)
-                    : KimmiDraftJuda.white),
-            padding: const EdgeInsets.symmetric(horizontal: 8),
-            alignment: Alignment.center,
-            child: KimmiErnie.local(
-                fileName: _.followed.value
-                    ? "kimmi_hombre_security_bite_stu"
-                    : "kimmi_hombre_security_after_stu",
-                width: 24,
-                height: 20,
-                fit: BoxFit.contain),
-          ).click(() => logic.onKimmiVanityGoatee());
-        });
+      id: KimmiSecurityInvoice.kimmi_vanity,
+      builder: (_) {
+        return Container(
+          width: 52,
+          height: 52,
+          decoration: BoxDecoration(
+            borderRadius: const BorderRadius.all(Radius.circular(26)),
+            color: _.followed.value
+                ? const Color(0xFFFF1F73)
+                : KimmiDraftJuda.white,
+          ),
+          padding: const EdgeInsets.symmetric(horizontal: 8),
+          alignment: Alignment.center,
+          child: KimmiErnie.local(
+            fileName: _.followed.value
+                ? "kimmi_hombre_security_bite_stu"
+                : "kimmi_hombre_security_after_stu",
+            width: 24,
+            height: 20,
+            fit: BoxFit.contain,
+          ),
+        ).click(() => logic.onKimmiVanityGoatee());
+      },
+    );
   }
 
-  Widget _kimmiVanityAssignmentFailed(
-      {Color color = KimmiDraftJuda.white_20p}) {
+  Widget _kimmiVanityAssignmentFailed({
+    Color color = KimmiDraftJuda.white_20p,
+  }) {
     return GetBuilder<KimmiSecurityInvoice>(
-        id: KimmiSecurityInvoice.kimmi_vanity,
-        builder: (_) {
-          return Container(
-            height: 24,
-            decoration: BoxDecoration(
-                borderRadius: const BorderRadius.all(Radius.circular(12)),
-                color: color),
-            padding: const EdgeInsets.symmetric(horizontal: 8),
-            child: Row(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                KimmiErnie.local(
-                    fileName: "kimmi_hombre_security_bite_assignment",
-                    width: 14,
-                    height: 14),
-                const SizedBox(width: 4),
-                Text(_.followedCount.value.toString(),
-                    style: KimmiTamperDaytime.white12),
-              ],
-            ),
-          ).click(() => logic.onKimmiVanityGoatee());
-        });
+      id: KimmiSecurityInvoice.kimmi_vanity,
+      builder: (_) {
+        return Container(
+          height: 24,
+          decoration: BoxDecoration(
+            borderRadius: const BorderRadius.all(Radius.circular(12)),
+            color: color,
+          ),
+          padding: const EdgeInsets.symmetric(horizontal: 8),
+          child: Row(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              KimmiErnie.local(
+                fileName: "kimmi_hombre_security_bite_assignment",
+                width: 14,
+                height: 14,
+              ),
+              const SizedBox(width: 4),
+              Text(
+                _.followedCount.value.toString(),
+                style: KimmiTamperDaytime.white12,
+              ),
+            ],
+          ),
+        ).click(() => logic.onKimmiVanityGoatee());
+      },
+    );
   }
 
   Widget _kimmiStretchApplicantUneven() {
-    double itemWidth = (Get.width -
+    double itemWidth =
+        (Get.width -
                 KimmiPalate.kimmiSecurityApplicantCinder * 2 -
                 KimmiPalate.kimmiSecurityAmenCinder * 2) /
             3 +
         10;
     return Container(
       margin: EdgeInsets.only(
-          top: logic.showStyleType == KimmiSecurityDaytimeStarbucks.NORMAL
-              ? 0
-              : 24),
+        top: logic.showStyleType == KimmiSecurityDaytimeStarbucks.NORMAL
+            ? 0
+            : 24,
+      ),
       child: Column(
         mainAxisSize: MainAxisSize.min,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Container(
             margin: const EdgeInsets.symmetric(vertical: 12),
-            child: Text("${'kimmi_broderick_bye'.tr} ${logic.medias.length}",
-                style: KimmiTamperDaytime.white16Bold),
+            child: Text(
+              "${'kimmi_broderick_bye'.tr} ${logic.medias.length}",
+              style: KimmiTamperDaytime.white16Bold,
+            ),
           ),
           SizedBox(
             width: Get.width,
@@ -458,26 +530,36 @@ class KimmiSecurityContainer
           _kimmiSecurityFluid(),
           Container(
             margin: const EdgeInsets.symmetric(vertical: 12),
-            child: Text('kimmi_broderick_horoscope_swift'.tr,
-                style: KimmiTamperDaytime.white16Bold),
+            child: Text(
+              'kimmi_broderick_horoscope_swift'.tr,
+              style: KimmiTamperDaytime.white16Bold,
+            ),
           ),
           16.hGap,
           Visibility(
-              visible: !KimmiStarbucksJuda.isEmpty(logic.languageStr.value),
-              child: _kimmiConcernedJohnny("kimmi_broderick_concerned".tr,
-                  "kimmi_hombre_concerned_gloss", logic.kimmiConcernedPixie())),
+            visible: !KimmiStarbucksJuda.isEmpty(logic.languageStr.value),
+            child: _kimmiConcernedJohnny(
+              "kimmi_broderick_concerned".tr,
+              "kimmi_hombre_concerned_gloss",
+              logic.kimmiConcernedPixie(),
+            ),
+          ),
           Visibility(
-              visible: logic.height.value > 0,
-              child: _kimmiTuxJohnny(
-                  "kimmi_broderick_argue".tr,
-                  "kimmi_hombre_argue_gloss",
-                  ["${logic.height.value} ${"kimmi_broderick_cm".tr}"])),
+            visible: logic.height.value > 0,
+            child: _kimmiTuxJohnny(
+              "kimmi_broderick_argue".tr,
+              "kimmi_hombre_argue_gloss",
+              ["${logic.height.value} ${"kimmi_broderick_cm".tr}"],
+            ),
+          ),
           Visibility(
-              visible: logic.weight.value > 0,
-              child: _kimmiTuxJohnny(
-                  "kimmi_broderick_princess".tr,
-                  "kimmi_hombre_princess_gloss",
-                  ["${logic.weight.value} ${"kimmi_broderick_kg".tr}"]))
+            visible: logic.weight.value > 0,
+            child: _kimmiTuxJohnny(
+              "kimmi_broderick_princess".tr,
+              "kimmi_hombre_princess_gloss",
+              ["${logic.weight.value} ${"kimmi_broderick_kg".tr}"],
+            ),
+          ),
         ],
       ),
     );
@@ -495,8 +577,10 @@ class KimmiSecurityContainer
           _kimmiSecurityFluid(),
           Container(
             margin: const EdgeInsets.symmetric(vertical: 12),
-            child: Text('kimmi_broderick_tempt_fiance'.tr,
-                style: KimmiTamperDaytime.white16Bold),
+            child: Text(
+              'kimmi_broderick_tempt_fiance'.tr,
+              style: KimmiTamperDaytime.white16Bold,
+            ),
           ),
           Wrap(
             alignment: WrapAlignment.start,
@@ -504,17 +588,23 @@ class KimmiSecurityContainer
             runSpacing: 10,
             children: List.generate(logic.kimmiTemptPixie().length, (index) {
               return Container(
-                  height: 32,
-                  padding:
-                      const EdgeInsets.symmetric(horizontal: 12, vertical: 7),
-                  decoration: const BoxDecoration(
-                      borderRadius: BorderRadius.all(Radius.circular(16)),
-                      color: KimmiDraftJuda.white_10p),
-                  child: Text(logic.kimmiTemptPixie()[index],
-                      style: KimmiTamperDaytime.TextWhite_14,
-                      textAlign: TextAlign.center));
+                height: 32,
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 12,
+                  vertical: 7,
+                ),
+                decoration: const BoxDecoration(
+                  borderRadius: BorderRadius.all(Radius.circular(16)),
+                  color: KimmiDraftJuda.white_10p,
+                ),
+                child: Text(
+                  logic.kimmiTemptPixie()[index],
+                  style: KimmiTamperDaytime.TextWhite_14,
+                  textAlign: TextAlign.center,
+                ),
+              );
             }),
-          )
+          ),
         ],
       ),
     );
@@ -525,10 +615,17 @@ class KimmiSecurityContainer
       children: [
         SizedBox(width: width, height: 136),
         media is PhotoVO
-            ? _kimmiByeBargain(media, width, 136)
-                .click(() => logic.onKimmiByeOffspring(media))
-            : _kimmiIndiaBargain(media as VideoVO, width, 136)
-                .click(() => logic.onKimmiIndiaOffspring(media)),
+            ? _kimmiByeBargain(
+                media,
+                width,
+                136,
+              ).click(() => logic.onKimmiByeOffspring(media))
+            : _kimmiIndiaBargain(
+                media as VideoVO,
+                width,
+                136,
+              ).click(() => logic.onKimmiIndiaOffspring(media)),
+
         Visibility(
           visible: media.isVipOnly() && !KIMMI.isVip(),
           child: SizedBox(
@@ -548,19 +645,27 @@ class KimmiSecurityContainer
                   mainAxisSize: MainAxisSize.min,
                   children: [
                     KimmiErnie.local(
-                        fileName: "kimmi_hombre_private_dramamine_gloss",
-                        width: 32,
-                        height: 32),
-                    Text("kimmi_broderick_drunk_private".tr,
-                        style: KimmiTamperDaytime.white10)
+                      fileName: "kimmi_hombre_private_dramamine_gloss",
+                      width: 32,
+                      height: 32,
+                    ),
+                    Text(
+                      "kimmi_broderick_drunk_private".tr,
+                      style: KimmiTamperDaytime.white10,
+                    ),
                   ],
-                )
+                ),
               ],
             ),
           ),
-        ).click(() => KIMMI.toNamed(KimmiSully.KimmiPrivateNieceContainer,
+        ).click(
+          () => KIMMI.toNamed(
+            KimmiSully.KimmiPrivateNieceContainer,
             arguments: KimmiPrivateNieceHealer(
-                fromType: PayFromType.FROM_PROFILE_ALBUM))),
+              fromType: PayFromType.FROM_PROFILE_ALBUM,
+            ),
+          ),
+        ),
       ],
     );
   }
@@ -570,7 +675,8 @@ class KimmiSecurityContainer
       width: width,
       height: height,
       decoration: const BoxDecoration(
-          borderRadius: KimmiPalate.kimmiSecurityStretchBargainTummy),
+        borderRadius: KimmiPalate.kimmiSecurityStretchBargainTummy,
+      ),
       child: KimmiErnie.round(
         url: media.img_url!,
         width: width,
@@ -581,50 +687,61 @@ class KimmiSecurityContainer
         placeHolder: (context, url) => ClipRRect(
           borderRadius: KimmiPalate.kimmiSecurityStretchBargainTummy,
           child: KimmiErnie.local(
-              fileName: "kimmi_hombre_ernie_properly_coitus",
-              width: width,
-              height: height,
-              fit: BoxFit.fill),
+            fileName: "kimmi_hombre_ernie_properly_coitus",
+            width: width,
+            height: height,
+            fit: BoxFit.fill,
+          ),
         ),
       ),
     );
   }
 
-  Widget _kimmiIndiaBargain(VideoVO media, double width, double height,
-      {bool canPlay = false}) {
+  Widget _kimmiIndiaBargain(
+    VideoVO media,
+    double width,
+    double height, {
+    bool canPlay = false,
+  }) {
     return Container(
       width: width,
       height: height,
       decoration: const BoxDecoration(
-          borderRadius: KimmiPalate.kimmiSecurityStretchBargainTummy),
-      child: Stack(alignment: Alignment.center, children: [
-        KimmiErnie.round(
-          url: media.cover_url!,
-          width: width,
-          height: height,
-          clip: ImageClipType.middle,
-          borderRadius: KimmiPalate.kimmiSecurityStretchBargainTummy,
-          fit: BoxFit.cover,
-          placeHolder: (context, url) => ClipRRect(
+        borderRadius: KimmiPalate.kimmiSecurityStretchBargainTummy,
+      ),
+      child: Stack(
+        alignment: Alignment.center,
+        children: [
+          KimmiErnie.round(
+            url: media.cover_url!,
+            width: width,
+            height: height,
+            clip: ImageClipType.middle,
             borderRadius: KimmiPalate.kimmiSecurityStretchBargainTummy,
-            child: KimmiErnie.local(
+            fit: BoxFit.cover,
+            placeHolder: (context, url) => ClipRRect(
+              borderRadius: KimmiPalate.kimmiSecurityStretchBargainTummy,
+              child: KimmiErnie.local(
                 fileName: "kimmi_hombre_ernie_properly_coitus",
                 width: width,
                 height: height,
-                fit: BoxFit.cover),
+                fit: BoxFit.cover,
+              ),
+            ),
           ),
-        ),
-        canPlay
-            ? KimmiErnie.local(
-                    fileName: "kimmi_hombre_india_simulator_gloss",
-                    width: 44,
-                    height: 44)
-                .click(() => logic.onKimmiIndiaPoloOffspring(media))
-            : KimmiErnie.local(
-                fileName: "kimmi_hombre_india_simulator_gloss",
-                width: 44,
-                height: 44),
-      ]),
+          canPlay
+              ? KimmiErnie.local(
+                  fileName: "kimmi_hombre_india_simulator_gloss",
+                  width: 44,
+                  height: 44,
+                ).click(() => logic.onKimmiIndiaPoloOffspring(media))
+              : KimmiErnie.local(
+                  fileName: "kimmi_hombre_india_simulator_gloss",
+                  width: 44,
+                  height: 44,
+                ),
+        ],
+      ),
     );
   }
 
@@ -640,8 +757,9 @@ class KimmiSecurityContainer
           Container(
             margin: const EdgeInsets.symmetric(vertical: 12),
             child: Text(
-                "${'kimmi_broderick_latino'.tr} ${logic.gifts.value.length}",
-                style: KimmiTamperDaytime.white16Bold),
+              "${'kimmi_broderick_latino'.tr} ${logic.gifts.value.length}",
+              style: KimmiTamperDaytime.white16Bold,
+            ),
           ),
           SizedBox(
             width: Get.width,
@@ -671,15 +789,16 @@ class KimmiSecurityContainer
       width: width,
       height: 95,
       decoration: const BoxDecoration(
-          borderRadius: KimmiPalate.kimmiSecurityStretchBargainTummy,
-          color: KimmiDraftJuda.white_20p),
+        borderRadius: KimmiPalate.kimmiSecurityStretchBargainTummy,
+        color: KimmiDraftJuda.white_20p,
+      ),
       alignment: Alignment.center,
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
           KimmiErnie.small(url: gift.icon, width: 64, height: 64),
           const SizedBox(height: 4),
-          Text("x $count", style: KimmiTamperDaytime.white14Bold)
+          Text("x $count", style: KimmiTamperDaytime.white14Bold),
         ],
       ),
     ).click(() {
@@ -688,10 +807,7 @@ class KimmiSecurityContainer
   }
 
   Widget _kimmiSecurityFluid() {
-    return Container(
-      height: 2,
-      color: KimmiDraftJuda.white_20p,
-    );
+    return Container(height: 2, color: KimmiDraftJuda.white_20p);
   }
 
   Widget _kimmiSecurityBatmanBrutal() {
@@ -702,22 +818,25 @@ class KimmiSecurityContainer
 
   Widget _kimmiHusbandDoggyStu() {
     return GetBuilder<KimmiSecurityInvoice>(
-        id: KimmiSecurityInvoice.kimmi_feast,
-        builder: (_) {
-          return Container(
-            width: 54,
-            height: 54,
-            padding: const EdgeInsets.symmetric(horizontal: 8),
-            decoration: const BoxDecoration(
-                borderRadius: BorderRadius.all(Radius.circular(27)),
-                color: KimmiPalate.kimmiBathtubStuToYummy),
-            alignment: Alignment.center,
-            child: const KimmiMileErnie(
-                url: KimmiPrototype.kimmi_unable_kimmi_hombre_doggy_stu_whip,
-                width: 32,
-                height: 32),
-          ).click(() => logic.onKimmiHusbandIndiaDoggy());
-        });
+      id: KimmiSecurityInvoice.kimmi_feast,
+      builder: (_) {
+        return Container(
+          width: 54,
+          height: 54,
+          padding: const EdgeInsets.symmetric(horizontal: 8),
+          decoration: const BoxDecoration(
+            borderRadius: BorderRadius.all(Radius.circular(27)),
+            color: KimmiPalate.kimmiBathtubStuToYummy,
+          ),
+          alignment: Alignment.center,
+          child: const KimmiMileErnie(
+            url: KimmiPrototype.kimmi_unable_kimmi_hombre_doggy_stu_whip,
+            width: 32,
+            height: 32,
+          ),
+        ).click(() => logic.onKimmiHusbandIndiaDoggy());
+      },
+    );
   }
 
   Widget _kimmiHusbandWaitressStu() {
@@ -725,13 +844,15 @@ class KimmiSecurityContainer
       width: 52,
       height: 52,
       decoration: const BoxDecoration(
-          borderRadius: BorderRadius.all(Radius.circular(26)),
-          color: KimmiDraftJuda.white),
+        borderRadius: BorderRadius.all(Radius.circular(26)),
+        color: KimmiDraftJuda.white,
+      ),
       alignment: Alignment.center,
       child: KimmiErnie.local(
-          fileName: 'kimmi_hombre_security_waitress_stu',
-          width: 32,
-          height: 32),
+        fileName: 'kimmi_hombre_security_waitress_stu',
+        width: 32,
+        height: 32,
+      ),
     ).click(() => KimmiWaitressContainerHusbandUp.open(uid: logic.uid ?? 0));
   }
 
@@ -745,25 +866,29 @@ class KimmiSecurityContainer
             children: [
               KimmiErnie.local(fileName: icon, width: 16, height: 16),
               8.wGap,
-              Text(title, style: KimmiTamperDaytime.TextWhite_50p_14)
+              Text(title, style: KimmiTamperDaytime.TextWhite_50p_14),
             ],
           ),
           20.wGap,
           Row(
-              children: List.generate(infos.length, (index) {
-            return Container(
-              height: 24,
-              padding: const EdgeInsets.symmetric(horizontal: 12),
-              margin: const EdgeInsets.only(right: 4),
-              decoration: const BoxDecoration(
+            children: List.generate(infos.length, (index) {
+              return Container(
+                height: 24,
+                padding: const EdgeInsets.symmetric(horizontal: 12),
+                margin: const EdgeInsets.only(right: 4),
+                decoration: const BoxDecoration(
                   borderRadius: BorderRadius.all(Radius.circular(12)),
-                  color: KimmiDraftJuda.white_20p),
-              child: Center(
-                child:
-                    Text(infos[index], style: KimmiTamperDaytime.TextWhite_12),
-              ),
-            );
-          })),
+                  color: KimmiDraftJuda.white_20p,
+                ),
+                child: Center(
+                  child: Text(
+                    infos[index],
+                    style: KimmiTamperDaytime.TextWhite_12,
+                  ),
+                ),
+              );
+            }),
+          ),
         ],
       ),
     );
@@ -779,28 +904,34 @@ class KimmiSecurityContainer
             children: [
               KimmiErnie.local(fileName: icon, width: 16, height: 16),
               8.wGap,
-              Text(title, style: KimmiTamperDaytime.TextWhite_50p_14)
+              Text(title, style: KimmiTamperDaytime.TextWhite_50p_14),
             ],
           ),
           20.wGap,
           Expanded(
-              child: SingleChildScrollView(
-                  scrollDirection: Axis.horizontal,
-                  child: Row(
-                      children: List.generate(infos.length, (index) {
-                    return Container(
-                      height: 24,
-                      padding: const EdgeInsets.symmetric(horizontal: 12),
-                      margin: const EdgeInsets.only(right: 4),
-                      decoration: const BoxDecoration(
-                          borderRadius: BorderRadius.all(Radius.circular(12)),
-                          color: KimmiDraftJuda.white_20p),
-                      child: Center(
-                        child: Text(infos[index],
-                            style: KimmiTamperDaytime.TextWhite_12),
+            child: SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Row(
+                children: List.generate(infos.length, (index) {
+                  return Container(
+                    height: 24,
+                    padding: const EdgeInsets.symmetric(horizontal: 12),
+                    margin: const EdgeInsets.only(right: 4),
+                    decoration: const BoxDecoration(
+                      borderRadius: BorderRadius.all(Radius.circular(12)),
+                      color: KimmiDraftJuda.white_20p,
+                    ),
+                    child: Center(
+                      child: Text(
+                        infos[index],
+                        style: KimmiTamperDaytime.TextWhite_12,
                       ),
-                    );
-                  })))),
+                    ),
+                  );
+                }),
+              ),
+            ),
+          ),
         ],
       ),
     );
@@ -819,16 +950,18 @@ class KimmiSecurityContainer
       });
     } else {
       contentWidget = KimmiFailedWebsite.kimmiThongLowellTamper(
-          Text(
-              logic.profile.value != null
-                  ? logic.profile.value!.nickName
-                  : logic.nickName ?? '',
-              style: KimmiTamperDaytime.white18Bold,
-              maxLines: 1,
-              overflow: TextOverflow.ellipsis),
-          Get.width -
-              KimmiPalate.kimmiContainerStirConferenceSash * 4 -
-              KimmiPalate.kimmiContainerStirConferenceArgue * 2);
+        Text(
+          logic.profile.value != null
+              ? logic.profile.value!.nickName
+              : logic.nickName ?? '',
+          style: KimmiTamperDaytime.white18Bold,
+          maxLines: 1,
+          overflow: TextOverflow.ellipsis,
+        ),
+        Get.width -
+            KimmiPalate.kimmiContainerStirConferenceSash * 4 -
+            KimmiPalate.kimmiContainerStirConferenceArgue * 2,
+      );
     }
 
     return contentWidget;

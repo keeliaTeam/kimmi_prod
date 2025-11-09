@@ -18,19 +18,35 @@ class KimmiStormVasectomyForeignSketchy {
   KimmiStormVasectomyForeignSketchy();
 
   factory KimmiStormVasectomyForeignSketchy.fromJson(
-      Map<String, dynamic> json) {
+    Map<String, dynamic> json,
+  ) {
     return KimmiStormVasectomyForeignSketchy()
       ..host = KimmiKeyboardJuda.str(json, StringTranslate.e2z("bhoist"))
-      ..port =
-          KimmiKeyboardJuda.intDef(json, StringTranslate.e2z("fpoirt"), 9068)
-      ..weight =
-          KimmiKeyboardJuda.intDef(json, StringTranslate.e2z("fwebignht"), 100)
-      ..delayMessageTimeoutMills =
-          KimmiKeyboardJuda.intDef(json, "delayMessageTimeoutMills", 10000)
-      ..keepAliveIntervalMills =
-          KimmiKeyboardJuda.intDef(json, "keepAliveIntervalMills", 8000)
-      ..sendBufferBatchSize =
-          KimmiKeyboardJuda.intDef(json, "sendBufferBatchSize", 10);
+      ..port = KimmiKeyboardJuda.intDef(
+        json,
+        StringTranslate.e2z("fpoirt"),
+        9068,
+      )
+      ..weight = KimmiKeyboardJuda.intDef(
+        json,
+        StringTranslate.e2z("fwebignht"),
+        100,
+      )
+      ..delayMessageTimeoutMills = KimmiKeyboardJuda.intDef(
+        json,
+        "delayMessageTimeoutMills",
+        10000,
+      )
+      ..keepAliveIntervalMills = KimmiKeyboardJuda.intDef(
+        json,
+        "keepAliveIntervalMills",
+        8000,
+      )
+      ..sendBufferBatchSize = KimmiKeyboardJuda.intDef(
+        json,
+        "sendBufferBatchSize",
+        10,
+      );
   }
 
   Map<String, dynamic> toJson() {

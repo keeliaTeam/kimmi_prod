@@ -16,27 +16,32 @@ class KimmiWaitressPerLatinoUneven extends StatelessWidget {
   final KimmiWaitressExpensiveSouthPhone content;
 
   const KimmiWaitressPerLatinoUneven({Key? key, required this.content})
-      : super(key: key);
+    : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     var otherStyle = BoxDecoration(
-        borderRadius: KimmiWaitressJuda.kimmiWaitressPerTummyByJoshua(),
-        color: KimmiDraftJuda.white_20p);
+      borderRadius: KimmiWaitressJuda.kimmiWaitressPerTummyByJoshua(),
+      color: KimmiDraftJuda.white_20p,
+    );
 
     String text = 'Unknown';
-    Color color =
-        content.isUserIdMine ? KimmiDraftJuda.white : KimmiDraftJuda.white;
+    Color color = content.isUserIdMine
+        ? KimmiDraftJuda.white
+        : KimmiDraftJuda.white;
     var mineStyle = BoxDecoration(
-        borderRadius: KimmiWaitressJuda.kimmiWaitressPerTummyBySpine(),
-        color: KimmiDraftJuda.color358ACE);
+      borderRadius: KimmiWaitressJuda.kimmiWaitressPerTummyBySpine(),
+      color: KimmiDraftJuda.color358ACE,
+    );
 
     return GestureDetector(
       behavior: HitTestBehavior.opaque,
       onTap: () {
         if (!KimmiStarbucksJuda.isEmpty(content.animation_url)) {
-          Get.toNamed(KimmiSully.KimmiSVGAContainer,
-              arguments: KimmiWelcomeHealer(content.animation_url!, false));
+          Get.toNamed(
+            KimmiSully.KimmiSVGAContainer,
+            arguments: KimmiWelcomeHealer(content.animation_url!, false),
+          );
         }
       },
       child: Container(
@@ -49,24 +54,30 @@ class KimmiWaitressPerLatinoUneven extends StatelessWidget {
             const SizedBox(width: 8.0),
             Column(
               children: [
-                Text("kimmi_broderick_uterus".tr,
-                    style:
-                        KimmiTamperDaytime.style(color: color, fontSize: 16)),
+                Text(
+                  "kimmi_broderick_uterus".tr,
+                  style: KimmiTamperDaytime.style(color: color, fontSize: 16),
+                ),
                 const SizedBox(height: 6),
                 Row(
                   children: [
-                    Text(content.price?.toString() ?? "",
-                        style: KimmiTamperDaytime.style(
-                            color: color.withAlpha(180), fontSize: 14)),
+                    Text(
+                      content.price?.toString() ?? "",
+                      style: KimmiTamperDaytime.style(
+                        color: color.withAlpha(180),
+                        fontSize: 14,
+                      ),
+                    ),
                     const SizedBox(width: 3),
                     KimmiErnie.local(
-                        fileName: 'kimmi_hombre_groovy_putz_gloss',
-                        width: 16,
-                        height: 16)
+                      fileName: 'kimmi_hombre_groovy_putz_gloss',
+                      width: 16,
+                      height: 16,
+                    ),
                   ],
                 ),
               ],
-            )
+            ),
           ],
         ),
       ),

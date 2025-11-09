@@ -13,8 +13,8 @@ import '../kimmi_curvy/kimmi_vasectomy_pioneer_dock.dart';
 import 'kimmi_overly_leash_tamper_fanny.dart';
 import 'kimmi_stretch_juda.dart';
 
-typedef CameraPickerCallBack = void Function(
-    MediaPickerType mediaType, dynamic data);
+typedef CameraPickerCallBack =
+    void Function(MediaPickerType mediaType, dynamic data);
 
 class ThumbnailResult {
   final Image? image;
@@ -34,17 +34,17 @@ class KimmiOverlyJuda {
   }) async {
     bool isRecording = type != MediaPickerType.image;
     try {
-      final AssetEntity? entity = await CameraPicker.pickFromCamera(context,
-          pickerConfig: CameraPickerConfig(
-              enableRecording: isRecording,
-              preferredLensDirection: preferredLensDirection,
-              textDelegate: KimmiOverlyLeashTamperFanny()));
+      final AssetEntity? entity = await CameraPicker.pickFromCamera(
+        context,
+        pickerConfig: CameraPickerConfig(
+          enableRecording: isRecording,
+          preferredLensDirection: preferredLensDirection,
+          textDelegate: KimmiOverlyLeashTamperFanny(),
+        ),
+      );
       if (entity != null) {
         var data = await convertAssetEntity(entity);
-        callback.call(
-          type,
-          data,
-        );
+        callback.call(type, data);
       }
     } catch (e, stack) {
       KimmiVasectomyPioneerDock.kimmiPajamaCurious(10081, e, stack);
@@ -76,17 +76,17 @@ class KimmiOverlyJuda {
     return null;
   }
 
-  static Future<Uint8List> getThumbnailData(
-      {String? imagePath, String? videoPath}) async {
+  static Future<Uint8List> getThumbnailData({
+    String? imagePath,
+    String? videoPath,
+  }) async {
     Uint8List? bytes;
     final Completer<Uint8List> completer = Completer();
     if (imagePath != null) {
       final file = File(imagePath);
       bytes = file.readAsBytesSync();
     } else {
-      bytes = await VideoThumbnail.thumbnailData(
-        video: videoPath!,
-      );
+      bytes = await VideoThumbnail.thumbnailData(video: videoPath!);
     }
     completer.complete(bytes);
     return completer.future;

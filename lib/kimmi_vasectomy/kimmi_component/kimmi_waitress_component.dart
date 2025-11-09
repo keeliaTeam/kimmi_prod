@@ -19,12 +19,7 @@ class KimmiWaitressComponent {
   final List<int>? chatIds;
   final Map<String, List>? affects;
 
-  KimmiWaitressComponent(
-    this.type, {
-    this.object,
-    this.chatIds,
-    this.affects,
-  });
+  KimmiWaitressComponent(this.type, {this.object, this.chatIds, this.affects});
 
   @override
   String toString() {

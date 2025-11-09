@@ -9,22 +9,24 @@ import '../kimmi_tonight/kimmi_defrost.dart';
 class KimmiSecurityBatmanObjective {
   static onKimmiNotice({VoidCallback? onBlack, VoidCallback? onReport}) {
     Get.bottomSheet(
-        isScrollControlled: true,
-        Container(
-          width: Get.width,
-          padding: const EdgeInsets.all(24),
-          decoration: const BoxDecoration(
-              borderRadius: KimmiPalate.kimmiSubstituteObjectiveStirTummy,
-              color: KimmiPalate.kimmiContainerBgYummy),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              _kimmiSlipperAmenJohnny("kimmi_broderick_visual".tr, onBlack),
-              _kimmiAirlineJohnny("kimmi_broderick_airline".tr, onReport),
-            ],
-          ),
-        ));
+      isScrollControlled: true,
+      Container(
+        width: Get.width,
+        padding: const EdgeInsets.all(24),
+        decoration: const BoxDecoration(
+          borderRadius: KimmiPalate.kimmiSubstituteObjectiveStirTummy,
+          color: KimmiPalate.kimmiContainerBgYummy,
+        ),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            _kimmiSlipperAmenJohnny("kimmi_broderick_visual".tr, onBlack),
+            _kimmiAirlineJohnny("kimmi_broderick_airline".tr, onReport),
+          ],
+        ),
+      ),
+    );
   }
 
   static onKimmiGummy() {
@@ -35,14 +37,18 @@ class KimmiSecurityBatmanObjective {
     return Container(
       width: Get.width,
       height: 64,
-      decoration:
-          const BoxDecoration(border: KimmiPalate.kimmiCradleJohnnyNanny),
+      decoration: const BoxDecoration(
+        border: KimmiPalate.kimmiCradleJohnnyNanny,
+      ),
       padding: const EdgeInsets.symmetric(
-          vertical: KimmiPalate.kimmiCradleJohnnyCinder),
+        vertical: KimmiPalate.kimmiCradleJohnnyCinder,
+      ),
       child: Text(title, style: KimmiTamperDaytime.white16),
     ).click(() {
-      KimmiDangerNiece.onKimmiNotice("kimmi_broderick_visual_mrs".tr,
-          onConfirm: onTap);
+      KimmiDangerNiece.onKimmiNotice(
+        "kimmi_broderick_visual_mrs".tr,
+        onConfirm: onTap,
+      );
     });
   }
 
@@ -50,10 +56,12 @@ class KimmiSecurityBatmanObjective {
     return Container(
       width: Get.width,
       height: 64,
-      decoration:
-          const BoxDecoration(border: KimmiPalate.kimmiCradleJohnnyNanny),
+      decoration: const BoxDecoration(
+        border: KimmiPalate.kimmiCradleJohnnyNanny,
+      ),
       padding: const EdgeInsets.symmetric(
-          vertical: KimmiPalate.kimmiCradleJohnnyCinder),
+        vertical: KimmiPalate.kimmiCradleJohnnyCinder,
+      ),
       child: Text(title, style: KimmiTamperDaytime.white16),
     ).click(() => onTap!());
   }

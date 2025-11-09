@@ -11,10 +11,7 @@ class KimmiCradleJohnnyDecode extends _KimmiCradleJohnnyDecode {
   static KimmiCradleJohnnyDecode fromDynamic(
     dynamic map, {
     JsonWidgetRegistry? registry,
-  }) =>
-      KimmiCradleJohnnyDecode(
-        args: map,
-      );
+  }) => KimmiCradleJohnnyDecode(args: map);
 
   @override
   KimmiCradleJohnnyDecodeStorm createModel({
@@ -36,21 +33,12 @@ class KimmiCradleJohnnyDecode extends _KimmiCradleJohnnyDecode {
     required JsonWidgetData data,
     Key? key,
   }) {
-    final model = createModel(
-      childBuilder: childBuilder,
-      data: data,
-    );
+    final model = createModel(childBuilder: childBuilder, data: data);
 
     return KimmiCradleJohnny(
-      action: model.action?.build(
-        childBuilder: childBuilder,
-        context: context,
-      ),
+      action: model.action?.build(childBuilder: childBuilder, context: context),
       key: key,
-      title: model.title?.build(
-        childBuilder: childBuilder,
-        context: context,
-      ),
+      title: model.title?.build(childBuilder: childBuilder, context: context),
     );
   }
 }
@@ -62,28 +50,20 @@ class JsonKimmiCradleJohnny extends JsonWidgetData {
     this.action,
     required this.title,
   }) : super(
-          jsonWidgetArgs: KimmiCradleJohnnyDecodeStorm.fromDynamic(
-            {
-              'action': action,
-              'title': title,
-              ...args,
-            },
-            args: args,
-            registry: registry,
-          ),
-          jsonWidgetBuilder: () => KimmiCradleJohnnyDecode(
-            args: KimmiCradleJohnnyDecodeStorm.fromDynamic(
-              {
-                'action': action,
-                'title': title,
-                ...args,
-              },
-              args: args,
-              registry: registry,
-            ),
-          ),
-          jsonWidgetType: KimmiCradleJohnnyDecode.kType,
-        );
+         jsonWidgetArgs: KimmiCradleJohnnyDecodeStorm.fromDynamic(
+           {'action': action, 'title': title, ...args},
+           args: args,
+           registry: registry,
+         ),
+         jsonWidgetBuilder: () => KimmiCradleJohnnyDecode(
+           args: KimmiCradleJohnnyDecodeStorm.fromDynamic(
+             {'action': action, 'title': title, ...args},
+             args: args,
+             registry: registry,
+           ),
+         ),
+         jsonWidgetType: KimmiCradleJohnnyDecode.kType,
+       );
 
   final JsonWidgetData? action;
 
@@ -106,18 +86,8 @@ class KimmiCradleJohnnyDecodeStorm extends JsonWidgetBuilderModel {
     Map<String, dynamic> args = const {},
     JsonWidgetRegistry? registry,
   }) {
-    if (map["title"] != null &&
-        map["title"]["args"] != null &&
-        map["title"]["args"]["text"] != null) {
-      String text = map["title"]["args"]["text"];
-      map["title"]["args"]["text"] = text.tr;
-    }
+    final result = maybeFromDynamic(map, args: args, registry: registry);
 
-    final result = maybeFromDynamic(
-      map,
-      args: args,
-      registry: registry,
-    );
     if (result == null) {
       throw Exception(
         '[KimmiCradleJohnnyDecode]: requested to parse from dynamic, but the input is null.',
@@ -136,10 +106,7 @@ class KimmiCradleJohnnyDecodeStorm extends JsonWidgetBuilderModel {
 
     if (map != null) {
       if (map is String) {
-        map = yaon.parse(
-          map,
-          normalize: true,
-        );
+        map = yaon.parse(map, normalize: true);
       }
 
       if (map is KimmiCradleJohnnyDecodeStorm) {
@@ -196,5 +163,6 @@ class KimmiCradleJohnnyMobster {
       'action': SchemaHelper.objectSchema(JsonWidgetDataSchema.id),
       'title': SchemaHelper.objectSchema(JsonWidgetDataSchema.id),
     },
+    'required': ['title'],
   };
 }

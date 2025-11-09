@@ -7,9 +7,7 @@ part 'kimmi_via.g.dart';
 
 @jsonWidget
 abstract class _KimmiViaDecode extends JsonWidgetBuilder {
-  const _KimmiViaDecode({
-    required super.args,
-  });
+  const _KimmiViaDecode({required super.args});
 
   @override
   KimmiVia buildCustom({

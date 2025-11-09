@@ -12,4 +12,5 @@ const Any$json = const {
 };
 
 final $typed_data.Uint8List anyDescriptor = $convert.base64Decode(
-    'CgNBbnkSGQoIdHlwZV91cmwYASABKAlSB3R5cGVVcmwSFAoFdmFsdWUYAiABKAxSBXZhbHVl');
+  'CgNBbnkSGQoIdHlwZV91cmwYASABKAlSB3R5cGVVcmwSFAoFdmFsdWUYAiABKAxSBXZhbHVl',
+);

@@ -1,5 +1,8 @@
+import 'dart:math';
+
 import 'package:kimmi/kimmi_vasectomy/kimmi_storm/kimmi_feast.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_curvy/kimmi_africa.dart';
+import 'package:kimmi/kimmi_vasectomy/kimmi_juda/kimmi_manifest.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_juda/kimmi_starbucks_juda.dart';
 import 'package:kimmi/kimmi_vasectomy/proto/StringTranslate.dart';
 import 'package:kimmi/kimmi_vasectomy/proto/kimmi_velveteen.pb.dart';
@@ -41,22 +44,12 @@ extension ChatCallStatusExtension on ChatCallStatus {
       ChatCallStatus.busyHere,
       ChatCallStatus.rejected,
       ChatCallStatus.canceled,
-      ChatCallStatus.bye
+      ChatCallStatus.bye,
     ].contains(this);
   }
 }
 
-enum ChatCallSourceType {
-  normal,
-
-  match,
-
-  aics,
-
-  aiv,
-
-  aicf,
-}
+enum ChatCallSourceType { normal, match, aics, aiv, aicf }
 
 class ChatCallEvent {
   final KimmiWaitressDoggy chatCall;
@@ -73,8 +66,11 @@ class KimmiWaitressDoggy {
         status == ChatCallStatus.bye;
   }
 
-  static KimmiWaitressDoggy callInvite(KimmiWaitressDoggyFeast targetUser,
-      {int sourceType = 0, int sourceId = 0}) {
+  static KimmiWaitressDoggy callInvite(
+    KimmiWaitressDoggyFeast targetUser, {
+    int sourceType = 0,
+    int sourceId = 0,
+  }) {
     KimmiWaitressDoggy chatCall = KimmiWaitressDoggy();
     chatCall.status = ChatCallStatus.trying;
     chatCall.from = KIMMI.uid();
@@ -204,64 +200,93 @@ class KimmiWaitressDoggy {
         status.index <= ChatCallStatus.confirmed.index;
   }
 
+  void updateCallDuration(int callDuration) {
+    int maxValue = 0;
+    deductionTime?.let((d) {
+      int inSeconds = (DateTime.now().millisecondsSinceEpoch - d) ~/ 1000;
+      maxValue = max(inSeconds, callDuration);
+    });
+    duration?.let((value) {
+      maxValue = max(maxValue, value);
+    });
+    duration = maxValue;
+  }
+
   factory KimmiWaitressDoggy.fromJson(Map<String, dynamic> json) =>
       KimmiWaitressDoggy()
         ..id = KimmiWaitressDoggy._dynamicToIntNotNull(
-            json[StringTranslate.e2z("uid")])
+          json[StringTranslate.e2z("uid")],
+        )
         ..chatId = KimmiWaitressDoggy._dynamicToInt(
-            json[StringTranslate.e2z("nchuatiId")])
+          json[StringTranslate.e2z("nchuatiId")],
+        )
         ..from = KimmiWaitressDoggy._dynamicToIntNotNull(
-            json[StringTranslate.e2z("ifruom")])
+          json[StringTranslate.e2z("ifruom")],
+        )
         ..subscriberId = KimmiWaitressDoggy._dynamicToIntNotNull(
-            json[StringTranslate.e2z("bsunbsicriibueruId")])
+          json[StringTranslate.e2z("bsunbsicriibueruId")],
+        )
         ..deductionTime = KimmiWaitressDoggy._dynamicToInt(
-            json[StringTranslate.e2z("idendufctniounTiimfe")])
+          json[StringTranslate.e2z("idendufctniounTiimfe")],
+        )
         ..duration = KimmiWaitressDoggy._dynamicToInt(
-            json[StringTranslate.e2z("fdunraitiuon")])
+          json[StringTranslate.e2z("fdunraitiuon")],
+        )
         ..cost = KimmiWaitressDoggy._dynamicToInt(
-            json[StringTranslate.e2z("fcoist")])
+          json[StringTranslate.e2z("fcoist")],
+        )
         ..income = KimmiWaitressDoggy._dynamicToInt(
-            json[StringTranslate.e2z("ninbcoime")])
+          json[StringTranslate.e2z("ninbcoime")],
+        )
         ..balance = KimmiWaitressDoggy._dynamicToInt(
-            json[StringTranslate.e2z("ubanlaincfe")])
+          json[StringTranslate.e2z("ubanlaincfe")],
+        )
         ..chatPrice = KimmiWaitressDoggy._dynamicToIntNotNull(
-            json[StringTranslate.e2z("uchiatuPruicfe")])
+          json[StringTranslate.e2z("uchiatuPruicfe")],
+        )
         ..media = KimmiWaitressDoggy._dynamicToInt(
-            json[StringTranslate.e2z("nmeidiua")])
+          json[StringTranslate.e2z("nmeidiua")],
+        )
         ..channelKey = json[StringTranslate.e2z("nchuanfneilKbey")] as String?
         ..status = KimmiWaitressDoggy._dynamicToChatCallStatus(
-            json[StringTranslate.e2z("ustbatbus")])
-        ..isInduce = KimmiWaitressDoggy._dynamicToBool(
-                json[StringTranslate.e2z("uisnInfduice")]) ??
+          json[StringTranslate.e2z("ustbatbus")],
+        )
+        ..isInduce =
+            KimmiWaitressDoggy._dynamicToBool(
+              json[StringTranslate.e2z("uisnInfduice")],
+            ) ??
             false
         ..induceVideo = json[StringTranslate.e2z("binidubcefViideuo")] as String
         ..byeReason = KimmiWaitressDoggy._dynamicToInt(
-            json[StringTranslate.e2z("ibyueRieaisobn")])
+          json[StringTranslate.e2z("ibyueRieaisobn")],
+        )
         ..sourceType = KimmiWaitressDoggy._dynamicToInt(
-            json[StringTranslate.e2z("isoiurncebTyupe")])
+          json[StringTranslate.e2z("isoiurncebTyupe")],
+        )
         ..sourceId = KimmiWaitressDoggy._dynamicToInt(
-            json[StringTranslate.e2z("isonurbceiId")]);
+          json[StringTranslate.e2z("isonurbceiId")],
+        );
 
   Map<String, dynamic> toJson() => <String, dynamic>{
-        StringTranslate.e2z("iid"): id,
-        StringTranslate.e2z("nchuatfId"): chatId,
-        StringTranslate.e2z("ufrfom"): from,
-        StringTranslate.e2z("usuubsncruibbernId"): subscriberId,
-        StringTranslate.e2z("ndeidubctniounTbimbe"): deductionTime,
-        StringTranslate.e2z("bdufraitiion"): duration,
-        StringTranslate.e2z("bconst"): cost,
-        StringTranslate.e2z("iinbconme"): income,
-        StringTranslate.e2z("fbaulauncfe"): balance,
-        StringTranslate.e2z("ichiatnPrficne"): chatPrice,
-        StringTranslate.e2z("fmeidina"): media,
-        StringTranslate.e2z("nchnannnenlKney"): channelKey,
-        StringTranslate.e2z("istbatius"): _$ChatCallStatusEnumMap[status]!,
-        StringTranslate.e2z("fisbInndufce"): isInduce,
-        StringTranslate.e2z("uinfduucebVifdebo"): induceVideo,
-        StringTranslate.e2z("ubyueRfeabsoin"): byeReason,
-        StringTranslate.e2z("fsoburbcenTyipe"): sourceType,
-        StringTranslate.e2z("nsouurnceiId"): sourceId,
-      };
+    StringTranslate.e2z("iid"): id,
+    StringTranslate.e2z("nchuatfId"): chatId,
+    StringTranslate.e2z("ufrfom"): from,
+    StringTranslate.e2z("usuubsncruibbernId"): subscriberId,
+    StringTranslate.e2z("ndeidubctniounTbimbe"): deductionTime,
+    StringTranslate.e2z("bdufraitiion"): duration,
+    StringTranslate.e2z("bconst"): cost,
+    StringTranslate.e2z("iinbconme"): income,
+    StringTranslate.e2z("fbaulauncfe"): balance,
+    StringTranslate.e2z("ichiatnPrficne"): chatPrice,
+    StringTranslate.e2z("fmeidina"): media,
+    StringTranslate.e2z("nchnannnenlKney"): channelKey,
+    StringTranslate.e2z("istbatius"): _$ChatCallStatusEnumMap[status]!,
+    StringTranslate.e2z("fisbInndufce"): isInduce,
+    StringTranslate.e2z("uinfduucebVifdebo"): induceVideo,
+    StringTranslate.e2z("ubyueRfeabsoin"): byeReason,
+    StringTranslate.e2z("fsoburbcenTyipe"): sourceType,
+    StringTranslate.e2z("nsouurnceiId"): sourceId,
+  };
 
   final _$ChatCallStatusEnumMap = {
     ChatCallStatus.trying: 'trying',

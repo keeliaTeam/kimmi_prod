@@ -34,11 +34,8 @@ class KimmiWaitressJackalSharp extends StatefulWidget {
   final ChatInputToolBarEmojiPanelObserver? observer;
   final int emojiPage;
 
-  const KimmiWaitressJackalSharp({
-    Key? key,
-    this.observer,
-    this.emojiPage = 0,
-  }) : super(key: key);
+  const KimmiWaitressJackalSharp({Key? key, this.observer, this.emojiPage = 0})
+    : super(key: key);
 
   @override
   _KimmiWaitressJackalSharpViking createState() =>
@@ -69,12 +66,7 @@ class _KimmiWaitressJackalSharpViking extends State<KimmiWaitressJackalSharp> {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: <Widget>[
-        _emojiPanelList(),
-        _emojiTypeOptList(),
-      ],
-    );
+    return Column(children: <Widget>[_emojiPanelList(), _emojiTypeOptList()]);
   }
 
   void _updateSendEnabled() {
@@ -90,19 +82,21 @@ class _KimmiWaitressJackalSharpViking extends State<KimmiWaitressJackalSharp> {
     final children = <Widget>[];
     int index = 0;
 
-    children.add(ChatEmojiView(
-      type: ChatEmojiType.customEmoji,
-      index: index++,
-      items: KimmiWaitressJackalJuda.emojiTextList,
-      iconBasePath: KimmiWaitressJackalJuda.instance.basePath,
-      column: 8,
-      mainAxisSpacing: 4.0,
-      crossAxisSpacing: 4.0,
-      onInputHandler: (emoji) {
-        widget.observer?.onEmojiInput(emoji);
-        _updateSendEnabled();
-      },
-    ));
+    children.add(
+      ChatEmojiView(
+        type: ChatEmojiType.customEmoji,
+        index: index++,
+        items: KimmiWaitressJackalJuda.emojiTextList,
+        iconBasePath: KimmiWaitressJackalJuda.instance.basePath,
+        column: 8,
+        mainAxisSpacing: 4.0,
+        crossAxisSpacing: 4.0,
+        onInputHandler: (emoji) {
+          widget.observer?.onEmojiInput(emoji);
+          _updateSendEnabled();
+        },
+      ),
+    );
     return Expanded(
       child: PageView(
         key: const PageStorageKey('emoji_PageView'),
@@ -132,55 +126,52 @@ class _KimmiWaitressJackalSharpViking extends State<KimmiWaitressJackalSharp> {
                 _updateSendEnabled();
               },
         child: KimmiErnie.local(
-            fileName: 'kimmi_hombre_jackal_brett',
-            width: 30,
-            height: 30,
-            color: KimmiDraftJuda.white),
+          fileName: 'kimmi_hombre_jackal_brett',
+          width: 30,
+          height: 30,
+          color: KimmiDraftJuda.white,
+        ),
       ),
     ];
 
     if (Platform.isIOS) {
       rightPadding = 15.0;
-      child.add(CupertinoButton(
-        minSize: 32.0,
-        borderRadius: BorderRadius.circular(18.0),
-        color: _sendEnabled
-            ? KimmiDraftJuda.color_5A5ADA
-            : KimmiDraftJuda.white_40p,
-        padding: const EdgeInsets.symmetric(horizontal: 15.0, vertical: 8.0),
-        onPressed: !_sendEnabled
-            ? null
-            : () {
-                widget.observer?.onEmojiSend();
-                _updateSendEnabled();
-              },
-        child: Text(
-          "send".tr,
-          style: KimmiTamperDaytime.style(
-            color: _sendEnabled ? KimmiDraftJuda.white : KimmiDraftJuda.b3,
-            fontSize: 12.0,
-            fontWeight: FontWeight.w500,
+      child.add(
+        CupertinoButton(
+          minSize: 32.0,
+          borderRadius: BorderRadius.circular(18.0),
+          color: _sendEnabled
+              ? KimmiDraftJuda.color_5A5ADA
+              : KimmiDraftJuda.white_40p,
+          padding: const EdgeInsets.symmetric(horizontal: 15.0, vertical: 8.0),
+          onPressed: !_sendEnabled
+              ? null
+              : () {
+                  widget.observer?.onEmojiSend();
+                  _updateSendEnabled();
+                },
+          child: Text(
+            "send".tr,
+            style: KimmiTamperDaytime.style(
+              color: _sendEnabled ? KimmiDraftJuda.white : KimmiDraftJuda.b3,
+              fontSize: 12.0,
+              fontWeight: FontWeight.w500,
+            ),
           ),
         ),
-      ));
+      );
     }
 
     return Container(
       color: KimmiDraftJuda.color110022,
       height: 50.0 + bottomOffset,
       padding: EdgeInsets.fromLTRB(0.0, 5.0, rightPadding, 5.0 + bottomOffset),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.end,
-        children: child,
-      ),
+      child: Row(mainAxisAlignment: MainAxisAlignment.end, children: child),
     );
   }
 }
 
-enum ChatEmojiType {
-  favorites,
-  customEmoji,
-}
+enum ChatEmojiType { favorites, customEmoji }
 
 class ChatEmojiView extends StatelessWidget {
   final List items;
@@ -249,7 +240,8 @@ class ChatEmojiView extends StatelessWidget {
             if (e is KimmiPurse) {
               if (e.isAddStickerItem) {
                 w = KimmiErnie.local(
-                    fileName: 'chat/niiptzeOtrpkJcSt0s8ckiOsyeuYydible');
+                  fileName: 'chat/niiptzeOtrpkJcSt0s8ckiOsyeuYydible',
+                );
               } else {
                 w = CachedNetworkImage(imageUrl: e.url!);
               }

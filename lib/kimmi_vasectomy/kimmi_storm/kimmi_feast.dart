@@ -46,11 +46,15 @@ class KimmiFeast {
 class KimmiWaitressDoggyFeast extends KimmiFeast {
   KimmiStormPuffy? country;
 
-  KimmiWaitressDoggyFeast(User user, Country country, int price,
-      {String tags = "",
-      String language = "",
-      int weight = 0,
-      int height = 0}) {
+  KimmiWaitressDoggyFeast(
+    User user,
+    Country country,
+    int price, {
+    String tags = "",
+    String language = "",
+    int weight = 0,
+    int height = 0,
+  }) {
     uid = user.uid.toInt();
     ucode = KimmiStarbucksJuda.stringToInt(user.ucode) ?? 0;
     nickName = user.nickName;
@@ -70,10 +74,10 @@ class KimmiWaitressDoggyFeast extends KimmiFeast {
   }
 
   Map<String, dynamic> toJson() => <String, dynamic>{
-        "uid": uid,
-        "ucode": ucode,
-        "nickName": nickName,
-        "avatarUrl": avatarUrl,
-        "price": price,
-      };
+    "uid": uid,
+    "ucode": ucode,
+    "nickName": nickName,
+    "avatarUrl": avatarUrl,
+    "price": price,
+  };
 }

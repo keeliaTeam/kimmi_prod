@@ -27,9 +27,9 @@ class KimmiPurse {
     ..url = json['url'] as String?;
 
   Map<String, dynamic> toJson(KimmiPurse instance) => <String, dynamic>{
-        'id': instance.id,
-        'width': instance.width,
-        'height': instance.height,
-        'url': instance.url,
-      };
+    'id': instance.id,
+    'width': instance.width,
+    'height': instance.height,
+    'url': instance.url,
+  };
 }

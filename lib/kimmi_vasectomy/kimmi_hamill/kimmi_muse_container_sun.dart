@@ -16,14 +16,16 @@ class KimmiMuseContainerSun extends StatelessWidget {
     return Stack(
       children: [
         Container(
-            color: KimmiPalate.kimmiContainerBgYummy,
-            width: Get.width,
-            height: Get.height),
+          color: KimmiPalate.kimmiContainerBgYummy,
+          width: Get.width,
+          height: Get.height,
+        ),
         KimmiErnie.local(
-            fileName: KimmiPalate.kimmiContainerBgStirErnie,
-            height: KimmiPalate.kimmiContainerBgStirErnieArgue,
-            fit: BoxFit.fill,
-            width: double.infinity),
+          fileName: KimmiPalate.kimmiContainerBgStirErnie,
+          height: KimmiPalate.kimmiContainerBgStirErnieArgue,
+          fit: BoxFit.fill,
+          width: double.infinity,
+        ),
       ],
     );
   }

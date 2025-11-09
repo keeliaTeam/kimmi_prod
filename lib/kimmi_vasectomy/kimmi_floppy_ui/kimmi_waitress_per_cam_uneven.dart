@@ -22,9 +22,11 @@ class KimmiWaitressPerCamUneven extends StatefulWidget {
   final KimmiExpensive snap;
   final String cachePath;
 
-  const KimmiWaitressPerCamUneven(
-      {Key? key, required this.snap, required this.cachePath})
-      : super(key: key);
+  const KimmiWaitressPerCamUneven({
+    Key? key,
+    required this.snap,
+    required this.cachePath,
+  }) : super(key: key);
 
   @override
   _ChatCellVoiceViewState createState() => _ChatCellVoiceViewState();
@@ -55,39 +57,45 @@ class _ChatCellVoiceViewState extends State<KimmiWaitressPerCamUneven> {
     _currentTimeSec = _timeSec;
 
     _positionSubscription = KimmiTruckSimulatorDock
-        .instance.audioPlayer.onPositionChanged
+        .instance
+        .audioPlayer
+        .onPositionChanged
         .listen((p) {
-      if (isCurrentFile()) {
-        setState(() {
-          _currentTimeSec = p.inSeconds < 1 ? 1 : p.inSeconds;
+          if (isCurrentFile()) {
+            setState(() {
+              _currentTimeSec = p.inSeconds < 1 ? 1 : p.inSeconds;
+            });
+          }
         });
-      }
-    });
 
     _playerStateChangeSubscription = KimmiTruckSimulatorDock
-        .instance.audioPlayer.onPlayerStateChanged
+        .instance
+        .audioPlayer
+        .onPlayerStateChanged
         .listen((event) {
-      if (isCurrentFile()) {
-        if (event == PlayerState.playing) {
-          setState(() {
-            _isPlaying = true;
-          });
-        } else {
-          setState(() {
-            _isPlaying = false;
-          });
-        }
-      }
-    });
+          if (isCurrentFile()) {
+            if (event == PlayerState.playing) {
+              setState(() {
+                _isPlaying = true;
+              });
+            } else {
+              setState(() {
+                _isPlaying = false;
+              });
+            }
+          }
+        });
   }
 
   bool isCurrentFile() {
     var mediaUrl = KimmiTruckSimulatorDock.instance.audioUrl;
     if (_voice == null) return false;
     if (!KimmiStarbucksJuda.isEmpty(_voice!.relativePath) &&
-        mediaUrl == _voice!.relativePath) return true;
+        mediaUrl == _voice!.relativePath)
+      return true;
     if (!KimmiStarbucksJuda.isEmpty(_voice!.voiceUrl) &&
-        mediaUrl == _voice!.voiceUrl) return true;
+        mediaUrl == _voice!.voiceUrl)
+      return true;
     return false;
   }
 
@@ -153,38 +161,47 @@ class _ChatCellVoiceViewState extends State<KimmiWaitressPerCamUneven> {
     var decoration = widget.snap.isMine
         ? BoxDecoration(
             borderRadius: KimmiWaitressJuda.kimmiWaitressPerTummyBySpine(),
-            gradient: KimmiWaitressJuda.kimmiWaitressPerSunCoatBySpine())
+            gradient: KimmiWaitressJuda.kimmiWaitressPerSunCoatBySpine(),
+          )
         : BoxDecoration(
             borderRadius: KimmiWaitressJuda.kimmiWaitressPerTummyByJoshua(),
-            color: KimmiDraftJuda.b1);
+            color: KimmiDraftJuda.b1,
+          );
     return Container(
-        width: (90.0 + _timeSec),
-        padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 14.0),
-        decoration: decoration,
-        child: Row(
-            mainAxisAlignment: widget.snap.isMine
-                ? MainAxisAlignment.end
-                : MainAxisAlignment.start,
-            children: rowChildren));
+      width: (90.0 + _timeSec),
+      padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 14.0),
+      decoration: decoration,
+      child: Row(
+        mainAxisAlignment: widget.snap.isMine
+            ? MainAxisAlignment.end
+            : MainAxisAlignment.start,
+        children: rowChildren,
+      ),
+    );
   }
 
   Widget getVoiceIcon() {
     return Visibility(
-        visible: !_isPlaying,
-        replacement: Container(child: _voiceAnimation()),
-        child: KimmiErnie.local(
-            fileName: 'kimmi_hombre_waitress_thrive',
-            width: 18.0,
-            height: 18.0,
-            fit: BoxFit.fitWidth));
+      visible: !_isPlaying,
+      replacement: Container(child: _voiceAnimation()),
+      child: KimmiErnie.local(
+        fileName: 'kimmi_hombre_waitress_thrive',
+        width: 18.0,
+        height: 18.0,
+        fit: BoxFit.fitWidth,
+      ),
+    );
   }
 
   Widget getText() {
-    return Text('${_isPlaying ? _currentTimeSec : _voice?.duration}”',
-        style: const TextStyle(
-            color: KimmiDraftJuda.white,
-            fontSize: 16,
-            fontFamily: AppText.fontFamily));
+    return Text(
+      '${_isPlaying ? _currentTimeSec : _voice?.duration}”',
+      style: const TextStyle(
+        color: KimmiDraftJuda.white,
+        fontSize: 16,
+        fontFamily: AppText.fontFamily,
+      ),
+    );
   }
 
   Future<File?> _downLoadVoice(String url) async {
@@ -198,18 +215,24 @@ class _ChatCellVoiceViewState extends State<KimmiWaitressPerCamUneven> {
       urls.add('$prefix$i');
     }
     return KimmiErnieFairyTeepeeFailed(
-        width: 18.0, height: 18.0, imageURLs: urls, intervalMilliseconds: 120);
+      width: 18.0,
+      height: 18.0,
+      imageURLs: urls,
+      intervalMilliseconds: 120,
+    );
   }
 
   Widget getUnreadRed() {
     return Padding(
       padding: const EdgeInsets.only(left: 8),
       child: Container(
-          width: 12.0,
-          height: 12.0,
-          decoration: BoxDecoration(
-              color: KimmiDraftJuda.ff4e4e,
-              borderRadius: BorderRadius.circular(6.0))),
+        width: 12.0,
+        height: 12.0,
+        decoration: BoxDecoration(
+          color: KimmiDraftJuda.ff4e4e,
+          borderRadius: BorderRadius.circular(6.0),
+        ),
+      ),
     );
   }
 
@@ -218,8 +241,9 @@ class _ChatCellVoiceViewState extends State<KimmiWaitressPerCamUneven> {
       widget.snap.unread = false;
       KIMMI.kimmiDb.snapDao.saveOrUpdateModels([widget.snap]);
       KimmiWaitressDock.instance.kimmiUterusGlenExpensiveSpecifies(
-          widget.snap.chatBoxId!,
-          snapIds: [widget.snap.id!]);
+        widget.snap.chatBoxId!,
+        snapIds: [widget.snap.id!],
+      );
     }
   }
 }

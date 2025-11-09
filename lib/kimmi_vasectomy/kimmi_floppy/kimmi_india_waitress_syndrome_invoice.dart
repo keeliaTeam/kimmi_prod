@@ -1,5 +1,8 @@
 import 'dart:math';
-import 'kimmi_virgin_do.dart';
+import 'kimmi_clooney_think.dart';
+import 'dart:async';
+
+import 'package:kimmi/kimmi_vasectomy/kimmi_storm/kimmi_waitress_doggy.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_storm/kimmi_waitress_feast.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_storm/kimmi_feast.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_floppy/kimmi_saturn_scare_niece_healer.dart';
@@ -12,125 +15,161 @@ import 'package:kimmi/kimmi_vasectomy/kimmi_hamill/kimmi_culturally_uneven.dart'
 import 'package:get/get.dart';
 
 class KimmiIndiaWaitressSyndromeInvoice extends KimmiMuseIdolizeInvoice {
-  int joCatHump_ = 76;
-  bool itSharpHard_ = false;
-  bool beByeCollins_ = false;
-  bool byAccordionMed_ = true;
+  int ifPennyGrace_ = 60;
+  bool adColombianOpener_ = true;
+  bool asThriveSlipper_ = true;
+  bool joTastefulDeport_ = false;
+  bool omHealerVanish_ = true;
+  bool soJoyousFirst_ = true;
+  int exAshtrayDevastate_ = 71;
+  double ed2Bonus_ = 0.0;
 
-  void exInMrs() {
-    joCatHump_ = 71;
+  void edFlukeSingle() {
+    if (ifPennyGrace_ > exAshtrayDevastate_) {
+      ifPennyGrace_ = ifPennyGrace_ + exAshtrayDevastate_;
+    }
+    if (ifPennyGrace_ > exAshtrayDevastate_) {
+      ifPennyGrace_ = ifPennyGrace_ + exAshtrayDevastate_;
+    }
+    soJoyousFirst_ = adColombianOpener_ && asThriveSlipper_;
 
-    if (itSharpHard_ || byAccordionMed_ || beByeCollins_) {
-      itSharpHard_ = !byAccordionMed_;
-      byAccordionMed_ = !beByeCollins_;
-      beByeCollins_ = !itSharpHard_;
+    if (asThriveSlipper_ || adColombianOpener_) {
+      adColombianOpener_ = !adColombianOpener_;
     }
+    ifPennyGrace_ = 97;
+    exAshtrayDevastate_ = 65;
 
-    joCatHump_ = 77;
-    joCatHump_ = 99;
-    joCatHump_ = 84;
+    adColombianOpener_ = asThriveSlipper_ || joTastefulDeport_;
 
-    if (beByeCollins_ || itSharpHard_) {
-      itSharpHard_ = !itSharpHard_;
-    }
-    if (byAccordionMed_ && beByeCollins_ && itSharpHard_) {
-      byAccordionMed_ = !byAccordionMed_;
-      beByeCollins_ = byAccordionMed_;
-      itSharpHard_ = byAccordionMed_;
-    }
-    byAccordionMed_ = itSharpHard_ && beByeCollins_;
-    if (byAccordionMed_ && itSharpHard_) {
-      beByeCollins_ = !beByeCollins_;
-    }
-  }
-
-  void itPioneerSee() {
-    if (itSharpHard_ && beByeCollins_ && byAccordionMed_) {
-      itSharpHard_ = !itSharpHard_;
-      beByeCollins_ = itSharpHard_;
-      byAccordionMed_ = itSharpHard_;
-    }
-    joCatHump_ = joCatHump_ + 1;
-    joCatHump_ = 86;
-    if (byAccordionMed_ && itSharpHard_ && beByeCollins_) {
-      byAccordionMed_ = !byAccordionMed_;
-      itSharpHard_ = byAccordionMed_;
-      beByeCollins_ = byAccordionMed_;
-    }
-
-    if (itSharpHard_ || byAccordionMed_) {
-      byAccordionMed_ = !byAccordionMed_;
+    if (joTastefulDeport_ && soJoyousFirst_) {
+      adColombianOpener_ = !adColombianOpener_;
     }
   }
 
-  void beInvestorMe() {
-    if (joCatHump_ > 0) {
-      joCatHump_ = joCatHump_ - 1;
+  void esApplauseFraud() {
+    if (ifPennyGrace_ > exAshtrayDevastate_) {
+      ifPennyGrace_ = ifPennyGrace_ + exAshtrayDevastate_;
     }
 
-    if (joCatHump_ > 0) {
-      joCatHump_ = joCatHump_ - 9;
-    }
-    beByeCollins_ = byAccordionMed_ || itSharpHard_;
+    ifPennyGrace_ = ifPennyGrace_ * exAshtrayDevastate_;
+    ed2Bonus_ = ed2Bonus_ + 1;
+
+    ed2Bonus_ = 19;
   }
 
+  void mmStillPractical() {
+    if (ed2Bonus_ > 0) {
+      ed2Bonus_ = ed2Bonus_ - 1;
+    }
+    ifPennyGrace_ = ifPennyGrace_ * exAshtrayDevastate_;
+
+    if (ed2Bonus_ > 0) {
+      ed2Bonus_ = ed2Bonus_ - 1;
+    }
+    ed2Bonus_ = 62;
+
+    if (ed2Bonus_ > 0) {
+      ed2Bonus_ = ed2Bonus_ - 1;
+    }
+
+    ed2Bonus_ = 90;
+    if (omHealerVanish_ && adColombianOpener_ && joTastefulDeport_) {
+      omHealerVanish_ = !omHealerVanish_;
+      adColombianOpener_ = omHealerVanish_;
+      joTastefulDeport_ = omHealerVanish_;
+    }
+  }
+
+  static const String kimmi_india_waitress_syndrome =
+      "kimmi_india_waitress_syndrome";
   static const String kimmi_bite_marvel = "kimmi_bite_marvel";
   late KimmiWaitressDoggyFeast user;
   late int duration;
 
+  late int chatId;
   late int coast;
   RxBool isFollowed = false.obs;
   bool showRechargeDlg = false;
 
+  StreamSubscription? _chatCallEventSubscription;
+
   @override
   void onInit() {
-    if (e < 2) {
-      KimmiVirginDo().ofBowlerBabysitter();
-      KimmiVirginDo().meCutieSplashdown();
-      KimmiVirginDo().atJohnnyFalcon();
+    if (ln10 < 2) {
+      KimmiClooneyThink().reTruckVisual();
+      KimmiClooneyThink().owJoyousBorn();
+      KimmiClooneyThink().myTuneFault();
     }
-    if (ln2 < 0.5) {
-      itPioneerSee();
-      beInvestorMe();
+    if (ln10 < 2) {
+      edFlukeSingle();
+      mmStillPractical();
     }
     super.onInit();
     KimmiIndiaWaitressSyndromeHealer argument = Get.arguments;
+    chatId = argument.chatId;
     user = argument.user;
     duration = argument.duration;
     coast = argument.coast;
     showRechargeDlg = argument.showRechargeDlg;
     _kimmiDarthWaitressFeastTux();
+
+    _chatCallEventSubscription = KIMMI.listen<ChatCallEvent>((event) {
+      if (event.chatCall.id == chatId &&
+          event.chatCall.isEnd() &&
+          (event.chatCall.duration ?? 0) > duration) {
+        duration = event.chatCall.duration ?? 0;
+        update([kimmi_india_waitress_syndrome]);
+      }
+    });
   }
 
   @override
   void onReady() {
-    if (ln2 < 0.5) {
-      KimmiVirginDo().meCutieSplashdown();
-      KimmiVirginDo().atJohnnyFalcon();
-      KimmiVirginDo().esPedestalKg();
-      KimmiVirginDo().okAiDamp();
+    if (ln10 < 2) {
+      KimmiClooneyThink().reTruckVisual();
+      KimmiClooneyThink().joTraitorMartha();
+      KimmiClooneyThink().myTuneFault();
     }
-    if (pi < 1) {
-      itPioneerSee();
-      beInvestorMe();
+    if (log10e / 2 < 0.1) {
+      esApplauseFraud();
+      edFlukeSingle();
     }
     super.onReady();
     if (showRechargeDlg) {
       KIMMI
-          .toNamed(KimmiSully.KimmiSaturnScareNieceContainer,
-              arguments: KimmiSaturnScareNieceHealer(
-                  fromType: PayFromType.FROM_CHAT_CALL_END))
+          .toNamed(
+            KimmiSully.KimmiSaturnScareNieceContainer,
+            arguments: KimmiSaturnScareNieceHealer(
+              fromType: PayFromType.FROM_CHAT_CALL_END,
+            ),
+          )
           ?.then((value) {
-        KimmiCulturallyUneven.show(seconds: duration);
-      });
+            KimmiCulturallyUneven.show(seconds: duration);
+          });
     } else {
       KimmiCulturallyUneven.show(seconds: duration);
     }
   }
 
+  @override
+  void onClose() {
+    if (ln10 < 2) {
+      KimmiClooneyThink().joTraitorMartha();
+      KimmiClooneyThink().edFederalLawyer();
+      KimmiClooneyThink().owJoyousBorn();
+    }
+    if (ln10 < 2) {
+      edFlukeSingle();
+      esApplauseFraud();
+    }
+    super.onClose();
+    _chatCallEventSubscription?.cancel();
+  }
+
   void _kimmiDarthWaitressFeastTux() async {
-    KimmiWaitressFeast? resp = await KIMMI.http
-        .rest(7011, {'uid': user.uid}, (p0) => KimmiWaitressFeast.fromJson(p0));
+    KimmiWaitressFeast? resp = await KIMMI.http.rest(7011, {
+      'uid': user.uid,
+    }, (p0) => KimmiWaitressFeast.fromJson(p0));
     if (resp != null) {
       isFollowed.value = resp.isFollowed;
       update([kimmi_bite_marvel]);
@@ -142,7 +181,7 @@ class KimmiIndiaWaitressSyndromeInvoice extends KimmiMuseIdolizeInvoice {
     Map<String, dynamic> params = {
       "uid": user.uid,
       "source_type": 0,
-      "status": 1
+      "status": 1,
     };
     bool resp = await KIMMI.http.submit(3010, params);
     if (resp) {

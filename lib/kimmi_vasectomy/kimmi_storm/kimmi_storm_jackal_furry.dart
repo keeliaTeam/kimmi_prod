@@ -5,8 +5,14 @@ import 'kimmi_storm_jackal.dart';
 class KimmiStormJackalFurry {
   static const int EMOJI_ID = 100;
 
-  KimmiStormJackalFurry(
-      [this.id, this.type, this.name, this.icon, this.selIcon, this.items]);
+  KimmiStormJackalFurry([
+    this.id,
+    this.type,
+    this.name,
+    this.icon,
+    this.selIcon,
+    this.items,
+  ]);
 
   int? id;
   int? type;

@@ -64,6 +64,10 @@ extension StringExt on String? {
   }
 }
 
+extension LetExtension<T extends Object> on T {
+  R let<R>(R Function(T) block) => block(this);
+}
+
 extension WidgetExt on Widget {
   Widget click(GestureTapCallback? event, {int borderRadius = 0}) {
     if (borderRadius == 0) {
@@ -71,12 +75,12 @@ extension WidgetExt on Widget {
     }
 
     return InkWell(
-        onTap: event,
-        borderRadius: borderRadius.rectBg,
-        child: Ink(
-            decoration: BoxDecoration(
-              borderRadius: borderRadius.rectBg,
-            ),
-            child: this));
+      onTap: event,
+      borderRadius: borderRadius.rectBg,
+      child: Ink(
+        decoration: BoxDecoration(borderRadius: borderRadius.rectBg),
+        child: this,
+      ),
+    );
   }
 }

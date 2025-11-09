@@ -19,9 +19,7 @@ class KimmiChordFailedConfound extends StatelessWidget {
       children: [
         JsonWidgetExporter(
           key: _exportKey,
-          child: JsonExportable(
-            child: child,
-          ),
+          child: JsonExportable(child: child),
         ),
         Positioned(
           right: 0,
@@ -31,13 +29,16 @@ class KimmiChordFailedConfound extends StatelessWidget {
             radius: 15,
             child: IconButton(
               padding: EdgeInsets.zero,
-              icon: const Icon(Icons.javascript_sharp,
-                  color: Colors.white, size: 30),
+              icon: const Icon(
+                Icons.javascript_sharp,
+                color: Colors.white,
+                size: 30,
+              ),
               color: Colors.white,
               onPressed: () {},
             ),
           ),
-        )
+        ),
       ],
     );
   }

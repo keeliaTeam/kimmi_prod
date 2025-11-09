@@ -18,10 +18,6 @@ class KimmiStormWorse {
   }
 
   Map<String, dynamic> toJson() {
-    return <String, dynamic>{
-      "code": code,
-      "name": name,
-      "vip_only": vip_only,
-    };
+    return <String, dynamic>{"code": code, "name": name, "vip_only": vip_only};
   }
 }

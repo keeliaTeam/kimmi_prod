@@ -27,15 +27,7 @@ import 'package:protobuf/protobuf.dart';
 import '../kimmi_storm/kimmi_storm_vasectomy_foreign.dart';
 import 'package:convert/convert.dart';
 
-enum KimmiForeignMarvel {
-  DISCONNECTED,
-
-  CONNECTED,
-
-  AUTHED,
-
-  CONNECTING,
-}
+enum KimmiForeignMarvel { DISCONNECTED, CONNECTED, AUTHED, CONNECTING }
 
 class KimmiForeign {
   int _delayMessageTimeoutMills = 10000;
@@ -122,21 +114,29 @@ class KimmiForeign {
         _sendBufferBatchSize = node.sendBufferBatchSize;
 
         _receiveBuffer = [];
-        _socket = await Socket.connect(node.host, node.port,
-            timeout: const Duration(seconds: 10));
+        _socket = await Socket.connect(
+          node.host,
+          node.port,
+          timeout: const Duration(seconds: 10),
+        );
         _status = KimmiForeignMarvel.CONNECTED;
         int now = DateTime.now().millisecondsSinceEpoch;
         _lastSendHeartbeatTime = now;
         _lastReceiveTime = now;
 
         _socket!.setOption(SocketOption.tcpNoDelay, true);
-        _socket!.listen((data) {
-          _readData(data);
-        }, onError: (e) {
-          reconnect("SocketError");
-        }, onDone: () {
-          _status = KimmiForeignMarvel.DISCONNECTED;
-        }, cancelOnError: true);
+        _socket!.listen(
+          (data) {
+            _readData(data);
+          },
+          onError: (e) {
+            reconnect("SocketError");
+          },
+          onDone: () {
+            _status = KimmiForeignMarvel.DISCONNECTED;
+          },
+          cancelOnError: true,
+        );
         break;
       } catch (e, stack) {
         KimmiVasectomyPioneerDock.kimmiPajamaCurious(30001, e, stack);
@@ -168,8 +168,9 @@ class KimmiForeign {
     while (_receiveBuffer.length > length) {
       Message rawEmployee = Message.create();
       try {
-        CodedBufferReader(_receiveBuffer)
-            .readMessage(rawEmployee, ExtensionRegistry());
+        CodedBufferReader(
+          _receiveBuffer,
+        ).readMessage(rawEmployee, ExtensionRegistry());
       } catch (e, stack) {
         KimmiVasectomyPioneerDock.kimmiPajamaCurious(30002, e, stack);
         reconnect("read package err");
@@ -202,8 +203,9 @@ class KimmiForeign {
 
     int seqNum = rawEmployee.seqno;
     if (seqNum > 0) {
-      KimmiForeignWithhold<dynamic>? callback =
-          _requestCallbackMap.remove(seqNum);
+      KimmiForeignWithhold<dynamic>? callback = _requestCallbackMap.remove(
+        seqNum,
+      );
       if (callback != null) {
         _requestTimeoutQueue.remove(KimmiFlorist(seqNum, 0));
         callback.success(rawEmployee);
@@ -241,8 +243,9 @@ class KimmiForeign {
     if (_socket == null ||
         _status == KimmiForeignMarvel.DISCONNECTED ||
         _status == KimmiForeignMarvel.CONNECTING) {
-      _sendBufferQueue
-          .add(KimmiFlorist(rawEmployee, _delayMessageTimeoutMills));
+      _sendBufferQueue.add(
+        KimmiFlorist(rawEmployee, _delayMessageTimeoutMills),
+      );
       return true;
     } else {
       return _send(rawEmployee);
@@ -267,8 +270,10 @@ class KimmiForeign {
       EasyLoading.show();
     }
 
-    KimmiForeignDylan<T> resp =
-        await sendWithResp<T>(msg, timeoutMillis: timeoutMillis).first;
+    KimmiForeignDylan<T> resp = await sendWithResp<T>(
+      msg,
+      timeoutMillis: timeoutMillis,
+    ).first;
     if (showLoadingUI) {
       EasyLoading.dismiss();
     }
@@ -301,8 +306,10 @@ class KimmiForeign {
       EasyLoading.show();
     }
 
-    KimmiForeignDylan<T> resp =
-        await sendWithResp<T>(msg, timeoutMillis: timeoutMillis).first;
+    KimmiForeignDylan<T> resp = await sendWithResp<T>(
+      msg,
+      timeoutMillis: timeoutMillis,
+    ).first;
     if (showLoadingUI) {
       EasyLoading.dismiss();
     }
@@ -310,8 +317,9 @@ class KimmiForeign {
     if (resp.timeout || resp.employee == null) {
       if (autoToastOnError) {
         Fluttertoast.showToast(
-            msg:
-                "${autoErrorWhenError ?? KimmiPalate.kimmiBathtubVirginBallJasmine.tr} ${resp.employee?.cate}-${resp.employee?.type}-${KimmiPalate.kimmiVasectomySensitive}");
+          msg:
+              "${autoErrorWhenError ?? KimmiPalate.kimmiBathtubVirginBallJasmine.tr} ${resp.employee?.cate}-${resp.employee?.type}-${KimmiPalate.kimmiVasectomySensitive}",
+        );
       }
       return null;
     }
@@ -320,8 +328,9 @@ class KimmiForeign {
     if (respBody == null) {
       if (autoToastOnError) {
         Fluttertoast.showToast(
-            msg:
-                "${autoErrorWhenError ?? KimmiPalate.kimmiBathtubVirginBallJasmine.tr} ${resp.employee!.cate}-${resp.employee!.type}-${KimmiPalate.kimmiVasectomySensitive}");
+          msg:
+              "${autoErrorWhenError ?? KimmiPalate.kimmiBathtubVirginBallJasmine.tr} ${resp.employee!.cate}-${resp.employee!.type}-${KimmiPalate.kimmiVasectomySensitive}",
+        );
       }
       return null;
     }
@@ -330,8 +339,9 @@ class KimmiForeign {
     if (codeNum == null) {
       if (autoToastOnError) {
         Fluttertoast.showToast(
-            msg:
-                "${autoErrorWhenError ?? KimmiPalate.kimmiBathtubVirginBallJasmine.tr} ${resp.employee!.cate}-${resp.employee!.type}-${KimmiPalate.kimmiVasectomySensitive}");
+          msg:
+              "${autoErrorWhenError ?? KimmiPalate.kimmiBathtubVirginBallJasmine.tr} ${resp.employee!.cate}-${resp.employee!.type}-${KimmiPalate.kimmiVasectomySensitive}",
+        );
       }
       return null;
     }
@@ -344,8 +354,9 @@ class KimmiForeign {
       String? rspMsg = KimmiCadaverHead.getFiled(respBody, "msg");
       if (rspMsg != null) {
         Fluttertoast.showToast(
-            msg:
-                "$rspMsg ${resp.employee!.cate}-${resp.employee!.type}-${KimmiPalate.kimmiVasectomySensitive}");
+          msg:
+              "$rspMsg ${resp.employee!.cate}-${resp.employee!.type}-${KimmiPalate.kimmiVasectomySensitive}",
+        );
       }
     }
 

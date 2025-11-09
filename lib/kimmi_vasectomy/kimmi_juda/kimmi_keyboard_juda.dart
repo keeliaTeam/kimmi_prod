@@ -105,7 +105,9 @@ class KimmiKeyboardJuda {
   }
 
   static List<Map<String, dynamic>>? list(
-      Map<String, dynamic>? map, String key) {
+    Map<String, dynamic>? map,
+    String key,
+  ) {
     if (map == null) {
       return null;
     }

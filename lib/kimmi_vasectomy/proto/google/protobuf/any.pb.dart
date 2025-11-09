@@ -5,35 +5,37 @@ import 'package:protobuf/protobuf.dart' as $pb;
 import 'package:protobuf/src/protobuf/mixins/well_known.dart' as $mixin;
 
 class Any extends $pb.GeneratedMessage with $mixin.AnyMixin {
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      const $core.bool.fromEnvironment('protobuf.omit_message_names')
-          ? ''
-          : 'Any',
-      package: const $pb.PackageName(
+  static final $pb.BuilderInfo _i =
+      $pb.BuilderInfo(
           const $core.bool.fromEnvironment('protobuf.omit_message_names')
               ? ''
-              : 'google.protobuf'),
-      createEmptyInstance: create,
-      toProto3Json: $mixin.AnyMixin.toProto3JsonHelper,
-      fromProto3Json: $mixin.AnyMixin.fromProto3JsonHelper)
-    ..aOS(
-        1,
-        const $core.bool.fromEnvironment('protobuf.omit_field_names')
-            ? ''
-            : 'typeUrl')
-    ..a<$core.List<$core.int>>(
-        2,
-        const $core.bool.fromEnvironment('protobuf.omit_field_names')
-            ? ''
-            : 'value',
-        $pb.PbFieldType.OY)
-    ..hasRequiredFields = false;
+              : 'Any',
+          package: const $pb.PackageName(
+            const $core.bool.fromEnvironment('protobuf.omit_message_names')
+                ? ''
+                : 'google.protobuf',
+          ),
+          createEmptyInstance: create,
+          toProto3Json: $mixin.AnyMixin.toProto3JsonHelper,
+          fromProto3Json: $mixin.AnyMixin.fromProto3JsonHelper,
+        )
+        ..aOS(
+          1,
+          const $core.bool.fromEnvironment('protobuf.omit_field_names')
+              ? ''
+              : 'typeUrl',
+        )
+        ..a<$core.List<$core.int>>(
+          2,
+          const $core.bool.fromEnvironment('protobuf.omit_field_names')
+              ? ''
+              : 'value',
+          $pb.PbFieldType.OY,
+        )
+        ..hasRequiredFields = false;
 
   Any._() : super();
-  factory Any({
-    $core.String? typeUrl,
-    $core.List<$core.int>? value,
-  }) {
+  factory Any({$core.String? typeUrl, $core.List<$core.int>? value}) {
     final _result = create();
     if (typeUrl != null) {
       _result.typeUrl = typeUrl;
@@ -43,19 +45,25 @@ class Any extends $pb.GeneratedMessage with $mixin.AnyMixin {
     }
     return _result;
   }
-  factory Any.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory Any.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  factory Any.fromBuffer(
+    $core.List<$core.int> i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromBuffer(i, r);
+  factory Any.fromJson(
+    $core.String i, [
+    $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
+  ]) => create()..mergeFromJson(i, r);
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+    'Will be removed in next major version',
+  )
   Any clone() => Any()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated(
+    'Using this can add significant overhead to your binary. '
+    'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+    'Will be removed in next major version',
+  )
   Any copyWith(void Function(Any) updates) =>
       super.copyWith((message) => updates(message as Any)) as Any;
   $pb.BuilderInfo get info_ => _i;
@@ -91,8 +99,10 @@ class Any extends $pb.GeneratedMessage with $mixin.AnyMixin {
   $core.bool hasValue() => $_has(1);
   @$pb.TagNumber(2)
   void clearValue() => clearField(2);
-  static Any pack($pb.GeneratedMessage message,
-      {$core.String typeUrlPrefix = 'type.googleapis.com'}) {
+  static Any pack(
+    $pb.GeneratedMessage message, {
+    $core.String typeUrlPrefix = 'type.googleapis.com',
+  }) {
     final result = create();
     $mixin.AnyMixin.packIntoAny(result, message, typeUrlPrefix: typeUrlPrefix);
     return result;

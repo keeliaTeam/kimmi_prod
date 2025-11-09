@@ -65,10 +65,18 @@ class KimmiAfrica {
     eventBus.fire(event);
   }
 
-  StreamSubscription<T> listen<T>(void Function(T event)? onData,
-      {Function? onError, void Function()? onDone, bool? cancelOnError}) {
-    return eventBus.on<T>().listen(onData,
-        onError: onError, onDone: onDone, cancelOnError: cancelOnError);
+  StreamSubscription<T> listen<T>(
+    void Function(T event)? onData, {
+    Function? onError,
+    void Function()? onDone,
+    bool? cancelOnError,
+  }) {
+    return eventBus.on<T>().listen(
+      onData,
+      onError: onError,
+      onDone: onDone,
+      cancelOnError: cancelOnError,
+    );
   }
 
   late KimmiPhil kimmiPhil;
@@ -128,10 +136,13 @@ class KimmiAfrica {
     deviceService.initAdjust();
     KimmiVasectomyPioneerDock.kimmiOnVasectomyParoleUp();
 
-    kimmiFigureMention(cachedConfig);
-
     await refreshKimmiHump(
-        quickRefresh: false, onResume: false, cachedConfig: cachedConfig);
+      quickRefresh: false,
+      onResume: false,
+      cachedConfig: cachedConfig,
+    );
+
+    KimmiMentionDock.instance.init(kimmiHump.getPushKey());
 
     KimmiRTCDock.instance.init();
 
@@ -145,10 +156,11 @@ class KimmiAfrica {
     eventBus.on<AlertNotify>().listen((event) {
       if (event.hasMsg()) {
         Get.defaultDialog(
-            title: "",
-            middleText: event.msg,
-            onConfirm: Get.back,
-            titleStyle: const TextStyle(fontSize: 1));
+          title: "",
+          middleText: event.msg,
+          onConfirm: Get.back,
+          titleStyle: const TextStyle(fontSize: 1),
+        );
       }
     });
     eventBus.on<PopupNotify>().listen((event) {
@@ -157,13 +169,18 @@ class KimmiAfrica {
           KimmiFailedWebsite.alert(title: event.title, middleText: event.msg);
           break;
         case PopupNotify_PopupNotifyType.COMMON_SNACKBAR:
-          Get.snackbar(event.title, event.msg,
-              icon: KimmiMileErnie(url: event.icon),
-              backgroundColor: Colors.white);
+          Get.snackbar(
+            event.title,
+            event.msg,
+            icon: KimmiMileErnie(url: event.icon),
+            backgroundColor: Colors.white,
+          );
           break;
         case PopupNotify_PopupNotifyType.COIN_REWARD:
-          Get.toNamed(KimmiSully.KimmiVibrantGroovyContainer,
-              arguments: KimmiVibrantGroovySavage(event.title, event.msg.tr));
+          Get.toNamed(
+            KimmiSully.KimmiVibrantGroovyContainer,
+            arguments: KimmiVibrantGroovySavage(event.title, event.msg.tr),
+          );
           break;
         default:
           KimmiFailedWebsite.alert(title: event.title, middleText: event.msg);
@@ -187,9 +204,15 @@ class KimmiAfrica {
     if (routeUrl.startsWith("/")) {
       KIMMI.toNamed(routeUrl);
     } else if (routeUrl.startsWith("http")) {
-      KIMMI.toNamed(KimmiSully.KimmiInkContainer,
-          arguments: KimmiInkHealer("", routeUrl,
-              showHtmlTitle: true, showNavbar: true));
+      KIMMI.toNamed(
+        KimmiSully.KimmiInkContainer,
+        arguments: KimmiInkHealer(
+          "",
+          routeUrl,
+          showHtmlTitle: true,
+          showNavbar: true,
+        ),
+      );
     } else if (routeUrl.startsWith("xhttp")) {
       String url = routeUrl.substring(1);
       try {
@@ -367,16 +390,17 @@ class KimmiAfrica {
     );
   }
 
-  Future<void> refreshKimmiHump(
-      {bool quickRefresh = false,
-      bool onResume = false,
-      KimmiDylanHump? cachedConfig}) async {
+  Future<void> refreshKimmiHump({
+    bool quickRefresh = false,
+    bool onResume = false,
+    KimmiDylanHump? cachedConfig,
+  }) async {
     cachedConfig ??= kimmiPhil.respConfig();
 
-    KimmiDylanHump freshConfig =
-        await _refreshKimmiDylanHump(cachedConfig, quickRefresh);
-
-    kimmiFigureMention(freshConfig);
+    KimmiDylanHump freshConfig = await _refreshKimmiDylanHump(
+      cachedConfig,
+      quickRefresh,
+    );
 
     KimmiBroderickSoften().updateWithUpgradeResponse(freshConfig.i18ns);
 
@@ -395,8 +419,9 @@ class KimmiAfrica {
           .toList()
       ..imageSize = freshConfig.imageSize;
 
-    int prevAppConfigVersion =
-        cachedConfig != null ? cachedConfig.configs.version : 0;
+    int prevAppConfigVersion = cachedConfig != null
+        ? cachedConfig.configs.version
+        : 0;
     if (onResume) {
       if (prevAppConfigVersion != freshConfig.configs.version) {
         fire(kimmiHump.configs);
@@ -405,7 +430,9 @@ class KimmiAfrica {
   }
 
   Future<KimmiDylanHump> _refreshKimmiDylanHump(
-      KimmiDylanHump? cfg, bool quickRefresh) async {
+    KimmiDylanHump? cfg,
+    bool quickRefresh,
+  ) async {
     KimmiStormBoatTux clientInfo = deviceService.getClientInfo();
 
     int i18nVersion = 0;
@@ -446,9 +473,15 @@ class KimmiAfrica {
         params["client_info"] = clientInfo.toJsonString();
       }
 
-      KimmiDylanHump? rsp = await http.rest(apiId, params, (p) {
-        return KimmiDylanHump.fromJson(p);
-      }, autoToastOnError: cfg == null, timeout: timeout);
+      KimmiDylanHump? rsp = await http.rest(
+        apiId,
+        params,
+        (p) {
+          return KimmiDylanHump.fromJson(p);
+        },
+        autoToastOnError: cfg == null,
+        timeout: timeout,
+      );
 
       if (rsp != null) {
         if (cfg != null) {
@@ -517,27 +550,36 @@ class KimmiAfrica {
   }
 
   Future<void> onKimmiMercury() async {
-    await KIMMI.http.submit(2015, {},
-        showLoadingUI: true,
-        autoToastOnError: true,
-        timeout: const Duration(seconds: 3));
+    await KIMMI.http.submit(
+      2015,
+      {},
+      showLoadingUI: true,
+      autoToastOnError: true,
+      timeout: const Duration(seconds: 3),
+    );
     KIMMI.fire(KimmiCavitySmile(KimmiCavityBloody.LOGOUT));
   }
 
   Future<void> onKimmiCuriousVixen() async {
-    await KIMMI.http.submit(2016, {},
-        showLoadingUI: true,
-        autoToastOnError: true,
-        timeout: const Duration(seconds: 3));
+    await KIMMI.http.submit(
+      2016,
+      {},
+      showLoadingUI: true,
+      autoToastOnError: true,
+      timeout: const Duration(seconds: 3),
+    );
     KIMMI.fire(KimmiCavitySmile(KimmiCavityBloody.LOGOUT));
   }
 
   Future<void> onKimmiMe() async {
     KimmiDylanCavity? resp = await KIMMI.http.rest(
-        2020, {}, (p0) => KimmiDylanCavity.fromJson(p0),
-        showLoadingUI: false,
-        autoToastOnError: false,
-        timeout: const Duration(seconds: 3));
+      2020,
+      {},
+      (p0) => KimmiDylanCavity.fromJson(p0),
+      showLoadingUI: false,
+      autoToastOnError: false,
+      timeout: const Duration(seconds: 3),
+    );
     if (resp != null) {
       _kimmiAlienDylanCavity(resp);
     }
@@ -575,8 +617,9 @@ class KimmiAfrica {
       kimmiFeastGenius!.hadPaid = psh.hadPaid;
     }
     if (psh.type == 0 || psh.type == 3) {
-      kimmiFeastGenius!.vipExpire =
-          DateTime.fromMillisecondsSinceEpoch(psh.vipExpire.toInt());
+      kimmiFeastGenius!.vipExpire = DateTime.fromMillisecondsSinceEpoch(
+        psh.vipExpire.toInt(),
+      );
     }
 
     if (psh.type == 0 || psh.type == 4) {
@@ -591,8 +634,9 @@ class KimmiAfrica {
             ..diamondAmount = uc.diamondAmount.toInt()
             ..status = uc.status.toInt()
             ..vipDuration = uc.vipDuration.toInt()
-            ..expireTime =
-                DateTime.fromMillisecondsSinceEpoch(uc.expireTime.toInt());
+            ..expireTime = DateTime.fromMillisecondsSinceEpoch(
+              uc.expireTime.toInt(),
+            );
           coupons.add(c);
         }
         kimmiFeastGenius!.coupons = coupons;
@@ -610,8 +654,10 @@ class KimmiAfrica {
     fire(KimmiFeastGeniusFantasySmile(kimmiFeastGenius!));
   }
 
-  Future<dynamic> callPlatformMethod(String methodName,
-      [dynamic arguments]) async {
+  Future<dynamic> callPlatformMethod(
+    String methodName, [
+    dynamic arguments,
+  ]) async {
     try {
       return await methodChannel?.invokeMethod(methodName, arguments);
     } catch (e, stack) {
@@ -620,8 +666,9 @@ class KimmiAfrica {
   }
 
   void _initMethodChannelCall() {
-    methodChannel =
-        const MethodChannel(KimmiPalate.kimmiSophomoreCheesecakeNoticeable);
+    methodChannel = const MethodChannel(
+      KimmiPalate.kimmiSophomoreCheesecakeNoticeable,
+    );
     methodChannel?.setMethodCallHandler((call) async {
       if (Platform.isAndroid) {
         if (call.method == 'installReferrer') {
@@ -652,11 +699,12 @@ class KimmiAfrica {
 void initCustom() {
   if (Platform.isIOS) {
     FlutterAihelp().initQA(
-        KIMMI.user().ucode,
-        KIMMI.user().nickName,
-        KimmiPalate.kimmiAiPvcPoppy,
-        KimmiPalate.kimmiAiPvcId,
-        KimmiPalate.kimmiAiPvcTowel);
+      KIMMI.user().ucode,
+      KIMMI.user().nickName,
+      KimmiPalate.kimmiAiPvcPoppy,
+      KimmiPalate.kimmiAiPvcId,
+      KimmiPalate.kimmiAiPvcTowel,
+    );
   } else {
     KIMMI.callPlatformMethod("showQA", <String, dynamic>{
       'ucode': KIMMI.user().ucode,
@@ -666,12 +714,6 @@ void initCustom() {
       'qa_app_key': KimmiPalate.kimmiAiPvcTowel,
       'qa_app_show_dialog': "0",
     });
-  }
-}
-
-void kimmiFigureMention(KimmiDylanHump? cfg) {
-  if (cfg != null) {
-    KimmiMentionDock.instance.init(cfg.pushConfig);
   }
 }
 
@@ -685,13 +727,16 @@ class KimmiSicklyPedestal extends LogFilter {
 }
 
 final Logger logger = Logger(
-    filter: KimmiSicklyPedestal(),
-    printer: HybridPrinter(KimmiCuriousNucleus(),
-        error: PrettyPrinter(
-          methodCount: 10,
-          errorMethodCount: 8,
-          lineLength: 80,
-          colors: true,
-          printEmojis: false,
-          printTime: true,
-        )));
+  filter: KimmiSicklyPedestal(),
+  printer: HybridPrinter(
+    KimmiCuriousNucleus(),
+    error: PrettyPrinter(
+      methodCount: 10,
+      errorMethodCount: 8,
+      lineLength: 80,
+      colors: true,
+      printEmojis: false,
+      printTime: true,
+    ),
+  ),
+);
