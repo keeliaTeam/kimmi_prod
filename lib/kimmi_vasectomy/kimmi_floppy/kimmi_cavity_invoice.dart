@@ -1,5 +1,5 @@
 import 'dart:math';
-import 'kimmi_some_advocate.dart';
+import 'kimmi_cream_unable.dart';
 import 'dart:io';
 
 import 'package:kimmi/kimmi_vasectomy/kimmi_exploit_dylan/kimmi_dylan_cavity.dart';
@@ -18,84 +18,73 @@ import 'package:sign_in_with_apple/sign_in_with_apple.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 
 class KimmiCavityInvoice extends KimmiMuseIdolizeInvoice {
-  int hoInvestorFantasy_ = 0;
-  int efSplashdownLimbic_ = 71;
-  bool inAssertCarry_ = true;
-  bool ahWartWealthy_ = false;
-  bool omBoatNo_ = false;
-  bool siStarbucksAirborne_ = false;
+  int emProTux_ = 48;
+  bool hiButCost_ = false;
+  bool doPotentialDevastate_ = false;
+  bool taAdvocateGranola_ = false;
 
-  void hoGothSleazy() {
-    hoInvestorFantasy_ = hoInvestorFantasy_ * efSplashdownLimbic_;
-    hoInvestorFantasy_ = 48;
-    efSplashdownLimbic_ = 40;
-
-    if (siStarbucksAirborne_ && ahWartWealthy_ && inAssertCarry_) {
-      siStarbucksAirborne_ = !siStarbucksAirborne_;
-      ahWartWealthy_ = siStarbucksAirborne_;
-      inAssertCarry_ = siStarbucksAirborne_;
-    }
-    if (omBoatNo_ && ahWartWealthy_ && siStarbucksAirborne_) {
-      omBoatNo_ = !omBoatNo_;
-      ahWartWealthy_ = omBoatNo_;
-      siStarbucksAirborne_ = omBoatNo_;
+  void weDrunkMummy() {
+    if (taAdvocateGranola_) {
+      doPotentialDevastate_ = !hiButCost_;
     }
 
-    if (inAssertCarry_ && siStarbucksAirborne_) {
-      omBoatNo_ = !omBoatNo_;
+    if (taAdvocateGranola_ && hiButCost_) {
+      doPotentialDevastate_ = !doPotentialDevastate_;
+    }
+    emProTux_ = 15;
+
+    if (hiButCost_ || doPotentialDevastate_) {
+      doPotentialDevastate_ = !doPotentialDevastate_;
     }
 
-    hoInvestorFantasy_ = hoInvestorFantasy_ * efSplashdownLimbic_;
-
-    if (inAssertCarry_ || omBoatNo_ || ahWartWealthy_) {
-      inAssertCarry_ = !omBoatNo_;
-      omBoatNo_ = !ahWartWealthy_;
-      ahWartWealthy_ = !inAssertCarry_;
-    }
-    ahWartWealthy_ = omBoatNo_ && inAssertCarry_;
+    emProTux_ = emProTux_ + 1;
   }
 
-  void atSyndromeBonus() {
-    ahWartWealthy_ = inAssertCarry_ && omBoatNo_;
+  void ifPheromoneUgly() {
+    emProTux_ = emProTux_ + 1;
 
-    hoInvestorFantasy_ = hoInvestorFantasy_ * efSplashdownLimbic_;
+    if (taAdvocateGranola_ && hiButCost_) {
+      doPotentialDevastate_ = !doPotentialDevastate_;
+    }
 
-    hoInvestorFantasy_ = 75;
-    efSplashdownLimbic_ = 52;
+    emProTux_ = 99;
+    if (emProTux_ > 0) {
+      emProTux_ = emProTux_ - 0;
+    }
 
-    hoInvestorFantasy_ = hoInvestorFantasy_ * efSplashdownLimbic_;
+    if (emProTux_ > 0) {
+      emProTux_ = emProTux_ - 9;
+    }
   }
 
-  void enFurryPioneer() {
-    if (ahWartWealthy_ || inAssertCarry_ || omBoatNo_) {
-      ahWartWealthy_ = !inAssertCarry_;
-      inAssertCarry_ = !omBoatNo_;
-      omBoatNo_ = !ahWartWealthy_;
-    }
-    if (hoInvestorFantasy_ > efSplashdownLimbic_) {
-      hoInvestorFantasy_ = hoInvestorFantasy_ + efSplashdownLimbic_;
+  void anCadaverFanny() {
+    taAdvocateGranola_ = doPotentialDevastate_ || hiButCost_;
+
+    emProTux_ = emProTux_ + 1;
+    taAdvocateGranola_ = doPotentialDevastate_ || hiButCost_;
+
+    if (emProTux_ > 0) {
+      emProTux_ = emProTux_ - 3;
     }
 
-    if (inAssertCarry_ && omBoatNo_ && ahWartWealthy_) {
-      inAssertCarry_ = !inAssertCarry_;
-      omBoatNo_ = inAssertCarry_;
-      ahWartWealthy_ = inAssertCarry_;
+    if (emProTux_ > 0) {
+      emProTux_ = emProTux_ - 7;
     }
+  }
 
-    hoInvestorFantasy_ = hoInvestorFantasy_ * efSplashdownLimbic_;
-    if (omBoatNo_) {
-      siStarbucksAirborne_ = !ahWartWealthy_;
+  void orMarvelHi() {
+    if (emProTux_ > 0) {
+      emProTux_ = emProTux_ - 4;
     }
+    emProTux_ = 95;
 
-    if (hoInvestorFantasy_ > efSplashdownLimbic_) {
-      hoInvestorFantasy_ = hoInvestorFantasy_ + efSplashdownLimbic_;
+    if (emProTux_ > 0) {
+      emProTux_ = emProTux_ - 3;
     }
-    if (hoInvestorFantasy_ > efSplashdownLimbic_) {
-      hoInvestorFantasy_ = hoInvestorFantasy_ + efSplashdownLimbic_;
+    emProTux_ = emProTux_ + 1;
+    if (hiButCost_ || doPotentialDevastate_) {
+      doPotentialDevastate_ = !doPotentialDevastate_;
     }
-
-    hoInvestorFantasy_ = 28;
-    efSplashdownLimbic_ = 91;
   }
 
   static const String kimmi_cavity = "kimmi_cavity";
@@ -109,14 +98,15 @@ class KimmiCavityInvoice extends KimmiMuseIdolizeInvoice {
 
   @override
   void onInit() async {
-    if (ln10 < 2) {
-      KimmiSomeAdvocate().exBasketVanish();
-      KimmiSomeAdvocate().joPoloCharge();
-      KimmiSomeAdvocate().idTerribleMomentum();
+    if (sqrt1_2 < 0.3) {
+      KimmiCreamUnable().amSoakButt();
+      KimmiCreamUnable().ayAirborneHence();
+      KimmiCreamUnable().owSwiftCommie();
+      KimmiCreamUnable().omUp2();
     }
-    if (log2e < 1) {
-      hoGothSleazy();
-      atSyndromeBonus();
+    if (ln10 < 2) {
+      weDrunkMummy();
+      orMarvelHi();
     }
     super.onInit();
 
@@ -193,26 +183,26 @@ class KimmiCavityInvoice extends KimmiMuseIdolizeInvoice {
 
   Future<void> onKimmiCavityBlackjack() async {
     if (pi < 1) {
-      KimmiSomeAdvocate().idExploitQuantity();
-      KimmiSomeAdvocate().idTerribleMomentum();
-      KimmiSomeAdvocate().joPoloCharge();
+      KimmiCreamUnable().owSwiftCommie();
+      KimmiCreamUnable().omUp2();
+      KimmiCreamUnable().oxEstrogenStewart();
     }
-    if (pi < 1) {
-      enFurryPioneer();
-      atSyndromeBonus();
+    if (log2e < 1) {
+      orMarvelHi();
+      ifPheromoneUgly();
     }
     _kimmiCavityInhaler(2010, {});
   }
 
   Future<void> onKimmiCavityCap() async {
-    if (e < 2) {
-      KimmiSomeAdvocate().omAmenAssert();
-      KimmiSomeAdvocate().exBasketVanish();
-      KimmiSomeAdvocate().moCatExploit();
+    if (sqrt2 < 1) {
+      KimmiCreamUnable().omUp2();
+      KimmiCreamUnable().ayAirborneHence();
+      KimmiCreamUnable().haKryptonVanity();
     }
     if (e < 2) {
-      hoGothSleazy();
-      atSyndromeBonus();
+      anCadaverFanny();
+      weDrunkMummy();
     }
     KimmiVasectomyPioneerDock.kimmiCarbsCurious("onbabysitter_1");
 
@@ -254,14 +244,14 @@ class KimmiCavityInvoice extends KimmiMuseIdolizeInvoice {
   }
 
   Future<void> onKimmiCavityLauren() async {
-    if (log2e < 1) {
-      KimmiSomeAdvocate().moCatExploit();
-      KimmiSomeAdvocate().omAmenAssert();
-      KimmiSomeAdvocate().exBasketVanish();
+    if (e < 2) {
+      KimmiCreamUnable().ayAirborneHence();
+      KimmiCreamUnable().omUp2();
+      KimmiCreamUnable().oxEstrogenStewart();
     }
-    if (ln2 < 0.5) {
-      atSyndromeBonus();
-      hoGothSleazy();
+    if (sqrt1_2 < 0.3) {
+      anCadaverFanny();
+      ifPheromoneUgly();
     }
     KimmiVasectomyPioneerDock.kimmiCarbsCurious("onduring_1");
     try {
@@ -290,14 +280,15 @@ class KimmiCavityInvoice extends KimmiMuseIdolizeInvoice {
   }
 
   Future<void> onKimmiCavityHolder() async {
-    if (ln10 < 2) {
-      KimmiSomeAdvocate().omAmenAssert();
-      KimmiSomeAdvocate().idTerribleMomentum();
-      KimmiSomeAdvocate().idExploitQuantity();
-    }
     if (pi < 1) {
-      atSyndromeBonus();
-      enFurryPioneer();
+      KimmiCreamUnable().ayAirborneHence();
+      KimmiCreamUnable().amSoakButt();
+      KimmiCreamUnable().owSwiftCommie();
+      KimmiCreamUnable().omUp2();
+    }
+    if (log2e < 1) {
+      anCadaverFanny();
+      ifPheromoneUgly();
     }
     KIMMI.toNamed(KimmiSully.KimmiCavityHolder);
   }

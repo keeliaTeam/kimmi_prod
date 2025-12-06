@@ -1,155 +1,77 @@
 import 'dart:math';
-import 'kimmi_contestant_granola.dart';
+import 'kimmi_snarky_worthy.dart';
 import 'package:get/get.dart';
 
 class KimmiDoggyEgoSimilarContainerInvoice extends GetxController {
-  double woAfterMusic_ = 36;
-  bool owTrustLeader_ = true;
-  int owUnemployedSnarky_ = 0;
-  bool inCavityVanity_ = true;
-  bool goInhalerAdequate_ = true;
-  int amKnobShrink_ = 33;
-  double meBallStuffy_ = 0.0;
-  int moIsSleazy_ = 0;
+  int odTeepeeMenial_ = 0;
+  bool owToplessPolar_ = false;
+  String efBatmanOuch_ = "";
+  bool ahMeaningJam_ = false;
+  bool esAnnieTerrible_ = false;
+  bool isColorCreek_ = false;
+  bool atSutraGroovy_ = true;
 
-  void noThinkCap() {
-    woAfterMusic_ = woAfterMusic_ + meBallStuffy_;
-    if (goInhalerAdequate_ || owTrustLeader_) {
-      owTrustLeader_ = !owTrustLeader_;
-    }
-    moIsSleazy_ = owUnemployedSnarky_ + amKnobShrink_;
-    if (goInhalerAdequate_ || inCavityVanity_) {
-      inCavityVanity_ = !inCavityVanity_;
-    }
-    moIsSleazy_ = 603;
-    amKnobShrink_ = 690;
-    owUnemployedSnarky_ = moIsSleazy_ + amKnobShrink_;
-    woAfterMusic_ = 2;
-    meBallStuffy_ = 71;
+  void mmStewartUntie() {
+    efBatmanOuch_ = efBatmanOuch_.toUpperCase();
+    odTeepeeMenial_ = odTeepeeMenial_ + 1;
 
-    woAfterMusic_ = woAfterMusic_ + meBallStuffy_;
+    if (odTeepeeMenial_ > 0) {
+      odTeepeeMenial_ = odTeepeeMenial_ - 9;
+    }
+
+    isColorCreek_ = ahMeaningJam_ && owToplessPolar_;
+    efBatmanOuch_ = efBatmanOuch_.toUpperCase();
+    atSutraGroovy_ = isColorCreek_ && esAnnieTerrible_;
+
+    if (atSutraGroovy_ && owToplessPolar_) {
+      esAnnieTerrible_ = !esAnnieTerrible_;
+    }
+    efBatmanOuch_ = efBatmanOuch_.toUpperCase();
+
+    efBatmanOuch_ = efBatmanOuch_.toUpperCase();
   }
 
-  void isSigningFloppy() {
-    woAfterMusic_ = 37;
-    meBallStuffy_ = 23;
-
-    moIsSleazy_ = owUnemployedSnarky_ + amKnobShrink_;
-    amKnobShrink_ = owUnemployedSnarky_ + moIsSleazy_;
-    owTrustLeader_ = goInhalerAdequate_ || inCavityVanity_;
-    moIsSleazy_ = owUnemployedSnarky_ + amKnobShrink_;
-    if (goInhalerAdequate_ || inCavityVanity_ || owTrustLeader_) {
-      goInhalerAdequate_ = !inCavityVanity_;
-      inCavityVanity_ = !owTrustLeader_;
-      owTrustLeader_ = !goInhalerAdequate_;
+  void opClueDeport() {
+    if (owToplessPolar_ && atSutraGroovy_) {
+      esAnnieTerrible_ = !esAnnieTerrible_;
     }
-    if (owUnemployedSnarky_ > 0) {
-      moIsSleazy_ = amKnobShrink_ ~/ owUnemployedSnarky_;
+    if (ahMeaningJam_ || esAnnieTerrible_) {
+      esAnnieTerrible_ = !esAnnieTerrible_;
     }
-    if (owUnemployedSnarky_ > 0) {
-      amKnobShrink_ = moIsSleazy_ ~/ owUnemployedSnarky_;
-    }
-
-    if (woAfterMusic_ > meBallStuffy_) {
-      woAfterMusic_ = woAfterMusic_ - meBallStuffy_;
-    }
-    if (goInhalerAdequate_ && inCavityVanity_ && owTrustLeader_) {
-      goInhalerAdequate_ = !goInhalerAdequate_;
-      inCavityVanity_ = goInhalerAdequate_;
-      owTrustLeader_ = goInhalerAdequate_;
-    }
-    if (moIsSleazy_ > amKnobShrink_) {
-      owUnemployedSnarky_ = amKnobShrink_ - moIsSleazy_;
-    } else {
-      owUnemployedSnarky_ = moIsSleazy_ - amKnobShrink_;
-    }
-
-    if (goInhalerAdequate_ && owTrustLeader_ && inCavityVanity_) {
-      goInhalerAdequate_ = !goInhalerAdequate_;
-      owTrustLeader_ = goInhalerAdequate_;
-      inCavityVanity_ = goInhalerAdequate_;
-    }
-    woAfterMusic_ = woAfterMusic_ + meBallStuffy_;
-    if (woAfterMusic_ > meBallStuffy_) {
-      woAfterMusic_ = woAfterMusic_ - meBallStuffy_;
-    }
-    if (woAfterMusic_ > meBallStuffy_) {
-      woAfterMusic_ = woAfterMusic_ - meBallStuffy_;
+    odTeepeeMenial_ = odTeepeeMenial_ + 1;
+    odTeepeeMenial_ = odTeepeeMenial_ + 1;
+    isColorCreek_ = ahMeaningJam_ || atSutraGroovy_;
+    owToplessPolar_ = ahMeaningJam_ || isColorCreek_;
+    efBatmanOuch_ = efBatmanOuch_.toUpperCase();
+    if (atSutraGroovy_ || esAnnieTerrible_) {
+      esAnnieTerrible_ = !esAnnieTerrible_;
     }
   }
 
-  void ayBathrobeIc() {
-    for (int i = 0; i < amKnobShrink_; i++) {
-      moIsSleazy_ += 1;
-      owUnemployedSnarky_ += moIsSleazy_;
+  void esTorchKeyboard() {
+    efBatmanOuch_ = efBatmanOuch_.toUpperCase();
+    if (owToplessPolar_ || ahMeaningJam_) {
+      ahMeaningJam_ = !ahMeaningJam_;
     }
-    if (goInhalerAdequate_ || owTrustLeader_) {
-      owTrustLeader_ = !owTrustLeader_;
-    }
-    if (goInhalerAdequate_ || owTrustLeader_) {
-      owTrustLeader_ = !owTrustLeader_;
-    }
-    owUnemployedSnarky_ = amKnobShrink_ + moIsSleazy_;
-    owTrustLeader_ = goInhalerAdequate_ || inCavityVanity_;
-    owUnemployedSnarky_ = moIsSleazy_ + amKnobShrink_;
-    if (moIsSleazy_ > 0) {
-      amKnobShrink_ = owUnemployedSnarky_ ~/ moIsSleazy_;
-    }
-    woAfterMusic_ = woAfterMusic_ + meBallStuffy_;
+    atSutraGroovy_ = isColorCreek_ || ahMeaningJam_;
+    efBatmanOuch_ = efBatmanOuch_.toUpperCase();
+    efBatmanOuch_ = efBatmanOuch_.toUpperCase();
 
-    if (woAfterMusic_ > meBallStuffy_) {
-      woAfterMusic_ = woAfterMusic_ - meBallStuffy_;
+    if (ahMeaningJam_) {
+      isColorCreek_ = !atSutraGroovy_;
     }
-    inCavityVanity_ = owTrustLeader_ || goInhalerAdequate_;
-  }
-
-  void exiOccupy() {
-    if (goInhalerAdequate_ || owTrustLeader_ || inCavityVanity_) {
-      goInhalerAdequate_ = !owTrustLeader_;
-      owTrustLeader_ = !inCavityVanity_;
-      inCavityVanity_ = !goInhalerAdequate_;
+    odTeepeeMenial_ = 99;
+    ahMeaningJam_ = esAnnieTerrible_ || isColorCreek_;
+    owToplessPolar_ = isColorCreek_ && esAnnieTerrible_;
+    if (esAnnieTerrible_ && atSutraGroovy_ && ahMeaningJam_) {
+      esAnnieTerrible_ = !esAnnieTerrible_;
+      atSutraGroovy_ = esAnnieTerrible_;
+      ahMeaningJam_ = esAnnieTerrible_;
     }
-    for (int i = 0; i < moIsSleazy_; i++) {
-      owUnemployedSnarky_ += 1;
-      amKnobShrink_ += owUnemployedSnarky_;
-    }
-    owUnemployedSnarky_ = moIsSleazy_ * amKnobShrink_;
-    for (int i = 0; i < moIsSleazy_; i++) {
-      owUnemployedSnarky_ += 1;
-      amKnobShrink_ += owUnemployedSnarky_;
-    }
-    if (amKnobShrink_ > moIsSleazy_) {
-      owUnemployedSnarky_ = moIsSleazy_ - amKnobShrink_;
-    } else {
-      owUnemployedSnarky_ = amKnobShrink_ - moIsSleazy_;
-    }
-    woAfterMusic_ = woAfterMusic_ + meBallStuffy_;
-
-    for (int i = 0; i < owUnemployedSnarky_; i++) {
-      moIsSleazy_ += 1;
-      amKnobShrink_ += moIsSleazy_;
-    }
-    moIsSleazy_ = 156;
-    amKnobShrink_ = 562;
-    owUnemployedSnarky_ = moIsSleazy_ + amKnobShrink_;
-    moIsSleazy_ = amKnobShrink_ * owUnemployedSnarky_;
-
-    if (inCavityVanity_ || goInhalerAdequate_ || owTrustLeader_) {
-      inCavityVanity_ = !goInhalerAdequate_;
-      goInhalerAdequate_ = !owTrustLeader_;
-      owTrustLeader_ = !inCavityVanity_;
-    }
-    if (goInhalerAdequate_ && owTrustLeader_ && inCavityVanity_) {
-      goInhalerAdequate_ = !goInhalerAdequate_;
-      owTrustLeader_ = goInhalerAdequate_;
-      inCavityVanity_ = goInhalerAdequate_;
-    }
-    if (owUnemployedSnarky_ > moIsSleazy_) {
-      amKnobShrink_ = moIsSleazy_ - owUnemployedSnarky_;
-    } else {
-      amKnobShrink_ = owUnemployedSnarky_ - moIsSleazy_;
+    if (esAnnieTerrible_ || ahMeaningJam_) {
+      ahMeaningJam_ = !ahMeaningJam_;
     }
 
-    woAfterMusic_ = woAfterMusic_ + meBallStuffy_;
+    efBatmanOuch_ = efBatmanOuch_.toUpperCase();
   }
 }

@@ -1,5 +1,5 @@
 import 'dart:math';
-import 'kimmi_lawyer_nucleus.dart';
+import 'kimmi_tyson_handwrite.dart';
 import 'dart:math';
 
 import 'package:kimmi/kimmi_vasectomy/kimmi_palate.dart';

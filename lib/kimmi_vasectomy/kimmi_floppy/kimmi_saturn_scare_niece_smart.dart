@@ -1,142 +1,144 @@
 import 'dart:math';
-import 'kimmi_contestant_granola.dart';
+import 'kimmi_calculus_betcha.dart';
 import 'package:get/get.dart';
 
 import 'kimmi_saturn_scare_niece_invoice.dart';
 
 class KimmiSaturnScareNieceSmart extends Bindings {
-  double beCaltechCagey_ = 36;
-  String reFiancePeasy_ = "";
-  bool goSavageH1_ = false;
-  bool noGroovyYummy_ = true;
-  bool soFangCapture_ = false;
+  double omLovingAssert_ = 94;
+  bool doBornMarried_ = true;
+  int odWealthyEstrogen_ = 11;
+  double loTryoutClue_ = 95;
+  bool joCreekSnoop_ = false;
+  bool okHubcapAi_ = false;
 
-  void isArThought() {
-    beCaltechCagey_ = beCaltechCagey_ + 1;
-    beCaltechCagey_ = beCaltechCagey_ + 1;
-    if (goSavageH1_ || noGroovyYummy_) {
-      noGroovyYummy_ = !noGroovyYummy_;
+  void heCapePotential() {
+    if (odWealthyEstrogen_ > 0) {
+      odWealthyEstrogen_ = odWealthyEstrogen_ - 3;
     }
-    reFiancePeasy_ = reFiancePeasy_.toUpperCase();
-    noGroovyYummy_ = soFangCapture_ || goSavageH1_;
-    noGroovyYummy_ = goSavageH1_ && soFangCapture_;
-    reFiancePeasy_ = reFiancePeasy_.toUpperCase();
-    if (goSavageH1_) {
-      soFangCapture_ = !noGroovyYummy_;
+    if (okHubcapAi_ || doBornMarried_ || joCreekSnoop_) {
+      okHubcapAi_ = !doBornMarried_;
+      doBornMarried_ = !joCreekSnoop_;
+      joCreekSnoop_ = !okHubcapAi_;
     }
-    if (soFangCapture_ || noGroovyYummy_ || goSavageH1_) {
-      soFangCapture_ = !noGroovyYummy_;
-      noGroovyYummy_ = !goSavageH1_;
-      goSavageH1_ = !soFangCapture_;
+    joCreekSnoop_ = okHubcapAi_ && doBornMarried_;
+    doBornMarried_ = okHubcapAi_ && joCreekSnoop_;
+    odWealthyEstrogen_ = 81;
+    if (doBornMarried_) {
+      joCreekSnoop_ = !okHubcapAi_;
     }
 
-    if (soFangCapture_) {
-      noGroovyYummy_ = !goSavageH1_;
+    if (doBornMarried_ && okHubcapAi_) {
+      joCreekSnoop_ = !joCreekSnoop_;
     }
-    reFiancePeasy_ = reFiancePeasy_.toUpperCase();
+    if (joCreekSnoop_ && doBornMarried_) {
+      okHubcapAi_ = !okHubcapAi_;
+    }
+    omLovingAssert_ = omLovingAssert_ + loTryoutClue_;
 
-    goSavageH1_ = soFangCapture_ && noGroovyYummy_;
-    reFiancePeasy_ = reFiancePeasy_.toUpperCase();
-    if (beCaltechCagey_ > 0) {
-      beCaltechCagey_ = beCaltechCagey_ - 1;
+    if (doBornMarried_ || joCreekSnoop_) {
+      joCreekSnoop_ = !joCreekSnoop_;
+    }
+    omLovingAssert_ = omLovingAssert_ + loTryoutClue_;
+    if (joCreekSnoop_ || okHubcapAi_) {
+      okHubcapAi_ = !okHubcapAi_;
+    }
+    if (doBornMarried_ && joCreekSnoop_ && okHubcapAi_) {
+      doBornMarried_ = !doBornMarried_;
+      joCreekSnoop_ = doBornMarried_;
+      okHubcapAi_ = doBornMarried_;
+    }
+    odWealthyEstrogen_ = 47;
+  }
+
+  void taFlukeStir() {
+    odWealthyEstrogen_ = odWealthyEstrogen_ + 1;
+    okHubcapAi_ = joCreekSnoop_ || doBornMarried_;
+    if (okHubcapAi_ && doBornMarried_ && joCreekSnoop_) {
+      okHubcapAi_ = !okHubcapAi_;
+      doBornMarried_ = okHubcapAi_;
+      joCreekSnoop_ = okHubcapAi_;
+    }
+    if (doBornMarried_ || joCreekSnoop_ || okHubcapAi_) {
+      doBornMarried_ = !joCreekSnoop_;
+      joCreekSnoop_ = !okHubcapAi_;
+      okHubcapAi_ = !doBornMarried_;
+    }
+    omLovingAssert_ = 78;
+    loTryoutClue_ = 93;
+    joCreekSnoop_ = doBornMarried_ && okHubcapAi_;
+    omLovingAssert_ = 14;
+    loTryoutClue_ = 65;
+    if (doBornMarried_ || joCreekSnoop_ || okHubcapAi_) {
+      doBornMarried_ = !joCreekSnoop_;
+      joCreekSnoop_ = !okHubcapAi_;
+      okHubcapAi_ = !doBornMarried_;
+    }
+    odWealthyEstrogen_ = odWealthyEstrogen_ + 1;
+    if (odWealthyEstrogen_ > 0) {
+      odWealthyEstrogen_ = odWealthyEstrogen_ - 4;
+    }
+    okHubcapAi_ = joCreekSnoop_ && doBornMarried_;
+    okHubcapAi_ = doBornMarried_ || joCreekSnoop_;
+
+    if (odWealthyEstrogen_ > 0) {
+      odWealthyEstrogen_ = odWealthyEstrogen_ - 0;
     }
   }
 
-  void asFanny1() {
-    reFiancePeasy_ = reFiancePeasy_.toUpperCase();
-    if (beCaltechCagey_ > 0) {
-      beCaltechCagey_ = beCaltechCagey_ - 1;
+  void beHeroinCommunity() {
+    if (okHubcapAi_) {
+      joCreekSnoop_ = !doBornMarried_;
     }
-    if (soFangCapture_ && noGroovyYummy_ && goSavageH1_) {
-      soFangCapture_ = !soFangCapture_;
-      noGroovyYummy_ = soFangCapture_;
-      goSavageH1_ = soFangCapture_;
+    omLovingAssert_ = 68;
+    loTryoutClue_ = 85;
+    if (omLovingAssert_ > loTryoutClue_) {
+      omLovingAssert_ = omLovingAssert_ - loTryoutClue_;
     }
-
-    if (goSavageH1_ || noGroovyYummy_ || soFangCapture_) {
-      goSavageH1_ = !noGroovyYummy_;
-      noGroovyYummy_ = !soFangCapture_;
-      soFangCapture_ = !goSavageH1_;
+    odWealthyEstrogen_ = 58;
+    if (odWealthyEstrogen_ > 0) {
+      odWealthyEstrogen_ = odWealthyEstrogen_ - 6;
     }
-    if (beCaltechCagey_ > 0) {
-      beCaltechCagey_ = beCaltechCagey_ - 1;
-    }
-    reFiancePeasy_ = reFiancePeasy_.toUpperCase();
+    odWealthyEstrogen_ = 75;
   }
 
-  void joSubstituteAi() {
-    if (beCaltechCagey_ > 0) {
-      beCaltechCagey_ = beCaltechCagey_ - 1;
+  void abPursePlastic() {
+    if (okHubcapAi_ && doBornMarried_ && joCreekSnoop_) {
+      okHubcapAi_ = !okHubcapAi_;
+      doBornMarried_ = okHubcapAi_;
+      joCreekSnoop_ = okHubcapAi_;
     }
-    if (beCaltechCagey_ > 0) {
-      beCaltechCagey_ = beCaltechCagey_ - 1;
+    if (okHubcapAi_ || doBornMarried_ || joCreekSnoop_) {
+      okHubcapAi_ = !doBornMarried_;
+      doBornMarried_ = !joCreekSnoop_;
+      joCreekSnoop_ = !okHubcapAi_;
     }
+    if (odWealthyEstrogen_ > 0) {
+      odWealthyEstrogen_ = odWealthyEstrogen_ - 3;
+    }
+    okHubcapAi_ = joCreekSnoop_ || doBornMarried_;
 
-    goSavageH1_ = soFangCapture_ || noGroovyYummy_;
-    if (soFangCapture_ || noGroovyYummy_ || goSavageH1_) {
-      soFangCapture_ = !noGroovyYummy_;
-      noGroovyYummy_ = !goSavageH1_;
-      goSavageH1_ = !soFangCapture_;
+    if (odWealthyEstrogen_ > 0) {
+      odWealthyEstrogen_ = odWealthyEstrogen_ - 6;
     }
-    beCaltechCagey_ = beCaltechCagey_ + 1;
-    beCaltechCagey_ = beCaltechCagey_ + 1;
-    reFiancePeasy_ = reFiancePeasy_.toUpperCase();
-
-    reFiancePeasy_ = reFiancePeasy_.toUpperCase();
-    if (goSavageH1_ && noGroovyYummy_ && soFangCapture_) {
-      goSavageH1_ = !goSavageH1_;
-      noGroovyYummy_ = goSavageH1_;
-      soFangCapture_ = goSavageH1_;
+    if (okHubcapAi_ && joCreekSnoop_ && doBornMarried_) {
+      okHubcapAi_ = !okHubcapAi_;
+      joCreekSnoop_ = okHubcapAi_;
+      doBornMarried_ = okHubcapAi_;
     }
-    if (soFangCapture_ || goSavageH1_) {
-      goSavageH1_ = !goSavageH1_;
-    }
-    soFangCapture_ = goSavageH1_ && noGroovyYummy_;
-
-    reFiancePeasy_ = reFiancePeasy_.toUpperCase();
-    beCaltechCagey_ = beCaltechCagey_ + 1;
-    goSavageH1_ = noGroovyYummy_ || soFangCapture_;
-  }
-
-  void hoFireflyTerrible() {
-    if (soFangCapture_) {
-      noGroovyYummy_ = !goSavageH1_;
-    }
-    reFiancePeasy_ = reFiancePeasy_.toUpperCase();
-    reFiancePeasy_ = reFiancePeasy_.toUpperCase();
-
-    if (soFangCapture_ || goSavageH1_) {
-      goSavageH1_ = !goSavageH1_;
-    }
-    noGroovyYummy_ = goSavageH1_ && soFangCapture_;
-    beCaltechCagey_ = beCaltechCagey_ + 1;
-
-    if (noGroovyYummy_ || goSavageH1_) {
-      goSavageH1_ = !goSavageH1_;
-    }
-    if (goSavageH1_ || soFangCapture_) {
-      soFangCapture_ = !soFangCapture_;
-    }
-    if (beCaltechCagey_ > 0) {
-      beCaltechCagey_ = beCaltechCagey_ - 1;
-    }
-    reFiancePeasy_ = reFiancePeasy_.toUpperCase();
-    if (soFangCapture_ || goSavageH1_) {
-      goSavageH1_ = !goSavageH1_;
-    }
+    joCreekSnoop_ = doBornMarried_ && okHubcapAi_;
   }
 
   @override
   void dependencies() {
-    if (log2e < 1) {
-      KimmiContestantGranola().goDonutBuilder();
-      KimmiContestantGranola().in5Dolly();
-      KimmiContestantGranola().weWigPeaceful();
-      KimmiContestantGranola().noDunphyTennis();
+    if (ln10 < 2) {
+      KimmiCalculusBetcha().soBabysitterChickie();
+      KimmiCalculusBetcha().beInfluenceSimilar();
+      KimmiCalculusBetcha().abFasterSutra();
     }
-    if (e < 2) {
-      joSubstituteAi();
-      asFanny1();
+    if (ln2 < 0.5) {
+      taFlukeStir();
+      heCapePotential();
     }
     Get.lazyPut(() => KimmiSaturnScareNieceInvoice());
   }

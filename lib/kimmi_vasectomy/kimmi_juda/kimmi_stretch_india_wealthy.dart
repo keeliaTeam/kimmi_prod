@@ -146,7 +146,7 @@ class _MediaVideoViewState extends State<MediaVideoView> {
 
   @override
   void dispose() {
-    _playController?.dispose();
+    _playController?.dispose(forceDispose: true);
     _playController = null;
     _stopToggleControlVisibleTimerIfNeed();
 

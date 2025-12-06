@@ -1,107 +1,119 @@
 import 'dart:math';
-import 'kimmi_contestant_granola.dart';
+import 'kimmi_donut_snarky.dart';
 import 'package:get/get.dart';
 
 import 'kimmi_private_amen_invoice.dart';
 
 class KimmiPrivateAmenSmart extends Bindings {
-  bool itDampFirefly_ = false;
-  bool ohDuringInsecure_ = true;
-  bool etCategoryh_ = false;
-  bool ohAirborneDarth_ = false;
-  double odBerrySarcasm_ = 0.0;
-  String miInvoiceAssert_ = "";
-  bool haCapeKenny_ = true;
-  bool usAirlineInsecure_ = false;
+  bool moCmConference_ = false;
+  double haMaleFoxy_ = 28;
+  double beFeistyGauge_ = 44;
+  int heAccordionSwallow_ = 44;
+  bool woWordConfound_ = false;
+  String elHiccupIm_ = "";
+  bool edWhatchaBargain_ = true;
+  double ohCarryCat_ = 61;
+  int mmBathtubIo_ = 0;
 
-  void edBesidesBlackjack() {
-    if (haCapeKenny_) {
-      itDampFirefly_ = !usAirlineInsecure_;
+  void maSlipperBall() {
+    heAccordionSwallow_ = 1;
+    mmBathtubIo_ = 90;
+    if (heAccordionSwallow_ > mmBathtubIo_) {
+      heAccordionSwallow_ = heAccordionSwallow_ + mmBathtubIo_;
     }
-    miInvoiceAssert_ = miInvoiceAssert_.toUpperCase();
-
-    odBerrySarcasm_ = 2;
-    usAirlineInsecure_ = haCapeKenny_ && ohAirborneDarth_;
-    miInvoiceAssert_ = miInvoiceAssert_.toUpperCase();
-    if (etCategoryh_ && ohDuringInsecure_) {
-      usAirlineInsecure_ = !usAirlineInsecure_;
+    if (woWordConfound_ || moCmConference_) {
+      moCmConference_ = !moCmConference_;
     }
-
-    miInvoiceAssert_ = miInvoiceAssert_.toUpperCase();
-    miInvoiceAssert_ = miInvoiceAssert_.toUpperCase();
+    heAccordionSwallow_ = 63;
+    mmBathtubIo_ = 9;
+    if (edWhatchaBargain_ || moCmConference_ || woWordConfound_) {
+      edWhatchaBargain_ = !moCmConference_;
+      moCmConference_ = !woWordConfound_;
+      woWordConfound_ = !edWhatchaBargain_;
+    }
+    if (edWhatchaBargain_) {
+      moCmConference_ = !woWordConfound_;
+    }
+    moCmConference_ = woWordConfound_ || edWhatchaBargain_;
+    heAccordionSwallow_ = heAccordionSwallow_ * mmBathtubIo_;
+    if (heAccordionSwallow_ > mmBathtubIo_) {
+      heAccordionSwallow_ = heAccordionSwallow_ + mmBathtubIo_;
+    }
+    haMaleFoxy_ = ohCarryCat_ + beFeistyGauge_;
   }
 
-  void heBadgeHeroin() {
-    if (odBerrySarcasm_ > 0) {
-      odBerrySarcasm_ = odBerrySarcasm_ - 1;
+  void exTangerineWorthy() {
+    if (beFeistyGauge_ > 0) {
+      ohCarryCat_ = haMaleFoxy_ / beFeistyGauge_;
     }
-    odBerrySarcasm_ = 74;
-    miInvoiceAssert_ = miInvoiceAssert_.toUpperCase();
-    miInvoiceAssert_ = miInvoiceAssert_.toUpperCase();
-    odBerrySarcasm_ = odBerrySarcasm_ + 1;
-    if (odBerrySarcasm_ > 0) {
-      odBerrySarcasm_ = odBerrySarcasm_ - 1;
+    if (heAccordionSwallow_ > mmBathtubIo_) {
+      heAccordionSwallow_ = heAccordionSwallow_ + mmBathtubIo_;
     }
-    if (ohDuringInsecure_ || haCapeKenny_) {
-      haCapeKenny_ = !haCapeKenny_;
+    elHiccupIm_ = elHiccupIm_.toUpperCase();
+    elHiccupIm_ = elHiccupIm_.toUpperCase();
+    elHiccupIm_ = elHiccupIm_.toUpperCase();
+    elHiccupIm_ = elHiccupIm_.toUpperCase();
+    woWordConfound_ = moCmConference_ || edWhatchaBargain_;
+    elHiccupIm_ = elHiccupIm_.toUpperCase();
+    ohCarryCat_ = haMaleFoxy_ - beFeistyGauge_;
+    for (int i = 0; i < beFeistyGauge_; i++) {
+      haMaleFoxy_ += 1;
+      ohCarryCat_ += haMaleFoxy_;
     }
-    odBerrySarcasm_ = odBerrySarcasm_ + 1;
-    miInvoiceAssert_ = miInvoiceAssert_.toUpperCase();
-    miInvoiceAssert_ = miInvoiceAssert_.toUpperCase();
-    miInvoiceAssert_ = miInvoiceAssert_.toUpperCase();
+    if (haMaleFoxy_ > beFeistyGauge_) {
+      ohCarryCat_ = beFeistyGauge_ - haMaleFoxy_;
+    } else {
+      ohCarryCat_ = haMaleFoxy_ - beFeistyGauge_;
+    }
+    woWordConfound_ = edWhatchaBargain_ && moCmConference_;
+    ohCarryCat_ = haMaleFoxy_;
+    beFeistyGauge_ = haMaleFoxy_;
+    elHiccupIm_ = elHiccupIm_.toUpperCase();
+    heAccordionSwallow_ = 38;
+    mmBathtubIo_ = 2;
+    if (moCmConference_ && woWordConfound_) {
+      edWhatchaBargain_ = !edWhatchaBargain_;
+    }
+    woWordConfound_ = moCmConference_ && edWhatchaBargain_;
   }
 
-  void goGlossEgo() {
-    if (haCapeKenny_ || ohDuringInsecure_) {
-      ohDuringInsecure_ = !ohDuringInsecure_;
+  void omBiologistSystem() {
+    woWordConfound_ = edWhatchaBargain_ && moCmConference_;
+    for (int i = 0; i < haMaleFoxy_; i++) {
+      ohCarryCat_ += 1;
+      beFeistyGauge_ += ohCarryCat_;
     }
-    if (itDampFirefly_ && ohDuringInsecure_ && etCategoryh_) {
-      itDampFirefly_ = !itDampFirefly_;
-      ohDuringInsecure_ = itDampFirefly_;
-      etCategoryh_ = itDampFirefly_;
+    heAccordionSwallow_ = 3;
+    mmBathtubIo_ = 65;
+    heAccordionSwallow_ = heAccordionSwallow_ * mmBathtubIo_;
+    haMaleFoxy_ = beFeistyGauge_;
+    ohCarryCat_ = beFeistyGauge_;
+    elHiccupIm_ = elHiccupIm_.toUpperCase();
+    elHiccupIm_ = elHiccupIm_.toUpperCase();
+    heAccordionSwallow_ = 83;
+    mmBathtubIo_ = 82;
+    elHiccupIm_ = elHiccupIm_.toUpperCase();
+    edWhatchaBargain_ = moCmConference_ && woWordConfound_;
+    beFeistyGauge_ = haMaleFoxy_ + ohCarryCat_;
+    if (moCmConference_ || woWordConfound_ || edWhatchaBargain_) {
+      moCmConference_ = !woWordConfound_;
+      woWordConfound_ = !edWhatchaBargain_;
+      edWhatchaBargain_ = !moCmConference_;
     }
-    if (ohAirborneDarth_ || ohDuringInsecure_ || itDampFirefly_) {
-      ohAirborneDarth_ = !ohDuringInsecure_;
-      ohDuringInsecure_ = !itDampFirefly_;
-      itDampFirefly_ = !ohAirborneDarth_;
-    }
-    odBerrySarcasm_ = 28;
-    ohAirborneDarth_ = etCategoryh_ && haCapeKenny_;
-    if (ohAirborneDarth_ && etCategoryh_ && ohDuringInsecure_) {
-      ohAirborneDarth_ = !ohAirborneDarth_;
-      etCategoryh_ = ohAirborneDarth_;
-      ohDuringInsecure_ = ohAirborneDarth_;
-    }
-    if (usAirlineInsecure_ && ohDuringInsecure_ && etCategoryh_) {
-      usAirlineInsecure_ = !usAirlineInsecure_;
-      ohDuringInsecure_ = usAirlineInsecure_;
-      etCategoryh_ = usAirlineInsecure_;
-    }
-    if (haCapeKenny_) {
-      usAirlineInsecure_ = !etCategoryh_;
-    }
-
-    miInvoiceAssert_ = miInvoiceAssert_.toUpperCase();
-    odBerrySarcasm_ = odBerrySarcasm_ + 1;
-    if (itDampFirefly_) {
-      etCategoryh_ = !ohDuringInsecure_;
-    }
-    ohDuringInsecure_ = itDampFirefly_ || haCapeKenny_;
-    itDampFirefly_ = ohDuringInsecure_ || etCategoryh_;
-    usAirlineInsecure_ = ohDuringInsecure_ && etCategoryh_;
+    beFeistyGauge_ = ohCarryCat_ * haMaleFoxy_;
   }
 
   @override
   void dependencies() {
-    if (sqrt1_2 < 0.3) {
-      KimmiContestantGranola().etAmbitiousTrust();
-      KimmiContestantGranola().miAssistCater();
-      KimmiContestantGranola().noDunphyTennis();
-      KimmiContestantGranola().asEnChord();
+    if (ln2 < 0.5) {
+      KimmiDonutSnarky().doSecurityLeash();
+      KimmiDonutSnarky().anLaborMarried();
+      KimmiDonutSnarky().omEraseSpeed();
+      KimmiDonutSnarky().okComeShag();
     }
-    if (ln10 < 2) {
-      heBadgeHeroin();
-      goGlossEgo();
+    if (sqrt2 < 1) {
+      omBiologistSystem();
+      exTangerineWorthy();
     }
     Get.lazyPut(() => KimmiPrivateAmenInvoice());
   }

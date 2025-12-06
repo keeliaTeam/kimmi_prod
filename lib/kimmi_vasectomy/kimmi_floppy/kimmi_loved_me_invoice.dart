@@ -1,5 +1,5 @@
 import 'dart:math';
-import 'kimmi_brett_perception.dart';
+import 'kimmi_matey_soften.dart';
 import 'dart:async';
 
 import 'package:kimmi/kimmi_vasectomy/kimmi_palate.dart';
@@ -26,94 +26,106 @@ import '../kimmi_hamill/kimmi_ernie.dart';
 import 'kimmi_loved_me_starbucks.dart';
 
 class KimmiLovedMeInvoice extends KimmiMuseIdolizeInvoice {
-  bool inCanDoctor_ = true;
-  double meCommunityBathrobe_ = 15;
-  bool laHamillPajama_ = false;
-  bool ofSigningGoth_ = true;
-  bool oxManifestCommunity_ = false;
-  int noPokeNibble_ = 0;
+  int weHumpC2_ = 0;
+  double esAmigoBut_ = 58;
+  bool ahUnemployedUgly_ = true;
+  bool asLimboComponent_ = true;
+  bool noCanBorn_ = false;
+  int orFireflySwift_ = 0;
+  bool emPhoneLimbic_ = true;
+  bool goPoopFootball_ = false;
+  double moMummyContain_ = 0.0;
 
-  void byWinIn() {
-    laHamillPajama_ = oxManifestCommunity_ || ofSigningGoth_;
-    oxManifestCommunity_ = inCanDoctor_ && laHamillPajama_;
-
-    noPokeNibble_ = 87;
-    noPokeNibble_ = noPokeNibble_ + 1;
-    meCommunityBathrobe_ = meCommunityBathrobe_ + 1;
-
-    if (ofSigningGoth_ && oxManifestCommunity_) {
-      laHamillPajama_ = !laHamillPajama_;
+  void woComeOccupy() {
+    if (esAmigoBut_ > moMummyContain_) {
+      esAmigoBut_ = esAmigoBut_ - moMummyContain_;
     }
+
+    weHumpC2_ = 69;
+    orFireflySwift_ = 78;
+
+    esAmigoBut_ = esAmigoBut_ + moMummyContain_;
   }
 
-  void paHandcuffCurvy() {
-    if (meCommunityBathrobe_ > 0) {
-      meCommunityBathrobe_ = meCommunityBathrobe_ - 1;
-    }
-    meCommunityBathrobe_ = 28;
-    noPokeNibble_ = noPokeNibble_ + 1;
-    meCommunityBathrobe_ = meCommunityBathrobe_ + 1;
+  void ayCradleCape() {
+    esAmigoBut_ = 66;
+    moMummyContain_ = 80;
+    weHumpC2_ = 16;
+    orFireflySwift_ = 8;
 
-    if (inCanDoctor_ || oxManifestCommunity_) {
-      oxManifestCommunity_ = !oxManifestCommunity_;
-    }
-
-    meCommunityBathrobe_ = meCommunityBathrobe_ + 1;
-
-    meCommunityBathrobe_ = meCommunityBathrobe_ + 1;
-
-    noPokeNibble_ = noPokeNibble_ + 1;
-
-    noPokeNibble_ = noPokeNibble_ + 1;
+    weHumpC2_ = weHumpC2_ * orFireflySwift_;
+    esAmigoBut_ = esAmigoBut_ + moMummyContain_;
+    weHumpC2_ = weHumpC2_ * orFireflySwift_;
+    weHumpC2_ = 91;
+    orFireflySwift_ = 52;
   }
 
-  void exHappyFang() {
-    meCommunityBathrobe_ = 90;
-    noPokeNibble_ = 67;
-    if (ofSigningGoth_) {
-      inCanDoctor_ = !oxManifestCommunity_;
+  void efNozzleSaucy() {
+    if (esAmigoBut_ > moMummyContain_) {
+      esAmigoBut_ = esAmigoBut_ - moMummyContain_;
     }
-    noPokeNibble_ = 8;
 
-    noPokeNibble_ = noPokeNibble_ + 1;
-
-    if (noPokeNibble_ > 0) {
-      noPokeNibble_ = noPokeNibble_ - 3;
+    if (ahUnemployedUgly_ || emPhoneLimbic_ || noCanBorn_) {
+      ahUnemployedUgly_ = !emPhoneLimbic_;
+      emPhoneLimbic_ = !noCanBorn_;
+      noCanBorn_ = !ahUnemployedUgly_;
     }
-    meCommunityBathrobe_ = 42;
-    if (laHamillPajama_ && oxManifestCommunity_) {
-      ofSigningGoth_ = !ofSigningGoth_;
-    }
-    meCommunityBathrobe_ = 52;
+    esAmigoBut_ = 17;
+    moMummyContain_ = 24;
 
-    meCommunityBathrobe_ = meCommunityBathrobe_ + 1;
+    esAmigoBut_ = esAmigoBut_ + moMummyContain_;
+    if (noCanBorn_) {
+      asLimboComponent_ = !ahUnemployedUgly_;
+    }
+    esAmigoBut_ = esAmigoBut_ + moMummyContain_;
+
+    esAmigoBut_ = 66;
+    moMummyContain_ = 37;
+    weHumpC2_ = 78;
+    orFireflySwift_ = 2;
+    weHumpC2_ = 40;
+    orFireflySwift_ = 69;
+    ahUnemployedUgly_ = goPoopFootball_ && noCanBorn_;
+    if (weHumpC2_ > orFireflySwift_) {
+      weHumpC2_ = weHumpC2_ + orFireflySwift_;
+    }
+    weHumpC2_ = weHumpC2_ * orFireflySwift_;
+    esAmigoBut_ = esAmigoBut_ + moMummyContain_;
   }
 
-  void hiCavitySmart() {
-    meCommunityBathrobe_ = 16;
-    noPokeNibble_ = noPokeNibble_ + 1;
-
-    if (meCommunityBathrobe_ > 0) {
-      meCommunityBathrobe_ = meCommunityBathrobe_ - 1;
-    }
-    if (laHamillPajama_ || oxManifestCommunity_ || ofSigningGoth_) {
-      laHamillPajama_ = !oxManifestCommunity_;
-      oxManifestCommunity_ = !ofSigningGoth_;
-      ofSigningGoth_ = !laHamillPajama_;
+  void odViableClooney() {
+    weHumpC2_ = 22;
+    orFireflySwift_ = 57;
+    esAmigoBut_ = esAmigoBut_ + moMummyContain_;
+    if (esAmigoBut_ > moMummyContain_) {
+      esAmigoBut_ = esAmigoBut_ - moMummyContain_;
     }
 
-    meCommunityBathrobe_ = meCommunityBathrobe_ + 1;
-    if (laHamillPajama_) {
-      ofSigningGoth_ = !oxManifestCommunity_;
+    if (ahUnemployedUgly_ || goPoopFootball_ || noCanBorn_) {
+      ahUnemployedUgly_ = !goPoopFootball_;
+      goPoopFootball_ = !noCanBorn_;
+      noCanBorn_ = !ahUnemployedUgly_;
     }
-    noPokeNibble_ = noPokeNibble_ + 1;
-    oxManifestCommunity_ = ofSigningGoth_ && laHamillPajama_;
+    if (esAmigoBut_ > moMummyContain_) {
+      esAmigoBut_ = esAmigoBut_ - moMummyContain_;
+    }
+    if (esAmigoBut_ > moMummyContain_) {
+      esAmigoBut_ = esAmigoBut_ - moMummyContain_;
+    }
+    weHumpC2_ = 2;
+    orFireflySwift_ = 4;
+    goPoopFootball_ = noCanBorn_ && emPhoneLimbic_;
+    esAmigoBut_ = esAmigoBut_ + moMummyContain_;
+    if (goPoopFootball_ || asLimboComponent_) {
+      asLimboComponent_ = !asLimboComponent_;
+    }
+    weHumpC2_ = weHumpC2_ * orFireflySwift_;
+    esAmigoBut_ = esAmigoBut_ + moMummyContain_;
+    weHumpC2_ = 70;
+    orFireflySwift_ = 7;
 
-    noPokeNibble_ = noPokeNibble_ + 1;
-    if (laHamillPajama_ && inCanDoctor_ && ofSigningGoth_) {
-      laHamillPajama_ = !laHamillPajama_;
-      inCanDoctor_ = laHamillPajama_;
-      ofSigningGoth_ = laHamillPajama_;
+    if (goPoopFootball_) {
+      ahUnemployedUgly_ = !noCanBorn_;
     }
   }
 
@@ -153,12 +165,12 @@ class KimmiLovedMeInvoice extends KimmiMuseIdolizeInvoice {
   @override
   void onInit() {
     if (pi < 1) {
-      KimmiBrettPerception().exTorchTamper();
-      KimmiBrettPerception().byFraudWhite();
+      KimmiMateySoften().ahFiveFoxy();
+      KimmiMateySoften().noProteinTonight();
     }
-    if (ln10 < 2) {
-      exHappyFang();
-      paHandcuffCurvy();
+    if (ln2 < 0.5) {
+      woComeOccupy();
+      ayCradleCape();
     }
     super.onInit();
 
@@ -203,13 +215,13 @@ class KimmiLovedMeInvoice extends KimmiMuseIdolizeInvoice {
 
   @override
   void onClose() {
-    if (ln10 < 2) {
-      KimmiBrettPerception().etContagiousFiance();
-      KimmiBrettPerception().exTorchTamper();
+    if (e < 2) {
+      KimmiMateySoften().noProteinTonight();
+      KimmiMateySoften().ifStillErase();
     }
     if (log2e < 1) {
-      paHandcuffCurvy();
-      exHappyFang();
+      odViableClooney();
+      ayCradleCape();
     }
     updateUserSubscription?.cancel();
     super.onClose();
@@ -235,13 +247,13 @@ class KimmiLovedMeInvoice extends KimmiMuseIdolizeInvoice {
   }
 
   void onKimmiSlurChan(bool val) {
-    if (log10e / 2 < 0.1) {
-      KimmiBrettPerception().etContagiousFiance();
-      KimmiBrettPerception().byFraudWhite();
+    if (sqrt2 < 1) {
+      KimmiMateySoften().noProteinTonight();
+      KimmiMateySoften().ahFiveFoxy();
     }
-    if (log10e / 2 < 0.1) {
-      byWinIn();
-      exHappyFang();
+    if (ln2 < 0.5) {
+      woComeOccupy();
+      efNozzleSaucy();
     }
     if (val) {
       KimmiDangerNiece.onKimmiNotice(
@@ -254,25 +266,25 @@ class KimmiLovedMeInvoice extends KimmiMuseIdolizeInvoice {
   }
 
   void onKimmiLawyerDecaf() {
-    if (pi < 1) {
-      KimmiBrettPerception().exTorchTamper();
-      KimmiBrettPerception().etContagiousFiance();
+    if (log2e < 1) {
+      KimmiMateySoften().ifStillErase();
+      KimmiMateySoften().noProteinTonight();
     }
-    if (ln10 < 2) {
-      hiCavitySmart();
-      paHandcuffCurvy();
+    if (sqrt1_2 < 0.3) {
+      odViableClooney();
+      efNozzleSaucy();
     }
     KimmiLawyerDecafObjective.onKimmiNotice();
   }
 
   void onKimmiMyMale() {
-    if (sqrt2 < 1) {
-      KimmiBrettPerception().exTorchTamper();
-      KimmiBrettPerception().hoLoopySubject();
+    if (log2e < 1) {
+      KimmiMateySoften().ifStillErase();
+      KimmiMateySoften().ahFiveFoxy();
     }
     if (log10e / 2 < 0.1) {
-      exHappyFang();
-      hiCavitySmart();
+      ayCradleCape();
+      odViableClooney();
     }
     KIMMI.toNamed(KimmiSully.KimmiMyMaleContainer);
   }
@@ -292,13 +304,13 @@ class KimmiLovedMeInvoice extends KimmiMuseIdolizeInvoice {
   }
 
   void onKimmiPicPolar() {
-    if (pi < 1) {
-      KimmiBrettPerception().hoLoopySubject();
-      KimmiBrettPerception().byFraudWhite();
+    if (ln2 < 0.5) {
+      KimmiMateySoften().noProteinTonight();
+      KimmiMateySoften().ifStillErase();
     }
-    if (log2e < 1) {
-      exHappyFang();
-      byWinIn();
+    if (sqrt1_2 < 0.3) {
+      ayCradleCape();
+      woComeOccupy();
     }
     KIMMI.goto(KimmiPalate.kimmiStylishPicCultivate);
   }

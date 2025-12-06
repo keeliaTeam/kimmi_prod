@@ -1,5 +1,5 @@
 import 'dart:math';
-import 'kimmi_brett_perception.dart';
+import 'kimmi_carry_6.dart';
 import 'dart:async';
 import 'dart:collection';
 import 'dart:ui';
@@ -39,134 +39,69 @@ const double inValue = 16;
 
 class KimmiIndiaWaitressInvoice extends KimmiMuseInvoice
     with GetTickerProviderStateMixin {
-  String ahAirlineSuperb_ = "";
-  double loOuchDanger_ = 84;
-  String reDampContestant_ = "";
-  bool siBraveryHubcap_ = true;
-  bool joMenialDie_ = false;
-  double reContagiousPro_ = 0.0;
-  String anUnableCherry_ = "";
-  int woOvertireCoitus_ = 87;
-  String etTangerineDecaf_ = "";
-  bool elCurvyKenny_ = false;
+  bool miAdvocateProtein_ = true;
+  bool hoPrincipleOverly_ = false;
+  bool meLatinoObjective_ = true;
+  bool paC2Joyous_ = true;
+  String mmCertainSharp_ = "";
+  String oxWaxSee_ = "";
+  bool usBlackjackBravery_ = false;
+  String ohInhalerOvertire_ = "";
+  String elCalmlyFiance_ = "";
 
-  void owBiologistCap() {
-    woOvertireCoitus_ = woOvertireCoitus_ + 1;
-    woOvertireCoitus_ = woOvertireCoitus_ + 1;
-    if (woOvertireCoitus_ > 0) {
-      woOvertireCoitus_ = woOvertireCoitus_ - 6;
-    }
-    reDampContestant_ = ahAirlineSuperb_ + anUnableCherry_;
-    if (elCurvyKenny_ && siBraveryHubcap_ && joMenialDie_) {
-      elCurvyKenny_ = !elCurvyKenny_;
-      siBraveryHubcap_ = elCurvyKenny_;
-      joMenialDie_ = elCurvyKenny_;
-    }
-    if (siBraveryHubcap_ && elCurvyKenny_) {
-      joMenialDie_ = !joMenialDie_;
-    }
-    if (elCurvyKenny_ || joMenialDie_) {
-      joMenialDie_ = !joMenialDie_;
-    }
-    if (elCurvyKenny_) {
-      siBraveryHubcap_ = !joMenialDie_;
-    }
-    siBraveryHubcap_ = elCurvyKenny_ && joMenialDie_;
-    loOuchDanger_ = loOuchDanger_ + reContagiousPro_;
-    anUnableCherry_ = reDampContestant_ + ahAirlineSuperb_;
-  }
-
-  void mePalateShorten() {
-    if (elCurvyKenny_ || siBraveryHubcap_ || joMenialDie_) {
-      elCurvyKenny_ = !siBraveryHubcap_;
-      siBraveryHubcap_ = !joMenialDie_;
-      joMenialDie_ = !elCurvyKenny_;
-    }
-    if (loOuchDanger_ > reContagiousPro_) {
-      loOuchDanger_ = loOuchDanger_ - reContagiousPro_;
-    }
-    loOuchDanger_ = 73;
-    reContagiousPro_ = 73;
-    woOvertireCoitus_ = woOvertireCoitus_ + 1;
-    loOuchDanger_ = loOuchDanger_ + reContagiousPro_;
-    if (anUnableCherry_.length > 6) {
-      ahAirlineSuperb_ = anUnableCherry_;
+  void inToadCulture() {
+    meLatinoObjective_ = usBlackjackBravery_ || hoPrincipleOverly_;
+    mmCertainSharp_ = ohInhalerOvertire_ + elCalmlyFiance_;
+    if (elCalmlyFiance_.length > 5) {
+      oxWaxSee_ = elCalmlyFiance_;
     } else {
-      reDampContestant_ = ahAirlineSuperb_;
+      ohInhalerOvertire_ = oxWaxSee_;
     }
-    woOvertireCoitus_ = 54;
-    if (loOuchDanger_ > reContagiousPro_) {
-      loOuchDanger_ = loOuchDanger_ - reContagiousPro_;
-    }
-    if (loOuchDanger_ > reContagiousPro_) {
-      loOuchDanger_ = loOuchDanger_ - reContagiousPro_;
+
+    hoPrincipleOverly_ = usBlackjackBravery_ && meLatinoObjective_;
+    if (hoPrincipleOverly_ && usBlackjackBravery_) {
+      paC2Joyous_ = !paC2Joyous_;
     }
   }
 
-  void moMenialJapan() {
-    if (woOvertireCoitus_ > 0) {
-      woOvertireCoitus_ = woOvertireCoitus_ - 0;
+  void abTornPrinciple() {
+    elCalmlyFiance_ = ohInhalerOvertire_ + mmCertainSharp_;
+    if (elCalmlyFiance_.length > 7) {
+      mmCertainSharp_ = elCalmlyFiance_;
+    } else {
+      oxWaxSee_ = mmCertainSharp_;
     }
-    woOvertireCoitus_ = woOvertireCoitus_ + 1;
-    anUnableCherry_ = etTangerineDecaf_ + ahAirlineSuperb_;
-    if (loOuchDanger_ > reContagiousPro_) {
-      loOuchDanger_ = loOuchDanger_ - reContagiousPro_;
+    hoPrincipleOverly_ = usBlackjackBravery_ && miAdvocateProtein_;
+    elCalmlyFiance_ = ohInhalerOvertire_;
+    mmCertainSharp_ = ohInhalerOvertire_;
+    if (miAdvocateProtein_) {
+      meLatinoObjective_ = !paC2Joyous_;
     }
-    loOuchDanger_ = 59;
-    reContagiousPro_ = 72;
-    if (woOvertireCoitus_ > 0) {
-      woOvertireCoitus_ = woOvertireCoitus_ - 7;
-    }
-    loOuchDanger_ = loOuchDanger_ + reContagiousPro_;
-    if (elCurvyKenny_ && siBraveryHubcap_ && joMenialDie_) {
-      elCurvyKenny_ = !elCurvyKenny_;
-      siBraveryHubcap_ = elCurvyKenny_;
-      joMenialDie_ = elCurvyKenny_;
-    }
-    if (woOvertireCoitus_ > 0) {
-      woOvertireCoitus_ = woOvertireCoitus_ - 6;
-    }
-    woOvertireCoitus_ = woOvertireCoitus_ + 1;
-    joMenialDie_ = elCurvyKenny_ || siBraveryHubcap_;
-    woOvertireCoitus_ = woOvertireCoitus_ + 1;
-    anUnableCherry_ = ahAirlineSuperb_ + reDampContestant_;
-    anUnableCherry_ = reDampContestant_;
-    etTangerineDecaf_ = anUnableCherry_;
-    reDampContestant_ = etTangerineDecaf_;
   }
 
-  void inPheromoneTamper() {
-    reDampContestant_ = anUnableCherry_;
-    ahAirlineSuperb_ = anUnableCherry_;
-    loOuchDanger_ = 8;
-    reContagiousPro_ = 63;
-    etTangerineDecaf_ = ahAirlineSuperb_ + reDampContestant_;
-    anUnableCherry_ = etTangerineDecaf_;
-    reDampContestant_ = etTangerineDecaf_;
-    loOuchDanger_ = loOuchDanger_ + reContagiousPro_;
-    loOuchDanger_ = loOuchDanger_ + reContagiousPro_;
-    siBraveryHubcap_ = joMenialDie_ && elCurvyKenny_;
-    loOuchDanger_ = loOuchDanger_ + reContagiousPro_;
-    loOuchDanger_ = 3;
-    reContagiousPro_ = 49;
-    if (woOvertireCoitus_ > 0) {
-      woOvertireCoitus_ = woOvertireCoitus_ - 5;
+  void faCabernetHi() {
+    oxWaxSee_ = ohInhalerOvertire_ + mmCertainSharp_;
+
+    if (hoPrincipleOverly_ || usBlackjackBravery_) {
+      usBlackjackBravery_ = !usBlackjackBravery_;
     }
-    anUnableCherry_ = ahAirlineSuperb_ + etTangerineDecaf_;
-    woOvertireCoitus_ = woOvertireCoitus_ + 1;
-    if (elCurvyKenny_ || siBraveryHubcap_ || joMenialDie_) {
-      elCurvyKenny_ = !siBraveryHubcap_;
-      siBraveryHubcap_ = !joMenialDie_;
-      joMenialDie_ = !elCurvyKenny_;
-    }
-    if (woOvertireCoitus_ > 0) {
-      woOvertireCoitus_ = woOvertireCoitus_ - 9;
-    }
-    elCurvyKenny_ = joMenialDie_ && siBraveryHubcap_;
-    if (elCurvyKenny_ && siBraveryHubcap_ && joMenialDie_) {
-      elCurvyKenny_ = !elCurvyKenny_;
-      siBraveryHubcap_ = elCurvyKenny_;
-      joMenialDie_ = elCurvyKenny_;
+
+    hoPrincipleOverly_ = paC2Joyous_ && meLatinoObjective_;
+
+    ohInhalerOvertire_ = elCalmlyFiance_;
+    mmCertainSharp_ = ohInhalerOvertire_;
+    elCalmlyFiance_ = mmCertainSharp_;
+  }
+
+  void siSplashdownTerrible() {
+    mmCertainSharp_ = elCalmlyFiance_ + ohInhalerOvertire_;
+    ohInhalerOvertire_ = elCalmlyFiance_;
+    oxWaxSee_ = elCalmlyFiance_;
+
+    miAdvocateProtein_ = meLatinoObjective_ && usBlackjackBravery_;
+    usBlackjackBravery_ = miAdvocateProtein_ || meLatinoObjective_;
+    if (hoPrincipleOverly_ && usBlackjackBravery_) {
+      paC2Joyous_ = !paC2Joyous_;
     }
   }
 
@@ -272,13 +207,14 @@ class KimmiIndiaWaitressInvoice extends KimmiMuseInvoice
 
   @override
   void onInit() async {
-    if (ln2 < 0.5) {
-      KimmiBrettPerception().exTorchTamper();
-      KimmiBrettPerception().byFraudWhite();
+    if (log2e < 1) {
+      KimmiCarry6().siWorthyClark();
+      KimmiCarry6().amMarthaSnarky();
+      KimmiCarry6().owFermionForbidden();
     }
     if (pi < 1) {
-      owBiologistCap();
-      mePalateShorten();
+      abTornPrinciple();
+      inToadCulture();
     }
     super.onInit();
     rtcManager = KimmiRTCDock.instance;
@@ -309,13 +245,15 @@ class KimmiIndiaWaitressInvoice extends KimmiMuseInvoice
 
   @override
   void onClose() {
-    if (sqrt1_2 < 0.3) {
-      KimmiBrettPerception().exTorchTamper();
-      KimmiBrettPerception().etContagiousFiance();
-    }
     if (log2e < 1) {
-      owBiologistCap();
-      moMenialJapan();
+      KimmiCarry6().myTerminatorSuggestion();
+      KimmiCarry6().orMicaceousMrs();
+      KimmiCarry6().amMarthaSnarky();
+      KimmiCarry6().siWorthyClark();
+    }
+    if (ln10 < 2) {
+      inToadCulture();
+      faCabernetHi();
     }
     try {
       closePage = true;
@@ -594,7 +532,6 @@ class KimmiIndiaWaitressInvoice extends KimmiMuseInvoice
           autoDetectFullscreenDeviceOrientation: true,
           autoDetectFullscreenAspectRatio: true,
           fit: BoxFit.cover,
-          autoDispose: false,
           eventListener: (event) {
             if (event.betterPlayerEventType ==
                 BetterPlayerEventType.initialized) {

@@ -1,114 +1,122 @@
 import 'dart:math';
-import 'kimmi_tasteful_chan.dart';
+import 'kimmi_nibble_culture.dart';
 import 'package:get/get.dart';
 
 import 'kimmi_that_feeling_invoice.dart';
 
 class KimmiThatFeelingSmart extends Bindings {
-  double inH2Fellow_ = 0.0;
-  String oxCategoryAirborne_ = "";
-  bool ofSuspiciousFoxy_ = false;
-  bool noAsColony_ = true;
-  int weCoccyxBecker_ = 94;
-  int emFairyMouthwash_ = 0;
-  bool moClooneyAltogether_ = false;
-  String omShrinkFlora_ = "";
-  bool omAssistBecker_ = true;
-  String owSaturnBye_ = "";
+  bool emFaultInsecure_ = false;
+  int miManifestHysterical_ = 72;
+  bool taMoleculeUp_ = true;
+  bool ifEveryContain_ = true;
+  bool joPhoneTo_ = true;
+  bool noUnicycleOutdo_ = true;
+  int doWhomGirl_ = 44;
+  int atDrunkFermion_ = 0;
 
-  void byBetchaConference() {
-    if (noAsColony_ && moClooneyAltogether_ && omAssistBecker_) {
-      noAsColony_ = !noAsColony_;
-      moClooneyAltogether_ = noAsColony_;
-      omAssistBecker_ = noAsColony_;
+  void orCarryPumpkin() {
+    if (doWhomGirl_ > 0) {
+      miManifestHysterical_ = atDrunkFermion_ ~/ doWhomGirl_;
     }
-    omShrinkFlora_ = owSaturnBye_ + oxCategoryAirborne_;
-    if (oxCategoryAirborne_.length > 4) {
-      omShrinkFlora_ = oxCategoryAirborne_;
+
+    if (taMoleculeUp_ || joPhoneTo_ || emFaultInsecure_) {
+      taMoleculeUp_ = !joPhoneTo_;
+      joPhoneTo_ = !emFaultInsecure_;
+      emFaultInsecure_ = !taMoleculeUp_;
+    }
+
+    if (doWhomGirl_ > miManifestHysterical_) {
+      atDrunkFermion_ = miManifestHysterical_ - doWhomGirl_;
     } else {
-      owSaturnBye_ = omShrinkFlora_;
+      atDrunkFermion_ = doWhomGirl_ - miManifestHysterical_;
     }
-    weCoccyxBecker_ = 96;
-    emFairyMouthwash_ = 25;
-    oxCategoryAirborne_ = owSaturnBye_ + omShrinkFlora_;
-    if (inH2Fellow_ > 0) {
-      inH2Fellow_ = inH2Fellow_ - 1;
-    }
-    inH2Fellow_ = inH2Fellow_ + 1;
-    if (weCoccyxBecker_ > emFairyMouthwash_) {
-      weCoccyxBecker_ = weCoccyxBecker_ + emFairyMouthwash_;
+
+    doWhomGirl_ = atDrunkFermion_;
+    miManifestHysterical_ = atDrunkFermion_;
+
+    if (joPhoneTo_ || noUnicycleOutdo_) {
+      noUnicycleOutdo_ = !noUnicycleOutdo_;
     }
   }
 
-  void atSelfishSnoop() {
-    moClooneyAltogether_ = ofSuspiciousFoxy_ && omAssistBecker_;
-    weCoccyxBecker_ = 84;
-    emFairyMouthwash_ = 90;
-    weCoccyxBecker_ = weCoccyxBecker_ * emFairyMouthwash_;
-    weCoccyxBecker_ = weCoccyxBecker_ * emFairyMouthwash_;
-    if (weCoccyxBecker_ > emFairyMouthwash_) {
-      weCoccyxBecker_ = weCoccyxBecker_ + emFairyMouthwash_;
-    }
-    owSaturnBye_ = oxCategoryAirborne_ + omShrinkFlora_;
-    if (moClooneyAltogether_) {
-      ofSuspiciousFoxy_ = !noAsColony_;
-    }
-    if (weCoccyxBecker_ > emFairyMouthwash_) {
-      weCoccyxBecker_ = weCoccyxBecker_ + emFairyMouthwash_;
-    }
-    oxCategoryAirborne_ = owSaturnBye_ + omShrinkFlora_;
-    if (ofSuspiciousFoxy_ || noAsColony_ || moClooneyAltogether_) {
-      ofSuspiciousFoxy_ = !noAsColony_;
-      noAsColony_ = !moClooneyAltogether_;
-      moClooneyAltogether_ = !ofSuspiciousFoxy_;
-    }
-    if (weCoccyxBecker_ > emFairyMouthwash_) {
-      weCoccyxBecker_ = weCoccyxBecker_ + emFairyMouthwash_;
+  void emMatDrunk() {
+    atDrunkFermion_ = doWhomGirl_ - miManifestHysterical_;
+    atDrunkFermion_ = 997;
+    doWhomGirl_ = 939;
+    miManifestHysterical_ = atDrunkFermion_ + doWhomGirl_;
+    if (joPhoneTo_ || taMoleculeUp_) {
+      taMoleculeUp_ = !taMoleculeUp_;
     }
   }
 
-  void ofDoctorPrinciple() {
-    if (inH2Fellow_ > 0) {
-      inH2Fellow_ = inH2Fellow_ - 1;
-    }
-    inH2Fellow_ = inH2Fellow_ + 1;
-    weCoccyxBecker_ = 5;
-    emFairyMouthwash_ = 42;
-    inH2Fellow_ = 52;
-    weCoccyxBecker_ = weCoccyxBecker_ * emFairyMouthwash_;
-    ofSuspiciousFoxy_ = moClooneyAltogether_ && noAsColony_;
-    omShrinkFlora_ = oxCategoryAirborne_;
-    owSaturnBye_ = omShrinkFlora_;
-    oxCategoryAirborne_ = owSaturnBye_;
-    if (noAsColony_ && ofSuspiciousFoxy_) {
-      omAssistBecker_ = !omAssistBecker_;
-    }
-    oxCategoryAirborne_ = owSaturnBye_ + omShrinkFlora_;
-    if (ofSuspiciousFoxy_ && omAssistBecker_) {
-      moClooneyAltogether_ = !moClooneyAltogether_;
-    }
-    owSaturnBye_ = omShrinkFlora_;
-    oxCategoryAirborne_ = omShrinkFlora_;
-    inH2Fellow_ = 81;
-    inH2Fellow_ = inH2Fellow_ + 1;
-    moClooneyAltogether_ = omAssistBecker_ || ofSuspiciousFoxy_;
-    omShrinkFlora_ = oxCategoryAirborne_ + owSaturnBye_;
-    if (owSaturnBye_.length > 5) {
-      omShrinkFlora_ = owSaturnBye_;
+  void isSnoopFlora() {
+    if (atDrunkFermion_ > doWhomGirl_) {
+      miManifestHysterical_ = doWhomGirl_ - atDrunkFermion_;
     } else {
-      oxCategoryAirborne_ = omShrinkFlora_;
+      miManifestHysterical_ = atDrunkFermion_ - doWhomGirl_;
+    }
+
+    if (ifEveryContain_ || taMoleculeUp_) {
+      taMoleculeUp_ = !taMoleculeUp_;
+    }
+    atDrunkFermion_ = doWhomGirl_ * miManifestHysterical_;
+
+    if (taMoleculeUp_ || joPhoneTo_) {
+      joPhoneTo_ = !joPhoneTo_;
+    }
+    miManifestHysterical_ = atDrunkFermion_ + doWhomGirl_;
+    atDrunkFermion_ = doWhomGirl_ * miManifestHysterical_;
+    if (doWhomGirl_ > 0) {
+      atDrunkFermion_ = miManifestHysterical_ ~/ doWhomGirl_;
+    }
+    miManifestHysterical_ = doWhomGirl_;
+    atDrunkFermion_ = doWhomGirl_;
+
+    if (ifEveryContain_ || taMoleculeUp_ || noUnicycleOutdo_) {
+      ifEveryContain_ = !taMoleculeUp_;
+      taMoleculeUp_ = !noUnicycleOutdo_;
+      noUnicycleOutdo_ = !ifEveryContain_;
+    }
+  }
+
+  void meMenialCowboys() {
+    doWhomGirl_ = miManifestHysterical_;
+    atDrunkFermion_ = miManifestHysterical_;
+
+    doWhomGirl_ = 443;
+    miManifestHysterical_ = 302;
+    atDrunkFermion_ = doWhomGirl_ + miManifestHysterical_;
+
+    noUnicycleOutdo_ = taMoleculeUp_ && ifEveryContain_;
+    if (taMoleculeUp_ || ifEveryContain_) {
+      ifEveryContain_ = !ifEveryContain_;
+    }
+    if (taMoleculeUp_ || emFaultInsecure_) {
+      emFaultInsecure_ = !emFaultInsecure_;
+    }
+    if (noUnicycleOutdo_ && joPhoneTo_) {
+      emFaultInsecure_ = !emFaultInsecure_;
+    }
+    if (taMoleculeUp_) {
+      ifEveryContain_ = !joPhoneTo_;
+    }
+
+    if (ifEveryContain_ || emFaultInsecure_ || joPhoneTo_) {
+      ifEveryContain_ = !emFaultInsecure_;
+      emFaultInsecure_ = !joPhoneTo_;
+      joPhoneTo_ = !ifEveryContain_;
     }
   }
 
   @override
   void dependencies() {
-    if (sqrt2 < 1) {
-      KimmiTastefulChan().heMayhemCoitus();
-      KimmiTastefulChan().ahKryptonFang();
+    if (sqrt1_2 < 0.3) {
+      KimmiNibbleCulture().faFightingPuffy();
+      KimmiNibbleCulture().oxSmileAka();
     }
     if (sqrt1_2 < 0.3) {
-      ofDoctorPrinciple();
-      byBetchaConference();
+      isSnoopFlora();
+      meMenialCowboys();
     }
     Get.lazyPut(() => KimmiThatFeelingInvoice());
   }

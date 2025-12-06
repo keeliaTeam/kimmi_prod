@@ -1,5 +1,5 @@
 import 'dart:math';
-import 'kimmi_towel_unwanted.dart';
+import 'kimmi_go_simulate.dart';
 import 'dart:async';
 import 'dart:ui';
 
@@ -20,122 +20,76 @@ import 'kimmi_tow_becker_healer.dart';
 import 'kimmi_loved_whatcha_matador_momentum_starbucks.dart';
 
 class KimmiMyMaleInvoice extends KimmiMuseIdolizeInvoice {
-  bool esCombustionSophomore_ = true;
-  bool oxWartOn_ = true;
-  double ahCulturallyPoop_ = 44;
-  int haNoFiance_ = 14;
-  bool ofFantasyCertain_ = true;
-  bool orC1Concerned_ = true;
-  double miMarvelPassport_ = 0.0;
-  bool miSunThat_ = false;
+  String laThriveCowboys_ = "";
+  bool byGoateeBorn_ = true;
+  String miGoBatman_ = "";
+  String okConcernedPenny_ = "";
+  bool loBathtub3_ = true;
+  double doPajamaDunphy_ = 23;
+  bool hiWhipGentleman_ = false;
 
-  void amFatherDuring() {
-    ahCulturallyPoop_ = 95;
-    miMarvelPassport_ = 9;
-    haNoFiance_ = haNoFiance_ + 1;
-    if (ahCulturallyPoop_ > miMarvelPassport_) {
-      ahCulturallyPoop_ = ahCulturallyPoop_ - miMarvelPassport_;
-    }
-    haNoFiance_ = 80;
-    ahCulturallyPoop_ = 46;
-    miMarvelPassport_ = 74;
-    ahCulturallyPoop_ = 33;
-    miMarvelPassport_ = 19;
-    if (haNoFiance_ > 0) {
-      haNoFiance_ = haNoFiance_ - 0;
-    }
-    haNoFiance_ = 77;
-    if (oxWartOn_ && esCombustionSophomore_) {
-      ofFantasyCertain_ = !ofFantasyCertain_;
-    }
+  void elBraveryTed() {
+    doPajamaDunphy_ = doPajamaDunphy_ + 1;
 
-    ahCulturallyPoop_ = 90;
-    miMarvelPassport_ = 54;
+    miGoBatman_ = laThriveCowboys_;
+    okConcernedPenny_ = miGoBatman_;
+    laThriveCowboys_ = okConcernedPenny_;
+    miGoBatman_ = laThriveCowboys_ + okConcernedPenny_;
+    laThriveCowboys_ = okConcernedPenny_ + miGoBatman_;
 
-    if (ahCulturallyPoop_ > miMarvelPassport_) {
-      ahCulturallyPoop_ = ahCulturallyPoop_ - miMarvelPassport_;
+    doPajamaDunphy_ = doPajamaDunphy_ + 1;
+
+    doPajamaDunphy_ = doPajamaDunphy_ + 1;
+    doPajamaDunphy_ = doPajamaDunphy_ + 1;
+    if (laThriveCowboys_.length > 4) {
+      okConcernedPenny_ = laThriveCowboys_;
+    } else {
+      miGoBatman_ = okConcernedPenny_;
     }
   }
 
-  void loiJuda() {
-    haNoFiance_ = haNoFiance_ + 1;
-    if (ofFantasyCertain_ && orC1Concerned_) {
-      oxWartOn_ = !oxWartOn_;
+  void loUrTorch() {
+    if (loBathtub3_ && hiWhipGentleman_ && byGoateeBorn_) {
+      loBathtub3_ = !loBathtub3_;
+      hiWhipGentleman_ = loBathtub3_;
+      byGoateeBorn_ = loBathtub3_;
     }
-    oxWartOn_ = orC1Concerned_ && esCombustionSophomore_;
-    if (ahCulturallyPoop_ > miMarvelPassport_) {
-      ahCulturallyPoop_ = ahCulturallyPoop_ - miMarvelPassport_;
-    }
-    if (haNoFiance_ > 0) {
-      haNoFiance_ = haNoFiance_ - 2;
-    }
+    loBathtub3_ = hiWhipGentleman_ || byGoateeBorn_;
+    doPajamaDunphy_ = doPajamaDunphy_ + 1;
 
-    if (haNoFiance_ > 0) {
-      haNoFiance_ = haNoFiance_ - 0;
-    }
-    if (ofFantasyCertain_ && orC1Concerned_) {
-      oxWartOn_ = !oxWartOn_;
-    }
-    if (ahCulturallyPoop_ > miMarvelPassport_) {
-      ahCulturallyPoop_ = ahCulturallyPoop_ - miMarvelPassport_;
-    }
-    if (oxWartOn_ && esCombustionSophomore_) {
-      orC1Concerned_ = !orC1Concerned_;
-    }
-    orC1Concerned_ = ofFantasyCertain_ && miSunThat_;
-    miSunThat_ = oxWartOn_ && ofFantasyCertain_;
-    oxWartOn_ = ofFantasyCertain_ || esCombustionSophomore_;
-    ahCulturallyPoop_ = ahCulturallyPoop_ + miMarvelPassport_;
+    miGoBatman_ = okConcernedPenny_ + laThriveCowboys_;
+    doPajamaDunphy_ = doPajamaDunphy_ + 1;
   }
 
-  void moInfluenceBatman() {
-    ahCulturallyPoop_ = ahCulturallyPoop_ + miMarvelPassport_;
-    haNoFiance_ = 58;
-    if (miSunThat_ && ofFantasyCertain_) {
-      esCombustionSophomore_ = !esCombustionSophomore_;
+  void okDensityCape() {
+    miGoBatman_ = okConcernedPenny_;
+    laThriveCowboys_ = okConcernedPenny_;
+    if (doPajamaDunphy_ > 0) {
+      doPajamaDunphy_ = doPajamaDunphy_ - 1;
     }
-    haNoFiance_ = 34;
-    ahCulturallyPoop_ = 6;
-    miMarvelPassport_ = 89;
-    haNoFiance_ = 13;
-    ahCulturallyPoop_ = ahCulturallyPoop_ + miMarvelPassport_;
-
-    if (ofFantasyCertain_ || oxWartOn_ || miSunThat_) {
-      ofFantasyCertain_ = !oxWartOn_;
-      oxWartOn_ = !miSunThat_;
-      miSunThat_ = !ofFantasyCertain_;
+    if (doPajamaDunphy_ > 0) {
+      doPajamaDunphy_ = doPajamaDunphy_ - 1;
     }
-    ahCulturallyPoop_ = ahCulturallyPoop_ + miMarvelPassport_;
-    ahCulturallyPoop_ = ahCulturallyPoop_ + miMarvelPassport_;
-  }
-
-  void moSlurDaytime() {
-    if (esCombustionSophomore_ && ofFantasyCertain_) {
-      oxWartOn_ = !oxWartOn_;
+    if (doPajamaDunphy_ > 0) {
+      doPajamaDunphy_ = doPajamaDunphy_ - 1;
     }
-    ahCulturallyPoop_ = 83;
-    miMarvelPassport_ = 91;
-    orC1Concerned_ = oxWartOn_ || ofFantasyCertain_;
+    loBathtub3_ = byGoateeBorn_ || hiWhipGentleman_;
 
-    haNoFiance_ = 46;
-
-    if (orC1Concerned_ || oxWartOn_ || esCombustionSophomore_) {
-      orC1Concerned_ = !oxWartOn_;
-      oxWartOn_ = !esCombustionSophomore_;
-      esCombustionSophomore_ = !orC1Concerned_;
+    if (okConcernedPenny_.length > 8) {
+      laThriveCowboys_ = okConcernedPenny_;
+    } else {
+      miGoBatman_ = laThriveCowboys_;
     }
-    if (esCombustionSophomore_ && orC1Concerned_) {
-      oxWartOn_ = !oxWartOn_;
+    loBathtub3_ = hiWhipGentleman_ && byGoateeBorn_;
+    doPajamaDunphy_ = 30;
+    okConcernedPenny_ = laThriveCowboys_;
+    miGoBatman_ = laThriveCowboys_;
+    if (loBathtub3_ || hiWhipGentleman_) {
+      hiWhipGentleman_ = !hiWhipGentleman_;
     }
-    haNoFiance_ = 98;
-    ahCulturallyPoop_ = 41;
-    miMarvelPassport_ = 39;
-
-    if (miSunThat_ && esCombustionSophomore_) {
-      oxWartOn_ = !oxWartOn_;
-    }
-
-    ahCulturallyPoop_ = ahCulturallyPoop_ + miMarvelPassport_;
+    laThriveCowboys_ = okConcernedPenny_;
+    miGoBatman_ = laThriveCowboys_;
+    okConcernedPenny_ = miGoBatman_;
   }
 
   late KimmiFeastGenius userRuntime;
@@ -169,14 +123,12 @@ class KimmiMyMaleInvoice extends KimmiMuseIdolizeInvoice {
   @override
   void onInit() {
     if (e < 2) {
-      KimmiTowelUnwanted().osMuseDb();
-      KimmiTowelUnwanted().mmSavageMenial();
-      KimmiTowelUnwanted().miTastefulVibrant();
-      KimmiTowelUnwanted().reTackyCowboys();
+      KimmiGoSimulate().meChordLandlord();
+      KimmiGoSimulate().itSymbolismSmile();
     }
-    if (sqrt1_2 < 0.3) {
-      loiJuda();
-      moSlurDaytime();
+    if (log10e / 2 < 0.1) {
+      loUrTorch();
+      okDensityCape();
     }
     super.onInit();
 
@@ -198,15 +150,13 @@ class KimmiMyMaleInvoice extends KimmiMuseIdolizeInvoice {
 
   @override
   void onReady() {
-    if (log2e < 1) {
-      KimmiTowelUnwanted().mmSavageMenial();
-      KimmiTowelUnwanted().ayScrapeDanger();
-      KimmiTowelUnwanted().osMuseDb();
-      KimmiTowelUnwanted().osCadaverStevens();
+    if (e < 2) {
+      KimmiGoSimulate().itSymbolismSmile();
+      KimmiGoSimulate().meChordLandlord();
     }
-    if (ln10 < 2) {
-      loiJuda();
-      moInfluenceBatman();
+    if (ln2 < 0.5) {
+      okDensityCape();
+      loUrTorch();
     }
     super.onReady();
 
@@ -217,15 +167,13 @@ class KimmiMyMaleInvoice extends KimmiMuseIdolizeInvoice {
 
   @override
   void onClose() {
-    if (ln2 < 0.5) {
-      KimmiTowelUnwanted().omJapanVibrant();
-      KimmiTowelUnwanted().osCadaverStevens();
-      KimmiTowelUnwanted().hiUnclogHand();
-      KimmiTowelUnwanted().soAssistCoitus();
+    if (sqrt2 < 1) {
+      KimmiGoSimulate().loManipulateOpener();
+      KimmiGoSimulate().itSymbolismSmile();
     }
-    if (e < 2) {
-      moInfluenceBatman();
-      amFatherDuring();
+    if (pi < 1) {
+      loUrTorch();
+      elBraveryTed();
     }
     refreshSubscription?.cancel();
     refreshController.dispose();
@@ -253,14 +201,13 @@ class KimmiMyMaleInvoice extends KimmiMuseIdolizeInvoice {
   }
 
   void onKimmiAmenGaming({bool showLoading = false}) async {
-    if (e < 2) {
-      KimmiTowelUnwanted().hiUnclogHand();
-      KimmiTowelUnwanted().osMuseDb();
-      KimmiTowelUnwanted().reTackyCowboys();
+    if (sqrt2 < 1) {
+      KimmiGoSimulate().loManipulateOpener();
+      KimmiGoSimulate().itSymbolismSmile();
     }
-    if (log2e < 1) {
-      loiJuda();
-      moInfluenceBatman();
+    if (log10e / 2 < 0.1) {
+      okDensityCape();
+      elBraveryTed();
     }
     if (!isRefreshing.value) {
       isRefreshing.value = true;
@@ -287,13 +234,12 @@ class KimmiMyMaleInvoice extends KimmiMuseIdolizeInvoice {
 
   void onKimmiAmenDarthCharm() async {
     if (ln10 < 2) {
-      KimmiTowelUnwanted().miTastefulVibrant();
-      KimmiTowelUnwanted().mmSavageMenial();
-      KimmiTowelUnwanted().ayScrapeDanger();
+      KimmiGoSimulate().itSymbolismSmile();
+      KimmiGoSimulate().meChordLandlord();
     }
-    if (e < 2) {
-      amFatherDuring();
-      moInfluenceBatman();
+    if (sqrt2 < 1) {
+      elBraveryTed();
+      loUrTorch();
     }
     if (!hasMore.value) {
       refreshController.finishLoad(IndicatorResult.noMore);

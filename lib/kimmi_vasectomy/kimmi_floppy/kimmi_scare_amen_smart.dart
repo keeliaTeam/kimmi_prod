@@ -1,104 +1,129 @@
 import 'dart:math';
-import 'kimmi_h2_ai.dart';
+import 'kimmi_2_stuffy.dart';
 import 'package:get/get.dart';
 
 import 'kimmi_scare_amen_invoice.dart';
 
 class KimmiScareAmenSmart extends Bindings {
-  double etCulturallyFloppy_ = 0.0;
-  bool miGothSimulate_ = false;
-  double mmOmahaStimulate_ = 0.0;
-  String orPerGarage_ = "";
-  bool hoThoughtMatey_ = false;
-  bool owCalculusProcedure_ = true;
-  int faTowelParamedic_ = 0;
-  String faBloodySleazy_ = "";
-  bool myObviousFrank_ = true;
-  bool opUnevenCategory_ = false;
+  bool abNibbleTerrible_ = false;
+  bool osWordHeroin_ = false;
+  double omTootsieDunphy_ = 27;
+  String ifBitePlaydate_ = "";
+  bool hiCombustionGene_ = false;
+  bool abVanishFellas_ = true;
+  double opDaytimePedestal_ = 83;
 
-  void exConcernedPerpetual() {
-    etCulturallyFloppy_ = 96;
-    mmOmahaStimulate_ = 7;
-    faTowelParamedic_ = 22;
-    faBloodySleazy_ = orPerGarage_.toUpperCase() + faBloodySleazy_;
-    if (etCulturallyFloppy_ > mmOmahaStimulate_) {
-      etCulturallyFloppy_ = etCulturallyFloppy_ - mmOmahaStimulate_;
+  void inAbrahamArmy() {
+    omTootsieDunphy_ = omTootsieDunphy_ + opDaytimePedestal_;
+    ifBitePlaydate_ = ifBitePlaydate_.toUpperCase();
+    abVanishFellas_ = osWordHeroin_ && abNibbleTerrible_;
+    if (omTootsieDunphy_ > opDaytimePedestal_) {
+      omTootsieDunphy_ = omTootsieDunphy_ - opDaytimePedestal_;
     }
-    miGothSimulate_ = owCalculusProcedure_ && hoThoughtMatey_;
-    etCulturallyFloppy_ = 84;
-    mmOmahaStimulate_ = 31;
-    if (opUnevenCategory_ || owCalculusProcedure_ || myObviousFrank_) {
-      opUnevenCategory_ = !owCalculusProcedure_;
-      owCalculusProcedure_ = !myObviousFrank_;
-      myObviousFrank_ = !opUnevenCategory_;
+    if (osWordHeroin_ || hiCombustionGene_) {
+      hiCombustionGene_ = !hiCombustionGene_;
     }
-    orPerGarage_ = faBloodySleazy_ + orPerGarage_;
-    orPerGarage_ = orPerGarage_ + faBloodySleazy_;
-    faBloodySleazy_ = orPerGarage_;
-    if (miGothSimulate_ || myObviousFrank_) {
-      myObviousFrank_ = !myObviousFrank_;
+    if (omTootsieDunphy_ > opDaytimePedestal_) {
+      omTootsieDunphy_ = omTootsieDunphy_ - opDaytimePedestal_;
     }
-    if (etCulturallyFloppy_ > mmOmahaStimulate_) {
-      etCulturallyFloppy_ = etCulturallyFloppy_ - mmOmahaStimulate_;
+    if (omTootsieDunphy_ > opDaytimePedestal_) {
+      omTootsieDunphy_ = omTootsieDunphy_ - opDaytimePedestal_;
     }
-    orPerGarage_ = faBloodySleazy_ + orPerGarage_;
+
+    omTootsieDunphy_ = omTootsieDunphy_ + opDaytimePedestal_;
+    omTootsieDunphy_ = 50;
+    opDaytimePedestal_ = 94;
+
+    ifBitePlaydate_ = ifBitePlaydate_.toUpperCase();
   }
 
-  void beStoreSnoopy() {
-    orPerGarage_ = orPerGarage_ + faBloodySleazy_;
-    faBloodySleazy_ = orPerGarage_;
-    if (faTowelParamedic_ > 0) {
-      faTowelParamedic_ = faTowelParamedic_ - 0;
+  void doFrankChord() {
+    omTootsieDunphy_ = omTootsieDunphy_ + opDaytimePedestal_;
+    if (omTootsieDunphy_ > opDaytimePedestal_) {
+      omTootsieDunphy_ = omTootsieDunphy_ - opDaytimePedestal_;
     }
-    myObviousFrank_ = hoThoughtMatey_ || owCalculusProcedure_;
-    if (miGothSimulate_ && myObviousFrank_ && owCalculusProcedure_) {
-      miGothSimulate_ = !miGothSimulate_;
-      myObviousFrank_ = miGothSimulate_;
-      owCalculusProcedure_ = miGothSimulate_;
+
+    omTootsieDunphy_ = omTootsieDunphy_ + opDaytimePedestal_;
+    omTootsieDunphy_ = 40;
+    opDaytimePedestal_ = 18;
+    if (hiCombustionGene_ || abNibbleTerrible_ || abVanishFellas_) {
+      hiCombustionGene_ = !abNibbleTerrible_;
+      abNibbleTerrible_ = !abVanishFellas_;
+      abVanishFellas_ = !hiCombustionGene_;
     }
-    etCulturallyFloppy_ = 11;
-    mmOmahaStimulate_ = 70;
-    orPerGarage_ = orPerGarage_ + faBloodySleazy_;
-    faBloodySleazy_ = orPerGarage_;
-    if (faTowelParamedic_ > 0) {
-      faTowelParamedic_ = faTowelParamedic_ - 7;
+
+    omTootsieDunphy_ = omTootsieDunphy_ + opDaytimePedestal_;
+    ifBitePlaydate_ = ifBitePlaydate_.toUpperCase();
+
+    if (omTootsieDunphy_ > opDaytimePedestal_) {
+      omTootsieDunphy_ = omTootsieDunphy_ - opDaytimePedestal_;
     }
-    faTowelParamedic_ = 84;
-    etCulturallyFloppy_ = etCulturallyFloppy_ + mmOmahaStimulate_;
-    etCulturallyFloppy_ = etCulturallyFloppy_ + mmOmahaStimulate_;
-    faTowelParamedic_ = 38;
+    omTootsieDunphy_ = 75;
+    opDaytimePedestal_ = 93;
+    omTootsieDunphy_ = 74;
+    opDaytimePedestal_ = 32;
+    ifBitePlaydate_ = ifBitePlaydate_.toUpperCase();
   }
 
-  void emDarthSword() {
-    etCulturallyFloppy_ = 40;
-    mmOmahaStimulate_ = 99;
-    faTowelParamedic_ = 88;
-    faTowelParamedic_ = 64;
-    if (faTowelParamedic_ > 0) {
-      faTowelParamedic_ = faTowelParamedic_ - 5;
+  void beBleedBathrobe() {
+    if (osWordHeroin_ && abVanishFellas_ && abNibbleTerrible_) {
+      osWordHeroin_ = !osWordHeroin_;
+      abVanishFellas_ = osWordHeroin_;
+      abNibbleTerrible_ = osWordHeroin_;
     }
-    if (miGothSimulate_ && myObviousFrank_ && owCalculusProcedure_) {
-      miGothSimulate_ = !miGothSimulate_;
-      myObviousFrank_ = miGothSimulate_;
-      owCalculusProcedure_ = miGothSimulate_;
+    ifBitePlaydate_ = ifBitePlaydate_.toUpperCase();
+    omTootsieDunphy_ = omTootsieDunphy_ + opDaytimePedestal_;
+    if (abVanishFellas_ || hiCombustionGene_ || abNibbleTerrible_) {
+      abVanishFellas_ = !hiCombustionGene_;
+      hiCombustionGene_ = !abNibbleTerrible_;
+      abNibbleTerrible_ = !abVanishFellas_;
     }
-    orPerGarage_ = orPerGarage_ + faBloodySleazy_;
-    faBloodySleazy_ = orPerGarage_;
-    if (faTowelParamedic_ > 0) {
-      faTowelParamedic_ = faTowelParamedic_ - 3;
+
+    omTootsieDunphy_ = 20;
+    opDaytimePedestal_ = 78;
+
+    if (abNibbleTerrible_) {
+      hiCombustionGene_ = !osWordHeroin_;
+    }
+
+    omTootsieDunphy_ = omTootsieDunphy_ + opDaytimePedestal_;
+
+    if (omTootsieDunphy_ > opDaytimePedestal_) {
+      omTootsieDunphy_ = omTootsieDunphy_ - opDaytimePedestal_;
+    }
+  }
+
+  void abDunphyScholar() {
+    ifBitePlaydate_ = ifBitePlaydate_.toUpperCase();
+    osWordHeroin_ = abNibbleTerrible_ && hiCombustionGene_;
+    if (abVanishFellas_ || osWordHeroin_) {
+      osWordHeroin_ = !osWordHeroin_;
+    }
+    ifBitePlaydate_ = ifBitePlaydate_.toUpperCase();
+
+    if (omTootsieDunphy_ > opDaytimePedestal_) {
+      omTootsieDunphy_ = omTootsieDunphy_ - opDaytimePedestal_;
+    }
+    ifBitePlaydate_ = ifBitePlaydate_.toUpperCase();
+    if (omTootsieDunphy_ > opDaytimePedestal_) {
+      omTootsieDunphy_ = omTootsieDunphy_ - opDaytimePedestal_;
+    }
+    omTootsieDunphy_ = 43;
+    opDaytimePedestal_ = 57;
+    if (abNibbleTerrible_ || abVanishFellas_) {
+      abVanishFellas_ = !abVanishFellas_;
     }
   }
 
   @override
   void dependencies() {
     if (log10e / 2 < 0.1) {
-      KimmiH2Ai().woCostMile();
-      KimmiH2Ai().owMarthaSnarky();
-      KimmiH2Ai().siNoPoland();
+      Kimmi2Stuffy().elWaitressr();
+      Kimmi2Stuffy().oxMileIndian();
     }
-    if (log10e / 2 < 0.1) {
-      beStoreSnoopy();
-      exConcernedPerpetual();
+    if (sqrt1_2 < 0.3) {
+      doFrankChord();
+      abDunphyScholar();
     }
     Get.lazyPut(() => KimmiScareAmenInvoice());
   }

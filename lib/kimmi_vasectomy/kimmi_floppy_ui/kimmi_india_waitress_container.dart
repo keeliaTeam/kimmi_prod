@@ -1,5 +1,5 @@
 import 'dart:math';
-import 'kimmi_twist_tamper.dart';
+import 'kimmi_teaser_tape.dart';
 import 'package:agora_rtc_engine/agora_rtc_engine.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_prototype.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_storm/kimmi_waitress_doggy.dart';

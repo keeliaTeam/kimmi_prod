@@ -1,120 +1,72 @@
 import 'dart:math';
-import 'kimmi_brett_perception.dart';
+import 'kimmi_fraud_up.dart';
 import 'package:get/get.dart';
 
 import 'kimmi_waitress_amen_invoice.dart';
 
 class KimmiWaitressAmenSmart extends Bindings {
-  bool mmMeUnclog_ = false;
-  int reFantasySun_ = 86;
-  String miWartCagey_ = "";
-  bool omWhiteNewlywed_ = false;
-  bool siSpeakUp_ = false;
-  bool hiSullyFrank_ = false;
-  String modLifetime_ = "";
-  String ahHiTrust_ = "";
-  int ohHappyJasmine_ = 0;
-  String siInvadeBathtub_ = "";
+  bool okByeSelfish_ = false;
+  double edScareHammock_ = 0.0;
+  bool joWhaleCalculus_ = false;
+  bool isCultureSully_ = false;
 
-  void meDollyDo() {
-    if (omWhiteNewlywed_ || siSpeakUp_ || hiSullyFrank_) {
-      omWhiteNewlywed_ = !siSpeakUp_;
-      siSpeakUp_ = !hiSullyFrank_;
-      hiSullyFrank_ = !omWhiteNewlywed_;
+  void ifTamperIt() {
+    if (edScareHammock_ > 0) {
+      edScareHammock_ = edScareHammock_ - 1;
+    }
+    if (joWhaleCalculus_ || okByeSelfish_) {
+      okByeSelfish_ = !okByeSelfish_;
     }
 
-    reFantasySun_ = 45;
-    ohHappyJasmine_ = 19;
-    omWhiteNewlywed_ = hiSullyFrank_ && mmMeUnclog_;
-    reFantasySun_ = 45;
-    ohHappyJasmine_ = 25;
-    ahHiTrust_ = modLifetime_;
-    siInvadeBathtub_ = modLifetime_;
-    if (omWhiteNewlywed_ || siSpeakUp_ || mmMeUnclog_) {
-      omWhiteNewlywed_ = !siSpeakUp_;
-      siSpeakUp_ = !mmMeUnclog_;
-      mmMeUnclog_ = !omWhiteNewlywed_;
+    if (edScareHammock_ > 0) {
+      edScareHammock_ = edScareHammock_ - 1;
     }
-    if (hiSullyFrank_ || omWhiteNewlywed_) {
-      omWhiteNewlywed_ = !omWhiteNewlywed_;
-    }
-    if (reFantasySun_ > ohHappyJasmine_) {
-      reFantasySun_ = reFantasySun_ + ohHappyJasmine_;
-    }
-    modLifetime_ = ahHiTrust_;
-    siInvadeBathtub_ = ahHiTrust_;
-    if (hiSullyFrank_ || omWhiteNewlywed_ || siSpeakUp_) {
-      hiSullyFrank_ = !omWhiteNewlywed_;
-      omWhiteNewlywed_ = !siSpeakUp_;
-      siSpeakUp_ = !hiSullyFrank_;
-    }
-    if (hiSullyFrank_) {
-      omWhiteNewlywed_ = !mmMeUnclog_;
-    }
-    reFantasySun_ = 29;
-    ohHappyJasmine_ = 94;
 
-    siSpeakUp_ = omWhiteNewlywed_ && hiSullyFrank_;
-    reFantasySun_ = reFantasySun_ * ohHappyJasmine_;
-    if (hiSullyFrank_ || omWhiteNewlywed_ || mmMeUnclog_) {
-      hiSullyFrank_ = !omWhiteNewlywed_;
-      omWhiteNewlywed_ = !mmMeUnclog_;
-      mmMeUnclog_ = !hiSullyFrank_;
+    if (edScareHammock_ > 0) {
+      edScareHammock_ = edScareHammock_ - 1;
     }
-    if (modLifetime_.length > 8) {
-      miWartCagey_ = modLifetime_;
-    } else {
-      ahHiTrust_ = miWartCagey_;
+    edScareHammock_ = 40;
+
+    edScareHammock_ = 54;
+  }
+
+  void hiConfusionTamper() {
+    if (okByeSelfish_) {
+      joWhaleCalculus_ = !isCultureSully_;
+    }
+
+    edScareHammock_ = 23;
+
+    if (edScareHammock_ > 0) {
+      edScareHammock_ = edScareHammock_ - 1;
     }
   }
 
-  void meWordJam() {
-    omWhiteNewlywed_ = hiSullyFrank_ && mmMeUnclog_;
-
-    hiSullyFrank_ = siSpeakUp_ && mmMeUnclog_;
-    omWhiteNewlywed_ = mmMeUnclog_ && hiSullyFrank_;
-    reFantasySun_ = 60;
-    ohHappyJasmine_ = 52;
-  }
-
-  void maObviousScrap() {
-    reFantasySun_ = reFantasySun_ * ohHappyJasmine_;
-    mmMeUnclog_ = siSpeakUp_ && omWhiteNewlywed_;
-    siInvadeBathtub_ = ahHiTrust_;
-    miWartCagey_ = ahHiTrust_;
-    siInvadeBathtub_ = miWartCagey_ + modLifetime_;
-
-    if (omWhiteNewlywed_ || mmMeUnclog_ || siSpeakUp_) {
-      omWhiteNewlywed_ = !mmMeUnclog_;
-      mmMeUnclog_ = !siSpeakUp_;
-      siSpeakUp_ = !omWhiteNewlywed_;
+  void elChordBite() {
+    if (joWhaleCalculus_ && okByeSelfish_) {
+      isCultureSully_ = !isCultureSully_;
     }
-    siInvadeBathtub_ = modLifetime_ + miWartCagey_;
-  }
 
-  void isSpeedCaltech() {
-    if (hiSullyFrank_ && mmMeUnclog_) {
-      siSpeakUp_ = !siSpeakUp_;
+    if (okByeSelfish_ || joWhaleCalculus_ || isCultureSully_) {
+      okByeSelfish_ = !joWhaleCalculus_;
+      joWhaleCalculus_ = !isCultureSully_;
+      isCultureSully_ = !okByeSelfish_;
     }
-    if (hiSullyFrank_) {
-      mmMeUnclog_ = !siSpeakUp_;
-    }
-    if (reFantasySun_ > ohHappyJasmine_) {
-      reFantasySun_ = reFantasySun_ + ohHappyJasmine_;
-    }
-    reFantasySun_ = reFantasySun_ * ohHappyJasmine_;
-    mmMeUnclog_ = siSpeakUp_ && omWhiteNewlywed_;
+    edScareHammock_ = edScareHammock_ + 1;
+
+    isCultureSully_ = joWhaleCalculus_ && okByeSelfish_;
   }
 
   @override
   void dependencies() {
     if (log10e / 2 < 0.1) {
-      KimmiBrettPerception().hoLoopySubject();
-      KimmiBrettPerception().exTorchTamper();
+      KimmiFraudUp().ofDustyPutz();
+      KimmiFraudUp().owCurvyWhite();
+      KimmiFraudUp().itH2Perception();
     }
-    if (e < 2) {
-      meDollyDo();
-      isSpeedCaltech();
+    if (log2e < 1) {
+      ifTamperIt();
+      hiConfusionTamper();
     }
     Get.lazyPut(() => KimmiWaitressAmenInvoice());
   }

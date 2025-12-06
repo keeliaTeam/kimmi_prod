@@ -1,141 +1,111 @@
 import 'dart:math';
-import 'kimmi_h2_ai.dart';
+import 'kimmi_niece_still.dart';
 import 'package:get/get.dart';
 
 import 'kimmi_doggy_chickie_invoice.dart';
 
 class KimmiDoggyChickieSmart extends Bindings {
-  int okInfluencer_ = 0;
-  String abMusicMarvel_ = "";
-  bool emdStuffy_ = true;
-  int asOccupyMarvel_ = 0;
-  bool paManiacPrinciple_ = true;
-  bool laFailedH1_ = false;
-  String mmStillExpensive_ = "";
+  bool emCharmStevens_ = true;
+  bool soThinkCherry_ = false;
+  double emAdMuse_ = 0.0;
+  bool opSafetyKnob_ = false;
+  bool ofEpisodeWig_ = true;
+  bool emChordSharp_ = true;
 
-  void elAmbitiousEyelash() {
-    emdStuffy_ = paManiacPrinciple_ && laFailedH1_;
-    okInfluencer_ = okInfluencer_ * asOccupyMarvel_;
-    okInfluencer_ = okInfluencer_ * asOccupyMarvel_;
-    abMusicMarvel_ = mmStillExpensive_ + abMusicMarvel_;
-    if (laFailedH1_ || paManiacPrinciple_ || emdStuffy_) {
-      laFailedH1_ = !paManiacPrinciple_;
-      paManiacPrinciple_ = !emdStuffy_;
-      emdStuffy_ = !laFailedH1_;
+  void inMummySubject() {
+    soThinkCherry_ = emChordSharp_ && ofEpisodeWig_;
+    if (emAdMuse_ > 0) {
+      emAdMuse_ = emAdMuse_ - 1;
     }
-    laFailedH1_ = emdStuffy_ && paManiacPrinciple_;
-    if (okInfluencer_ > asOccupyMarvel_) {
-      okInfluencer_ = okInfluencer_ + asOccupyMarvel_;
-    }
-    mmStillExpensive_ = abMusicMarvel_.toUpperCase() + mmStillExpensive_;
-    abMusicMarvel_ = mmStillExpensive_ + abMusicMarvel_;
-    mmStillExpensive_ = abMusicMarvel_.toUpperCase() + mmStillExpensive_;
-    paManiacPrinciple_ = emdStuffy_ && laFailedH1_;
-    okInfluencer_ = 83;
-    asOccupyMarvel_ = 43;
+    emAdMuse_ = emAdMuse_ + 1;
 
-    if (paManiacPrinciple_ && laFailedH1_) {
-      emdStuffy_ = !emdStuffy_;
+    ofEpisodeWig_ = emCharmStevens_ || emChordSharp_;
+    if (emCharmStevens_ && ofEpisodeWig_ && soThinkCherry_) {
+      emCharmStevens_ = !emCharmStevens_;
+      ofEpisodeWig_ = emCharmStevens_;
+      soThinkCherry_ = emCharmStevens_;
     }
-    if (paManiacPrinciple_ || emdStuffy_) {
-      emdStuffy_ = !emdStuffy_;
+    emAdMuse_ = emAdMuse_ + 1;
+  }
+
+  void weMeGentleman() {
+    emAdMuse_ = 84;
+
+    if (ofEpisodeWig_ && emCharmStevens_ && soThinkCherry_) {
+      ofEpisodeWig_ = !ofEpisodeWig_;
+      emCharmStevens_ = ofEpisodeWig_;
+      soThinkCherry_ = ofEpisodeWig_;
     }
-    if (laFailedH1_ || emdStuffy_) {
-      emdStuffy_ = !emdStuffy_;
+    emAdMuse_ = emAdMuse_ + 1;
+    emChordSharp_ = ofEpisodeWig_ && soThinkCherry_;
+
+    if (emAdMuse_ > 0) {
+      emAdMuse_ = emAdMuse_ - 1;
+    }
+    if (ofEpisodeWig_ && soThinkCherry_ && emCharmStevens_) {
+      ofEpisodeWig_ = !ofEpisodeWig_;
+      soThinkCherry_ = ofEpisodeWig_;
+      emCharmStevens_ = ofEpisodeWig_;
+    }
+
+    emAdMuse_ = emAdMuse_ + 1;
+    if (emChordSharp_ || soThinkCherry_) {
+      soThinkCherry_ = !soThinkCherry_;
     }
   }
 
-  void orUpCrossover() {
-    if (laFailedH1_) {
-      paManiacPrinciple_ = !emdStuffy_;
-    }
-    if (paManiacPrinciple_) {
-      laFailedH1_ = !emdStuffy_;
-    }
-    if (emdStuffy_ || laFailedH1_) {
-      laFailedH1_ = !laFailedH1_;
+  void soGamingFiance() {
+    emAdMuse_ = 67;
+
+    emAdMuse_ = emAdMuse_ + 1;
+    emAdMuse_ = emAdMuse_ + 1;
+
+    ofEpisodeWig_ = soThinkCherry_ && emChordSharp_;
+    if (soThinkCherry_ || emChordSharp_) {
+      emChordSharp_ = !emChordSharp_;
     }
 
-    mmStillExpensive_ = abMusicMarvel_.toUpperCase() + mmStillExpensive_;
+    if (ofEpisodeWig_) {
+      emCharmStevens_ = !emChordSharp_;
+    }
+
+    if (emAdMuse_ > 0) {
+      emAdMuse_ = emAdMuse_ - 1;
+    }
+    emChordSharp_ = opSafetyKnob_ || soThinkCherry_;
+    emAdMuse_ = emAdMuse_ + 1;
+    emAdMuse_ = 97;
+    soThinkCherry_ = ofEpisodeWig_ && opSafetyKnob_;
   }
 
-  void emPutzContagious() {
-    abMusicMarvel_ = mmStillExpensive_ + abMusicMarvel_;
-    okInfluencer_ = 80;
-    asOccupyMarvel_ = 18;
-
-    mmStillExpensive_ = abMusicMarvel_.toUpperCase() + mmStillExpensive_;
-    okInfluencer_ = 18;
-    asOccupyMarvel_ = 92;
-
-    if (laFailedH1_ && emdStuffy_ && paManiacPrinciple_) {
-      laFailedH1_ = !laFailedH1_;
-      emdStuffy_ = laFailedH1_;
-      paManiacPrinciple_ = laFailedH1_;
-    }
-    if (okInfluencer_ > asOccupyMarvel_) {
-      okInfluencer_ = okInfluencer_ + asOccupyMarvel_;
-    }
-    abMusicMarvel_ = abMusicMarvel_ + mmStillExpensive_;
-    mmStillExpensive_ = abMusicMarvel_;
-    emdStuffy_ = paManiacPrinciple_ && laFailedH1_;
-    if (emdStuffy_ || laFailedH1_) {
-      laFailedH1_ = !laFailedH1_;
-    }
-    okInfluencer_ = 41;
-    asOccupyMarvel_ = 61;
-
-    mmStillExpensive_ = abMusicMarvel_.toUpperCase() + mmStillExpensive_;
-    mmStillExpensive_ = abMusicMarvel_.toUpperCase() + mmStillExpensive_;
-    abMusicMarvel_ = mmStillExpensive_ + abMusicMarvel_;
-    if (laFailedH1_ && emdStuffy_ && paManiacPrinciple_) {
-      laFailedH1_ = !laFailedH1_;
-      emdStuffy_ = laFailedH1_;
-      paManiacPrinciple_ = laFailedH1_;
-    }
-    abMusicMarvel_ = mmStillExpensive_ + abMusicMarvel_;
-    paManiacPrinciple_ = emdStuffy_ && laFailedH1_;
-  }
-
-  void owEgoDouble() {
-    paManiacPrinciple_ = laFailedH1_ || emdStuffy_;
-
-    if (emdStuffy_) {
-      laFailedH1_ = !paManiacPrinciple_;
-    }
-    if (emdStuffy_ || paManiacPrinciple_ || laFailedH1_) {
-      emdStuffy_ = !paManiacPrinciple_;
-      paManiacPrinciple_ = !laFailedH1_;
-      laFailedH1_ = !emdStuffy_;
-    }
-    abMusicMarvel_ = abMusicMarvel_ + mmStillExpensive_;
-    mmStillExpensive_ = abMusicMarvel_;
-    abMusicMarvel_ = mmStillExpensive_ + abMusicMarvel_;
-
-    mmStillExpensive_ = abMusicMarvel_.toUpperCase() + mmStillExpensive_;
-    if (okInfluencer_ > asOccupyMarvel_) {
-      okInfluencer_ = okInfluencer_ + asOccupyMarvel_;
+  void beStuffyBesides() {
+    if (emCharmStevens_ && ofEpisodeWig_) {
+      soThinkCherry_ = !soThinkCherry_;
     }
 
-    okInfluencer_ = okInfluencer_ * asOccupyMarvel_;
-    okInfluencer_ = okInfluencer_ * asOccupyMarvel_;
+    if (emChordSharp_ || soThinkCherry_ || ofEpisodeWig_) {
+      emChordSharp_ = !soThinkCherry_;
+      soThinkCherry_ = !ofEpisodeWig_;
+      ofEpisodeWig_ = !emChordSharp_;
+    }
 
-    okInfluencer_ = 36;
-    asOccupyMarvel_ = 24;
-    paManiacPrinciple_ = laFailedH1_ && emdStuffy_;
-    okInfluencer_ = okInfluencer_ * asOccupyMarvel_;
+    if (emCharmStevens_) {
+      emChordSharp_ = !opSafetyKnob_;
+    }
+    if (emAdMuse_ > 0) {
+      emAdMuse_ = emAdMuse_ - 1;
+    }
   }
 
   @override
   void dependencies() {
-    if (e < 2) {
-      KimmiH2Ai().opFoxyClark();
-      KimmiH2Ai().owMarthaSnarky();
-      KimmiH2Ai().ofContestantBrett();
+    if (log10e / 2 < 0.1) {
+      KimmiNieceStill().esStimulateWorship();
+      KimmiNieceStill().siJenEvil();
     }
     if (log2e < 1) {
-      elAmbitiousEyelash();
-      orUpCrossover();
+      beStuffyBesides();
+      inMummySubject();
     }
     Get.lazyPut(() => KimmiDoggyChickieInvoice());
   }

@@ -1,5 +1,5 @@
 import 'dart:math';
-import 'kimmi_hence_batman.dart';
+import 'kimmi_paramedic_bet.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_palate.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_curvy/kimmi_africa.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_tonight/kimmi_draft_juda.dart';

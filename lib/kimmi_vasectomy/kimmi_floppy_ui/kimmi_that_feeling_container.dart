@@ -1,5 +1,5 @@
 import 'dart:math';
-import 'kimmi_milkshake_mayhem.dart';
+import 'kimmi_d_tradition.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_juda/kimmi_manifest.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';

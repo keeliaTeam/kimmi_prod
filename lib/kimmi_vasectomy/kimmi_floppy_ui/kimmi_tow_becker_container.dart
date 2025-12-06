@@ -1,5 +1,5 @@
 import 'dart:math';
-import 'kimmi_sutra_ninja.dart';
+import 'kimmi_thrive_h3.dart';
 import 'dart:math';
 
 import 'package:kimmi/kimmi_vasectomy/kimmi_curvy/kimmi_africa.dart';

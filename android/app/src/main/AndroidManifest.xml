@@ -20,6 +20,15 @@
         android:networkSecurityConfig="@xml/network_security_config"
         android:icon="@mipmap/ic_launcher"
         android:theme="@style/LaunchTheme">
+        <!-- Support for 16KB page size devices (Android 15+) -->
+        <!-- Page size support -->
+        <property
+            android:name="android.allow16kbPageSize"
+            android:value="true" />
+
+        <property
+            android:name="android.app.PROPERTY_SUPPORTED_PAGE_SIZES"
+            android:value="4k,16k" />
         <activity
             android:name=".MainActivity"
             android:exported="true"

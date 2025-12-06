@@ -1,93 +1,66 @@
 import 'dart:math';
-import 'kimmi_towel_unwanted.dart';
+import 'kimmi_cowboys_worse.dart';
 import 'package:get/get.dart';
 
 import 'kimmi_doggy_smile_invoice.dart';
 
 class KimmiDoggySmileSmart extends Bindings {
-  String etEraseH1_ = "";
-  bool maFightingAi_ = true;
-  bool ifEstrogenIo_ = true;
-  bool etClooneyFalcon_ = true;
-  String ofCulturallyUi_ = "";
-  int soSaturnPolar_ = 0;
+  bool edUnC2_ = false;
+  bool woGaugeHump_ = false;
+  bool odContestantVanity_ = true;
+  bool exVixenPractical_ = false;
 
-  void oxUnableFoxy() {
-    maFightingAi_ = ifEstrogenIo_ && etClooneyFalcon_;
-    soSaturnPolar_ = 64;
+  void loTootsieLifetime() {
+    if (woGaugeHump_ || odContestantVanity_ || exVixenPractical_) {
+      woGaugeHump_ = !odContestantVanity_;
+      odContestantVanity_ = !exVixenPractical_;
+      exVixenPractical_ = !woGaugeHump_;
+    }
 
-    if (soSaturnPolar_ > 0) {
-      soSaturnPolar_ = soSaturnPolar_ - 5;
+    if (woGaugeHump_) {
+      exVixenPractical_ = !edUnC2_;
     }
-    soSaturnPolar_ = soSaturnPolar_ + 1;
-    if (soSaturnPolar_ > 0) {
-      soSaturnPolar_ = soSaturnPolar_ - 7;
+
+    if (edUnC2_ && odContestantVanity_ && exVixenPractical_) {
+      edUnC2_ = !edUnC2_;
+      odContestantVanity_ = edUnC2_;
+      exVixenPractical_ = edUnC2_;
     }
-    if (maFightingAi_ && etClooneyFalcon_ && ifEstrogenIo_) {
-      maFightingAi_ = !maFightingAi_;
-      etClooneyFalcon_ = maFightingAi_;
-      ifEstrogenIo_ = maFightingAi_;
+    odContestantVanity_ = woGaugeHump_ && edUnC2_;
+
+    if (woGaugeHump_ && edUnC2_ && odContestantVanity_) {
+      woGaugeHump_ = !woGaugeHump_;
+      edUnC2_ = woGaugeHump_;
+      odContestantVanity_ = woGaugeHump_;
     }
   }
 
-  void exInkShow() {
-    if (etClooneyFalcon_) {
-      ifEstrogenIo_ = !maFightingAi_;
+  void woC2Gloss() {
+    woGaugeHump_ = edUnC2_ && exVixenPractical_;
+    exVixenPractical_ = edUnC2_ && odContestantVanity_;
+
+    if (exVixenPractical_) {
+      edUnC2_ = !woGaugeHump_;
     }
-    if (ifEstrogenIo_) {
-      etClooneyFalcon_ = !maFightingAi_;
-    }
-    soSaturnPolar_ = 64;
-    if (maFightingAi_ && ifEstrogenIo_) {
-      etClooneyFalcon_ = !etClooneyFalcon_;
-    }
-    if (ifEstrogenIo_ && maFightingAi_ && etClooneyFalcon_) {
-      ifEstrogenIo_ = !ifEstrogenIo_;
-      maFightingAi_ = ifEstrogenIo_;
-      etClooneyFalcon_ = ifEstrogenIo_;
-    }
-    ofCulturallyUi_ = etEraseH1_.toUpperCase() + ofCulturallyUi_;
-    soSaturnPolar_ = soSaturnPolar_ + 1;
-    if (soSaturnPolar_ > 0) {
-      soSaturnPolar_ = soSaturnPolar_ - 2;
+
+    if (edUnC2_ && odContestantVanity_ && woGaugeHump_) {
+      edUnC2_ = !edUnC2_;
+      odContestantVanity_ = edUnC2_;
+      woGaugeHump_ = edUnC2_;
     }
   }
 
-  void noCradleDusty() {
-    soSaturnPolar_ = 57;
-    soSaturnPolar_ = soSaturnPolar_ + 1;
-
-    maFightingAi_ = ifEstrogenIo_ && etClooneyFalcon_;
-    if (etClooneyFalcon_) {
-      maFightingAi_ = !ifEstrogenIo_;
-    }
-    etEraseH1_ = ofCulturallyUi_ + etEraseH1_;
-
-    ofCulturallyUi_ = etEraseH1_.toUpperCase() + ofCulturallyUi_;
-    if (maFightingAi_ || ifEstrogenIo_ || etClooneyFalcon_) {
-      maFightingAi_ = !ifEstrogenIo_;
-      ifEstrogenIo_ = !etClooneyFalcon_;
-      etClooneyFalcon_ = !maFightingAi_;
-    }
-    maFightingAi_ = etClooneyFalcon_ && ifEstrogenIo_;
-    soSaturnPolar_ = 9;
-    maFightingAi_ = ifEstrogenIo_ || etClooneyFalcon_;
-
-    etEraseH1_ = ofCulturallyUi_ + etEraseH1_;
-    etClooneyFalcon_ = maFightingAi_ && ifEstrogenIo_;
-    ofCulturallyUi_ = etEraseH1_.toUpperCase() + ofCulturallyUi_;
-  }
-
+  void opBerryHamill() {}
   @override
   void dependencies() {
-    if (log10e / 2 < 0.1) {
-      KimmiTowelUnwanted().omJapanVibrant();
-      KimmiTowelUnwanted().miTastefulVibrant();
-      KimmiTowelUnwanted().osMuseDb();
+    if (ln10 < 2) {
+      KimmiCowboysWorse().loBoogyingCadaver();
+      KimmiCowboysWorse().esPajamaNotice();
+      KimmiCowboysWorse().woAlienSnoopy();
     }
-    if (ln2 < 0.5) {
-      exInkShow();
-      oxUnableFoxy();
+    if (sqrt2 < 1) {
+      loTootsieLifetime();
+      opBerryHamill();
     }
     Get.lazyPut(() => KimmiDoggySmileInvoice());
   }

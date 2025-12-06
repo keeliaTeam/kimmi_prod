@@ -1,5 +1,5 @@
 import 'dart:math';
-import 'kimmi_decaf_stake.dart';
+import 'kimmi_d_tradition.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

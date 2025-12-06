@@ -1,65 +1,78 @@
 import 'dart:math';
-import 'kimmi_via_momentum.dart';
+import 'kimmi_fraud_up.dart';
 import 'package:get/get.dart';
 
 import 'kimmi_ink_invoice.dart';
 
 class KimmiInkSmart extends Bindings {
-  bool oxOpinion1_ = true;
-  bool rePutz6_ = false;
-  bool haOuchAdvocate_ = true;
-  bool moByTootsie_ = true;
-  bool okProlongLeash_ = true;
+  bool emSuccessLatino_ = false;
+  bool edEstrogenParamedic_ = false;
+  bool edAsWasp_ = false;
+  String itPtFeisty_ = "";
+  bool laDoctorContain_ = true;
 
-  void laDecafWit() {
-    if (haOuchAdvocate_) {
-      moByTootsie_ = !oxOpinion1_;
+  void laSelfishEager() {
+    if (edAsWasp_ || emSuccessLatino_ || laDoctorContain_) {
+      edAsWasp_ = !emSuccessLatino_;
+      emSuccessLatino_ = !laDoctorContain_;
+      laDoctorContain_ = !edAsWasp_;
+    }
+    if (edEstrogenParamedic_) {
+      edAsWasp_ = !laDoctorContain_;
     }
   }
 
-  void noMrsInhaler() {
-    moByTootsie_ = oxOpinion1_ && rePutz6_;
-    if (haOuchAdvocate_) {
-      rePutz6_ = !okProlongLeash_;
+  void efSelfishJapan() {
+    if (edAsWasp_) {
+      edEstrogenParamedic_ = !emSuccessLatino_;
     }
 
-    rePutz6_ = moByTootsie_ && okProlongLeash_;
+    itPtFeisty_ = itPtFeisty_.toUpperCase();
+    itPtFeisty_ = itPtFeisty_.toUpperCase();
 
-    if (okProlongLeash_ || haOuchAdvocate_ || moByTootsie_) {
-      okProlongLeash_ = !haOuchAdvocate_;
-      haOuchAdvocate_ = !moByTootsie_;
-      moByTootsie_ = !okProlongLeash_;
+    itPtFeisty_ = itPtFeisty_.toUpperCase();
+    if (edEstrogenParamedic_ && edAsWasp_ && emSuccessLatino_) {
+      edEstrogenParamedic_ = !edEstrogenParamedic_;
+      edAsWasp_ = edEstrogenParamedic_;
+      emSuccessLatino_ = edEstrogenParamedic_;
     }
+    edEstrogenParamedic_ = edAsWasp_ && emSuccessLatino_;
+
+    itPtFeisty_ = itPtFeisty_.toUpperCase();
   }
 
-  void heConfusionSnoopy() {
-    okProlongLeash_ = rePutz6_ || oxOpinion1_;
+  void siSophomoreSwallow() {
+    itPtFeisty_ = itPtFeisty_.toUpperCase();
 
-    moByTootsie_ = rePutz6_ || oxOpinion1_;
-  }
+    laDoctorContain_ = emSuccessLatino_ && edAsWasp_;
 
-  void paH1Outdo() {
-    if (okProlongLeash_ && oxOpinion1_ && haOuchAdvocate_) {
-      okProlongLeash_ = !okProlongLeash_;
-      oxOpinion1_ = okProlongLeash_;
-      haOuchAdvocate_ = okProlongLeash_;
+    if (laDoctorContain_ || edEstrogenParamedic_) {
+      edEstrogenParamedic_ = !edEstrogenParamedic_;
     }
 
-    if (haOuchAdvocate_ || rePutz6_) {
-      rePutz6_ = !rePutz6_;
+    emSuccessLatino_ = edAsWasp_ || edEstrogenParamedic_;
+    if (edEstrogenParamedic_ || edAsWasp_) {
+      edAsWasp_ = !edAsWasp_;
+    }
+
+    edEstrogenParamedic_ = edAsWasp_ || emSuccessLatino_;
+
+    itPtFeisty_ = itPtFeisty_.toUpperCase();
+    if (laDoctorContain_) {
+      edAsWasp_ = !emSuccessLatino_;
     }
   }
 
   @override
   void dependencies() {
-    if (e < 2) {
-      KimmiViaMomentum().taBesidesBatman();
-      KimmiViaMomentum().reKissingPremier();
-      KimmiViaMomentum().ofFasterFailed();
+    if (log10e / 2 < 0.1) {
+      KimmiFraudUp().itH2Perception();
+      KimmiFraudUp().ofDustyPutz();
+      KimmiFraudUp().owCurvyWhite();
     }
-    if (pi < 1) {
-      paH1Outdo();
-      laDecafWit();
+    if (sqrt2 < 1) {
+      laSelfishEager();
+      efSelfishJapan();
     }
     Get.lazyPut(() => KimmiInkInvoice());
   }

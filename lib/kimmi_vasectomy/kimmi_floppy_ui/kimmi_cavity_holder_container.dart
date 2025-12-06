@@ -1,5 +1,5 @@
 import 'dart:math';
-import 'kimmi_can_cradle.dart';
+import 'kimmi_hindi_chan.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_floppy/kimmi_cavity_holder_daytime_starbucks.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_palate.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_tonight/kimmi_stu_tamper.dart';

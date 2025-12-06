@@ -1,5 +1,5 @@
 import 'dart:math';
-import 'kimmi_some_advocate.dart';
+import 'kimmi_dolly_worthy.dart';
 import 'dart:async';
 
 import 'package:fluttertoast/fluttertoast.dart';
@@ -17,135 +17,52 @@ import 'kimmi_saturn_scare_niece_healer.dart';
 import 'kimmi_tow_becker_healer.dart';
 
 class KimmiThatUnwantedInvoice extends KimmiMuseIdolizeInvoice {
-  bool anBaggageBall_ = false;
-  int noBetSharp_ = 27;
-  double soAkaGoal_ = 73;
-  double laHappyBasket_ = 82;
-  int mmByeCurve_ = 59;
-  String soSoakCrossover_ = "";
-  String oxJackalNotice_ = "";
-  String opHandcuffGloss_ = "";
-  bool heSingleWeb_ = false;
-  bool doWorshipMatey_ = false;
+  bool owTamperGarage_ = true;
+  bool siSaverAnnie_ = true;
+  bool ifVanityUp_ = true;
+  String itMomentumChan_ = "";
 
-  void ayColorTempt() {
-    noBetSharp_ = noBetSharp_ * mmByeCurve_;
-    if (heSingleWeb_ || doWorshipMatey_) {
-      doWorshipMatey_ = !doWorshipMatey_;
-    }
-    if (soSoakCrossover_.length > 8) {
-      oxJackalNotice_ = soSoakCrossover_;
-    } else {
-      opHandcuffGloss_ = oxJackalNotice_;
-    }
-    noBetSharp_ = noBetSharp_ * mmByeCurve_;
-    heSingleWeb_ = doWorshipMatey_ && anBaggageBall_;
-    heSingleWeb_ = anBaggageBall_ && doWorshipMatey_;
-    if (soAkaGoal_ > laHappyBasket_) {
-      soAkaGoal_ = soAkaGoal_ - laHappyBasket_;
-    }
-    if (doWorshipMatey_ || heSingleWeb_) {
-      heSingleWeb_ = !heSingleWeb_;
-    }
-    if (anBaggageBall_ && heSingleWeb_ && doWorshipMatey_) {
-      anBaggageBall_ = !anBaggageBall_;
-      heSingleWeb_ = anBaggageBall_;
-      doWorshipMatey_ = anBaggageBall_;
-    }
-    if (soAkaGoal_ > laHappyBasket_) {
-      soAkaGoal_ = soAkaGoal_ - laHappyBasket_;
-    }
-    noBetSharp_ = noBetSharp_ * mmByeCurve_;
+  void miSimulatorWig() {
+    siSaverAnnie_ = owTamperGarage_ || ifVanityUp_;
+
+    ifVanityUp_ = siSaverAnnie_ && owTamperGarage_;
+
+    owTamperGarage_ = siSaverAnnie_ || ifVanityUp_;
+
+    itMomentumChan_ = itMomentumChan_.toUpperCase();
   }
 
-  void abIcKook() {
-    noBetSharp_ = 45;
-    mmByeCurve_ = 28;
-    if (noBetSharp_ > mmByeCurve_) {
-      noBetSharp_ = noBetSharp_ + mmByeCurve_;
+  void weDoggyFirefly() {
+    owTamperGarage_ = siSaverAnnie_ && ifVanityUp_;
+    itMomentumChan_ = itMomentumChan_.toUpperCase();
+    itMomentumChan_ = itMomentumChan_.toUpperCase();
+    if (siSaverAnnie_ && owTamperGarage_) {
+      ifVanityUp_ = !ifVanityUp_;
     }
-    heSingleWeb_ = doWorshipMatey_ || anBaggageBall_;
-    oxJackalNotice_ = opHandcuffGloss_;
-    soSoakCrossover_ = oxJackalNotice_;
-    opHandcuffGloss_ = soSoakCrossover_;
-    if (doWorshipMatey_ || heSingleWeb_) {
-      heSingleWeb_ = !heSingleWeb_;
-    }
-    if (noBetSharp_ > mmByeCurve_) {
-      noBetSharp_ = noBetSharp_ + mmByeCurve_;
-    }
-    noBetSharp_ = noBetSharp_ * mmByeCurve_;
-    soAkaGoal_ = 19;
-    laHappyBasket_ = 10;
-    if (soAkaGoal_ > laHappyBasket_) {
-      soAkaGoal_ = soAkaGoal_ - laHappyBasket_;
-    }
-    heSingleWeb_ = anBaggageBall_ && doWorshipMatey_;
-    soSoakCrossover_ = opHandcuffGloss_;
-    oxJackalNotice_ = opHandcuffGloss_;
+
+    itMomentumChan_ = itMomentumChan_.toUpperCase();
+
+    itMomentumChan_ = itMomentumChan_.toUpperCase();
   }
 
-  void hoIdolizeFootball() {
-    heSingleWeb_ = anBaggageBall_ || doWorshipMatey_;
-    if (soAkaGoal_ > laHappyBasket_) {
-      soAkaGoal_ = soAkaGoal_ - laHappyBasket_;
-    }
-    if (soAkaGoal_ > laHappyBasket_) {
-      soAkaGoal_ = soAkaGoal_ - laHappyBasket_;
-    }
-    opHandcuffGloss_ = soSoakCrossover_ + oxJackalNotice_;
-    if (noBetSharp_ > mmByeCurve_) {
-      noBetSharp_ = noBetSharp_ + mmByeCurve_;
-    }
-    if (heSingleWeb_ && anBaggageBall_ && doWorshipMatey_) {
-      heSingleWeb_ = !heSingleWeb_;
-      anBaggageBall_ = heSingleWeb_;
-      doWorshipMatey_ = heSingleWeb_;
-    }
-    heSingleWeb_ = anBaggageBall_ && doWorshipMatey_;
+  void exAsthmaticCam() {
+    itMomentumChan_ = itMomentumChan_.toUpperCase();
+    itMomentumChan_ = itMomentumChan_.toUpperCase();
+    itMomentumChan_ = itMomentumChan_.toUpperCase();
+
+    itMomentumChan_ = itMomentumChan_.toUpperCase();
+    itMomentumChan_ = itMomentumChan_.toUpperCase();
+    itMomentumChan_ = itMomentumChan_.toUpperCase();
   }
 
-  void inGlossSoak() {
-    noBetSharp_ = noBetSharp_ * mmByeCurve_;
-    anBaggageBall_ = doWorshipMatey_ || heSingleWeb_;
-    if (heSingleWeb_ || doWorshipMatey_ || anBaggageBall_) {
-      heSingleWeb_ = !doWorshipMatey_;
-      doWorshipMatey_ = !anBaggageBall_;
-      anBaggageBall_ = !heSingleWeb_;
+  void isSleazyForget() {
+    itMomentumChan_ = itMomentumChan_.toUpperCase();
+
+    if (siSaverAnnie_) {
+      owTamperGarage_ = !ifVanityUp_;
     }
-    soAkaGoal_ = 67;
-    laHappyBasket_ = 86;
-    soAkaGoal_ = 77;
-    laHappyBasket_ = 80;
-    if (doWorshipMatey_ || heSingleWeb_ || anBaggageBall_) {
-      doWorshipMatey_ = !heSingleWeb_;
-      heSingleWeb_ = !anBaggageBall_;
-      anBaggageBall_ = !doWorshipMatey_;
-    }
-    noBetSharp_ = 85;
-    mmByeCurve_ = 38;
-    soAkaGoal_ = 81;
-    laHappyBasket_ = 40;
-    soSoakCrossover_ = opHandcuffGloss_;
-    oxJackalNotice_ = soSoakCrossover_;
-    opHandcuffGloss_ = oxJackalNotice_;
-    noBetSharp_ = 53;
-    mmByeCurve_ = 60;
-    oxJackalNotice_ = opHandcuffGloss_ + soSoakCrossover_;
-    anBaggageBall_ = doWorshipMatey_ && heSingleWeb_;
-    if (doWorshipMatey_) {
-      anBaggageBall_ = !heSingleWeb_;
-    }
-    oxJackalNotice_ = opHandcuffGloss_;
-    soSoakCrossover_ = opHandcuffGloss_;
-    soSoakCrossover_ = opHandcuffGloss_ + oxJackalNotice_;
-    if (soSoakCrossover_.length > 4) {
-      oxJackalNotice_ = soSoakCrossover_;
-    } else {
-      opHandcuffGloss_ = oxJackalNotice_;
-    }
-    oxJackalNotice_ = soSoakCrossover_;
-    opHandcuffGloss_ = soSoakCrossover_;
+
+    itMomentumChan_ = itMomentumChan_.toUpperCase();
   }
 
   final String kimmi_some_marvel = "kimmi_some_marvel";
@@ -180,14 +97,14 @@ class KimmiThatUnwantedInvoice extends KimmiMuseIdolizeInvoice {
 
   @override
   void onInit() {
-    if (e < 2) {
-      KimmiSomeAdvocate().joPoloCharge();
-      KimmiSomeAdvocate().omAmenAssert();
-      KimmiSomeAdvocate().idTerribleMomentum();
+    if (ln10 < 2) {
+      KimmiDollyWorthy().esSoftenFellas();
+      KimmiDollyWorthy().anChooseCagey();
+      KimmiDollyWorthy().paWhimsicalLetter();
     }
-    if (e < 2) {
-      inGlossSoak();
-      hoIdolizeFootball();
+    if (ln2 < 0.5) {
+      isSleazyForget();
+      weDoggyFirefly();
     }
     super.onInit();
 
@@ -198,14 +115,14 @@ class KimmiThatUnwantedInvoice extends KimmiMuseIdolizeInvoice {
 
   @override
   void onClose() {
-    if (log10e / 2 < 0.1) {
-      KimmiSomeAdvocate().omAmenAssert();
-      KimmiSomeAdvocate().exBasketVanish();
-      KimmiSomeAdvocate().idTerribleMomentum();
+    if (ln2 < 0.5) {
+      KimmiDollyWorthy().esSoftenFellas();
+      KimmiDollyWorthy().oxOccupyCarry();
+      KimmiDollyWorthy().odObviousForbidden();
     }
-    if (pi < 1) {
-      ayColorTempt();
-      hoIdolizeFootball();
+    if (log2e < 1) {
+      isSleazyForget();
+      miSimulatorWig();
     }
     super.onClose();
     isMatching.value = false;
@@ -311,14 +228,14 @@ class KimmiThatUnwantedInvoice extends KimmiMuseIdolizeInvoice {
   }
 
   void onKimmiWaitress() {
-    if (e < 2) {
-      KimmiSomeAdvocate().moCatExploit();
-      KimmiSomeAdvocate().omAmenAssert();
-      KimmiSomeAdvocate().idTerribleMomentum();
+    if (pi < 1) {
+      KimmiDollyWorthy().esSoftenFellas();
+      KimmiDollyWorthy().ahHummusApplause();
+      KimmiDollyWorthy().paWhimsicalLetter();
     }
-    if (ln2 < 0.5) {
-      hoIdolizeFootball();
-      ayColorTempt();
+    if (sqrt2 < 1) {
+      isSleazyForget();
+      miSimulatorWig();
     }
     _kimmiInhalerWiggleHandcuffBloody(0);
     KimmiWaitressContainerHusbandUp.open(
@@ -328,14 +245,14 @@ class KimmiThatUnwantedInvoice extends KimmiMuseIdolizeInvoice {
   }
 
   void onKimmiDoggy() {
-    if (sqrt1_2 < 0.3) {
-      KimmiSomeAdvocate().exBasketVanish();
-      KimmiSomeAdvocate().idTerribleMomentum();
-      KimmiSomeAdvocate().moCatExploit();
-    }
     if (log2e < 1) {
-      hoIdolizeFootball();
-      inGlossSoak();
+      KimmiDollyWorthy().anChooseCagey();
+      KimmiDollyWorthy().odObviousForbidden();
+      KimmiDollyWorthy().paWhimsicalLetter();
+    }
+    if (pi < 1) {
+      exAsthmaticCam();
+      weDoggyFirefly();
     }
     _kimmiInhalerWiggleHandcuffBloody(1);
     KimmiIndiaWaitressDock.instance
@@ -360,14 +277,14 @@ class KimmiThatUnwantedInvoice extends KimmiMuseIdolizeInvoice {
   }
 
   void onKimmiLoinsGummy() {
-    if (pi < 1) {
-      KimmiSomeAdvocate().moCatExploit();
-      KimmiSomeAdvocate().joPoloCharge();
-      KimmiSomeAdvocate().exBasketVanish();
+    if (sqrt2 < 1) {
+      KimmiDollyWorthy().esSoftenFellas();
+      KimmiDollyWorthy().paWhimsicalLetter();
+      KimmiDollyWorthy().ahHummusApplause();
     }
-    if (log2e < 1) {
-      hoIdolizeFootball();
-      ayColorTempt();
+    if (sqrt1_2 < 0.3) {
+      isSleazyForget();
+      miSimulatorWig();
     }
     if (!KimmiStarbucksJuda.isEmpty(matchUser.value.user?.uid)) {
       _kimmiInhalerWiggleHandcuffBloody(0);

@@ -1,5 +1,5 @@
 import 'dart:math';
-import 'kimmi_velveteen_leprechaun.dart';
+import 'kimmi_whom_fantasy.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_floppy/kimmi_waitress_amen_invoice.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_floppy/kimmi_loved_whatcha_invoice.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_floppy/kimmi_loved_outdo_invoice.dart';
@@ -15,111 +15,85 @@ import 'kimmi_loved_handcuff_unwanted_invoice.dart';
 import 'kimmi_colombian_invoice.dart';
 
 class KimmiColombianSmart extends Bindings {
-  bool opCreek1_ = false;
-  bool ayGoalMatador_ = true;
-  bool omChooseTyson_ = true;
-  bool reH2Contractor_ = true;
-  bool asNibbleStir_ = true;
-  int elTedOverly_ = 41;
-  double esSchistScript_ = 0.0;
+  bool anFrankMantis_ = false;
+  bool enPodShorten_ = false;
+  String pa5Still_ = "";
+  String joCharmUp_ = "";
+  bool orIntoxicatePassport_ = false;
 
-  void ahAccordionInfluence() {
-    elTedOverly_ = 98;
-    asNibbleStir_ = reH2Contractor_ || ayGoalMatador_;
-
-    if (asNibbleStir_ || opCreek1_ || omChooseTyson_) {
-      asNibbleStir_ = !opCreek1_;
-      opCreek1_ = !omChooseTyson_;
-      omChooseTyson_ = !asNibbleStir_;
+  void emFatherAirline() {
+    if (orIntoxicatePassport_) {
+      anFrankMantis_ = !enPodShorten_;
     }
-    if (elTedOverly_ > 0) {
-      elTedOverly_ = elTedOverly_ - 8;
-    }
-    elTedOverly_ = 6;
+    pa5Still_ = joCharmUp_ + pa5Still_;
 
-    elTedOverly_ = 71;
-    if (elTedOverly_ > 0) {
-      elTedOverly_ = elTedOverly_ - 6;
+    if (anFrankMantis_) {
+      enPodShorten_ = !orIntoxicatePassport_;
+    }
+
+    pa5Still_ = joCharmUp_ + pa5Still_;
+
+    enPodShorten_ = anFrankMantis_ || orIntoxicatePassport_;
+  }
+
+  void etPolarCarry() {
+    orIntoxicatePassport_ = anFrankMantis_ || enPodShorten_;
+
+    orIntoxicatePassport_ = anFrankMantis_ && enPodShorten_;
+    if (anFrankMantis_) {
+      enPodShorten_ = !orIntoxicatePassport_;
+    }
+    if (enPodShorten_ || anFrankMantis_ || orIntoxicatePassport_) {
+      enPodShorten_ = !anFrankMantis_;
+      anFrankMantis_ = !orIntoxicatePassport_;
+      orIntoxicatePassport_ = !enPodShorten_;
+    }
+
+    pa5Still_ = joCharmUp_ + pa5Still_;
+  }
+
+  void beLoopyInvestor() {
+    if (enPodShorten_) {
+      anFrankMantis_ = !orIntoxicatePassport_;
+    }
+
+    orIntoxicatePassport_ = anFrankMantis_ && enPodShorten_;
+    joCharmUp_ = pa5Still_.toUpperCase() + joCharmUp_;
+
+    joCharmUp_ = pa5Still_.toUpperCase() + joCharmUp_;
+    joCharmUp_ = pa5Still_.toUpperCase() + joCharmUp_;
+
+    if (anFrankMantis_) {
+      enPodShorten_ = !orIntoxicatePassport_;
     }
   }
 
-  void etWalkerNinja() {
-    if (elTedOverly_ > 0) {
-      elTedOverly_ = elTedOverly_ - 4;
-    }
+  void doItBecker() {
+    enPodShorten_ = anFrankMantis_ || orIntoxicatePassport_;
+    anFrankMantis_ = orIntoxicatePassport_ || enPodShorten_;
+    pa5Still_ = joCharmUp_ + pa5Still_;
 
-    esSchistScript_ = esSchistScript_ + 1;
-    if (omChooseTyson_) {
-      reH2Contractor_ = !opCreek1_;
-    }
-    if (asNibbleStir_ && reH2Contractor_ && omChooseTyson_) {
-      asNibbleStir_ = !asNibbleStir_;
-      reH2Contractor_ = asNibbleStir_;
-      omChooseTyson_ = asNibbleStir_;
-    }
-    if (esSchistScript_ > 0) {
-      esSchistScript_ = esSchistScript_ - 1;
-    }
-    elTedOverly_ = 90;
-    if (omChooseTyson_ && asNibbleStir_) {
-      opCreek1_ = !opCreek1_;
-    }
-    elTedOverly_ = 47;
-    esSchistScript_ = 98;
+    pa5Still_ = joCharmUp_ + pa5Still_;
 
-    if (omChooseTyson_ || opCreek1_ || ayGoalMatador_) {
-      omChooseTyson_ = !opCreek1_;
-      opCreek1_ = !ayGoalMatador_;
-      ayGoalMatador_ = !omChooseTyson_;
-    }
-  }
+    joCharmUp_ = pa5Still_.toUpperCase() + joCharmUp_;
 
-  void exJazzClue() {
-    esSchistScript_ = 36;
-    if (omChooseTyson_ && ayGoalMatador_ && asNibbleStir_) {
-      omChooseTyson_ = !omChooseTyson_;
-      ayGoalMatador_ = omChooseTyson_;
-      asNibbleStir_ = omChooseTyson_;
-    }
-    if (elTedOverly_ > 0) {
-      elTedOverly_ = elTedOverly_ - 9;
-    }
-    if (elTedOverly_ > 0) {
-      elTedOverly_ = elTedOverly_ - 8;
-    }
-    reH2Contractor_ = ayGoalMatador_ && opCreek1_;
-    if (opCreek1_ || ayGoalMatador_ || reH2Contractor_) {
-      opCreek1_ = !ayGoalMatador_;
-      ayGoalMatador_ = !reH2Contractor_;
-      reH2Contractor_ = !opCreek1_;
-    }
-  }
+    pa5Still_ = pa5Still_ + joCharmUp_;
+    joCharmUp_ = pa5Still_;
 
-  void adWealthySutra() {
-    reH2Contractor_ = opCreek1_ && omChooseTyson_;
-    esSchistScript_ = esSchistScript_ + 1;
-    if (omChooseTyson_ || asNibbleStir_) {
-      asNibbleStir_ = !asNibbleStir_;
-    }
-    elTedOverly_ = 98;
-    elTedOverly_ = 47;
-    if (elTedOverly_ > 0) {
-      elTedOverly_ = elTedOverly_ - 9;
-    }
-    elTedOverly_ = 10;
-    reH2Contractor_ = asNibbleStir_ && ayGoalMatador_;
-    esSchistScript_ = esSchistScript_ + 1;
+    pa5Still_ = joCharmUp_ + pa5Still_;
+
+    joCharmUp_ = pa5Still_.toUpperCase() + joCharmUp_;
   }
 
   @override
   void dependencies() {
-    if (ln2 < 0.5) {
-      KimmiVelveteenLeprechaun().emUnevenFeisty();
-      KimmiVelveteenLeprechaun().ifStormSuperb();
+    if (e < 2) {
+      KimmiWhomFantasy().ofJapanDunphy();
+      KimmiWhomFantasy().omCuriousIndia();
     }
     if (log10e / 2 < 0.1) {
-      exJazzClue();
-      adWealthySutra();
+      beLoopyInvestor();
+      etPolarCarry();
     }
     Get.lazyPut(() => KimmiColombianInvoice());
 

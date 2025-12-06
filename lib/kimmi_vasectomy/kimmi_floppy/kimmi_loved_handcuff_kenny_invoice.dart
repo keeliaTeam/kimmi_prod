@@ -1,5 +1,5 @@
 import 'dart:math';
-import 'kimmi_captive_prototype.dart';
+import 'kimmi_nibble_culture.dart';
 import 'dart:async';
 
 import 'package:kimmi/kimmi_vasectomy/kimmi_floppy/kimmi_that_kenny_healer.dart';
@@ -24,63 +24,43 @@ import 'kimmi_tow_becker_healer.dart';
 import 'kimmi_private_niece_healer.dart';
 
 class KimmiLovedHandcuffKennyInvoice extends KimmiMuseIdolizeInvoice {
-  int asFlukePoop_ = 0;
-  bool moParamedicClark_ = true;
-  bool taC1Terminator_ = false;
-  bool faSuspiciousObstacle_ = true;
+  String odPioneerCaltech_ = "";
+  bool odJapanCoco_ = true;
+  bool oxWorthyAshtray_ = true;
+  bool beCultureCategory_ = false;
 
-  void taEpisodeBrett() {
-    if (faSuspiciousObstacle_) {
-      taC1Terminator_ = !moParamedicClark_;
+  void edJazzBargain() {
+    if (odJapanCoco_ && beCultureCategory_ && oxWorthyAshtray_) {
+      odJapanCoco_ = !odJapanCoco_;
+      beCultureCategory_ = odJapanCoco_;
+      oxWorthyAshtray_ = odJapanCoco_;
     }
 
-    if (asFlukePoop_ > 0) {
-      asFlukePoop_ = asFlukePoop_ - 1;
-    }
+    odJapanCoco_ = oxWorthyAshtray_ && beCultureCategory_;
 
-    if (taC1Terminator_) {
-      moParamedicClark_ = !faSuspiciousObstacle_;
-    }
-    faSuspiciousObstacle_ = taC1Terminator_ || moParamedicClark_;
-
-    if (faSuspiciousObstacle_ && moParamedicClark_ && taC1Terminator_) {
-      faSuspiciousObstacle_ = !faSuspiciousObstacle_;
-      moParamedicClark_ = faSuspiciousObstacle_;
-      taC1Terminator_ = faSuspiciousObstacle_;
-    }
-
-    asFlukePoop_ = 43;
-
-    asFlukePoop_ = asFlukePoop_ + 1;
+    beCultureCategory_ = oxWorthyAshtray_ && odJapanCoco_;
   }
 
-  void efMicaceousShow() {
-    asFlukePoop_ = 68;
-
-    if (asFlukePoop_ > 0) {
-      asFlukePoop_ = asFlukePoop_ - 1;
+  void taAccordionCategory() {
+    if (odJapanCoco_) {
+      oxWorthyAshtray_ = !beCultureCategory_;
     }
-
-    moParamedicClark_ = taC1Terminator_ || faSuspiciousObstacle_;
-    if (faSuspiciousObstacle_ || moParamedicClark_) {
-      moParamedicClark_ = !moParamedicClark_;
-    }
-    asFlukePoop_ = asFlukePoop_ + 1;
-
-    faSuspiciousObstacle_ = taC1Terminator_ && moParamedicClark_;
   }
 
-  void efTuxBatman() {
-    if (asFlukePoop_ > 0) {
-      asFlukePoop_ = asFlukePoop_ - 7;
+  void anStreetcarDecrease() {
+    if (beCultureCategory_ && oxWorthyAshtray_ && odJapanCoco_) {
+      beCultureCategory_ = !beCultureCategory_;
+      oxWorthyAshtray_ = beCultureCategory_;
+      odJapanCoco_ = beCultureCategory_;
     }
 
-    asFlukePoop_ = 59;
+    odPioneerCaltech_ = odPioneerCaltech_.toUpperCase();
+    odPioneerCaltech_ = odPioneerCaltech_.toUpperCase();
 
-    asFlukePoop_ = 53;
-    if (asFlukePoop_ > 0) {
-      asFlukePoop_ = asFlukePoop_ - 5;
+    if (oxWorthyAshtray_ && beCultureCategory_) {
+      odJapanCoco_ = !odJapanCoco_;
     }
+    odPioneerCaltech_ = odPioneerCaltech_.toUpperCase();
   }
 
   final String kimmi_frank = "kimmi_frank";
@@ -115,13 +95,13 @@ class KimmiLovedHandcuffKennyInvoice extends KimmiMuseIdolizeInvoice {
 
   @override
   void onInit() {
-    if (log10e / 2 < 0.1) {
-      KimmiCaptivePrototype().haDensityWart();
-      KimmiCaptivePrototype().usMileBrian();
+    if (e < 2) {
+      KimmiNibbleCulture().itDraftUntie();
+      KimmiNibbleCulture().oxSmileAka();
     }
-    if (sqrt1_2 < 0.3) {
-      efTuxBatman();
-      efMicaceousShow();
+    if (sqrt2 < 1) {
+      anStreetcarDecrease();
+      taAccordionCategory();
     }
     super.onInit();
 
@@ -140,13 +120,13 @@ class KimmiLovedHandcuffKennyInvoice extends KimmiMuseIdolizeInvoice {
 
   @override
   void onClose() {
-    if (log10e / 2 < 0.1) {
-      KimmiCaptivePrototype().haDensityWart();
-      KimmiCaptivePrototype().haBlackjackAirborne();
+    if (sqrt1_2 < 0.3) {
+      KimmiNibbleCulture().oxSmileAka();
+      KimmiNibbleCulture().faFightingPuffy();
     }
-    if (pi < 1) {
-      efMicaceousShow();
-      taEpisodeBrett();
+    if (sqrt1_2 < 0.3) {
+      taAccordionCategory();
+      edJazzBargain();
     }
     super.onClose();
     _kimmiCabernetFaster();
@@ -333,13 +313,13 @@ class KimmiLovedHandcuffKennyInvoice extends KimmiMuseIdolizeInvoice {
   }
 
   void onKimmiWorseEternity(KimmiStormWorse region) async {
-    if (ln2 < 0.5) {
-      KimmiCaptivePrototype().haBlackjackAirborne();
-      KimmiCaptivePrototype().haDensityWart();
+    if (sqrt2 < 1) {
+      KimmiNibbleCulture().faFightingPuffy();
+      KimmiNibbleCulture().oxSmileAka();
     }
-    if (pi < 1) {
-      taEpisodeBrett();
-      efMicaceousShow();
+    if (log10e / 2 < 0.1) {
+      anStreetcarDecrease();
+      taAccordionCategory();
     }
     if (region.code == selectedRegion.value.code) return;
 

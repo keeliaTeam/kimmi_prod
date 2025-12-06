@@ -1,101 +1,146 @@
 import 'dart:math';
-import 'kimmi_captive_prototype.dart';
+import 'kimmi_snarky_worthy.dart';
 import 'package:get/get.dart';
 
 import 'kimmi_that_invoice.dart';
 
 class KimmiThatSmart extends Bindings {
-  bool etWealthyColony_ = false;
-  bool enPennyInvestor_ = true;
-  String meToMushy_ = "";
-  bool asVirginGroovy_ = false;
-  bool oxBowlerStretch_ = true;
-  bool ayC2But_ = true;
+  bool reFalconPhone_ = true;
+  String ahLobbyCalmly_ = "";
+  bool usIndiaObjective_ = true;
+  double enIncubatorFinal_ = 14;
+  bool amInsecureInk_ = false;
+  int atGodDoggy_ = 0;
+  double hoSwordAvailable_ = 24;
+  bool myTemptEgo_ = false;
 
-  void goSafetyGranola() {
-    meToMushy_ = meToMushy_.toUpperCase();
-
-    if (asVirginGroovy_) {
-      oxBowlerStretch_ = !enPennyInvestor_;
+  void ahSharpDonut() {
+    if (myTemptEgo_ && usIndiaObjective_ && amInsecureInk_) {
+      myTemptEgo_ = !myTemptEgo_;
+      usIndiaObjective_ = myTemptEgo_;
+      amInsecureInk_ = myTemptEgo_;
     }
-
-    if (enPennyInvestor_ && ayC2But_ && asVirginGroovy_) {
-      enPennyInvestor_ = !enPennyInvestor_;
-      ayC2But_ = enPennyInvestor_;
-      asVirginGroovy_ = enPennyInvestor_;
+    amInsecureInk_ = reFalconPhone_ && usIndiaObjective_;
+    ahLobbyCalmly_ = ahLobbyCalmly_.toUpperCase();
+    enIncubatorFinal_ = enIncubatorFinal_ + hoSwordAvailable_;
+    if (usIndiaObjective_ || amInsecureInk_ || reFalconPhone_) {
+      usIndiaObjective_ = !amInsecureInk_;
+      amInsecureInk_ = !reFalconPhone_;
+      reFalconPhone_ = !usIndiaObjective_;
     }
+    ahLobbyCalmly_ = ahLobbyCalmly_.toUpperCase();
+    usIndiaObjective_ = myTemptEgo_ || reFalconPhone_;
+    ahLobbyCalmly_ = ahLobbyCalmly_.toUpperCase();
+    ahLobbyCalmly_ = ahLobbyCalmly_.toUpperCase();
+    ahLobbyCalmly_ = ahLobbyCalmly_.toUpperCase();
+    enIncubatorFinal_ = enIncubatorFinal_ + hoSwordAvailable_;
+    atGodDoggy_ = atGodDoggy_ + 1;
+    atGodDoggy_ = 32;
+    enIncubatorFinal_ = 22;
+    hoSwordAvailable_ = 36;
+    usIndiaObjective_ = myTemptEgo_ || amInsecureInk_;
+    myTemptEgo_ = usIndiaObjective_ && reFalconPhone_;
+    if (myTemptEgo_ && amInsecureInk_) {
+      usIndiaObjective_ = !usIndiaObjective_;
+    }
+    ahLobbyCalmly_ = ahLobbyCalmly_.toUpperCase();
   }
 
-  void isDensityFeast() {
-    enPennyInvestor_ = ayC2But_ && etWealthyColony_;
-
-    meToMushy_ = meToMushy_.toUpperCase();
-    if (ayC2But_ || enPennyInvestor_) {
-      enPennyInvestor_ = !enPennyInvestor_;
+  void faCrossoverEn() {
+    ahLobbyCalmly_ = ahLobbyCalmly_.toUpperCase();
+    ahLobbyCalmly_ = ahLobbyCalmly_.toUpperCase();
+    if (myTemptEgo_ || usIndiaObjective_) {
+      usIndiaObjective_ = !usIndiaObjective_;
     }
-    meToMushy_ = meToMushy_.toUpperCase();
-
-    asVirginGroovy_ = etWealthyColony_ || enPennyInvestor_;
-
-    meToMushy_ = meToMushy_.toUpperCase();
-
-    if (ayC2But_ || asVirginGroovy_) {
-      asVirginGroovy_ = !asVirginGroovy_;
+    enIncubatorFinal_ = enIncubatorFinal_ + hoSwordAvailable_;
+    ahLobbyCalmly_ = ahLobbyCalmly_.toUpperCase();
+    atGodDoggy_ = 37;
+    myTemptEgo_ = reFalconPhone_ && usIndiaObjective_;
+    atGodDoggy_ = 21;
+    if (atGodDoggy_ > 0) {
+      atGodDoggy_ = atGodDoggy_ - 1;
     }
-    if (asVirginGroovy_ && etWealthyColony_ && enPennyInvestor_) {
-      asVirginGroovy_ = !asVirginGroovy_;
-      etWealthyColony_ = asVirginGroovy_;
-      enPennyInvestor_ = asVirginGroovy_;
+    atGodDoggy_ = atGodDoggy_ + 1;
+    if (atGodDoggy_ > 0) {
+      atGodDoggy_ = atGodDoggy_ - 7;
     }
-    if (ayC2But_ && oxBowlerStretch_ && etWealthyColony_) {
-      ayC2But_ = !ayC2But_;
-      oxBowlerStretch_ = ayC2But_;
-      etWealthyColony_ = ayC2But_;
-    }
+    atGodDoggy_ = atGodDoggy_ + 1;
   }
 
-  void osCombustionMuse() {
-    meToMushy_ = meToMushy_.toUpperCase();
-    enPennyInvestor_ = asVirginGroovy_ && etWealthyColony_;
-
-    oxBowlerStretch_ = enPennyInvestor_ && etWealthyColony_;
-    meToMushy_ = meToMushy_.toUpperCase();
-    if (ayC2But_ || oxBowlerStretch_) {
-      oxBowlerStretch_ = !oxBowlerStretch_;
+  void miMrsCream() {
+    ahLobbyCalmly_ = ahLobbyCalmly_.toUpperCase();
+    enIncubatorFinal_ = enIncubatorFinal_ + hoSwordAvailable_;
+    ahLobbyCalmly_ = ahLobbyCalmly_.toUpperCase();
+    if (enIncubatorFinal_ > hoSwordAvailable_) {
+      enIncubatorFinal_ = enIncubatorFinal_ - hoSwordAvailable_;
     }
-    meToMushy_ = meToMushy_.toUpperCase();
-    if (etWealthyColony_ && enPennyInvestor_ && oxBowlerStretch_) {
-      etWealthyColony_ = !etWealthyColony_;
-      enPennyInvestor_ = etWealthyColony_;
-      oxBowlerStretch_ = etWealthyColony_;
+    if (usIndiaObjective_ && amInsecureInk_ && reFalconPhone_) {
+      usIndiaObjective_ = !usIndiaObjective_;
+      amInsecureInk_ = usIndiaObjective_;
+      reFalconPhone_ = usIndiaObjective_;
     }
-    meToMushy_ = meToMushy_.toUpperCase();
-    oxBowlerStretch_ = enPennyInvestor_ && ayC2But_;
-
-    meToMushy_ = meToMushy_.toUpperCase();
+    if (reFalconPhone_) {
+      amInsecureInk_ = !myTemptEgo_;
+    }
+    myTemptEgo_ = amInsecureInk_ || usIndiaObjective_;
+    ahLobbyCalmly_ = ahLobbyCalmly_.toUpperCase();
+    atGodDoggy_ = atGodDoggy_ + 1;
+    if (enIncubatorFinal_ > hoSwordAvailable_) {
+      enIncubatorFinal_ = enIncubatorFinal_ - hoSwordAvailable_;
+    }
+    ahLobbyCalmly_ = ahLobbyCalmly_.toUpperCase();
+    atGodDoggy_ = 75;
+    atGodDoggy_ = atGodDoggy_ + 1;
+    enIncubatorFinal_ = 79;
+    hoSwordAvailable_ = 9;
   }
 
-  void edHardAltogether() {
-    meToMushy_ = meToMushy_.toUpperCase();
-
-    meToMushy_ = meToMushy_.toUpperCase();
-    meToMushy_ = meToMushy_.toUpperCase();
-
-    enPennyInvestor_ = asVirginGroovy_ || oxBowlerStretch_;
-    etWealthyColony_ = asVirginGroovy_ || ayC2But_;
-
-    meToMushy_ = meToMushy_.toUpperCase();
+  void maCarryGenderless() {
+    if (reFalconPhone_ || amInsecureInk_) {
+      amInsecureInk_ = !amInsecureInk_;
+    }
+    atGodDoggy_ = 84;
+    ahLobbyCalmly_ = ahLobbyCalmly_.toUpperCase();
+    ahLobbyCalmly_ = ahLobbyCalmly_.toUpperCase();
+    if (enIncubatorFinal_ > hoSwordAvailable_) {
+      enIncubatorFinal_ = enIncubatorFinal_ - hoSwordAvailable_;
+    }
+    if (myTemptEgo_) {
+      amInsecureInk_ = !reFalconPhone_;
+    }
+    if (enIncubatorFinal_ > hoSwordAvailable_) {
+      enIncubatorFinal_ = enIncubatorFinal_ - hoSwordAvailable_;
+    }
+    if (amInsecureInk_) {
+      usIndiaObjective_ = !reFalconPhone_;
+    }
+    enIncubatorFinal_ = 31;
+    hoSwordAvailable_ = 6;
+    atGodDoggy_ = 15;
+    if (atGodDoggy_ > 0) {
+      atGodDoggy_ = atGodDoggy_ - 3;
+    }
+    if (amInsecureInk_ || myTemptEgo_ || usIndiaObjective_) {
+      amInsecureInk_ = !myTemptEgo_;
+      myTemptEgo_ = !usIndiaObjective_;
+      usIndiaObjective_ = !amInsecureInk_;
+    }
+    amInsecureInk_ = myTemptEgo_ || usIndiaObjective_;
+    ahLobbyCalmly_ = ahLobbyCalmly_.toUpperCase();
+    atGodDoggy_ = atGodDoggy_ + 1;
+    ahLobbyCalmly_ = ahLobbyCalmly_.toUpperCase();
   }
 
   @override
   void dependencies() {
     if (sqrt1_2 < 0.3) {
-      KimmiCaptivePrototype().usMileBrian();
-      KimmiCaptivePrototype().haBlackjackAirborne();
+      KimmiSnarkyWorthy().efPerpetualChickie();
+      KimmiSnarkyWorthy().joWhipWax();
+      KimmiSnarkyWorthy().faFannyGoatee();
     }
-    if (log10e / 2 < 0.1) {
-      isDensityFeast();
-      osCombustionMuse();
+    if (pi < 1) {
+      faCrossoverEn();
+      miMrsCream();
     }
     Get.lazyPut(() => KimmiThatInvoice());
   }
