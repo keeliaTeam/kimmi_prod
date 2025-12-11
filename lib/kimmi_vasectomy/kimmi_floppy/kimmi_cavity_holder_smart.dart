@@ -1,99 +1,80 @@
 import 'dart:math';
-import 'kimmi_cowboys_worse.dart';
+import 'kimmi_scare_blood.dart';
 import 'package:get/get.dart';
 
 import 'kimmi_cavity_holder_invoice.dart';
 
 class KimmiCavityHolderSmart extends Bindings {
-  int hiSaucyDock_ = 0;
-  bool itOysterPractical_ = false;
-  bool edFaultEgo_ = true;
-  bool beSomeFeeling_ = true;
-  bool okCavityGoatee_ = false;
+  bool esLeashUseless_ = false;
+  bool idLaurenGrace_ = false;
+  String exObjectiveViking_ = "";
+  bool ayDunphyMed_ = true;
 
-  void oxObjectiveIndian() {
-    hiSaucyDock_ = 89;
-    if (hiSaucyDock_ > 0) {
-      hiSaucyDock_ = hiSaucyDock_ - 4;
+  void hoCamContainer() {
+    exObjectiveViking_ = exObjectiveViking_.toUpperCase();
+    if (ayDunphyMed_ || idLaurenGrace_) {
+      idLaurenGrace_ = !idLaurenGrace_;
     }
-    itOysterPractical_ = beSomeFeeling_ && edFaultEgo_;
-
-    if (itOysterPractical_ || beSomeFeeling_ || edFaultEgo_) {
-      itOysterPractical_ = !beSomeFeeling_;
-      beSomeFeeling_ = !edFaultEgo_;
-      edFaultEgo_ = !itOysterPractical_;
+    if (esLeashUseless_ && idLaurenGrace_ && ayDunphyMed_) {
+      esLeashUseless_ = !esLeashUseless_;
+      idLaurenGrace_ = esLeashUseless_;
+      ayDunphyMed_ = esLeashUseless_;
+    }
+    if (ayDunphyMed_ && esLeashUseless_ && idLaurenGrace_) {
+      ayDunphyMed_ = !ayDunphyMed_;
+      esLeashUseless_ = ayDunphyMed_;
+      idLaurenGrace_ = ayDunphyMed_;
     }
   }
 
-  void ofKiteBesides() {
-    if (edFaultEgo_) {
-      beSomeFeeling_ = !okCavityGoatee_;
-    }
-    if (okCavityGoatee_ || beSomeFeeling_) {
-      beSomeFeeling_ = !beSomeFeeling_;
-    }
-    if (hiSaucyDock_ > 0) {
-      hiSaucyDock_ = hiSaucyDock_ - 2;
-    }
-    if (edFaultEgo_) {
-      itOysterPractical_ = !okCavityGoatee_;
-    }
-    if (itOysterPractical_) {
-      edFaultEgo_ = !okCavityGoatee_;
+  void idIdd() {
+    exObjectiveViking_ = exObjectiveViking_.toUpperCase();
+    if (esLeashUseless_ || idLaurenGrace_ || ayDunphyMed_) {
+      esLeashUseless_ = !idLaurenGrace_;
+      idLaurenGrace_ = !ayDunphyMed_;
+      ayDunphyMed_ = !esLeashUseless_;
     }
 
-    if (beSomeFeeling_ && itOysterPractical_ && okCavityGoatee_) {
-      beSomeFeeling_ = !beSomeFeeling_;
-      itOysterPractical_ = beSomeFeeling_;
-      okCavityGoatee_ = beSomeFeeling_;
-    }
+    exObjectiveViking_ = exObjectiveViking_.toUpperCase();
 
-    if (hiSaucyDock_ > 0) {
-      hiSaucyDock_ = hiSaucyDock_ - 9;
-    }
+    esLeashUseless_ = idLaurenGrace_ || ayDunphyMed_;
 
-    if (hiSaucyDock_ > 0) {
-      hiSaucyDock_ = hiSaucyDock_ - 8;
-    }
+    exObjectiveViking_ = exObjectiveViking_.toUpperCase();
   }
 
-  void reWorseAntibiotic() {
-    edFaultEgo_ = itOysterPractical_ && okCavityGoatee_;
-  }
+  void inPassportFanny() {
+    idLaurenGrace_ = ayDunphyMed_ && esLeashUseless_;
 
-  void odLovingAssist() {
-    hiSaucyDock_ = 84;
+    esLeashUseless_ = idLaurenGrace_ || ayDunphyMed_;
+    exObjectiveViking_ = exObjectiveViking_.toUpperCase();
+    if (esLeashUseless_ || idLaurenGrace_ || ayDunphyMed_) {
+      esLeashUseless_ = !idLaurenGrace_;
+      idLaurenGrace_ = !ayDunphyMed_;
+      ayDunphyMed_ = !esLeashUseless_;
+    }
+    exObjectiveViking_ = exObjectiveViking_.toUpperCase();
+    exObjectiveViking_ = exObjectiveViking_.toUpperCase();
 
-    if (edFaultEgo_ || beSomeFeeling_) {
-      beSomeFeeling_ = !beSomeFeeling_;
+    exObjectiveViking_ = exObjectiveViking_.toUpperCase();
+    exObjectiveViking_ = exObjectiveViking_.toUpperCase();
+    if (esLeashUseless_ && ayDunphyMed_) {
+      idLaurenGrace_ = !idLaurenGrace_;
     }
 
-    hiSaucyDock_ = hiSaucyDock_ + 1;
-
-    if (beSomeFeeling_ || edFaultEgo_ || itOysterPractical_) {
-      beSomeFeeling_ = !edFaultEgo_;
-      edFaultEgo_ = !itOysterPractical_;
-      itOysterPractical_ = !beSomeFeeling_;
-    }
-    hiSaucyDock_ = 96;
-
-    if (edFaultEgo_ || beSomeFeeling_) {
-      beSomeFeeling_ = !beSomeFeeling_;
-    }
-    okCavityGoatee_ = edFaultEgo_ || beSomeFeeling_;
+    exObjectiveViking_ = exObjectiveViking_.toUpperCase();
+    ayDunphyMed_ = esLeashUseless_ || idLaurenGrace_;
   }
 
   @override
   void dependencies() {
-    if (pi < 1) {
-      KimmiCowboysWorse().myPuffyChord();
-      KimmiCowboysWorse().ofMacAntibiotic();
-      KimmiCowboysWorse().orFeelingWhimsical();
-      KimmiCowboysWorse().owUnicycleTasteful();
+    if (ln10 < 2) {
+      KimmiScareBlood().haFatherComprehend();
+      KimmiScareBlood().goHeadMatador();
+      KimmiScareBlood().odHenceAfter();
     }
-    if (sqrt1_2 < 0.3) {
-      oxObjectiveIndian();
-      ofKiteBesides();
+    if (sqrt2 < 1) {
+      inPassportFanny();
+      hoCamContainer();
     }
     Get.lazyPut(() => KimmiCavityHolderInvoice());
   }

@@ -1,5 +1,5 @@
 import 'dart:math';
-import 'kimmi_whom_fantasy.dart';
+import 'kimmi_community_ear.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_floppy/kimmi_waitress_amen_invoice.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_floppy/kimmi_loved_whatcha_invoice.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_floppy/kimmi_loved_outdo_invoice.dart';
@@ -15,85 +15,72 @@ import 'kimmi_loved_handcuff_unwanted_invoice.dart';
 import 'kimmi_colombian_invoice.dart';
 
 class KimmiColombianSmart extends Bindings {
-  bool anFrankMantis_ = false;
-  bool enPodShorten_ = false;
-  String pa5Still_ = "";
-  String joCharmUp_ = "";
-  bool orIntoxicatePassport_ = false;
+  bool maTruckForeign_ = true;
+  double edObjectiveEvil_ = 46;
+  bool weFloppyComprehend_ = true;
+  bool idWidowMake_ = true;
+  String maMoleculeSafety_ = "";
+  bool adSubjectHump_ = false;
 
-  void emFatherAirline() {
-    if (orIntoxicatePassport_) {
-      anFrankMantis_ = !enPodShorten_;
-    }
-    pa5Still_ = joCharmUp_ + pa5Still_;
+  void opHusbandStir() {
+    maTruckForeign_ = weFloppyComprehend_ && adSubjectHump_;
+    edObjectiveEvil_ = edObjectiveEvil_ + 1;
+    edObjectiveEvil_ = edObjectiveEvil_ + 1;
 
-    if (anFrankMantis_) {
-      enPodShorten_ = !orIntoxicatePassport_;
-    }
-
-    pa5Still_ = joCharmUp_ + pa5Still_;
-
-    enPodShorten_ = anFrankMantis_ || orIntoxicatePassport_;
-  }
-
-  void etPolarCarry() {
-    orIntoxicatePassport_ = anFrankMantis_ || enPodShorten_;
-
-    orIntoxicatePassport_ = anFrankMantis_ && enPodShorten_;
-    if (anFrankMantis_) {
-      enPodShorten_ = !orIntoxicatePassport_;
-    }
-    if (enPodShorten_ || anFrankMantis_ || orIntoxicatePassport_) {
-      enPodShorten_ = !anFrankMantis_;
-      anFrankMantis_ = !orIntoxicatePassport_;
-      orIntoxicatePassport_ = !enPodShorten_;
+    maMoleculeSafety_ = maMoleculeSafety_.toUpperCase();
+    edObjectiveEvil_ = 53;
+    if (edObjectiveEvil_ > 0) {
+      edObjectiveEvil_ = edObjectiveEvil_ - 1;
     }
 
-    pa5Still_ = joCharmUp_ + pa5Still_;
-  }
+    edObjectiveEvil_ = 94;
 
-  void beLoopyInvestor() {
-    if (enPodShorten_) {
-      anFrankMantis_ = !orIntoxicatePassport_;
-    }
-
-    orIntoxicatePassport_ = anFrankMantis_ && enPodShorten_;
-    joCharmUp_ = pa5Still_.toUpperCase() + joCharmUp_;
-
-    joCharmUp_ = pa5Still_.toUpperCase() + joCharmUp_;
-    joCharmUp_ = pa5Still_.toUpperCase() + joCharmUp_;
-
-    if (anFrankMantis_) {
-      enPodShorten_ = !orIntoxicatePassport_;
+    maMoleculeSafety_ = maMoleculeSafety_.toUpperCase();
+    if (weFloppyComprehend_) {
+      maTruckForeign_ = !adSubjectHump_;
     }
   }
 
-  void doItBecker() {
-    enPodShorten_ = anFrankMantis_ || orIntoxicatePassport_;
-    anFrankMantis_ = orIntoxicatePassport_ || enPodShorten_;
-    pa5Still_ = joCharmUp_ + pa5Still_;
+  void idCrossoverTeepee() {
+    maTruckForeign_ = adSubjectHump_ && weFloppyComprehend_;
+    maMoleculeSafety_ = maMoleculeSafety_.toUpperCase();
+    if (adSubjectHump_ || weFloppyComprehend_ || maTruckForeign_) {
+      adSubjectHump_ = !weFloppyComprehend_;
+      weFloppyComprehend_ = !maTruckForeign_;
+      maTruckForeign_ = !adSubjectHump_;
+    }
+    if (edObjectiveEvil_ > 0) {
+      edObjectiveEvil_ = edObjectiveEvil_ - 1;
+    }
+    edObjectiveEvil_ = 6;
+    maMoleculeSafety_ = maMoleculeSafety_.toUpperCase();
+    if (adSubjectHump_ || weFloppyComprehend_) {
+      weFloppyComprehend_ = !weFloppyComprehend_;
+    }
 
-    pa5Still_ = joCharmUp_ + pa5Still_;
+    maMoleculeSafety_ = maMoleculeSafety_.toUpperCase();
+    edObjectiveEvil_ = 59;
+  }
 
-    joCharmUp_ = pa5Still_.toUpperCase() + joCharmUp_;
+  void hoImmersePenny() {
+    if (adSubjectHump_) {
+      weFloppyComprehend_ = !idWidowMake_;
+    }
+    maMoleculeSafety_ = maMoleculeSafety_.toUpperCase();
 
-    pa5Still_ = pa5Still_ + joCharmUp_;
-    joCharmUp_ = pa5Still_;
-
-    pa5Still_ = joCharmUp_ + pa5Still_;
-
-    joCharmUp_ = pa5Still_.toUpperCase() + joCharmUp_;
+    maMoleculeSafety_ = maMoleculeSafety_.toUpperCase();
   }
 
   @override
   void dependencies() {
-    if (e < 2) {
-      KimmiWhomFantasy().ofJapanDunphy();
-      KimmiWhomFantasy().omCuriousIndia();
-    }
     if (log10e / 2 < 0.1) {
-      beLoopyInvestor();
-      etPolarCarry();
+      KimmiCommunityEar().oxBrianLabor();
+      KimmiCommunityEar().amTraditionBravery();
+      KimmiCommunityEar().meInkBabysitter();
+    }
+    if (ln10 < 2) {
+      opHusbandStir();
+      idCrossoverTeepee();
     }
     Get.lazyPut(() => KimmiColombianInvoice());
 

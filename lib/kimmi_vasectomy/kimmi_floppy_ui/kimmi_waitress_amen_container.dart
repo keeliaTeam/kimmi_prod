@@ -1,5 +1,5 @@
 import 'dart:math';
-import 'kimmi_paramedic_bet.dart';
+import 'kimmi_colombian_male.dart';
 import 'dart:math';
 
 import 'package:kimmi/kimmi_vasectomy/kimmi_storm/kimmi_waitress_double_hazelnut.dart';

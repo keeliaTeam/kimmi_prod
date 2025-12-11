@@ -1,121 +1,88 @@
 import 'dart:math';
-import 'kimmi_noodle_c1.dart';
+import 'kimmi_make_jasmine.dart';
 import 'package:get/get.dart';
 
 import 'kimmi_my_male_invoice.dart';
 
 class KimmiMyMaleSmart extends Bindings {
-  bool owWhatchaAssist_ = false;
-  int doLoopyC2_ = 0;
-  bool okAsDevastate_ = false;
-  double okWaxTiming_ = 91;
-  bool hiMatadorForget_ = true;
-  double moOysterSmart_ = 0.0;
-  bool noAfterApplause_ = false;
-  String owUpBleed_ = "";
-  double hiPrincipleMouse_ = 56;
+  bool esAkaIntoxicate_ = false;
+  int joFeistyCharge_ = 0;
+  bool okIoWeb_ = false;
+  bool miHenceTopless_ = false;
+  String odItSun_ = "";
+  bool heH3Topless_ = true;
+  String doLawyerToad_ = "";
 
-  void osJohnnyWrinkle() {
-    owUpBleed_ = owUpBleed_.toUpperCase();
-    doLoopyC2_ = 65;
-    moOysterSmart_ = okWaxTiming_ - hiPrincipleMouse_;
-    hiMatadorForget_ = noAfterApplause_ && okAsDevastate_;
-    owUpBleed_ = owUpBleed_.toUpperCase();
-    doLoopyC2_ = 87;
-    doLoopyC2_ = doLoopyC2_ + 1;
-    if (okAsDevastate_ && noAfterApplause_ && hiMatadorForget_) {
-      okAsDevastate_ = !okAsDevastate_;
-      noAfterApplause_ = okAsDevastate_;
-      hiMatadorForget_ = okAsDevastate_;
+  void itGlossButt() {
+    if (esAkaIntoxicate_) {
+      miHenceTopless_ = !heH3Topless_;
     }
-    noAfterApplause_ = okAsDevastate_ && hiMatadorForget_;
-    if (doLoopyC2_ > 0) {
-      doLoopyC2_ = doLoopyC2_ - 7;
+
+    if (heH3Topless_ && miHenceTopless_ && esAkaIntoxicate_) {
+      heH3Topless_ = !heH3Topless_;
+      miHenceTopless_ = heH3Topless_;
+      esAkaIntoxicate_ = heH3Topless_;
     }
-    hiMatadorForget_ = okAsDevastate_ && owWhatchaAssist_;
-    owUpBleed_ = owUpBleed_.toUpperCase();
-    owUpBleed_ = owUpBleed_.toUpperCase();
+    joFeistyCharge_ = joFeistyCharge_ + 1;
+    odItSun_ = odItSun_ + doLawyerToad_;
+    doLawyerToad_ = odItSun_;
+    odItSun_ = doLawyerToad_ + odItSun_;
+    if (esAkaIntoxicate_ || okIoWeb_ || heH3Topless_) {
+      esAkaIntoxicate_ = !okIoWeb_;
+      okIoWeb_ = !heH3Topless_;
+      heH3Topless_ = !esAkaIntoxicate_;
+    }
+    doLawyerToad_ = odItSun_.toUpperCase() + doLawyerToad_;
+    doLawyerToad_ = odItSun_.toUpperCase() + doLawyerToad_;
+    joFeistyCharge_ = joFeistyCharge_ + 1;
+
+    if (joFeistyCharge_ > 0) {
+      joFeistyCharge_ = joFeistyCharge_ - 8;
+    }
+    joFeistyCharge_ = joFeistyCharge_ + 1;
+    if (joFeistyCharge_ > 0) {
+      joFeistyCharge_ = joFeistyCharge_ - 1;
+    }
+
+    odItSun_ = odItSun_ + doLawyerToad_;
+    doLawyerToad_ = odItSun_;
+    if (okIoWeb_ && miHenceTopless_ && esAkaIntoxicate_) {
+      okIoWeb_ = !okIoWeb_;
+      miHenceTopless_ = okIoWeb_;
+      esAkaIntoxicate_ = okIoWeb_;
+    }
   }
 
-  void moiShoe() {
-    owUpBleed_ = owUpBleed_.toUpperCase();
-    owUpBleed_ = owUpBleed_.toUpperCase();
-    owUpBleed_ = owUpBleed_.toUpperCase();
-    doLoopyC2_ = doLoopyC2_ + 1;
-    if (noAfterApplause_ || hiMatadorForget_) {
-      hiMatadorForget_ = !hiMatadorForget_;
-    }
-    noAfterApplause_ = okAsDevastate_ && hiMatadorForget_;
-    if (noAfterApplause_ || hiMatadorForget_ || owWhatchaAssist_) {
-      noAfterApplause_ = !hiMatadorForget_;
-      hiMatadorForget_ = !owWhatchaAssist_;
-      owWhatchaAssist_ = !noAfterApplause_;
-    }
-    okAsDevastate_ = hiMatadorForget_ || owWhatchaAssist_;
-    doLoopyC2_ = doLoopyC2_ + 1;
-    owUpBleed_ = owUpBleed_.toUpperCase();
-    hiPrincipleMouse_ = moOysterSmart_;
-    okWaxTiming_ = moOysterSmart_;
-    if (okAsDevastate_ && noAfterApplause_ && hiMatadorForget_) {
-      okAsDevastate_ = !okAsDevastate_;
-      noAfterApplause_ = okAsDevastate_;
-      hiMatadorForget_ = okAsDevastate_;
-    }
-    owUpBleed_ = owUpBleed_.toUpperCase();
-    noAfterApplause_ = owWhatchaAssist_ && hiMatadorForget_;
-    owUpBleed_ = owUpBleed_.toUpperCase();
-    owUpBleed_ = owUpBleed_.toUpperCase();
+  void etWordSmart() {
+    doLawyerToad_ = odItSun_.toUpperCase() + doLawyerToad_;
+    joFeistyCharge_ = joFeistyCharge_ + 1;
+    odItSun_ = doLawyerToad_ + odItSun_;
+
+    joFeistyCharge_ = 59;
+    joFeistyCharge_ = 69;
+    heH3Topless_ = esAkaIntoxicate_ || okIoWeb_;
+    odItSun_ = doLawyerToad_ + odItSun_;
   }
 
-  void woForwardFeisty() {
-    if (doLoopyC2_ > 0) {
-      doLoopyC2_ = doLoopyC2_ - 1;
+  void usJackal2() {
+    if (esAkaIntoxicate_ && heH3Topless_) {
+      miHenceTopless_ = !miHenceTopless_;
     }
-    okWaxTiming_ = moOysterSmart_ * hiPrincipleMouse_;
-    moOysterSmart_ = hiPrincipleMouse_ * okWaxTiming_;
-    moOysterSmart_ = 663;
-    hiPrincipleMouse_ = 919;
-    okWaxTiming_ = moOysterSmart_ + hiPrincipleMouse_;
-    doLoopyC2_ = 36;
-    if (hiMatadorForget_ || owWhatchaAssist_) {
-      owWhatchaAssist_ = !owWhatchaAssist_;
-    }
-    moOysterSmart_ = okWaxTiming_ * hiPrincipleMouse_;
-    doLoopyC2_ = doLoopyC2_ + 1;
-    okWaxTiming_ = moOysterSmart_ + hiPrincipleMouse_;
-    if (hiMatadorForget_ || okAsDevastate_ || owWhatchaAssist_) {
-      hiMatadorForget_ = !okAsDevastate_;
-      okAsDevastate_ = !owWhatchaAssist_;
-      owWhatchaAssist_ = !hiMatadorForget_;
-    }
-    okWaxTiming_ = moOysterSmart_ - hiPrincipleMouse_;
-    owUpBleed_ = owUpBleed_.toUpperCase();
-    doLoopyC2_ = doLoopyC2_ + 1;
-    if (owWhatchaAssist_ && okAsDevastate_) {
-      hiMatadorForget_ = !hiMatadorForget_;
-    }
-    moOysterSmart_ = 751;
-    okWaxTiming_ = 324;
-    hiPrincipleMouse_ = moOysterSmart_ + okWaxTiming_;
-    if (okAsDevastate_ && owWhatchaAssist_ && hiMatadorForget_) {
-      okAsDevastate_ = !okAsDevastate_;
-      owWhatchaAssist_ = okAsDevastate_;
-      hiMatadorForget_ = okAsDevastate_;
-    }
-    if (doLoopyC2_ > 0) {
-      doLoopyC2_ = doLoopyC2_ - 6;
-    }
+
+    joFeistyCharge_ = joFeistyCharge_ + 1;
+    odItSun_ = doLawyerToad_ + odItSun_;
+    joFeistyCharge_ = 56;
   }
 
   @override
   void dependencies() {
-    if (sqrt1_2 < 0.3) {
-      KimmiNoodleC1().maWaitressd();
-      KimmiNoodleC1().osDarthMile();
+    if (log10e / 2 < 0.1) {
+      KimmiMakeJasmine().usAvailableTruck();
+      KimmiMakeJasmine().woCreekCommie();
     }
-    if (log2e < 1) {
-      moiShoe();
-      woForwardFeisty();
+    if (e < 2) {
+      itGlossButt();
+      usJackal2();
     }
     Get.lazyPut(() => KimmiMyMaleInvoice());
   }

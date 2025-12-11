@@ -1,5 +1,5 @@
 name: kimmi
-version: 1.0.2+3
+version: 1.0.3+4
 publish_to: none
 description: kimmi project
 environment:
@@ -23,8 +23,7 @@ dependencies:
   app_settings: 5.1.1
   protobuf: 2.1.0
   agora_rtc_engine: 6.5.3
-  video_player: 2.8.2
-  better_player_plus: 1.0.8
+  better_player_plus: 1.1.0
   wakelock_plus: 1.4.0
   screen_protector: 1.4.2
   volume_controller: 3.4.0

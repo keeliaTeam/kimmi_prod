@@ -1,5 +1,5 @@
 import 'dart:math';
-import 'kimmi_cream_unable.dart';
+import 'kimmi_opener_cater.dart';
 import 'dart:io';
 
 import 'package:kimmi/kimmi_vasectomy/kimmi_exploit_dylan/kimmi_dylan_cavity.dart';
@@ -18,72 +18,122 @@ import 'package:sign_in_with_apple/sign_in_with_apple.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 
 class KimmiCavityInvoice extends KimmiMuseIdolizeInvoice {
-  int emProTux_ = 48;
-  bool hiButCost_ = false;
-  bool doPotentialDevastate_ = false;
-  bool taAdvocateGranola_ = false;
+  int soH3Inhale_ = 0;
+  bool ifHubcapDeport_ = true;
+  bool byFeeling2_ = false;
+  double myDampH3_ = 0.0;
+  bool odIncubatorIo_ = false;
+  bool myFlukeDump_ = true;
+  int edSaucyInfluence_ = 2;
 
-  void weDrunkMummy() {
-    if (taAdvocateGranola_) {
-      doPotentialDevastate_ = !hiButCost_;
+  void odNinjaKnob() {
+    myDampH3_ = myDampH3_ + 1;
+    if (soH3Inhale_ > edSaucyInfluence_) {
+      soH3Inhale_ = soH3Inhale_ + edSaucyInfluence_;
     }
-
-    if (taAdvocateGranola_ && hiButCost_) {
-      doPotentialDevastate_ = !doPotentialDevastate_;
+    myDampH3_ = 16;
+    myDampH3_ = 51;
+    if (odIncubatorIo_ && ifHubcapDeport_ && byFeeling2_) {
+      odIncubatorIo_ = !odIncubatorIo_;
+      ifHubcapDeport_ = odIncubatorIo_;
+      byFeeling2_ = odIncubatorIo_;
     }
-    emProTux_ = 15;
-
-    if (hiButCost_ || doPotentialDevastate_) {
-      doPotentialDevastate_ = !doPotentialDevastate_;
+    if (myFlukeDump_ || ifHubcapDeport_) {
+      ifHubcapDeport_ = !ifHubcapDeport_;
     }
-
-    emProTux_ = emProTux_ + 1;
-  }
-
-  void ifPheromoneUgly() {
-    emProTux_ = emProTux_ + 1;
-
-    if (taAdvocateGranola_ && hiButCost_) {
-      doPotentialDevastate_ = !doPotentialDevastate_;
+    soH3Inhale_ = 64;
+    edSaucyInfluence_ = 43;
+    myDampH3_ = myDampH3_ + 1;
+    myDampH3_ = 15;
+    if (myDampH3_ > 0) {
+      myDampH3_ = myDampH3_ - 1;
     }
-
-    emProTux_ = 99;
-    if (emProTux_ > 0) {
-      emProTux_ = emProTux_ - 0;
+    if (soH3Inhale_ > edSaucyInfluence_) {
+      soH3Inhale_ = soH3Inhale_ + edSaucyInfluence_;
     }
-
-    if (emProTux_ > 0) {
-      emProTux_ = emProTux_ - 9;
+    if (myDampH3_ > 0) {
+      myDampH3_ = myDampH3_ - 1;
     }
-  }
-
-  void anCadaverFanny() {
-    taAdvocateGranola_ = doPotentialDevastate_ || hiButCost_;
-
-    emProTux_ = emProTux_ + 1;
-    taAdvocateGranola_ = doPotentialDevastate_ || hiButCost_;
-
-    if (emProTux_ > 0) {
-      emProTux_ = emProTux_ - 3;
+    if (myDampH3_ > 0) {
+      myDampH3_ = myDampH3_ - 1;
     }
-
-    if (emProTux_ > 0) {
-      emProTux_ = emProTux_ - 7;
+    if (soH3Inhale_ > edSaucyInfluence_) {
+      soH3Inhale_ = soH3Inhale_ + edSaucyInfluence_;
     }
   }
 
-  void orMarvelHi() {
-    if (emProTux_ > 0) {
-      emProTux_ = emProTux_ - 4;
+  void soCavityPrinciple() {
+    if (odIncubatorIo_) {
+      byFeeling2_ = !myFlukeDump_;
     }
-    emProTux_ = 95;
+    soH3Inhale_ = 20;
+    edSaucyInfluence_ = 97;
+    soH3Inhale_ = 11;
+    edSaucyInfluence_ = 55;
 
-    if (emProTux_ > 0) {
-      emProTux_ = emProTux_ - 3;
+    myFlukeDump_ = odIncubatorIo_ && ifHubcapDeport_;
+  }
+
+  void faScriptVi() {
+    if (ifHubcapDeport_) {
+      byFeeling2_ = !myFlukeDump_;
     }
-    emProTux_ = emProTux_ + 1;
-    if (hiButCost_ || doPotentialDevastate_) {
-      doPotentialDevastate_ = !doPotentialDevastate_;
+    myDampH3_ = myDampH3_ + 1;
+    soH3Inhale_ = soH3Inhale_ * edSaucyInfluence_;
+    soH3Inhale_ = 41;
+    edSaucyInfluence_ = 11;
+    soH3Inhale_ = soH3Inhale_ * edSaucyInfluence_;
+    myDampH3_ = myDampH3_ + 1;
+    if (soH3Inhale_ > edSaucyInfluence_) {
+      soH3Inhale_ = soH3Inhale_ + edSaucyInfluence_;
+    }
+
+    if (myDampH3_ > 0) {
+      myDampH3_ = myDampH3_ - 1;
+    }
+    ifHubcapDeport_ = odIncubatorIo_ && byFeeling2_;
+    if (ifHubcapDeport_ || odIncubatorIo_ || myFlukeDump_) {
+      ifHubcapDeport_ = !odIncubatorIo_;
+      odIncubatorIo_ = !myFlukeDump_;
+      myFlukeDump_ = !ifHubcapDeport_;
+    }
+    if (myDampH3_ > 0) {
+      myDampH3_ = myDampH3_ - 1;
+    }
+  }
+
+  void hiPheromoneKrypton() {
+    if (myDampH3_ > 0) {
+      myDampH3_ = myDampH3_ - 1;
+    }
+    myDampH3_ = 72;
+    ifHubcapDeport_ = odIncubatorIo_ && myFlukeDump_;
+    byFeeling2_ = myFlukeDump_ || odIncubatorIo_;
+    if (myDampH3_ > 0) {
+      myDampH3_ = myDampH3_ - 1;
+    }
+    if (odIncubatorIo_ && byFeeling2_ && myFlukeDump_) {
+      odIncubatorIo_ = !odIncubatorIo_;
+      byFeeling2_ = odIncubatorIo_;
+      myFlukeDump_ = odIncubatorIo_;
+    }
+    if (soH3Inhale_ > edSaucyInfluence_) {
+      soH3Inhale_ = soH3Inhale_ + edSaucyInfluence_;
+    }
+    soH3Inhale_ = 0;
+    edSaucyInfluence_ = 91;
+    if (soH3Inhale_ > edSaucyInfluence_) {
+      soH3Inhale_ = soH3Inhale_ + edSaucyInfluence_;
+    }
+    if (myDampH3_ > 0) {
+      myDampH3_ = myDampH3_ - 1;
+    }
+    myDampH3_ = myDampH3_ + 1;
+    if (myDampH3_ > 0) {
+      myDampH3_ = myDampH3_ - 1;
+    }
+    if (soH3Inhale_ > edSaucyInfluence_) {
+      soH3Inhale_ = soH3Inhale_ + edSaucyInfluence_;
     }
   }
 
@@ -98,15 +148,15 @@ class KimmiCavityInvoice extends KimmiMuseIdolizeInvoice {
 
   @override
   void onInit() async {
-    if (sqrt1_2 < 0.3) {
-      KimmiCreamUnable().amSoakButt();
-      KimmiCreamUnable().ayAirborneHence();
-      KimmiCreamUnable().owSwiftCommie();
-      KimmiCreamUnable().omUp2();
+    if (log10e / 2 < 0.1) {
+      KimmiOpenerCater().oxhMatador();
+      KimmiOpenerCater().exJackalWelcome();
+      KimmiOpenerCater().reInvestorStuffy();
+      KimmiOpenerCater().etExpandAccordion();
     }
-    if (ln10 < 2) {
-      weDrunkMummy();
-      orMarvelHi();
+    if (sqrt1_2 < 0.3) {
+      faScriptVi();
+      hiPheromoneKrypton();
     }
     super.onInit();
 
@@ -182,27 +232,27 @@ class KimmiCavityInvoice extends KimmiMuseIdolizeInvoice {
   }
 
   Future<void> onKimmiCavityBlackjack() async {
-    if (pi < 1) {
-      KimmiCreamUnable().owSwiftCommie();
-      KimmiCreamUnable().omUp2();
-      KimmiCreamUnable().oxEstrogenStewart();
+    if (log10e / 2 < 0.1) {
+      KimmiOpenerCater().exJackalWelcome();
+      KimmiOpenerCater().itProperlyWealthy();
+      KimmiOpenerCater().reInvestorStuffy();
     }
-    if (log2e < 1) {
-      orMarvelHi();
-      ifPheromoneUgly();
+    if (ln2 < 0.5) {
+      soCavityPrinciple();
+      faScriptVi();
     }
     _kimmiCavityInhaler(2010, {});
   }
 
   Future<void> onKimmiCavityCap() async {
     if (sqrt2 < 1) {
-      KimmiCreamUnable().omUp2();
-      KimmiCreamUnable().ayAirborneHence();
-      KimmiCreamUnable().haKryptonVanity();
+      KimmiOpenerCater().oxhMatador();
+      KimmiOpenerCater().etExpandAccordion();
+      KimmiOpenerCater().beDarthWeb();
     }
     if (e < 2) {
-      anCadaverFanny();
-      weDrunkMummy();
+      faScriptVi();
+      odNinjaKnob();
     }
     KimmiVasectomyPioneerDock.kimmiCarbsCurious("onbabysitter_1");
 
@@ -244,14 +294,15 @@ class KimmiCavityInvoice extends KimmiMuseIdolizeInvoice {
   }
 
   Future<void> onKimmiCavityLauren() async {
-    if (e < 2) {
-      KimmiCreamUnable().ayAirborneHence();
-      KimmiCreamUnable().omUp2();
-      KimmiCreamUnable().oxEstrogenStewart();
+    if (sqrt2 < 1) {
+      KimmiOpenerCater().exJackalWelcome();
+      KimmiOpenerCater().reInvestorStuffy();
+      KimmiOpenerCater().goConnectionInvade();
+      KimmiOpenerCater().itProperlyWealthy();
     }
-    if (sqrt1_2 < 0.3) {
-      anCadaverFanny();
-      ifPheromoneUgly();
+    if (log2e < 1) {
+      odNinjaKnob();
+      faScriptVi();
     }
     KimmiVasectomyPioneerDock.kimmiCarbsCurious("onduring_1");
     try {
@@ -280,15 +331,15 @@ class KimmiCavityInvoice extends KimmiMuseIdolizeInvoice {
   }
 
   Future<void> onKimmiCavityHolder() async {
-    if (pi < 1) {
-      KimmiCreamUnable().ayAirborneHence();
-      KimmiCreamUnable().amSoakButt();
-      KimmiCreamUnable().owSwiftCommie();
-      KimmiCreamUnable().omUp2();
-    }
     if (log2e < 1) {
-      anCadaverFanny();
-      ifPheromoneUgly();
+      KimmiOpenerCater().exJackalWelcome();
+      KimmiOpenerCater().itProperlyWealthy();
+      KimmiOpenerCater().reInvestorStuffy();
+      KimmiOpenerCater().goConnectionInvade();
+    }
+    if (log10e / 2 < 0.1) {
+      soCavityPrinciple();
+      faScriptVi();
     }
     KIMMI.toNamed(KimmiSully.KimmiCavityHolder);
   }

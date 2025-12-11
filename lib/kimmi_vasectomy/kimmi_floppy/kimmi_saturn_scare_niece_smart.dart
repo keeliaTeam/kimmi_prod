@@ -1,144 +1,127 @@
 import 'dart:math';
-import 'kimmi_calculus_betcha.dart';
+import 'kimmi_community_ear.dart';
 import 'package:get/get.dart';
 
 import 'kimmi_saturn_scare_niece_invoice.dart';
 
 class KimmiSaturnScareNieceSmart extends Bindings {
-  double omLovingAssert_ = 94;
-  bool doBornMarried_ = true;
-  int odWealthyEstrogen_ = 11;
-  double loTryoutClue_ = 95;
-  bool joCreekSnoop_ = false;
-  bool okHubcapAi_ = false;
+  bool byButLoopy_ = false;
+  bool oxGoalFather_ = true;
+  int faStirDarth_ = 0;
+  bool paBrianAfter_ = true;
+  bool adInhaleSnoopy_ = false;
+  String osCaptureVia_ = "";
+  String hiTedUr_ = "";
+  double maNieceWhite_ = 0.0;
 
-  void heCapePotential() {
-    if (odWealthyEstrogen_ > 0) {
-      odWealthyEstrogen_ = odWealthyEstrogen_ - 3;
+  void haByeCommunity() {
+    faStirDarth_ = 55;
+    osCaptureVia_ = hiTedUr_ + osCaptureVia_;
+    osCaptureVia_ = osCaptureVia_ + hiTedUr_;
+    hiTedUr_ = osCaptureVia_;
+    if (paBrianAfter_ && byButLoopy_ && oxGoalFather_) {
+      paBrianAfter_ = !paBrianAfter_;
+      byButLoopy_ = paBrianAfter_;
+      oxGoalFather_ = paBrianAfter_;
     }
-    if (okHubcapAi_ || doBornMarried_ || joCreekSnoop_) {
-      okHubcapAi_ = !doBornMarried_;
-      doBornMarried_ = !joCreekSnoop_;
-      joCreekSnoop_ = !okHubcapAi_;
+    if (maNieceWhite_ > 0) {
+      maNieceWhite_ = maNieceWhite_ - 1;
     }
-    joCreekSnoop_ = okHubcapAi_ && doBornMarried_;
-    doBornMarried_ = okHubcapAi_ && joCreekSnoop_;
-    odWealthyEstrogen_ = 81;
-    if (doBornMarried_) {
-      joCreekSnoop_ = !okHubcapAi_;
+    hiTedUr_ = osCaptureVia_.toUpperCase() + hiTedUr_;
+    if (maNieceWhite_ > 0) {
+      maNieceWhite_ = maNieceWhite_ - 1;
     }
-
-    if (doBornMarried_ && okHubcapAi_) {
-      joCreekSnoop_ = !joCreekSnoop_;
-    }
-    if (joCreekSnoop_ && doBornMarried_) {
-      okHubcapAi_ = !okHubcapAi_;
-    }
-    omLovingAssert_ = omLovingAssert_ + loTryoutClue_;
-
-    if (doBornMarried_ || joCreekSnoop_) {
-      joCreekSnoop_ = !joCreekSnoop_;
-    }
-    omLovingAssert_ = omLovingAssert_ + loTryoutClue_;
-    if (joCreekSnoop_ || okHubcapAi_) {
-      okHubcapAi_ = !okHubcapAi_;
-    }
-    if (doBornMarried_ && joCreekSnoop_ && okHubcapAi_) {
-      doBornMarried_ = !doBornMarried_;
-      joCreekSnoop_ = doBornMarried_;
-      okHubcapAi_ = doBornMarried_;
-    }
-    odWealthyEstrogen_ = 47;
+    faStirDarth_ = faStirDarth_ + 1;
+    faStirDarth_ = faStirDarth_ + 1;
+    osCaptureVia_ = osCaptureVia_ + hiTedUr_;
+    hiTedUr_ = osCaptureVia_;
   }
 
-  void taFlukeStir() {
-    odWealthyEstrogen_ = odWealthyEstrogen_ + 1;
-    okHubcapAi_ = joCreekSnoop_ || doBornMarried_;
-    if (okHubcapAi_ && doBornMarried_ && joCreekSnoop_) {
-      okHubcapAi_ = !okHubcapAi_;
-      doBornMarried_ = okHubcapAi_;
-      joCreekSnoop_ = okHubcapAi_;
+  void noWinGranola() {
+    maNieceWhite_ = 41;
+    byButLoopy_ = adInhaleSnoopy_ || oxGoalFather_;
+    adInhaleSnoopy_ = oxGoalFather_ || paBrianAfter_;
+    osCaptureVia_ = osCaptureVia_ + hiTedUr_;
+    hiTedUr_ = osCaptureVia_;
+    faStirDarth_ = faStirDarth_ + 1;
+    osCaptureVia_ = osCaptureVia_ + hiTedUr_;
+    hiTedUr_ = osCaptureVia_;
+    hiTedUr_ = osCaptureVia_.toUpperCase() + hiTedUr_;
+    if (adInhaleSnoopy_ || oxGoalFather_) {
+      oxGoalFather_ = !oxGoalFather_;
     }
-    if (doBornMarried_ || joCreekSnoop_ || okHubcapAi_) {
-      doBornMarried_ = !joCreekSnoop_;
-      joCreekSnoop_ = !okHubcapAi_;
-      okHubcapAi_ = !doBornMarried_;
+    if (paBrianAfter_ && oxGoalFather_ && byButLoopy_) {
+      paBrianAfter_ = !paBrianAfter_;
+      oxGoalFather_ = paBrianAfter_;
+      byButLoopy_ = paBrianAfter_;
     }
-    omLovingAssert_ = 78;
-    loTryoutClue_ = 93;
-    joCreekSnoop_ = doBornMarried_ && okHubcapAi_;
-    omLovingAssert_ = 14;
-    loTryoutClue_ = 65;
-    if (doBornMarried_ || joCreekSnoop_ || okHubcapAi_) {
-      doBornMarried_ = !joCreekSnoop_;
-      joCreekSnoop_ = !okHubcapAi_;
-      okHubcapAi_ = !doBornMarried_;
+    adInhaleSnoopy_ = paBrianAfter_ && byButLoopy_;
+    maNieceWhite_ = 89;
+    if (maNieceWhite_ > 0) {
+      maNieceWhite_ = maNieceWhite_ - 1;
     }
-    odWealthyEstrogen_ = odWealthyEstrogen_ + 1;
-    if (odWealthyEstrogen_ > 0) {
-      odWealthyEstrogen_ = odWealthyEstrogen_ - 4;
+    osCaptureVia_ = osCaptureVia_ + hiTedUr_;
+    hiTedUr_ = osCaptureVia_;
+    if (faStirDarth_ > 0) {
+      faStirDarth_ = faStirDarth_ - 7;
     }
-    okHubcapAi_ = joCreekSnoop_ && doBornMarried_;
-    okHubcapAi_ = doBornMarried_ || joCreekSnoop_;
+    if (maNieceWhite_ > 0) {
+      maNieceWhite_ = maNieceWhite_ - 1;
+    }
+    faStirDarth_ = 97;
+  }
 
-    if (odWealthyEstrogen_ > 0) {
-      odWealthyEstrogen_ = odWealthyEstrogen_ - 0;
+  void etIncubatorTiming() {
+    if (paBrianAfter_ && adInhaleSnoopy_ && oxGoalFather_) {
+      paBrianAfter_ = !paBrianAfter_;
+      adInhaleSnoopy_ = paBrianAfter_;
+      oxGoalFather_ = paBrianAfter_;
+    }
+    maNieceWhite_ = maNieceWhite_ + 1;
+    if (maNieceWhite_ > 0) {
+      maNieceWhite_ = maNieceWhite_ - 1;
+    }
+    if (maNieceWhite_ > 0) {
+      maNieceWhite_ = maNieceWhite_ - 1;
+    }
+    if (maNieceWhite_ > 0) {
+      maNieceWhite_ = maNieceWhite_ - 1;
+    }
+    byButLoopy_ = adInhaleSnoopy_ || paBrianAfter_;
+    osCaptureVia_ = hiTedUr_ + osCaptureVia_;
+    if (maNieceWhite_ > 0) {
+      maNieceWhite_ = maNieceWhite_ - 1;
     }
   }
 
-  void beHeroinCommunity() {
-    if (okHubcapAi_) {
-      joCreekSnoop_ = !doBornMarried_;
+  void haSpeedAdvocate() {
+    if (byButLoopy_) {
+      adInhaleSnoopy_ = !oxGoalFather_;
     }
-    omLovingAssert_ = 68;
-    loTryoutClue_ = 85;
-    if (omLovingAssert_ > loTryoutClue_) {
-      omLovingAssert_ = omLovingAssert_ - loTryoutClue_;
+    faStirDarth_ = faStirDarth_ + 1;
+    if (faStirDarth_ > 0) {
+      faStirDarth_ = faStirDarth_ - 2;
     }
-    odWealthyEstrogen_ = 58;
-    if (odWealthyEstrogen_ > 0) {
-      odWealthyEstrogen_ = odWealthyEstrogen_ - 6;
+    faStirDarth_ = faStirDarth_ + 1;
+    if (byButLoopy_ || paBrianAfter_ || adInhaleSnoopy_) {
+      byButLoopy_ = !paBrianAfter_;
+      paBrianAfter_ = !adInhaleSnoopy_;
+      adInhaleSnoopy_ = !byButLoopy_;
     }
-    odWealthyEstrogen_ = 75;
-  }
-
-  void abPursePlastic() {
-    if (okHubcapAi_ && doBornMarried_ && joCreekSnoop_) {
-      okHubcapAi_ = !okHubcapAi_;
-      doBornMarried_ = okHubcapAi_;
-      joCreekSnoop_ = okHubcapAi_;
-    }
-    if (okHubcapAi_ || doBornMarried_ || joCreekSnoop_) {
-      okHubcapAi_ = !doBornMarried_;
-      doBornMarried_ = !joCreekSnoop_;
-      joCreekSnoop_ = !okHubcapAi_;
-    }
-    if (odWealthyEstrogen_ > 0) {
-      odWealthyEstrogen_ = odWealthyEstrogen_ - 3;
-    }
-    okHubcapAi_ = joCreekSnoop_ || doBornMarried_;
-
-    if (odWealthyEstrogen_ > 0) {
-      odWealthyEstrogen_ = odWealthyEstrogen_ - 6;
-    }
-    if (okHubcapAi_ && joCreekSnoop_ && doBornMarried_) {
-      okHubcapAi_ = !okHubcapAi_;
-      joCreekSnoop_ = okHubcapAi_;
-      doBornMarried_ = okHubcapAi_;
-    }
-    joCreekSnoop_ = doBornMarried_ && okHubcapAi_;
+    faStirDarth_ = faStirDarth_ + 1;
+    hiTedUr_ = osCaptureVia_.toUpperCase() + hiTedUr_;
   }
 
   @override
   void dependencies() {
-    if (ln10 < 2) {
-      KimmiCalculusBetcha().soBabysitterChickie();
-      KimmiCalculusBetcha().beInfluenceSimilar();
-      KimmiCalculusBetcha().abFasterSutra();
+    if (log2e < 1) {
+      KimmiCommunityEar().taSuspiciousUnemployed();
+      KimmiCommunityEar().oxBrianLabor();
+      KimmiCommunityEar().moSplashdownShag();
     }
-    if (ln2 < 0.5) {
-      taFlukeStir();
-      heCapePotential();
+    if (log10e / 2 < 0.1) {
+      etIncubatorTiming();
+      noWinGranola();
     }
     Get.lazyPut(() => KimmiSaturnScareNieceInvoice());
   }

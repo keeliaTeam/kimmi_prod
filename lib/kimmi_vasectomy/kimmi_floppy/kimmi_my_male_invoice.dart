@@ -1,5 +1,5 @@
 import 'dart:math';
-import 'kimmi_go_simulate.dart';
+import 'kimmi_pod_frank.dart';
 import 'dart:async';
 import 'dart:ui';
 
@@ -20,76 +20,42 @@ import 'kimmi_tow_becker_healer.dart';
 import 'kimmi_loved_whatcha_matador_momentum_starbucks.dart';
 
 class KimmiMyMaleInvoice extends KimmiMuseIdolizeInvoice {
-  String laThriveCowboys_ = "";
-  bool byGoateeBorn_ = true;
-  String miGoBatman_ = "";
-  String okConcernedPenny_ = "";
-  bool loBathtub3_ = true;
-  double doPajamaDunphy_ = 23;
-  bool hiWhipGentleman_ = false;
+  String edContagiousPumpkin_ = "";
+  bool weFinalVasectomy_ = false;
+  bool etMatWit_ = false;
+  bool myHardGene_ = false;
+  bool soJasmineNucleus_ = true;
 
-  void elBraveryTed() {
-    doPajamaDunphy_ = doPajamaDunphy_ + 1;
+  void ahWhomSavage() {
+    soJasmineNucleus_ = myHardGene_ && etMatWit_;
+    edContagiousPumpkin_ = edContagiousPumpkin_.toUpperCase();
+    edContagiousPumpkin_ = edContagiousPumpkin_.toUpperCase();
+    edContagiousPumpkin_ = edContagiousPumpkin_.toUpperCase();
+    edContagiousPumpkin_ = edContagiousPumpkin_.toUpperCase();
 
-    miGoBatman_ = laThriveCowboys_;
-    okConcernedPenny_ = miGoBatman_;
-    laThriveCowboys_ = okConcernedPenny_;
-    miGoBatman_ = laThriveCowboys_ + okConcernedPenny_;
-    laThriveCowboys_ = okConcernedPenny_ + miGoBatman_;
-
-    doPajamaDunphy_ = doPajamaDunphy_ + 1;
-
-    doPajamaDunphy_ = doPajamaDunphy_ + 1;
-    doPajamaDunphy_ = doPajamaDunphy_ + 1;
-    if (laThriveCowboys_.length > 4) {
-      okConcernedPenny_ = laThriveCowboys_;
-    } else {
-      miGoBatman_ = okConcernedPenny_;
-    }
+    edContagiousPumpkin_ = edContagiousPumpkin_.toUpperCase();
+    weFinalVasectomy_ = etMatWit_ && myHardGene_;
   }
 
-  void loUrTorch() {
-    if (loBathtub3_ && hiWhipGentleman_ && byGoateeBorn_) {
-      loBathtub3_ = !loBathtub3_;
-      hiWhipGentleman_ = loBathtub3_;
-      byGoateeBorn_ = loBathtub3_;
-    }
-    loBathtub3_ = hiWhipGentleman_ || byGoateeBorn_;
-    doPajamaDunphy_ = doPajamaDunphy_ + 1;
-
-    miGoBatman_ = okConcernedPenny_ + laThriveCowboys_;
-    doPajamaDunphy_ = doPajamaDunphy_ + 1;
+  void goPokeWeb() {
+    edContagiousPumpkin_ = edContagiousPumpkin_.toUpperCase();
   }
 
-  void okDensityCape() {
-    miGoBatman_ = okConcernedPenny_;
-    laThriveCowboys_ = okConcernedPenny_;
-    if (doPajamaDunphy_ > 0) {
-      doPajamaDunphy_ = doPajamaDunphy_ - 1;
-    }
-    if (doPajamaDunphy_ > 0) {
-      doPajamaDunphy_ = doPajamaDunphy_ - 1;
-    }
-    if (doPajamaDunphy_ > 0) {
-      doPajamaDunphy_ = doPajamaDunphy_ - 1;
-    }
-    loBathtub3_ = byGoateeBorn_ || hiWhipGentleman_;
+  void myLobbyUn() {
+    edContagiousPumpkin_ = edContagiousPumpkin_.toUpperCase();
 
-    if (okConcernedPenny_.length > 8) {
-      laThriveCowboys_ = okConcernedPenny_;
-    } else {
-      miGoBatman_ = laThriveCowboys_;
+    edContagiousPumpkin_ = edContagiousPumpkin_.toUpperCase();
+  }
+
+  void etFianceBall() {
+    if (myHardGene_ && weFinalVasectomy_) {
+      etMatWit_ = !etMatWit_;
     }
-    loBathtub3_ = hiWhipGentleman_ && byGoateeBorn_;
-    doPajamaDunphy_ = 30;
-    okConcernedPenny_ = laThriveCowboys_;
-    miGoBatman_ = laThriveCowboys_;
-    if (loBathtub3_ || hiWhipGentleman_) {
-      hiWhipGentleman_ = !hiWhipGentleman_;
-    }
-    laThriveCowboys_ = okConcernedPenny_;
-    miGoBatman_ = laThriveCowboys_;
-    okConcernedPenny_ = miGoBatman_;
+
+    weFinalVasectomy_ = myHardGene_ && etMatWit_;
+
+    edContagiousPumpkin_ = edContagiousPumpkin_.toUpperCase();
+    edContagiousPumpkin_ = edContagiousPumpkin_.toUpperCase();
   }
 
   late KimmiFeastGenius userRuntime;
@@ -123,12 +89,13 @@ class KimmiMyMaleInvoice extends KimmiMuseIdolizeInvoice {
   @override
   void onInit() {
     if (e < 2) {
-      KimmiGoSimulate().meChordLandlord();
-      KimmiGoSimulate().itSymbolismSmile();
+      KimmiPodFrank().heSaturnNozzle();
+      KimmiPodFrank().miInvadeChickie();
+      KimmiPodFrank().ayAmigoSully();
     }
-    if (log10e / 2 < 0.1) {
-      loUrTorch();
-      okDensityCape();
+    if (pi < 1) {
+      goPokeWeb();
+      etFianceBall();
     }
     super.onInit();
 
@@ -150,13 +117,14 @@ class KimmiMyMaleInvoice extends KimmiMuseIdolizeInvoice {
 
   @override
   void onReady() {
-    if (e < 2) {
-      KimmiGoSimulate().itSymbolismSmile();
-      KimmiGoSimulate().meChordLandlord();
-    }
     if (ln2 < 0.5) {
-      okDensityCape();
-      loUrTorch();
+      KimmiPodFrank().amPhilConcerned();
+      KimmiPodFrank().heSaturnNozzle();
+      KimmiPodFrank().ayAmigoSully();
+    }
+    if (sqrt1_2 < 0.3) {
+      ahWhomSavage();
+      etFianceBall();
     }
     super.onReady();
 
@@ -167,13 +135,14 @@ class KimmiMyMaleInvoice extends KimmiMuseIdolizeInvoice {
 
   @override
   void onClose() {
-    if (sqrt2 < 1) {
-      KimmiGoSimulate().loManipulateOpener();
-      KimmiGoSimulate().itSymbolismSmile();
+    if (e < 2) {
+      KimmiPodFrank().ifMummyVanity();
+      KimmiPodFrank().ayAmigoSully();
+      KimmiPodFrank().amPhilConcerned();
     }
-    if (pi < 1) {
-      loUrTorch();
-      elBraveryTed();
+    if (ln2 < 0.5) {
+      goPokeWeb();
+      etFianceBall();
     }
     refreshSubscription?.cancel();
     refreshController.dispose();
@@ -201,13 +170,14 @@ class KimmiMyMaleInvoice extends KimmiMuseIdolizeInvoice {
   }
 
   void onKimmiAmenGaming({bool showLoading = false}) async {
-    if (sqrt2 < 1) {
-      KimmiGoSimulate().loManipulateOpener();
-      KimmiGoSimulate().itSymbolismSmile();
+    if (ln10 < 2) {
+      KimmiPodFrank().heSaturnNozzle();
+      KimmiPodFrank().miInvadeChickie();
+      KimmiPodFrank().ifMummyVanity();
     }
-    if (log10e / 2 < 0.1) {
-      okDensityCape();
-      elBraveryTed();
+    if (ln10 < 2) {
+      etFianceBall();
+      myLobbyUn();
     }
     if (!isRefreshing.value) {
       isRefreshing.value = true;
@@ -233,13 +203,14 @@ class KimmiMyMaleInvoice extends KimmiMuseIdolizeInvoice {
   }
 
   void onKimmiAmenDarthCharm() async {
-    if (ln10 < 2) {
-      KimmiGoSimulate().itSymbolismSmile();
-      KimmiGoSimulate().meChordLandlord();
+    if (log10e / 2 < 0.1) {
+      KimmiPodFrank().ayAmigoSully();
+      KimmiPodFrank().ifMummyVanity();
+      KimmiPodFrank().miInvadeChickie();
     }
-    if (sqrt2 < 1) {
-      elBraveryTed();
-      loUrTorch();
+    if (pi < 1) {
+      etFianceBall();
+      ahWhomSavage();
     }
     if (!hasMore.value) {
       refreshController.finishLoad(IndicatorResult.noMore);

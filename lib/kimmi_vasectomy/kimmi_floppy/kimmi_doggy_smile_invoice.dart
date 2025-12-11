@@ -1,5 +1,5 @@
 import 'dart:math';
-import 'kimmi_inhale_outsource.dart';
+import 'kimmi_scare_blood.dart';
 import 'dart:async';
 import 'dart:ui';
 import 'package:kimmi/kimmi_vasectomy/kimmi_storm/kimmi_feast.dart';
@@ -18,148 +18,85 @@ import '../kimmi_storm/kimmi_storm_concerned.dart';
 
 class KimmiDoggySmileInvoice extends KimmiMuseInvoice
     with GetTickerProviderStateMixin {
-  int reWalkerTeepee_ = 65;
-  double omAirlineInsecure_ = 83;
-  double haGrammySubject_ = 93;
-  bool etDramamineTopless_ = false;
-  String asSimulateTacky_ = "";
-  bool elArmyKg_ = true;
-  String taH3Simulator_ = "";
-  String siTerribleSoak_ = "";
-  String mo5Bargain_ = "";
-  bool opStuffyDeceit_ = true;
+  bool soSarcasmFighting_ = true;
+  double moLaurenVanish_ = 33;
+  int si1Fiance_ = 78;
+  bool ofConfoundFeast_ = false;
+  bool mmScholarWhimsical_ = true;
+  int doBowlerBadge_ = 0;
+  String oxBlackjackCompelling_ = "";
+  bool hiMaleChoose_ = true;
 
-  void exMichelleCulture() {
-    reWalkerTeepee_ = 22;
-    asSimulateTacky_ = taH3Simulator_;
-    siTerribleSoak_ = asSimulateTacky_;
-    taH3Simulator_ = siTerribleSoak_;
-    if (elArmyKg_ && opStuffyDeceit_ && etDramamineTopless_) {
-      elArmyKg_ = !elArmyKg_;
-      opStuffyDeceit_ = elArmyKg_;
-      etDramamineTopless_ = elArmyKg_;
+  void opAdHence() {
+    si1Fiance_ = 39;
+    doBowlerBadge_ = 42;
+    si1Fiance_ = 75;
+    doBowlerBadge_ = 36;
+    if (hiMaleChoose_ && ofConfoundFeast_ && mmScholarWhimsical_) {
+      hiMaleChoose_ = !hiMaleChoose_;
+      ofConfoundFeast_ = hiMaleChoose_;
+      mmScholarWhimsical_ = hiMaleChoose_;
     }
-    mo5Bargain_ = siTerribleSoak_;
-    taH3Simulator_ = mo5Bargain_;
-    siTerribleSoak_ = taH3Simulator_;
-    if (opStuffyDeceit_ || elArmyKg_ || etDramamineTopless_) {
-      opStuffyDeceit_ = !elArmyKg_;
-      elArmyKg_ = !etDramamineTopless_;
-      etDramamineTopless_ = !opStuffyDeceit_;
+    si1Fiance_ = si1Fiance_ * doBowlerBadge_;
+    moLaurenVanish_ = moLaurenVanish_ + 1;
+    moLaurenVanish_ = moLaurenVanish_ + 1;
+    si1Fiance_ = 82;
+    doBowlerBadge_ = 5;
+    si1Fiance_ = 90;
+    doBowlerBadge_ = 44;
+    if (ofConfoundFeast_ && mmScholarWhimsical_ && hiMaleChoose_) {
+      ofConfoundFeast_ = !ofConfoundFeast_;
+      mmScholarWhimsical_ = ofConfoundFeast_;
+      hiMaleChoose_ = ofConfoundFeast_;
     }
-    elArmyKg_ = etDramamineTopless_ || opStuffyDeceit_;
-    omAirlineInsecure_ = omAirlineInsecure_ + haGrammySubject_;
-    if (reWalkerTeepee_ > 0) {
-      reWalkerTeepee_ = reWalkerTeepee_ - 5;
+    moLaurenVanish_ = 89;
+    if (mmScholarWhimsical_ || ofConfoundFeast_ || hiMaleChoose_) {
+      mmScholarWhimsical_ = !ofConfoundFeast_;
+      ofConfoundFeast_ = !hiMaleChoose_;
+      hiMaleChoose_ = !mmScholarWhimsical_;
     }
-    omAirlineInsecure_ = omAirlineInsecure_ + haGrammySubject_;
-    asSimulateTacky_ = siTerribleSoak_;
-    mo5Bargain_ = asSimulateTacky_;
-    siTerribleSoak_ = mo5Bargain_;
-    reWalkerTeepee_ = 26;
-    siTerribleSoak_ = asSimulateTacky_;
-    taH3Simulator_ = asSimulateTacky_;
-    omAirlineInsecure_ = omAirlineInsecure_ + haGrammySubject_;
-    if (opStuffyDeceit_ || etDramamineTopless_) {
-      etDramamineTopless_ = !etDramamineTopless_;
+    oxBlackjackCompelling_ = oxBlackjackCompelling_.toUpperCase();
+    if (mmScholarWhimsical_ || hiMaleChoose_) {
+      hiMaleChoose_ = !hiMaleChoose_;
+    }
+    si1Fiance_ = si1Fiance_ * doBowlerBadge_;
+  }
+
+  void idBowlerd() {
+    if (hiMaleChoose_ && soSarcasmFighting_ && ofConfoundFeast_) {
+      hiMaleChoose_ = !hiMaleChoose_;
+      soSarcasmFighting_ = hiMaleChoose_;
+      ofConfoundFeast_ = hiMaleChoose_;
+    }
+    if (moLaurenVanish_ > 0) {
+      moLaurenVanish_ = moLaurenVanish_ - 1;
+    }
+    oxBlackjackCompelling_ = oxBlackjackCompelling_.toUpperCase();
+    if (si1Fiance_ > doBowlerBadge_) {
+      si1Fiance_ = si1Fiance_ + doBowlerBadge_;
+    }
+    si1Fiance_ = 51;
+    doBowlerBadge_ = 51;
+    si1Fiance_ = si1Fiance_ * doBowlerBadge_;
+    si1Fiance_ = si1Fiance_ * doBowlerBadge_;
+    moLaurenVanish_ = 63;
+    if (moLaurenVanish_ > 0) {
+      moLaurenVanish_ = moLaurenVanish_ - 1;
+    }
+    mmScholarWhimsical_ = soSarcasmFighting_ && hiMaleChoose_;
+    if (moLaurenVanish_ > 0) {
+      moLaurenVanish_ = moLaurenVanish_ - 1;
     }
   }
 
-  void inKnobQuantity() {
-    if (reWalkerTeepee_ > 0) {
-      reWalkerTeepee_ = reWalkerTeepee_ - 3;
+  void esExpensiveShag() {
+    si1Fiance_ = si1Fiance_ * doBowlerBadge_;
+    oxBlackjackCompelling_ = oxBlackjackCompelling_.toUpperCase();
+    si1Fiance_ = si1Fiance_ * doBowlerBadge_;
+    if (moLaurenVanish_ > 0) {
+      moLaurenVanish_ = moLaurenVanish_ - 1;
     }
-    if (opStuffyDeceit_ && etDramamineTopless_) {
-      elArmyKg_ = !elArmyKg_;
-    }
-    if (omAirlineInsecure_ > haGrammySubject_) {
-      omAirlineInsecure_ = omAirlineInsecure_ - haGrammySubject_;
-    }
-    if (etDramamineTopless_ || elArmyKg_ || opStuffyDeceit_) {
-      etDramamineTopless_ = !elArmyKg_;
-      elArmyKg_ = !opStuffyDeceit_;
-      opStuffyDeceit_ = !etDramamineTopless_;
-    }
-    reWalkerTeepee_ = reWalkerTeepee_ + 1;
-    if (elArmyKg_ && opStuffyDeceit_ && etDramamineTopless_) {
-      elArmyKg_ = !elArmyKg_;
-      opStuffyDeceit_ = elArmyKg_;
-      etDramamineTopless_ = elArmyKg_;
-    }
-    if (omAirlineInsecure_ > haGrammySubject_) {
-      omAirlineInsecure_ = omAirlineInsecure_ - haGrammySubject_;
-    }
-    siTerribleSoak_ = taH3Simulator_;
-    asSimulateTacky_ = taH3Simulator_;
-    omAirlineInsecure_ = omAirlineInsecure_ + haGrammySubject_;
-    if (omAirlineInsecure_ > haGrammySubject_) {
-      omAirlineInsecure_ = omAirlineInsecure_ - haGrammySubject_;
-    }
-    siTerribleSoak_ = taH3Simulator_;
-    mo5Bargain_ = siTerribleSoak_;
-    taH3Simulator_ = mo5Bargain_;
-  }
-
-  void hiInvestorMake() {
-    omAirlineInsecure_ = 18;
-    haGrammySubject_ = 6;
-    siTerribleSoak_ = mo5Bargain_;
-    taH3Simulator_ = mo5Bargain_;
-    omAirlineInsecure_ = omAirlineInsecure_ + haGrammySubject_;
-    if (reWalkerTeepee_ > 0) {
-      reWalkerTeepee_ = reWalkerTeepee_ - 5;
-    }
-    omAirlineInsecure_ = 44;
-    haGrammySubject_ = 58;
-    if (elArmyKg_ && opStuffyDeceit_) {
-      etDramamineTopless_ = !etDramamineTopless_;
-    }
-    if (elArmyKg_) {
-      etDramamineTopless_ = !opStuffyDeceit_;
-    }
-  }
-
-  void emTeaserFoxy() {
-    reWalkerTeepee_ = 42;
-    asSimulateTacky_ = taH3Simulator_ + mo5Bargain_;
-    reWalkerTeepee_ = 98;
-    etDramamineTopless_ = elArmyKg_ || opStuffyDeceit_;
-    taH3Simulator_ = siTerribleSoak_ + mo5Bargain_;
-    taH3Simulator_ = mo5Bargain_ + asSimulateTacky_;
-    if (mo5Bargain_.length > 6) {
-      taH3Simulator_ = mo5Bargain_;
-    } else {
-      asSimulateTacky_ = taH3Simulator_;
-    }
-    reWalkerTeepee_ = reWalkerTeepee_ + 1;
-    asSimulateTacky_ = siTerribleSoak_ + taH3Simulator_;
-    if (reWalkerTeepee_ > 0) {
-      reWalkerTeepee_ = reWalkerTeepee_ - 7;
-    }
-    if (reWalkerTeepee_ > 0) {
-      reWalkerTeepee_ = reWalkerTeepee_ - 3;
-    }
-    if (reWalkerTeepee_ > 0) {
-      reWalkerTeepee_ = reWalkerTeepee_ - 1;
-    }
-    if (reWalkerTeepee_ > 0) {
-      reWalkerTeepee_ = reWalkerTeepee_ - 0;
-    }
-    if (etDramamineTopless_) {
-      elArmyKg_ = !opStuffyDeceit_;
-    }
-    if (etDramamineTopless_ && opStuffyDeceit_) {
-      elArmyKg_ = !elArmyKg_;
-    }
-    if (omAirlineInsecure_ > haGrammySubject_) {
-      omAirlineInsecure_ = omAirlineInsecure_ - haGrammySubject_;
-    }
-    if (opStuffyDeceit_ && elArmyKg_ && etDramamineTopless_) {
-      opStuffyDeceit_ = !opStuffyDeceit_;
-      elArmyKg_ = opStuffyDeceit_;
-      etDramamineTopless_ = opStuffyDeceit_;
-    }
-    opStuffyDeceit_ = etDramamineTopless_ || elArmyKg_;
+    oxBlackjackCompelling_ = oxBlackjackCompelling_.toUpperCase();
   }
 
   static const String kimmi_system = "kimmi_system";
@@ -178,15 +115,15 @@ class KimmiDoggySmileInvoice extends KimmiMuseInvoice
 
   @override
   void onInit() {
-    if (sqrt2 < 1) {
-      KimmiInhaleOutsource().meUnScholar();
-      KimmiInhaleOutsource().adMouseHandshake();
-      KimmiInhaleOutsource().ayButMeeting();
-      KimmiInhaleOutsource().miSwallowMilkshake();
+    if (ln10 < 2) {
+      KimmiScareBlood().esAkaSaver();
+      KimmiScareBlood().goHeadMatador();
+      KimmiScareBlood().efAfricaUterus();
+      KimmiScareBlood().meSwallowCoccyx();
     }
-    if (pi < 1) {
-      inKnobQuantity();
-      exMichelleCulture();
+    if (sqrt1_2 < 0.3) {
+      opAdHence();
+      idBowlerd();
     }
     chatCall = KimmiIndiaWaitressDock.instance.kimmiPoopVanishDoggy()!;
     KimmiIndiaWaitressDock.instance.kimmiSlothSmileContainerMarvel(true);
@@ -216,15 +153,15 @@ class KimmiDoggySmileInvoice extends KimmiMuseInvoice
 
   @override
   void onClose() {
-    if (pi < 1) {
-      KimmiInhaleOutsource().miSwallowMilkshake();
-      KimmiInhaleOutsource().meUnScholar();
-      KimmiInhaleOutsource().ayButMeeting();
-      KimmiInhaleOutsource().adMouseHandshake();
+    if (sqrt2 < 1) {
+      KimmiScareBlood().meSwallowCoccyx();
+      KimmiScareBlood().emNoHamill();
+      KimmiScareBlood().haFatherComprehend();
+      KimmiScareBlood().goHeadMatador();
     }
-    if (log10e / 2 < 0.1) {
-      exMichelleCulture();
-      emTeaserFoxy();
+    if (e < 2) {
+      opAdHence();
+      esExpensiveShag();
     }
     KimmiIndiaWaitressDock.instance.kimmiSlothSmileContainerMarvel(false);
     _stopCancelTimer();

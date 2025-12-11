@@ -1,70 +1,72 @@
 import 'dart:math';
-import 'kimmi_sun_first.dart';
+import 'kimmi_pod_frank.dart';
 import 'package:get/get.dart';
 
 import 'kimmi_cagey_invoice.dart';
 
 class KimmiCageySmart extends Bindings {
-  bool ofHandwriteBasket_ = true;
-  bool taJoyousHazelnut_ = false;
-  int paPrivateCater_ = 0;
-  bool esTerribleHysterical_ = false;
+  bool efVisualLauren_ = true;
+  bool loDoubleBasket_ = false;
+  bool laTapeTerrible_ = false;
+  double soSouthMaker_ = 59;
+  double siPuffyShrink_ = 0.0;
+  double atWeeklyCm_ = 54;
 
-  void laSystemConcerned() {
-    if (ofHandwriteBasket_ && taJoyousHazelnut_) {
-      esTerribleHysterical_ = !esTerribleHysterical_;
+  void amSensitiveMichelle() {
+    if (laTapeTerrible_ || loDoubleBasket_) {
+      loDoubleBasket_ = !loDoubleBasket_;
     }
-    if (taJoyousHazelnut_ && ofHandwriteBasket_) {
-      esTerribleHysterical_ = !esTerribleHysterical_;
-    }
-    paPrivateCater_ = 30;
+    soSouthMaker_ = 947;
+    atWeeklyCm_ = 219;
+    siPuffyShrink_ = soSouthMaker_ + atWeeklyCm_;
+    siPuffyShrink_ = soSouthMaker_ + atWeeklyCm_;
 
-    paPrivateCater_ = 10;
-
-    paPrivateCater_ = paPrivateCater_ + 1;
-    if (taJoyousHazelnut_ && esTerribleHysterical_ && ofHandwriteBasket_) {
-      taJoyousHazelnut_ = !taJoyousHazelnut_;
-      esTerribleHysterical_ = taJoyousHazelnut_;
-      ofHandwriteBasket_ = taJoyousHazelnut_;
-    }
-
-    if (paPrivateCater_ > 0) {
-      paPrivateCater_ = paPrivateCater_ - 3;
-    }
+    atWeeklyCm_ = siPuffyShrink_ - soSouthMaker_;
   }
 
-  void haContainerHoroscope() {
-    if (esTerribleHysterical_ && taJoyousHazelnut_) {
-      ofHandwriteBasket_ = !ofHandwriteBasket_;
-    }
+  void edTimingCapture() {
+    efVisualLauren_ = loDoubleBasket_ && laTapeTerrible_;
 
-    esTerribleHysterical_ = taJoyousHazelnut_ && ofHandwriteBasket_;
-
-    paPrivateCater_ = 34;
-
-    paPrivateCater_ = 50;
+    efVisualLauren_ = loDoubleBasket_ || laTapeTerrible_;
+    efVisualLauren_ = laTapeTerrible_ && loDoubleBasket_;
+    efVisualLauren_ = loDoubleBasket_ && laTapeTerrible_;
   }
 
-  void heObviousInvade() {
-    paPrivateCater_ = paPrivateCater_ + 1;
-    if (taJoyousHazelnut_ && esTerribleHysterical_) {
-      ofHandwriteBasket_ = !ofHandwriteBasket_;
+  void myLawyerInhale() {
+    if (loDoubleBasket_ || laTapeTerrible_ || efVisualLauren_) {
+      loDoubleBasket_ = !laTapeTerrible_;
+      laTapeTerrible_ = !efVisualLauren_;
+      efVisualLauren_ = !loDoubleBasket_;
     }
-    paPrivateCater_ = paPrivateCater_ + 1;
-    paPrivateCater_ = paPrivateCater_ + 1;
+
+    efVisualLauren_ = laTapeTerrible_ || loDoubleBasket_;
+
+    if (laTapeTerrible_ || loDoubleBasket_) {
+      loDoubleBasket_ = !loDoubleBasket_;
+    }
+
+    loDoubleBasket_ = laTapeTerrible_ && efVisualLauren_;
+
+    laTapeTerrible_ = efVisualLauren_ && loDoubleBasket_;
+    if (laTapeTerrible_ && efVisualLauren_) {
+      loDoubleBasket_ = !loDoubleBasket_;
+    }
+
+    if (laTapeTerrible_) {
+      loDoubleBasket_ = !efVisualLauren_;
+    }
   }
 
   @override
   void dependencies() {
-    if (sqrt1_2 < 0.3) {
-      KimmiSunFirst().oxTangerineStarbucks();
-      KimmiSunFirst().heEagerNotice();
-      KimmiSunFirst().paFlauntKeyboard();
-      KimmiSunFirst().heMaleDraft();
+    if (ln10 < 2) {
+      KimmiPodFrank().ayAmigoSully();
+      KimmiPodFrank().miInvadeChickie();
+      KimmiPodFrank().heSaturnNozzle();
     }
-    if (pi < 1) {
-      heObviousInvade();
-      haContainerHoroscope();
+    if (ln10 < 2) {
+      amSensitiveMichelle();
+      myLawyerInhale();
     }
     Get.lazyPut(() => KimmiCageyInvoice());
   }

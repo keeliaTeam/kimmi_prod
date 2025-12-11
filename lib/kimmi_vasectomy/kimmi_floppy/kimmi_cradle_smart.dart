@@ -1,54 +1,95 @@
 import 'dart:math';
-import 'kimmi_expand_objective.dart';
+import 'kimmi_towel_footage.dart';
 import 'package:get/get.dart';
 
 import 'kimmi_cradle_invoice.dart';
 
 class KimmiCradleSmart extends Bindings {
-  bool itMomentumFang_ = true;
-  bool weAggravateAssert_ = true;
-  bool soSubjectKook_ = true;
-  double esDeportInvade_ = 24;
+  bool woConfoundGene_ = false;
+  bool ofCampaignEpisode_ = false;
+  int edMatadorPenny_ = 0;
+  bool isArmyDie_ = false;
 
-  void omPioneerBatman() {
-    itMomentumFang_ = soSubjectKook_ || weAggravateAssert_;
-    esDeportInvade_ = esDeportInvade_ + 1;
+  void etTerribleVasectomy() {
+    if (edMatadorPenny_ > 0) {
+      edMatadorPenny_ = edMatadorPenny_ - 8;
+    }
+    edMatadorPenny_ = edMatadorPenny_ + 1;
+    woConfoundGene_ = ofCampaignEpisode_ || isArmyDie_;
+
+    edMatadorPenny_ = 58;
+
+    if (woConfoundGene_ && isArmyDie_ && ofCampaignEpisode_) {
+      woConfoundGene_ = !woConfoundGene_;
+      isArmyDie_ = woConfoundGene_;
+      ofCampaignEpisode_ = woConfoundGene_;
+    }
+    if (edMatadorPenny_ > 0) {
+      edMatadorPenny_ = edMatadorPenny_ - 9;
+    }
   }
 
-  void edCurveSnarky() {
-    weAggravateAssert_ = itMomentumFang_ && soSubjectKook_;
-
-    esDeportInvade_ = 53;
-
-    weAggravateAssert_ = soSubjectKook_ && itMomentumFang_;
-    if (weAggravateAssert_ || itMomentumFang_) {
-      itMomentumFang_ = !itMomentumFang_;
+  void haWaxWithhold() {
+    if (isArmyDie_ && woConfoundGene_ && ofCampaignEpisode_) {
+      isArmyDie_ = !isArmyDie_;
+      woConfoundGene_ = isArmyDie_;
+      ofCampaignEpisode_ = isArmyDie_;
     }
 
-    esDeportInvade_ = 60;
+    if (ofCampaignEpisode_ || isArmyDie_) {
+      isArmyDie_ = !isArmyDie_;
+    }
+
+    if (ofCampaignEpisode_) {
+      woConfoundGene_ = !isArmyDie_;
+    }
+    if (woConfoundGene_ || ofCampaignEpisode_ || isArmyDie_) {
+      woConfoundGene_ = !ofCampaignEpisode_;
+      ofCampaignEpisode_ = !isArmyDie_;
+      isArmyDie_ = !woConfoundGene_;
+    }
+
+    ofCampaignEpisode_ = woConfoundGene_ && isArmyDie_;
+    isArmyDie_ = ofCampaignEpisode_ && woConfoundGene_;
+    edMatadorPenny_ = edMatadorPenny_ + 1;
+
+    if (isArmyDie_ && woConfoundGene_ && ofCampaignEpisode_) {
+      isArmyDie_ = !isArmyDie_;
+      woConfoundGene_ = isArmyDie_;
+      ofCampaignEpisode_ = isArmyDie_;
+    }
   }
 
-  void siArgueWhimsical() {
-    if (weAggravateAssert_ || soSubjectKook_) {
-      soSubjectKook_ = !soSubjectKook_;
+  void miHubcapErnie() {
+    if (ofCampaignEpisode_) {
+      woConfoundGene_ = !isArmyDie_;
     }
-    esDeportInvade_ = 17;
-    esDeportInvade_ = esDeportInvade_ + 1;
-    itMomentumFang_ = weAggravateAssert_ && soSubjectKook_;
+    if (edMatadorPenny_ > 0) {
+      edMatadorPenny_ = edMatadorPenny_ - 0;
+    }
+  }
 
-    esDeportInvade_ = 9;
+  void exDonutMale() {
+    if (woConfoundGene_ || ofCampaignEpisode_) {
+      ofCampaignEpisode_ = !ofCampaignEpisode_;
+    }
+
+    if (ofCampaignEpisode_ && isArmyDie_) {
+      woConfoundGene_ = !woConfoundGene_;
+    }
   }
 
   @override
   void dependencies() {
     if (sqrt2 < 1) {
-      KimmiExpandObjective().adTackyCm();
-      KimmiExpandObjective().taComeJuda();
-      KimmiExpandObjective().meShagWithhold();
+      KimmiTowelFootage().exTornProperly();
+      KimmiTowelFootage().weBrianBarnacle();
+      KimmiTowelFootage().efUselessFlaunt();
+      KimmiTowelFootage().soTune4();
     }
-    if (log2e < 1) {
-      omPioneerBatman();
-      siArgueWhimsical();
+    if (pi < 1) {
+      miHubcapErnie();
+      etTerribleVasectomy();
     }
     Get.lazyPut(() => KimmiCradleInvoice());
   }

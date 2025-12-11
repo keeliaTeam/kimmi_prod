@@ -1,5 +1,5 @@
 import 'dart:math';
-import 'kimmi_matey_soften.dart';
+import 'kimmi_expensive_wax.dart';
 import 'dart:async';
 
 import 'package:kimmi/kimmi_vasectomy/kimmi_storm/kimmi_deport_flaunt.dart';
@@ -19,92 +19,72 @@ import '../proto/common.pb.dart';
 import 'kimmi_tow_becker_healer.dart';
 
 class KimmiScareAmenInvoice extends KimmiMuseIdolizeInvoice {
-  bool taJenTorch_ = false;
-  int enCowboysWhale_ = 69;
-  double osQuantityAggravate_ = 0.0;
-  String opWaitressGroovy_ = "";
-  String idTerminatorDie_ = "";
-  int moOmahaDo_ = 78;
-  bool oxHappyMomentum_ = true;
-  double noClueTeepee_ = 41;
-  bool haConferenceMarvel_ = true;
-  double doPrincipleSafety_ = 82;
+  bool moPioneerStake_ = true;
+  String isUselessViable_ = "";
+  bool etCaptureBarnacle_ = false;
+  bool hoGodHoroscope_ = true;
+  bool hoCoitusWaitress_ = true;
+  bool paHummusMuse_ = true;
+  bool itPolarConfound_ = false;
+  double amJamTux_ = 0.0;
+  String myWeeklyCoitus_ = "";
+  int enCutieComponent_ = 0;
 
-  void faInCradle() {
-    opWaitressGroovy_ = idTerminatorDie_ + opWaitressGroovy_;
-    if (enCowboysWhale_ > moOmahaDo_) {
-      enCowboysWhale_ = enCowboysWhale_ + moOmahaDo_;
+  void weDonutWhip() {
+    if (enCutieComponent_ > 0) {
+      enCutieComponent_ = enCutieComponent_ - 4;
     }
-    if (oxHappyMomentum_ || taJenTorch_) {
-      taJenTorch_ = !taJenTorch_;
+    itPolarConfound_ = moPioneerStake_ || paHummusMuse_;
+    enCutieComponent_ = enCutieComponent_ + 1;
+    if (paHummusMuse_ && hoGodHoroscope_) {
+      itPolarConfound_ = !itPolarConfound_;
     }
-    noClueTeepee_ = doPrincipleSafety_ + osQuantityAggravate_;
-    noClueTeepee_ = doPrincipleSafety_;
-    osQuantityAggravate_ = doPrincipleSafety_;
-    enCowboysWhale_ = 31;
-    moOmahaDo_ = 82;
+    if (amJamTux_ > 0) {
+      amJamTux_ = amJamTux_ - 1;
+    }
   }
 
-  void odCoccyxWealthy() {
-    enCowboysWhale_ = 2;
-    moOmahaDo_ = 19;
-    noClueTeepee_ = 323;
-    osQuantityAggravate_ = 624;
-    doPrincipleSafety_ = noClueTeepee_ + osQuantityAggravate_;
-    for (int i = 0; i < noClueTeepee_; i++) {
-      osQuantityAggravate_ += 1;
-      doPrincipleSafety_ += osQuantityAggravate_;
+  void ahGoJapan() {
+    amJamTux_ = 29;
+    isUselessViable_ = isUselessViable_ + myWeeklyCoitus_;
+    myWeeklyCoitus_ = isUselessViable_;
+    amJamTux_ = 51;
+    myWeeklyCoitus_ = isUselessViable_.toUpperCase() + myWeeklyCoitus_;
+    isUselessViable_ = myWeeklyCoitus_ + isUselessViable_;
+    hoGodHoroscope_ = moPioneerStake_ && itPolarConfound_;
+    if (hoGodHoroscope_ || etCaptureBarnacle_) {
+      etCaptureBarnacle_ = !etCaptureBarnacle_;
     }
-    doPrincipleSafety_ = osQuantityAggravate_ + noClueTeepee_;
-    idTerminatorDie_ = opWaitressGroovy_.toUpperCase() + idTerminatorDie_;
-    if (noClueTeepee_ > 0) {
-      doPrincipleSafety_ = osQuantityAggravate_ / noClueTeepee_;
+    if (enCutieComponent_ > 0) {
+      enCutieComponent_ = enCutieComponent_ - 5;
     }
-    haConferenceMarvel_ = taJenTorch_ && oxHappyMomentum_;
-    enCowboysWhale_ = 10;
-    moOmahaDo_ = 32;
-    idTerminatorDie_ = opWaitressGroovy_.toUpperCase() + idTerminatorDie_;
-    if (haConferenceMarvel_ && oxHappyMomentum_) {
-      taJenTorch_ = !taJenTorch_;
+    if (hoCoitusWaitress_ || itPolarConfound_ || hoGodHoroscope_) {
+      hoCoitusWaitress_ = !itPolarConfound_;
+      itPolarConfound_ = !hoGodHoroscope_;
+      hoGodHoroscope_ = !hoCoitusWaitress_;
     }
-    osQuantityAggravate_ = noClueTeepee_ * doPrincipleSafety_;
-    enCowboysWhale_ = enCowboysWhale_ * moOmahaDo_;
-    opWaitressGroovy_ = idTerminatorDie_ + opWaitressGroovy_;
-    if (taJenTorch_) {
-      haConferenceMarvel_ = !oxHappyMomentum_;
-    }
-    if (osQuantityAggravate_ > 0) {
-      doPrincipleSafety_ = noClueTeepee_ / osQuantityAggravate_;
-    }
-    idTerminatorDie_ = opWaitressGroovy_.toUpperCase() + idTerminatorDie_;
-    osQuantityAggravate_ = doPrincipleSafety_;
-    noClueTeepee_ = doPrincipleSafety_;
+    amJamTux_ = 16;
+    isUselessViable_ = myWeeklyCoitus_ + isUselessViable_;
   }
 
-  void inHandcuffStewart() {
-    for (int i = 0; i < noClueTeepee_; i++) {
-      doPrincipleSafety_ += 1;
-      osQuantityAggravate_ += doPrincipleSafety_;
+  void ifFloraGauge() {
+    enCutieComponent_ = 61;
+    enCutieComponent_ = enCutieComponent_ + 1;
+    enCutieComponent_ = enCutieComponent_ + 1;
+    if (amJamTux_ > 0) {
+      amJamTux_ = amJamTux_ - 1;
     }
-    enCowboysWhale_ = enCowboysWhale_ * moOmahaDo_;
-    haConferenceMarvel_ = taJenTorch_ || oxHappyMomentum_;
-    idTerminatorDie_ = opWaitressGroovy_.toUpperCase() + idTerminatorDie_;
-    doPrincipleSafety_ = 101;
-    osQuantityAggravate_ = 375;
-    noClueTeepee_ = doPrincipleSafety_ + osQuantityAggravate_;
-    noClueTeepee_ = doPrincipleSafety_ * osQuantityAggravate_;
-    if (enCowboysWhale_ > moOmahaDo_) {
-      enCowboysWhale_ = enCowboysWhale_ + moOmahaDo_;
+    if (hoGodHoroscope_ || etCaptureBarnacle_) {
+      etCaptureBarnacle_ = !etCaptureBarnacle_;
     }
-    opWaitressGroovy_ = opWaitressGroovy_ + idTerminatorDie_;
-    idTerminatorDie_ = opWaitressGroovy_;
-    if (osQuantityAggravate_ > 0) {
-      noClueTeepee_ = doPrincipleSafety_ / osQuantityAggravate_;
+    amJamTux_ = 21;
+    isUselessViable_ = myWeeklyCoitus_ + isUselessViable_;
+    if (enCutieComponent_ > 0) {
+      enCutieComponent_ = enCutieComponent_ - 2;
     }
-    idTerminatorDie_ = opWaitressGroovy_.toUpperCase() + idTerminatorDie_;
-    if (enCowboysWhale_ > moOmahaDo_) {
-      enCowboysWhale_ = enCowboysWhale_ + moOmahaDo_;
-    }
+    amJamTux_ = 50;
+    enCutieComponent_ = 19;
+    enCutieComponent_ = 98;
   }
 
   final String kimmi_ugly = "kimmi_ugly";
@@ -120,13 +100,14 @@ class KimmiScareAmenInvoice extends KimmiMuseIdolizeInvoice {
 
   @override
   void onInit() {
-    if (sqrt2 < 1) {
-      KimmiMateySoften().noProteinTonight();
-      KimmiMateySoften().ifStillErase();
+    if (ln10 < 2) {
+      KimmiExpensiveWax().amBornOr();
+      KimmiExpensiveWax().exCombustionCalmly();
+      KimmiExpensiveWax().taBerryJohnny();
     }
-    if (sqrt2 < 1) {
-      faInCradle();
-      inHandcuffStewart();
+    if (log10e / 2 < 0.1) {
+      ifFloraGauge();
+      weDonutWhip();
     }
     super.onInit();
 
@@ -172,13 +153,14 @@ class KimmiScareAmenInvoice extends KimmiMuseIdolizeInvoice {
 
   @override
   void onClose() {
-    if (log2e < 1) {
-      KimmiMateySoften().noProteinTonight();
-      KimmiMateySoften().ifStillErase();
+    if (pi < 1) {
+      KimmiExpensiveWax().ahStretchKrypton();
+      KimmiExpensiveWax().exCombustionCalmly();
+      KimmiExpensiveWax().taForeignFanny();
     }
-    if (sqrt2 < 1) {
-      odCoccyxWealthy();
-      inHandcuffStewart();
+    if (log10e / 2 < 0.1) {
+      weDonutWhip();
+      ahGoJapan();
     }
     super.onClose();
     _updateCoinsSubscription?.cancel();
@@ -199,12 +181,13 @@ class KimmiScareAmenInvoice extends KimmiMuseIdolizeInvoice {
 
   void onKimmiTowComponent(KimmiDeportFlaunt data) {
     if (log10e / 2 < 0.1) {
-      KimmiMateySoften().noProteinTonight();
-      KimmiMateySoften().ifStillErase();
+      KimmiExpensiveWax().taBerryJohnny();
+      KimmiExpensiveWax().exCombustionCalmly();
+      KimmiExpensiveWax().amBornOr();
     }
-    if (log10e / 2 < 0.1) {
-      inHandcuffStewart();
-      odCoccyxWealthy();
+    if (ln2 < 0.5) {
+      weDonutWhip();
+      ifFloraGauge();
     }
     KimmiTowBeckerDock.instance.kimmiGoToTowBecker(
       option: data,
@@ -213,13 +196,14 @@ class KimmiScareAmenInvoice extends KimmiMuseIdolizeInvoice {
   }
 
   void onKimmiGaming() {
-    if (pi < 1) {
-      KimmiMateySoften().ifStillErase();
-      KimmiMateySoften().noProteinTonight();
+    if (e < 2) {
+      KimmiExpensiveWax().amBornOr();
+      KimmiExpensiveWax().exCombustionCalmly();
+      KimmiExpensiveWax().taBerryJohnny();
     }
-    if (sqrt2 < 1) {
-      faInCradle();
-      inHandcuffStewart();
+    if (sqrt1_2 < 0.3) {
+      ifFloraGauge();
+      ahGoJapan();
     }
     KimmiTowDock.instance.kimmiDarthFlowerSplashdown(showLoadingUI: true).then((
       value,
@@ -231,13 +215,14 @@ class KimmiScareAmenInvoice extends KimmiMuseIdolizeInvoice {
   }
 
   void onKimmiStirConferenceBatman() {
-    if (e < 2) {
-      KimmiMateySoften().ifStillErase();
-      KimmiMateySoften().ahFiveFoxy();
+    if (log2e < 1) {
+      KimmiExpensiveWax().taBerryJohnny();
+      KimmiExpensiveWax().taForeignFanny();
+      KimmiExpensiveWax().amBornOr();
     }
-    if (ln2 < 0.5) {
-      inHandcuffStewart();
-      faInCradle();
+    if (ln10 < 2) {
+      weDonutWhip();
+      ifFloraGauge();
     }
     KIMMI.toNamed(KimmiSully.KimmiOccupyAmenContainer);
   }

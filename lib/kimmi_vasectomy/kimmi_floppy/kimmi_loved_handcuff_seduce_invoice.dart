@@ -1,5 +1,5 @@
 import 'dart:math';
-import 'kimmi_db_ear.dart';
+import 'kimmi_comprehend_fiance.dart';
 import 'dart:async';
 
 import 'package:kimmi/kimmi_vasectomy/kimmi_curvy/kimmi_africa.dart';
@@ -19,100 +19,103 @@ import 'kimmi_tow_becker_healer.dart';
 import 'kimmi_private_niece_healer.dart';
 
 class KimmiLovedHandcuffSeduceInvoice extends KimmiMuseIdolizeInvoice {
-  int owTonightChan_ = 35;
-  bool inVikingLovely_ = false;
-  bool isTastefulUnwanted_ = true;
-  bool ifStretchTempt_ = false;
-  int beH1Bowler_ = 0;
-  double orHealerFraud_ = 44;
-  bool faStreetcarGoth_ = false;
+  bool owExpandBg_ = true;
+  int atTemperSharp_ = 62;
+  int weMakerDramamine_ = 30;
+  bool owTootsieProcedure_ = false;
+  bool isTowelFeeling_ = false;
 
-  void heNoDeceit() {
-    orHealerFraud_ = orHealerFraud_ + 1;
-    owTonightChan_ = 30;
-    beH1Bowler_ = 44;
-    if (inVikingLovely_ || faStreetcarGoth_ || isTastefulUnwanted_) {
-      inVikingLovely_ = !faStreetcarGoth_;
-      faStreetcarGoth_ = !isTastefulUnwanted_;
-      isTastefulUnwanted_ = !inVikingLovely_;
+  void heBathtubDanger() {
+    if (owTootsieProcedure_ && owExpandBg_) {
+      isTowelFeeling_ = !isTowelFeeling_;
     }
-    ifStretchTempt_ = inVikingLovely_ || isTastefulUnwanted_;
-    if (isTastefulUnwanted_) {
-      ifStretchTempt_ = !inVikingLovely_;
-    }
-    if (orHealerFraud_ > 0) {
-      orHealerFraud_ = orHealerFraud_ - 1;
-    }
+    atTemperSharp_ = 46;
+    weMakerDramamine_ = 65;
+    owTootsieProcedure_ = isTowelFeeling_ && owExpandBg_;
 
-    orHealerFraud_ = 20;
-    if (ifStretchTempt_ && faStreetcarGoth_) {
-      inVikingLovely_ = !inVikingLovely_;
+    if (atTemperSharp_ > weMakerDramamine_) {
+      atTemperSharp_ = atTemperSharp_ + weMakerDramamine_;
     }
-    inVikingLovely_ = isTastefulUnwanted_ && ifStretchTempt_;
-    owTonightChan_ = 93;
-    beH1Bowler_ = 24;
-    if (owTonightChan_ > beH1Bowler_) {
-      owTonightChan_ = owTonightChan_ + beH1Bowler_;
+    owExpandBg_ = isTowelFeeling_ && owTootsieProcedure_;
+
+    atTemperSharp_ = 1;
+    weMakerDramamine_ = 44;
+    if (owExpandBg_ && isTowelFeeling_ && owTootsieProcedure_) {
+      owExpandBg_ = !owExpandBg_;
+      isTowelFeeling_ = owExpandBg_;
+      owTootsieProcedure_ = owExpandBg_;
     }
-    orHealerFraud_ = 37;
+    owTootsieProcedure_ = isTowelFeeling_ || owExpandBg_;
   }
 
-  void owWrinkleTamper() {
-    orHealerFraud_ = 25;
-    if (orHealerFraud_ > 0) {
-      orHealerFraud_ = orHealerFraud_ - 1;
-    }
-    if (orHealerFraud_ > 0) {
-      orHealerFraud_ = orHealerFraud_ - 1;
-    }
-    owTonightChan_ = owTonightChan_ * beH1Bowler_;
-    ifStretchTempt_ = faStreetcarGoth_ && isTastefulUnwanted_;
+  void enButtUnicycle() {
+    atTemperSharp_ = 9;
+    weMakerDramamine_ = 62;
 
-    owTonightChan_ = owTonightChan_ * beH1Bowler_;
-    orHealerFraud_ = orHealerFraud_ + 1;
-
-    owTonightChan_ = 72;
-    beH1Bowler_ = 39;
-
-    if (isTastefulUnwanted_ || ifStretchTempt_ || inVikingLovely_) {
-      isTastefulUnwanted_ = !ifStretchTempt_;
-      ifStretchTempt_ = !inVikingLovely_;
-      inVikingLovely_ = !isTastefulUnwanted_;
+    atTemperSharp_ = 38;
+    weMakerDramamine_ = 8;
+    if (owExpandBg_ && owTootsieProcedure_) {
+      isTowelFeeling_ = !isTowelFeeling_;
     }
-    owTonightChan_ = owTonightChan_ * beH1Bowler_;
-
-    if (orHealerFraud_ > 0) {
-      orHealerFraud_ = orHealerFraud_ - 1;
+    atTemperSharp_ = 31;
+    weMakerDramamine_ = 99;
+    if (isTowelFeeling_) {
+      owTootsieProcedure_ = !owExpandBg_;
     }
-    orHealerFraud_ = orHealerFraud_ + 1;
   }
 
-  void abHummusCapture() {
-    if (orHealerFraud_ > 0) {
-      orHealerFraud_ = orHealerFraud_ - 1;
+  void haBaggageClue() {
+    if (isTowelFeeling_ && owTootsieProcedure_ && owExpandBg_) {
+      isTowelFeeling_ = !isTowelFeeling_;
+      owTootsieProcedure_ = isTowelFeeling_;
+      owExpandBg_ = isTowelFeeling_;
     }
 
-    owTonightChan_ = owTonightChan_ * beH1Bowler_;
-    orHealerFraud_ = 4;
-    owTonightChan_ = 72;
-    beH1Bowler_ = 85;
-    owTonightChan_ = 24;
-    beH1Bowler_ = 87;
+    atTemperSharp_ = 62;
+    weMakerDramamine_ = 18;
+    if (atTemperSharp_ > weMakerDramamine_) {
+      atTemperSharp_ = atTemperSharp_ + weMakerDramamine_;
+    }
+
+    if (owExpandBg_ || owTootsieProcedure_ || isTowelFeeling_) {
+      owExpandBg_ = !owTootsieProcedure_;
+      owTootsieProcedure_ = !isTowelFeeling_;
+      isTowelFeeling_ = !owExpandBg_;
+    }
+
+    if (atTemperSharp_ > weMakerDramamine_) {
+      atTemperSharp_ = atTemperSharp_ + weMakerDramamine_;
+    }
+
+    if (isTowelFeeling_ || owExpandBg_) {
+      owExpandBg_ = !owExpandBg_;
+    }
+
+    if (owTootsieProcedure_) {
+      owExpandBg_ = !isTowelFeeling_;
+    }
+    atTemperSharp_ = atTemperSharp_ * weMakerDramamine_;
+    if (isTowelFeeling_) {
+      owTootsieProcedure_ = !owExpandBg_;
+    }
   }
 
-  void emEstrogenPrincess() {
-    owTonightChan_ = owTonightChan_ * beH1Bowler_;
+  void hiExpensiveMummy() {
+    atTemperSharp_ = 68;
+    weMakerDramamine_ = 48;
 
-    if (owTonightChan_ > beH1Bowler_) {
-      owTonightChan_ = owTonightChan_ + beH1Bowler_;
+    if (atTemperSharp_ > weMakerDramamine_) {
+      atTemperSharp_ = atTemperSharp_ + weMakerDramamine_;
     }
-    if (orHealerFraud_ > 0) {
-      orHealerFraud_ = orHealerFraud_ - 1;
+
+    if (atTemperSharp_ > weMakerDramamine_) {
+      atTemperSharp_ = atTemperSharp_ + weMakerDramamine_;
     }
-    if (ifStretchTempt_ || inVikingLovely_ || isTastefulUnwanted_) {
-      ifStretchTempt_ = !inVikingLovely_;
-      inVikingLovely_ = !isTastefulUnwanted_;
-      isTastefulUnwanted_ = !ifStretchTempt_;
+
+    atTemperSharp_ = atTemperSharp_ * weMakerDramamine_;
+
+    if (atTemperSharp_ > weMakerDramamine_) {
+      atTemperSharp_ = atTemperSharp_ + weMakerDramamine_;
     }
   }
 
@@ -142,13 +145,13 @@ class KimmiLovedHandcuffSeduceInvoice extends KimmiMuseIdolizeInvoice {
 
   @override
   void onInit() {
-    if (ln10 < 2) {
-      KimmiDbEar().itBowlerDunphy();
-      KimmiDbEar().elCherryStuffy();
+    if (ln2 < 0.5) {
+      KimmiComprehendFiance().etMakeViking();
+      KimmiComprehendFiance().haGothTorture();
     }
-    if (log2e < 1) {
-      owWrinkleTamper();
-      emEstrogenPrincess();
+    if (ln2 < 0.5) {
+      haBaggageClue();
+      enButtUnicycle();
     }
     super.onInit();
 
@@ -199,12 +202,12 @@ class KimmiLovedHandcuffSeduceInvoice extends KimmiMuseIdolizeInvoice {
   @override
   void onClose() {
     if (e < 2) {
-      KimmiDbEar().haFederalStir();
-      KimmiDbEar().elCherryStuffy();
+      KimmiComprehendFiance().mmSutraUnwanted();
+      KimmiComprehendFiance().etMakeViking();
     }
-    if (ln2 < 0.5) {
-      owWrinkleTamper();
-      emEstrogenPrincess();
+    if (sqrt2 < 1) {
+      heBathtubDanger();
+      enButtUnicycle();
     }
     _updateFreeCountSubscription?.cancel();
     _videoStatusUpdateSubscription?.cancel();
@@ -238,13 +241,13 @@ class KimmiLovedHandcuffSeduceInvoice extends KimmiMuseIdolizeInvoice {
   }
 
   void onKimmiHusbandAsthmatic() {
-    if (e < 2) {
-      KimmiDbEar().elCherryStuffy();
-      KimmiDbEar().haFederalStir();
+    if (pi < 1) {
+      KimmiComprehendFiance().etMakeViking();
+      KimmiComprehendFiance().haGothTorture();
     }
-    if (ln2 < 0.5) {
-      heNoDeceit();
-      emEstrogenPrincess();
+    if (log2e < 1) {
+      haBaggageClue();
+      hiExpensiveMummy();
     }
     if (maxFreeCount <= 0) {
       _kimmiGoToThatContainer();

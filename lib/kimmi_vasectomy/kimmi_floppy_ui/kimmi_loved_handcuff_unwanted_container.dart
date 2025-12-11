@@ -1,5 +1,5 @@
 import 'dart:math';
-import 'kimmi_collins_whimsical.dart';
+import 'kimmi_applause_girl.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_storm/kimmi_handcuff_india_fighting_amen_campfire.dart';
 
 import 'package:kimmi/kimmi_vasectomy/kimmi_juda/kimmi_starbucks_juda.dart';

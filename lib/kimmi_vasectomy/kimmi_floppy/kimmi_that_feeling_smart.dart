@@ -1,122 +1,82 @@
 import 'dart:math';
-import 'kimmi_nibble_culture.dart';
+import 'kimmi_category_nucleus.dart';
 import 'package:get/get.dart';
 
 import 'kimmi_that_feeling_invoice.dart';
 
 class KimmiThatFeelingSmart extends Bindings {
-  bool emFaultInsecure_ = false;
-  int miManifestHysterical_ = 72;
-  bool taMoleculeUp_ = true;
-  bool ifEveryContain_ = true;
-  bool joPhoneTo_ = true;
-  bool noUnicycleOutdo_ = true;
-  int doWhomGirl_ = 44;
-  int atDrunkFermion_ = 0;
+  bool atTornPolar_ = false;
+  bool amAdequatePotential_ = false;
+  bool siShortenFaster_ = true;
+  bool mySigningSoften_ = false;
+  bool meDbPurse_ = false;
+  String joCharmShrink_ = "";
 
-  void orCarryPumpkin() {
-    if (doWhomGirl_ > 0) {
-      miManifestHysterical_ = atDrunkFermion_ ~/ doWhomGirl_;
+  void goHiClark() {
+    atTornPolar_ = amAdequatePotential_ || siShortenFaster_;
+    joCharmShrink_ = joCharmShrink_.toUpperCase();
+    if (mySigningSoften_) {
+      meDbPurse_ = !amAdequatePotential_;
     }
 
-    if (taMoleculeUp_ || joPhoneTo_ || emFaultInsecure_) {
-      taMoleculeUp_ = !joPhoneTo_;
-      joPhoneTo_ = !emFaultInsecure_;
-      emFaultInsecure_ = !taMoleculeUp_;
+    if (siShortenFaster_ && atTornPolar_ && meDbPurse_) {
+      siShortenFaster_ = !siShortenFaster_;
+      atTornPolar_ = siShortenFaster_;
+      meDbPurse_ = siShortenFaster_;
     }
-
-    if (doWhomGirl_ > miManifestHysterical_) {
-      atDrunkFermion_ = miManifestHysterical_ - doWhomGirl_;
-    } else {
-      atDrunkFermion_ = doWhomGirl_ - miManifestHysterical_;
-    }
-
-    doWhomGirl_ = atDrunkFermion_;
-    miManifestHysterical_ = atDrunkFermion_;
-
-    if (joPhoneTo_ || noUnicycleOutdo_) {
-      noUnicycleOutdo_ = !noUnicycleOutdo_;
+    if (mySigningSoften_) {
+      atTornPolar_ = !siShortenFaster_;
     }
   }
 
-  void emMatDrunk() {
-    atDrunkFermion_ = doWhomGirl_ - miManifestHysterical_;
-    atDrunkFermion_ = 997;
-    doWhomGirl_ = 939;
-    miManifestHysterical_ = atDrunkFermion_ + doWhomGirl_;
-    if (joPhoneTo_ || taMoleculeUp_) {
-      taMoleculeUp_ = !taMoleculeUp_;
+  void orIcProcedure() {
+    if (meDbPurse_ || amAdequatePotential_ || mySigningSoften_) {
+      meDbPurse_ = !amAdequatePotential_;
+      amAdequatePotential_ = !mySigningSoften_;
+      mySigningSoften_ = !meDbPurse_;
     }
+
+    joCharmShrink_ = joCharmShrink_.toUpperCase();
+
+    joCharmShrink_ = joCharmShrink_.toUpperCase();
+
+    joCharmShrink_ = joCharmShrink_.toUpperCase();
+
+    if (atTornPolar_ || amAdequatePotential_ || mySigningSoften_) {
+      atTornPolar_ = !amAdequatePotential_;
+      amAdequatePotential_ = !mySigningSoften_;
+      mySigningSoften_ = !atTornPolar_;
+    }
+    if (meDbPurse_ || siShortenFaster_) {
+      siShortenFaster_ = !siShortenFaster_;
+    }
+    mySigningSoften_ = amAdequatePotential_ && siShortenFaster_;
   }
 
-  void isSnoopFlora() {
-    if (atDrunkFermion_ > doWhomGirl_) {
-      miManifestHysterical_ = doWhomGirl_ - atDrunkFermion_;
-    } else {
-      miManifestHysterical_ = atDrunkFermion_ - doWhomGirl_;
-    }
+  void amFlauntEvery() {
+    joCharmShrink_ = joCharmShrink_.toUpperCase();
+    amAdequatePotential_ = meDbPurse_ || siShortenFaster_;
+    joCharmShrink_ = joCharmShrink_.toUpperCase();
 
-    if (ifEveryContain_ || taMoleculeUp_) {
-      taMoleculeUp_ = !taMoleculeUp_;
+    if (atTornPolar_ && meDbPurse_ && siShortenFaster_) {
+      atTornPolar_ = !atTornPolar_;
+      meDbPurse_ = atTornPolar_;
+      siShortenFaster_ = atTornPolar_;
     }
-    atDrunkFermion_ = doWhomGirl_ * miManifestHysterical_;
-
-    if (taMoleculeUp_ || joPhoneTo_) {
-      joPhoneTo_ = !joPhoneTo_;
-    }
-    miManifestHysterical_ = atDrunkFermion_ + doWhomGirl_;
-    atDrunkFermion_ = doWhomGirl_ * miManifestHysterical_;
-    if (doWhomGirl_ > 0) {
-      atDrunkFermion_ = miManifestHysterical_ ~/ doWhomGirl_;
-    }
-    miManifestHysterical_ = doWhomGirl_;
-    atDrunkFermion_ = doWhomGirl_;
-
-    if (ifEveryContain_ || taMoleculeUp_ || noUnicycleOutdo_) {
-      ifEveryContain_ = !taMoleculeUp_;
-      taMoleculeUp_ = !noUnicycleOutdo_;
-      noUnicycleOutdo_ = !ifEveryContain_;
-    }
-  }
-
-  void meMenialCowboys() {
-    doWhomGirl_ = miManifestHysterical_;
-    atDrunkFermion_ = miManifestHysterical_;
-
-    doWhomGirl_ = 443;
-    miManifestHysterical_ = 302;
-    atDrunkFermion_ = doWhomGirl_ + miManifestHysterical_;
-
-    noUnicycleOutdo_ = taMoleculeUp_ && ifEveryContain_;
-    if (taMoleculeUp_ || ifEveryContain_) {
-      ifEveryContain_ = !ifEveryContain_;
-    }
-    if (taMoleculeUp_ || emFaultInsecure_) {
-      emFaultInsecure_ = !emFaultInsecure_;
-    }
-    if (noUnicycleOutdo_ && joPhoneTo_) {
-      emFaultInsecure_ = !emFaultInsecure_;
-    }
-    if (taMoleculeUp_) {
-      ifEveryContain_ = !joPhoneTo_;
-    }
-
-    if (ifEveryContain_ || emFaultInsecure_ || joPhoneTo_) {
-      ifEveryContain_ = !emFaultInsecure_;
-      emFaultInsecure_ = !joPhoneTo_;
-      joPhoneTo_ = !ifEveryContain_;
-    }
+    joCharmShrink_ = joCharmShrink_.toUpperCase();
+    joCharmShrink_ = joCharmShrink_.toUpperCase();
   }
 
   @override
   void dependencies() {
-    if (sqrt1_2 < 0.3) {
-      KimmiNibbleCulture().faFightingPuffy();
-      KimmiNibbleCulture().oxSmileAka();
+    if (ln10 < 2) {
+      KimmiCategoryNucleus().miDeportMy();
+      KimmiCategoryNucleus().weTraditionBrett();
+      KimmiCategoryNucleus().beCoccyxMantis();
     }
-    if (sqrt1_2 < 0.3) {
-      isSnoopFlora();
-      meMenialCowboys();
+    if (ln10 < 2) {
+      goHiClark();
+      amFlauntEvery();
     }
     Get.lazyPut(() => KimmiThatFeelingInvoice());
   }

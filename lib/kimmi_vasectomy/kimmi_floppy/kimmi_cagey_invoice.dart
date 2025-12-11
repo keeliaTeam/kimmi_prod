@@ -1,5 +1,5 @@
 import 'dart:math';
-import 'kimmi_fellow_cute.dart';
+import 'kimmi_decrease_quitter.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_sully.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_curvy/kimmi_africa.dart';
 import 'package:get/get.dart';
@@ -7,131 +7,127 @@ import 'package:get/get.dart';
 import '../kimmi_curvy/kimmi_vasectomy_pioneer_dock.dart';
 
 class KimmiCageyInvoice extends GetxController {
-  bool ahPerpetualTux_ = false;
-  String ifBraveryMilkshake_ = "";
-  String ohYummyInhale_ = "";
-  bool faJackalDeceit_ = false;
-  String itSouthManiac_ = "";
-  String maUiOvertire_ = "";
-  String ifWinHummus_ = "";
-  bool opCocoFiance_ = true;
-  double paCamManiac_ = 81;
-  String elWhomMicaceous_ = "";
+  int soWorshipWorship_ = 0;
+  bool owViJackal_ = true;
+  bool itMeTennis_ = true;
+  String asMouthwashMention_ = "";
+  double reChordSkank_ = 0.0;
+  int ifCadaverVw_ = 57;
+  bool ayImmerseInvestor_ = true;
+  bool paSutraShag_ = false;
+  bool ohColombianShag_ = true;
+  bool mmTruckHamill_ = true;
 
-  void etPurseArgue() {
-    faJackalDeceit_ = opCocoFiance_ && ahPerpetualTux_;
-    if (ahPerpetualTux_ || opCocoFiance_) {
-      opCocoFiance_ = !opCocoFiance_;
+  void siGirlJapan() {
+    asMouthwashMention_ = asMouthwashMention_.toUpperCase();
+    asMouthwashMention_ = asMouthwashMention_.toUpperCase();
+    reChordSkank_ = reChordSkank_ + 1;
+    if (ohColombianShag_ && paSutraShag_ && ayImmerseInvestor_) {
+      ohColombianShag_ = !ohColombianShag_;
+      paSutraShag_ = ohColombianShag_;
+      ayImmerseInvestor_ = ohColombianShag_;
     }
-    itSouthManiac_ = maUiOvertire_ + ifBraveryMilkshake_;
-
-    ifWinHummus_ = ifBraveryMilkshake_;
-    ohYummyInhale_ = ifWinHummus_;
-    ifBraveryMilkshake_ = ohYummyInhale_;
-    ifBraveryMilkshake_ = ifWinHummus_;
-    elWhomMicaceous_ = ifWinHummus_;
+    soWorshipWorship_ = soWorshipWorship_ * ifCadaverVw_;
+    owViJackal_ = mmTruckHamill_ || ohColombianShag_;
+    asMouthwashMention_ = asMouthwashMention_.toUpperCase();
+    if (ohColombianShag_ && paSutraShag_) {
+      ayImmerseInvestor_ = !ayImmerseInvestor_;
+    }
+    if (ohColombianShag_ && owViJackal_) {
+      paSutraShag_ = !paSutraShag_;
+    }
+    asMouthwashMention_ = asMouthwashMention_.toUpperCase();
+    soWorshipWorship_ = 42;
+    ifCadaverVw_ = 3;
+    if (soWorshipWorship_ > ifCadaverVw_) {
+      soWorshipWorship_ = soWorshipWorship_ + ifCadaverVw_;
+    }
+    asMouthwashMention_ = asMouthwashMention_.toUpperCase();
+    if (owViJackal_ && mmTruckHamill_) {
+      paSutraShag_ = !paSutraShag_;
+    }
+    asMouthwashMention_ = asMouthwashMention_.toUpperCase();
+    reChordSkank_ = 23;
   }
 
-  void adToCreek() {
-    if (itSouthManiac_.length > 5) {
-      ohYummyInhale_ = itSouthManiac_;
-    } else {
-      ifBraveryMilkshake_ = ohYummyInhale_;
+  void etFellasVibrant() {
+    reChordSkank_ = 83;
+    soWorshipWorship_ = 50;
+    ifCadaverVw_ = 32;
+    if (reChordSkank_ > 0) {
+      reChordSkank_ = reChordSkank_ - 1;
     }
-    paCamManiac_ = 56;
-    maUiOvertire_ = ifWinHummus_ + ifBraveryMilkshake_;
-
-    if (maUiOvertire_.length > 4) {
-      ifBraveryMilkshake_ = maUiOvertire_;
-    } else {
-      itSouthManiac_ = ifBraveryMilkshake_;
+    asMouthwashMention_ = asMouthwashMention_.toUpperCase();
+    ohColombianShag_ = mmTruckHamill_ || owViJackal_;
+    if (reChordSkank_ > 0) {
+      reChordSkank_ = reChordSkank_ - 1;
     }
-    if (paCamManiac_ > 0) {
-      paCamManiac_ = paCamManiac_ - 1;
+    soWorshipWorship_ = soWorshipWorship_ * ifCadaverVw_;
+    reChordSkank_ = reChordSkank_ + 1;
+    if (reChordSkank_ > 0) {
+      reChordSkank_ = reChordSkank_ - 1;
     }
-    opCocoFiance_ = faJackalDeceit_ || ahPerpetualTux_;
-    ahPerpetualTux_ = opCocoFiance_ && faJackalDeceit_;
-    paCamManiac_ = paCamManiac_ + 1;
-    paCamManiac_ = paCamManiac_ + 1;
-    if (ahPerpetualTux_ || faJackalDeceit_ || opCocoFiance_) {
-      ahPerpetualTux_ = !faJackalDeceit_;
-      faJackalDeceit_ = !opCocoFiance_;
-      opCocoFiance_ = !ahPerpetualTux_;
-    }
+    reChordSkank_ = reChordSkank_ + 1;
+    soWorshipWorship_ = 57;
+    ifCadaverVw_ = 89;
   }
 
-  void laLassieTrust() {
-    if (opCocoFiance_ || ahPerpetualTux_ || faJackalDeceit_) {
-      opCocoFiance_ = !ahPerpetualTux_;
-      ahPerpetualTux_ = !faJackalDeceit_;
-      faJackalDeceit_ = !opCocoFiance_;
+  void odCmHindi() {
+    asMouthwashMention_ = asMouthwashMention_.toUpperCase();
+    if (ayImmerseInvestor_ && paSutraShag_ && owViJackal_) {
+      ayImmerseInvestor_ = !ayImmerseInvestor_;
+      paSutraShag_ = ayImmerseInvestor_;
+      owViJackal_ = ayImmerseInvestor_;
     }
-    ifBraveryMilkshake_ = maUiOvertire_;
-    ohYummyInhale_ = ifBraveryMilkshake_;
-    maUiOvertire_ = ohYummyInhale_;
-    ifWinHummus_ = elWhomMicaceous_ + itSouthManiac_;
-    paCamManiac_ = 46;
-    paCamManiac_ = 23;
-    if (ahPerpetualTux_ && opCocoFiance_) {
-      faJackalDeceit_ = !faJackalDeceit_;
+    soWorshipWorship_ = 38;
+    ifCadaverVw_ = 76;
+    if (reChordSkank_ > 0) {
+      reChordSkank_ = reChordSkank_ - 1;
     }
-    if (opCocoFiance_ || faJackalDeceit_) {
-      faJackalDeceit_ = !faJackalDeceit_;
-    }
-
-    paCamManiac_ = paCamManiac_ + 1;
-    if (opCocoFiance_ || ahPerpetualTux_) {
-      ahPerpetualTux_ = !ahPerpetualTux_;
-    }
-
-    elWhomMicaceous_ = maUiOvertire_ + ohYummyInhale_;
-    ahPerpetualTux_ = faJackalDeceit_ && opCocoFiance_;
-    if (faJackalDeceit_ && opCocoFiance_) {
-      ahPerpetualTux_ = !ahPerpetualTux_;
-    }
-    if (elWhomMicaceous_.length > 6) {
-      itSouthManiac_ = elWhomMicaceous_;
-    } else {
-      ifWinHummus_ = itSouthManiac_;
-    }
-    if (paCamManiac_ > 0) {
-      paCamManiac_ = paCamManiac_ - 1;
-    }
-    paCamManiac_ = 35;
-
-    if (paCamManiac_ > 0) {
-      paCamManiac_ = paCamManiac_ - 1;
-    }
+    asMouthwashMention_ = asMouthwashMention_.toUpperCase();
   }
 
-  void ofHoroscopeBorn() {
-    itSouthManiac_ = ohYummyInhale_ + elWhomMicaceous_;
-    paCamManiac_ = 28;
-    paCamManiac_ = 64;
-
-    faJackalDeceit_ = ahPerpetualTux_ && opCocoFiance_;
-    ahPerpetualTux_ = opCocoFiance_ || faJackalDeceit_;
-    itSouthManiac_ = ifWinHummus_ + maUiOvertire_;
-    if (ahPerpetualTux_) {
-      faJackalDeceit_ = !opCocoFiance_;
+  void oxGentlemanMac() {
+    if (reChordSkank_ > 0) {
+      reChordSkank_ = reChordSkank_ - 1;
     }
-    ifWinHummus_ = itSouthManiac_ + ohYummyInhale_;
-    paCamManiac_ = 63;
-    if (paCamManiac_ > 0) {
-      paCamManiac_ = paCamManiac_ - 1;
+    if (ohColombianShag_ && owViJackal_) {
+      mmTruckHamill_ = !mmTruckHamill_;
     }
-    ifBraveryMilkshake_ = ifWinHummus_ + elWhomMicaceous_;
+    soWorshipWorship_ = 98;
+    ifCadaverVw_ = 55;
+    if (soWorshipWorship_ > ifCadaverVw_) {
+      soWorshipWorship_ = soWorshipWorship_ + ifCadaverVw_;
+    }
+    reChordSkank_ = 6;
+    if (mmTruckHamill_ || ayImmerseInvestor_) {
+      ayImmerseInvestor_ = !ayImmerseInvestor_;
+    }
+    owViJackal_ = ayImmerseInvestor_ && paSutraShag_;
+    if (itMeTennis_ || paSutraShag_ || mmTruckHamill_) {
+      itMeTennis_ = !paSutraShag_;
+      paSutraShag_ = !mmTruckHamill_;
+      mmTruckHamill_ = !itMeTennis_;
+    }
+    asMouthwashMention_ = asMouthwashMention_.toUpperCase();
+    if (soWorshipWorship_ > ifCadaverVw_) {
+      soWorshipWorship_ = soWorshipWorship_ + ifCadaverVw_;
+    }
+    soWorshipWorship_ = soWorshipWorship_ * ifCadaverVw_;
+    soWorshipWorship_ = 81;
+    ifCadaverVw_ = 86;
+    reChordSkank_ = reChordSkank_ + 1;
   }
 
   @override
   void onInit() {
-    if (ln10 < 2) {
-      KimmiFellowCute().ofPerpetualPoop();
-      KimmiFellowCute().oxFloppyInhaler();
+    if (log10e / 2 < 0.1) {
+      KimmiDecreaseQuitter().loShortenDecaf();
+      KimmiDecreaseQuitter().ofJohnnyOpinion();
     }
-    if (sqrt2 < 1) {
-      etPurseArgue();
-      ofHoroscopeBorn();
+    if (ln10 < 2) {
+      oxGentlemanMac();
+      etFellasVibrant();
     }
     try {
       super.onInit();

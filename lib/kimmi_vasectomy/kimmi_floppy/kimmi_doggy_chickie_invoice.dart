@@ -1,5 +1,5 @@
 import 'dart:math';
-import 'kimmi_clark_dunphy.dart';
+import 'kimmi_clue_think.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_storm/kimmi_feast_chickie.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_floppy/kimmi_doggy_chickie_healer.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_curvy/kimmi_vasectomy_pioneer_dock.dart';
@@ -11,76 +11,45 @@ import '../kimmi_hamill/kimmi_muse_idolize_invoice.dart';
 import 'kimmi_niece_daytime_starbucks.dart';
 
 class KimmiDoggyChickieInvoice extends KimmiMuseIdolizeInvoice {
-  bool joHandMoore_ = true;
-  bool inNinjaLobby_ = false;
-  bool usLimboSaver_ = true;
-  bool myBoogyingAbraham_ = true;
-  bool miComeTeaser_ = false;
-  String omSpeakPalate_ = "";
-  bool laHamillFeast_ = false;
+  bool ohThatSaturn_ = true;
+  bool ahChargeColombian_ = false;
+  int hoUnemployedSchist_ = 39;
+  bool joFellowPro_ = true;
+  int hoSpeakSpeak_ = 0;
+  bool enCapAssert_ = false;
 
-  void laLovedCombustion() {
-    omSpeakPalate_ = omSpeakPalate_.toUpperCase();
-
-    if (inNinjaLobby_ || miComeTeaser_ || joHandMoore_) {
-      inNinjaLobby_ = !miComeTeaser_;
-      miComeTeaser_ = !joHandMoore_;
-      joHandMoore_ = !inNinjaLobby_;
+  void hoArDie() {
+    if (ohThatSaturn_ && joFellowPro_) {
+      enCapAssert_ = !enCapAssert_;
     }
-    if (joHandMoore_) {
-      miComeTeaser_ = !inNinjaLobby_;
-    }
-    if (inNinjaLobby_ || laHamillFeast_ || miComeTeaser_) {
-      inNinjaLobby_ = !laHamillFeast_;
-      laHamillFeast_ = !miComeTeaser_;
-      miComeTeaser_ = !inNinjaLobby_;
+    if (hoUnemployedSchist_ > hoSpeakSpeak_) {
+      hoUnemployedSchist_ = hoUnemployedSchist_ + hoSpeakSpeak_;
     }
   }
 
-  void ahObstacleViking() {
-    if (laHamillFeast_ && usLimboSaver_ && inNinjaLobby_) {
-      laHamillFeast_ = !laHamillFeast_;
-      usLimboSaver_ = laHamillFeast_;
-      inNinjaLobby_ = laHamillFeast_;
-    }
+  void maHandEmpire() {
+    enCapAssert_ = ohThatSaturn_ && ahChargeColombian_;
 
-    miComeTeaser_ = laHamillFeast_ && joHandMoore_;
-    usLimboSaver_ = inNinjaLobby_ && laHamillFeast_;
-    inNinjaLobby_ = joHandMoore_ && myBoogyingAbraham_;
+    ahChargeColombian_ = joFellowPro_ && ohThatSaturn_;
+
+    hoUnemployedSchist_ = hoUnemployedSchist_ * hoSpeakSpeak_;
   }
 
-  void owScareIndia() {
-    if (inNinjaLobby_ && usLimboSaver_ && laHamillFeast_) {
-      inNinjaLobby_ = !inNinjaLobby_;
-      usLimboSaver_ = inNinjaLobby_;
-      laHamillFeast_ = inNinjaLobby_;
+  void adPolarEpisode() {
+    if (joFellowPro_ || enCapAssert_) {
+      enCapAssert_ = !enCapAssert_;
+    }
+    if (joFellowPro_ && enCapAssert_) {
+      ahChargeColombian_ = !ahChargeColombian_;
     }
 
-    if (inNinjaLobby_ || miComeTeaser_ || usLimboSaver_) {
-      inNinjaLobby_ = !miComeTeaser_;
-      miComeTeaser_ = !usLimboSaver_;
-      usLimboSaver_ = !inNinjaLobby_;
+    if (ohThatSaturn_ && enCapAssert_ && ahChargeColombian_) {
+      ohThatSaturn_ = !ohThatSaturn_;
+      enCapAssert_ = ohThatSaturn_;
+      ahChargeColombian_ = ohThatSaturn_;
     }
-
-    omSpeakPalate_ = omSpeakPalate_.toUpperCase();
-  }
-
-  void hoaHusband() {
-    if (laHamillFeast_ && inNinjaLobby_ && miComeTeaser_) {
-      laHamillFeast_ = !laHamillFeast_;
-      inNinjaLobby_ = laHamillFeast_;
-      miComeTeaser_ = laHamillFeast_;
-    }
-    omSpeakPalate_ = omSpeakPalate_.toUpperCase();
-
-    miComeTeaser_ = usLimboSaver_ && laHamillFeast_;
-    usLimboSaver_ = myBoogyingAbraham_ || joHandMoore_;
-
-    omSpeakPalate_ = omSpeakPalate_.toUpperCase();
-    omSpeakPalate_ = omSpeakPalate_.toUpperCase();
-
-    miComeTeaser_ = joHandMoore_ && laHamillFeast_;
-    omSpeakPalate_ = omSpeakPalate_.toUpperCase();
+    hoUnemployedSchist_ = 80;
+    hoSpeakSpeak_ = 90;
   }
 
   static bool active = false;
@@ -93,15 +62,14 @@ class KimmiDoggyChickieInvoice extends KimmiMuseIdolizeInvoice {
 
   @override
   void onInit() {
-    if (ln2 < 0.5) {
-      KimmiClarkDunphy().moLovelyLabor();
-      KimmiClarkDunphy().amPedestalImmerse();
-      KimmiClarkDunphy().elScrapeUnable();
-      KimmiClarkDunphy().inSigningKeyboard();
+    if (pi < 1) {
+      KimmiClueThink().ayCostAntibiotic();
+      KimmiClueThink().emBloodObjective();
+      KimmiClueThink().mmProlongHard();
     }
     if (sqrt1_2 < 0.3) {
-      ahObstacleViking();
-      laLovedCombustion();
+      hoArDie();
+      adPolarEpisode();
     }
     super.onInit();
     KimmiDoggyChickieHealer arguments = Get.arguments;
@@ -122,15 +90,14 @@ class KimmiDoggyChickieInvoice extends KimmiMuseIdolizeInvoice {
 
   @override
   void onClose() {
-    if (sqrt1_2 < 0.3) {
-      KimmiClarkDunphy().loShowH1();
-      KimmiClarkDunphy().moLovelyLabor();
-      KimmiClarkDunphy().inSigningKeyboard();
-      KimmiClarkDunphy().amPedestalImmerse();
+    if (e < 2) {
+      KimmiClueThink().mmMeeting1();
+      KimmiClueThink().mmProlongHard();
+      KimmiClueThink().ayCostAntibiotic();
     }
-    if (ln2 < 0.5) {
-      ahObstacleViking();
-      owScareIndia();
+    if (log2e < 1) {
+      adPolarEpisode();
+      maHandEmpire();
     }
     int durationTime = 0;
     if (_initStateTime > 0) {

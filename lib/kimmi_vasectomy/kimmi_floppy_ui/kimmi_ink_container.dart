@@ -1,5 +1,5 @@
 import 'dart:math';
-import 'kimmi_tyson_handwrite.dart';
+import 'kimmi_forbidden_ui.dart';
 import 'dart:collection';
 import 'dart:io';
 

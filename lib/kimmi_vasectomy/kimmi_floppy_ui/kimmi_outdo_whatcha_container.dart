@@ -1,5 +1,5 @@
 import 'dart:math';
-import 'kimmi_polar_cavity.dart';
+import 'kimmi_colombian_male.dart';
 import 'dart:async';
 
 import 'package:kimmi/kimmi_vasectomy/kimmi_palate.dart';

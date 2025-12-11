@@ -10,7 +10,7 @@ abstract class KimmiPalate {
 
   static const String kimmiVasectomyNinja = "Kimmi";
 
-  static const String kimmiVasectomySensitive = "1.0.2";
+  static const String kimmiVasectomySensitive = "1.0.3";
 
   static const String kimmiDoughNinja = "com.kimmi.imk";
 

@@ -1,5 +1,5 @@
 import 'dart:math';
-import 'kimmi_hindi_chan.dart';
+import 'kimmi_forbidden_ui.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_hamill/kimmi_timing_vasectomy_uneven.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';

@@ -1,5 +1,5 @@
 import 'dart:math';
-import 'kimmi_every_3.dart';
+import 'kimmi_community_ear.dart';
 import 'dart:math';
 
 import 'package:kimmi/kimmi_vasectomy/kimmi_floppy_ui/kimmi_that_container.dart';

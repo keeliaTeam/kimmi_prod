@@ -1,5 +1,5 @@
 import 'dart:math';
-import 'kimmi_teaser_tape.dart';
+import 'kimmi_applause_girl.dart';
 import 'package:agora_rtc_engine/agora_rtc_engine.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_prototype.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_storm/kimmi_waitress_doggy.dart';
@@ -494,15 +494,45 @@ class KimmiIndiaWaitressContainer
                       mainAxisAlignment: MainAxisAlignment.center,
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
-                          KimmiDeceitJuda.getFormatTimer(
-                            logic.rechargeDuration.value,
-                          ),
-                          style: KimmiTamperDaytime.style(
-                            fontSize: 16,
-                            fontWeight: FontWeight.bold,
-                            color: const Color(0xFFFFF715),
-                          ),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Text(
+                              KimmiDeceitJuda.getFormatTimer(
+                                logic.rechargeDuration.value,
+                              ),
+                              style: KimmiTamperDaytime.style(
+                                fontSize: 16,
+                                fontWeight: FontWeight.bold,
+                                color: const Color(0xFFFFF715),
+                              ),
+                            ),
+                            Row(
+                              mainAxisSize: MainAxisSize.min,
+                              children: [
+                                KimmiErnie.local(
+                                  fileName:
+                                      'kimmi_hombre_groovy_dramamine_gloss',
+                                  width: 24,
+                                  height: 24,
+                                ),
+                                Text(
+                                  "kimmi_broderick_finally".tr,
+                                  style:
+                                      KimmiTamperDaytime.TextWhite_12_Semibold,
+                                ),
+                                KimmiManipulate.hGap2,
+                                KimmiErnie.local(
+                                  fileName: KimmiIOJuda.isARLanguage()
+                                      ? 'kimmi_wit_syndrome_me_gloss'
+                                      : 'kimmi_wit_syndrome_gloss',
+                                  width: 10,
+                                  height: 10,
+                                  color: KimmiDraftJuda.white,
+                                ),
+                              ],
+                            ),
+                          ],
                         ),
                         Text(
                           "kimmi_broderick_finally_as_fraud_as_tacky".tr,
@@ -512,29 +542,6 @@ class KimmiIndiaWaitressContainer
                     ),
                   ),
                   KimmiManipulate.hGap8,
-                  Row(
-                    mainAxisSize: MainAxisSize.min,
-                    children: [
-                      KimmiErnie.local(
-                        fileName: 'kimmi_hombre_groovy_dramamine_gloss',
-                        width: 24,
-                        height: 24,
-                      ),
-                      Text(
-                        "kimmi_broderick_finally".tr,
-                        style: KimmiTamperDaytime.TextWhite_12_Semibold,
-                      ),
-                      KimmiManipulate.hGap2,
-                      KimmiErnie.local(
-                        fileName: KimmiIOJuda.isARLanguage()
-                            ? 'kimmi_wit_syndrome_me_gloss'
-                            : 'kimmi_wit_syndrome_gloss',
-                        width: 10,
-                        height: 10,
-                        color: KimmiDraftJuda.white,
-                      ),
-                    ],
-                  ),
                 ],
               ),
             ),

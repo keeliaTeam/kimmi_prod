@@ -1,5 +1,5 @@
 import 'dart:math';
-import 'kimmi_kg_cute.dart';
+import 'kimmi_vibrant_mac.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_curvy/kimmi_africa.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_hamill/kimmi_tasteful.dart';
 import 'package:flutter/material.dart';

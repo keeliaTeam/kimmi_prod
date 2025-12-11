@@ -1,5 +1,5 @@
 import 'dart:math';
-import 'kimmi_es_pheromone.dart';
+import 'kimmi_applause_girl.dart';
 import 'dart:ui';
 
 import 'package:kimmi/kimmi_vasectomy/kimmi_prototype.dart';

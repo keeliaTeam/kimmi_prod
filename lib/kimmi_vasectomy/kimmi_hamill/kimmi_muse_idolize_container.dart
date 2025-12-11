@@ -1,5 +1,5 @@
 import 'dart:math';
-import 'kimmi_fang_first.dart';
+import 'kimmi_cowboys_sophomore.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_storm/kimmi_storm_embodiment.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_storm/kimmi_storm_container_hump.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_curvy/kimmi_vasectomy_pioneer_dock.dart';

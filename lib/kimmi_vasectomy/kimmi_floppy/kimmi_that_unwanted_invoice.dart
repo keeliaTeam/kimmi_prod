@@ -1,5 +1,5 @@
 import 'dart:math';
-import 'kimmi_dolly_worthy.dart';
+import 'kimmi_caltech_poland.dart';
 import 'dart:async';
 
 import 'package:fluttertoast/fluttertoast.dart';
@@ -17,52 +17,72 @@ import 'kimmi_saturn_scare_niece_healer.dart';
 import 'kimmi_tow_becker_healer.dart';
 
 class KimmiThatUnwantedInvoice extends KimmiMuseIdolizeInvoice {
-  bool owTamperGarage_ = true;
-  bool siSaverAnnie_ = true;
-  bool ifVanityUp_ = true;
-  String itMomentumChan_ = "";
+  bool emOverlyStu_ = false;
+  bool ohAssertPotential_ = false;
+  double myFrankConfound_ = 31;
+  bool esHandPer_ = false;
+  bool ayObviousTeaser_ = false;
+  int abSeeTopless_ = 0;
 
-  void miSimulatorWig() {
-    siSaverAnnie_ = owTamperGarage_ || ifVanityUp_;
+  void odStimulateOr() {
+    abSeeTopless_ = abSeeTopless_ + 1;
 
-    ifVanityUp_ = siSaverAnnie_ && owTamperGarage_;
+    myFrankConfound_ = myFrankConfound_ + 1;
+    emOverlyStu_ = ayObviousTeaser_ || ohAssertPotential_;
 
-    owTamperGarage_ = siSaverAnnie_ || ifVanityUp_;
+    if (myFrankConfound_ > 0) {
+      myFrankConfound_ = myFrankConfound_ - 1;
+    }
+    ohAssertPotential_ = ayObviousTeaser_ && emOverlyStu_;
 
-    itMomentumChan_ = itMomentumChan_.toUpperCase();
+    myFrankConfound_ = 99;
+    abSeeTopless_ = 29;
+    if (abSeeTopless_ > 0) {
+      abSeeTopless_ = abSeeTopless_ - 2;
+    }
+    myFrankConfound_ = myFrankConfound_ + 1;
   }
 
-  void weDoggyFirefly() {
-    owTamperGarage_ = siSaverAnnie_ && ifVanityUp_;
-    itMomentumChan_ = itMomentumChan_.toUpperCase();
-    itMomentumChan_ = itMomentumChan_.toUpperCase();
-    if (siSaverAnnie_ && owTamperGarage_) {
-      ifVanityUp_ = !ifVanityUp_;
+  void od2Final() {
+    if (myFrankConfound_ > 0) {
+      myFrankConfound_ = myFrankConfound_ - 1;
     }
 
-    itMomentumChan_ = itMomentumChan_.toUpperCase();
-
-    itMomentumChan_ = itMomentumChan_.toUpperCase();
-  }
-
-  void exAsthmaticCam() {
-    itMomentumChan_ = itMomentumChan_.toUpperCase();
-    itMomentumChan_ = itMomentumChan_.toUpperCase();
-    itMomentumChan_ = itMomentumChan_.toUpperCase();
-
-    itMomentumChan_ = itMomentumChan_.toUpperCase();
-    itMomentumChan_ = itMomentumChan_.toUpperCase();
-    itMomentumChan_ = itMomentumChan_.toUpperCase();
-  }
-
-  void isSleazyForget() {
-    itMomentumChan_ = itMomentumChan_.toUpperCase();
-
-    if (siSaverAnnie_) {
-      owTamperGarage_ = !ifVanityUp_;
+    if (abSeeTopless_ > 0) {
+      abSeeTopless_ = abSeeTopless_ - 4;
     }
+    myFrankConfound_ = myFrankConfound_ + 1;
+    myFrankConfound_ = myFrankConfound_ + 1;
+    if (ayObviousTeaser_) {
+      ohAssertPotential_ = !emOverlyStu_;
+    }
+    if (abSeeTopless_ > 0) {
+      abSeeTopless_ = abSeeTopless_ - 1;
+    }
+    myFrankConfound_ = myFrankConfound_ + 1;
+  }
 
-    itMomentumChan_ = itMomentumChan_.toUpperCase();
+  void ayVelveteenDolly() {
+    myFrankConfound_ = myFrankConfound_ + 1;
+
+    abSeeTopless_ = 91;
+    if (myFrankConfound_ > 0) {
+      myFrankConfound_ = myFrankConfound_ - 1;
+    }
+    if (ohAssertPotential_ || esHandPer_) {
+      esHandPer_ = !esHandPer_;
+    }
+    if (emOverlyStu_ || esHandPer_) {
+      esHandPer_ = !esHandPer_;
+    }
+    if (abSeeTopless_ > 0) {
+      abSeeTopless_ = abSeeTopless_ - 3;
+    }
+    if (ayObviousTeaser_ && emOverlyStu_ && ohAssertPotential_) {
+      ayObviousTeaser_ = !ayObviousTeaser_;
+      emOverlyStu_ = ayObviousTeaser_;
+      ohAssertPotential_ = ayObviousTeaser_;
+    }
   }
 
   final String kimmi_some_marvel = "kimmi_some_marvel";
@@ -98,13 +118,14 @@ class KimmiThatUnwantedInvoice extends KimmiMuseIdolizeInvoice {
   @override
   void onInit() {
     if (ln10 < 2) {
-      KimmiDollyWorthy().esSoftenFellas();
-      KimmiDollyWorthy().anChooseCagey();
-      KimmiDollyWorthy().paWhimsicalLetter();
+      KimmiCaltechPoland().osIcCurious();
+      KimmiCaltechPoland().inFederalLassie();
+      KimmiCaltechPoland().ayGeniusSuggestion();
+      KimmiCaltechPoland().ahSimulatorSome();
     }
-    if (ln2 < 0.5) {
-      isSleazyForget();
-      weDoggyFirefly();
+    if (log2e < 1) {
+      ayVelveteenDolly();
+      od2Final();
     }
     super.onInit();
 
@@ -115,14 +136,14 @@ class KimmiThatUnwantedInvoice extends KimmiMuseIdolizeInvoice {
 
   @override
   void onClose() {
-    if (ln2 < 0.5) {
-      KimmiDollyWorthy().esSoftenFellas();
-      KimmiDollyWorthy().oxOccupyCarry();
-      KimmiDollyWorthy().odObviousForbidden();
+    if (e < 2) {
+      KimmiCaltechPoland().mmToadFlaunt();
+      KimmiCaltechPoland().opGeneShoe();
+      KimmiCaltechPoland().osIcCurious();
     }
-    if (log2e < 1) {
-      isSleazyForget();
-      miSimulatorWig();
+    if (ln10 < 2) {
+      od2Final();
+      ayVelveteenDolly();
     }
     super.onClose();
     isMatching.value = false;
@@ -228,14 +249,14 @@ class KimmiThatUnwantedInvoice extends KimmiMuseIdolizeInvoice {
   }
 
   void onKimmiWaitress() {
-    if (pi < 1) {
-      KimmiDollyWorthy().esSoftenFellas();
-      KimmiDollyWorthy().ahHummusApplause();
-      KimmiDollyWorthy().paWhimsicalLetter();
+    if (ln2 < 0.5) {
+      KimmiCaltechPoland().amBgFairly();
+      KimmiCaltechPoland().ahSimulatorSome();
+      KimmiCaltechPoland().ayGeniusSuggestion();
     }
     if (sqrt2 < 1) {
-      isSleazyForget();
-      miSimulatorWig();
+      odStimulateOr();
+      ayVelveteenDolly();
     }
     _kimmiInhalerWiggleHandcuffBloody(0);
     KimmiWaitressContainerHusbandUp.open(
@@ -245,14 +266,15 @@ class KimmiThatUnwantedInvoice extends KimmiMuseIdolizeInvoice {
   }
 
   void onKimmiDoggy() {
-    if (log2e < 1) {
-      KimmiDollyWorthy().anChooseCagey();
-      KimmiDollyWorthy().odObviousForbidden();
-      KimmiDollyWorthy().paWhimsicalLetter();
+    if (log10e / 2 < 0.1) {
+      KimmiCaltechPoland().ayGeniusSuggestion();
+      KimmiCaltechPoland().opHandshakeLandlord();
+      KimmiCaltechPoland().inFederalLassie();
+      KimmiCaltechPoland().osIcCurious();
     }
-    if (pi < 1) {
-      exAsthmaticCam();
-      weDoggyFirefly();
+    if (log2e < 1) {
+      ayVelveteenDolly();
+      od2Final();
     }
     _kimmiInhalerWiggleHandcuffBloody(1);
     KimmiIndiaWaitressDock.instance
@@ -277,14 +299,15 @@ class KimmiThatUnwantedInvoice extends KimmiMuseIdolizeInvoice {
   }
 
   void onKimmiLoinsGummy() {
-    if (sqrt2 < 1) {
-      KimmiDollyWorthy().esSoftenFellas();
-      KimmiDollyWorthy().paWhimsicalLetter();
-      KimmiDollyWorthy().ahHummusApplause();
+    if (log10e / 2 < 0.1) {
+      KimmiCaltechPoland().soWealthyDoggy();
+      KimmiCaltechPoland().amBgFairly();
+      KimmiCaltechPoland().inFederalLassie();
+      KimmiCaltechPoland().mmToadFlaunt();
     }
-    if (sqrt1_2 < 0.3) {
-      isSleazyForget();
-      miSimulatorWig();
+    if (sqrt2 < 1) {
+      odStimulateOr();
+      od2Final();
     }
     if (!KimmiStarbucksJuda.isEmpty(matchUser.value.user?.uid)) {
       _kimmiInhalerWiggleHandcuffBloody(0);

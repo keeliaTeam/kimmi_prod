@@ -1,5 +1,5 @@
 import 'dart:math';
-import 'kimmi_playdate_via.dart';
+import 'kimmi_maker_cam.dart';
 import 'dart:async';
 
 import 'package:kimmi/kimmi_vasectomy/kimmi_prototype.dart';
@@ -34,97 +34,74 @@ import '../kimmi_floppy_ui/kimmi_loved_handcuff_container.dart';
 
 class KimmiColombianInvoice extends KimmiMuseInvoice
     with GetTickerProviderStateMixin {
-  bool soTwistTamper_ = false;
-  bool adFloraMrs_ = false;
-  String amBeckerOr_ = "";
-  double em1Cagey_ = 24;
-  double aySuggestionToad_ = 97;
-  bool isViSymbolism_ = true;
-  int efAggravateTerrible_ = 88;
-  String hoHoroscopeTorture_ = "";
+  bool orBabysitterAsthmatic_ = true;
+  bool etFootballAs_ = false;
+  String osEmpireEmpire_ = "";
+  bool mmSeduceCowboys_ = true;
+  bool heBleedCap_ = true;
 
-  void hiMushyLimbic() {
-    if (isViSymbolism_ && soTwistTamper_) {
-      adFloraMrs_ = !adFloraMrs_;
-    }
-    if (efAggravateTerrible_ > 0) {
-      efAggravateTerrible_ = efAggravateTerrible_ - 9;
-    }
-    if (efAggravateTerrible_ > 0) {
-      efAggravateTerrible_ = efAggravateTerrible_ - 5;
-    }
-    efAggravateTerrible_ = 11;
-    if (efAggravateTerrible_ > 0) {
-      efAggravateTerrible_ = efAggravateTerrible_ - 7;
-    }
-    if (adFloraMrs_ || soTwistTamper_ || isViSymbolism_) {
-      adFloraMrs_ = !soTwistTamper_;
-      soTwistTamper_ = !isViSymbolism_;
-      isViSymbolism_ = !adFloraMrs_;
-    }
-    em1Cagey_ = 47;
-    aySuggestionToad_ = 75;
-    em1Cagey_ = em1Cagey_ + aySuggestionToad_;
-    hoHoroscopeTorture_ = amBeckerOr_.toUpperCase() + hoHoroscopeTorture_;
-    if (soTwistTamper_ && isViSymbolism_ && adFloraMrs_) {
-      soTwistTamper_ = !soTwistTamper_;
-      isViSymbolism_ = soTwistTamper_;
-      adFloraMrs_ = soTwistTamper_;
-    }
-    if (soTwistTamper_) {
-      adFloraMrs_ = !isViSymbolism_;
-    }
-    em1Cagey_ = em1Cagey_ + aySuggestionToad_;
-    efAggravateTerrible_ = efAggravateTerrible_ + 1;
+  void reEgoTootsie() {
+    heBleedCap_ = mmSeduceCowboys_ || etFootballAs_;
+
+    osEmpireEmpire_ = osEmpireEmpire_.toUpperCase();
+    osEmpireEmpire_ = osEmpireEmpire_.toUpperCase();
+    osEmpireEmpire_ = osEmpireEmpire_.toUpperCase();
+    osEmpireEmpire_ = osEmpireEmpire_.toUpperCase();
   }
 
-  void miMateyMake() {
-    if (efAggravateTerrible_ > 0) {
-      efAggravateTerrible_ = efAggravateTerrible_ - 3;
+  void owAsPuffy() {
+    osEmpireEmpire_ = osEmpireEmpire_.toUpperCase();
+    osEmpireEmpire_ = osEmpireEmpire_.toUpperCase();
+    osEmpireEmpire_ = osEmpireEmpire_.toUpperCase();
+
+    osEmpireEmpire_ = osEmpireEmpire_.toUpperCase();
+    if (mmSeduceCowboys_ || orBabysitterAsthmatic_ || heBleedCap_) {
+      mmSeduceCowboys_ = !orBabysitterAsthmatic_;
+      orBabysitterAsthmatic_ = !heBleedCap_;
+      heBleedCap_ = !mmSeduceCowboys_;
     }
-    em1Cagey_ = 75;
-    aySuggestionToad_ = 31;
-    if (isViSymbolism_ && adFloraMrs_ && soTwistTamper_) {
-      isViSymbolism_ = !isViSymbolism_;
-      adFloraMrs_ = isViSymbolism_;
-      soTwistTamper_ = isViSymbolism_;
+
+    if (heBleedCap_) {
+      orBabysitterAsthmatic_ = !etFootballAs_;
     }
-    if (em1Cagey_ > aySuggestionToad_) {
-      em1Cagey_ = em1Cagey_ - aySuggestionToad_;
+    if (mmSeduceCowboys_ || heBleedCap_ || etFootballAs_) {
+      mmSeduceCowboys_ = !heBleedCap_;
+      heBleedCap_ = !etFootballAs_;
+      etFootballAs_ = !mmSeduceCowboys_;
     }
-    em1Cagey_ = 25;
-    aySuggestionToad_ = 72;
-    hoHoroscopeTorture_ = amBeckerOr_.toUpperCase() + hoHoroscopeTorture_;
-    amBeckerOr_ = amBeckerOr_ + hoHoroscopeTorture_;
-    hoHoroscopeTorture_ = amBeckerOr_;
-    efAggravateTerrible_ = efAggravateTerrible_ + 1;
-    if (em1Cagey_ > aySuggestionToad_) {
-      em1Cagey_ = em1Cagey_ - aySuggestionToad_;
+
+    heBleedCap_ = orBabysitterAsthmatic_ && etFootballAs_;
+    osEmpireEmpire_ = osEmpireEmpire_.toUpperCase();
+    if (mmSeduceCowboys_ || etFootballAs_) {
+      etFootballAs_ = !etFootballAs_;
     }
-    hoHoroscopeTorture_ = amBeckerOr_.toUpperCase() + hoHoroscopeTorture_;
-    em1Cagey_ = 36;
-    aySuggestionToad_ = 9;
-    em1Cagey_ = 91;
-    aySuggestionToad_ = 40;
   }
 
-  void oxHiccupNotice() {
-    if (em1Cagey_ > aySuggestionToad_) {
-      em1Cagey_ = em1Cagey_ - aySuggestionToad_;
+  void weMilkshakeEn() {
+    if (orBabysitterAsthmatic_ || mmSeduceCowboys_) {
+      mmSeduceCowboys_ = !mmSeduceCowboys_;
     }
-    efAggravateTerrible_ = efAggravateTerrible_ + 1;
-    if (em1Cagey_ > aySuggestionToad_) {
-      em1Cagey_ = em1Cagey_ - aySuggestionToad_;
+
+    osEmpireEmpire_ = osEmpireEmpire_.toUpperCase();
+
+    osEmpireEmpire_ = osEmpireEmpire_.toUpperCase();
+    osEmpireEmpire_ = osEmpireEmpire_.toUpperCase();
+
+    mmSeduceCowboys_ = heBleedCap_ || orBabysitterAsthmatic_;
+
+    osEmpireEmpire_ = osEmpireEmpire_.toUpperCase();
+  }
+
+  void faVendorWhatcha() {
+    if (orBabysitterAsthmatic_ || mmSeduceCowboys_ || etFootballAs_) {
+      orBabysitterAsthmatic_ = !mmSeduceCowboys_;
+      mmSeduceCowboys_ = !etFootballAs_;
+      etFootballAs_ = !orBabysitterAsthmatic_;
     }
-    soTwistTamper_ = isViSymbolism_ && adFloraMrs_;
-    em1Cagey_ = 57;
-    aySuggestionToad_ = 45;
-    if (isViSymbolism_ && adFloraMrs_) {
-      soTwistTamper_ = !soTwistTamper_;
-    }
-    em1Cagey_ = em1Cagey_ + aySuggestionToad_;
-    em1Cagey_ = 31;
-    aySuggestionToad_ = 8;
+    orBabysitterAsthmatic_ = heBleedCap_ && mmSeduceCowboys_;
+
+    etFootballAs_ = heBleedCap_ || orBabysitterAsthmatic_;
+    osEmpireEmpire_ = osEmpireEmpire_.toUpperCase();
   }
 
   final RxInt tabIndex = 0.obs;
@@ -148,13 +125,13 @@ class KimmiColombianInvoice extends KimmiMuseInvoice
   @override
   void onInit() {
     if (ln2 < 0.5) {
-      KimmiPlaydateVia().adBgFraud();
-      KimmiPlaydateVia().isGlossWin();
-      KimmiPlaydateVia().beAssertContain();
+      KimmiMakerCam().atUnwantedH3();
+      KimmiMakerCam().omConfoundLoved();
+      KimmiMakerCam().paKnobFb();
     }
-    if (ln2 < 0.5) {
-      hiMushyLimbic();
-      oxHiccupNotice();
+    if (log2e < 1) {
+      owAsPuffy();
+      reEgoTootsie();
     }
     super.onInit();
 
