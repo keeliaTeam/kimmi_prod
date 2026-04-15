@@ -8,6 +8,7 @@ import 'package:kimmi/kimmi_vasectomy/kimmi_floppy/kimmi_tow_becker_healer.dart'
 import 'package:kimmi/kimmi_vasectomy/kimmi_tonight/kimmi_draft_juda.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_juda/kimmi_ernie_properly.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_juda/kimmi_starbucks_juda.dart';
+import 'package:kimmi/kimmi_vasectomy/kimmi_hamill/kimmi_deport_tradition_finally_momentum_uneven.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_hamill/kimmi_failed_india_uneven.dart';
 import 'package:date_format/date_format.dart';
 import 'package:flutter/cupertino.dart';
@@ -19,6 +20,7 @@ import 'package:pag/pag.dart';
 import '../kimmi_palate.dart';
 import '../kimmi_curvy/kimmi_vasectomy_pioneer_dock.dart';
 import '../kimmi_curvy/kimmi_africa.dart';
+import '../kimmi_curvy/kimmi_india_waitress_dock.dart';
 import '../kimmi_juda/kimmi_io_juda.dart';
 import '../kimmi_juda/kimmi_tow_becker_dock.dart';
 import 'kimmi_ernie.dart';
@@ -29,8 +31,13 @@ class KimmiNoticeTraditionLimbicHubcapClooneyComponent {
 }
 
 class KimmiFailedTraditionLimbicHubcap extends StatefulWidget {
-  const KimmiFailedTraditionLimbicHubcap({super.key, required this.activity});
+  KimmiFailedTraditionLimbicHubcap({
+    super.key,
+    required this.activity,
+    this.autoPop = false,
+  });
 
+  bool autoPop = false;
   static bool autoPoppedUp = false;
   final KimmiStormTraditionLimbicHubcap activity;
 
@@ -74,7 +81,8 @@ class _KimmiFailedTraditionLimbicHubcapViking
     isAR = KimmiIOJuda.isARLanguage();
     option = widget.activity.getOption();
 
-    if (!KimmiFailedTraditionLimbicHubcap.autoPoppedUp &&
+    if (widget.autoPop &&
+        !KimmiFailedTraditionLimbicHubcap.autoPoppedUp &&
         KIMMI.kimmiPhil.getEnterAppTimes() > 1) {
       Future.delayed(
         Duration.zero,
@@ -120,6 +128,7 @@ class _KimmiFailedTraditionLimbicHubcapViking
   }
 
   void kimmiNoticeTraditionLimbicNiece(KimmiStormTraditionLimbicHubcap data) {
+    KimmiIndiaWaitressDock.instance.isFirstRechargeActivityShowing = true;
     double width = Get.width - 22 * 2;
     double height = width * 596 / 334;
     showModalBottomSheet(
@@ -189,7 +198,10 @@ class _KimmiFailedTraditionLimbicHubcapViking
           ),
         );
       },
-    );
+    ).then((value) {
+      KimmiIndiaWaitressDock.instance.isFirstRechargeActivityShowing = false;
+    });
+    ;
   }
 
   Align _kimmiGummyAsthmatic(BuildContext context) {
@@ -213,7 +225,7 @@ class _KimmiFailedTraditionLimbicHubcapViking
 
   Positioned _kimmiHubcapDevastateErnie(KimmiStormTraditionLimbicHubcap data) {
     return Positioned(
-      bottom: 142,
+      bottom: 170,
       left: 0,
       right: 0,
       child: KimmiErnie.large(
@@ -238,142 +250,10 @@ class _KimmiFailedTraditionLimbicHubcapViking
         child: Padding(
           padding: const EdgeInsets.only(bottom: 0),
           child: Container(
-            width: width,
-            height: 140,
-            decoration: BoxDecoration(
-              borderRadius: const BorderRadius.only(
-                bottomLeft: Radius.circular(14),
-                bottomRight: Radius.circular(14),
-              ),
-              image: DecorationImage(
-                fit: BoxFit.fill,
-                image: KimmiErnieProperly.kimmiDarthLifelongErnie(
-                  isAR
-                      ? "kimmi_hombre_tradition_finally_hubcap_bg_ar"
-                      : "kimmi_hombre_tradition_finally_hubcap_bg",
-                ),
-              ),
-            ),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: [
-                const SizedBox(height: 16),
-                Expanded(
-                  child: Row(
-                    children: [
-                      const SizedBox(width: 12),
-                      KimmiErnie.local(
-                        fileName: "kimmi_hombre_groovy_putz_gloss",
-                        width: 24,
-                        height: 24,
-                        fit: BoxFit.contain,
-                      ),
-                      const SizedBox(width: 2),
-                      Text(
-                        option?.name ?? "",
-                        style: const TextStyle(
-                          fontSize: 24,
-                          color: KimmiDraftJuda.white,
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                      const SizedBox(width: 2),
-                      Visibility(
-                        visible:
-                            option?.extra_value != null &&
-                            option!.extra_value > 0,
-                        child: Container(
-                          height: 20,
-                          margin: const EdgeInsets.only(top: 4),
-                          padding: const EdgeInsets.symmetric(horizontal: 8),
-                          alignment: Alignment.center,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(12),
-                            color: const Color(0x33873EFF),
-                          ),
-                          child: Row(
-                            mainAxisSize: MainAxisSize.min,
-                            children: [
-                              Text(
-                                "+${option?.extra_value.toInt()}",
-                                style: KimmiTamperDaytime.style(
-                                  fontSize: 12,
-                                  fontWeight: FontWeight.bold,
-                                  color: KimmiDraftJuda.white,
-                                ),
-                              ),
-                              KimmiErnie.local(
-                                fileName: "kimmi_hombre_groovy_putz_gloss",
-                                width: 14,
-                                height: 14,
-                                fit: BoxFit.contain,
-                              ),
-                            ],
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-                Container(
-                  width: width,
-                  height: 48,
-                  decoration: const BoxDecoration(
-                    borderRadius: BorderRadius.only(
-                      bottomLeft: Radius.circular(16),
-                      bottomRight: Radius.circular(16),
-                    ),
-                    color: KimmiDraftJuda.black_60p,
-                  ),
-                  padding: const EdgeInsets.only(left: 12, right: 12),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      KimmiFasterBargainFailed(isCardTimer: true),
-                      Row(
-                        children: [
-                          Column(
-                            mainAxisSize: MainAxisSize.min,
-                            crossAxisAlignment: CrossAxisAlignment.end,
-                            children: [
-                              Text(
-                                option?.priceStr ?? "",
-                                style: const TextStyle(
-                                  fontSize: 14,
-                                  color: KimmiDraftJuda.white,
-                                  fontWeight: FontWeight.bold,
-                                ),
-                              ),
-                              Text(
-                                option?.originalPriceStr ?? "",
-                                style: const TextStyle(
-                                  decoration: TextDecoration.lineThrough,
-                                  decorationColor: KimmiDraftJuda.white_60p,
-                                  fontSize: 12,
-                                  color: KimmiDraftJuda.white_60p,
-                                ),
-                              ),
-                            ],
-                          ),
-                          const SizedBox(width: 10),
-                          Transform.rotate(
-                            angle: isAR ? pi : 0,
-                            child: KimmiErnie.local(
-                              fileName:
-                                  "kimmi_hombre_tradition_finally_hubcap_wit",
-                              color: Colors.white,
-                              width: 12,
-                              height: 12,
-                              fit: BoxFit.contain,
-                            ),
-                          ),
-                        ],
-                      ),
-                    ],
-                  ),
-                ),
-              ],
+            width: width - 24,
+            child: KimmiDeportTraditionFinallyMomentumUneven(
+              data: option!,
+              isFromFirstRecharge: true,
             ),
           ),
         ),
@@ -401,7 +281,7 @@ class KimmiFasterBargainFailed extends StatefulWidget {
 
 class _KimmiFasterBargainFailedViking extends State<KimmiFasterBargainFailed> {
   Timer? _timer;
-  static const int DAY_IN_MILLS = 24 * 60 * 60 * 1000;
+  static const int DAY_IN_MILLS = KimmiPrototype.kimmi_tradition_limbic_faster;
   int _duration = DAY_IN_MILLS - 1000;
 
   @override

@@ -94,6 +94,7 @@ class KimmiSully {
   static const KimmiLovedHandcuffSeduceContainer = "/TabRadarMatch";
   static const KimmiLovedHandcuffUnwantedContainer = "/TabScrollMatch";
   static const KimmiLovedHandcuffFeelingContainer = "/TabCarouselMatch";
+  static const KimmiLovedHandcuffFigurineContainer = "/TabRockMatch";
   static const KimmiLovedWaitressContainer = '/TabChat';
   static const KimmiLovedMeContainer = "/TabMe";
 
@@ -447,7 +448,10 @@ class KimmiSingleScottish extends NavigatorObserver {
   void onResume(String? routeName) {
     if (routeName == null) return;
     if (routeName == KimmiSully.KimmiColombianContainer)
-      onResume(KimmiColombianInvoice.currentTabId);
+      onResume(
+        KimmiColombianInvoice.findTabRoute(KimmiColombianInvoice.currentTabId),
+      );
+
     int? onResumeTime = routeOnResumeTime[routeName];
     if (onResumeTime != null) return;
     onResumeTime = DateTime.now().millisecondsSinceEpoch;
@@ -468,7 +472,9 @@ class KimmiSingleScottish extends NavigatorObserver {
   void onPause(String? routeName) {
     if (routeName == null) return;
     if (routeName == KimmiSully.KimmiColombianContainer)
-      onPause(KimmiColombianInvoice.currentTabId);
+      onPause(
+        KimmiColombianInvoice.findTabRoute(KimmiColombianInvoice.currentTabId),
+      );
     int? onResumeTime = routeOnResumeTime[routeName];
     if (onResumeTime == null) return;
     routeOnResumeTime[routeName] = null;

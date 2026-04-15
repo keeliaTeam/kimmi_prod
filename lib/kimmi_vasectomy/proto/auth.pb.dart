@@ -4,6 +4,83 @@ import 'package:kimmi/kimmi_vasectomy/proto/kimmi_cadaver_gentleman.dart';
 import 'package:protobuf/protobuf.dart' as $pb;
 
 class AuthReq extends $pb.GeneratedMessage {
+  static final $pb.BuilderInfo _i =
+      $pb.BuilderInfo(
+          const $core.bool.fromEnvironment('protobuf.omit_message_names')
+              ? ''
+              : 'AuthReq',
+          package: $pb.PackageName(
+            const $core.bool.fromEnvironment('protobuf.omit_message_names')
+                ? ''
+                : pP.kimmiLockMuse(),
+          ),
+          createEmptyInstance: create,
+        )
+        ..aOS(
+          1,
+          const $core.bool.fromEnvironment('protobuf.omit_field_names')
+              ? ''
+              : 'session',
+        )
+        ..aOS(
+          2,
+          const $core.bool.fromEnvironment('protobuf.omit_field_names')
+              ? ''
+              : 'version',
+        )
+        ..aOS(
+          3,
+          const $core.bool.fromEnvironment('protobuf.omit_field_names')
+              ? ''
+              : 'deviceId',
+        )
+        ..aOS(
+          4,
+          const $core.bool.fromEnvironment('protobuf.omit_field_names')
+              ? ''
+              : 'model',
+        )
+        ..aOS(
+          5,
+          const $core.bool.fromEnvironment('protobuf.omit_field_names')
+              ? ''
+              : 'os',
+        )
+        ..aOS(
+          6,
+          const $core.bool.fromEnvironment('protobuf.omit_field_names')
+              ? ''
+              : 'timestamp',
+        )
+        ..aOS(
+          7,
+          const $core.bool.fromEnvironment('protobuf.omit_field_names')
+              ? ''
+              : 'sig',
+        )
+        ..a<$core.int>(
+          8,
+          const $core.bool.fromEnvironment('protobuf.omit_field_names')
+              ? ''
+              : 'pVer',
+          $pb.PbFieldType.O3,
+        )
+        ..aOS(
+          9,
+          const $core.bool.fromEnvironment('protobuf.omit_field_names')
+              ? ''
+              : 'lang',
+        )
+        ..aOS(
+          10,
+          const $core.bool.fromEnvironment('protobuf.omit_field_names')
+              ? ''
+              : 'packageName',
+        )
+        ..hasRequiredFields = false;
+
+  AuthReq._() : super();
+
   factory AuthReq({
     $core.String? session,
     $core.String? version,
@@ -16,66 +93,49 @@ class AuthReq extends $pb.GeneratedMessage {
     $core.String? lang,
     $core.String? packageName,
   }) {
-    final $result = create();
+    final _result = create();
     if (session != null) {
-      $result.session = session;
+      _result.session = session;
     }
     if (version != null) {
-      $result.version = version;
+      _result.version = version;
     }
     if (deviceId != null) {
-      $result.deviceId = deviceId;
+      _result.deviceId = deviceId;
     }
     if (model != null) {
-      $result.model = model;
+      _result.model = model;
     }
     if (os != null) {
-      $result.os = os;
+      _result.os = os;
     }
     if (timestamp != null) {
-      $result.timestamp = timestamp;
+      _result.timestamp = timestamp;
     }
     if (sig != null) {
-      $result.sig = sig;
+      _result.sig = sig;
     }
     if (pVer != null) {
-      $result.pVer = pVer;
+      _result.pVer = pVer;
     }
     if (lang != null) {
-      $result.lang = lang;
+      _result.lang = lang;
     }
     if (packageName != null) {
-      $result.packageName = packageName;
+      _result.packageName = packageName;
     }
-    return $result;
+    return _result;
   }
-  AuthReq._() : super();
+
   factory AuthReq.fromBuffer(
     $core.List<$core.int> i, [
     $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
   ]) => create()..mergeFromBuffer(i, r);
+
   factory AuthReq.fromJson(
     $core.String i, [
     $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
   ]) => create()..mergeFromJson(i, r);
-
-  static final $pb.BuilderInfo _i =
-      $pb.BuilderInfo(
-          _omitMessageNames ? '' : 'AuthReq',
-          package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockMuse()),
-          createEmptyInstance: create,
-        )
-        ..aOS(1, _omitFieldNames ? '' : 'session')
-        ..aOS(2, _omitFieldNames ? '' : 'version')
-        ..aOS(3, _omitFieldNames ? '' : 'deviceId')
-        ..aOS(4, _omitFieldNames ? '' : 'model')
-        ..aOS(5, _omitFieldNames ? '' : 'os')
-        ..aOS(6, _omitFieldNames ? '' : 'timestamp')
-        ..aOS(7, _omitFieldNames ? '' : 'sig')
-        ..a<$core.int>(8, _omitFieldNames ? '' : 'pVer', $pb.PbFieldType.O3)
-        ..aOS(9, _omitFieldNames ? '' : 'lang')
-        ..aOS(10, _omitFieldNames ? '' : 'packageName')
-        ..hasRequiredFields = false;
 
   @$core.Deprecated(
     'Using this can add significant overhead to your binary. '
@@ -83,6 +143,7 @@ class AuthReq extends $pb.GeneratedMessage {
     'Will be removed in next major version',
   )
   AuthReq clone() => AuthReq()..mergeFromMessage(this);
+
   @$core.Deprecated(
     'Using this can add significant overhead to your binary. '
     'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
@@ -90,13 +151,15 @@ class AuthReq extends $pb.GeneratedMessage {
   )
   AuthReq copyWith(void Function(AuthReq) updates) =>
       super.copyWith((message) => updates(message as AuthReq)) as AuthReq;
-
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static AuthReq create() => AuthReq._();
+
   AuthReq createEmptyInstance() => create();
+
   static $pb.PbList<AuthReq> createRepeated() => $pb.PbList<AuthReq>();
+
   @$core.pragma('dart2js:noInline')
   static AuthReq getDefault() =>
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AuthReq>(create);
@@ -104,6 +167,7 @@ class AuthReq extends $pb.GeneratedMessage {
 
   @$pb.TagNumber(1)
   $core.String get session => $_getSZ(0);
+
   @$pb.TagNumber(1)
   set session($core.String v) {
     $_setString(0, v);
@@ -111,11 +175,13 @@ class AuthReq extends $pb.GeneratedMessage {
 
   @$pb.TagNumber(1)
   $core.bool hasSession() => $_has(0);
+
   @$pb.TagNumber(1)
   void clearSession() => clearField(1);
 
   @$pb.TagNumber(2)
   $core.String get version => $_getSZ(1);
+
   @$pb.TagNumber(2)
   set version($core.String v) {
     $_setString(1, v);
@@ -123,11 +189,13 @@ class AuthReq extends $pb.GeneratedMessage {
 
   @$pb.TagNumber(2)
   $core.bool hasVersion() => $_has(1);
+
   @$pb.TagNumber(2)
   void clearVersion() => clearField(2);
 
   @$pb.TagNumber(3)
   $core.String get deviceId => $_getSZ(2);
+
   @$pb.TagNumber(3)
   set deviceId($core.String v) {
     $_setString(2, v);
@@ -135,11 +203,13 @@ class AuthReq extends $pb.GeneratedMessage {
 
   @$pb.TagNumber(3)
   $core.bool hasDeviceId() => $_has(2);
+
   @$pb.TagNumber(3)
   void clearDeviceId() => clearField(3);
 
   @$pb.TagNumber(4)
   $core.String get model => $_getSZ(3);
+
   @$pb.TagNumber(4)
   set model($core.String v) {
     $_setString(3, v);
@@ -147,11 +217,13 @@ class AuthReq extends $pb.GeneratedMessage {
 
   @$pb.TagNumber(4)
   $core.bool hasModel() => $_has(3);
+
   @$pb.TagNumber(4)
   void clearModel() => clearField(4);
 
   @$pb.TagNumber(5)
   $core.String get os => $_getSZ(4);
+
   @$pb.TagNumber(5)
   set os($core.String v) {
     $_setString(4, v);
@@ -159,11 +231,13 @@ class AuthReq extends $pb.GeneratedMessage {
 
   @$pb.TagNumber(5)
   $core.bool hasOs() => $_has(4);
+
   @$pb.TagNumber(5)
   void clearOs() => clearField(5);
 
   @$pb.TagNumber(6)
   $core.String get timestamp => $_getSZ(5);
+
   @$pb.TagNumber(6)
   set timestamp($core.String v) {
     $_setString(5, v);
@@ -171,11 +245,13 @@ class AuthReq extends $pb.GeneratedMessage {
 
   @$pb.TagNumber(6)
   $core.bool hasTimestamp() => $_has(5);
+
   @$pb.TagNumber(6)
   void clearTimestamp() => clearField(6);
 
   @$pb.TagNumber(7)
   $core.String get sig => $_getSZ(6);
+
   @$pb.TagNumber(7)
   set sig($core.String v) {
     $_setString(6, v);
@@ -183,11 +259,13 @@ class AuthReq extends $pb.GeneratedMessage {
 
   @$pb.TagNumber(7)
   $core.bool hasSig() => $_has(6);
+
   @$pb.TagNumber(7)
   void clearSig() => clearField(7);
 
   @$pb.TagNumber(8)
   $core.int get pVer => $_getIZ(7);
+
   @$pb.TagNumber(8)
   set pVer($core.int v) {
     $_setSignedInt32(7, v);
@@ -195,11 +273,13 @@ class AuthReq extends $pb.GeneratedMessage {
 
   @$pb.TagNumber(8)
   $core.bool hasPVer() => $_has(7);
+
   @$pb.TagNumber(8)
   void clearPVer() => clearField(8);
 
   @$pb.TagNumber(9)
   $core.String get lang => $_getSZ(8);
+
   @$pb.TagNumber(9)
   set lang($core.String v) {
     $_setString(8, v);
@@ -207,11 +287,13 @@ class AuthReq extends $pb.GeneratedMessage {
 
   @$pb.TagNumber(9)
   $core.bool hasLang() => $_has(8);
+
   @$pb.TagNumber(9)
   void clearLang() => clearField(9);
 
   @$pb.TagNumber(10)
   $core.String get packageName => $_getSZ(9);
+
   @$pb.TagNumber(10)
   set packageName($core.String v) {
     $_setString(9, v);
@@ -219,40 +301,61 @@ class AuthReq extends $pb.GeneratedMessage {
 
   @$pb.TagNumber(10)
   $core.bool hasPackageName() => $_has(9);
+
   @$pb.TagNumber(10)
   void clearPackageName() => clearField(10);
 }
 
 class SessionInvalidNotify extends $pb.GeneratedMessage {
+  static final $pb.BuilderInfo _i =
+      $pb.BuilderInfo(
+          const $core.bool.fromEnvironment('protobuf.omit_message_names')
+              ? ''
+              : 'SessionInvalidNotify',
+          package: $pb.PackageName(
+            const $core.bool.fromEnvironment('protobuf.omit_message_names')
+                ? ''
+                : pP.kimmiLockMuse(),
+          ),
+          createEmptyInstance: create,
+        )
+        ..a<$core.int>(
+          1,
+          const $core.bool.fromEnvironment('protobuf.omit_field_names')
+              ? ''
+              : 'code',
+          $pb.PbFieldType.OU3,
+        )
+        ..aOS(
+          2,
+          const $core.bool.fromEnvironment('protobuf.omit_field_names')
+              ? ''
+              : 'msg',
+        )
+        ..hasRequiredFields = false;
+
+  SessionInvalidNotify._() : super();
+
   factory SessionInvalidNotify({$core.int? code, $core.String? msg}) {
-    final $result = create();
+    final _result = create();
     if (code != null) {
-      $result.code = code;
+      _result.code = code;
     }
     if (msg != null) {
-      $result.msg = msg;
+      _result.msg = msg;
     }
-    return $result;
+    return _result;
   }
-  SessionInvalidNotify._() : super();
+
   factory SessionInvalidNotify.fromBuffer(
     $core.List<$core.int> i, [
     $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
   ]) => create()..mergeFromBuffer(i, r);
+
   factory SessionInvalidNotify.fromJson(
     $core.String i, [
     $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
   ]) => create()..mergeFromJson(i, r);
-
-  static final $pb.BuilderInfo _i =
-      $pb.BuilderInfo(
-          _omitMessageNames ? '' : 'SessionInvalidNotify',
-          package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockMuse()),
-          createEmptyInstance: create,
-        )
-        ..a<$core.int>(1, _omitFieldNames ? '' : 'code', $pb.PbFieldType.OU3)
-        ..aOS(2, _omitFieldNames ? '' : 'msg')
-        ..hasRequiredFields = false;
 
   @$core.Deprecated(
     'Using this can add significant overhead to your binary. '
@@ -261,6 +364,7 @@ class SessionInvalidNotify extends $pb.GeneratedMessage {
   )
   SessionInvalidNotify clone() =>
       SessionInvalidNotify()..mergeFromMessage(this);
+
   @$core.Deprecated(
     'Using this can add significant overhead to your binary. '
     'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
@@ -269,14 +373,16 @@ class SessionInvalidNotify extends $pb.GeneratedMessage {
   SessionInvalidNotify copyWith(void Function(SessionInvalidNotify) updates) =>
       super.copyWith((message) => updates(message as SessionInvalidNotify))
           as SessionInvalidNotify;
-
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static SessionInvalidNotify create() => SessionInvalidNotify._();
+
   SessionInvalidNotify createEmptyInstance() => create();
+
   static $pb.PbList<SessionInvalidNotify> createRepeated() =>
       $pb.PbList<SessionInvalidNotify>();
+
   @$core.pragma('dart2js:noInline')
   static SessionInvalidNotify getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<SessionInvalidNotify>(create);
@@ -284,6 +390,7 @@ class SessionInvalidNotify extends $pb.GeneratedMessage {
 
   @$pb.TagNumber(1)
   $core.int get code => $_getIZ(0);
+
   @$pb.TagNumber(1)
   set code($core.int v) {
     $_setUnsignedInt32(0, v);
@@ -291,11 +398,13 @@ class SessionInvalidNotify extends $pb.GeneratedMessage {
 
   @$pb.TagNumber(1)
   $core.bool hasCode() => $_has(0);
+
   @$pb.TagNumber(1)
   void clearCode() => clearField(1);
 
   @$pb.TagNumber(2)
   $core.String get msg => $_getSZ(1);
+
   @$pb.TagNumber(2)
   set msg($core.String v) {
     $_setString(1, v);
@@ -303,11 +412,83 @@ class SessionInvalidNotify extends $pb.GeneratedMessage {
 
   @$pb.TagNumber(2)
   $core.bool hasMsg() => $_has(1);
+
   @$pb.TagNumber(2)
   void clearMsg() => clearField(2);
 }
 
 class GuideAuthReq extends $pb.GeneratedMessage {
+  static final $pb.BuilderInfo _i =
+      $pb.BuilderInfo(
+          const $core.bool.fromEnvironment('protobuf.omit_message_names')
+              ? ''
+              : 'GuideAuthReq',
+          package: $pb.PackageName(
+            const $core.bool.fromEnvironment('protobuf.omit_message_names')
+                ? ''
+                : pP.kimmiLockMuse(),
+          ),
+          createEmptyInstance: create,
+        )
+        ..aOS(
+          1,
+          const $core.bool.fromEnvironment('protobuf.omit_field_names')
+              ? ''
+              : 'uuid',
+        )
+        ..aOS(
+          2,
+          const $core.bool.fromEnvironment('protobuf.omit_field_names')
+              ? ''
+              : 'version',
+        )
+        ..aOS(
+          3,
+          const $core.bool.fromEnvironment('protobuf.omit_field_names')
+              ? ''
+              : 'deviceId',
+        )
+        ..aOS(
+          4,
+          const $core.bool.fromEnvironment('protobuf.omit_field_names')
+              ? ''
+              : 'model',
+        )
+        ..aOS(
+          5,
+          const $core.bool.fromEnvironment('protobuf.omit_field_names')
+              ? ''
+              : 'os',
+        )
+        ..aOS(
+          6,
+          const $core.bool.fromEnvironment('protobuf.omit_field_names')
+              ? ''
+              : 'timestamp',
+        )
+        ..aOS(
+          7,
+          const $core.bool.fromEnvironment('protobuf.omit_field_names')
+              ? ''
+              : 'sig',
+        )
+        ..a<$core.int>(
+          8,
+          const $core.bool.fromEnvironment('protobuf.omit_field_names')
+              ? ''
+              : 'pVer',
+          $pb.PbFieldType.O3,
+        )
+        ..aOS(
+          9,
+          const $core.bool.fromEnvironment('protobuf.omit_field_names')
+              ? ''
+              : 'lang',
+        )
+        ..hasRequiredFields = false;
+
+  GuideAuthReq._() : super();
+
   factory GuideAuthReq({
     $core.String? uuid,
     $core.String? version,
@@ -319,62 +500,46 @@ class GuideAuthReq extends $pb.GeneratedMessage {
     $core.int? pVer,
     $core.String? lang,
   }) {
-    final $result = create();
+    final _result = create();
     if (uuid != null) {
-      $result.uuid = uuid;
+      _result.uuid = uuid;
     }
     if (version != null) {
-      $result.version = version;
+      _result.version = version;
     }
     if (deviceId != null) {
-      $result.deviceId = deviceId;
+      _result.deviceId = deviceId;
     }
     if (model != null) {
-      $result.model = model;
+      _result.model = model;
     }
     if (os != null) {
-      $result.os = os;
+      _result.os = os;
     }
     if (timestamp != null) {
-      $result.timestamp = timestamp;
+      _result.timestamp = timestamp;
     }
     if (sig != null) {
-      $result.sig = sig;
+      _result.sig = sig;
     }
     if (pVer != null) {
-      $result.pVer = pVer;
+      _result.pVer = pVer;
     }
     if (lang != null) {
-      $result.lang = lang;
+      _result.lang = lang;
     }
-    return $result;
+    return _result;
   }
-  GuideAuthReq._() : super();
+
   factory GuideAuthReq.fromBuffer(
     $core.List<$core.int> i, [
     $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
   ]) => create()..mergeFromBuffer(i, r);
+
   factory GuideAuthReq.fromJson(
     $core.String i, [
     $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
   ]) => create()..mergeFromJson(i, r);
-
-  static final $pb.BuilderInfo _i =
-      $pb.BuilderInfo(
-          _omitMessageNames ? '' : 'GuideAuthReq',
-          package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockMuse()),
-          createEmptyInstance: create,
-        )
-        ..aOS(1, _omitFieldNames ? '' : 'uuid')
-        ..aOS(2, _omitFieldNames ? '' : 'version')
-        ..aOS(3, _omitFieldNames ? '' : 'deviceId')
-        ..aOS(4, _omitFieldNames ? '' : 'model')
-        ..aOS(5, _omitFieldNames ? '' : 'os')
-        ..aOS(6, _omitFieldNames ? '' : 'timestamp')
-        ..aOS(7, _omitFieldNames ? '' : 'sig')
-        ..a<$core.int>(8, _omitFieldNames ? '' : 'pVer', $pb.PbFieldType.O3)
-        ..aOS(9, _omitFieldNames ? '' : 'lang')
-        ..hasRequiredFields = false;
 
   @$core.Deprecated(
     'Using this can add significant overhead to your binary. '
@@ -382,6 +547,7 @@ class GuideAuthReq extends $pb.GeneratedMessage {
     'Will be removed in next major version',
   )
   GuideAuthReq clone() => GuideAuthReq()..mergeFromMessage(this);
+
   @$core.Deprecated(
     'Using this can add significant overhead to your binary. '
     'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
@@ -390,14 +556,16 @@ class GuideAuthReq extends $pb.GeneratedMessage {
   GuideAuthReq copyWith(void Function(GuideAuthReq) updates) =>
       super.copyWith((message) => updates(message as GuideAuthReq))
           as GuideAuthReq;
-
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static GuideAuthReq create() => GuideAuthReq._();
+
   GuideAuthReq createEmptyInstance() => create();
+
   static $pb.PbList<GuideAuthReq> createRepeated() =>
       $pb.PbList<GuideAuthReq>();
+
   @$core.pragma('dart2js:noInline')
   static GuideAuthReq getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<GuideAuthReq>(create);
@@ -405,6 +573,7 @@ class GuideAuthReq extends $pb.GeneratedMessage {
 
   @$pb.TagNumber(1)
   $core.String get uuid => $_getSZ(0);
+
   @$pb.TagNumber(1)
   set uuid($core.String v) {
     $_setString(0, v);
@@ -412,11 +581,13 @@ class GuideAuthReq extends $pb.GeneratedMessage {
 
   @$pb.TagNumber(1)
   $core.bool hasUuid() => $_has(0);
+
   @$pb.TagNumber(1)
   void clearUuid() => clearField(1);
 
   @$pb.TagNumber(2)
   $core.String get version => $_getSZ(1);
+
   @$pb.TagNumber(2)
   set version($core.String v) {
     $_setString(1, v);
@@ -424,11 +595,13 @@ class GuideAuthReq extends $pb.GeneratedMessage {
 
   @$pb.TagNumber(2)
   $core.bool hasVersion() => $_has(1);
+
   @$pb.TagNumber(2)
   void clearVersion() => clearField(2);
 
   @$pb.TagNumber(3)
   $core.String get deviceId => $_getSZ(2);
+
   @$pb.TagNumber(3)
   set deviceId($core.String v) {
     $_setString(2, v);
@@ -436,11 +609,13 @@ class GuideAuthReq extends $pb.GeneratedMessage {
 
   @$pb.TagNumber(3)
   $core.bool hasDeviceId() => $_has(2);
+
   @$pb.TagNumber(3)
   void clearDeviceId() => clearField(3);
 
   @$pb.TagNumber(4)
   $core.String get model => $_getSZ(3);
+
   @$pb.TagNumber(4)
   set model($core.String v) {
     $_setString(3, v);
@@ -448,11 +623,13 @@ class GuideAuthReq extends $pb.GeneratedMessage {
 
   @$pb.TagNumber(4)
   $core.bool hasModel() => $_has(3);
+
   @$pb.TagNumber(4)
   void clearModel() => clearField(4);
 
   @$pb.TagNumber(5)
   $core.String get os => $_getSZ(4);
+
   @$pb.TagNumber(5)
   set os($core.String v) {
     $_setString(4, v);
@@ -460,11 +637,13 @@ class GuideAuthReq extends $pb.GeneratedMessage {
 
   @$pb.TagNumber(5)
   $core.bool hasOs() => $_has(4);
+
   @$pb.TagNumber(5)
   void clearOs() => clearField(5);
 
   @$pb.TagNumber(6)
   $core.String get timestamp => $_getSZ(5);
+
   @$pb.TagNumber(6)
   set timestamp($core.String v) {
     $_setString(5, v);
@@ -472,11 +651,13 @@ class GuideAuthReq extends $pb.GeneratedMessage {
 
   @$pb.TagNumber(6)
   $core.bool hasTimestamp() => $_has(5);
+
   @$pb.TagNumber(6)
   void clearTimestamp() => clearField(6);
 
   @$pb.TagNumber(7)
   $core.String get sig => $_getSZ(6);
+
   @$pb.TagNumber(7)
   set sig($core.String v) {
     $_setString(6, v);
@@ -484,11 +665,13 @@ class GuideAuthReq extends $pb.GeneratedMessage {
 
   @$pb.TagNumber(7)
   $core.bool hasSig() => $_has(6);
+
   @$pb.TagNumber(7)
   void clearSig() => clearField(7);
 
   @$pb.TagNumber(8)
   $core.int get pVer => $_getIZ(7);
+
   @$pb.TagNumber(8)
   set pVer($core.int v) {
     $_setSignedInt32(7, v);
@@ -496,11 +679,13 @@ class GuideAuthReq extends $pb.GeneratedMessage {
 
   @$pb.TagNumber(8)
   $core.bool hasPVer() => $_has(7);
+
   @$pb.TagNumber(8)
   void clearPVer() => clearField(8);
 
   @$pb.TagNumber(9)
   $core.String get lang => $_getSZ(8);
+
   @$pb.TagNumber(9)
   set lang($core.String v) {
     $_setString(8, v);
@@ -508,11 +693,60 @@ class GuideAuthReq extends $pb.GeneratedMessage {
 
   @$pb.TagNumber(9)
   $core.bool hasLang() => $_has(8);
+
   @$pb.TagNumber(9)
   void clearLang() => clearField(9);
 }
 
 class AuthRsp extends $pb.GeneratedMessage {
+  static final $pb.BuilderInfo _i =
+      $pb.BuilderInfo(
+          const $core.bool.fromEnvironment('protobuf.omit_message_names')
+              ? ''
+              : 'AuthRsp',
+          package: $pb.PackageName(
+            const $core.bool.fromEnvironment('protobuf.omit_message_names')
+                ? ''
+                : pP.kimmiLockMuse(),
+          ),
+          createEmptyInstance: create,
+        )
+        ..a<$core.int>(
+          1,
+          const $core.bool.fromEnvironment('protobuf.omit_field_names')
+              ? ''
+              : 'code',
+          $pb.PbFieldType.OU3,
+        )
+        ..aOS(
+          2,
+          const $core.bool.fromEnvironment('protobuf.omit_field_names')
+              ? ''
+              : 'msg',
+        )
+        ..a<$core.int>(
+          3,
+          const $core.bool.fromEnvironment('protobuf.omit_field_names')
+              ? ''
+              : 'needUpdate',
+          $pb.PbFieldType.O3,
+        )
+        ..aOS(
+          4,
+          const $core.bool.fromEnvironment('protobuf.omit_field_names')
+              ? ''
+              : 'updateIntro',
+        )
+        ..aOS(
+          5,
+          const $core.bool.fromEnvironment('protobuf.omit_field_names')
+              ? ''
+              : 'appUrl',
+        )
+        ..hasRequiredFields = false;
+
+  AuthRsp._() : super();
+
   factory AuthRsp({
     $core.int? code,
     $core.String? msg,
@@ -520,50 +754,34 @@ class AuthRsp extends $pb.GeneratedMessage {
     $core.String? updateIntro,
     $core.String? appUrl,
   }) {
-    final $result = create();
+    final _result = create();
     if (code != null) {
-      $result.code = code;
+      _result.code = code;
     }
     if (msg != null) {
-      $result.msg = msg;
+      _result.msg = msg;
     }
     if (needUpdate != null) {
-      $result.needUpdate = needUpdate;
+      _result.needUpdate = needUpdate;
     }
     if (updateIntro != null) {
-      $result.updateIntro = updateIntro;
+      _result.updateIntro = updateIntro;
     }
     if (appUrl != null) {
-      $result.appUrl = appUrl;
+      _result.appUrl = appUrl;
     }
-    return $result;
+    return _result;
   }
-  AuthRsp._() : super();
+
   factory AuthRsp.fromBuffer(
     $core.List<$core.int> i, [
     $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
   ]) => create()..mergeFromBuffer(i, r);
+
   factory AuthRsp.fromJson(
     $core.String i, [
     $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
   ]) => create()..mergeFromJson(i, r);
-
-  static final $pb.BuilderInfo _i =
-      $pb.BuilderInfo(
-          _omitMessageNames ? '' : 'AuthRsp',
-          package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockMuse()),
-          createEmptyInstance: create,
-        )
-        ..a<$core.int>(1, _omitFieldNames ? '' : 'code', $pb.PbFieldType.OU3)
-        ..aOS(2, _omitFieldNames ? '' : 'msg')
-        ..a<$core.int>(
-          3,
-          _omitFieldNames ? '' : 'needUpdate',
-          $pb.PbFieldType.O3,
-        )
-        ..aOS(4, _omitFieldNames ? '' : 'updateIntro')
-        ..aOS(5, _omitFieldNames ? '' : 'appUrl')
-        ..hasRequiredFields = false;
 
   @$core.Deprecated(
     'Using this can add significant overhead to your binary. '
@@ -571,6 +789,7 @@ class AuthRsp extends $pb.GeneratedMessage {
     'Will be removed in next major version',
   )
   AuthRsp clone() => AuthRsp()..mergeFromMessage(this);
+
   @$core.Deprecated(
     'Using this can add significant overhead to your binary. '
     'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
@@ -578,13 +797,15 @@ class AuthRsp extends $pb.GeneratedMessage {
   )
   AuthRsp copyWith(void Function(AuthRsp) updates) =>
       super.copyWith((message) => updates(message as AuthRsp)) as AuthRsp;
-
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static AuthRsp create() => AuthRsp._();
+
   AuthRsp createEmptyInstance() => create();
+
   static $pb.PbList<AuthRsp> createRepeated() => $pb.PbList<AuthRsp>();
+
   @$core.pragma('dart2js:noInline')
   static AuthRsp getDefault() =>
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AuthRsp>(create);
@@ -592,6 +813,7 @@ class AuthRsp extends $pb.GeneratedMessage {
 
   @$pb.TagNumber(1)
   $core.int get code => $_getIZ(0);
+
   @$pb.TagNumber(1)
   set code($core.int v) {
     $_setUnsignedInt32(0, v);
@@ -599,11 +821,13 @@ class AuthRsp extends $pb.GeneratedMessage {
 
   @$pb.TagNumber(1)
   $core.bool hasCode() => $_has(0);
+
   @$pb.TagNumber(1)
   void clearCode() => clearField(1);
 
   @$pb.TagNumber(2)
   $core.String get msg => $_getSZ(1);
+
   @$pb.TagNumber(2)
   set msg($core.String v) {
     $_setString(1, v);
@@ -611,11 +835,13 @@ class AuthRsp extends $pb.GeneratedMessage {
 
   @$pb.TagNumber(2)
   $core.bool hasMsg() => $_has(1);
+
   @$pb.TagNumber(2)
   void clearMsg() => clearField(2);
 
   @$pb.TagNumber(3)
   $core.int get needUpdate => $_getIZ(2);
+
   @$pb.TagNumber(3)
   set needUpdate($core.int v) {
     $_setSignedInt32(2, v);
@@ -623,11 +849,13 @@ class AuthRsp extends $pb.GeneratedMessage {
 
   @$pb.TagNumber(3)
   $core.bool hasNeedUpdate() => $_has(2);
+
   @$pb.TagNumber(3)
   void clearNeedUpdate() => clearField(3);
 
   @$pb.TagNumber(4)
   $core.String get updateIntro => $_getSZ(3);
+
   @$pb.TagNumber(4)
   set updateIntro($core.String v) {
     $_setString(3, v);
@@ -635,11 +863,13 @@ class AuthRsp extends $pb.GeneratedMessage {
 
   @$pb.TagNumber(4)
   $core.bool hasUpdateIntro() => $_has(3);
+
   @$pb.TagNumber(4)
   void clearUpdateIntro() => clearField(4);
 
   @$pb.TagNumber(5)
   $core.String get appUrl => $_getSZ(4);
+
   @$pb.TagNumber(5)
   set appUrl($core.String v) {
     $_setString(4, v);
@@ -647,11 +877,7 @@ class AuthRsp extends $pb.GeneratedMessage {
 
   @$pb.TagNumber(5)
   $core.bool hasAppUrl() => $_has(4);
+
   @$pb.TagNumber(5)
   void clearAppUrl() => clearField(5);
 }
-
-const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment(
-  'protobuf.omit_message_names',
-);

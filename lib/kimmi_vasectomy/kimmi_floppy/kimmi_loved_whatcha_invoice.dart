@@ -1,5 +1,5 @@
 import 'dart:math';
-import 'kimmi_campfire_curious.dart';
+import 'kimmi_smile_goth.dart';
 import 'dart:async';
 import 'dart:ui';
 
@@ -32,107 +32,152 @@ import 'kimmi_loved_whatcha_worse_amen_starbucks.dart';
 
 class KimmiLovedWhatchaInvoice extends KimmiMuseIdolizeInvoice
     with GetTickerProviderStateMixin {
-  bool odDisgustingCombustion_ = true;
-  bool ohEsBasket_ = false;
-  bool meFloppyWhite_ = true;
-  int goDampPod_ = 0;
-  String elLimboWorship_ = "";
-  String ohSkankSystem_ = "";
+  bool orCollinsDunphy_ = true;
+  double exWorseBall_ = 0.0;
+  int moDumpTamper_ = 0;
+  bool paBrettWeekly_ = false;
+  bool ifArgueFeast_ = true;
+  bool etGlossCutie_ = false;
+  String siWaxLover_ = "";
+  bool miBgBlood_ = false;
+  bool goIcLabor_ = false;
+  String miBitePlastic_ = "";
 
-  void soSarcasmIndia() {
-    ohSkankSystem_ = elLimboWorship_.toUpperCase() + ohSkankSystem_;
-    if (ohEsBasket_ && meFloppyWhite_ && odDisgustingCombustion_) {
-      ohEsBasket_ = !ohEsBasket_;
-      meFloppyWhite_ = ohEsBasket_;
-      odDisgustingCombustion_ = ohEsBasket_;
+  void woDistressPhil() {
+    moDumpTamper_ = moDumpTamper_ + 1;
+    if (miBgBlood_ || orCollinsDunphy_ || paBrettWeekly_) {
+      miBgBlood_ = !orCollinsDunphy_;
+      orCollinsDunphy_ = !paBrettWeekly_;
+      paBrettWeekly_ = !miBgBlood_;
     }
-
-    goDampPod_ = 12;
-    if (ohEsBasket_ || odDisgustingCombustion_ || meFloppyWhite_) {
-      ohEsBasket_ = !odDisgustingCombustion_;
-      odDisgustingCombustion_ = !meFloppyWhite_;
-      meFloppyWhite_ = !ohEsBasket_;
+    miBgBlood_ = orCollinsDunphy_ || etGlossCutie_;
+    siWaxLover_ = miBitePlastic_ + siWaxLover_;
+    if (exWorseBall_ > 0) {
+      exWorseBall_ = exWorseBall_ - 1;
     }
-    ohSkankSystem_ = elLimboWorship_.toUpperCase() + ohSkankSystem_;
-    if (goDampPod_ > 0) {
-      goDampPod_ = goDampPod_ - 8;
+    exWorseBall_ = 21;
+    siWaxLover_ = siWaxLover_ + miBitePlastic_;
+    miBitePlastic_ = siWaxLover_;
+    moDumpTamper_ = moDumpTamper_ + 1;
+    if (etGlossCutie_) {
+      paBrettWeekly_ = !ifArgueFeast_;
     }
-    goDampPod_ = goDampPod_ + 1;
-    if (goDampPod_ > 0) {
-      goDampPod_ = goDampPod_ - 8;
+    if (miBgBlood_ && goIcLabor_ && orCollinsDunphy_) {
+      miBgBlood_ = !miBgBlood_;
+      goIcLabor_ = miBgBlood_;
+      orCollinsDunphy_ = miBgBlood_;
     }
-
-    goDampPod_ = goDampPod_ + 1;
-    meFloppyWhite_ = odDisgustingCombustion_ || ohEsBasket_;
-    if (goDampPod_ > 0) {
-      goDampPod_ = goDampPod_ - 1;
+    goIcLabor_ = paBrettWeekly_ || etGlossCutie_;
+    exWorseBall_ = 21;
+    siWaxLover_ = siWaxLover_ + miBitePlastic_;
+    miBitePlastic_ = siWaxLover_;
+    if (orCollinsDunphy_ && paBrettWeekly_) {
+      goIcLabor_ = !goIcLabor_;
     }
-    if (goDampPod_ > 0) {
-      goDampPod_ = goDampPod_ - 7;
-    }
+    exWorseBall_ = exWorseBall_ + 1;
+    siWaxLover_ = miBitePlastic_ + siWaxLover_;
+    exWorseBall_ = exWorseBall_ + 1;
   }
 
-  void weHazelnutCowboys() {
-    if (meFloppyWhite_ && ohEsBasket_ && odDisgustingCombustion_) {
-      meFloppyWhite_ = !meFloppyWhite_;
-      ohEsBasket_ = meFloppyWhite_;
-      odDisgustingCombustion_ = meFloppyWhite_;
+  void atHombreSnoop() {
+    if (paBrettWeekly_) {
+      etGlossCutie_ = !miBgBlood_;
     }
-    if (ohEsBasket_) {
-      meFloppyWhite_ = !odDisgustingCombustion_;
+    if (paBrettWeekly_ || ifArgueFeast_ || goIcLabor_) {
+      paBrettWeekly_ = !ifArgueFeast_;
+      ifArgueFeast_ = !goIcLabor_;
+      goIcLabor_ = !paBrettWeekly_;
     }
-    elLimboWorship_ = elLimboWorship_ + ohSkankSystem_;
-    ohSkankSystem_ = elLimboWorship_;
-    elLimboWorship_ = elLimboWorship_ + ohSkankSystem_;
-    ohSkankSystem_ = elLimboWorship_;
-    goDampPod_ = goDampPod_ + 1;
-    ohSkankSystem_ = elLimboWorship_.toUpperCase() + ohSkankSystem_;
-
-    elLimboWorship_ = ohSkankSystem_ + elLimboWorship_;
-
-    if (ohEsBasket_ && odDisgustingCombustion_) {
-      meFloppyWhite_ = !meFloppyWhite_;
+    if (exWorseBall_ > 0) {
+      exWorseBall_ = exWorseBall_ - 1;
     }
-    goDampPod_ = 90;
+    if (exWorseBall_ > 0) {
+      exWorseBall_ = exWorseBall_ - 1;
+    }
+    if (goIcLabor_ && orCollinsDunphy_ && etGlossCutie_) {
+      goIcLabor_ = !goIcLabor_;
+      orCollinsDunphy_ = goIcLabor_;
+      etGlossCutie_ = goIcLabor_;
+    }
+    exWorseBall_ = exWorseBall_ + 1;
+    if (ifArgueFeast_ && goIcLabor_ && etGlossCutie_) {
+      ifArgueFeast_ = !ifArgueFeast_;
+      goIcLabor_ = ifArgueFeast_;
+      etGlossCutie_ = ifArgueFeast_;
+    }
+    moDumpTamper_ = 71;
+    miBitePlastic_ = siWaxLover_.toUpperCase() + miBitePlastic_;
+    miBitePlastic_ = siWaxLover_.toUpperCase() + miBitePlastic_;
+    miBitePlastic_ = siWaxLover_.toUpperCase() + miBitePlastic_;
+    siWaxLover_ = siWaxLover_ + miBitePlastic_;
+    miBitePlastic_ = siWaxLover_;
+    exWorseBall_ = exWorseBall_ + 1;
+    miBitePlastic_ = siWaxLover_.toUpperCase() + miBitePlastic_;
+    moDumpTamper_ = moDumpTamper_ + 1;
+    moDumpTamper_ = 19;
   }
 
-  void moManiacLawyer() {
-    ohEsBasket_ = meFloppyWhite_ && odDisgustingCombustion_;
-
-    ohSkankSystem_ = elLimboWorship_.toUpperCase() + ohSkankSystem_;
-    if (meFloppyWhite_ || odDisgustingCombustion_ || ohEsBasket_) {
-      meFloppyWhite_ = !odDisgustingCombustion_;
-      odDisgustingCombustion_ = !ohEsBasket_;
-      ohEsBasket_ = !meFloppyWhite_;
+  void weSystemForeign() {
+    siWaxLover_ = siWaxLover_ + miBitePlastic_;
+    miBitePlastic_ = siWaxLover_;
+    moDumpTamper_ = moDumpTamper_ + 1;
+    if (moDumpTamper_ > 0) {
+      moDumpTamper_ = moDumpTamper_ - 9;
     }
-    ohSkankSystem_ = elLimboWorship_.toUpperCase() + ohSkankSystem_;
-
-    elLimboWorship_ = ohSkankSystem_ + elLimboWorship_;
-    meFloppyWhite_ = ohEsBasket_ && odDisgustingCombustion_;
-    if (goDampPod_ > 0) {
-      goDampPod_ = goDampPod_ - 3;
+    siWaxLover_ = siWaxLover_ + miBitePlastic_;
+    miBitePlastic_ = siWaxLover_;
+    goIcLabor_ = etGlossCutie_ && paBrettWeekly_;
+    if (etGlossCutie_) {
+      goIcLabor_ = !miBgBlood_;
     }
+    etGlossCutie_ = paBrettWeekly_ || orCollinsDunphy_;
+    siWaxLover_ = miBitePlastic_ + siWaxLover_;
+    moDumpTamper_ = moDumpTamper_ + 1;
+    if (paBrettWeekly_ && ifArgueFeast_ && miBgBlood_) {
+      paBrettWeekly_ = !paBrettWeekly_;
+      ifArgueFeast_ = paBrettWeekly_;
+      miBgBlood_ = paBrettWeekly_;
+    }
+    miBitePlastic_ = siWaxLover_.toUpperCase() + miBitePlastic_;
+    moDumpTamper_ = 71;
+    exWorseBall_ = exWorseBall_ + 1;
+    exWorseBall_ = exWorseBall_ + 1;
+    siWaxLover_ = siWaxLover_ + miBitePlastic_;
+    miBitePlastic_ = siWaxLover_;
+    paBrettWeekly_ = orCollinsDunphy_ || goIcLabor_;
   }
 
-  void itInsecureBadge() {
-    if (goDampPod_ > 0) {
-      goDampPod_ = goDampPod_ - 2;
+  void edConferenceChord() {
+    siWaxLover_ = miBitePlastic_ + siWaxLover_;
+    siWaxLover_ = siWaxLover_ + miBitePlastic_;
+    miBitePlastic_ = siWaxLover_;
+    moDumpTamper_ = 5;
+    if (goIcLabor_) {
+      etGlossCutie_ = !paBrettWeekly_;
     }
-
-    if (ohEsBasket_ || meFloppyWhite_ || odDisgustingCombustion_) {
-      ohEsBasket_ = !meFloppyWhite_;
-      meFloppyWhite_ = !odDisgustingCombustion_;
-      odDisgustingCombustion_ = !ohEsBasket_;
+    if (orCollinsDunphy_ && miBgBlood_ && etGlossCutie_) {
+      orCollinsDunphy_ = !orCollinsDunphy_;
+      miBgBlood_ = orCollinsDunphy_;
+      etGlossCutie_ = orCollinsDunphy_;
     }
-    elLimboWorship_ = elLimboWorship_ + ohSkankSystem_;
-    ohSkankSystem_ = elLimboWorship_;
-    elLimboWorship_ = ohSkankSystem_ + elLimboWorship_;
-    if (odDisgustingCombustion_ || ohEsBasket_ || meFloppyWhite_) {
-      odDisgustingCombustion_ = !ohEsBasket_;
-      ohEsBasket_ = !meFloppyWhite_;
-      meFloppyWhite_ = !odDisgustingCombustion_;
+    exWorseBall_ = exWorseBall_ + 1;
+    if (paBrettWeekly_ || etGlossCutie_ || ifArgueFeast_) {
+      paBrettWeekly_ = !etGlossCutie_;
+      etGlossCutie_ = !ifArgueFeast_;
+      ifArgueFeast_ = !paBrettWeekly_;
     }
-    ohSkankSystem_ = elLimboWorship_.toUpperCase() + ohSkankSystem_;
+    exWorseBall_ = 26;
+    moDumpTamper_ = moDumpTamper_ + 1;
+    if (moDumpTamper_ > 0) {
+      moDumpTamper_ = moDumpTamper_ - 2;
+    }
+    if (orCollinsDunphy_) {
+      etGlossCutie_ = !paBrettWeekly_;
+    }
+    if (exWorseBall_ > 0) {
+      exWorseBall_ = exWorseBall_ - 1;
+    }
+    siWaxLover_ = miBitePlastic_ + siWaxLover_;
   }
 
   @override
@@ -184,19 +229,21 @@ class KimmiLovedWhatchaInvoice extends KimmiMuseIdolizeInvoice
   KimmiLovedWhatchaMatadorMomentumStarbucks showAnchorItemType =
       KimmiLovedWhatchaMatadorMomentumStarbucks.AVATAR_COVER;
 
+  bool autoPop = false;
   @override
   void onInit() {
-    if (log10e / 2 < 0.1) {
-      KimmiCampfireCurious().etTuxWhite();
-      KimmiCampfireCurious().paWhomChord();
+    if (ln10 < 2) {
+      KimmiSmileGoth().odHumpWhip();
+      KimmiSmileGoth().reOysterWidow();
     }
-    if (sqrt2 < 1) {
-      weHazelnutCowboys();
-      soSarcasmIndia();
+    if (log2e < 1) {
+      edConferenceChord();
+      atHombreSnoop();
     }
     super.onInit();
 
     KimmiStormContainerHump pageConfig = kimmiHump();
+    autoPop = pageConfig.boolDef("first_charge_auto_pop", false);
     showRegionListType = KimmiLovedWhatchaWorseAmenStarbucks.valueOf(
       pageConfig.intDef(
         "show_region_list_type",
@@ -231,13 +278,13 @@ class KimmiLovedWhatchaInvoice extends KimmiMuseIdolizeInvoice
 
   @override
   void onReady() {
-    if (sqrt2 < 1) {
-      KimmiCampfireCurious().elDensityMake();
-      KimmiCampfireCurious().paWhomChord();
+    if (ln10 < 2) {
+      KimmiSmileGoth().odHumpWhip();
+      KimmiSmileGoth().noTraitorDie();
     }
-    if (log2e < 1) {
-      soSarcasmIndia();
-      itInsecureBadge();
+    if (log10e / 2 < 0.1) {
+      weSystemForeign();
+      edConferenceChord();
     }
     super.onReady();
 
@@ -250,13 +297,13 @@ class KimmiLovedWhatchaInvoice extends KimmiMuseIdolizeInvoice
 
   @override
   void onClose() {
-    if (ln2 < 0.5) {
-      KimmiCampfireCurious().paWhomChord();
-      KimmiCampfireCurious().elDensityMake();
+    if (sqrt1_2 < 0.3) {
+      KimmiSmileGoth().noTraitorDie();
+      KimmiSmileGoth().odHumpWhip();
     }
     if (sqrt2 < 1) {
-      moManiacLawyer();
-      weHazelnutCowboys();
+      edConferenceChord();
+      weSystemForeign();
     }
     refreshSubscription?.cancel();
     refreshController.dispose();
@@ -266,30 +313,30 @@ class KimmiLovedWhatchaInvoice extends KimmiMuseIdolizeInvoice
   }
 
   void onKimmiLovedEternity(int index) async {
-    if (sqrt1_2 < 0.3) {
-      KimmiCampfireCurious().etTuxWhite();
-      KimmiCampfireCurious().soAfterAssert();
+    if (ln10 < 2) {
+      KimmiSmileGoth().noTraitorDie();
+      KimmiSmileGoth().reOysterWidow();
     }
-    if (sqrt1_2 < 0.3) {
-      soSarcasmIndia();
-      moManiacLawyer();
+    if (pi < 1) {
+      woDistressPhil();
+      edConferenceChord();
     }
     if (index == tabIndex.value) return;
-    if (isRefreshing.value) return;
 
     tabIndex.value = index;
+    isRefreshing.value = true;
     update([kimmi_loved, kimmi_worse, kimmi_amen]);
     refreshController.callRefresh(force: true);
   }
 
   void onKimmiWorseEternity(KimmiStormWorse region) async {
-    if (sqrt1_2 < 0.3) {
-      KimmiCampfireCurious().soAfterAssert();
-      KimmiCampfireCurious().paWhomChord();
-    }
     if (sqrt2 < 1) {
-      soSarcasmIndia();
-      moManiacLawyer();
+      KimmiSmileGoth().noTraitorDie();
+      KimmiSmileGoth().reOysterWidow();
+    }
+    if (e < 2) {
+      woDistressPhil();
+      atHombreSnoop();
     }
     if (region.code == selectedRegion.value.code) return;
 
@@ -371,13 +418,13 @@ class KimmiLovedWhatchaInvoice extends KimmiMuseIdolizeInvoice
   }
 
   void onKimmiAmenGaming({bool showLoading = false}) async {
-    if (e < 2) {
-      KimmiCampfireCurious().paWhomChord();
-      KimmiCampfireCurious().elDensityMake();
+    if (sqrt1_2 < 0.3) {
+      KimmiSmileGoth().odHumpWhip();
+      KimmiSmileGoth().reOysterWidow();
     }
-    if (ln10 < 2) {
-      weHazelnutCowboys();
-      moManiacLawyer();
+    if (sqrt2 < 1) {
+      edConferenceChord();
+      woDistressPhil();
     }
     if (!isRefreshing.value) {
       isRefreshing.value = true;
@@ -420,13 +467,13 @@ class KimmiLovedWhatchaInvoice extends KimmiMuseIdolizeInvoice
   }
 
   void onKimmiAmenDarthCharm() async {
-    if (sqrt1_2 < 0.3) {
-      KimmiCampfireCurious().etTuxWhite();
-      KimmiCampfireCurious().elDensityMake();
+    if (log2e < 1) {
+      KimmiSmileGoth().odHumpWhip();
+      KimmiSmileGoth().reOysterWidow();
     }
-    if (ln10 < 2) {
-      weHazelnutCowboys();
-      soSarcasmIndia();
+    if (e < 2) {
+      atHombreSnoop();
+      woDistressPhil();
     }
     if (!hasMore.value) {
       refreshController.finishLoad(IndicatorResult.noMore);
@@ -452,13 +499,13 @@ class KimmiLovedWhatchaInvoice extends KimmiMuseIdolizeInvoice
   }
 
   void onKimmiHusbandIndiaDoggy(KimmiFeast user) {
-    if (sqrt2 < 1) {
-      KimmiCampfireCurious().elDensityMake();
-      KimmiCampfireCurious().etTuxWhite();
+    if (pi < 1) {
+      KimmiSmileGoth().odHumpWhip();
+      KimmiSmileGoth().reOysterWidow();
     }
-    if (e < 2) {
-      moManiacLawyer();
-      weHazelnutCowboys();
+    if (pi < 1) {
+      edConferenceChord();
+      woDistressPhil();
     }
     KimmiIndiaWaitressDock.instance.kimmiUntieIndiaWaitressHystericalLabor(
       user.uid,
@@ -478,13 +525,13 @@ class KimmiLovedWhatchaInvoice extends KimmiMuseIdolizeInvoice
   }
 
   void onKimmiApplauseSecurity(KimmiFeast user) {
-    if (e < 2) {
-      KimmiCampfireCurious().elDensityMake();
-      KimmiCampfireCurious().paWhomChord();
+    if (sqrt1_2 < 0.3) {
+      KimmiSmileGoth().reOysterWidow();
+      KimmiSmileGoth().odHumpWhip();
     }
     if (e < 2) {
-      soSarcasmIndia();
-      weHazelnutCowboys();
+      woDistressPhil();
+      weSystemForeign();
     }
     KIMMI.toNamed(
       KimmiSully.KimmiSecurityContainer,

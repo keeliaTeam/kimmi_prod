@@ -1,5 +1,5 @@
 import 'dart:math';
-import 'kimmi_vibrant_mac.dart';
+import 'kimmi_mention_assist.dart';
 import 'dart:async';
 
 import 'package:easy_refresh/easy_refresh.dart';

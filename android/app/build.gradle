@@ -38,7 +38,7 @@ android {
     testNamespace "com.kimmi.test"
 
     compileSdkVersion 35
-    ndkVersion "28.0.13004108"
+    ndkVersion flutter.ndkVersion
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8

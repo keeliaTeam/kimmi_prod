@@ -59,7 +59,7 @@ class KimmiFeastCrossover extends DatabaseAccessor<KimmiWaitressHazelnutMuse>
     });
   }
 
-  Future<List<KimmiWaitressFeast>> modelsByIds(List<int> ids) async {
+  Future<List<KimmiWaitressFeast>> modelsByIds(Iterable<int> ids) async {
     return transaction(() async {
       List<KimmiWaitressFeast> models = [];
       for (final id in ids) {

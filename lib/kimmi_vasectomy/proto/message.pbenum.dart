@@ -1,31 +1,36 @@
 import 'dart:core' as $core;
 
+import 'package:kimmi/kimmi_vasectomy/proto/kimmi_cadaver_gentleman.dart';
 import 'package:protobuf/protobuf.dart' as $pb;
 
 class Message_Category extends $pb.ProtobufEnum {
   static const Message_Category BASE = Message_Category._(
     0,
-    _omitEnumNames ? '' : 'BASE',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names') ? '' : 'BASE',
   );
   static const Message_Category IM = Message_Category._(
     1,
-    _omitEnumNames ? '' : 'IM',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names') ? '' : 'IM',
   );
   static const Message_Category FUN = Message_Category._(
     2,
-    _omitEnumNames ? '' : 'FUN',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names') ? '' : 'FUN',
   );
   static const Message_Category kimmi_waitress = Message_Category._(
     3,
-    _omitEnumNames ? '' : 'kimmi_waitress',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+        ? ''
+        : 'kimmi_waitress',
   );
   static const Message_Category LIVE = Message_Category._(
     4,
-    _omitEnumNames ? '' : 'LIVE',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names') ? '' : 'LIVE',
   );
   static const Message_Category MAXCATE = Message_Category._(
     99,
-    _omitEnumNames ? '' : 'MAXCATE',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+        ? ''
+        : 'MAXCATE',
   );
 
   static const $core.List<Message_Category> values = <Message_Category>[
@@ -39,6 +44,7 @@ class Message_Category extends $pb.ProtobufEnum {
 
   static final $core.Map<$core.int, Message_Category> _byValue =
       $pb.ProtobufEnum.initByValue(values);
+
   static Message_Category? valueOf($core.int value) => _byValue[value];
 
   const Message_Category._($core.int v, $core.String n) : super(v, n);
@@ -47,71 +53,105 @@ class Message_Category extends $pb.ProtobufEnum {
 class Message_Type extends $pb.ProtobufEnum {
   static const Message_Type HEARTBEAT = Message_Type._(
     0,
-    _omitEnumNames ? '' : 'HEARTBEAT',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+        ? ''
+        : 'HEARTBEAT',
   );
   static const Message_Type COMMONRSP = Message_Type._(
     1,
-    _omitEnumNames ? '' : 'COMMONRSP',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+        ? ''
+        : 'COMMONRSP',
   );
   static const Message_Type COMMONACK = Message_Type._(
     2,
-    _omitEnumNames ? '' : 'COMMONACK',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+        ? ''
+        : 'COMMONACK',
   );
   static const Message_Type COMMONSERVICEERR = Message_Type._(
     3,
-    _omitEnumNames ? '' : 'COMMONSERVICEERR',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+        ? ''
+        : 'COMMONSERVICEERR',
   );
   static const Message_Type AUTHREQ = Message_Type._(
     4,
-    _omitEnumNames ? '' : 'AUTHREQ',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+        ? ''
+        : 'AUTHREQ',
   );
   static const Message_Type GUIDEAUTHREQ = Message_Type._(
     5,
-    _omitEnumNames ? '' : 'GUIDEAUTHREQ',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+        ? ''
+        : 'GUIDEAUTHREQ',
   );
   static const Message_Type AUTHRSP = Message_Type._(
     6,
-    _omitEnumNames ? '' : 'AUTHRSP',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+        ? ''
+        : 'AUTHRSP',
   );
   static const Message_Type USEROFFLINEPSH = Message_Type._(
     7,
-    _omitEnumNames ? '' : 'USEROFFLINEPSH',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+        ? ''
+        : 'USEROFFLINEPSH',
   );
   static const Message_Type USERONLINEPSH = Message_Type._(
     8,
-    _omitEnumNames ? '' : 'USERONLINEPSH',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+        ? ''
+        : 'USERONLINEPSH',
   );
   static const Message_Type SESSIONINVALIDNOTIFY = Message_Type._(
     9,
-    _omitEnumNames ? '' : 'SESSIONINVALIDNOTIFY',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+        ? ''
+        : 'SESSIONINVALIDNOTIFY',
   );
   static const Message_Type ADVERTISEMENTNOTIFY = Message_Type._(
     10,
-    _omitEnumNames ? '' : 'ADVERTISEMENTNOTIFY',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+        ? ''
+        : 'ADVERTISEMENTNOTIFY',
   );
   static const Message_Type COMMONTOASTNOTIFY = Message_Type._(
     11,
-    _omitEnumNames ? '' : 'COMMONTOASTNOTIFY',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+        ? ''
+        : 'COMMONTOASTNOTIFY',
   );
   static const Message_Type APPTRACK = Message_Type._(
     12,
-    _omitEnumNames ? '' : 'APPTRACK',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+        ? ''
+        : 'APPTRACK',
   );
   static const Message_Type USERRUNTIMEPSH = Message_Type._(
     13,
-    _omitEnumNames ? '' : 'USERRUNTIMEPSH',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+        ? ''
+        : 'USERRUNTIMEPSH',
   );
   static const Message_Type USERSTATUSPSH = Message_Type._(
     14,
-    _omitEnumNames ? '' : 'USERSTATUSPSH',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+        ? ''
+        : 'USERSTATUSPSH',
   );
   static const Message_Type POPUPNOTIFY = Message_Type._(
     15,
-    _omitEnumNames ? '' : 'POPUPNOTIFY',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+        ? ''
+        : 'POPUPNOTIFY',
   );
   static const Message_Type MAXBASETYPE = Message_Type._(
     99,
-    _omitEnumNames ? '' : 'MAXBASETYPE',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+        ? ''
+        : 'MAXBASETYPE',
   );
 
   static const $core.List<Message_Type> values = <Message_Type>[
@@ -136,9 +176,8 @@ class Message_Type extends $pb.ProtobufEnum {
 
   static final $core.Map<$core.int, Message_Type> _byValue =
       $pb.ProtobufEnum.initByValue(values);
+
   static Message_Type? valueOf($core.int value) => _byValue[value];
 
   const Message_Type._($core.int v, $core.String n) : super(v, n);
 }
-
-const _omitEnumNames = $core.bool.fromEnvironment('protobuf.omit_enum_names');

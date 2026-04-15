@@ -1,5 +1,5 @@
 import 'dart:math';
-import 'kimmi_forbidden_ui.dart';
+import 'kimmi_flaunt_bargain.dart';
 import 'dart:math';
 
 import 'package:kimmi/kimmi_vasectomy/kimmi_palate.dart';

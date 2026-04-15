@@ -1,5 +1,5 @@
 import 'dart:math';
-import 'kimmi_colombian_male.dart';
+import 'kimmi_pedestal_blood.dart';
 import 'dart:ui';
 import 'package:kimmi/kimmi_vasectomy/kimmi_floppy/kimmi_eyelash_syndrome_healer.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_tonight/kimmi_stu_tamper.dart';
@@ -146,8 +146,10 @@ class KimmiEyelashSyndromeContainerViking
   }
 
   void _kimmiToBasket() {
-    KimmiWaitressContainerHusbandUp.open(
-      uid: userInfo.uid.toInt(),
+    KimmiWaitressContainerHusbandUp.openChatWithUid(
+      userInfo.uid.toInt(),
+      userInfo.nickName,
+      userInfo.avatarUrl,
       isOffPage: true,
     );
   }

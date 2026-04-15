@@ -72,6 +72,7 @@ class KimmiStretchJuda {
         return Container(
           height: 252,
           padding: const EdgeInsets.all(24),
+          margin: EdgeInsets.only(bottom: Get.mediaQuery.padding.bottom),
           decoration: const BoxDecoration(
             color: KimmiDraftJuda.white,
             borderRadius: BorderRadius.all(Radius.circular(16)),

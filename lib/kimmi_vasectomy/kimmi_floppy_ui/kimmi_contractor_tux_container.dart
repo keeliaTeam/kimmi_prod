@@ -1,5 +1,5 @@
 import 'dart:math';
-import 'kimmi_forbidden_ui.dart';
+import 'kimmi_crossover_unclog.dart';
 import 'dart:math';
 
 import 'package:kimmi/kimmi_vasectomy/kimmi_storm/kimmi_storm_tempt.dart';
@@ -238,6 +238,7 @@ class KimmiContractorTuxContainer
     return Container(
       width: Get.width,
       padding: const EdgeInsets.all(KimmiPalate.kimmiSubstituteObjectiveCinder),
+      margin: EdgeInsets.only(bottom: Get.mediaQuery.padding.bottom),
       decoration: const BoxDecoration(
         borderRadius: KimmiPalate.kimmiSubstituteObjectiveStirTummy,
         color: KimmiPalate.kimmiNieceBgGranolaYummy,
@@ -316,6 +317,7 @@ class KimmiContractorTuxContainer
     return Container(
       width: Get.width,
       padding: const EdgeInsets.all(KimmiPalate.kimmiSubstituteObjectiveCinder),
+      margin: EdgeInsets.only(bottom: Get.mediaQuery.padding.bottom),
       decoration: const BoxDecoration(
         borderRadius: KimmiPalate.kimmiSubstituteObjectiveStirTummy,
         color: KimmiPalate.kimmiNieceBgGranolaYummy,

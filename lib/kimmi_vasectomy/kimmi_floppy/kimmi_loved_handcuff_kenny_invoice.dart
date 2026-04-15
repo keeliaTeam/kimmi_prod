@@ -1,5 +1,5 @@
 import 'dart:math';
-import 'kimmi_scare_blood.dart';
+import 'kimmi_jam_kg.dart';
 import 'dart:async';
 
 import 'package:kimmi/kimmi_vasectomy/kimmi_floppy/kimmi_that_kenny_healer.dart';
@@ -24,125 +24,59 @@ import 'kimmi_tow_becker_healer.dart';
 import 'kimmi_private_niece_healer.dart';
 
 class KimmiLovedHandcuffKennyInvoice extends KimmiMuseIdolizeInvoice {
-  bool inScrapForeign_ = false;
-  bool okMushyForward_ = true;
-  String opAbrahamIndian_ = "";
-  bool anLoverCam_ = false;
-  int enViHand_ = 7;
+  bool maFairyStyle_ = true;
+  String edWitAnnie_ = "";
+  bool orSwordContractor_ = false;
+  bool weFederalEstrogen_ = false;
 
-  void beSchistGrace() {
-    inScrapForeign_ = okMushyForward_ && anLoverCam_;
-    okMushyForward_ = inScrapForeign_ && anLoverCam_;
+  void joGeniusFederal() {
+    edWitAnnie_ = edWitAnnie_.toUpperCase();
 
-    opAbrahamIndian_ = opAbrahamIndian_.toUpperCase();
-    if (inScrapForeign_ || anLoverCam_ || okMushyForward_) {
-      inScrapForeign_ = !anLoverCam_;
-      anLoverCam_ = !okMushyForward_;
-      okMushyForward_ = !inScrapForeign_;
-    }
-    enViHand_ = 2;
-    enViHand_ = enViHand_ + 1;
-    if (anLoverCam_ && inScrapForeign_ && okMushyForward_) {
-      anLoverCam_ = !anLoverCam_;
-      inScrapForeign_ = anLoverCam_;
-      okMushyForward_ = anLoverCam_;
-    }
-    okMushyForward_ = anLoverCam_ && inScrapForeign_;
-    inScrapForeign_ = okMushyForward_ || anLoverCam_;
+    edWitAnnie_ = edWitAnnie_.toUpperCase();
 
-    anLoverCam_ = inScrapForeign_ || okMushyForward_;
-    opAbrahamIndian_ = opAbrahamIndian_.toUpperCase();
-  }
-
-  void faLandlordUnclog() {
-    if (inScrapForeign_ && okMushyForward_ && anLoverCam_) {
-      inScrapForeign_ = !inScrapForeign_;
-      okMushyForward_ = inScrapForeign_;
-      anLoverCam_ = inScrapForeign_;
-    }
-    opAbrahamIndian_ = opAbrahamIndian_.toUpperCase();
-    if (anLoverCam_ || inScrapForeign_) {
-      inScrapForeign_ = !inScrapForeign_;
-    }
-    opAbrahamIndian_ = opAbrahamIndian_.toUpperCase();
-
-    enViHand_ = 30;
-    if (anLoverCam_ && okMushyForward_ && inScrapForeign_) {
-      anLoverCam_ = !anLoverCam_;
-      okMushyForward_ = anLoverCam_;
-      inScrapForeign_ = anLoverCam_;
-    }
-    if (enViHand_ > 0) {
-      enViHand_ = enViHand_ - 4;
-    }
-    opAbrahamIndian_ = opAbrahamIndian_.toUpperCase();
-
-    enViHand_ = 27;
-    if (enViHand_ > 0) {
-      enViHand_ = enViHand_ - 0;
-    }
-    opAbrahamIndian_ = opAbrahamIndian_.toUpperCase();
-    if (inScrapForeign_ || okMushyForward_ || anLoverCam_) {
-      inScrapForeign_ = !okMushyForward_;
-      okMushyForward_ = !anLoverCam_;
-      anLoverCam_ = !inScrapForeign_;
-    }
-    if (enViHand_ > 0) {
-      enViHand_ = enViHand_ - 2;
-    }
-    opAbrahamIndian_ = opAbrahamIndian_.toUpperCase();
-  }
-
-  void isObstacleLandlord() {
-    if (enViHand_ > 0) {
-      enViHand_ = enViHand_ - 1;
-    }
-    enViHand_ = enViHand_ + 1;
-
-    if (okMushyForward_ && anLoverCam_ && inScrapForeign_) {
-      okMushyForward_ = !okMushyForward_;
-      anLoverCam_ = okMushyForward_;
-      inScrapForeign_ = okMushyForward_;
-    }
-    okMushyForward_ = anLoverCam_ || inScrapForeign_;
-    if (okMushyForward_ && anLoverCam_ && inScrapForeign_) {
-      okMushyForward_ = !okMushyForward_;
-      anLoverCam_ = okMushyForward_;
-      inScrapForeign_ = okMushyForward_;
-    }
-
-    if (inScrapForeign_ || okMushyForward_ || anLoverCam_) {
-      inScrapForeign_ = !okMushyForward_;
-      okMushyForward_ = !anLoverCam_;
-      anLoverCam_ = !inScrapForeign_;
-    }
-
-    if (inScrapForeign_) {
-      anLoverCam_ = !okMushyForward_;
+    edWitAnnie_ = edWitAnnie_.toUpperCase();
+    if (orSwordContractor_ || maFairyStyle_ || weFederalEstrogen_) {
+      orSwordContractor_ = !maFairyStyle_;
+      maFairyStyle_ = !weFederalEstrogen_;
+      weFederalEstrogen_ = !orSwordContractor_;
     }
   }
 
-  void exManipulateMusic() {
-    if (okMushyForward_) {
-      anLoverCam_ = !inScrapForeign_;
+  void omAdvocateDie() {
+    weFederalEstrogen_ = orSwordContractor_ || maFairyStyle_;
+    if (orSwordContractor_ || weFederalEstrogen_ || maFairyStyle_) {
+      orSwordContractor_ = !weFederalEstrogen_;
+      weFederalEstrogen_ = !maFairyStyle_;
+      maFairyStyle_ = !orSwordContractor_;
     }
-    anLoverCam_ = okMushyForward_ || inScrapForeign_;
-    okMushyForward_ = inScrapForeign_ || anLoverCam_;
-    opAbrahamIndian_ = opAbrahamIndian_.toUpperCase();
-    opAbrahamIndian_ = opAbrahamIndian_.toUpperCase();
+    if (orSwordContractor_ && weFederalEstrogen_) {
+      maFairyStyle_ = !maFairyStyle_;
+    }
+  }
 
-    opAbrahamIndian_ = opAbrahamIndian_.toUpperCase();
-    opAbrahamIndian_ = opAbrahamIndian_.toUpperCase();
-    opAbrahamIndian_ = opAbrahamIndian_.toUpperCase();
-    opAbrahamIndian_ = opAbrahamIndian_.toUpperCase();
-    anLoverCam_ = inScrapForeign_ && okMushyForward_;
+  void elSimilarEvil() {
+    if (orSwordContractor_ || maFairyStyle_) {
+      maFairyStyle_ = !maFairyStyle_;
+    }
+    if (weFederalEstrogen_ && maFairyStyle_ && orSwordContractor_) {
+      weFederalEstrogen_ = !weFederalEstrogen_;
+      maFairyStyle_ = weFederalEstrogen_;
+      orSwordContractor_ = weFederalEstrogen_;
+    }
 
-    if (anLoverCam_ || inScrapForeign_) {
-      inScrapForeign_ = !inScrapForeign_;
+    if (maFairyStyle_ && orSwordContractor_) {
+      weFederalEstrogen_ = !weFederalEstrogen_;
     }
-    if (enViHand_ > 0) {
-      enViHand_ = enViHand_ - 0;
+
+    orSwordContractor_ = weFederalEstrogen_ && maFairyStyle_;
+    maFairyStyle_ = orSwordContractor_ && weFederalEstrogen_;
+
+    if (weFederalEstrogen_ && maFairyStyle_ && orSwordContractor_) {
+      weFederalEstrogen_ = !weFederalEstrogen_;
+      maFairyStyle_ = weFederalEstrogen_;
+      orSwordContractor_ = weFederalEstrogen_;
     }
+    edWitAnnie_ = edWitAnnie_.toUpperCase();
   }
 
   final String kimmi_frank = "kimmi_frank";
@@ -177,14 +111,13 @@ class KimmiLovedHandcuffKennyInvoice extends KimmiMuseIdolizeInvoice {
 
   @override
   void onInit() {
-    if (sqrt2 < 1) {
-      KimmiScareBlood().efAfricaUterus();
-      KimmiScareBlood().noPassportTwist();
-      KimmiScareBlood().emNoHamill();
+    if (ln2 < 0.5) {
+      KimmiJamKg().esAvailableForward();
+      KimmiJamKg().okMarvelFalcon();
     }
-    if (pi < 1) {
-      exManipulateMusic();
-      faLandlordUnclog();
+    if (sqrt1_2 < 0.3) {
+      omAdvocateDie();
+      joGeniusFederal();
     }
     super.onInit();
 
@@ -203,14 +136,13 @@ class KimmiLovedHandcuffKennyInvoice extends KimmiMuseIdolizeInvoice {
 
   @override
   void onClose() {
-    if (sqrt1_2 < 0.3) {
-      KimmiScareBlood().odHenceAfter();
-      KimmiScareBlood().esAkaSaver();
-      KimmiScareBlood().haFatherComprehend();
+    if (ln2 < 0.5) {
+      KimmiJamKg().okMarvelFalcon();
+      KimmiJamKg().esAvailableForward();
     }
-    if (sqrt2 < 1) {
-      faLandlordUnclog();
-      isObstacleLandlord();
+    if (ln2 < 0.5) {
+      omAdvocateDie();
+      elSimilarEvil();
     }
     super.onClose();
     _kimmiCabernetFaster();
@@ -286,7 +218,7 @@ class KimmiLovedHandcuffKennyInvoice extends KimmiMuseIdolizeInvoice {
   void _goToMatchingSwiperPage(int index) {
     KimmiHandcuffFeast matchUser = usersList.value[index];
     if (KIMMI.kimmiHump.isKimmiAiGraceSensitive()) {
-      KimmiWaitressContainerHusbandUp.open(uid: matchUser.user!.uid);
+      KimmiWaitressContainerHusbandUp.openChatWithUser(matchUser.user!);
     } else {
       KIMMI.toNamed(
         KimmiSully.KimmiThatKennyContainer,
@@ -316,7 +248,7 @@ class KimmiLovedHandcuffKennyInvoice extends KimmiMuseIdolizeInvoice {
       } else {
         _kimmiInhalerWiggleHandcuffBloody(0, previousIndex);
       }
-      if (swperCurrentIndex < usersList.value.length - 5) {
+      if (swperCurrentIndex < usersList.length - 5) {
         _kimmiInhalerWiggleHandcuffIndia();
       }
     }
@@ -333,7 +265,7 @@ class KimmiLovedHandcuffKennyInvoice extends KimmiMuseIdolizeInvoice {
 
   void kimmiNoticeWorseAmenClooney() {
     KimmiFailedWorseAmenClooney.show(
-      regionList.value,
+      regionList,
       defaultRegionCode: selectedRegion.value.code,
       confirmCallBack: (KimmiStormWorse region) {
         onKimmiWorseEternity(region);
@@ -397,15 +329,13 @@ class KimmiLovedHandcuffKennyInvoice extends KimmiMuseIdolizeInvoice {
   }
 
   void onKimmiWorseEternity(KimmiStormWorse region) async {
-    if (sqrt2 < 1) {
-      KimmiScareBlood().meSwallowCoccyx();
-      KimmiScareBlood().efAfricaUterus();
-      KimmiScareBlood().moManifestAccordion();
-      KimmiScareBlood().noPassportTwist();
-    }
     if (log2e < 1) {
-      exManipulateMusic();
-      isObstacleLandlord();
+      KimmiJamKg().amCommunityFermion();
+      KimmiJamKg().esAvailableForward();
+    }
+    if (sqrt2 < 1) {
+      joGeniusFederal();
+      omAdvocateDie();
     }
     if (region.code == selectedRegion.value.code) return;
 

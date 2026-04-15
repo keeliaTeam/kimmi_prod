@@ -1,21 +1,34 @@
 import 'dart:core' as $core;
 
+import 'package:kimmi/kimmi_vasectomy/proto/kimmi_cadaver_gentleman.dart';
 import 'package:protobuf/protobuf.dart' as $pb;
 
 class LiveStatus extends $pb.ProtobufEnum {
   static const LiveStatus UNKNOWN = LiveStatus._(
     0,
-    _omitEnumNames ? '' : 'UNKNOWN',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+        ? ''
+        : 'UNKNOWN',
   );
-  static const LiveStatus LIVE = LiveStatus._(1, _omitEnumNames ? '' : 'LIVE');
-  static const LiveStatus END = LiveStatus._(2, _omitEnumNames ? '' : 'END');
+  static const LiveStatus LIVE = LiveStatus._(
+    1,
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names') ? '' : 'LIVE',
+  );
+  static const LiveStatus END = LiveStatus._(
+    2,
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names') ? '' : 'END',
+  );
   static const LiveStatus CALL_END = LiveStatus._(
     3,
-    _omitEnumNames ? '' : 'CALL_END',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+        ? ''
+        : 'CALL_END',
   );
   static const LiveStatus ERROR_END = LiveStatus._(
     4,
-    _omitEnumNames ? '' : 'ERROR_END',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+        ? ''
+        : 'ERROR_END',
   );
 
   static const $core.List<LiveStatus> values = <LiveStatus>[
@@ -28,9 +41,8 @@ class LiveStatus extends $pb.ProtobufEnum {
 
   static final $core.Map<$core.int, LiveStatus> _byValue =
       $pb.ProtobufEnum.initByValue(values);
+
   static LiveStatus? valueOf($core.int value) => _byValue[value];
 
   const LiveStatus._($core.int v, $core.String n) : super(v, n);
 }
-
-const _omitEnumNames = $core.bool.fromEnvironment('protobuf.omit_enum_names');

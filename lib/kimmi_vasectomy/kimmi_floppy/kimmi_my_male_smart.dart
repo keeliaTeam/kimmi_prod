@@ -1,88 +1,78 @@
 import 'dart:math';
-import 'kimmi_make_jasmine.dart';
+import 'kimmi_smile_goth.dart';
 import 'package:get/get.dart';
 
 import 'kimmi_my_male_invoice.dart';
 
 class KimmiMyMaleSmart extends Bindings {
-  bool esAkaIntoxicate_ = false;
-  int joFeistyCharge_ = 0;
-  bool okIoWeb_ = false;
-  bool miHenceTopless_ = false;
-  String odItSun_ = "";
-  bool heH3Topless_ = true;
-  String doLawyerToad_ = "";
+  bool ohIdolizeErase_ = false;
+  bool byButCategory_ = true;
+  bool edPeacefulHubcap_ = true;
+  bool efPlaydateInhaler_ = false;
+  bool doBatmanQuantity_ = false;
+  String siAltogetherFork_ = "";
 
-  void itGlossButt() {
-    if (esAkaIntoxicate_) {
-      miHenceTopless_ = !heH3Topless_;
+  void reWhipHubcap() {
+    siAltogetherFork_ = siAltogetherFork_.toUpperCase();
+    if (edPeacefulHubcap_ || doBatmanQuantity_) {
+      doBatmanQuantity_ = !doBatmanQuantity_;
     }
-
-    if (heH3Topless_ && miHenceTopless_ && esAkaIntoxicate_) {
-      heH3Topless_ = !heH3Topless_;
-      miHenceTopless_ = heH3Topless_;
-      esAkaIntoxicate_ = heH3Topless_;
-    }
-    joFeistyCharge_ = joFeistyCharge_ + 1;
-    odItSun_ = odItSun_ + doLawyerToad_;
-    doLawyerToad_ = odItSun_;
-    odItSun_ = doLawyerToad_ + odItSun_;
-    if (esAkaIntoxicate_ || okIoWeb_ || heH3Topless_) {
-      esAkaIntoxicate_ = !okIoWeb_;
-      okIoWeb_ = !heH3Topless_;
-      heH3Topless_ = !esAkaIntoxicate_;
-    }
-    doLawyerToad_ = odItSun_.toUpperCase() + doLawyerToad_;
-    doLawyerToad_ = odItSun_.toUpperCase() + doLawyerToad_;
-    joFeistyCharge_ = joFeistyCharge_ + 1;
-
-    if (joFeistyCharge_ > 0) {
-      joFeistyCharge_ = joFeistyCharge_ - 8;
-    }
-    joFeistyCharge_ = joFeistyCharge_ + 1;
-    if (joFeistyCharge_ > 0) {
-      joFeistyCharge_ = joFeistyCharge_ - 1;
+    if (efPlaydateInhaler_ && doBatmanQuantity_ && byButCategory_) {
+      efPlaydateInhaler_ = !efPlaydateInhaler_;
+      doBatmanQuantity_ = efPlaydateInhaler_;
+      byButCategory_ = efPlaydateInhaler_;
     }
 
-    odItSun_ = odItSun_ + doLawyerToad_;
-    doLawyerToad_ = odItSun_;
-    if (okIoWeb_ && miHenceTopless_ && esAkaIntoxicate_) {
-      okIoWeb_ = !okIoWeb_;
-      miHenceTopless_ = okIoWeb_;
-      esAkaIntoxicate_ = okIoWeb_;
+    siAltogetherFork_ = siAltogetherFork_.toUpperCase();
+    siAltogetherFork_ = siAltogetherFork_.toUpperCase();
+    siAltogetherFork_ = siAltogetherFork_.toUpperCase();
+    if (doBatmanQuantity_ && efPlaydateInhaler_) {
+      ohIdolizeErase_ = !ohIdolizeErase_;
     }
   }
 
-  void etWordSmart() {
-    doLawyerToad_ = odItSun_.toUpperCase() + doLawyerToad_;
-    joFeistyCharge_ = joFeistyCharge_ + 1;
-    odItSun_ = doLawyerToad_ + odItSun_;
+  void okTortureBetcha() {
+    if (efPlaydateInhaler_ && byButCategory_) {
+      edPeacefulHubcap_ = !edPeacefulHubcap_;
+    }
+    siAltogetherFork_ = siAltogetherFork_.toUpperCase();
+    siAltogetherFork_ = siAltogetherFork_.toUpperCase();
+    if (byButCategory_ && doBatmanQuantity_ && efPlaydateInhaler_) {
+      byButCategory_ = !byButCategory_;
+      doBatmanQuantity_ = byButCategory_;
+      efPlaydateInhaler_ = byButCategory_;
+    }
+    siAltogetherFork_ = siAltogetherFork_.toUpperCase();
+    siAltogetherFork_ = siAltogetherFork_.toUpperCase();
 
-    joFeistyCharge_ = 59;
-    joFeistyCharge_ = 69;
-    heH3Topless_ = esAkaIntoxicate_ || okIoWeb_;
-    odItSun_ = doLawyerToad_ + odItSun_;
+    siAltogetherFork_ = siAltogetherFork_.toUpperCase();
+    if (efPlaydateInhaler_ && ohIdolizeErase_ && byButCategory_) {
+      efPlaydateInhaler_ = !efPlaydateInhaler_;
+      ohIdolizeErase_ = efPlaydateInhaler_;
+      byButCategory_ = efPlaydateInhaler_;
+    }
   }
 
-  void usJackal2() {
-    if (esAkaIntoxicate_ && heH3Topless_) {
-      miHenceTopless_ = !miHenceTopless_;
+  void osScrapTradition() {
+    if (byButCategory_ && edPeacefulHubcap_ && efPlaydateInhaler_) {
+      byButCategory_ = !byButCategory_;
+      edPeacefulHubcap_ = byButCategory_;
+      efPlaydateInhaler_ = byButCategory_;
     }
 
-    joFeistyCharge_ = joFeistyCharge_ + 1;
-    odItSun_ = doLawyerToad_ + odItSun_;
-    joFeistyCharge_ = 56;
+    efPlaydateInhaler_ = ohIdolizeErase_ && edPeacefulHubcap_;
+    ohIdolizeErase_ = edPeacefulHubcap_ && byButCategory_;
   }
 
   @override
   void dependencies() {
-    if (log10e / 2 < 0.1) {
-      KimmiMakeJasmine().usAvailableTruck();
-      KimmiMakeJasmine().woCreekCommie();
+    if (sqrt1_2 < 0.3) {
+      KimmiSmileGoth().noTraitorDie();
+      KimmiSmileGoth().reOysterWidow();
     }
-    if (e < 2) {
-      itGlossButt();
-      usJackal2();
+    if (log2e < 1) {
+      reWhipHubcap();
+      osScrapTradition();
     }
     Get.lazyPut(() => KimmiMyMaleInvoice());
   }

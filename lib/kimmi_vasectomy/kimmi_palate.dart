@@ -10,7 +10,7 @@ abstract class KimmiPalate {
 
   static const String kimmiVasectomyNinja = "Kimmi";
 
-  static const String kimmiVasectomySensitive = "1.0.3";
+  static const String kimmiVasectomySensitive = "1.0.4";
 
   static const String kimmiDoughNinja = "com.kimmi.imk";
 
@@ -113,7 +113,11 @@ abstract class KimmiPalate {
   );
   static const TextStyle kimmiStoreTamperDaytime =
       KimmiTamperDaytime.black12_bold;
-
+  static const Gradient kimmiHandcuffStoreBgCoat = LinearGradient(
+    begin: AlignmentDirectional.topEnd,
+    end: AlignmentDirectional.bottomStart,
+    colors: [Color(0xFFBFFF36), Color(0xFFFFD638)],
+  );
   static const double kimmiContainerStirConferenceArgue = 40;
 
   static const double kimmiContainerStirConferenceSash = 16;
@@ -188,5 +192,11 @@ abstract class KimmiPalate {
   static const TextStyle kimmiOutdoLovedConferenceUnKissyDaytime = TextStyle(
     fontSize: 16,
     color: Color(0xFF999999),
+  );
+
+  static const Gradient kimmiLovableCoat = LinearGradient(
+    begin: Alignment.topCenter,
+    end: Alignment.bottomCenter,
+    colors: [Color(0x00000000), Color(0x66000000)],
   );
 }

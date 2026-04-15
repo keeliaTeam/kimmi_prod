@@ -1,5 +1,5 @@
 import 'dart:math';
-import 'kimmi_community_ear.dart';
+import 'kimmi_jam_kg.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_floppy/kimmi_waitress_amen_invoice.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_floppy/kimmi_loved_whatcha_invoice.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_floppy/kimmi_loved_outdo_invoice.dart';
@@ -8,6 +8,7 @@ import 'package:kimmi/kimmi_vasectomy/kimmi_floppy/kimmi_loved_handcuff_invoice.
 import 'package:kimmi/kimmi_vasectomy/kimmi_floppy/kimmi_loved_handcuff_seduce_invoice.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_floppy/kimmi_loved_handcuff_kenny_invoice.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_floppy/kimmi_loved_me_invoice.dart';
+import 'package:kimmi/kimmi_vasectomy/kimmi_floppy_ui/kimmi_loved_handcuff_figurine_invoice.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_curvy/kimmi_africa.dart';
 import 'package:get/get.dart';
 
@@ -15,72 +16,105 @@ import 'kimmi_loved_handcuff_unwanted_invoice.dart';
 import 'kimmi_colombian_invoice.dart';
 
 class KimmiColombianSmart extends Bindings {
-  bool maTruckForeign_ = true;
-  double edObjectiveEvil_ = 46;
-  bool weFloppyComprehend_ = true;
-  bool idWidowMake_ = true;
-  String maMoleculeSafety_ = "";
-  bool adSubjectHump_ = false;
+  bool usAiGoth_ = false;
+  bool myComeTried_ = false;
+  bool laIntoxicateCaptive_ = false;
+  int odCoitusCagey_ = 26;
+  double idPalateClue_ = 0.0;
+  String siDbVibrant_ = "";
+  bool ohTaughtCater_ = false;
+  int usC2Aka_ = 0;
 
-  void opHusbandStir() {
-    maTruckForeign_ = weFloppyComprehend_ && adSubjectHump_;
-    edObjectiveEvil_ = edObjectiveEvil_ + 1;
-    edObjectiveEvil_ = edObjectiveEvil_ + 1;
-
-    maMoleculeSafety_ = maMoleculeSafety_.toUpperCase();
-    edObjectiveEvil_ = 53;
-    if (edObjectiveEvil_ > 0) {
-      edObjectiveEvil_ = edObjectiveEvil_ - 1;
+  void beCultureCagey() {
+    siDbVibrant_ = siDbVibrant_.toUpperCase();
+    odCoitusCagey_ = 22;
+    usC2Aka_ = 43;
+    idPalateClue_ = 83;
+    siDbVibrant_ = siDbVibrant_.toUpperCase();
+    odCoitusCagey_ = odCoitusCagey_ * usC2Aka_;
+    laIntoxicateCaptive_ = usAiGoth_ || ohTaughtCater_;
+    if (idPalateClue_ > 0) {
+      idPalateClue_ = idPalateClue_ - 1;
     }
-
-    edObjectiveEvil_ = 94;
-
-    maMoleculeSafety_ = maMoleculeSafety_.toUpperCase();
-    if (weFloppyComprehend_) {
-      maTruckForeign_ = !adSubjectHump_;
+    odCoitusCagey_ = 93;
+    usC2Aka_ = 44;
+    if (odCoitusCagey_ > usC2Aka_) {
+      odCoitusCagey_ = odCoitusCagey_ + usC2Aka_;
+    }
+    siDbVibrant_ = siDbVibrant_.toUpperCase();
+    if (ohTaughtCater_ || myComeTried_ || laIntoxicateCaptive_) {
+      ohTaughtCater_ = !myComeTried_;
+      myComeTried_ = !laIntoxicateCaptive_;
+      laIntoxicateCaptive_ = !ohTaughtCater_;
     }
   }
 
-  void idCrossoverTeepee() {
-    maTruckForeign_ = adSubjectHump_ && weFloppyComprehend_;
-    maMoleculeSafety_ = maMoleculeSafety_.toUpperCase();
-    if (adSubjectHump_ || weFloppyComprehend_ || maTruckForeign_) {
-      adSubjectHump_ = !weFloppyComprehend_;
-      weFloppyComprehend_ = !maTruckForeign_;
-      maTruckForeign_ = !adSubjectHump_;
+  void etUseless3() {
+    siDbVibrant_ = siDbVibrant_.toUpperCase();
+    usAiGoth_ = laIntoxicateCaptive_ || ohTaughtCater_;
+    idPalateClue_ = 22;
+    if (ohTaughtCater_) {
+      usAiGoth_ = !laIntoxicateCaptive_;
     }
-    if (edObjectiveEvil_ > 0) {
-      edObjectiveEvil_ = edObjectiveEvil_ - 1;
-    }
-    edObjectiveEvil_ = 6;
-    maMoleculeSafety_ = maMoleculeSafety_.toUpperCase();
-    if (adSubjectHump_ || weFloppyComprehend_) {
-      weFloppyComprehend_ = !weFloppyComprehend_;
-    }
-
-    maMoleculeSafety_ = maMoleculeSafety_.toUpperCase();
-    edObjectiveEvil_ = 59;
+    usAiGoth_ = ohTaughtCater_ && laIntoxicateCaptive_;
+    odCoitusCagey_ = 13;
+    usC2Aka_ = 19;
+    idPalateClue_ = idPalateClue_ + 1;
   }
 
-  void hoImmersePenny() {
-    if (adSubjectHump_) {
-      weFloppyComprehend_ = !idWidowMake_;
+  void beWordBerry() {
+    if (idPalateClue_ > 0) {
+      idPalateClue_ = idPalateClue_ - 1;
     }
-    maMoleculeSafety_ = maMoleculeSafety_.toUpperCase();
-
-    maMoleculeSafety_ = maMoleculeSafety_.toUpperCase();
+    if (ohTaughtCater_ && laIntoxicateCaptive_) {
+      usAiGoth_ = !usAiGoth_;
+    }
+    siDbVibrant_ = siDbVibrant_.toUpperCase();
+    if (odCoitusCagey_ > usC2Aka_) {
+      odCoitusCagey_ = odCoitusCagey_ + usC2Aka_;
+    }
+    siDbVibrant_ = siDbVibrant_.toUpperCase();
+    if (myComeTried_ && laIntoxicateCaptive_) {
+      ohTaughtCater_ = !ohTaughtCater_;
+    }
+    if (laIntoxicateCaptive_ || usAiGoth_) {
+      usAiGoth_ = !usAiGoth_;
+    }
+    if (idPalateClue_ > 0) {
+      idPalateClue_ = idPalateClue_ - 1;
+    }
+    usAiGoth_ = myComeTried_ && ohTaughtCater_;
+    siDbVibrant_ = siDbVibrant_.toUpperCase();
+    odCoitusCagey_ = 41;
+    usC2Aka_ = 80;
+    if (laIntoxicateCaptive_ || ohTaughtCater_ || usAiGoth_) {
+      laIntoxicateCaptive_ = !ohTaughtCater_;
+      ohTaughtCater_ = !usAiGoth_;
+      usAiGoth_ = !laIntoxicateCaptive_;
+    }
+    odCoitusCagey_ = 11;
+    usC2Aka_ = 34;
+    if (laIntoxicateCaptive_ && usAiGoth_) {
+      ohTaughtCater_ = !ohTaughtCater_;
+    }
+    if (laIntoxicateCaptive_) {
+      myComeTried_ = !usAiGoth_;
+    }
+    if (usAiGoth_) {
+      ohTaughtCater_ = !myComeTried_;
+    }
+    myComeTried_ = laIntoxicateCaptive_ || usAiGoth_;
   }
 
   @override
   void dependencies() {
-    if (log10e / 2 < 0.1) {
-      KimmiCommunityEar().oxBrianLabor();
-      KimmiCommunityEar().amTraditionBravery();
-      KimmiCommunityEar().meInkBabysitter();
+    if (e < 2) {
+      KimmiJamKg().okMarvelFalcon();
+      KimmiJamKg().esAvailableForward();
     }
-    if (ln10 < 2) {
-      opHusbandStir();
-      idCrossoverTeepee();
+    if (sqrt1_2 < 0.3) {
+      beCultureCagey();
+      etUseless3();
     }
     Get.lazyPut(() => KimmiColombianInvoice());
 
@@ -111,6 +145,10 @@ class KimmiColombianSmart extends Bindings {
 
     if (ids.contains("match_carousel")) {
       Get.lazyPut(() => KimmiLovedHandcuffFeelingInvoice());
+    }
+
+    if (ids.contains("match_rock")) {
+      Get.lazyPut(() => KimmiLovedHandcuffFigurineInvoice());
     }
 
     if (ids.contains("message")) {

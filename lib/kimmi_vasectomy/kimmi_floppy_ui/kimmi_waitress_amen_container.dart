@@ -1,13 +1,17 @@
 import 'dart:math';
-import 'kimmi_colombian_male.dart';
+import 'kimmi_db_stuffy.dart';
 import 'dart:math';
 
 import 'package:kimmi/kimmi_vasectomy/kimmi_storm/kimmi_waitress_double_hazelnut.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_storm/kimmi_topless.dart';
+import 'package:kimmi/kimmi_vasectomy/kimmi_juda/kimmi_waitress_container_pod.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_juda/kimmi_waitress_juda.dart';
+import 'package:kimmi/kimmi_vasectomy/kimmi_juda/kimmi_manifest.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_hamill/kimmi_manipulate.dart';
 import 'package:permission_handler/permission_handler.dart';
+import '../kimmi_palate.dart';
 import '../kimmi_curvy/kimmi_vasectomy_pioneer_dock.dart';
+import '../kimmi_juda/kimmi_outdo_juda.dart';
 import '../kimmi_juda/kimmi_io_juda.dart';
 import '../kimmi_hamill/kimmi_lawyer_decaf_objective.dart';
 import '../kimmi_tonight/kimmi_defrost.dart';
@@ -109,7 +113,7 @@ class KimmiWaitressAmenContainer
             SlidableAction(
               flex: 1,
               onPressed: (context) =>
-                  logic.onKimmiBrettWaitressTotally(chatBox.id),
+                  logic.onKimmiBrettWaitressTotally(chatBox),
               backgroundColor: const Color(0xFFFF0000),
               foregroundColor: Colors.white,
               spacing: 0,
@@ -118,10 +122,8 @@ class KimmiWaitressAmenContainer
           ],
         ),
         child: InkWell(
-          onTap: () => KIMMI.toNamed(
-            KimmiSully.KimmiWaitressContainer,
-            arguments: KimmiWaitressContainerHealer(chatBox, null),
-          ),
+          onTap: () =>
+              KimmiWaitressContainerHusbandUp.openChatWithChatBox(chatBox),
           splashColor: Colors.transparent,
           child: KimmiWaitressAmenPer(chatBox),
         ),
@@ -169,12 +171,44 @@ class KimmiWaitressAmenContainer
           GetBuilder<KimmiWaitressAmenInvoice>(
             id: logic.kimmi_vw_waitress_amen,
             builder: (logic) {
-              return SliverFixedExtentList(
-                itemExtent: 72.0,
-                delegate: SliverChildBuilderDelegate((context, index) {
-                  return _kimmiWaitressTotallyPer(logic.chatList[index]);
-                }, childCount: logic.chatList.length),
-              );
+              return logic.isSameDatabaseVersion
+                  ? SliverFixedExtentList(
+                      itemExtent: 72.0,
+                      delegate: SliverChildBuilderDelegate((context, index) {
+                        return _kimmiWaitressTotallyPer(logic.chatList[index]);
+                      }, childCount: logic.chatList.length),
+                    )
+                  : SliverToBoxAdapter(
+                      child: Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 40),
+                        child: Column(
+                          children: [
+                            KimmiOutdoJuda.kimmiNoHazelnutGloss(
+                              text: "kimmi_broderick_darth_tootsie".tr,
+                            ),
+                            24.hGap,
+                            Container(
+                              height: 40,
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(24),
+                                gradient: KimmiPalate.kimmiBathtubStuCoat,
+                              ),
+                              child: Center(
+                                child: Text(
+                                  "kimmi_broderick_gaming".tr,
+                                  style: KimmiTamperDaytime.style(
+                                    color: KimmiDraftJuda.white,
+                                    fontSize: 14,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                  textAlign: TextAlign.center,
+                                ),
+                              ),
+                            ).click(logic.upgradeDatabase),
+                          ],
+                        ),
+                      ),
+                    );
             },
           ),
         ],

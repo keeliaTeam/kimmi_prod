@@ -1,5 +1,5 @@
 import 'dart:math';
-import 'kimmi_crossover_crossover.dart';
+import 'kimmi_cater_loving.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_palate.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -8,12 +8,16 @@ import 'package:get/get.dart';
 import 'package:json_dynamic_widget/json_dynamic_widget.dart';
 import 'package:video_player/video_player.dart';
 
+import '../kimmi_curvy/kimmi_africa.dart';
 import '../kimmi_tonight/kimmi_stu_tamper.dart';
 import '../kimmi_tonight/kimmi_draft_juda.dart';
 import '../kimmi_tonight/kimmi_defrost.dart';
 import '../kimmi_juda/kimmi_io_juda.dart';
 import '../kimmi_hamill/kimmi_muse_idolize_container.dart';
 import '../kimmi_floppy/kimmi_loved_handcuff_seduce_invoice.dart';
+import '../kimmi_hamill/kimmi_ernie.dart';
+import '../kimmi_hamill/kimmi_handcuff_sutra_shag_style.dart';
+import '../kimmi_hamill/kimmi_failed_berry_meaning.dart';
 
 class KimmiLovedHandcuffSeduceContainer
     extends KimmiMuseIdolizeContainer<KimmiLovedHandcuffSeduceInvoice> {
@@ -101,56 +105,78 @@ class KimmiLovedHandcuffSeduceContainer
     bool isAR = KimmiIOJuda.isARLanguage();
     return Positioned(
       bottom: 32,
-      child: SizedBox(
-        width: 215,
-        height: 70,
-        child: Stack(
-          alignment: Alignment.topCenter,
-          children: [
-            Positioned(
-              top: 14,
-              child: KimmiAsthmaticDesk(
-                title: 'kimmi_broderick_husband_handcuff'.tr,
-                width: 215,
-                height: 56,
-                onTap: logic.onKimmiHusbandAsthmatic,
-              ),
-            ),
-            GetBuilder<KimmiLovedHandcuffSeduceInvoice>(
-              id: logic.kimmi_handshake_is_private,
-              builder: (logic) {
-                return logic.isVIP.value || logic.maxFreeCount < 0
-                    ? const SizedBox()
-                    : Positioned(
+      child: Column(
+        children: [
+          logic.isRegionMatchFirst20sChargeMode
+              ? Text(
+                  KIMMI.kimmiHump.regionMatchFirst20sChargeModeDesc(),
+                  style: KimmiTamperDaytime.white14,
+                )
+              : const SizedBox(),
+          const SizedBox(height: 4),
+          SizedBox(
+            width: 215,
+            height: 70,
+            child: Stack(
+              alignment: Alignment.topCenter,
+              children: [
+                Positioned(
+                  top: 14,
+                  child: KimmiAsthmaticDesk(
+                    title: 'kimmi_broderick_husband_handcuff'.tr,
+                    width: 215,
+                    height: 56,
+                    onTap: logic.onKimmiHusbandAsthmatic,
+                  ),
+                ),
+                logic.isRegionMatchFirst20sChargeMode
+                    ? Positioned(
                         right: isAR ? null : 0,
                         left: isAR ? 0 : null,
-                        child: Container(
-                          height: 28,
-                          padding: const EdgeInsets.only(
-                            left: 14,
-                            right: 14,
-                            top: 5,
-                            bottom: 7,
-                          ),
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(14),
-                            gradient: KimmiPalate.kimmiStoreBgCoat,
-                          ),
-                          child: GetBuilder<KimmiLovedHandcuffSeduceInvoice>(
-                            id: logic.kimmi_handshake_store_assignment,
-                            builder: (logic) {
-                              return Text(
-                                '${'kimmi_broderick_store'.tr} x${logic.remainingFreeCount}',
-                                style: KimmiPalate.kimmiStoreTamperDaytime,
-                              );
-                            },
-                          ),
-                        ),
-                      );
-              },
+                        child: const KimmiHandcuffSutraShagStyle(),
+                      )
+                    : GetBuilder<KimmiLovedHandcuffSeduceInvoice>(
+                        id: logic.kimmi_handshake_is_private,
+                        builder: (logic) {
+                          return logic.isVIP.value || logic.maxFreeCount < 0
+                              ? const SizedBox()
+                              : Positioned(
+                                  right: isAR ? null : 0,
+                                  left: isAR ? 0 : null,
+                                  child: Container(
+                                    height: 28,
+                                    padding: const EdgeInsets.only(
+                                      left: 14,
+                                      right: 14,
+                                      top: 5,
+                                      bottom: 7,
+                                    ),
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(14),
+                                      gradient: KimmiPalate.kimmiStoreBgCoat,
+                                    ),
+                                    child:
+                                        GetBuilder<
+                                          KimmiLovedHandcuffSeduceInvoice
+                                        >(
+                                          id: logic
+                                              .kimmi_handshake_store_assignment,
+                                          builder: (logic) {
+                                            return Text(
+                                              '${'kimmi_broderick_store'.tr} x${logic.remainingFreeCount}',
+                                              style: KimmiPalate
+                                                  .kimmiStoreTamperDaytime,
+                                            );
+                                          },
+                                        ),
+                                  ),
+                                );
+                        },
+                      ),
+              ],
             ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }

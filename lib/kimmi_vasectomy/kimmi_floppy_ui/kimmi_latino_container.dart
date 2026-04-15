@@ -1,5 +1,5 @@
 import 'dart:math';
-import 'kimmi_colombian_male.dart';
+import 'kimmi_wax_inhaler.dart';
 import 'dart:async';
 import 'dart:collection';
 import 'dart:math';
@@ -9,6 +9,7 @@ import 'package:kimmi/kimmi_vasectomy/kimmi_storm/kimmi_feast.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_storm/kimmi_feast_genius_fantasy_smile.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_sully.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_curvy/kimmi_africa.dart';
+import 'package:kimmi/kimmi_vasectomy/kimmi_tonight/kimmi_ui_niece.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_juda/kimmi_starbucks_juda.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_tonight/kimmi_defrost.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_hamill/kimmi_manipulate.dart';
@@ -328,11 +329,8 @@ class KimmiLatinoContainerViking extends State<KimmiLatinoContainer>
         if (KIMMI.kimmiFeastGenius!.balance > 0) {
           KIMMI.toNamed(KimmiSully.KimmiScareAmenContainer);
         } else {
-          KIMMI.toNamed(
-            KimmiSully.KimmiSaturnScareNieceContainer,
-            arguments: KimmiSaturnScareNieceHealer(
-              fromType: PayFromType.FROM_IM_SEND_GIFT,
-            ),
+          KimmiUiNiece.kimmiSaturnScareNiece(
+            fromType: PayFromType.FROM_IM_SEND_GIFT,
           );
         }
       },
@@ -413,13 +411,11 @@ class AppGiftPageItemState extends State<AppGiftPageItem> {
           var balance = KIMMI.kimmiFeastGenius?.balance ?? 0;
           if (balance >= gift.price) {
             onSendGift(gift);
+            Navigator.of(context).pop(gift);
           } else {
             Navigator.of(context).pop();
-            KIMMI.toNamed(
-              KimmiSully.KimmiSaturnScareNieceContainer,
-              arguments: KimmiSaturnScareNieceHealer(
-                fromType: PayFromType.FROM_IM_SEND_GIFT,
-              ),
+            KimmiUiNiece.kimmiSaturnScareNiece(
+              fromType: PayFromType.FROM_IM_SEND_GIFT,
             );
           }
         }

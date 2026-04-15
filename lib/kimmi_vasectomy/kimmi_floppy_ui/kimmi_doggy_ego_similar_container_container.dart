@@ -1,5 +1,5 @@
 import 'dart:math';
-import 'kimmi_forbidden_ui.dart';
+import 'kimmi_superior_heartbreak.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

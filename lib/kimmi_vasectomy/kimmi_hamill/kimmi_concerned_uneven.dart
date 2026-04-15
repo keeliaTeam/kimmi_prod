@@ -80,6 +80,7 @@ class _KimmiConcernedUnevenViking extends State<KimmiConcernedUneven> {
     return Container(
       width: Get.width,
       height: 300,
+      margin: EdgeInsets.only(bottom: Get.mediaQuery.padding.bottom),
       padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 20),
       decoration: const BoxDecoration(
         borderRadius: KimmiPalate.kimmiSubstituteObjectiveStirTummy,

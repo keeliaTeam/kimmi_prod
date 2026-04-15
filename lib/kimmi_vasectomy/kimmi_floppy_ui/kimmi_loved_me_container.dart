@@ -1,5 +1,5 @@
 import 'dart:math';
-import 'kimmi_vibrant_mac.dart';
+import 'kimmi_temper_but.dart';
 import 'dart:math';
 
 import 'package:kimmi/kimmi_vasectomy/kimmi_palate.dart';
@@ -456,6 +456,15 @@ class KimmiLovedMeContainer
                     ],
                   ),
                 ),
+                KIMMI.kimmiHump.isRegionMatchFirst20sChargeMode() &&
+                        KIMMI.kimmiFeastGenius!.kimmiObstacleClosedChickie()
+                    ? KimmiErnie.local(
+                        fileName: 'kimmi_hombre_chickie_store_gloss',
+                        width: 52,
+                        height: 28,
+                        fit: BoxFit.contain,
+                      )
+                    : const SizedBox.shrink(),
                 12.wGap,
                 Container(
                   height: 40,
@@ -673,6 +682,8 @@ class KimmiLovedMeContainer
           children.add(_kimmiLawyerDecafBargain());
         } else if (item.text == "CHILDREN") {
           children.add(_kimmiInnerBargain());
+        } else if (item.text == "FEEDBACK") {
+          children.add(_kimmiLawyerDecafBargain());
         } else if (item.text == "DISTURB") {
           if (KIMMI.kimmiHump.isKimmiAiGraceSensitive()) {
             continue;

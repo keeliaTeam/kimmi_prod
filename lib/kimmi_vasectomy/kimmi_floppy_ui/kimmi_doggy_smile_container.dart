@@ -1,5 +1,5 @@
 import 'dart:math';
-import 'kimmi_applause_girl.dart';
+import 'kimmi_johnny_uneven.dart';
 import 'dart:ui';
 
 import 'package:kimmi/kimmi_vasectomy/kimmi_prototype.dart';
@@ -120,7 +120,7 @@ class KimmiDoggySmileContainer
         Positioned(
           left: 40,
           right: 40,
-          bottom: 32,
+          bottom: 32 + Get.mediaQuery.padding.bottom,
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
@@ -326,7 +326,7 @@ class KimmiDoggySmileContainer
             ),
           ),
           Visibility(
-            visible: user.height > 0,
+            visible: (user.height ?? 0) > 0,
             child: KimmiFailedWebsite.kimmiTuxJohnny(
               "kimmi_broderick_argue".tr,
               "kimmi_hombre_argue_gloss",
@@ -334,7 +334,7 @@ class KimmiDoggySmileContainer
             ),
           ),
           Visibility(
-            visible: user.weight > 0,
+            visible: (user.weight ?? 0) > 0,
             child: KimmiFailedWebsite.kimmiTuxJohnny(
               "kimmi_broderick_princess".tr,
               "kimmi_hombre_princess_gloss",

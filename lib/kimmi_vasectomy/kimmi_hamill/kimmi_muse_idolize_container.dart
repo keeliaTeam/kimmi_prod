@@ -1,5 +1,5 @@
 import 'dart:math';
-import 'kimmi_cowboys_sophomore.dart';
+import 'kimmi_scrap_bye.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_storm/kimmi_storm_embodiment.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_storm/kimmi_storm_container_hump.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_curvy/kimmi_vasectomy_pioneer_dock.dart';
@@ -71,7 +71,13 @@ abstract class KimmiMuseIdolizeContainer<T extends KimmiMuseIdolizeInvoice>
       widgets.add(_kimmiCommentaryEuropeEager(context));
     }
 
-    return Stack(alignment: Alignment.topCenter, children: widgets);
+    return keepMainLive(
+      Stack(alignment: Alignment.topCenter, children: widgets),
+    );
+  }
+
+  Widget keepMainLive(Widget child) {
+    return child;
   }
 
   Widget _kimmiCommentaryEuropeEager(BuildContext context) {

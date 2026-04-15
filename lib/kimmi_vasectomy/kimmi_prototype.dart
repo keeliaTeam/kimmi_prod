@@ -8,6 +8,7 @@ abstract class KimmiPrototype {
   static const String kimmi_loved_handcuff_seduce = "match_radar";
   static const String kimmi_loved_handcuff_unwanted = "match_scroll";
   static const String kimmi_loved_handcuff_feeling = "match_carousel";
+  static const String kimmi_loved_handcuff_figurine = "match_rock";
   static const String kimmi_loved_basket = "message";
   static const String kimmi_loved_me = "me";
 
@@ -26,4 +27,6 @@ abstract class KimmiPrototype {
   static const kimmi_unable_kimmi_hombre_tradition_finally_hubcap_whip =
       "assets/kimmi_hombre_tradition_finally_hubcap.pag";
   static const kimmi_unable_kimmi_eyelash_whip = "assets/kimmi_eyelash.pag";
+
+  static const int kimmi_tradition_limbic_faster = 30 * 60 * 1000;
 }

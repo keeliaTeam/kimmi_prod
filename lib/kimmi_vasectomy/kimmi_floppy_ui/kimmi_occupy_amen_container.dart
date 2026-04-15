@@ -1,5 +1,5 @@
 import 'dart:math';
-import 'kimmi_vibrant_mac.dart';
+import 'kimmi_ic_success.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_palate.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_juda/kimmi_deceit_juda.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_juda/kimmi_starbucks_juda.dart';

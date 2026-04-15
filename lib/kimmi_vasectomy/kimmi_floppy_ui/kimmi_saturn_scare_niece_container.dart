@@ -1,5 +1,5 @@
 import 'dart:math';
-import 'kimmi_applause_girl.dart';
+import 'kimmi_invoice_do.dart';
 import 'dart:math';
 
 import 'package:kimmi/kimmi_vasectomy/kimmi_floppy/kimmi_saturn_scare_niece_invoice.dart';
@@ -45,7 +45,7 @@ class KimmiSaturnScareNieceContainer extends StatelessWidget {
                   top: 0,
                   left: 0,
                   right: 0,
-                  bottom: 90,
+                  bottom: 84 + Get.mediaQuery.padding.bottom,
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
@@ -239,7 +239,6 @@ class KimmiSaturnScareNieceContainer extends StatelessWidget {
     KimmiDeportFlaunt data, {
     VoidCallback? payEvent,
   }) {
-    data.extra_value = 35;
     return GestureDetector(
       onTap: payEvent,
       child: Container(
@@ -491,7 +490,7 @@ class KimmiSaturnScareNieceContainer extends StatelessWidget {
 
   _kimmiCharmAsthmatic(BuildContext context) {
     return Positioned(
-      bottom: 10,
+      bottom: 10 + Get.mediaQuery.padding.bottom,
       left: 16,
       right: 16,
       child: GestureDetector(

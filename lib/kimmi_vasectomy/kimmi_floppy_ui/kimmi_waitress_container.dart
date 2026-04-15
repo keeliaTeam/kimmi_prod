@@ -1,5 +1,5 @@
 import 'dart:math';
-import 'kimmi_vibrant_mac.dart';
+import 'kimmi_cater_loving.dart';
 import 'dart:math';
 import 'dart:ui';
 
@@ -95,15 +95,24 @@ class KimmiWaitressContainer
                 child: Row(mainAxisSize: MainAxisSize.min, children: children),
               ),
             ),
-            CupertinoButton(
-              padding: const EdgeInsets.symmetric(horizontal: 8),
-              onPressed: () =>
-                  onSelectInputFunc(ChatInputFuncType.more, context: context),
-              child: KimmiErnie.local(
-                fileName: "kimmi_hombre_waitress_charm",
-                width: 24,
-                height: 24,
-              ),
+            GetBuilder<KimmiWaitressInvoice>(
+              id: logic.kimmi_vw_waitress_feast_tux,
+              builder: (logic) {
+                return logic.oppositeUser != null
+                    ? CupertinoButton(
+                        padding: const EdgeInsets.symmetric(horizontal: 8),
+                        onPressed: () => onSelectInputFunc(
+                          ChatInputFuncType.more,
+                          context: context,
+                        ),
+                        child: KimmiErnie.local(
+                          fileName: "kimmi_hombre_waitress_charm",
+                          width: 24,
+                          height: 24,
+                        ),
+                      )
+                    : const SizedBox.shrink();
+              },
             ),
           ],
         );
@@ -142,7 +151,7 @@ class KimmiWaitressContainer
 
               KimmiFailedWebsite.kimmiThongLowellTamper(
                 Text(
-                  logic.chatBox.showName ?? "",
+                  logic.toUserName,
                   style: KimmiTamperDaytime.TextWhite_16_Semibold,
                   maxLines: 1,
                   overflow: TextOverflow.ellipsis,
@@ -150,16 +159,13 @@ class KimmiWaitressContainer
                 MediaQuery.of(context).size.width - 180,
               ),
 
-              (logic.chatBox.chatUser == null ||
-                      KIMMI.kimmiHump.isKimmiAiGraceSensitive())
-                  ? const SizedBox()
-                  : Container(
-                      padding: const EdgeInsets.only(left: 4, right: 4),
-                      child: KimmiFailedFeastQuitterMarvel(
-                        uid: logic.chatBox.chatUser!.uid,
-                        isShowText: false,
-                      ),
-                    ),
+              Container(
+                padding: const EdgeInsets.only(left: 4, right: 4),
+                child: KimmiFailedFeastQuitterMarvel(
+                  uid: logic.toUid,
+                  isShowText: false,
+                ),
+              ),
             ],
           ),
           trailing: tralingWidget,
@@ -196,7 +202,7 @@ class KimmiWaitressContainer
                         observer: this,
                         hintText: inputHintText,
                         quickGroup: msgList,
-                        cachePath: _voicePath(logic.chatBox.id),
+                        cachePath: _voicePath(logic.chatId),
                         chatStyleType: logic.showStyleType,
                       );
                     },
@@ -223,7 +229,12 @@ class KimmiWaitressContainer
     if (item is ChatDateItem) {
       return KimmiWaitressPerHammockUneven(item: item);
     } else {
-      return KimmiWaitressPer(snap: item, user: logic.chatBox.chatUser);
+      return KimmiWaitressPer(
+        snap: item,
+        uid: logic.toUid,
+        nickName: logic.toUserName,
+        avatarUrl: logic.toUserAvtarUrl,
+      );
     }
   }
 
@@ -258,14 +269,10 @@ class KimmiWaitressContainer
   void onSelectInputFunc(ChatInputFuncType type, {BuildContext? context}) {
     switch (type) {
       case ChatInputFuncType.call:
-        final chatUser = logic.chatBox.chatUser;
-        if (chatUser != null) {
-          KimmiIndiaWaitressDock.instance
-              .kimmiUntieIndiaWaitressHystericalLabor(
-                chatUser.uid,
-                PayFromType.FROM_IM_VIDEO_CALL,
-              );
-        }
+        KimmiIndiaWaitressDock.instance.kimmiUntieIndiaWaitressHystericalLabor(
+          logic.toUid,
+          PayFromType.FROM_IM_VIDEO_CALL,
+        );
         break;
       case ChatInputFuncType.more:
         context ??= Get.context;
@@ -317,7 +324,7 @@ class KimmiWaitressContainer
     if (logic.hasNewSnap) {
       logic.hasNewSnap = false;
       KimmiWaitressDock.instance.kimmiFantasyWaitressTotallyGlenMarvel(
-        cId: logic.chatBox.id,
+        cId: logic.chatId,
       );
     }
   }
@@ -391,8 +398,8 @@ class KimmiWaitressContainer
   }
 
   Future<void> onKimmiNoticeCharmObjective(BuildContext context) async {
-    bool isFollowed = logic.chatBox.chatUser?.isFollowed ?? false;
-    int targetUid = logic.chatBox.chatUser?.uid ?? 0;
+    bool isFollowed = logic.oppositeUser!.isFollowed;
+    int targetUid = logic.toUid;
     KimmiAirlineObjective.showMoreSheet(
       context,
       targetUid,
@@ -422,10 +429,10 @@ class KimmiWaitressContainer
 
   Widget _kimmiFeastTuxBargain() {
     var oppositeUser = logic.oppositeUser;
-    if (oppositeUser == null) return Container();
+    if (oppositeUser == null) return const SizedBox.shrink();
 
     if (logic.oppositeUser?.uid == KimmiPalate.kimmiAiTedCurveBacteria) {
-      return Container();
+      return const SizedBox.shrink();
     }
 
     return Container(

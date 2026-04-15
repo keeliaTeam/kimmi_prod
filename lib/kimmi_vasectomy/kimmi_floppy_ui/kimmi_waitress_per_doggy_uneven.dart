@@ -85,6 +85,7 @@ class KimmiWaitressPerDoggyUneven extends StatelessWidget {
 
   Widget _kimmiDoggyFailed(mineStyle, otherStyle, text, color) {
     return Container(
+      constraints: BoxConstraints(maxWidth: Get.width - 93),
       padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 14.0),
       decoration: content.isUserIdMine ? mineStyle : otherStyle,
       child: Row(

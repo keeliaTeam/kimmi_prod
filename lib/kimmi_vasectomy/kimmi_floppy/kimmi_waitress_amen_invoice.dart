@@ -1,5 +1,5 @@
 import 'dart:math';
-import 'kimmi_fairy_tonight.dart';
+import 'kimmi_perception_in.dart';
 import 'dart:async';
 import 'dart:math';
 import 'package:kimmi/kimmi_vasectomy/kimmi_db/kimmi_topless_crossover.dart';
@@ -14,13 +14,16 @@ import 'package:kimmi/kimmi_vasectomy/kimmi_sully.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_juda/kimmi_waitress_dock.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_juda/kimmi_waitress_juda.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_juda/kimmi_starbucks_juda.dart';
+import 'package:drift/drift.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:permission_handler/permission_handler.dart';
+import '../kimmi_storm/kimmi_waitress_feast.dart';
 import '../kimmi_storm/kimmi_storm_container_hump.dart';
 import '../kimmi_storm/kimmi_feast_genius.dart';
 import '../kimmi_exploit_dylan/kimmi_dylan_snoop_die.dart';
+import '../kimmi_curvy/kimmi_vasectomy_pioneer_dock.dart';
 import '../kimmi_curvy/kimmi_africa.dart';
 import '../kimmi_tonight/kimmi_draft_juda.dart';
 import '../kimmi_hamill/kimmi_muse_idolize_invoice.dart';
@@ -29,95 +32,56 @@ import '../kimmi_tonight/kimmi_defrost.dart';
 
 class KimmiWaitressAmenInvoice extends KimmiMuseIdolizeInvoice
     with WidgetsBindingObserver {
-  bool paMercuryContainer_ = true;
-  bool beMantisIt_ = false;
-  double atPheromoneC1_ = 0.0;
-  int myKiteBaggage_ = 66;
-  bool loOuchDeport_ = true;
-  String asMarvelHi_ = "";
+  bool edUpShrink_ = true;
+  bool ifDecreaseYummy_ = false;
+  String myObviousKrypton_ = "";
+  bool nohSensitive_ = false;
+  String miLobbyFigurine_ = "";
 
-  void itCompellingComponent() {
-    if (myKiteBaggage_ > 0) {
-      myKiteBaggage_ = myKiteBaggage_ - 3;
+  void hoVibrantBathrobe() {
+    nohSensitive_ = edUpShrink_ && ifDecreaseYummy_;
+    miLobbyFigurine_ = myObviousKrypton_.toUpperCase() + miLobbyFigurine_;
+    nohSensitive_ = ifDecreaseYummy_ && edUpShrink_;
+    myObviousKrypton_ = myObviousKrypton_ + miLobbyFigurine_;
+    miLobbyFigurine_ = myObviousKrypton_;
+    if (nohSensitive_ && edUpShrink_) {
+      ifDecreaseYummy_ = !ifDecreaseYummy_;
     }
-    if (myKiteBaggage_ > 0) {
-      myKiteBaggage_ = myKiteBaggage_ - 9;
-    }
-    myKiteBaggage_ = 85;
-    myKiteBaggage_ = myKiteBaggage_ + 1;
-    asMarvelHi_ = asMarvelHi_.toUpperCase();
-    atPheromoneC1_ = 64;
-    myKiteBaggage_ = 55;
-    if (atPheromoneC1_ > 0) {
-      atPheromoneC1_ = atPheromoneC1_ - 1;
-    }
-    asMarvelHi_ = asMarvelHi_.toUpperCase();
-    atPheromoneC1_ = atPheromoneC1_ + 1;
   }
 
-  void asHubcapJazz() {
-    if (paMercuryContainer_ && loOuchDeport_ && beMantisIt_) {
-      paMercuryContainer_ = !paMercuryContainer_;
-      loOuchDeport_ = paMercuryContainer_;
-      beMantisIt_ = paMercuryContainer_;
+  void ayEgoPhone() {
+    if (ifDecreaseYummy_) {
+      edUpShrink_ = !nohSensitive_;
     }
-    if (myKiteBaggage_ > 0) {
-      myKiteBaggage_ = myKiteBaggage_ - 6;
+    myObviousKrypton_ = miLobbyFigurine_ + myObviousKrypton_;
+    myObviousKrypton_ = myObviousKrypton_ + miLobbyFigurine_;
+    miLobbyFigurine_ = myObviousKrypton_;
+
+    if (ifDecreaseYummy_ || nohSensitive_) {
+      nohSensitive_ = !nohSensitive_;
     }
-    if (atPheromoneC1_ > 0) {
-      atPheromoneC1_ = atPheromoneC1_ - 1;
+
+    myObviousKrypton_ = myObviousKrypton_ + miLobbyFigurine_;
+    miLobbyFigurine_ = myObviousKrypton_;
+
+    edUpShrink_ = nohSensitive_ || ifDecreaseYummy_;
+    miLobbyFigurine_ = myObviousKrypton_.toUpperCase() + miLobbyFigurine_;
+    if (ifDecreaseYummy_ || nohSensitive_ || edUpShrink_) {
+      ifDecreaseYummy_ = !nohSensitive_;
+      nohSensitive_ = !edUpShrink_;
+      edUpShrink_ = !ifDecreaseYummy_;
     }
-    atPheromoneC1_ = 11;
-    myKiteBaggage_ = myKiteBaggage_ + 1;
-    paMercuryContainer_ = beMantisIt_ && loOuchDeport_;
-    asMarvelHi_ = asMarvelHi_.toUpperCase();
-    asMarvelHi_ = asMarvelHi_.toUpperCase();
-    atPheromoneC1_ = 31;
-    if (atPheromoneC1_ > 0) {
-      atPheromoneC1_ = atPheromoneC1_ - 1;
-    }
-    asMarvelHi_ = asMarvelHi_.toUpperCase();
-    myKiteBaggage_ = 34;
-    if (atPheromoneC1_ > 0) {
-      atPheromoneC1_ = atPheromoneC1_ - 1;
-    }
-    asMarvelHi_ = asMarvelHi_.toUpperCase();
-    asMarvelHi_ = asMarvelHi_.toUpperCase();
-    asMarvelHi_ = asMarvelHi_.toUpperCase();
-    loOuchDeport_ = beMantisIt_ || paMercuryContainer_;
   }
 
-  void soSutraBg() {
-    atPheromoneC1_ = atPheromoneC1_ + 1;
-    asMarvelHi_ = asMarvelHi_.toUpperCase();
-    asMarvelHi_ = asMarvelHi_.toUpperCase();
-    atPheromoneC1_ = 67;
-    if (loOuchDeport_ && beMantisIt_) {
-      paMercuryContainer_ = !paMercuryContainer_;
-    }
-    asMarvelHi_ = asMarvelHi_.toUpperCase();
-    myKiteBaggage_ = 5;
-    asMarvelHi_ = asMarvelHi_.toUpperCase();
-    if (atPheromoneC1_ > 0) {
-      atPheromoneC1_ = atPheromoneC1_ - 1;
-    }
-    atPheromoneC1_ = 81;
-    myKiteBaggage_ = myKiteBaggage_ + 1;
-    myKiteBaggage_ = myKiteBaggage_ + 1;
-    if (loOuchDeport_ && beMantisIt_ && paMercuryContainer_) {
-      loOuchDeport_ = !loOuchDeport_;
-      beMantisIt_ = loOuchDeport_;
-      paMercuryContainer_ = loOuchDeport_;
-    }
-    myKiteBaggage_ = myKiteBaggage_ + 1;
-    paMercuryContainer_ = loOuchDeport_ && beMantisIt_;
-    atPheromoneC1_ = 77;
-    atPheromoneC1_ = atPheromoneC1_ + 1;
-    if (paMercuryContainer_ && loOuchDeport_ && beMantisIt_) {
-      paMercuryContainer_ = !paMercuryContainer_;
-      loOuchDeport_ = paMercuryContainer_;
-      beMantisIt_ = paMercuryContainer_;
-    }
+  void amUterusStarbucks() {
+    miLobbyFigurine_ = myObviousKrypton_.toUpperCase() + miLobbyFigurine_;
+
+    miLobbyFigurine_ = myObviousKrypton_.toUpperCase() + miLobbyFigurine_;
+
+    nohSensitive_ = ifDecreaseYummy_ && edUpShrink_;
+
+    miLobbyFigurine_ = myObviousKrypton_.toUpperCase() + miLobbyFigurine_;
+    nohSensitive_ = ifDecreaseYummy_ || edUpShrink_;
   }
 
   final String kimmi_vw_waitress_double = "kimmi_vw_waitress_double";
@@ -126,7 +90,7 @@ class KimmiWaitressAmenInvoice extends KimmiMuseIdolizeInvoice
 
   String? kimmiSimulateNinja = KimmiSully.KimmiWaitressAmenContainer;
 
-  late RxList<KimmiWaitressTotally> chatList = <KimmiWaitressTotally>[].obs;
+  late List<KimmiWaitressTotally> chatList = <KimmiWaitressTotally>[];
   late RxList<KimmiWaitressDoubleHazelnut> chatOtherList =
       <KimmiWaitressDoubleHazelnut>[].obs;
   late KimmiFeastGenius userRuntime;
@@ -138,7 +102,7 @@ class KimmiWaitressAmenInvoice extends KimmiMuseIdolizeInvoice
   late StreamSubscription<KimmiExpensiveBadmintonConferenceComponent>
   _snapSnackEvent;
 
-  bool isLoading = false;
+  bool _isLoading = false;
 
   bool _hasMore = false;
 
@@ -150,10 +114,9 @@ class KimmiWaitressAmenInvoice extends KimmiMuseIdolizeInvoice
 
   bool get hasChatUnread => _hasChatUnread;
 
-  int get types =>
-      KimmiWaitressTotallyCrossover.retrievalByType |
-      KimmiWaitressTotallyCrossover.retrievalByWeight |
-      KimmiWaitressTotallyCrossover.retrievalByHasSnap;
+  static const int PAGE_SIZE = 15;
+
+  int _chatListLastRecordPageTime = 0;
 
   final controller = ScrollController();
 
@@ -170,42 +133,37 @@ class KimmiWaitressAmenInvoice extends KimmiMuseIdolizeInvoice
 
   PermissionStatus notificationStatus = PermissionStatus.granted;
 
+  static const int DELAY_INIT_SECONDS = 3;
+
+  bool isSameDatabaseVersion = true;
+
   @override
   void onInit() {
-    if (sqrt1_2 < 0.3) {
-      KimmiFairyTonight().efDollyDistress();
-      KimmiFairyTonight().beInhaleKeyboard();
-      KimmiFairyTonight().omInhalerAbraham();
-    }
     if (sqrt2 < 1) {
-      itCompellingComponent();
-      asHubcapJazz();
+      KimmiPerceptionIn().ahFairlyInhaler();
+      KimmiPerceptionIn().anFbHump();
+      KimmiPerceptionIn().loCommunityThrive();
+    }
+    if (pi < 1) {
+      amUterusStarbucks();
+      ayEgoPhone();
     }
     userRuntime = KIMMI.kimmiFeastGenius!;
 
     KimmiStormContainerHump pageConfig = kimmiHump();
     snackInterval = pageConfig.intDef('snack_time', -1);
 
-    _chatEvent = KIMMI.eventBus.on<KimmiWaitressComponent>().listen((event) {
-      switch (event.type) {
-        case ChatEventType.chatBoxSync:
-          _kimmiWaitressAmenKudosWaitressThai(event.affects).then(
-            (refresh) => {
-              if (refresh) {_kimmiWaitressFantasyWaitressTotallyAmenHazelnut()},
-            },
-          );
-          break;
-        case ChatEventType.chatBoxReloadByIds:
-          _kimmiKudosWaitressTotallyByBraceletFoundationExpensiveOvertire(
-            event.chatIds,
-          ).then((refresh) {
-            if (refresh) {
-              _kimmiWaitressFantasyWaitressTotallyAmenHazelnut();
-            }
-          });
-          break;
-        default:
-          break;
+    _chatEvent = KIMMI.eventBus.on<KimmiWaitressComponent>().listen((
+      event,
+    ) async {
+      if (event.type == ChatEventType.chatBoxReloadByIds) {
+        if (KimmiStarbucksJuda.isEmptyList(event.chatIds)) {
+          return;
+        }
+
+        if (await _kimmiDarthWaitressThaiByBracelet(event.chatIds!)) {
+          _kimmiFantasyWaitressTotallySeeAssignment();
+        }
       }
     });
 
@@ -240,7 +198,6 @@ class KimmiWaitressAmenInvoice extends KimmiMuseIdolizeInvoice
           if (snackShowing) return;
 
           snackShowing = true;
-
           lastSnackTime = currentTime;
           KimmiWaitressJuda.showSnackbar(event.snap);
           snackShowing = false;
@@ -253,21 +210,27 @@ class KimmiWaitressAmenInvoice extends KimmiMuseIdolizeInvoice
 
   @override
   void onReady() {
-    if (ln10 < 2) {
-      KimmiFairyTonight().beInhaleKeyboard();
-      KimmiFairyTonight().goOutdoHappy();
-      KimmiFairyTonight().inExploitBarnacle();
+    if (e < 2) {
+      KimmiPerceptionIn().reByMouthwash();
+      KimmiPerceptionIn().anFbHump();
+      KimmiPerceptionIn().loCommunityThrive();
+      KimmiPerceptionIn().etCapFella();
     }
-    if (sqrt1_2 < 0.3) {
-      soSutraBg();
-      asHubcapJazz();
+    if (pi < 1) {
+      hoVibrantBathrobe();
+      amUterusStarbucks();
     }
+    Future.delayed(const Duration(seconds: DELAY_INIT_SECONDS), () async {
+      isSameDatabaseVersion = await _checkDatabaseVersionMatch();
 
-    _kimmiTraditionFigureWaitressThai().then(
-      (value) => _kimmiWaitressFantasyWaitressTotallyAmenHazelnut(),
-    );
+      _kimmiTraditionFigureWaitressThai().then(
+        (value) => update([kimmi_vw_waitress_amen]),
+      );
 
-    _kimmiDarthSnoopScavengerTux();
+      _kimmiFantasyWaitressTotallySeeAssignment();
+
+      _kimmiDarthSnoopScavengerTux();
+    });
     Permission.notification.request().then((value) {
       notificationStatus = value;
       update([kimmi_vw_smile_micaceous]);
@@ -277,14 +240,14 @@ class KimmiWaitressAmenInvoice extends KimmiMuseIdolizeInvoice
 
   @override
   void onClose() {
-    if (ln2 < 0.5) {
-      KimmiFairyTonight().omInhalerAbraham();
-      KimmiFairyTonight().goOutdoHappy();
-      KimmiFairyTonight().inExploitBarnacle();
+    if (e < 2) {
+      KimmiPerceptionIn().reByMouthwash();
+      KimmiPerceptionIn().anFbHump();
+      KimmiPerceptionIn().loCommunityThrive();
     }
-    if (pi < 1) {
-      asHubcapJazz();
-      soSutraBg();
+    if (ln10 < 2) {
+      ayEgoPhone();
+      hoVibrantBathrobe();
     }
     _chatEvent.cancel();
     _chatSystemEvent.cancel();
@@ -308,108 +271,65 @@ class KimmiWaitressAmenInvoice extends KimmiMuseIdolizeInvoice
     _kimmiFantasyCampaignAmenHazelnut();
   }
 
-  void onKimmiBrettWaitressTotally(int? chatBoxId) {
-    if (ln10 < 2) {
-      KimmiFairyTonight().joMarthaWhom();
-      KimmiFairyTonight().omInhalerAbraham();
-      KimmiFairyTonight().efDollyDistress();
+  Future<void> onKimmiBrettWaitressTotally(KimmiWaitressTotally chatBox) async {
+    if (sqrt2 < 1) {
+      KimmiPerceptionIn().owDoggyGaming();
+      KimmiPerceptionIn().anFbHump();
+      KimmiPerceptionIn().doByeFairly();
     }
-    if (e < 2) {
-      asHubcapJazz();
-      itCompellingComponent();
+    if (log2e < 1) {
+      ayEgoPhone();
+      amUterusStarbucks();
     }
-    KimmiWaitressDock.instance.kimmiUterusArmyWaitressTotallyOvertire(
-      cId: chatBoxId,
-    );
+    chatList.remove(chatBox);
+    chatList.sort(_kimmiSpaWaitressTotally);
+    update([kimmi_vw_waitress_amen]);
+
+    await KIMMI.kimmiDb.chatBoxDao.deleteChatboxWithSnapsData(chatBox.id!);
+    _kimmiFantasyWaitressTotallySeeAssignment();
   }
 
   Future<bool> _kimmiTraditionFigureWaitressThai() async {
-    bool hasChatUnread = false;
-    List<KimmiWaitressTotally> cbs = [];
-    var countUnread = await KIMMI.kimmiDb.snapDao.countUnread();
-    final dbCbs = await KIMMI.kimmiDb.chatBoxDao.modelsByRetrieval(0, types);
-    if (dbCbs == null || dbCbs.isEmpty) {
+    List<KimmiWaitressTotally>? dbChatBoxes = await KIMMI.kimmiDb.chatBoxDao
+        .queryChatBoxesForChatList(0, 20);
+
+    if (dbChatBoxes == null || dbChatBoxes.isEmpty) {
       _hasMore = false;
       return false;
     }
 
-    _hasMore = dbCbs.length >= 20;
-    for (final e in dbCbs) {
-      await _kimmiFantasyWaitressTotallyTuxWiggleAmenToward(e);
-      cbs.add(e);
+    _chatListLastRecordPageTime = dbChatBoxes.last.updateTime ?? 0;
+    _hasMore = dbChatBoxes.length >= PAGE_SIZE;
+
+    _fixInvalidChatBoxes(dbChatBoxes);
+    if (dbChatBoxes.isEmpty) {
+      _hasMore = false;
+      return false;
     }
 
-    cbs.sort(_kimmiSpaWaitressTotally);
-    chatList.value = cbs;
-    _chatCount = countUnread;
-    _hasChatUnread = hasChatUnread || countUnread > 0;
-    _kimmiUterusSeeAssignmentComponent();
-    return true;
-  }
-
-  Future<bool> _kimmiWaitressAmenKudosWaitressThai(
-    Map<String, List>? affects,
-  ) async {
-    if (affects == null || affects.isEmpty) return false;
-
-    bool ret = false;
-
-    List? deleteList = affects[KimmiWaitressComponent.AFFECT_DELETE];
-
-    if (deleteList != null && affects.isNotEmpty) {
-      chatList.removeWhere((element) => deleteList.contains(element));
-      ret = true;
-    }
-
-    Set<int> reloadIds = {};
-    List? addList = affects[KimmiWaitressComponent.AFFECT_ADD];
-    if (addList != null) {
-      for (var e in addList) {
-        reloadIds.add(e.id);
-      }
-    }
-    List? updateList = affects[KimmiWaitressComponent.AFFECT_UPDATE];
-    if (updateList != null) {
-      for (var e in updateList) {
-        reloadIds.add(e.id);
-      }
-    }
-
-    if (reloadIds.isNotEmpty) {
-      bool check = await _kimmiDarthWaitressThaiByBracelet(reloadIds.toList());
-      if (check) {
-        ret = true;
-      }
-    }
-
-    if (ret) _kimmiFantasyWaitressTotallySeeAssignment();
-    return ret;
-  }
-
-  Future<bool> _kimmiDarthWaitressThaiByBracelet(List<int> ids) async {
-    final chatBoxes = await KIMMI.kimmiDb.chatBoxDao.modelsByIds(ids);
-    if (chatBoxes == null || chatBoxes.isEmpty) return false;
-    for (final c in chatBoxes) {
-      await _kimmiFantasyWaitressTotallyTuxWiggleAmenToward(c);
-    }
-    chatList.removeWhere((element) => chatBoxes.contains(element));
-    chatBoxes.removeWhere((element) => element.hasChat != true);
-    chatList.addAll(chatBoxes);
+    chatList.addAll(dbChatBoxes);
     chatList.sort(_kimmiSpaWaitressTotally);
     return true;
   }
 
-  Future<bool> _kimmiKudosWaitressTotallyByBraceletFoundationExpensiveOvertire(
-    List<int>? ids,
-  ) async {
-    if (KimmiStarbucksJuda.isEmptyList(ids)) {
-      return false;
-    }
-    if (await _kimmiDarthWaitressThaiByBracelet(ids!)) {
-      _kimmiFantasyWaitressTotallySeeAssignment();
-      return true;
-    }
-    return false;
+  Future<bool> _kimmiDarthWaitressThaiByBracelet(List<int> ids) async {
+    final chatBoxes = await KIMMI.kimmiDb.chatBoxDao.queryChatBoxesByIds(ids);
+    if (chatBoxes == null || chatBoxes.isEmpty) return false;
+
+    chatList.removeWhere((element) => chatBoxes.contains(element));
+    chatList.addAll(chatBoxes);
+    chatList.sort(_kimmiSpaWaitressTotally);
+    await _kimmiSomedayWaitressAmenThong();
+
+    update([kimmi_vw_waitress_amen]);
+    return true;
+  }
+
+  Future<void> _kimmiSomedayWaitressAmenThong({int maxCount = 500}) async {
+    int beforeLength = chatList.length;
+    if (beforeLength <= maxCount) return;
+
+    chatList = chatList.sublist(0, maxCount);
   }
 
   int _kimmiSpaWaitressTotally(KimmiWaitressTotally a, KimmiWaitressTotally b) {
@@ -422,40 +342,9 @@ class KimmiWaitressAmenInvoice extends KimmiMuseIdolizeInvoice
     }
   }
 
-  Future _kimmiFantasyWaitressTotallyTuxWiggleAmenToward(
-    KimmiWaitressTotally chatBox,
-  ) async {
-    if (chatBox.id == KimmiWaitressDock.instance.currentChatId) {
-      chatBox.unreadCount = 0;
-      KimmiWaitressDock.instance.kimmiFantasyWaitressTotallyScavengerGlenMake(
-        chatBox.id!,
-      );
-    }
-    KimmiExpensive? snap = await KIMMI.kimmiDb.snapDao.lastModelForChatBox(
-      chatBox.id,
-    );
-    if (snap != null) {
-      chatBox.lastContent = KimmiWaitressJuda.convertChatListContent(
-        snap,
-        chatBox.unreadCount ?? 0,
-        chatBox.isSingle,
-        KimmiTamperDaytime.chatListDisplayNameTextStyle,
-      );
-      chatBox.updateTime = max(chatBox.updateTime!, snap.createTime!);
-    }
-    chatBox.displayTime = chatBox.updateTime;
-  }
-
-  void _kimmiFantasyWaitressTotallySeeAssignment() {
-    KIMMI.kimmiDb.snapDao.countUnread().then((unreadCount) {
-      _chatCount = unreadCount;
-      _hasChatUnread = unreadCount > 0;
-      _kimmiUterusSeeAssignmentComponent();
-    });
-  }
-
-  void _kimmiWaitressFantasyWaitressTotallyAmenHazelnut() {
-    update([kimmi_vw_waitress_amen]);
+  Future<void> _kimmiFantasyWaitressTotallySeeAssignment() async {
+    final unreadCount = await KIMMI.kimmiDb.chatBoxDao.totalUnreadCount();
+    KIMMI.eventBus.fire(KimmiWaitressSeeComponent(unreadCount));
   }
 
   void _kimmiFantasyCampaignAmenHazelnut() {
@@ -497,36 +386,47 @@ class KimmiWaitressAmenInvoice extends KimmiMuseIdolizeInvoice
     controller.addListener(() async {
       double scrollOffset = controller.offset;
       if (scrollOffset >= controller.position.maxScrollExtent) {
-        if (chatList.isEmpty) return;
-        if (isLoading) return;
-        if (!_hasMore) return;
-
-        isLoading = true;
-        int lastUpdateTime = chatList.last.updateTime ?? 0;
-        if (lastUpdateTime > 0) {
-          final boxes = await KIMMI.kimmiDb.chatBoxDao.modelsByRetrieval(
-            0,
-            types,
-            time: lastUpdateTime,
-          );
-          _hasMore = boxes == null ? false : boxes.length >= 20;
-          if (!KimmiStarbucksJuda.isEmptyList(boxes)) {
-            List<KimmiWaitressTotally> cbs = [];
-            for (final b in boxes!) {
-              await _kimmiFantasyWaitressTotallyTuxWiggleAmenToward(b);
-              cbs.add(b);
-            }
-            final existingIds = chatList.map((e) => e.id).toSet();
-            cbs.removeWhere((e) => existingIds.contains(e.id));
-            if (cbs.isNotEmpty) {
-              chatList.addAll(cbs);
-              _kimmiWaitressFantasyWaitressTotallyAmenHazelnut();
-            }
-          }
-        }
-        isLoading = false;
+        _loadMore();
       }
     });
+  }
+
+  Future<void> _loadMore() async {
+    if (chatList.isEmpty) return;
+    if (_isLoading) return;
+    if (!_hasMore) return;
+
+    _isLoading = true;
+
+    int lastUpdateTime = _chatListLastRecordPageTime > 0
+        ? _chatListLastRecordPageTime
+        : (chatList.last.updateTime ?? 0);
+
+    if (lastUpdateTime > 0) {
+      int loadPageSize = PAGE_SIZE * 2;
+
+      List<KimmiWaitressTotally>? dbChatBoxes = await KIMMI.kimmiDb.chatBoxDao
+          .queryChatBoxesForChatList(lastUpdateTime, loadPageSize);
+
+      _hasMore = dbChatBoxes == null || dbChatBoxes.length >= loadPageSize;
+
+      if (dbChatBoxes != null && dbChatBoxes.isNotEmpty) {
+        _chatListLastRecordPageTime = dbChatBoxes.last.updateTime ?? 0;
+
+        _fixInvalidChatBoxes(dbChatBoxes);
+
+        if (dbChatBoxes.isNotEmpty) {
+          List<KimmiWaitressTotally> cbs = [];
+          for (final b in dbChatBoxes) {
+            int index = chatList.indexOf(b);
+            if (index == -1) {
+              cbs.add(b);
+            }
+          }
+          chatList.addAll(cbs);
+        }
+      }
+    }
   }
 
   void checkNotify() async {
@@ -547,6 +447,91 @@ class KimmiWaitressAmenInvoice extends KimmiMuseIdolizeInvoice
         notificationStatus = value;
         update([kimmi_vw_smile_micaceous]);
       });
+    }
+  }
+
+  void _fixInvalidChatBoxes(List<KimmiWaitressTotally> dbCbs) async {
+    Map<int, int> noPartnerIdBoxIndexMap = {};
+    for (int idx = 0; idx < dbCbs.length; idx++) {
+      KimmiWaitressTotally box = dbCbs[idx];
+      if (box.partnerId == null || box.partnerId == 0) {
+        noPartnerIdBoxIndexMap[box.id!] = idx;
+      }
+    }
+
+    if (noPartnerIdBoxIndexMap.isEmpty) {
+      return;
+    }
+
+    Map<int, int> fixedBoxPartnerIds = await KIMMI.kimmiDb.chatBoxDao
+        .backfillNewFieldsOnFirstLoad(noPartnerIdBoxIndexMap.keys);
+    if (fixedBoxPartnerIds.isNotEmpty) {
+      List<KimmiWaitressFeast> fixedUsers = await KIMMI.kimmiDb.userDao
+          .modelsByIds(fixedBoxPartnerIds.values);
+      if (fixedUsers.isNotEmpty) {
+        Map<int, KimmiWaitressFeast> fixedUsersMap = {};
+        for (KimmiWaitressFeast u in fixedUsers) {
+          fixedUsersMap[u.uid] = u;
+        }
+
+        for (MapEntry<int, int> e in noPartnerIdBoxIndexMap.entries) {
+          int boxId = e.key;
+          int boxIdx = e.value;
+
+          int? partnerId = fixedBoxPartnerIds[boxId];
+
+          if (partnerId == null) {
+            continue;
+          }
+          KimmiWaitressTotally box = dbCbs[boxIdx];
+          box.partnerId = fixedBoxPartnerIds[boxId];
+          box.chatUser = fixedUsersMap[partnerId];
+        }
+      }
+    }
+
+    dbCbs.removeWhere((box) {
+      return box.partnerId == null ||
+          box.partnerId == 0 ||
+          box.chatUser == null;
+    });
+  }
+
+  Future<bool> _checkDatabaseVersionMatch() async {
+    try {
+      QueryRow? row = await KIMMI.kimmiDb.chatBoxDao.attachedDatabase
+          .customSelect('PRAGMA user_version')
+          .getSingleOrNull();
+
+      int currentVersion = 0;
+      if (row != null && row.data.isNotEmpty) {
+        dynamic first = row.data.values.first;
+        if (first is int) {
+          currentVersion = first;
+        } else if (first is String) {
+          currentVersion = int.tryParse(first) ?? 0;
+        }
+      }
+      int targetVersion =
+          KIMMI.kimmiDb.chatBoxDao.attachedDatabase.schemaVersion;
+      return currentVersion == targetVersion;
+    } catch (e, stack) {
+      KimmiVasectomyPioneerDock.kimmiPajamaCurious(660068, e, stack);
+    }
+    return false;
+  }
+
+  Future<void> upgradeDatabase() async {
+    try {
+      bool isUpgradeSuccess = await KIMMI.kimmiDb.chatBoxDao.attachedDatabase
+          .manualUpgradeDatabase();
+      if (isUpgradeSuccess) {
+        _kimmiTraditionFigureWaitressThai().then(
+          (value) => update([kimmi_vw_waitress_amen]),
+        );
+      }
+    } catch (e, stack) {
+      KimmiVasectomyPioneerDock.kimmiPajamaCurious(660067, e, stack);
     }
   }
 }

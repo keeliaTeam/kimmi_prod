@@ -1,4 +1,4 @@
-package com.kimmi.imk;
+package com.kimmi.imk
 
 import android.os.Bundle
 import com.android.installreferrer.api.InstallReferrerClient
@@ -57,6 +57,27 @@ class MainActivity : FlutterActivity() {
                     openNotificationSettings()
                     result.success(null)
                 } catch (e: Exception) {
+                }
+            } else if (call.method.equals("getLatestCrashLog")) {
+                try {
+                    val log = CrashHandler.instance.getLatestCrashLog()
+                    result.success(log)
+                } catch (e: Exception) {
+                    result.error("GET_LOG_FAILED", e.message, null)
+                }
+            } else if (call.method.equals("clearCrashLogs")) {
+                try {
+                    val success = CrashHandler.instance.clearCrashLogs()
+                    result.success(success)
+                } catch (e: Exception) {
+                    result.error("CLEAR_LOGS_FAILED", e.message, null)
+                }
+            } else if (call.method.equals("triggerTestCrash")) {
+                try {
+                    CrashHandler.instance.triggerTestCrash(this)
+                    result.success(true)
+                } catch (e: Exception) {
+                    result.error("TEST_CRASH_FAILED", e.message, null)
                 }
             } else {
                 result.notImplemented()

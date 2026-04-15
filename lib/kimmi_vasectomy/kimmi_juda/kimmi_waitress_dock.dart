@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'dart:math';
 import 'package:kimmi/kimmi_vasectomy/kimmi_component/kimmi_waitress_component.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_storm/kimmi_topless.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_storm/kimmi_storm_ernie.dart';
@@ -25,6 +26,7 @@ import '../kimmi_component/kimmi_waitress_snoop_component.dart';
 import '../kimmi_component/kimmi_expensive_falcon_component.dart';
 import '../kimmi_storm/kimmi_waitress_feast.dart';
 import '../kimmi_virgin/kimmi_foreign_dylan.dart';
+import '../kimmi_floppy/kimmi_waitress_amen_invoice.dart';
 import '../kimmi_curvy/kimmi_vasectomy_pioneer_dock.dart';
 import '../kimmi_tonight/kimmi_defrost.dart';
 import 'kimmi_waitress_expensive_uterus_terminator.dart';
@@ -44,10 +46,11 @@ class KimmiWaitressDock {
 
   static KimmiExpensiveUterusTerminator sendQueue =
       KimmiExpensiveUterusTerminator();
-  late StreamSubscription<Sync> imSync;
-  late StreamSubscription<SyncNotify> imNotify;
-  late StreamSubscription<SysNotify> systemNotify;
-  late StreamSubscription _authSubscription;
+  StreamSubscription<Sync>? imSync;
+  StreamSubscription<SyncNotify>? imNotify;
+  StreamSubscription<SysNotify>? systemNotify;
+  StreamSubscription? _authSubscription;
+  Timer? _imSyncDelayTimer;
 
   int _currentChatId = 0;
 
@@ -60,23 +63,12 @@ class KimmiWaitressDock {
 
   void init() {
     imSync = KIMMI.listen<Sync>((event) {
-      if (event.type == SyncType.CHATBOX) {
-        kimmiFellowWaitressTotallyOvertire(event);
-        return;
-      }
       if (event.type == SyncType.SNAP) {
-        kimmiFellowExpensiveOvertire(event);
+        _kimmiFellowExpensiveOvertireBloody(event);
       }
     });
 
     imNotify = KIMMI.listen<SyncNotify>((event) {
-      if ((event.types & (1 << SyncType.CHATBOX.value)) != 0) {
-        kimmiUterusWaitressTotallyOvertire(
-          SyncType.CHATBOX,
-          Int64(KIMMI.kimmiPhil.userChatBoxLastSyncKey(KIMMI.uid())),
-        );
-        return;
-      }
       if ((event.types & (1 << SyncType.SNAP.value)) != 0) {
         kimmiUterusWaitressTotallyOvertire(
           SyncType.SNAP,
@@ -90,14 +82,23 @@ class KimmiWaitressDock {
     });
 
     _authSubscription = KIMMI.listen<AuthRsp>((event) {
-      _initSyncMsg();
+      _imSyncDelayTimer = Timer(
+        const Duration(
+          milliseconds:
+              KimmiWaitressAmenInvoice.DELAY_INIT_SECONDS * 1000 + 500,
+        ),
+        () {
+          _initSyncMsg();
+        },
+      );
     });
   }
 
   void dispose() {
-    imSync.cancel();
-    imNotify.cancel();
-    _authSubscription.cancel();
+    imSync?.cancel();
+    imNotify?.cancel();
+    _authSubscription?.cancel();
+    _imSyncDelayTimer?.cancel();
   }
 
   void kimmiFellowWaitressTotallyOvertire(Sync sync) async {
@@ -197,12 +198,23 @@ class KimmiWaitressDock {
     l.updateTime = p.updateTime.toInt();
     l.additionalInfo = p.additionalInfo;
     l.desc = p.description;
-    l.hasChat = p.weight > 0;
+    l.hasChat = true;
 
     l.members = [];
-    p.members.forEach((e) {
+    final currentUid = KIMMI.uid();
+    for (var e in p.members) {
       l.members?.add(convertUserProto(e));
-    });
+      final uid = e.uid.toInt();
+      if (uid != currentUid) {
+        l.partnerId = uid;
+
+        l.chatUser = KimmiWaitressFeast()
+          ..uid = uid
+          ..nickName = e.nickName
+          ..avatarUrl = e.avatarUrl;
+      }
+    }
+
     return l;
   }
 
@@ -275,27 +287,6 @@ class KimmiWaitressDock {
     );
   }
 
-  Future<KimmiExpensive?> createSnap(KimmiExpensive snap) async {
-    final req = CreateSnapReq.create();
-    if (snap.chatBoxId != null) req.chatboxId = Int64(snap.chatBoxId!);
-    if (snap.type != null) req.snapType = Snap_SnapType.valueOf(snap.type!)!;
-    if (snap.textContent != null) req.textContent = snap.textContent!;
-    if (snap.jsonContent != null) req.jsonContent = snap.jsonContent!;
-    if (snap.image?.id != null) req.imgId = Int64(snap.image!.id!);
-    if (snap.video?.id != null) req.videoId = Int64(snap.video!.id!);
-    if (snap.voice?.id != null) req.voiceId = Int64(snap.voice!.id!);
-    if (snap.localId != null) req.localId = Int64(snap.localId!);
-    if (snap.repliedSnapId != null)
-      req.repliedSnapId = Int64(snap.repliedSnapId!);
-
-    CreateSnapRsp? resp = await KIMMI.socket.sendWithReturn<CreateSnapRsp>(req);
-    if (resp == null) {
-      return null;
-    }
-    snap.id = resp.snapId.toInt();
-    return snap;
-  }
-
   void kimmiSacredFellowPeak(List<KimmiExpensive>? snaps) {
     if (KimmiStarbucksJuda.isEmptyList(snaps)) return;
     for (var e in snaps!) {
@@ -323,7 +314,7 @@ class KimmiWaitressDock {
     }
   }
 
-  void kimmiFellowExpensiveOvertire(Sync sync) async {
+  void _kimmiFellowExpensiveOvertire(Sync sync) async {
     Int64 syncKey = Int64(KIMMI.kimmiPhil.userSnapLastSyncKey(KIMMI.uid()));
     if (sync.baseKey != syncKey) {
       kimmiUterusWaitressTotallyOvertire(SyncType.SNAP, syncKey);
@@ -410,7 +401,9 @@ class KimmiWaitressDock {
       ),
     );
 
-    final chatBoxes = await KIMMI.kimmiDb.chatBoxDao.modelsByIds(cIds.toList());
+    final chatBoxes = await KIMMI.kimmiDb.chatBoxDao.queryChatBoxesByIds(
+      cIds.toList(),
+    );
     chatBoxes?.forEach((c) {
       cIds.remove(c.id);
     });
@@ -429,6 +422,247 @@ class KimmiWaitressDock {
       } catch (e, stack) {
         KimmiVasectomyPioneerDock.kimmiPajamaCurious(10083, e, stack);
       }
+    }
+  }
+
+  bool _isSnapBaseKeyAligned(Sync sync, Int64 localKey) {
+    if (sync.baseKey == localKey) {
+      return true;
+    }
+    kimmiUterusWaitressTotallyOvertire(SyncType.SNAP, localKey);
+    return false;
+  }
+
+  void _kimmiFellowExpensiveOvertireBloody(Sync sync) async {
+    final Int64 localKey = Int64(
+      KIMMI.kimmiPhil.userSnapLastSyncKey(KIMMI.uid()),
+    );
+
+    if (!_isSnapBaseKeyAligned(sync, localKey)) return;
+
+    KIMMI.kimmiPhil.saveUserSnapLastSyncKey(KIMMI.uid(), sync.lastKey.toInt());
+
+    await _kimmiFellowExpensiveBloody(sync);
+  }
+
+  _kimmiFellowExpensiveBloody(Sync sync) async {
+    List<KimmiExpensive> addSnaps = _unpackSnaps(sync.add);
+    if (addSnaps.isEmpty) return;
+    await KIMMI.kimmiDb.snapDao.saveOrUpdateModels(addSnaps);
+
+    Map<int, KimmiExpensive> latestSnapsByCid = {};
+    Map<int, KimmiExpensive> friendSnapsByCid = {};
+    Map<int, int> unreadIncrements = {};
+
+    for (KimmiExpensive snap in addSnaps) {
+      KimmiExpensive? current = latestSnapsByCid[snap.chatBoxId];
+
+      if (current == null ||
+          (snap.createTime ?? 0) >= (current.createTime ?? 0)) {
+        latestSnapsByCid[snap.chatBoxId!] = snap;
+      }
+
+      if (snap.owner != null && snap.owner != KIMMI.uid()) {
+        unreadIncrements.update(
+          snap.chatBoxId!,
+          (value) => value + 1,
+          ifAbsent: () => 1,
+        );
+        friendSnapsByCid[snap.owner!] = snap;
+      }
+    }
+
+    List<KimmiWaitressTotally> existingChaBoxList =
+        await KIMMI.kimmiDb.chatBoxDao.queryChatBoxesByIds(
+          latestSnapsByCid.keys,
+        ) ??
+        [];
+    Map<int, KimmiWaitressTotally> existingChatBoxMap = {};
+    for (var e in existingChaBoxList) existingChatBoxMap[e.id!] = e;
+
+    Map<int, KimmiWaitressFeast> userMap = await _collectSaveUser(
+      existingChaBoxList,
+    );
+
+    Iterable<int> allChatBoxIds = latestSnapsByCid.keys;
+
+    List<KimmiWaitressTotally> updateChatBoxes = [];
+
+    List<KimmiWaitressTotally> insertChatBoxes = [];
+    List<KimmiWaitressFeast> insertUsers = [];
+
+    List<int> toBeSyncChatBoxIds = [];
+
+    for (int boxId in allChatBoxIds) {
+      KimmiWaitressTotally? box = existingChatBoxMap[boxId];
+      if (box != null) {
+        _updateChatboxInfo(box, unreadIncrements, latestSnapsByCid);
+
+        if (_fixWhenNoPartnerId(box, friendSnapsByCid, boxId)) {
+          updateChatBoxes.add(box);
+        } else {
+          toBeSyncChatBoxIds.add(boxId);
+        }
+      } else {
+        KimmiExpensive? fridSnap = friendSnapsByCid[boxId];
+        if (fridSnap != null &&
+            fridSnap.ownerName != null &&
+            fridSnap.ownerHead != null) {
+          KimmiWaitressTotally box = _newChatboxWithFriendSnap(boxId, fridSnap);
+          _updateChatboxInfo(box, unreadIncrements, latestSnapsByCid);
+          insertChatBoxes.add(box);
+
+          if (!userMap.containsKey(fridSnap.owner)) {
+            KimmiWaitressFeast newUser = _newChatUserWithFriendSnap(
+              box,
+              fridSnap,
+            );
+            insertUsers.add(newUser);
+          }
+        } else {
+          toBeSyncChatBoxIds.add(boxId);
+        }
+      }
+    }
+
+    if (toBeSyncChatBoxIds.isNotEmpty) {
+      List<KimmiWaitressTotally> netBoxes = await batchGetChatBoxInfo(
+        cIds: toBeSyncChatBoxIds.toList(),
+      );
+      for (KimmiWaitressTotally box in netBoxes) {
+        _updateChatboxInfo(box, unreadIncrements, latestSnapsByCid);
+
+        insertChatBoxes.add(box);
+
+        if (box.members != null) {
+          int meUid = KIMMI.uid();
+          for (KimmiWaitressFeast u in box.members!) {
+            if (u.uid != meUid) {
+              if (!userMap.containsKey(u.uid)) {
+                insertUsers.add(u);
+              }
+            }
+          }
+        }
+      }
+    }
+
+    Set<int> uiReloadBoxIds = {};
+
+    if (updateChatBoxes.isNotEmpty) {
+      KIMMI.kimmiDb.chatBoxDao.updateChatBoxes(updateChatBoxes);
+      uiReloadBoxIds.addAll(updateChatBoxes.map((e) => e.id!).toSet());
+    }
+
+    if (insertChatBoxes.isNotEmpty) {
+      KIMMI.kimmiDb.chatBoxDao.saveOrUpdateChatBoxes(insertChatBoxes);
+      uiReloadBoxIds.addAll(insertChatBoxes.map((e) => e.id!).toSet());
+    }
+
+    if (insertUsers.isNotEmpty) {
+      KIMMI.kimmiDb.userDao.saveOrUpdateModels(insertUsers);
+    }
+
+    _emitSnapSyncEvents(addSnaps, uiReloadBoxIds);
+  }
+
+  List<KimmiExpensive> _unpackSnaps(Iterable<dynamic> entries) {
+    List<KimmiExpensive> snaps = <KimmiExpensive>[];
+    for (final any in entries) {
+      final snapProto = KimmiCadaverHead.unpackMessage(Snap.create(), any);
+      if (snapProto == null) {
+        continue;
+      }
+      final snap = convertChatSnapProto(snapProto);
+      snaps.add(snap);
+    }
+    return snaps;
+  }
+
+  KimmiWaitressFeast _newChatUserWithFriendSnap(
+    KimmiWaitressTotally box,
+    KimmiExpensive fridSnap,
+  ) {
+    KimmiWaitressFeast newUser = KimmiWaitressFeast()
+      ..uid = box.partnerId!
+      ..nickName = fridSnap.ownerName!
+      ..avatarUrl = fridSnap.ownerHead!;
+    return newUser;
+  }
+
+  KimmiWaitressTotally _newChatboxWithFriendSnap(
+    int boxId,
+    KimmiExpensive fridSnap,
+  ) {
+    KimmiWaitressTotally box = KimmiWaitressTotally()
+      ..id = boxId
+      ..type = Chatbox_Type.SINGLE.value
+      ..owner = fridSnap.owner
+      ..unreadCount = 0
+      ..updateTime = fridSnap.createTime
+      ..hasChat = true
+      ..lastSnapType = fridSnap.type
+      ..lastSnapTextContent = fridSnap.textContent
+      ..lastSnapJsonContent = fridSnap.jsonContent
+      ..lastSnapCreateTime = fridSnap.createTime
+      ..partnerId = fridSnap.owner;
+    return box;
+  }
+
+  bool _fixWhenNoPartnerId(
+    KimmiWaitressTotally box,
+    Map<int, KimmiExpensive> friendSnapsByCid,
+    int boxId,
+  ) {
+    if (box.partnerId == null || box.partnerId == 0) {
+      KimmiExpensive? fridSnap = friendSnapsByCid[boxId];
+      if (fridSnap != null) {
+        box.partnerId = fridSnap.owner;
+        return true;
+      } else {
+        return false;
+      }
+    }
+    return true;
+  }
+
+  void _updateChatboxInfo(
+    KimmiWaitressTotally box,
+    Map<int, int> unreadIncrements,
+    Map<int, KimmiExpensive> latestSnapsByCid,
+  ) {
+    final unreadCount = unreadIncrements[box.id] ?? 0;
+    final latestSnap = latestSnapsByCid[box.id];
+
+    box.unreadCount = (box.unreadCount ?? 0) + unreadCount;
+    box.lastSnapTextContent = latestSnap?.textContent;
+    box.lastSnapJsonContent = latestSnap?.jsonContent;
+    box.lastSnapType = latestSnap?.type;
+    box.lastSnapCreateTime = latestSnap?.createTime;
+    box.updateTime = (latestSnap != null && box.updateTime != null)
+        ? max(latestSnap.createTime!, box.updateTime!)
+        : (latestSnap?.createTime ?? box.updateTime);
+  }
+
+  void _emitSnapSyncEvents(
+    List<KimmiExpensive> syncSnaps,
+    Set<int> reloadChatBoxIds,
+  ) {
+    Map<String, List<KimmiExpensive>> affects = {
+      KimmiWaitressComponent.AFFECT_ADD: syncSnaps,
+    };
+
+    KIMMI.eventBus.fire(
+      KimmiWaitressComponent(ChatEventType.snapSync, affects: affects),
+    );
+
+    if (reloadChatBoxIds.isNotEmpty) {
+      KIMMI.eventBus.fire(
+        KimmiWaitressComponent(
+          ChatEventType.chatBoxReloadByIds,
+          chatIds: reloadChatBoxIds.toList(),
+        ),
+      );
     }
   }
 
@@ -463,6 +697,28 @@ class KimmiWaitressDock {
     }
 
     return l;
+  }
+
+  Future<Map<int, KimmiWaitressFeast>> _collectSaveUser(
+    List<KimmiWaitressTotally> existingChaBoxList,
+  ) async {
+    Set<int> needQueryUserIds = {};
+    for (final box in existingChaBoxList) {
+      if (box.partnerId != null && box.partnerId != 0) {
+        needQueryUserIds.add(box.partnerId!);
+      }
+    }
+
+    Map<int, KimmiWaitressFeast> userMap = {};
+    if (needQueryUserIds.isNotEmpty) {
+      final userList = await KIMMI.kimmiDb.userDao.modelsByIds(
+        needQueryUserIds.toList(),
+      );
+      for (final user in userList) {
+        userMap[user.uid] = user;
+      }
+    }
+    return userMap;
   }
 
   KimmiStormErnie convertImageProto(ImOB.Image p) {
@@ -730,5 +986,39 @@ class KimmiWaitressDock {
         Int64(KIMMI.kimmiPhil.userSnapLastSyncKey(KIMMI.uid())),
       );
     }
+  }
+
+  Future<void> kimmiFantasyWaitressTotallySigning(
+    KimmiWaitressFeast? user,
+  ) async {
+    if (user == null) return;
+    await KIMMI.kimmiDb.chatBoxDao.updateChatBoxMember(user);
+  }
+
+  Future<CreateSnapRsp?> createSnap(KimmiExpensive snap) async {
+    final req = CreateSnapReq.create();
+    if (snap.chatBoxId != null) req.chatboxId = Int64(snap.chatBoxId!);
+    if (snap.type != null) req.snapType = Snap_SnapType.valueOf(snap.type!)!;
+    if (snap.textContent != null) req.textContent = snap.textContent!;
+    if (snap.jsonContent != null) req.jsonContent = snap.jsonContent!;
+    if (snap.image?.id != null) req.imgId = Int64(snap.image!.id!);
+    if (snap.video?.id != null) req.videoId = Int64(snap.video!.id!);
+    if (snap.voice?.id != null) req.voiceId = Int64(snap.voice!.id!);
+    if (snap.localId != null) req.localId = Int64(snap.localId!);
+    if (snap.repliedSnapId != null)
+      req.repliedSnapId = Int64(snap.repliedSnapId!);
+    if (snap.toUid != null) req.toUid = Int64(snap.toUid!);
+
+    return await KIMMI.socket.sendWithReturn<CreateSnapRsp>(
+      req,
+      autoToastOnError: true,
+    );
+  }
+
+  Future<void> kimmiWaitressPeakProtectorMarvel(int cId) async {
+    await KIMMI.kimmiDb.chatBoxDao.resetModelUnread(cId);
+    KIMMI.eventBus.fire(
+      KimmiWaitressComponent(ChatEventType.chatBoxReloadByIds, chatIds: [cId]),
+    );
   }
 }

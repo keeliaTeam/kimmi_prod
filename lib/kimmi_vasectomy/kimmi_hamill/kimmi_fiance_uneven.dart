@@ -81,6 +81,7 @@ class _KimmiFianceUnevenViking extends State<KimmiFianceUneven> {
     return Container(
       width: Get.width,
       height: 360,
+      margin: EdgeInsets.only(bottom: Get.mediaQuery.padding.bottom),
       padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 20),
       decoration: const BoxDecoration(
         borderRadius: KimmiPalate.kimmiSubstituteObjectiveStirTummy,

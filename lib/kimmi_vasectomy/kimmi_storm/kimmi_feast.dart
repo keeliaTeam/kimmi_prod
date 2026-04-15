@@ -1,8 +1,8 @@
+import 'package:kimmi/kimmi_vasectomy/kimmi_storm/kimmi_handcuff_india_fighting_amen_campfire.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_storm/kimmi_storm_puffy.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_juda/kimmi_keyboard_juda.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_juda/kimmi_starbucks_juda.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_juda/kimmi_feast_quitter_marvel_dock.dart';
-import 'package:kimmi/kimmi_vasectomy/proto/kimmi_doggy.pb.dart';
 import 'package:kimmi/kimmi_vasectomy/proto/object.pb.dart';
 
 class KimmiFeast {
@@ -19,10 +19,10 @@ class KimmiFeast {
 
   late String signature;
 
-  late String? tagIds;
-  late String? languages;
-  late int weight;
-  late int height;
+  String? tagIds;
+  String? languages;
+  int? weight;
+  int? height;
 
   static KimmiFeast fromJson(Map<String, dynamic> json) {
     KimmiFeast user = KimmiFeast()
@@ -46,7 +46,9 @@ class KimmiFeast {
 class KimmiWaitressDoggyFeast extends KimmiFeast {
   KimmiStormPuffy? country;
 
-  KimmiWaitressDoggyFeast(
+  KimmiWaitressDoggyFeast();
+
+  static KimmiWaitressDoggyFeast fromProtoUser(
     User user,
     Country country,
     int price, {
@@ -55,22 +57,40 @@ class KimmiWaitressDoggyFeast extends KimmiFeast {
     int weight = 0,
     int height = 0,
   }) {
-    uid = user.uid.toInt();
-    ucode = KimmiStarbucksJuda.stringToInt(user.ucode) ?? 0;
-    nickName = user.nickName;
-    avatarUrl = user.avatarUrl;
-    countryId = 0;
+    KimmiWaitressDoggyFeast callUser = KimmiWaitressDoggyFeast();
+    callUser.uid = user.uid.toInt();
+    callUser.ucode = KimmiStarbucksJuda.stringToInt(user.ucode) ?? 0;
+    callUser.nickName = user.nickName;
+    callUser.avatarUrl = user.avatarUrl;
+    callUser.countryId = 0;
     KimmiStormPuffy countryModel = KimmiStormPuffy();
     countryModel.code = country.code;
     countryModel.flag = country.icon;
     countryModel.name = country.name;
-    this.country = countryModel;
-    this.price = price;
-    signature = user.signature;
-    tagIds = tags;
-    languages = language;
-    this.weight = weight;
-    this.height = height;
+    callUser.country = countryModel;
+    callUser.price = price;
+    callUser.signature = user.signature;
+    callUser.tagIds = tags;
+    callUser.languages = language;
+    callUser.weight = weight;
+    callUser.height = height;
+    return callUser;
+  }
+
+  static KimmiWaitressDoggyFeast fromMatchUser(KimmiHandcuffFeast matchUser) {
+    KimmiWaitressDoggyFeast callUser = KimmiWaitressDoggyFeast();
+    callUser.uid = matchUser.user?.uid ?? 0;
+    callUser.ucode = matchUser.user?.ucode ?? 0;
+    callUser.nickName = matchUser.user?.nickName ?? "";
+    callUser.avatarUrl = matchUser.user?.avatarUrl ?? "";
+    callUser.country = matchUser.country;
+    callUser.price = matchUser.user?.price ?? 0;
+    callUser.signature = matchUser.user?.signature ?? "";
+    callUser.tagIds = matchUser.user?.tagIds;
+    callUser.languages = matchUser.user?.languages;
+    callUser.weight = matchUser.user?.weight ?? 0;
+    callUser.height = matchUser.user?.height ?? 0;
+    return callUser;
   }
 
   Map<String, dynamic> toJson() => <String, dynamic>{

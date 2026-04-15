@@ -1,5 +1,5 @@
 import 'dart:math';
-import 'kimmi_tasty_tootsie.dart';
+import 'kimmi_fault_moore.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_floppy/kimmi_incubator_healer.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_juda/kimmi_keyboard_juda.dart';
 import 'package:flutter_inappwebview/flutter_inappwebview.dart';
@@ -7,80 +7,58 @@ import 'package:get/get.dart';
 import 'package:get/get_rx/get_rx.dart';
 
 class KimmiInkInvoice extends GetxController {
-  double mmBiteH1_ = 17;
-  bool hiSmileHandcuff_ = false;
-  String omContainerColor_ = "";
-  bool si5Wart_ = true;
-  bool reFederalOutsource_ = false;
-  double anAdequateComponent_ = 30;
-  bool ayTimingC1_ = true;
+  bool myMedCoco_ = true;
+  bool laSutraIo_ = false;
+  int joBasketVasectomy_ = 0;
+  int heUterusMichelle_ = 0;
+  bool woScrapCurious_ = false;
+  String goGoGranola_ = "";
+  bool okNoodleGroovy_ = false;
+  bool mmTackyPenicillin_ = true;
 
-  void hoInvestorBerry() {
-    mmBiteH1_ = mmBiteH1_ + anAdequateComponent_;
-    hiSmileHandcuff_ = reFederalOutsource_ && si5Wart_;
+  void anCompellingDraft() {
+    goGoGranola_ = goGoGranola_.toUpperCase();
+    joBasketVasectomy_ = joBasketVasectomy_ * heUterusMichelle_;
+    joBasketVasectomy_ = 60;
+    heUterusMichelle_ = 50;
+    goGoGranola_ = goGoGranola_.toUpperCase();
 
-    omContainerColor_ = omContainerColor_.toUpperCase();
-    if (si5Wart_) {
-      ayTimingC1_ = !reFederalOutsource_;
-    }
-    mmBiteH1_ = mmBiteH1_ + anAdequateComponent_;
-    omContainerColor_ = omContainerColor_.toUpperCase();
-    hiSmileHandcuff_ = reFederalOutsource_ && si5Wart_;
-    omContainerColor_ = omContainerColor_.toUpperCase();
+    goGoGranola_ = goGoGranola_.toUpperCase();
+    goGoGranola_ = goGoGranola_.toUpperCase();
+    joBasketVasectomy_ = joBasketVasectomy_ * heUterusMichelle_;
+    joBasketVasectomy_ = joBasketVasectomy_ * heUterusMichelle_;
+    woScrapCurious_ = myMedCoco_ && laSutraIo_;
   }
 
-  void woExpandChan() {
-    mmBiteH1_ = 9;
-    anAdequateComponent_ = 92;
-    mmBiteH1_ = 6;
-    anAdequateComponent_ = 70;
-    if (hiSmileHandcuff_) {
-      si5Wart_ = !reFederalOutsource_;
+  void faFalconContestant() {
+    if (joBasketVasectomy_ > heUterusMichelle_) {
+      joBasketVasectomy_ = joBasketVasectomy_ + heUterusMichelle_;
     }
 
-    mmBiteH1_ = 2;
-    anAdequateComponent_ = 28;
+    myMedCoco_ = okNoodleGroovy_ && woScrapCurious_;
 
-    hiSmileHandcuff_ = reFederalOutsource_ && ayTimingC1_;
-    mmBiteH1_ = mmBiteH1_ + anAdequateComponent_;
+    joBasketVasectomy_ = 13;
+    heUterusMichelle_ = 59;
 
-    mmBiteH1_ = 24;
-    anAdequateComponent_ = 10;
-    omContainerColor_ = omContainerColor_.toUpperCase();
-    omContainerColor_ = omContainerColor_.toUpperCase();
-    mmBiteH1_ = 76;
-    anAdequateComponent_ = 17;
-
-    mmBiteH1_ = 2;
-    anAdequateComponent_ = 51;
-    if (mmBiteH1_ > anAdequateComponent_) {
-      mmBiteH1_ = mmBiteH1_ - anAdequateComponent_;
-    }
+    goGoGranola_ = goGoGranola_.toUpperCase();
   }
 
-  void anMichelleWhale() {
-    omContainerColor_ = omContainerColor_.toUpperCase();
-    ayTimingC1_ = reFederalOutsource_ || hiSmileHandcuff_;
-    omContainerColor_ = omContainerColor_.toUpperCase();
-
-    reFederalOutsource_ = ayTimingC1_ && si5Wart_;
-
-    reFederalOutsource_ = hiSmileHandcuff_ || ayTimingC1_;
-
-    omContainerColor_ = omContainerColor_.toUpperCase();
-    mmBiteH1_ = 50;
-    anAdequateComponent_ = 29;
-    omContainerColor_ = omContainerColor_.toUpperCase();
-
-    omContainerColor_ = omContainerColor_.toUpperCase();
-    omContainerColor_ = omContainerColor_.toUpperCase();
-    mmBiteH1_ = 55;
-    anAdequateComponent_ = 87;
-    if (si5Wart_ && hiSmileHandcuff_ && ayTimingC1_) {
-      si5Wart_ = !si5Wart_;
-      hiSmileHandcuff_ = si5Wart_;
-      ayTimingC1_ = si5Wart_;
+  void soSwallowCreek() {
+    if (mmTackyPenicillin_) {
+      laSutraIo_ = !okNoodleGroovy_;
     }
+    goGoGranola_ = goGoGranola_.toUpperCase();
+    if (mmTackyPenicillin_ || myMedCoco_ || laSutraIo_) {
+      mmTackyPenicillin_ = !myMedCoco_;
+      myMedCoco_ = !laSutraIo_;
+      laSutraIo_ = !mmTackyPenicillin_;
+    }
+    if (woScrapCurious_ || mmTackyPenicillin_ || okNoodleGroovy_) {
+      woScrapCurious_ = !mmTackyPenicillin_;
+      mmTackyPenicillin_ = !okNoodleGroovy_;
+      okNoodleGroovy_ = !woScrapCurious_;
+    }
+    joBasketVasectomy_ = joBasketVasectomy_ * heUterusMichelle_;
   }
 
   static const String kimmi_captive = "kimmi_captive";
@@ -91,14 +69,13 @@ class KimmiInkInvoice extends GetxController {
 
   @override
   void onInit() {
-    if (sqrt2 < 1) {
-      KimmiTastyTootsie().hoPodThink();
-      KimmiTastyTootsie().opPassportFaster();
-      KimmiTastyTootsie().odCategoryStarbucks();
+    if (e < 2) {
+      KimmiFaultMoore().exTrustHead();
+      KimmiFaultMoore().enTraitord();
     }
-    if (sqrt2 < 1) {
-      woExpandChan();
-      anMichelleWhale();
+    if (ln2 < 0.5) {
+      anCompellingDraft();
+      soSwallowCreek();
     }
     super.onInit();
 
@@ -121,14 +98,13 @@ class KimmiInkInvoice extends GetxController {
     InAppWebViewController controller,
     String? title,
   ) {
-    if (log2e < 1) {
-      KimmiTastyTootsie().hoSoakDusty();
-      KimmiTastyTootsie().abBabysitterHammock();
-      KimmiTastyTootsie().hoPodThink();
+    if (ln10 < 2) {
+      KimmiFaultMoore().exTrustHead();
+      KimmiFaultMoore().asLaurenFailed();
     }
-    if (sqrt2 < 1) {
-      hoInvestorBerry();
-      anMichelleWhale();
+    if (log2e < 1) {
+      anCompellingDraft();
+      faFalconContestant();
     }
     if (title != null && arguments.showHtmlTitle) {
       pageTitle.value = title;

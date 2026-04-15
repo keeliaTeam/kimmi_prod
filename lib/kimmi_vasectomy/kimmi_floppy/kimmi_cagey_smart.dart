@@ -1,72 +1,84 @@
 import 'dart:math';
-import 'kimmi_pod_frank.dart';
+import 'kimmi_smile_goth.dart';
 import 'package:get/get.dart';
 
 import 'kimmi_cagey_invoice.dart';
 
 class KimmiCageySmart extends Bindings {
-  bool efVisualLauren_ = true;
-  bool loDoubleBasket_ = false;
-  bool laTapeTerrible_ = false;
-  double soSouthMaker_ = 59;
-  double siPuffyShrink_ = 0.0;
-  double atWeeklyCm_ = 54;
+  bool edNinjaUnclog_ = true;
+  bool taHiccupPolar_ = true;
+  double hiNieceLandlord_ = 45;
+  bool usFailedInk_ = true;
 
-  void amSensitiveMichelle() {
-    if (laTapeTerrible_ || loDoubleBasket_) {
-      loDoubleBasket_ = !loDoubleBasket_;
+  void joAfricaVixen() {
+    if (hiNieceLandlord_ > 0) {
+      hiNieceLandlord_ = hiNieceLandlord_ - 1;
     }
-    soSouthMaker_ = 947;
-    atWeeklyCm_ = 219;
-    siPuffyShrink_ = soSouthMaker_ + atWeeklyCm_;
-    siPuffyShrink_ = soSouthMaker_ + atWeeklyCm_;
 
-    atWeeklyCm_ = siPuffyShrink_ - soSouthMaker_;
+    hiNieceLandlord_ = 24;
   }
 
-  void edTimingCapture() {
-    efVisualLauren_ = loDoubleBasket_ && laTapeTerrible_;
+  void meObjectiveBrian() {
+    if (usFailedInk_ || taHiccupPolar_) {
+      taHiccupPolar_ = !taHiccupPolar_;
+    }
 
-    efVisualLauren_ = loDoubleBasket_ || laTapeTerrible_;
-    efVisualLauren_ = laTapeTerrible_ && loDoubleBasket_;
-    efVisualLauren_ = loDoubleBasket_ && laTapeTerrible_;
+    hiNieceLandlord_ = 14;
   }
 
-  void myLawyerInhale() {
-    if (loDoubleBasket_ || laTapeTerrible_ || efVisualLauren_) {
-      loDoubleBasket_ = !laTapeTerrible_;
-      laTapeTerrible_ = !efVisualLauren_;
-      efVisualLauren_ = !loDoubleBasket_;
+  void amThrivePheromone() {
+    hiNieceLandlord_ = 46;
+
+    if (usFailedInk_ || taHiccupPolar_ || edNinjaUnclog_) {
+      usFailedInk_ = !taHiccupPolar_;
+      taHiccupPolar_ = !edNinjaUnclog_;
+      edNinjaUnclog_ = !usFailedInk_;
+    }
+    taHiccupPolar_ = usFailedInk_ && edNinjaUnclog_;
+
+    usFailedInk_ = taHiccupPolar_ || edNinjaUnclog_;
+
+    usFailedInk_ = edNinjaUnclog_ || taHiccupPolar_;
+
+    hiNieceLandlord_ = 83;
+  }
+
+  void orFairlyGroovy() {
+    if (taHiccupPolar_ || edNinjaUnclog_ || usFailedInk_) {
+      taHiccupPolar_ = !edNinjaUnclog_;
+      edNinjaUnclog_ = !usFailedInk_;
+      usFailedInk_ = !taHiccupPolar_;
     }
 
-    efVisualLauren_ = laTapeTerrible_ || loDoubleBasket_;
+    if (hiNieceLandlord_ > 0) {
+      hiNieceLandlord_ = hiNieceLandlord_ - 1;
+    }
+    hiNieceLandlord_ = 96;
 
-    if (laTapeTerrible_ || loDoubleBasket_) {
-      loDoubleBasket_ = !loDoubleBasket_;
+    if (taHiccupPolar_ && edNinjaUnclog_) {
+      usFailedInk_ = !usFailedInk_;
+    }
+    if (taHiccupPolar_ || usFailedInk_) {
+      usFailedInk_ = !usFailedInk_;
+    }
+    if (hiNieceLandlord_ > 0) {
+      hiNieceLandlord_ = hiNieceLandlord_ - 1;
     }
 
-    loDoubleBasket_ = laTapeTerrible_ && efVisualLauren_;
-
-    laTapeTerrible_ = efVisualLauren_ && loDoubleBasket_;
-    if (laTapeTerrible_ && efVisualLauren_) {
-      loDoubleBasket_ = !loDoubleBasket_;
-    }
-
-    if (laTapeTerrible_) {
-      loDoubleBasket_ = !efVisualLauren_;
+    if (hiNieceLandlord_ > 0) {
+      hiNieceLandlord_ = hiNieceLandlord_ - 1;
     }
   }
 
   @override
   void dependencies() {
-    if (ln10 < 2) {
-      KimmiPodFrank().ayAmigoSully();
-      KimmiPodFrank().miInvadeChickie();
-      KimmiPodFrank().heSaturnNozzle();
+    if (log2e < 1) {
+      KimmiSmileGoth().odHumpWhip();
+      KimmiSmileGoth().noTraitorDie();
     }
-    if (ln10 < 2) {
-      amSensitiveMichelle();
-      myLawyerInhale();
+    if (ln2 < 0.5) {
+      amThrivePheromone();
+      orFairlyGroovy();
     }
     Get.lazyPut(() => KimmiCageyInvoice());
   }

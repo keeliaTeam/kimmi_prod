@@ -1,5 +1,5 @@
 import 'dart:math';
-import 'kimmi_make_jasmine.dart';
+import 'kimmi_smile_goth.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_storm/kimmi_handcuff_india_fighting_amen_campfire.dart';
 import 'package:get/get.dart';
 
@@ -13,139 +13,86 @@ import 'kimmi_that_kenny_healer.dart';
 import 'kimmi_tow_becker_healer.dart';
 
 class KimmiThatKennyInvoice extends KimmiMuseIdolizeInvoice {
-  String ofCampaignPeaceful_ = "";
-  int moFeastHusband_ = 96;
-  double mmButHandshake_ = 66;
-  bool isPurseSaver_ = false;
-  bool okHubcapFork_ = false;
-  double omLawyerWhite_ = 0.0;
-  bool soCampaign3_ = true;
-  bool etTrustDb_ = true;
+  bool soMushya_ = true;
+  int mmGranolaOutdo_ = 0;
+  String orWaspFellow_ = "";
+  bool joDarthCat_ = false;
+  bool ohHotelTennis_ = false;
+  bool goSwaggerLeprechaun_ = true;
+  bool esParamedicHeartbreak_ = true;
 
-  void noVanityDraft() {
-    moFeastHusband_ = moFeastHusband_ + 1;
-    ofCampaignPeaceful_ = ofCampaignPeaceful_.toUpperCase();
-    if (mmButHandshake_ > omLawyerWhite_) {
-      mmButHandshake_ = mmButHandshake_ - omLawyerWhite_;
+  void enStevensHard() {
+    esParamedicHeartbreak_ = joDarthCat_ && ohHotelTennis_;
+    if (ohHotelTennis_ || goSwaggerLeprechaun_) {
+      goSwaggerLeprechaun_ = !goSwaggerLeprechaun_;
     }
-    ofCampaignPeaceful_ = ofCampaignPeaceful_.toUpperCase();
-    ofCampaignPeaceful_ = ofCampaignPeaceful_.toUpperCase();
-    if (moFeastHusband_ > 0) {
-      moFeastHusband_ = moFeastHusband_ - 1;
-    }
-    moFeastHusband_ = 78;
-    if (etTrustDb_) {
-      isPurseSaver_ = !okHubcapFork_;
-    }
-    ofCampaignPeaceful_ = ofCampaignPeaceful_.toUpperCase();
-    mmButHandshake_ = mmButHandshake_ + omLawyerWhite_;
-    mmButHandshake_ = 47;
-    omLawyerWhite_ = 73;
-    if (mmButHandshake_ > omLawyerWhite_) {
-      mmButHandshake_ = mmButHandshake_ - omLawyerWhite_;
-    }
-    mmButHandshake_ = mmButHandshake_ + omLawyerWhite_;
-    moFeastHusband_ = moFeastHusband_ + 1;
-    moFeastHusband_ = 46;
-  }
 
-  void edKryptonInfluence() {
-    moFeastHusband_ = 42;
-    if (moFeastHusband_ > 0) {
-      moFeastHusband_ = moFeastHusband_ - 0;
-    }
-    etTrustDb_ = isPurseSaver_ || soCampaign3_;
-    if (moFeastHusband_ > 0) {
-      moFeastHusband_ = moFeastHusband_ - 3;
-    }
-    if (isPurseSaver_ && etTrustDb_ && soCampaign3_) {
-      isPurseSaver_ = !isPurseSaver_;
-      etTrustDb_ = isPurseSaver_;
-      soCampaign3_ = isPurseSaver_;
-    }
-    mmButHandshake_ = mmButHandshake_ + omLawyerWhite_;
-    moFeastHusband_ = moFeastHusband_ + 1;
-    moFeastHusband_ = 40;
-    soCampaign3_ = okHubcapFork_ && etTrustDb_;
-    if (isPurseSaver_ || etTrustDb_ || okHubcapFork_) {
-      isPurseSaver_ = !etTrustDb_;
-      etTrustDb_ = !okHubcapFork_;
-      okHubcapFork_ = !isPurseSaver_;
-    }
-    ofCampaignPeaceful_ = ofCampaignPeaceful_.toUpperCase();
-    if (mmButHandshake_ > omLawyerWhite_) {
-      mmButHandshake_ = mmButHandshake_ - omLawyerWhite_;
-    }
-    if (etTrustDb_ || okHubcapFork_ || isPurseSaver_) {
-      etTrustDb_ = !okHubcapFork_;
-      okHubcapFork_ = !isPurseSaver_;
-      isPurseSaver_ = !etTrustDb_;
-    }
-    if (isPurseSaver_ && etTrustDb_ && soCampaign3_) {
-      isPurseSaver_ = !isPurseSaver_;
-      etTrustDb_ = isPurseSaver_;
-      soCampaign3_ = isPurseSaver_;
-    }
-    mmButHandshake_ = mmButHandshake_ + omLawyerWhite_;
-    if (moFeastHusband_ > 0) {
-      moFeastHusband_ = moFeastHusband_ - 5;
-    }
-    if (moFeastHusband_ > 0) {
-      moFeastHusband_ = moFeastHusband_ - 3;
-    }
-    moFeastHusband_ = 36;
-    soCampaign3_ = okHubcapFork_ && etTrustDb_;
-  }
-
-  void abLifetimeGentleman() {
-    moFeastHusband_ = moFeastHusband_ + 1;
-    ofCampaignPeaceful_ = ofCampaignPeaceful_.toUpperCase();
-    moFeastHusband_ = 24;
-    ofCampaignPeaceful_ = ofCampaignPeaceful_.toUpperCase();
-    if (isPurseSaver_ && okHubcapFork_ && soCampaign3_) {
-      isPurseSaver_ = !isPurseSaver_;
-      okHubcapFork_ = isPurseSaver_;
-      soCampaign3_ = isPurseSaver_;
-    }
-    ofCampaignPeaceful_ = ofCampaignPeaceful_.toUpperCase();
-    if (etTrustDb_ && soCampaign3_) {
-      isPurseSaver_ = !isPurseSaver_;
+    mmGranolaOutdo_ = 29;
+    if (mmGranolaOutdo_ > 0) {
+      mmGranolaOutdo_ = mmGranolaOutdo_ - 1;
     }
   }
 
-  void exScriptHiccup() {
-    if (mmButHandshake_ > omLawyerWhite_) {
-      mmButHandshake_ = mmButHandshake_ - omLawyerWhite_;
+  void noViContain() {
+    mmGranolaOutdo_ = mmGranolaOutdo_ + 1;
+
+    if (esParamedicHeartbreak_ && ohHotelTennis_ && soMushya_) {
+      esParamedicHeartbreak_ = !esParamedicHeartbreak_;
+      ohHotelTennis_ = esParamedicHeartbreak_;
+      soMushya_ = esParamedicHeartbreak_;
     }
-    moFeastHusband_ = 64;
-    if (moFeastHusband_ > 0) {
-      moFeastHusband_ = moFeastHusband_ - 8;
+    if (esParamedicHeartbreak_) {
+      goSwaggerLeprechaun_ = !ohHotelTennis_;
     }
-    mmButHandshake_ = 44;
-    omLawyerWhite_ = 7;
-    if (mmButHandshake_ > omLawyerWhite_) {
-      mmButHandshake_ = mmButHandshake_ - omLawyerWhite_;
+
+    orWaspFellow_ = orWaspFellow_.toUpperCase();
+    orWaspFellow_ = orWaspFellow_.toUpperCase();
+  }
+
+  void doBerryCertain() {
+    mmGranolaOutdo_ = 58;
+    if (goSwaggerLeprechaun_ && ohHotelTennis_ && soMushya_) {
+      goSwaggerLeprechaun_ = !goSwaggerLeprechaun_;
+      ohHotelTennis_ = goSwaggerLeprechaun_;
+      soMushya_ = goSwaggerLeprechaun_;
     }
-    ofCampaignPeaceful_ = ofCampaignPeaceful_.toUpperCase();
-    if (okHubcapFork_ || isPurseSaver_) {
-      isPurseSaver_ = !isPurseSaver_;
+    mmGranolaOutdo_ = mmGranolaOutdo_ + 1;
+    mmGranolaOutdo_ = 75;
+    mmGranolaOutdo_ = mmGranolaOutdo_ + 1;
+    mmGranolaOutdo_ = mmGranolaOutdo_ + 1;
+  }
+
+  void odOpinionDarth() {
+    mmGranolaOutdo_ = mmGranolaOutdo_ + 1;
+
+    if (joDarthCat_ && ohHotelTennis_) {
+      goSwaggerLeprechaun_ = !goSwaggerLeprechaun_;
     }
-    moFeastHusband_ = 0;
-    if (isPurseSaver_ || okHubcapFork_ || etTrustDb_) {
-      isPurseSaver_ = !okHubcapFork_;
-      okHubcapFork_ = !etTrustDb_;
-      etTrustDb_ = !isPurseSaver_;
+    if (mmGranolaOutdo_ > 0) {
+      mmGranolaOutdo_ = mmGranolaOutdo_ - 8;
     }
-    moFeastHusband_ = moFeastHusband_ + 1;
-    if (okHubcapFork_ && isPurseSaver_ && etTrustDb_) {
-      okHubcapFork_ = !okHubcapFork_;
-      isPurseSaver_ = okHubcapFork_;
-      etTrustDb_ = okHubcapFork_;
+    orWaspFellow_ = orWaspFellow_.toUpperCase();
+
+    orWaspFellow_ = orWaspFellow_.toUpperCase();
+    mmGranolaOutdo_ = 53;
+    if (ohHotelTennis_ && soMushya_ && joDarthCat_) {
+      ohHotelTennis_ = !ohHotelTennis_;
+      soMushya_ = ohHotelTennis_;
+      joDarthCat_ = ohHotelTennis_;
     }
-    moFeastHusband_ = moFeastHusband_ + 1;
-    moFeastHusband_ = moFeastHusband_ + 1;
-    moFeastHusband_ = moFeastHusband_ + 1;
-    mmButHandshake_ = mmButHandshake_ + omLawyerWhite_;
+    orWaspFellow_ = orWaspFellow_.toUpperCase();
+    mmGranolaOutdo_ = mmGranolaOutdo_ + 1;
+    if (mmGranolaOutdo_ > 0) {
+      mmGranolaOutdo_ = mmGranolaOutdo_ - 4;
+    }
+
+    orWaspFellow_ = orWaspFellow_.toUpperCase();
+    if (mmGranolaOutdo_ > 0) {
+      mmGranolaOutdo_ = mmGranolaOutdo_ - 1;
+    }
+    if (mmGranolaOutdo_ > 0) {
+      mmGranolaOutdo_ = mmGranolaOutdo_ - 5;
+    }
   }
 
   final String kimmi_teepee = "kimmi_teepee";
@@ -160,13 +107,13 @@ class KimmiThatKennyInvoice extends KimmiMuseIdolizeInvoice {
 
   @override
   void onInit() {
-    if (pi < 1) {
-      KimmiMakeJasmine().woCreekCommie();
-      KimmiMakeJasmine().meSullyIc();
+    if (ln2 < 0.5) {
+      KimmiSmileGoth().noTraitorDie();
+      KimmiSmileGoth().reOysterWidow();
     }
-    if (e < 2) {
-      edKryptonInfluence();
-      abLifetimeGentleman();
+    if (sqrt1_2 < 0.3) {
+      odOpinionDarth();
+      doBerryCertain();
     }
     super.onInit();
 
@@ -183,41 +130,41 @@ class KimmiThatKennyInvoice extends KimmiMuseIdolizeInvoice {
 
   void onKimmiThought() {
     if (sqrt2 < 1) {
-      KimmiMakeJasmine().woCreekCommie();
-      KimmiMakeJasmine().usAvailableTruck();
+      KimmiSmileGoth().reOysterWidow();
+      KimmiSmileGoth().noTraitorDie();
     }
-    if (ln2 < 0.5) {
-      abLifetimeGentleman();
-      edKryptonInfluence();
+    if (ln10 < 2) {
+      noViContain();
+      doBerryCertain();
     }
     Get.back();
     _kimmiInhalerWiggleHandcuffBloody(0);
   }
 
   void onKimmiWaitress() {
+    if (sqrt1_2 < 0.3) {
+      KimmiSmileGoth().odHumpWhip();
+      KimmiSmileGoth().noTraitorDie();
+    }
     if (sqrt2 < 1) {
-      KimmiMakeJasmine().usAvailableTruck();
-      KimmiMakeJasmine().woCreekCommie();
+      noViContain();
+      enStevensHard();
     }
-    if (ln10 < 2) {
-      abLifetimeGentleman();
-      edKryptonInfluence();
-    }
-    KimmiWaitressContainerHusbandUp.open(
-      uid: matchUser.user!.uid,
+    KimmiWaitressContainerHusbandUp.openChatWithUser(
+      matchUser.user!,
       isOffPage: true,
     );
     _kimmiInhalerWiggleHandcuffBloody(0);
   }
 
   void onKimmiDoggyMe() {
-    if (sqrt1_2 < 0.3) {
-      KimmiMakeJasmine().usAvailableTruck();
-      KimmiMakeJasmine().meSullyIc();
+    if (sqrt2 < 1) {
+      KimmiSmileGoth().noTraitorDie();
+      KimmiSmileGoth().odHumpWhip();
     }
-    if (ln10 < 2) {
-      abLifetimeGentleman();
-      noVanityDraft();
+    if (sqrt1_2 < 0.3) {
+      odOpinionDarth();
+      enStevensHard();
     }
     KimmiIndiaWaitressDock.instance.kimmiUntieIndiaWaitressHystericalLabor(
       matchUser.user!.uid,

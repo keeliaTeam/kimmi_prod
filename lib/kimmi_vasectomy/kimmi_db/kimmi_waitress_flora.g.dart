@@ -1072,6 +1072,63 @@ class $KimmiWaitressTotallyCowboysEarful extends KimmiWaitressTotallyCowboys
     requiredDuringInsert: false,
     defaultValue: const Constant(0),
   );
+  static const VerificationMeta _partnerIdMeta = const VerificationMeta(
+    'partnerId',
+  );
+  @override
+  late final GeneratedColumn<int> partnerId = GeneratedColumn<int>(
+    'partner_id',
+    aliasedName,
+    false,
+    type: DriftSqlType.int,
+    requiredDuringInsert: false,
+    defaultValue: const Constant(0),
+  );
+  static const VerificationMeta _lastSnapTypeMeta = const VerificationMeta(
+    'lastSnapType',
+  );
+  @override
+  late final GeneratedColumn<int> lastSnapType = GeneratedColumn<int>(
+    'last_snap_type',
+    aliasedName,
+    false,
+    type: DriftSqlType.int,
+    requiredDuringInsert: false,
+    defaultValue: const Constant(0),
+  );
+  static const VerificationMeta _lastSnapTextContentMeta =
+      const VerificationMeta('lastSnapTextContent');
+  @override
+  late final GeneratedColumn<String> lastSnapTextContent =
+      GeneratedColumn<String>(
+        'last_snap_text_content',
+        aliasedName,
+        true,
+        type: DriftSqlType.string,
+        requiredDuringInsert: false,
+      );
+  static const VerificationMeta _lastSnapJsonContentMeta =
+      const VerificationMeta('lastSnapJsonContent');
+  @override
+  late final GeneratedColumn<String> lastSnapJsonContent =
+      GeneratedColumn<String>(
+        'last_snap_json_content',
+        aliasedName,
+        true,
+        type: DriftSqlType.string,
+        requiredDuringInsert: false,
+      );
+  static const VerificationMeta _lastSnapCreateTimeMeta =
+      const VerificationMeta('lastSnapCreateTime');
+  @override
+  late final GeneratedColumn<int> lastSnapCreateTime = GeneratedColumn<int>(
+    'last_snap_create_time',
+    aliasedName,
+    false,
+    type: DriftSqlType.int,
+    requiredDuringInsert: false,
+    defaultValue: const Constant(0),
+  );
   @override
   List<GeneratedColumn> get $columns => [
     id,
@@ -1090,6 +1147,11 @@ class $KimmiWaitressTotallyCowboysEarful extends KimmiWaitressTotallyCowboys
     hasChat,
     lastReadSnapTime,
     clearCacheTime,
+    partnerId,
+    lastSnapType,
+    lastSnapTextContent,
+    lastSnapJsonContent,
+    lastSnapCreateTime,
   ];
   @override
   String get aliasedName => _alias ?? actualTableName;
@@ -1211,6 +1273,48 @@ class $KimmiWaitressTotallyCowboysEarful extends KimmiWaitressTotallyCowboys
         ),
       );
     }
+    if (data.containsKey('partner_id')) {
+      context.handle(
+        _partnerIdMeta,
+        partnerId.isAcceptableOrUnknown(data['partner_id']!, _partnerIdMeta),
+      );
+    }
+    if (data.containsKey('last_snap_type')) {
+      context.handle(
+        _lastSnapTypeMeta,
+        lastSnapType.isAcceptableOrUnknown(
+          data['last_snap_type']!,
+          _lastSnapTypeMeta,
+        ),
+      );
+    }
+    if (data.containsKey('last_snap_text_content')) {
+      context.handle(
+        _lastSnapTextContentMeta,
+        lastSnapTextContent.isAcceptableOrUnknown(
+          data['last_snap_text_content']!,
+          _lastSnapTextContentMeta,
+        ),
+      );
+    }
+    if (data.containsKey('last_snap_json_content')) {
+      context.handle(
+        _lastSnapJsonContentMeta,
+        lastSnapJsonContent.isAcceptableOrUnknown(
+          data['last_snap_json_content']!,
+          _lastSnapJsonContentMeta,
+        ),
+      );
+    }
+    if (data.containsKey('last_snap_create_time')) {
+      context.handle(
+        _lastSnapCreateTimeMeta,
+        lastSnapCreateTime.isAcceptableOrUnknown(
+          data['last_snap_create_time']!,
+          _lastSnapCreateTimeMeta,
+        ),
+      );
+    }
     return context;
   }
 
@@ -1284,6 +1388,26 @@ class $KimmiWaitressTotallyCowboysEarful extends KimmiWaitressTotallyCowboys
         DriftSqlType.int,
         data['${effectivePrefix}clear_cache_time'],
       )!,
+      partnerId: attachedDatabase.typeMapping.read(
+        DriftSqlType.int,
+        data['${effectivePrefix}partner_id'],
+      )!,
+      lastSnapType: attachedDatabase.typeMapping.read(
+        DriftSqlType.int,
+        data['${effectivePrefix}last_snap_type'],
+      )!,
+      lastSnapTextContent: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}last_snap_text_content'],
+      ),
+      lastSnapJsonContent: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}last_snap_json_content'],
+      ),
+      lastSnapCreateTime: attachedDatabase.typeMapping.read(
+        DriftSqlType.int,
+        data['${effectivePrefix}last_snap_create_time'],
+      )!,
     );
   }
 
@@ -1312,6 +1436,13 @@ class kimmi_topless_cowboys extends DataClass
   final bool hasChat;
   final int lastReadSnapTime;
   final int clearCacheTime;
+
+  final int partnerId;
+
+  final int lastSnapType;
+  final String? lastSnapTextContent;
+  final String? lastSnapJsonContent;
+  final int lastSnapCreateTime;
   const kimmi_topless_cowboys({
     required this.id,
     required this.type,
@@ -1329,6 +1460,11 @@ class kimmi_topless_cowboys extends DataClass
     required this.hasChat,
     required this.lastReadSnapTime,
     required this.clearCacheTime,
+    required this.partnerId,
+    required this.lastSnapType,
+    this.lastSnapTextContent,
+    this.lastSnapJsonContent,
+    required this.lastSnapCreateTime,
   });
   @override
   Map<String, Expression> toColumns(bool nullToAbsent) {
@@ -1359,6 +1495,15 @@ class kimmi_topless_cowboys extends DataClass
     map['has_chat'] = Variable<bool>(hasChat);
     map['last_read_snap_time'] = Variable<int>(lastReadSnapTime);
     map['clear_cache_time'] = Variable<int>(clearCacheTime);
+    map['partner_id'] = Variable<int>(partnerId);
+    map['last_snap_type'] = Variable<int>(lastSnapType);
+    if (!nullToAbsent || lastSnapTextContent != null) {
+      map['last_snap_text_content'] = Variable<String>(lastSnapTextContent);
+    }
+    if (!nullToAbsent || lastSnapJsonContent != null) {
+      map['last_snap_json_content'] = Variable<String>(lastSnapJsonContent);
+    }
+    map['last_snap_create_time'] = Variable<int>(lastSnapCreateTime);
     return map;
   }
 
@@ -1386,6 +1531,15 @@ class kimmi_topless_cowboys extends DataClass
       hasChat: Value(hasChat),
       lastReadSnapTime: Value(lastReadSnapTime),
       clearCacheTime: Value(clearCacheTime),
+      partnerId: Value(partnerId),
+      lastSnapType: Value(lastSnapType),
+      lastSnapTextContent: lastSnapTextContent == null && nullToAbsent
+          ? const Value.absent()
+          : Value(lastSnapTextContent),
+      lastSnapJsonContent: lastSnapJsonContent == null && nullToAbsent
+          ? const Value.absent()
+          : Value(lastSnapJsonContent),
+      lastSnapCreateTime: Value(lastSnapCreateTime),
     );
   }
 
@@ -1411,6 +1565,15 @@ class kimmi_topless_cowboys extends DataClass
       hasChat: serializer.fromJson<bool>(json['hasChat']),
       lastReadSnapTime: serializer.fromJson<int>(json['lastReadSnapTime']),
       clearCacheTime: serializer.fromJson<int>(json['clearCacheTime']),
+      partnerId: serializer.fromJson<int>(json['partnerId']),
+      lastSnapType: serializer.fromJson<int>(json['lastSnapType']),
+      lastSnapTextContent: serializer.fromJson<String?>(
+        json['lastSnapTextContent'],
+      ),
+      lastSnapJsonContent: serializer.fromJson<String?>(
+        json['lastSnapJsonContent'],
+      ),
+      lastSnapCreateTime: serializer.fromJson<int>(json['lastSnapCreateTime']),
     );
   }
   @override
@@ -1433,6 +1596,11 @@ class kimmi_topless_cowboys extends DataClass
       'hasChat': serializer.toJson<bool>(hasChat),
       'lastReadSnapTime': serializer.toJson<int>(lastReadSnapTime),
       'clearCacheTime': serializer.toJson<int>(clearCacheTime),
+      'partnerId': serializer.toJson<int>(partnerId),
+      'lastSnapType': serializer.toJson<int>(lastSnapType),
+      'lastSnapTextContent': serializer.toJson<String?>(lastSnapTextContent),
+      'lastSnapJsonContent': serializer.toJson<String?>(lastSnapJsonContent),
+      'lastSnapCreateTime': serializer.toJson<int>(lastSnapCreateTime),
     };
   }
 
@@ -1453,6 +1621,11 @@ class kimmi_topless_cowboys extends DataClass
     bool? hasChat,
     int? lastReadSnapTime,
     int? clearCacheTime,
+    int? partnerId,
+    int? lastSnapType,
+    Value<String?> lastSnapTextContent = const Value.absent(),
+    Value<String?> lastSnapJsonContent = const Value.absent(),
+    int? lastSnapCreateTime,
   }) => kimmi_topless_cowboys(
     id: id ?? this.id,
     type: type ?? this.type,
@@ -1472,6 +1645,15 @@ class kimmi_topless_cowboys extends DataClass
     hasChat: hasChat ?? this.hasChat,
     lastReadSnapTime: lastReadSnapTime ?? this.lastReadSnapTime,
     clearCacheTime: clearCacheTime ?? this.clearCacheTime,
+    partnerId: partnerId ?? this.partnerId,
+    lastSnapType: lastSnapType ?? this.lastSnapType,
+    lastSnapTextContent: lastSnapTextContent.present
+        ? lastSnapTextContent.value
+        : this.lastSnapTextContent,
+    lastSnapJsonContent: lastSnapJsonContent.present
+        ? lastSnapJsonContent.value
+        : this.lastSnapJsonContent,
+    lastSnapCreateTime: lastSnapCreateTime ?? this.lastSnapCreateTime,
   );
   kimmi_topless_cowboys copyWithCompanion(
     KimmiWaitressTotallyCowboysNerd data,
@@ -1505,6 +1687,19 @@ class kimmi_topless_cowboys extends DataClass
       clearCacheTime: data.clearCacheTime.present
           ? data.clearCacheTime.value
           : this.clearCacheTime,
+      partnerId: data.partnerId.present ? data.partnerId.value : this.partnerId,
+      lastSnapType: data.lastSnapType.present
+          ? data.lastSnapType.value
+          : this.lastSnapType,
+      lastSnapTextContent: data.lastSnapTextContent.present
+          ? data.lastSnapTextContent.value
+          : this.lastSnapTextContent,
+      lastSnapJsonContent: data.lastSnapJsonContent.present
+          ? data.lastSnapJsonContent.value
+          : this.lastSnapJsonContent,
+      lastSnapCreateTime: data.lastSnapCreateTime.present
+          ? data.lastSnapCreateTime.value
+          : this.lastSnapCreateTime,
     );
   }
 
@@ -1526,13 +1721,18 @@ class kimmi_topless_cowboys extends DataClass
           ..write('serviceChat: $serviceChat, ')
           ..write('hasChat: $hasChat, ')
           ..write('lastReadSnapTime: $lastReadSnapTime, ')
-          ..write('clearCacheTime: $clearCacheTime')
+          ..write('clearCacheTime: $clearCacheTime, ')
+          ..write('partnerId: $partnerId, ')
+          ..write('lastSnapType: $lastSnapType, ')
+          ..write('lastSnapTextContent: $lastSnapTextContent, ')
+          ..write('lastSnapJsonContent: $lastSnapJsonContent, ')
+          ..write('lastSnapCreateTime: $lastSnapCreateTime')
           ..write(')'))
         .toString();
   }
 
   @override
-  int get hashCode => Object.hash(
+  int get hashCode => Object.hashAll([
     id,
     type,
     name,
@@ -1549,7 +1749,12 @@ class kimmi_topless_cowboys extends DataClass
     hasChat,
     lastReadSnapTime,
     clearCacheTime,
-  );
+    partnerId,
+    lastSnapType,
+    lastSnapTextContent,
+    lastSnapJsonContent,
+    lastSnapCreateTime,
+  ]);
   @override
   bool operator ==(Object other) =>
       identical(this, other) ||
@@ -1569,7 +1774,12 @@ class kimmi_topless_cowboys extends DataClass
           other.serviceChat == this.serviceChat &&
           other.hasChat == this.hasChat &&
           other.lastReadSnapTime == this.lastReadSnapTime &&
-          other.clearCacheTime == this.clearCacheTime);
+          other.clearCacheTime == this.clearCacheTime &&
+          other.partnerId == this.partnerId &&
+          other.lastSnapType == this.lastSnapType &&
+          other.lastSnapTextContent == this.lastSnapTextContent &&
+          other.lastSnapJsonContent == this.lastSnapJsonContent &&
+          other.lastSnapCreateTime == this.lastSnapCreateTime);
 }
 
 class KimmiWaitressTotallyCowboysNerd
@@ -1590,6 +1800,11 @@ class KimmiWaitressTotallyCowboysNerd
   final Value<bool> hasChat;
   final Value<int> lastReadSnapTime;
   final Value<int> clearCacheTime;
+  final Value<int> partnerId;
+  final Value<int> lastSnapType;
+  final Value<String?> lastSnapTextContent;
+  final Value<String?> lastSnapJsonContent;
+  final Value<int> lastSnapCreateTime;
   const KimmiWaitressTotallyCowboysNerd({
     this.id = const Value.absent(),
     this.type = const Value.absent(),
@@ -1607,6 +1822,11 @@ class KimmiWaitressTotallyCowboysNerd
     this.hasChat = const Value.absent(),
     this.lastReadSnapTime = const Value.absent(),
     this.clearCacheTime = const Value.absent(),
+    this.partnerId = const Value.absent(),
+    this.lastSnapType = const Value.absent(),
+    this.lastSnapTextContent = const Value.absent(),
+    this.lastSnapJsonContent = const Value.absent(),
+    this.lastSnapCreateTime = const Value.absent(),
   });
   KimmiWaitressTotallyCowboysNerd.insert({
     this.id = const Value.absent(),
@@ -1625,6 +1845,11 @@ class KimmiWaitressTotallyCowboysNerd
     this.hasChat = const Value.absent(),
     this.lastReadSnapTime = const Value.absent(),
     this.clearCacheTime = const Value.absent(),
+    this.partnerId = const Value.absent(),
+    this.lastSnapType = const Value.absent(),
+    this.lastSnapTextContent = const Value.absent(),
+    this.lastSnapJsonContent = const Value.absent(),
+    this.lastSnapCreateTime = const Value.absent(),
   });
   static Insertable<kimmi_topless_cowboys> custom({
     Expression<int>? id,
@@ -1643,6 +1868,11 @@ class KimmiWaitressTotallyCowboysNerd
     Expression<bool>? hasChat,
     Expression<int>? lastReadSnapTime,
     Expression<int>? clearCacheTime,
+    Expression<int>? partnerId,
+    Expression<int>? lastSnapType,
+    Expression<String>? lastSnapTextContent,
+    Expression<String>? lastSnapJsonContent,
+    Expression<int>? lastSnapCreateTime,
   }) {
     return RawValuesInsertable({
       if (id != null) 'id': id,
@@ -1661,6 +1891,14 @@ class KimmiWaitressTotallyCowboysNerd
       if (hasChat != null) 'has_chat': hasChat,
       if (lastReadSnapTime != null) 'last_read_snap_time': lastReadSnapTime,
       if (clearCacheTime != null) 'clear_cache_time': clearCacheTime,
+      if (partnerId != null) 'partner_id': partnerId,
+      if (lastSnapType != null) 'last_snap_type': lastSnapType,
+      if (lastSnapTextContent != null)
+        'last_snap_text_content': lastSnapTextContent,
+      if (lastSnapJsonContent != null)
+        'last_snap_json_content': lastSnapJsonContent,
+      if (lastSnapCreateTime != null)
+        'last_snap_create_time': lastSnapCreateTime,
     });
   }
 
@@ -1681,6 +1919,11 @@ class KimmiWaitressTotallyCowboysNerd
     Value<bool>? hasChat,
     Value<int>? lastReadSnapTime,
     Value<int>? clearCacheTime,
+    Value<int>? partnerId,
+    Value<int>? lastSnapType,
+    Value<String?>? lastSnapTextContent,
+    Value<String?>? lastSnapJsonContent,
+    Value<int>? lastSnapCreateTime,
   }) {
     return KimmiWaitressTotallyCowboysNerd(
       id: id ?? this.id,
@@ -1699,6 +1942,11 @@ class KimmiWaitressTotallyCowboysNerd
       hasChat: hasChat ?? this.hasChat,
       lastReadSnapTime: lastReadSnapTime ?? this.lastReadSnapTime,
       clearCacheTime: clearCacheTime ?? this.clearCacheTime,
+      partnerId: partnerId ?? this.partnerId,
+      lastSnapType: lastSnapType ?? this.lastSnapType,
+      lastSnapTextContent: lastSnapTextContent ?? this.lastSnapTextContent,
+      lastSnapJsonContent: lastSnapJsonContent ?? this.lastSnapJsonContent,
+      lastSnapCreateTime: lastSnapCreateTime ?? this.lastSnapCreateTime,
     );
   }
 
@@ -1753,6 +2001,25 @@ class KimmiWaitressTotallyCowboysNerd
     if (clearCacheTime.present) {
       map['clear_cache_time'] = Variable<int>(clearCacheTime.value);
     }
+    if (partnerId.present) {
+      map['partner_id'] = Variable<int>(partnerId.value);
+    }
+    if (lastSnapType.present) {
+      map['last_snap_type'] = Variable<int>(lastSnapType.value);
+    }
+    if (lastSnapTextContent.present) {
+      map['last_snap_text_content'] = Variable<String>(
+        lastSnapTextContent.value,
+      );
+    }
+    if (lastSnapJsonContent.present) {
+      map['last_snap_json_content'] = Variable<String>(
+        lastSnapJsonContent.value,
+      );
+    }
+    if (lastSnapCreateTime.present) {
+      map['last_snap_create_time'] = Variable<int>(lastSnapCreateTime.value);
+    }
     return map;
   }
 
@@ -1774,7 +2041,12 @@ class KimmiWaitressTotallyCowboysNerd
           ..write('serviceChat: $serviceChat, ')
           ..write('hasChat: $hasChat, ')
           ..write('lastReadSnapTime: $lastReadSnapTime, ')
-          ..write('clearCacheTime: $clearCacheTime')
+          ..write('clearCacheTime: $clearCacheTime, ')
+          ..write('partnerId: $partnerId, ')
+          ..write('lastSnapType: $lastSnapType, ')
+          ..write('lastSnapTextContent: $lastSnapTextContent, ')
+          ..write('lastSnapJsonContent: $lastSnapJsonContent, ')
+          ..write('lastSnapCreateTime: $lastSnapCreateTime')
           ..write(')'))
         .toString();
   }
@@ -3704,6 +3976,11 @@ typedef $$KimmiWaitressTotallyCowboysEarfulBlizzardNerdDecode =
       Value<bool> hasChat,
       Value<int> lastReadSnapTime,
       Value<int> clearCacheTime,
+      Value<int> partnerId,
+      Value<int> lastSnapType,
+      Value<String?> lastSnapTextContent,
+      Value<String?> lastSnapJsonContent,
+      Value<int> lastSnapCreateTime,
     });
 typedef $$KimmiWaitressTotallyCowboysEarfulFantasyNerdDecode =
     KimmiWaitressTotallyCowboysNerd Function({
@@ -3723,6 +4000,11 @@ typedef $$KimmiWaitressTotallyCowboysEarfulFantasyNerdDecode =
       Value<bool> hasChat,
       Value<int> lastReadSnapTime,
       Value<int> clearCacheTime,
+      Value<int> partnerId,
+      Value<int> lastSnapType,
+      Value<String?> lastSnapTextContent,
+      Value<String?> lastSnapJsonContent,
+      Value<int> lastSnapCreateTime,
     });
 
 class $$KimmiWaitressTotallyCowboysEarfulPedestalSkating
@@ -3815,6 +4097,31 @@ class $$KimmiWaitressTotallyCowboysEarfulPedestalSkating
 
   ColumnFilters<int> get clearCacheTime => $composableBuilder(
     column: $table.clearCacheTime,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<int> get partnerId => $composableBuilder(
+    column: $table.partnerId,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<int> get lastSnapType => $composableBuilder(
+    column: $table.lastSnapType,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get lastSnapTextContent => $composableBuilder(
+    column: $table.lastSnapTextContent,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get lastSnapJsonContent => $composableBuilder(
+    column: $table.lastSnapJsonContent,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<int> get lastSnapCreateTime => $composableBuilder(
+    column: $table.lastSnapCreateTime,
     builder: (column) => ColumnFilters(column),
   );
 }
@@ -3911,6 +4218,31 @@ class $$KimmiWaitressTotallyCowboysEarfulFisherSkating
     column: $table.clearCacheTime,
     builder: (column) => ColumnOrderings(column),
   );
+
+  ColumnOrderings<int> get partnerId => $composableBuilder(
+    column: $table.partnerId,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<int> get lastSnapType => $composableBuilder(
+    column: $table.lastSnapType,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get lastSnapTextContent => $composableBuilder(
+    column: $table.lastSnapTextContent,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get lastSnapJsonContent => $composableBuilder(
+    column: $table.lastSnapJsonContent,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<int> get lastSnapCreateTime => $composableBuilder(
+    column: $table.lastSnapCreateTime,
+    builder: (column) => ColumnOrderings(column),
+  );
 }
 
 class $$KimmiWaitressTotallyCowboysEarfulNowitzkiSkating
@@ -3985,6 +4317,29 @@ class $$KimmiWaitressTotallyCowboysEarfulNowitzkiSkating
     column: $table.clearCacheTime,
     builder: (column) => column,
   );
+
+  GeneratedColumn<int> get partnerId =>
+      $composableBuilder(column: $table.partnerId, builder: (column) => column);
+
+  GeneratedColumn<int> get lastSnapType => $composableBuilder(
+    column: $table.lastSnapType,
+    builder: (column) => column,
+  );
+
+  GeneratedColumn<String> get lastSnapTextContent => $composableBuilder(
+    column: $table.lastSnapTextContent,
+    builder: (column) => column,
+  );
+
+  GeneratedColumn<String> get lastSnapJsonContent => $composableBuilder(
+    column: $table.lastSnapJsonContent,
+    builder: (column) => column,
+  );
+
+  GeneratedColumn<int> get lastSnapCreateTime => $composableBuilder(
+    column: $table.lastSnapCreateTime,
+    builder: (column) => column,
+  );
 }
 
 class $$KimmiWaitressTotallyCowboysEarfulEarfulDock
@@ -4049,6 +4404,11 @@ class $$KimmiWaitressTotallyCowboysEarfulEarfulDock
                 Value<bool> hasChat = const Value.absent(),
                 Value<int> lastReadSnapTime = const Value.absent(),
                 Value<int> clearCacheTime = const Value.absent(),
+                Value<int> partnerId = const Value.absent(),
+                Value<int> lastSnapType = const Value.absent(),
+                Value<String?> lastSnapTextContent = const Value.absent(),
+                Value<String?> lastSnapJsonContent = const Value.absent(),
+                Value<int> lastSnapCreateTime = const Value.absent(),
               }) => KimmiWaitressTotallyCowboysNerd(
                 id: id,
                 type: type,
@@ -4066,6 +4426,11 @@ class $$KimmiWaitressTotallyCowboysEarfulEarfulDock
                 hasChat: hasChat,
                 lastReadSnapTime: lastReadSnapTime,
                 clearCacheTime: clearCacheTime,
+                partnerId: partnerId,
+                lastSnapType: lastSnapType,
+                lastSnapTextContent: lastSnapTextContent,
+                lastSnapJsonContent: lastSnapJsonContent,
+                lastSnapCreateTime: lastSnapCreateTime,
               ),
           createCompanionCallback:
               ({
@@ -4085,6 +4450,11 @@ class $$KimmiWaitressTotallyCowboysEarfulEarfulDock
                 Value<bool> hasChat = const Value.absent(),
                 Value<int> lastReadSnapTime = const Value.absent(),
                 Value<int> clearCacheTime = const Value.absent(),
+                Value<int> partnerId = const Value.absent(),
+                Value<int> lastSnapType = const Value.absent(),
+                Value<String?> lastSnapTextContent = const Value.absent(),
+                Value<String?> lastSnapJsonContent = const Value.absent(),
+                Value<int> lastSnapCreateTime = const Value.absent(),
               }) => KimmiWaitressTotallyCowboysNerd.insert(
                 id: id,
                 type: type,
@@ -4102,6 +4472,11 @@ class $$KimmiWaitressTotallyCowboysEarfulEarfulDock
                 hasChat: hasChat,
                 lastReadSnapTime: lastReadSnapTime,
                 clearCacheTime: clearCacheTime,
+                partnerId: partnerId,
+                lastSnapType: lastSnapType,
+                lastSnapTextContent: lastSnapTextContent,
+                lastSnapJsonContent: lastSnapJsonContent,
+                lastSnapCreateTime: lastSnapCreateTime,
               ),
           withReferenceMapper: (p0) => p0
               .map((e) => (e.readTable(table), BaseReferences(db, table, e)))

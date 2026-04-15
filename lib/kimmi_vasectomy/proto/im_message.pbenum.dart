@@ -1,259 +1,384 @@
 import 'dart:core' as $core;
 
+import 'package:kimmi/kimmi_vasectomy/proto/kimmi_cadaver_gentleman.dart';
 import 'package:protobuf/protobuf.dart' as $pb;
 
 class Message_Type extends $pb.ProtobufEnum {
   static const Message_Type UNKNOWN = Message_Type._(
     0,
-    _omitEnumNames ? '' : 'UNKNOWN',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+        ? ''
+        : 'UNKNOWN',
   );
   static const Message_Type DELETEBUDDYREQ = Message_Type._(
     100,
-    _omitEnumNames ? '' : 'DELETEBUDDYREQ',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+        ? ''
+        : 'DELETEBUDDYREQ',
   );
   static const Message_Type REMARKBUDDYREQ = Message_Type._(
     101,
-    _omitEnumNames ? '' : 'REMARKBUDDYREQ',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+        ? ''
+        : 'REMARKBUDDYREQ',
   );
   static const Message_Type BLOCKBUDDYREQ = Message_Type._(
     102,
-    _omitEnumNames ? '' : 'BLOCKBUDDYREQ',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+        ? ''
+        : 'BLOCKBUDDYREQ',
   );
   static const Message_Type STARBUDDYREQ = Message_Type._(
     103,
-    _omitEnumNames ? '' : 'STARBUDDYREQ',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+        ? ''
+        : 'STARBUDDYREQ',
   );
   static const Message_Type INVITECONTACTBUDDYREQ = Message_Type._(
     104,
-    _omitEnumNames ? '' : 'INVITECONTACTBUDDYREQ',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+        ? ''
+        : 'INVITECONTACTBUDDYREQ',
   );
   static const Message_Type IGNORERECOMMENDBUDDYREQ = Message_Type._(
     105,
-    _omitEnumNames ? '' : 'IGNORERECOMMENDBUDDYREQ',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+        ? ''
+        : 'IGNORERECOMMENDBUDDYREQ',
   );
   static const Message_Type BATCHADDRECOMMENDBUDDYREQ = Message_Type._(
     106,
-    _omitEnumNames ? '' : 'BATCHADDRECOMMENDBUDDYREQ',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+        ? ''
+        : 'BATCHADDRECOMMENDBUDDYREQ',
   );
   static const Message_Type GETBUDDYINFOREQ = Message_Type._(
     107,
-    _omitEnumNames ? '' : 'GETBUDDYINFOREQ',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+        ? ''
+        : 'GETBUDDYINFOREQ',
   );
   static const Message_Type GETBUDDYINFORSP = Message_Type._(
     108,
-    _omitEnumNames ? '' : 'GETBUDDYINFORSP',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+        ? ''
+        : 'GETBUDDYINFORSP',
   );
   static const Message_Type REPORTUSERREQ = Message_Type._(
     109,
-    _omitEnumNames ? '' : 'REPORTUSERREQ',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+        ? ''
+        : 'REPORTUSERREQ',
   );
   static const Message_Type BATCHUNBLOCKBUDDYREQ = Message_Type._(
     110,
-    _omitEnumNames ? '' : 'BATCHUNBLOCKBUDDYREQ',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+        ? ''
+        : 'BATCHUNBLOCKBUDDYREQ',
   );
   static const Message_Type MAXBUDDYTYPE = Message_Type._(
     199,
-    _omitEnumNames ? '' : 'MAXBUDDYTYPE',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+        ? ''
+        : 'MAXBUDDYTYPE',
   );
   static const Message_Type SENDBUDDYREQUESTREQ = Message_Type._(
     200,
-    _omitEnumNames ? '' : 'SENDBUDDYREQUESTREQ',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+        ? ''
+        : 'SENDBUDDYREQUESTREQ',
   );
   static const Message_Type CONFIRMBUDDYREQUESTREQ = Message_Type._(
     201,
-    _omitEnumNames ? '' : 'CONFIRMBUDDYREQUESTREQ',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+        ? ''
+        : 'CONFIRMBUDDYREQUESTREQ',
   );
   static const Message_Type DELETEBUDDYREQUESTREQ = Message_Type._(
     202,
-    _omitEnumNames ? '' : 'DELETEBUDDYREQUESTREQ',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+        ? ''
+        : 'DELETEBUDDYREQUESTREQ',
   );
   static const Message_Type SETALLBUDDYREQUESTREADEDREQ = Message_Type._(
     203,
-    _omitEnumNames ? '' : 'SETALLBUDDYREQUESTREADEDREQ',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+        ? ''
+        : 'SETALLBUDDYREQUESTREADEDREQ',
   );
   static const Message_Type MAXBUDDYREQUESTTYPE = Message_Type._(
     299,
-    _omitEnumNames ? '' : 'MAXBUDDYREQUESTTYPE',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+        ? ''
+        : 'MAXBUDDYREQUESTTYPE',
   );
   static const Message_Type CREATECHATBOXREQ = Message_Type._(
     300,
-    _omitEnumNames ? '' : 'CREATECHATBOXREQ',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+        ? ''
+        : 'CREATECHATBOXREQ',
   );
   static const Message_Type SETCHATBOXNAMEREQ = Message_Type._(
     301,
-    _omitEnumNames ? '' : 'SETCHATBOXNAMEREQ',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+        ? ''
+        : 'SETCHATBOXNAMEREQ',
   );
   static const Message_Type SETCHATBOXCOVERREQ = Message_Type._(
     302,
-    _omitEnumNames ? '' : 'SETCHATBOXCOVERREQ',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+        ? ''
+        : 'SETCHATBOXCOVERREQ',
   );
   static const Message_Type ADDCHATBOXMEMBERREQ = Message_Type._(
     303,
-    _omitEnumNames ? '' : 'ADDCHATBOXMEMBERREQ',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+        ? ''
+        : 'ADDCHATBOXMEMBERREQ',
   );
   static const Message_Type REMOVECHATBOXMEMBERREQ = Message_Type._(
     304,
-    _omitEnumNames ? '' : 'REMOVECHATBOXMEMBERREQ',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+        ? ''
+        : 'REMOVECHATBOXMEMBERREQ',
   );
   static const Message_Type STARCHABOXREQ = Message_Type._(
     305,
-    _omitEnumNames ? '' : 'STARCHABOXREQ',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+        ? ''
+        : 'STARCHABOXREQ',
   );
   static const Message_Type MUTECHATBOXREQ = Message_Type._(
     306,
-    _omitEnumNames ? '' : 'MUTECHATBOXREQ',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+        ? ''
+        : 'MUTECHATBOXREQ',
   );
   static const Message_Type REMOVECHATBOXREQ = Message_Type._(
     307,
-    _omitEnumNames ? '' : 'REMOVECHATBOXREQ',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+        ? ''
+        : 'REMOVECHATBOXREQ',
   );
   static const Message_Type EXITCHATBOXREQ = Message_Type._(
     308,
-    _omitEnumNames ? '' : 'EXITCHATBOXREQ',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+        ? ''
+        : 'EXITCHATBOXREQ',
   );
   static const Message_Type REPORTCHATBOXREQ = Message_Type._(
     309,
-    _omitEnumNames ? '' : 'REPORTCHATBOXREQ',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+        ? ''
+        : 'REPORTCHATBOXREQ',
   );
   static const Message_Type JOINCHATBOXREQ = Message_Type._(
     310,
-    _omitEnumNames ? '' : 'JOINCHATBOXREQ',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+        ? ''
+        : 'JOINCHATBOXREQ',
   );
   static const Message_Type JOINCHATBOXRSP = Message_Type._(
     311,
-    _omitEnumNames ? '' : 'JOINCHATBOXRSP',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+        ? ''
+        : 'JOINCHATBOXRSP',
   );
   static const Message_Type CREATECHATBOXRSP = Message_Type._(
     312,
-    _omitEnumNames ? '' : 'CREATECHATBOXRSP',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+        ? ''
+        : 'CREATECHATBOXRSP',
   );
   static const Message_Type UPDATECHATBOXREADEDSTATUSREQ = Message_Type._(
     313,
-    _omitEnumNames ? '' : 'UPDATECHATBOXREADEDSTATUSREQ',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+        ? ''
+        : 'UPDATECHATBOXREADEDSTATUSREQ',
   );
   static const Message_Type UPDATECHATBOXPUBLICSETTINGREQ = Message_Type._(
     314,
-    _omitEnumNames ? '' : 'UPDATECHATBOXPUBLICSETTINGREQ',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+        ? ''
+        : 'UPDATECHATBOXPUBLICSETTINGREQ',
   );
   static const Message_Type GETCHATBOXINFOREQ = Message_Type._(
     315,
-    _omitEnumNames ? '' : 'GETCHATBOXINFOREQ',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+        ? ''
+        : 'GETCHATBOXINFOREQ',
   );
   static const Message_Type GETCHATBOXINFORSP = Message_Type._(
     316,
-    _omitEnumNames ? '' : 'GETCHATBOXINFORSP',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+        ? ''
+        : 'GETCHATBOXINFORSP',
   );
   static const Message_Type UPDATECHATBOXCATEGORYREQ = Message_Type._(
     317,
-    _omitEnumNames ? '' : 'UPDATECHATBOXCATEGORYREQ',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+        ? ''
+        : 'UPDATECHATBOXCATEGORYREQ',
   );
   static const Message_Type SETCHATBOXDESCREQ = Message_Type._(
     318,
-    _omitEnumNames ? '' : 'SETCHATBOXDESCREQ',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+        ? ''
+        : 'SETCHATBOXDESCREQ',
   );
   static const Message_Type BATCHGETCHATBOXINFOREQ = Message_Type._(
     319,
-    _omitEnumNames ? '' : 'BATCHGETCHATBOXINFOREQ',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+        ? ''
+        : 'BATCHGETCHATBOXINFOREQ',
   );
   static const Message_Type BATCHGETCHATBOXINFORSP = Message_Type._(
     320,
-    _omitEnumNames ? '' : 'BATCHGETCHATBOXINFORSP',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+        ? ''
+        : 'BATCHGETCHATBOXINFORSP',
   );
   static const Message_Type MAXCHATBOXTYPE = Message_Type._(
     399,
-    _omitEnumNames ? '' : 'MAXCHATBOXTYPE',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+        ? ''
+        : 'MAXCHATBOXTYPE',
   );
   static const Message_Type CREATESNAPREQ = Message_Type._(
     400,
-    _omitEnumNames ? '' : 'CREATESNAPREQ',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+        ? ''
+        : 'CREATESNAPREQ',
   );
   static const Message_Type CREATESNAPRSP = Message_Type._(
     401,
-    _omitEnumNames ? '' : 'CREATESNAPRSP',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+        ? ''
+        : 'CREATESNAPRSP',
   );
   static const Message_Type STARTRECORDSNAPNOTIFY = Message_Type._(
     402,
-    _omitEnumNames ? '' : 'STARTRECORDSNAPNOTIFY',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+        ? ''
+        : 'STARTRECORDSNAPNOTIFY',
   );
   static const Message_Type STOPRECORDSNAPNOTIFY = Message_Type._(
     403,
-    _omitEnumNames ? '' : 'STOPRECORDSNAPNOTIFY',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+        ? ''
+        : 'STOPRECORDSNAPNOTIFY',
   );
   static const Message_Type STARTPLAYSNAPNOTIFY = Message_Type._(
     404,
-    _omitEnumNames ? '' : 'STARTPLAYSNAPNOTIFY',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+        ? ''
+        : 'STARTPLAYSNAPNOTIFY',
   );
   static const Message_Type STOPPLAYSNAPNOTIFY = Message_Type._(
     405,
-    _omitEnumNames ? '' : 'STOPPLAYSNAPNOTIFY',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+        ? ''
+        : 'STOPPLAYSNAPNOTIFY',
   );
   static const Message_Type DELETESNAPREQ = Message_Type._(
     406,
-    _omitEnumNames ? '' : 'DELETESNAPREQ',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+        ? ''
+        : 'DELETESNAPREQ',
   );
   static const Message_Type GETMORESNAPSFROMREQ = Message_Type._(
     407,
-    _omitEnumNames ? '' : 'GETMORESNAPSFROMREQ',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+        ? ''
+        : 'GETMORESNAPSFROMREQ',
   );
   static const Message_Type GETMORESNAPSFROMRSP = Message_Type._(
     408,
-    _omitEnumNames ? '' : 'GETMORESNAPSFROMRSP',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+        ? ''
+        : 'GETMORESNAPSFROMRSP',
   );
   static const Message_Type UPDATESNAPREADEDSTATUSREQ = Message_Type._(
     409,
-    _omitEnumNames ? '' : 'UPDATESNAPREADEDSTATUSREQ',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+        ? ''
+        : 'UPDATESNAPREADEDSTATUSREQ',
   );
   static const Message_Type CHECKREDPACKETREQ = Message_Type._(
     410,
-    _omitEnumNames ? '' : 'CHECKREDPACKETREQ',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+        ? ''
+        : 'CHECKREDPACKETREQ',
   );
   static const Message_Type CHECKREDPACKETRSP = Message_Type._(
     411,
-    _omitEnumNames ? '' : 'CHECKREDPACKETRSP',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+        ? ''
+        : 'CHECKREDPACKETRSP',
   );
   static const Message_Type RECEIVEREDPACKETREQ = Message_Type._(
     412,
-    _omitEnumNames ? '' : 'RECEIVEREDPACKETREQ',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+        ? ''
+        : 'RECEIVEREDPACKETREQ',
   );
   static const Message_Type RECEIVEREDPACKETRSP = Message_Type._(
     413,
-    _omitEnumNames ? '' : 'RECEIVEREDPACKETRSP',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+        ? ''
+        : 'RECEIVEREDPACKETRSP',
   );
   static const Message_Type GETREDPACKETINFOTREQ = Message_Type._(
     414,
-    _omitEnumNames ? '' : 'GETREDPACKETINFOTREQ',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+        ? ''
+        : 'GETREDPACKETINFOTREQ',
   );
   static const Message_Type GETREDPACKETINFOTRSP = Message_Type._(
     415,
-    _omitEnumNames ? '' : 'GETREDPACKETINFOTRSP',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+        ? ''
+        : 'GETREDPACKETINFOTRSP',
   );
   static const Message_Type READSNAPREQ = Message_Type._(
     416,
-    _omitEnumNames ? '' : 'READSNAPREQ',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+        ? ''
+        : 'READSNAPREQ',
   );
   static const Message_Type MAXSNAPTYPE = Message_Type._(
     499,
-    _omitEnumNames ? '' : 'MAXSNAPTYPE',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+        ? ''
+        : 'MAXSNAPTYPE',
   );
   static const Message_Type SYNC = Message_Type._(
     700,
-    _omitEnumNames ? '' : 'SYNC',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names') ? '' : 'SYNC',
   );
   static const Message_Type SYNCNOTIFY = Message_Type._(
     701,
-    _omitEnumNames ? '' : 'SYNCNOTIFY',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+        ? ''
+        : 'SYNCNOTIFY',
   );
   static const Message_Type SYNCKEYCONFIRMNOTIFY = Message_Type._(
     702,
-    _omitEnumNames ? '' : 'SYNCKEYCONFIRMNOTIFY',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+        ? ''
+        : 'SYNCKEYCONFIRMNOTIFY',
   );
   static const Message_Type SYNCPSH = Message_Type._(
     703,
-    _omitEnumNames ? '' : 'SYNCPSH',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+        ? ''
+        : 'SYNCPSH',
   );
   static const Message_Type MAXSYNCTYPE = Message_Type._(
     799,
-    _omitEnumNames ? '' : 'MAXSYNCTYPE',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+        ? ''
+        : 'MAXSYNCTYPE',
   );
 
   static const $core.List<Message_Type> values = <Message_Type>[
@@ -324,9 +449,8 @@ class Message_Type extends $pb.ProtobufEnum {
 
   static final $core.Map<$core.int, Message_Type> _byValue =
       $pb.ProtobufEnum.initByValue(values);
+
   static Message_Type? valueOf($core.int value) => _byValue[value];
 
   const Message_Type._($core.int v, $core.String n) : super(v, n);
 }
-
-const _omitEnumNames = $core.bool.fromEnvironment('protobuf.omit_enum_names');

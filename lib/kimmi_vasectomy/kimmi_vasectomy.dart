@@ -1,5 +1,6 @@
 import 'package:kimmi/kimmi_vasectomy/kimmi_curvy/kimmi_vasectomy_pioneer_dock.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_juda/kimmi_tow_dock.dart';
+import 'package:kimmi/kimmi_vasectomy/kimmi_juda/kimmi_quantity_dock.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_juda/kimmi_feast_quitter_marvel_dock.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
@@ -106,6 +107,9 @@ class _KimmiVasectomyViking extends State<KimmiVasectomy>
       KIMMI.deviceService.onPause();
       KimmiSingleScottish().onPause(Get.currentRoute);
       KimmiFeastQuitterMarvelSleazy.instance.onAppForegroundChange(false);
-    } else if (state == AppLifecycleState.inactive) {}
+    } else if (state == AppLifecycleState.inactive) {
+    } else if (state == AppLifecycleState.detached) {
+      KimmiRTCDock.instance.forceReleaseEngine();
+    }
   }
 }

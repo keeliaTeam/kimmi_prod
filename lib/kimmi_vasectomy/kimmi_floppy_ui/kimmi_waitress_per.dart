@@ -24,13 +24,17 @@ import 'kimmi_waitress_per_cam_uneven.dart';
 class KimmiWaitressPer extends StatefulWidget {
   final KimmiExpensive snap;
   final String? cachePath;
-  final KimmiWaitressFeast? user;
+  final int uid;
+  final String nickName;
+  final String avatarUrl;
 
   const KimmiWaitressPer({
     Key? key,
     required this.snap,
     this.cachePath,
-    this.user,
+    required this.uid,
+    required this.nickName,
+    required this.avatarUrl,
   }) : super(key: key);
 
   @override
@@ -122,14 +126,13 @@ class _KimmiWaitressPerViking extends State<KimmiWaitressPer> {
               fit: BoxFit.cover,
             ),
             onTap: () {
-              if (widget.user != null &&
-                  widget.user!.uid != KimmiPalate.kimmiAiTedCurveBacteria) {
+              if (widget.uid != KimmiPalate.kimmiAiTedCurveBacteria) {
                 KIMMI.toNamed(
                   KimmiSully.KimmiSecurityContainer,
                   arguments: {
-                    'uid': widget.user?.uid,
-                    'nickName': widget.user?.nickName,
-                    'avatarUrl': widget.user?.avatarUrl,
+                    'uid': widget.uid,
+                    'nickName': widget.nickName,
+                    'avatarUrl': widget.avatarUrl,
                   },
                 );
               }

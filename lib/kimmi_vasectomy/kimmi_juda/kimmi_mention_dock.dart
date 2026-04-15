@@ -151,7 +151,7 @@ class KimmiMentionDock {
       );
       int cid = _parseIntByValue(goValue);
       if (cid > 0) {
-        KimmiWaitressContainerHusbandUp.open(cid: cid);
+        KimmiWaitressContainerHusbandUp.openChatWithCid(cid);
       }
     } else if (actionUrl.contains(kimmi_mention_simulate)) {
       Map<String, dynamic> qpMap = _parseAllKey2Value(queryParameters);

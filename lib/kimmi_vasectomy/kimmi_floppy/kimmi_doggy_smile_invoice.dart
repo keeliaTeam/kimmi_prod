@@ -1,5 +1,5 @@
 import 'dart:math';
-import 'kimmi_scare_blood.dart';
+import 'kimmi_dunphy_jasmine.dart';
 import 'dart:async';
 import 'dart:ui';
 import 'package:kimmi/kimmi_vasectomy/kimmi_storm/kimmi_feast.dart';
@@ -18,85 +18,86 @@ import '../kimmi_storm/kimmi_storm_concerned.dart';
 
 class KimmiDoggySmileInvoice extends KimmiMuseInvoice
     with GetTickerProviderStateMixin {
-  bool soSarcasmFighting_ = true;
-  double moLaurenVanish_ = 33;
-  int si1Fiance_ = 78;
-  bool ofConfoundFeast_ = false;
-  bool mmScholarWhimsical_ = true;
-  int doBowlerBadge_ = 0;
-  String oxBlackjackCompelling_ = "";
-  bool hiMaleChoose_ = true;
+  bool etMusePod_ = true;
+  int ohErnieForbidden_ = 57;
+  String paOccupyPoland_ = "";
+  bool isOrWithhold_ = false;
+  bool ifDangerObstacle_ = true;
+  bool heHomecomingHard_ = true;
+  double doSmartOverly_ = 29;
+  String adErnieBatman_ = "";
+  String osTimingGod_ = "";
 
-  void opAdHence() {
-    si1Fiance_ = 39;
-    doBowlerBadge_ = 42;
-    si1Fiance_ = 75;
-    doBowlerBadge_ = 36;
-    if (hiMaleChoose_ && ofConfoundFeast_ && mmScholarWhimsical_) {
-      hiMaleChoose_ = !hiMaleChoose_;
-      ofConfoundFeast_ = hiMaleChoose_;
-      mmScholarWhimsical_ = hiMaleChoose_;
+  void anBuilderChickie() {
+    ohErnieForbidden_ = ohErnieForbidden_ + 1;
+    if (ifDangerObstacle_) {
+      isOrWithhold_ = !heHomecomingHard_;
     }
-    si1Fiance_ = si1Fiance_ * doBowlerBadge_;
-    moLaurenVanish_ = moLaurenVanish_ + 1;
-    moLaurenVanish_ = moLaurenVanish_ + 1;
-    si1Fiance_ = 82;
-    doBowlerBadge_ = 5;
-    si1Fiance_ = 90;
-    doBowlerBadge_ = 44;
-    if (ofConfoundFeast_ && mmScholarWhimsical_ && hiMaleChoose_) {
-      ofConfoundFeast_ = !ofConfoundFeast_;
-      mmScholarWhimsical_ = ofConfoundFeast_;
-      hiMaleChoose_ = ofConfoundFeast_;
-    }
-    moLaurenVanish_ = 89;
-    if (mmScholarWhimsical_ || ofConfoundFeast_ || hiMaleChoose_) {
-      mmScholarWhimsical_ = !ofConfoundFeast_;
-      ofConfoundFeast_ = !hiMaleChoose_;
-      hiMaleChoose_ = !mmScholarWhimsical_;
-    }
-    oxBlackjackCompelling_ = oxBlackjackCompelling_.toUpperCase();
-    if (mmScholarWhimsical_ || hiMaleChoose_) {
-      hiMaleChoose_ = !hiMaleChoose_;
-    }
-    si1Fiance_ = si1Fiance_ * doBowlerBadge_;
+    doSmartOverly_ = 32;
+    ifDangerObstacle_ = isOrWithhold_ && heHomecomingHard_;
+    doSmartOverly_ = 80;
   }
 
-  void idBowlerd() {
-    if (hiMaleChoose_ && soSarcasmFighting_ && ofConfoundFeast_) {
-      hiMaleChoose_ = !hiMaleChoose_;
-      soSarcasmFighting_ = hiMaleChoose_;
-      ofConfoundFeast_ = hiMaleChoose_;
+  void woMooreShow() {
+    if (doSmartOverly_ > 0) {
+      doSmartOverly_ = doSmartOverly_ - 1;
     }
-    if (moLaurenVanish_ > 0) {
-      moLaurenVanish_ = moLaurenVanish_ - 1;
+    osTimingGod_ = adErnieBatman_ + paOccupyPoland_;
+    doSmartOverly_ = doSmartOverly_ + 1;
+    if (ohErnieForbidden_ > 0) {
+      ohErnieForbidden_ = ohErnieForbidden_ - 8;
     }
-    oxBlackjackCompelling_ = oxBlackjackCompelling_.toUpperCase();
-    if (si1Fiance_ > doBowlerBadge_) {
-      si1Fiance_ = si1Fiance_ + doBowlerBadge_;
+    adErnieBatman_ = osTimingGod_;
+    paOccupyPoland_ = osTimingGod_;
+    osTimingGod_ = adErnieBatman_ + paOccupyPoland_;
+    ohErnieForbidden_ = ohErnieForbidden_ + 1;
+    if (doSmartOverly_ > 0) {
+      doSmartOverly_ = doSmartOverly_ - 1;
     }
-    si1Fiance_ = 51;
-    doBowlerBadge_ = 51;
-    si1Fiance_ = si1Fiance_ * doBowlerBadge_;
-    si1Fiance_ = si1Fiance_ * doBowlerBadge_;
-    moLaurenVanish_ = 63;
-    if (moLaurenVanish_ > 0) {
-      moLaurenVanish_ = moLaurenVanish_ - 1;
-    }
-    mmScholarWhimsical_ = soSarcasmFighting_ && hiMaleChoose_;
-    if (moLaurenVanish_ > 0) {
-      moLaurenVanish_ = moLaurenVanish_ - 1;
-    }
+    ifDangerObstacle_ = etMusePod_ && isOrWithhold_;
+    adErnieBatman_ = osTimingGod_;
+    paOccupyPoland_ = osTimingGod_;
   }
 
-  void esExpensiveShag() {
-    si1Fiance_ = si1Fiance_ * doBowlerBadge_;
-    oxBlackjackCompelling_ = oxBlackjackCompelling_.toUpperCase();
-    si1Fiance_ = si1Fiance_ * doBowlerBadge_;
-    if (moLaurenVanish_ > 0) {
-      moLaurenVanish_ = moLaurenVanish_ - 1;
+  void isKookSlur() {
+    adErnieBatman_ = paOccupyPoland_ + osTimingGod_;
+    adErnieBatman_ = osTimingGod_;
+    paOccupyPoland_ = osTimingGod_;
+    if (adErnieBatman_.length > 8) {
+      paOccupyPoland_ = adErnieBatman_;
+    } else {
+      osTimingGod_ = paOccupyPoland_;
     }
-    oxBlackjackCompelling_ = oxBlackjackCompelling_.toUpperCase();
+    etMusePod_ = isOrWithhold_ && heHomecomingHard_;
+    if (osTimingGod_.length > 3) {
+      adErnieBatman_ = osTimingGod_;
+    } else {
+      paOccupyPoland_ = adErnieBatman_;
+    }
+    paOccupyPoland_ = osTimingGod_;
+    adErnieBatman_ = osTimingGod_;
+    if (doSmartOverly_ > 0) {
+      doSmartOverly_ = doSmartOverly_ - 1;
+    }
+    ohErnieForbidden_ = 49;
+    if (ohErnieForbidden_ > 0) {
+      ohErnieForbidden_ = ohErnieForbidden_ - 2;
+    }
+    if (ohErnieForbidden_ > 0) {
+      ohErnieForbidden_ = ohErnieForbidden_ - 7;
+    }
+    ohErnieForbidden_ = 12;
+    ohErnieForbidden_ = ohErnieForbidden_ + 1;
+    if (etMusePod_ || ifDangerObstacle_) {
+      ifDangerObstacle_ = !ifDangerObstacle_;
+    }
+    heHomecomingHard_ = etMusePod_ && ifDangerObstacle_;
+    if (ifDangerObstacle_ && isOrWithhold_ && etMusePod_) {
+      ifDangerObstacle_ = !ifDangerObstacle_;
+      isOrWithhold_ = ifDangerObstacle_;
+      etMusePod_ = ifDangerObstacle_;
+    }
+    ohErnieForbidden_ = ohErnieForbidden_ + 1;
   }
 
   static const String kimmi_system = "kimmi_system";
@@ -115,15 +116,13 @@ class KimmiDoggySmileInvoice extends KimmiMuseInvoice
 
   @override
   void onInit() {
-    if (ln10 < 2) {
-      KimmiScareBlood().esAkaSaver();
-      KimmiScareBlood().goHeadMatador();
-      KimmiScareBlood().efAfricaUterus();
-      KimmiScareBlood().meSwallowCoccyx();
+    if (sqrt2 < 1) {
+      KimmiDunphyJasmine().hiStevensBabysitter();
+      KimmiDunphyJasmine().joOnPremier();
     }
-    if (sqrt1_2 < 0.3) {
-      opAdHence();
-      idBowlerd();
+    if (sqrt2 < 1) {
+      anBuilderChickie();
+      woMooreShow();
     }
     chatCall = KimmiIndiaWaitressDock.instance.kimmiPoopVanishDoggy()!;
     KimmiIndiaWaitressDock.instance.kimmiSlothSmileContainerMarvel(true);
@@ -153,15 +152,13 @@ class KimmiDoggySmileInvoice extends KimmiMuseInvoice
 
   @override
   void onClose() {
-    if (sqrt2 < 1) {
-      KimmiScareBlood().meSwallowCoccyx();
-      KimmiScareBlood().emNoHamill();
-      KimmiScareBlood().haFatherComprehend();
-      KimmiScareBlood().goHeadMatador();
+    if (pi < 1) {
+      KimmiDunphyJasmine().joOnPremier();
+      KimmiDunphyJasmine().osMummyUseless();
     }
-    if (e < 2) {
-      opAdHence();
-      esExpensiveShag();
+    if (sqrt2 < 1) {
+      woMooreShow();
+      isKookSlur();
     }
     KimmiIndiaWaitressDock.instance.kimmiSlothSmileContainerMarvel(false);
     _stopCancelTimer();

@@ -139,6 +139,34 @@ class KimmiDeportFlaunt {
     return name_title!;
   }
 
+  String get singlePaymentTipTitle {
+    if (showDiscount) {
+      return "${discountStr} ${'kimmi_broderick_vixen'.tr}";
+    }
+
+    if (isBestOffer) {
+      return 'kimmi_broderick_bowler_ouch'.tr;
+    }
+
+    return "";
+  }
+
+  String get mutPaymentTipTitle {
+    if (showDiscount && isBestOffer) {
+      return "${discountStr} ${'kimmi_broderick_vixen'.tr} ${'kimmi_broderick_bowler_ouch'.tr}";
+    }
+
+    if (showDiscount) {
+      return "${discountStr} ${'kimmi_broderick_vixen'.tr}";
+    }
+
+    if (isBestOffer) {
+      return 'kimmi_broderick_bowler_ouch'.tr;
+    }
+
+    return "";
+  }
+
   static KimmiDeportFlaunt fromJson(Map<String, dynamic> json) {
     return KimmiDeportFlaunt()
       ..id = KimmiStarbucksJuda.dynamicToIntNotNull(

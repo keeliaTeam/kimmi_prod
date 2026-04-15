@@ -1,91 +1,88 @@
 import 'dart:math';
-import 'kimmi_vixen_vasectomy.dart';
+import 'kimmi_fault_moore.dart';
 import 'package:get/get.dart';
 
 import 'kimmi_loved_outdo_invoice.dart';
 
 class KimmiLovedOutdoSmart extends Bindings {
-  String ifLifetimeComprehend_ = "";
-  bool hoSunFlaunt_ = true;
-  bool meKiteAka_ = true;
-  String meProlongJackal_ = "";
-  double weCaterChan_ = 0.0;
-  String oxCherryScare_ = "";
-  bool owCaptiveUr_ = true;
-  String taEyelashSavage_ = "";
-  double taEpisodeColony_ = 0.0;
-  String moFailedLoved_ = "";
+  bool esFlakeDuring_ = true;
+  String omLimboButt_ = "";
+  bool ifHopeManipulate_ = false;
+  String etOutdoToad_ = "";
+  bool etSimulateShorten_ = false;
+  int isFightingDoctor_ = 0;
+  int anTotallyAsthmatic_ = 0;
+  bool inLoopyWig_ = false;
 
-  void soThriveEs() {
-    oxCherryScare_ = meProlongJackal_;
-    moFailedLoved_ = meProlongJackal_;
-    hoSunFlaunt_ = meKiteAka_ && owCaptiveUr_;
-
-    if (meKiteAka_ || hoSunFlaunt_ || owCaptiveUr_) {
-      meKiteAka_ = !hoSunFlaunt_;
-      hoSunFlaunt_ = !owCaptiveUr_;
-      owCaptiveUr_ = !meKiteAka_;
+  void atCageyCost() {
+    if (etSimulateShorten_ && inLoopyWig_ && esFlakeDuring_) {
+      etSimulateShorten_ = !etSimulateShorten_;
+      inLoopyWig_ = etSimulateShorten_;
+      esFlakeDuring_ = etSimulateShorten_;
     }
 
-    if (weCaterChan_ > taEpisodeColony_) {
-      weCaterChan_ = weCaterChan_ - taEpisodeColony_;
+    if (esFlakeDuring_ || ifHopeManipulate_) {
+      ifHopeManipulate_ = !ifHopeManipulate_;
     }
 
-    weCaterChan_ = weCaterChan_ + taEpisodeColony_;
-    if (meKiteAka_ || owCaptiveUr_ || hoSunFlaunt_) {
-      meKiteAka_ = !owCaptiveUr_;
-      owCaptiveUr_ = !hoSunFlaunt_;
-      hoSunFlaunt_ = !meKiteAka_;
-    }
+    ifHopeManipulate_ = etSimulateShorten_ && esFlakeDuring_;
   }
 
-  void okChanLauren() {
-    if (moFailedLoved_.length > 6) {
-      oxCherryScare_ = moFailedLoved_;
-    } else {
-      meProlongJackal_ = oxCherryScare_;
+  void haCapLabor() {
+    etOutdoToad_ = omLimboButt_.toUpperCase() + etOutdoToad_;
+
+    isFightingDoctor_ = 0;
+    anTotallyAsthmatic_ = 98;
+    omLimboButt_ = etOutdoToad_ + omLimboButt_;
+    if (ifHopeManipulate_ || esFlakeDuring_) {
+      esFlakeDuring_ = !esFlakeDuring_;
     }
-    if (hoSunFlaunt_ || owCaptiveUr_) {
-      owCaptiveUr_ = !owCaptiveUr_;
-    }
-    if (owCaptiveUr_ || hoSunFlaunt_) {
-      hoSunFlaunt_ = !hoSunFlaunt_;
+    if (isFightingDoctor_ > anTotallyAsthmatic_) {
+      isFightingDoctor_ = isFightingDoctor_ + anTotallyAsthmatic_;
     }
 
-    taEyelashSavage_ = meProlongJackal_ + ifLifetimeComprehend_;
-    weCaterChan_ = 62;
-    taEpisodeColony_ = 75;
-    ifLifetimeComprehend_ = oxCherryScare_;
-    moFailedLoved_ = oxCherryScare_;
-    weCaterChan_ = weCaterChan_ + taEpisodeColony_;
-    if (weCaterChan_ > taEpisodeColony_) {
-      weCaterChan_ = weCaterChan_ - taEpisodeColony_;
+    if (isFightingDoctor_ > anTotallyAsthmatic_) {
+      isFightingDoctor_ = isFightingDoctor_ + anTotallyAsthmatic_;
     }
+    isFightingDoctor_ = isFightingDoctor_ * anTotallyAsthmatic_;
+    if (etSimulateShorten_ || inLoopyWig_ || esFlakeDuring_) {
+      etSimulateShorten_ = !inLoopyWig_;
+      inLoopyWig_ = !esFlakeDuring_;
+      esFlakeDuring_ = !etSimulateShorten_;
+    }
+    if (isFightingDoctor_ > anTotallyAsthmatic_) {
+      isFightingDoctor_ = isFightingDoctor_ + anTotallyAsthmatic_;
+    }
+    omLimboButt_ = etOutdoToad_ + omLimboButt_;
+    esFlakeDuring_ = etSimulateShorten_ || ifHopeManipulate_;
   }
 
-  void loTennisChord() {
-    hoSunFlaunt_ = owCaptiveUr_ || meKiteAka_;
-    if (weCaterChan_ > taEpisodeColony_) {
-      weCaterChan_ = weCaterChan_ - taEpisodeColony_;
+  void etBesidesVisual() {
+    if (etSimulateShorten_ || inLoopyWig_) {
+      inLoopyWig_ = !inLoopyWig_;
+    }
+    inLoopyWig_ = etSimulateShorten_ || esFlakeDuring_;
+    if (isFightingDoctor_ > anTotallyAsthmatic_) {
+      isFightingDoctor_ = isFightingDoctor_ + anTotallyAsthmatic_;
+    }
+    if (isFightingDoctor_ > anTotallyAsthmatic_) {
+      isFightingDoctor_ = isFightingDoctor_ + anTotallyAsthmatic_;
     }
 
-    weCaterChan_ = 38;
-    taEpisodeColony_ = 33;
-    moFailedLoved_ = ifLifetimeComprehend_;
-    taEyelashSavage_ = moFailedLoved_;
-    ifLifetimeComprehend_ = taEyelashSavage_;
+    etOutdoToad_ = omLimboButt_.toUpperCase() + etOutdoToad_;
+    omLimboButt_ = etOutdoToad_ + omLimboButt_;
+    isFightingDoctor_ = isFightingDoctor_ * anTotallyAsthmatic_;
   }
 
   @override
   void dependencies() {
-    if (sqrt1_2 < 0.3) {
-      KimmiVixenVasectomy().asFatherWithhold();
-      KimmiVixenVasectomy().edExploitJoyous();
-      KimmiVixenVasectomy().heMusicJohnny();
-    }
     if (ln10 < 2) {
-      okChanLauren();
-      loTennisChord();
+      KimmiFaultMoore().siBeckerFlake();
+      KimmiFaultMoore().exTrustHead();
+    }
+    if (log10e / 2 < 0.1) {
+      haCapLabor();
+      atCageyCost();
     }
     Get.lazyPut(() => KimmiLovedOutdoInvoice());
   }

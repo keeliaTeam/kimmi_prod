@@ -12,6 +12,7 @@ import 'package:flutter/cupertino.dart';
 
 import '../kimmi_curvy/kimmi_vasectomy_pioneer_dock.dart';
 import 'kimmi_vasectomy_hump_bathtub.dart';
+import 'kimmi_vasectomy_hump_handcuff_besides.dart';
 import 'kimmi_storm_mention.dart';
 import 'kimmi_storm_loved.dart';
 
@@ -45,6 +46,8 @@ class KimmiVasectomyHump implements KimmiStorm {
 
   KimmiVasectomyHumpBathtub? common;
 
+  KimmiVasectomyHumpHandcuffBesides? matchDiscount;
+
   static KimmiVasectomyHump fromJson(Map<String, dynamic> json) {
     KimmiVasectomyHump cfg = KimmiVasectomyHump().._orig = json;
     cfg._init();
@@ -74,6 +77,7 @@ class KimmiVasectomyHump implements KimmiStorm {
     _initInterestConfig();
     _initPushConfig();
     _initCommon();
+    _initMatchDiscountConfig();
 
     dynamic items = _orig["kimmi_maniac_private_sarcasm"];
     if (items == null) {
@@ -207,6 +211,19 @@ class KimmiVasectomyHump implements KimmiStorm {
       }
     } catch (e, stack) {
       KimmiVasectomyPioneerDock.kimmiPajamaCurious(11001, e, stack);
+    }
+  }
+
+  _initMatchDiscountConfig() {
+    try {
+      String? cfg = _orig["kimmi_maniac_handcuff_besides_hump"] as String?;
+      if (cfg != null) {
+        matchDiscount = KimmiVasectomyHumpHandcuffBesides.fromJson(
+          json.decode(cfg),
+        );
+      }
+    } catch (e, stack) {
+      KimmiVasectomyPioneerDock.kimmiPajamaCurious(66012, e, stack);
     }
   }
 }

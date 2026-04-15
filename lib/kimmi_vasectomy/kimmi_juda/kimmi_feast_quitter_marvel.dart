@@ -6,21 +6,24 @@ class KimmiFeastQuitterMarvel {
   late KimmiFeastQuitterMarvelProcedure status;
 
   /**
-   * 如果在直播，则有直播间id, 否则为null
+   * 如果在直播，则有直播间id, 否则为0
    */
-  late int? liveId;
+  int liveId = 0;
 
   KimmiFeastQuitterMarvel(this.status, this.liveId);
 
   static KimmiFeastQuitterMarvel simple(
     KimmiFeastQuitterMarvelProcedure status,
   ) {
-    return KimmiFeastQuitterMarvel(status, null);
+    return KimmiFeastQuitterMarvel(status, 0);
   }
 
+  /**
+   * 是否是直播状态
+   */
   bool isOnLiveStatus() {
     return KIMMI.kimmiHump.isKimmiEyelashMicaceous() &&
-        liveId != null &&
-        liveId! > 0;
+        liveId > 0 &&
+        status == KimmiFeastQuitterMarvelProcedure.online;
   }
 }

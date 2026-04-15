@@ -1,26 +1,72 @@
 import 'dart:core' as $core;
 
+import 'package:kimmi/kimmi_vasectomy/proto/kimmi_cadaver_gentleman.dart';
 import 'package:protobuf/protobuf.dart' as $pb;
 
 class CreateChatboxReq_SourceType extends $pb.ProtobufEnum {
   static const CreateChatboxReq_SourceType FROM_UNKNOWN =
-      CreateChatboxReq_SourceType._(0, _omitEnumNames ? '' : 'FROM_UNKNOWN');
+      CreateChatboxReq_SourceType._(
+        0,
+        const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+            ? ''
+            : 'FROM_UNKNOWN',
+      );
   static const CreateChatboxReq_SourceType FROM_PARTY =
-      CreateChatboxReq_SourceType._(1, _omitEnumNames ? '' : 'FROM_PARTY');
+      CreateChatboxReq_SourceType._(
+        1,
+        const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+            ? ''
+            : 'FROM_PARTY',
+      );
   static const CreateChatboxReq_SourceType FROM_CHATBOX =
-      CreateChatboxReq_SourceType._(2, _omitEnumNames ? '' : 'FROM_CHATBOX');
+      CreateChatboxReq_SourceType._(
+        2,
+        const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+            ? ''
+            : 'FROM_CHATBOX',
+      );
   static const CreateChatboxReq_SourceType FROM_SEARCH =
-      CreateChatboxReq_SourceType._(3, _omitEnumNames ? '' : 'FROM_SEARCH');
+      CreateChatboxReq_SourceType._(
+        3,
+        const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+            ? ''
+            : 'FROM_SEARCH',
+      );
   static const CreateChatboxReq_SourceType FROM_QRCODE =
-      CreateChatboxReq_SourceType._(4, _omitEnumNames ? '' : 'FROM_QRCODE');
+      CreateChatboxReq_SourceType._(
+        4,
+        const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+            ? ''
+            : 'FROM_QRCODE',
+      );
   static const CreateChatboxReq_SourceType FROM_SHARE =
-      CreateChatboxReq_SourceType._(5, _omitEnumNames ? '' : 'FROM_SHARE');
+      CreateChatboxReq_SourceType._(
+        5,
+        const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+            ? ''
+            : 'FROM_SHARE',
+      );
   static const CreateChatboxReq_SourceType FROM_CLUB =
-      CreateChatboxReq_SourceType._(6, _omitEnumNames ? '' : 'FROM_CLUB');
+      CreateChatboxReq_SourceType._(
+        6,
+        const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+            ? ''
+            : 'FROM_CLUB',
+      );
   static const CreateChatboxReq_SourceType FROM_RECOMMEND =
-      CreateChatboxReq_SourceType._(7, _omitEnumNames ? '' : 'FROM_RECOMMEND');
+      CreateChatboxReq_SourceType._(
+        7,
+        const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+            ? ''
+            : 'FROM_RECOMMEND',
+      );
   static const CreateChatboxReq_SourceType FROM_BUDDY =
-      CreateChatboxReq_SourceType._(8, _omitEnumNames ? '' : 'FROM_BUDDY');
+      CreateChatboxReq_SourceType._(
+        8,
+        const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+            ? ''
+            : 'FROM_BUDDY',
+      );
 
   static const $core.List<CreateChatboxReq_SourceType> values =
       <CreateChatboxReq_SourceType>[
@@ -37,6 +83,7 @@ class CreateChatboxReq_SourceType extends $pb.ProtobufEnum {
 
   static final $core.Map<$core.int, CreateChatboxReq_SourceType> _byValue =
       $pb.ProtobufEnum.initByValue(values);
+
   static CreateChatboxReq_SourceType? valueOf($core.int value) =>
       _byValue[value];
 
@@ -47,23 +94,25 @@ class CreateChatboxReq_SourceType extends $pb.ProtobufEnum {
 class ReportChatboxReq_Type extends $pb.ProtobufEnum {
   static const ReportChatboxReq_Type AD = ReportChatboxReq_Type._(
     0,
-    _omitEnumNames ? '' : 'AD',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names') ? '' : 'AD',
   );
   static const ReportChatboxReq_Type CHEAT = ReportChatboxReq_Type._(
     1,
-    _omitEnumNames ? '' : 'CHEAT',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names') ? '' : 'CHEAT',
   );
   static const ReportChatboxReq_Type PORN = ReportChatboxReq_Type._(
     2,
-    _omitEnumNames ? '' : 'PORN',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names') ? '' : 'PORN',
   );
   static const ReportChatboxReq_Type ILLEGAL = ReportChatboxReq_Type._(
     3,
-    _omitEnumNames ? '' : 'ILLEGAL',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+        ? ''
+        : 'ILLEGAL',
   );
   static const ReportChatboxReq_Type OTHER = ReportChatboxReq_Type._(
     4,
-    _omitEnumNames ? '' : 'OTHER',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names') ? '' : 'OTHER',
   );
 
   static const $core.List<ReportChatboxReq_Type> values =
@@ -71,9 +120,8 @@ class ReportChatboxReq_Type extends $pb.ProtobufEnum {
 
   static final $core.Map<$core.int, ReportChatboxReq_Type> _byValue =
       $pb.ProtobufEnum.initByValue(values);
+
   static ReportChatboxReq_Type? valueOf($core.int value) => _byValue[value];
 
   const ReportChatboxReq_Type._($core.int v, $core.String n) : super(v, n);
 }
-
-const _omitEnumNames = $core.bool.fromEnvironment('protobuf.omit_enum_names');

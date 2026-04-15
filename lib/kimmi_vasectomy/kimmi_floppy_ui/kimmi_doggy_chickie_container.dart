@@ -1,8 +1,9 @@
 import 'dart:math';
-import 'kimmi_colombian_male.dart';
+import 'kimmi_johnny_uneven.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_floppy/kimmi_niece_daytime_starbucks.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_palate.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_curvy/kimmi_vasectomy_pioneer_dock.dart';
+import 'package:kimmi/kimmi_vasectomy/kimmi_curvy/kimmi_africa.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_tonight/kimmi_draft_juda.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_juda/kimmi_ernie_properly.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_hamill/kimmi_muse_container.dart';
@@ -58,20 +59,30 @@ class KimmiDoggyChickieContainer
                   mainAxisSize: MainAxisSize.min,
                   children: [
                     KimmiManipulate.vGap12,
-                    Row(
-                      mainAxisSize: MainAxisSize.min,
-                      children: [
-                        Text(
-                          "+${logic.coupon.diamondAmount} ${"kimmi_broderick_shag".tr}",
-                          style: KimmiTamperDaytime.style(
-                            fontSize: 32,
-                            fontWeight: FontWeight.bold,
-                            color: const Color(0xFFFF1F5E),
-                            height: 1,
+                    KIMMI.kimmiHump.isRegionMatchFirst20sChargeMode()
+                        ? Text(
+                            "kimmi_broderick_chickie_niece_store_bargain_devastate"
+                                .tr,
+                            style: KimmiTamperDaytime.style(
+                              fontSize: 24,
+                              fontWeight: FontWeight.bold,
+                              color: KimmiDraftJuda.white,
+                            ),
+                          )
+                        : Row(
+                            mainAxisSize: MainAxisSize.min,
+                            children: [
+                              Text(
+                                "+${logic.coupon.diamondAmount} ${"kimmi_broderick_shag".tr}",
+                                style: KimmiTamperDaytime.style(
+                                  fontSize: 32,
+                                  fontWeight: FontWeight.bold,
+                                  color: const Color(0xFFFF1F5E),
+                                  height: 1,
+                                ),
+                              ),
+                            ],
                           ),
-                        ),
-                      ],
-                    ),
                     Padding(
                       padding: const EdgeInsets.only(left: 34, right: 34),
                       child: buildRichText(),
@@ -101,7 +112,9 @@ class KimmiDoggyChickieContainer
               ),
             ),
             KimmiErnieProperly.kimmiDarthFermionErnie(
-              "kimmi_hombre_chickie_niece_walker",
+              KIMMI.kimmiHump.isRegionMatchFirst20sChargeMode()
+                  ? "kimmi_hombre_chickie_niece_walker_store_gloss"
+                  : "kimmi_hombre_chickie_niece_walker",
               width: 90,
               height: 90,
               fit: BoxFit.contain,
@@ -113,6 +126,15 @@ class KimmiDoggyChickieContainer
   }
 
   Widget buildRichText() {
+    if (KIMMI.kimmiHump.isRegionMatchFirst20sChargeMode()) {
+      return Text(
+        "kimmi_broderick_chickie_niece_store_bargain_mrs".tr,
+        style: KimmiTamperDaytime.style(
+          fontSize: 16,
+          color: KimmiDraftJuda.white,
+        ),
+      );
+    }
     String desc = "kimmi_broderick_chickie_mrs".tr;
     try {
       String front = desc.split("%s")[0];

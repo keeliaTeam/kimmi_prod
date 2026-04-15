@@ -61,8 +61,6 @@ class KimmiWaitressJuda {
 
   static List<InlineSpan> convertChatListContent(
     KimmiExpensive snap,
-    int unreadCount,
-    bool isSingleChat,
     TextStyle style,
   ) {
     List<InlineSpan> texts = [];
@@ -92,10 +90,6 @@ class KimmiWaitressJuda {
         snap.jsonContentObj,
       );
       texts.add(TextSpan(text: text, style: style));
-    }
-
-    if (!isSingleChat && snap.type != Snap_SnapType.WEAK_SNAP.value) {
-      texts.insert(0, TextSpan(text: snap.ownerName ?? ': ', style: style));
     }
     return texts;
   }
@@ -289,8 +283,6 @@ class KimmiWaitressJuda {
   static void showSnackbar(KimmiExpensive snackInfo) {
     var content = convertChatListContent(
       snackInfo,
-      0,
-      true,
       KimmiTamperDaytime.TextB2_16,
     );
     if ([
@@ -339,7 +331,7 @@ class KimmiWaitressJuda {
       duration: const Duration(seconds: 2),
       onTap: (snack) {
         KimmiVasectomyPioneerDock.clickSnackBar(snackInfo.id!);
-        KimmiWaitressContainerHusbandUp.open(cid: snackInfo.chatBoxId);
+        KimmiWaitressContainerHusbandUp.openChatWithCid(snackInfo.chatBoxId!);
       },
     );
   }

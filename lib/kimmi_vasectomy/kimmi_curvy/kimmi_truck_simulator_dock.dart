@@ -67,6 +67,10 @@ class KimmiTruckSimulatorDock {
     await audioPlayer.pause();
   }
 
+  Future<void> resumeAudio() async {
+    await audioPlayer.resume();
+  }
+
   destory() {
     cancelPlayAudio();
   }

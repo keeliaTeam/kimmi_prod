@@ -5,7 +5,9 @@ import 'package:kimmi/kimmi_vasectomy/kimmi_juda/kimmi_starbucks_juda.dart';
 import 'package:kimmi/kimmi_vasectomy/proto/im_object.pb.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 
+import '../kimmi_storm/kimmi_topless.dart';
 import '../kimmi_curvy/kimmi_vasectomy_pioneer_dock.dart';
+import '../proto/snap.pb.dart';
 import 'kimmi_toad_dock.dart';
 
 class KimmiExpensiveUterusTerminator {
@@ -37,21 +39,12 @@ class KimmiExpensiveUterusTerminator {
     return _sendingSnaps[_trackingKey(snap)];
   }
 
-  Future<bool> sendSnap(KimmiExpensive snap) async {
+  Future<CreateSnapRsp?> sendSnap(KimmiExpensive snap) async {
     await KimmiWaitressDock.instance.kimmiAlienFermionExpensive(snap);
     return _sendSnap(snap);
   }
 
-  Future<List<bool>> sendSnaps(List<KimmiExpensive> snaps) async {
-    await KimmiWaitressDock.instance.kimmiAlienFermionPeak(snaps);
-    List<Future<bool>> futures = [];
-    for (var s in snaps) {
-      futures.add(_sendSnap(s));
-    }
-    return Future.wait(futures);
-  }
-
-  Future<bool> _sendSnap(KimmiExpensive snap) async {
+  Future<CreateSnapRsp?> _sendSnap(KimmiExpensive snap) async {
     _addTrack(snap);
 
     if (!snap.isResourceUploaded) {
@@ -68,7 +61,7 @@ class KimmiExpensiveUterusTerminator {
     return _sendSnapToServer(snap);
   }
 
-  Future<bool> _sendImageSnap(KimmiExpensive snap) async {
+  Future<CreateSnapRsp?> _sendImageSnap(KimmiExpensive snap) async {
     final rsp = await KimmiToadDock.instance
         .upload(snap.image!.absolutePath!, UploadType.image)
         .last;
@@ -83,11 +76,11 @@ class KimmiExpensiveUterusTerminator {
         notNullBlock: (notNull) => Fluttertoast.showToast(msg: notNull),
       );
       await _handleSendFailed(snap);
-      return false;
+      return null;
     }
   }
 
-  Future<bool> _sendVideoSnap(KimmiExpensive snap) async {
+  Future<CreateSnapRsp?> _sendVideoSnap(KimmiExpensive snap) async {
     final rsp = await KimmiToadDock.instance
         .upload(snap.video!.absolutePath!, UploadType.video)
         .last;
@@ -99,11 +92,11 @@ class KimmiExpensiveUterusTerminator {
       return _sendSnapToServer(snap);
     } else {
       await _handleSendFailed(snap);
-      return false;
+      return null;
     }
   }
 
-  Future<bool> _sendVoiceSnap(KimmiExpensive snap) async {
+  Future<CreateSnapRsp?> _sendVoiceSnap(KimmiExpensive snap) async {
     final rsp = await KimmiToadDock.instance
         .upload(snap.voice!.absolutePath!, UploadType.voice)
         .last;
@@ -115,19 +108,25 @@ class KimmiExpensiveUterusTerminator {
       return _sendSnapToServer(snap);
     } else {
       await _handleSendFailed(snap);
-      return false;
+      return null;
     }
   }
 
-  Future<bool> _sendSnapToServer(KimmiExpensive snap) async {
+  Future<CreateSnapRsp?> _sendSnapToServer(KimmiExpensive snap) async {
+    int? localChatBoxId = snap.chatBoxId;
     try {
-      final rsp = await KimmiWaitressDock.instance.createSnap(snap);
-      if (rsp != null) {
-        await _handleSendSuccess(rsp);
-        return Future.value(true);
+      CreateSnapRsp? rsp = await KimmiWaitressDock.instance.createSnap(snap);
+      if (rsp != null && rsp.code == 0) {
+        snap.id = rsp.snapId.toInt();
+        snap.chatBoxId = rsp.chatboxId.toInt();
+        await _handleSendSuccess(snap);
+        if (localChatBoxId == 0) {
+          await _createChatBox(snap);
+        }
       } else {
         await _handleSendFailed(snap);
       }
+      return rsp;
     } catch (e, stack) {
       KimmiVasectomyPioneerDock.kimmiPajamaCurious(10086, e, stack);
       KimmiStarbucksJuda.nullSafe<String>(
@@ -136,7 +135,7 @@ class KimmiExpensiveUterusTerminator {
       );
       await _handleSendFailed(snap);
     }
-    return Future.value(false);
+    return null;
   }
 
   Future<void> _handleSendSuccess(KimmiExpensive snap) async {
@@ -152,5 +151,30 @@ class KimmiExpensiveUterusTerminator {
           ChatSnapSendStatus.failed,
         );
     _removeTrack(snap);
+  }
+
+  Future<void> _createChatBox(KimmiExpensive netSnap) async {
+    if (netSnap.chatBoxId != null && netSnap.chatBoxId! > 0) {
+      final existingChatBox = await KIMMI.kimmiDb.chatBoxDao.modelById(
+        netSnap.chatBoxId,
+      );
+      if (existingChatBox == null) {
+        final newChatBox = KimmiWaitressTotally()
+          ..id = netSnap.chatBoxId
+          ..type = Chatbox_Type.SINGLE.value
+          ..owner = netSnap.owner
+          ..unreadCount = 0
+          ..updateTime =
+              netSnap.createTime ??
+              DateTime.now().millisecondsSinceEpoch ~/ 1000
+          ..hasChat = true
+          ..lastSnapType = netSnap.type
+          ..lastSnapTextContent = netSnap.textContent
+          ..lastSnapJsonContent = netSnap.jsonContent
+          ..lastSnapCreateTime = netSnap.createTime
+          ..partnerId = netSnap.toUid;
+        await KIMMI.kimmiDb.chatBoxDao.saveOrUpdateChatBoxes([newChatBox]);
+      }
+    }
   }
 }

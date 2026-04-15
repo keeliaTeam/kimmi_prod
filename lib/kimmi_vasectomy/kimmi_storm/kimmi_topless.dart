@@ -24,7 +24,15 @@ class KimmiWaitressTotally {
   int? clearCacheTime;
   int? displayTime;
   int? lastSnapSendStatus;
+  int? partnerId;
+
+  int? lastSnapType;
+  String? lastSnapTextContent;
+  String? lastSnapJsonContent;
+  int? lastSnapCreateTime;
+
   List<KimmiWaitressFeast>? members;
+  KimmiWaitressFeast? chatUser;
 
   List<InlineSpan>? lastContent;
 
@@ -48,31 +56,11 @@ class KimmiWaitressTotally {
   }
 
   String? get showName {
-    if (isSingle) {
-      return KimmiStarbucksJuda.isEmpty(chatUsers)
-          ? null
-          : chatUsers!.first.nickName;
-    } else {
-      if (!KimmiStarbucksJuda.isEmptyString(name)) {
-        return name;
-      } else {
-        List<String?>? names = chatUsers?.map((e) => e.nickName).toList();
-        return names?.join('、');
-      }
-    }
+    return chatUser?.nickName;
   }
 
   String? get showCoverURL {
-    if (!KimmiStarbucksJuda.isEmptyString(coverURL)) {
-      return coverURL;
-    } else {
-      if (isSingle) {
-        return KimmiStarbucksJuda.isEmpty(chatUsers)
-            ? null
-            : chatUsers!.first.avatarUrl;
-      }
-    }
-    return null;
+    return chatUser?.avatarUrl;
   }
 
   bool get isTop => (weight ?? 0) > 0;
@@ -82,11 +70,6 @@ class KimmiWaitressTotally {
   bool get isSingle => type == Chatbox_Type.SINGLE.value;
 
   bool get isGroup => type == Chatbox_Type.GROUP.value;
-
-  bool get hasSnap => lastReadSnapTime != null && lastReadSnapTime! > 0;
-
-  KimmiWaitressFeast? get chatUser =>
-      (chatUsers?.isNotEmpty == true) ? chatUsers?.first : null;
 
   List<KimmiWaitressFeast>? get chatUsers =>
       members?.where((user) => user.uid != KIMMI.uid()).toList();

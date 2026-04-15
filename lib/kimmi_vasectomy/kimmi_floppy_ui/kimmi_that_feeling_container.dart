@@ -1,5 +1,5 @@
 import 'dart:math';
-import 'kimmi_forbidden_ui.dart';
+import 'kimmi_immerse_script.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_juda/kimmi_manifest.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -303,7 +303,10 @@ class KimmiThatFeelingContainer
                           ),
                         ),
                         Text(
-                          "kimmi_broderick_handcuff_unwanted_saver".tr,
+                          KIMMI.kimmiHump.isRegionMatchFirst20sChargeMode()
+                              ? KIMMI.kimmiHump
+                                    .regionMatchFirst20sChargeModeDesc()
+                              : "kimmi_broderick_handcuff_unwanted_saver".tr,
                           textAlign: TextAlign.center,
                           maxLines: 3,
                           style: KimmiTamperDaytime.style(

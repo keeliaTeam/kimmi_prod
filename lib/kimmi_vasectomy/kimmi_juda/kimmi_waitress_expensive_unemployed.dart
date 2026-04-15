@@ -16,7 +16,7 @@ class KimmiExpensiveUnemployed {
     return DateTime.now().millisecondsSinceEpoch;
   }
 
-  static KimmiExpensive generateLocalSnap(int cid) {
+  static KimmiExpensive generateLocalSnap(int cid, int uid) {
     final snap = KimmiExpensive();
     snap.chatBoxId = cid;
     snap.localId = generateLocalId();
@@ -24,6 +24,7 @@ class KimmiExpensiveUnemployed {
     snap.ownerName = KIMMI.user().nickName;
     snap.ownerHead = KIMMI.user().avatarUrl;
     snap.createTime = DateTime.now().millisecondsSinceEpoch;
+    snap.toUid = uid;
     return snap;
   }
 
@@ -31,17 +32,21 @@ class KimmiExpensiveUnemployed {
     snap.createTime = DateTime.now().millisecondsSinceEpoch;
   }
 
-  static KimmiExpensive createTextSnap(int cid, String text) {
-    final snap = generateLocalSnap(cid);
+  static KimmiExpensive createTextSnap(int cid, int uid, String text) {
+    final snap = generateLocalSnap(cid, uid);
     snap.type = Snap_SnapType.TXT_SNAP.value;
     snap.textContent = text;
     return snap;
   }
 
-  static Future<KimmiExpensive> createImageSnap(int cid, String filePath) {
+  static Future<KimmiExpensive> createImageSnap(
+    int cid,
+    int uid,
+    String filePath,
+  ) {
     return KimmiErnieLeashJuda.kimmiPoopJuneFlowerTux(imagePath: filePath).then(
       (info) {
-        final snap = generateLocalSnap(cid);
+        final snap = generateLocalSnap(cid, uid);
         snap.type = Snap_SnapType.IMG_SNAP.value;
         snap.image = KimmiStormErnie();
         snap.image!.relativePath =
@@ -53,10 +58,14 @@ class KimmiExpensiveUnemployed {
     );
   }
 
-  static Future<KimmiExpensive> createVideoSnap(int cid, String filePath) {
+  static Future<KimmiExpensive> createVideoSnap(
+    int cid,
+    int uid,
+    String filePath,
+  ) {
     return KimmiErnieLeashJuda.kimmiPoopJuneFlowerTux(videoPath: filePath).then(
       (info) {
-        final snap = generateLocalSnap(cid);
+        final snap = generateLocalSnap(cid, uid);
         snap.type = Snap_SnapType.VIDEO_SNAP.value;
         snap.video = KimmiStormIndia();
         snap.video!.relativePath =
@@ -68,8 +77,8 @@ class KimmiExpensiveUnemployed {
     );
   }
 
-  static KimmiExpensive createVoiceSnap(int cid, String filePath) {
-    final snap = generateLocalSnap(cid);
+  static KimmiExpensive createVoiceSnap(int cid, int uid, String filePath) {
+    final snap = generateLocalSnap(cid, uid);
     snap.type = Snap_SnapType.VOICE_SNAP.value;
     snap.voice = KimmiStormCam();
     snap.voice!.relativePath =
@@ -77,26 +86,34 @@ class KimmiExpensiveUnemployed {
     return snap;
   }
 
-  static KimmiExpensive createStickerSnap(int cid, KimmiStormErnie sticker) {
-    final snap = generateLocalSnap(cid);
+  static KimmiExpensive createStickerSnap(
+    int cid,
+    int uid,
+    KimmiStormErnie sticker,
+  ) {
+    final snap = generateLocalSnap(cid, uid);
     snap.type = Snap_SnapType.STICKER_SNAP.value;
     snap.image = sticker;
     return snap;
   }
 
-  static KimmiExpensive createJsonSnap(int cid, String jsonContent) {
-    final snap = generateLocalSnap(cid);
+  static KimmiExpensive createJsonSnap(int cid, int uid, String jsonContent) {
+    final snap = generateLocalSnap(cid, uid);
     snap.type = Snap_SnapType.JSON_SNAP.value;
     snap.jsonContent = jsonContent;
     return snap;
   }
 
-  static KimmiExpensive createUserCardJsonSnap(int cid, KimmiFeast user) {
+  static KimmiExpensive createUserCardJsonSnap(
+    int cid,
+    int uid,
+    KimmiFeast user,
+  ) {
     Map<String, dynamic> params = {};
     params['category'] = 4;
     params['user_id'] = user.uid;
     params['user_head'] = user.avatarUrl;
     params['user_name'] = user.nickName;
-    return createJsonSnap(cid, json.encode(params));
+    return createJsonSnap(cid, uid, json.encode(params));
   }
 }

@@ -54,8 +54,10 @@ class KimmiLawyerDecafObjective {
 
     if (KIMMI.kimmiHump.isKimmiAiGraceSensitive() &&
         KimmiPalate.kimmiAiTedCurveBacteria > 0) {
-      KimmiWaitressContainerHusbandUp.open(
-        uid: KimmiPalate.kimmiAiTedCurveBacteria,
+      KimmiWaitressContainerHusbandUp.openChatWithUid(
+        KimmiPalate.kimmiAiTedCurveBacteria,
+        "",
+        "",
       );
     } else {
       KimmiCavityFeast user = KIMMI.user();
@@ -75,8 +77,6 @@ class KimmiLawyerDecafObjective {
           'qa_app_id': KimmiPalate.kimmiAiPvcId,
           'qa_app_key': KimmiPalate.kimmiAiPvcTowel,
           'qa_app_show_dialog': "1",
-
-          /// dialog 0 不展示  1  展示
         });
       }
     }

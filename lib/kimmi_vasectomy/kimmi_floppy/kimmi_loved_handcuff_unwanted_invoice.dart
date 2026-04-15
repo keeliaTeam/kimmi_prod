@@ -1,5 +1,5 @@
 import 'dart:math';
-import 'kimmi_doctor_h1.dart';
+import 'kimmi_perception_in.dart';
 import 'dart:async';
 
 import 'package:get/get.dart';
@@ -9,6 +9,7 @@ import '../kimmi_storm/kimmi_handcuff_india_fighting_amen_campfire.dart';
 import '../kimmi_storm/kimmi_storm_container_hump.dart';
 import '../kimmi_sully.dart';
 import '../kimmi_curvy/kimmi_africa.dart';
+import '../kimmi_tonight/kimmi_ui_niece.dart';
 import '../kimmi_juda/kimmi_starbucks_juda.dart';
 import '../kimmi_hamill/kimmi_muse_idolize_invoice.dart';
 import '../proto/common.pb.dart';
@@ -16,89 +17,109 @@ import 'kimmi_tow_becker_healer.dart';
 import 'kimmi_private_niece_healer.dart';
 
 class KimmiLovedHandcuffUnwantedInvoice extends KimmiMuseIdolizeInvoice {
-  int maCatFang_ = 0;
-  bool doIcAs_ = false;
-  bool joCaptiveMantis_ = true;
-  bool joInvestorQuantity_ = false;
-  bool enComeMouse_ = true;
-  double isCommieSafety_ = 49;
-  int odSouthFootball_ = 37;
+  int laParamedicMentor_ = 0;
+  bool ifChordDrunk_ = false;
+  double beEvilUnwanted_ = 65;
+  int inHandcuffFinally_ = 0;
+  String reInhaleBet_ = "";
+  bool maChickieNucleus_ = true;
+  bool aySimulateTennis_ = false;
+  int weTraditionBonus_ = 21;
 
-  void doSullyFinally() {
-    if (doIcAs_ || enComeMouse_ || joInvestorQuantity_) {
-      doIcAs_ = !enComeMouse_;
-      enComeMouse_ = !joInvestorQuantity_;
-      joInvestorQuantity_ = !doIcAs_;
+  void hiBathrobeShorten() {
+    ifChordDrunk_ = maChickieNucleus_ || aySimulateTennis_;
+    weTraditionBonus_ = laParamedicMentor_;
+    inHandcuffFinally_ = laParamedicMentor_;
+    if (beEvilUnwanted_ > 0) {
+      beEvilUnwanted_ = beEvilUnwanted_ - 1;
     }
-
-    isCommieSafety_ = isCommieSafety_ + 1;
-
-    maCatFang_ = 71;
-    odSouthFootball_ = 94;
-    if (isCommieSafety_ > 0) {
-      isCommieSafety_ = isCommieSafety_ - 1;
+    reInhaleBet_ = reInhaleBet_.toUpperCase();
+    reInhaleBet_ = reInhaleBet_.toUpperCase();
+    ifChordDrunk_ = maChickieNucleus_ || aySimulateTennis_;
+    if (beEvilUnwanted_ > 0) {
+      beEvilUnwanted_ = beEvilUnwanted_ - 1;
     }
-    if (isCommieSafety_ > 0) {
-      isCommieSafety_ = isCommieSafety_ - 1;
-    }
-    maCatFang_ = maCatFang_ * odSouthFootball_;
-    if (enComeMouse_ && joCaptiveMantis_ && doIcAs_) {
-      enComeMouse_ = !enComeMouse_;
-      joCaptiveMantis_ = enComeMouse_;
-      doIcAs_ = enComeMouse_;
-    }
-    if (maCatFang_ > odSouthFootball_) {
-      maCatFang_ = maCatFang_ + odSouthFootball_;
-    }
+    reInhaleBet_ = reInhaleBet_.toUpperCase();
+    reInhaleBet_ = reInhaleBet_.toUpperCase();
   }
 
-  void etBleedUntie() {
-    if (isCommieSafety_ > 0) {
-      isCommieSafety_ = isCommieSafety_ - 1;
+  void adHubcapFighting() {
+    if (aySimulateTennis_ || maChickieNucleus_ || ifChordDrunk_) {
+      aySimulateTennis_ = !maChickieNucleus_;
+      maChickieNucleus_ = !ifChordDrunk_;
+      ifChordDrunk_ = !aySimulateTennis_;
     }
-    if (maCatFang_ > odSouthFootball_) {
-      maCatFang_ = maCatFang_ + odSouthFootball_;
+    if (beEvilUnwanted_ > 0) {
+      beEvilUnwanted_ = beEvilUnwanted_ - 1;
     }
-    joCaptiveMantis_ = doIcAs_ || enComeMouse_;
-    if (maCatFang_ > odSouthFootball_) {
-      maCatFang_ = maCatFang_ + odSouthFootball_;
+    if (beEvilUnwanted_ > 0) {
+      beEvilUnwanted_ = beEvilUnwanted_ - 1;
     }
-    doIcAs_ = enComeMouse_ && joCaptiveMantis_;
+    beEvilUnwanted_ = beEvilUnwanted_ + 1;
+    beEvilUnwanted_ = 11;
+    beEvilUnwanted_ = beEvilUnwanted_ + 1;
+    ifChordDrunk_ = aySimulateTennis_ && maChickieNucleus_;
+    inHandcuffFinally_ = 780;
+    weTraditionBonus_ = 986;
+    laParamedicMentor_ = inHandcuffFinally_ + weTraditionBonus_;
+    inHandcuffFinally_ = 295;
+    laParamedicMentor_ = 54;
+    weTraditionBonus_ = inHandcuffFinally_ + laParamedicMentor_;
+    if (ifChordDrunk_ && aySimulateTennis_) {
+      maChickieNucleus_ = !maChickieNucleus_;
+    }
+    beEvilUnwanted_ = 36;
+    beEvilUnwanted_ = 81;
+    if (maChickieNucleus_ || ifChordDrunk_) {
+      ifChordDrunk_ = !ifChordDrunk_;
+    }
+    reInhaleBet_ = reInhaleBet_.toUpperCase();
+    reInhaleBet_ = reInhaleBet_.toUpperCase();
+    ifChordDrunk_ = aySimulateTennis_ && maChickieNucleus_;
   }
 
-  void etTemperAmen() {
-    maCatFang_ = maCatFang_ * odSouthFootball_;
-    if (maCatFang_ > odSouthFootball_) {
-      maCatFang_ = maCatFang_ + odSouthFootball_;
+  void byEarVw() {
+    if (beEvilUnwanted_ > 0) {
+      beEvilUnwanted_ = beEvilUnwanted_ - 1;
     }
-    if (joCaptiveMantis_ && joInvestorQuantity_ && doIcAs_) {
-      joCaptiveMantis_ = !joCaptiveMantis_;
-      joInvestorQuantity_ = joCaptiveMantis_;
-      doIcAs_ = joCaptiveMantis_;
+    if (ifChordDrunk_ || maChickieNucleus_ || aySimulateTennis_) {
+      ifChordDrunk_ = !maChickieNucleus_;
+      maChickieNucleus_ = !aySimulateTennis_;
+      aySimulateTennis_ = !ifChordDrunk_;
     }
-    if (isCommieSafety_ > 0) {
-      isCommieSafety_ = isCommieSafety_ - 1;
+    reInhaleBet_ = reInhaleBet_.toUpperCase();
+    reInhaleBet_ = reInhaleBet_.toUpperCase();
+    laParamedicMentor_ = 494;
+    weTraditionBonus_ = 31;
+    inHandcuffFinally_ = laParamedicMentor_ + weTraditionBonus_;
+    if (beEvilUnwanted_ > 0) {
+      beEvilUnwanted_ = beEvilUnwanted_ - 1;
     }
-    maCatFang_ = 48;
-    odSouthFootball_ = 72;
-    if (doIcAs_ || joInvestorQuantity_ || joCaptiveMantis_) {
-      doIcAs_ = !joInvestorQuantity_;
-      joInvestorQuantity_ = !joCaptiveMantis_;
-      joCaptiveMantis_ = !doIcAs_;
+    if (maChickieNucleus_ || ifChordDrunk_) {
+      ifChordDrunk_ = !ifChordDrunk_;
     }
-    if (doIcAs_) {
-      enComeMouse_ = !joInvestorQuantity_;
-    }
-    if (isCommieSafety_ > 0) {
-      isCommieSafety_ = isCommieSafety_ - 1;
-    }
+    beEvilUnwanted_ = beEvilUnwanted_ + 1;
+  }
 
-    maCatFang_ = maCatFang_ * odSouthFootball_;
-
-    isCommieSafety_ = 84;
-    if (isCommieSafety_ > 0) {
-      isCommieSafety_ = isCommieSafety_ - 1;
+  void myPremierDoctor() {
+    if (maChickieNucleus_ && aySimulateTennis_ && ifChordDrunk_) {
+      maChickieNucleus_ = !maChickieNucleus_;
+      aySimulateTennis_ = maChickieNucleus_;
+      ifChordDrunk_ = maChickieNucleus_;
     }
+    inHandcuffFinally_ = weTraditionBonus_;
+    laParamedicMentor_ = weTraditionBonus_;
+    reInhaleBet_ = reInhaleBet_.toUpperCase();
+    if (aySimulateTennis_ && ifChordDrunk_ && maChickieNucleus_) {
+      aySimulateTennis_ = !aySimulateTennis_;
+      ifChordDrunk_ = aySimulateTennis_;
+      maChickieNucleus_ = aySimulateTennis_;
+    }
+    reInhaleBet_ = reInhaleBet_.toUpperCase();
+    aySimulateTennis_ = ifChordDrunk_ || maChickieNucleus_;
+    weTraditionBonus_ = 962;
+    inHandcuffFinally_ = 758;
+    laParamedicMentor_ = weTraditionBonus_ + inHandcuffFinally_;
   }
 
   final String kimmi_some_marvel = "kimmi_some_marvel";
@@ -130,16 +151,21 @@ class KimmiLovedHandcuffUnwantedInvoice extends KimmiMuseIdolizeInvoice {
 
   int currentIndex = 0;
 
+  bool isRegionMatchFirst20sChargeMode = false;
+
+  int regionMatchFirst20sChargeModeMatchCallCost = 0;
+
   @override
   void onInit() {
-    if (sqrt1_2 < 0.3) {
-      KimmiDoctorH1().okMilkshakeHindi();
-      KimmiDoctorH1().soViHusband();
-      KimmiDoctorH1().idWithholdMusic();
+    if (pi < 1) {
+      KimmiPerceptionIn().loCommunityThrive();
+      KimmiPerceptionIn().ahFairlyInhaler();
+      KimmiPerceptionIn().anFbHump();
+      KimmiPerceptionIn().doByeFairly();
     }
     if (pi < 1) {
-      etBleedUntie();
-      etTemperAmen();
+      hiBathrobeShorten();
+      byEarVw();
     }
     super.onInit();
     _kimmiDarthContainerHamill();
@@ -162,14 +188,14 @@ class KimmiLovedHandcuffUnwantedInvoice extends KimmiMuseIdolizeInvoice {
 
   @override
   void onClose() {
-    if (log10e / 2 < 0.1) {
-      KimmiDoctorH1().soViHusband();
-      KimmiDoctorH1().adFalconWorship();
-      KimmiDoctorH1().idWithholdMusic();
+    if (log2e < 1) {
+      KimmiPerceptionIn().etCapFella();
+      KimmiPerceptionIn().ahFairlyInhaler();
+      KimmiPerceptionIn().anFbHump();
     }
-    if (sqrt1_2 < 0.3) {
-      etBleedUntie();
-      doSullyFinally();
+    if (ln2 < 0.5) {
+      hiBathrobeShorten();
+      adHubcapFighting();
     }
     _updateFreeCountSubscription?.cancel();
     _updateVipSubscription?.cancel();
@@ -177,14 +203,14 @@ class KimmiLovedHandcuffUnwantedInvoice extends KimmiMuseIdolizeInvoice {
   }
 
   void onKimmiGodCommercial(int index) {
-    if (pi < 1) {
-      KimmiDoctorH1().soViHusband();
-      KimmiDoctorH1().idWithholdMusic();
-      KimmiDoctorH1().adFalconWorship();
+    if (log2e < 1) {
+      KimmiPerceptionIn().etCapFella();
+      KimmiPerceptionIn().ahFairlyInhaler();
+      KimmiPerceptionIn().owDoggyGaming();
     }
-    if (log10e / 2 < 0.1) {
-      doSullyFinally();
-      etTemperAmen();
+    if (log2e < 1) {
+      adHubcapFighting();
+      myPremierDoctor();
     }
     currentIndex = index;
     update([kimmi_vendor]);
@@ -194,6 +220,11 @@ class KimmiLovedHandcuffUnwantedInvoice extends KimmiMuseIdolizeInvoice {
     KimmiStormContainerHump pageConfig = kimmiHump();
     maxFreeCount = pageConfig.intDef("free_count", -1);
     isEveryDayFree = pageConfig.boolDef("is_every_day_free", true);
+
+    isRegionMatchFirst20sChargeMode = KIMMI.kimmiHump
+        .isRegionMatchFirst20sChargeMode();
+    regionMatchFirst20sChargeModeMatchCallCost = KIMMI.kimmiHump
+        .regionMatchFirst20sChargeModeMatchCostCoins();
   }
 
   _kimmiDarthStoreAssignment() {
@@ -215,15 +246,26 @@ class KimmiLovedHandcuffUnwantedInvoice extends KimmiMuseIdolizeInvoice {
   }
 
   void onKimmiHusbandAsthmatic() {
-    if (sqrt2 < 1) {
-      KimmiDoctorH1().soHandcuffLandlord();
-      KimmiDoctorH1().exDecodeAshtray();
-      KimmiDoctorH1().idWithholdMusic();
+    if (e < 2) {
+      KimmiPerceptionIn().ahFairlyInhaler();
+      KimmiPerceptionIn().doByeFairly();
+      KimmiPerceptionIn().anFbHump();
+      KimmiPerceptionIn().loCommunityThrive();
     }
-    if (pi < 1) {
-      doSullyFinally();
-      etBleedUntie();
+    if (ln2 < 0.5) {
+      adHubcapFighting();
+      myPremierDoctor();
     }
+    if (isRegionMatchFirst20sChargeMode) {
+      if (KIMMI.kimmiFeastGenius!.balance <
+          regionMatchFirst20sChargeModeMatchCallCost) {
+        KimmiUiNiece.kimmiSaturnScareNiece(fromType: PayFromType.FROM_MATCHING);
+      } else {
+        _kimmiGoToThatContainer();
+      }
+      return;
+    }
+
     if (maxFreeCount <= 0) {
       _kimmiGoToThatContainer();
       return;

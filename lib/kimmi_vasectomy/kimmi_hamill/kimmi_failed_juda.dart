@@ -11,12 +11,14 @@ import 'package:kimmi/kimmi_vasectomy/kimmi_juda/kimmi_ernie_properly.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_juda/kimmi_starbucks_juda.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_hamill/kimmi_yummy_asthmatic.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_hamill/kimmi_manipulate.dart';
+import 'package:kimmi/kimmi_vasectomy/proto/object.pb.dart';
 import 'package:easy_refresh/easy_refresh.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
 import 'package:json_dynamic_widget/json_dynamic_widget.dart';
 import 'package:tapped/tapped.dart';
+import '../kimmi_storm/kimmi_storm_puffy.dart';
 import '../kimmi_storm/kimmi_storm_concerned.dart';
 import '../kimmi_tonight/kimmi_stu_tamper.dart';
 import '../kimmi_juda/kimmi_io_juda.dart';
@@ -73,6 +75,44 @@ abstract class KimmiFailedWebsite {
               padding: const EdgeInsetsDirectional.only(start: 2),
               child: Text(age.toString(), style: KimmiTamperDaytime.white12),
             ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  static Widget kimmiBathtubPuffy(KimmiStormPuffy? country) {
+    if (country == null) {
+      return const SizedBox.shrink();
+    }
+
+    return Container(
+      height: 24,
+      padding: const EdgeInsets.symmetric(horizontal: 8),
+      decoration: const BoxDecoration(
+        borderRadius: BorderRadius.all(Radius.circular(14)),
+        color: Color(0x33FFFFFF),
+      ),
+      alignment: Alignment.center,
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.start,
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          KimmiErnie.circle(
+            url: country.flag,
+            size: 12,
+            fit: BoxFit.cover,
+            clip: ImageClipType.origin,
+          ),
+          KimmiManipulate.hGap2,
+          KimmiFailedWebsite.kimmiThongLowellTamper(
+            Text(
+              country.name,
+              style: KimmiTamperDaytime.white12,
+              maxLines: 1,
+              overflow: TextOverflow.ellipsis,
+            ),
+            160,
           ),
         ],
       ),
@@ -147,101 +187,104 @@ abstract class KimmiFailedWebsite {
     VoidCallback hangup, {
     bool isCenter = false,
   }) {
-    Widget body = SizedBox(
-      width: isCenter ? Get.width - 48 : Get.width,
-      height: 388,
-      child: Stack(
-        alignment: Alignment.topCenter,
-        children: [
-          Positioned(
-            top: 68,
-            left: 0,
-            right: 0,
-            bottom: 0,
-            child: ClipRRect(
-              borderRadius: isCenter
-                  ? BorderRadius.circular(32)
-                  : const BorderRadius.only(
-                      topLeft: Radius.circular(32),
-                      topRight: Radius.circular(32),
-                    ),
-              child: KimmiErnie.local(
-                fileName: "kimmi_doggy_wig_bg",
-                fit: BoxFit.fill,
-              ),
-            ),
-          ),
-          ClipOval(
-            child: Container(
-              padding: const EdgeInsets.all(8.0),
-              color: KimmiDraftJuda.white,
-              child: KimmiErnie.circle(
-                url: avatarUrl,
-                size: 120,
-                clip: ImageClipType.middle,
-              ),
-            ),
-          ),
-          Positioned(
-            left: 18,
-            right: 18,
-            bottom: 24,
-            child: Column(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                Padding(
-                  padding: const EdgeInsets.only(left: 16, right: 16),
-                  child: Text(
-                    "kimmi_broderick_doggy_lobby_up_danger_devastate".tr,
-                    style: KimmiTamperDaytime.style(
-                      color: const Color(0xFF651FFF),
-                      fontSize: 16,
-                      fontWeight: FontWeight.bold,
-                    ),
-                    textAlign: TextAlign.center,
-                  ),
+    Widget body = SafeArea(
+      bottom: true,
+      child: SizedBox(
+        width: isCenter ? Get.width - 48 : Get.width,
+        height: 388,
+        child: Stack(
+          alignment: Alignment.topCenter,
+          children: [
+            Positioned(
+              top: 68,
+              left: 0,
+              right: 0,
+              bottom: 0,
+              child: ClipRRect(
+                borderRadius: isCenter
+                    ? BorderRadius.circular(32)
+                    : const BorderRadius.only(
+                        topLeft: Radius.circular(32),
+                        topRight: Radius.circular(32),
+                      ),
+                child: KimmiErnie.local(
+                  fileName: "kimmi_doggy_wig_bg",
+                  fit: BoxFit.fill,
                 ),
-                KimmiManipulate.vGap26,
-                Container(
-                  width: 200,
-                  height: 60,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(30),
-                    gradient: KimmiPalate.kimmiBathtubStuCoat,
-                  ),
-                  child: ElevatedButton(
-                    onPressed: () {
-                      Get.back();
-                    },
-                    style: ElevatedButton.styleFrom(
-                      elevation: 0,
-                      backgroundColor: Colors.transparent,
-                      padding: const EdgeInsets.only(left: 6, right: 6),
-                    ),
+              ),
+            ),
+            ClipOval(
+              child: Container(
+                padding: const EdgeInsets.all(8.0),
+                color: KimmiDraftJuda.white,
+                child: KimmiErnie.circle(
+                  url: avatarUrl,
+                  size: 120,
+                  clip: ImageClipType.middle,
+                ),
+              ),
+            ),
+            Positioned(
+              left: 18,
+              right: 18,
+              bottom: 24,
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.only(left: 16, right: 16),
                     child: Text(
-                      "kimmi_broderick_shorten_cream".tr,
-                      style: KimmiTamperDaytime.white14Bold,
+                      "kimmi_broderick_doggy_lobby_up_danger_devastate".tr,
+                      style: KimmiTamperDaytime.style(
+                        color: const Color(0xFF651FFF),
+                        fontSize: 16,
+                        fontWeight: FontWeight.bold,
+                      ),
+                      textAlign: TextAlign.center,
                     ),
                   ),
-                ),
-                KimmiManipulate.vGap10,
-                Tapped(
-                  onTap: hangup,
-                  child: SizedBox(
+                  KimmiManipulate.vGap26,
+                  Container(
                     width: 200,
                     height: 60,
-                    child: Center(
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(30),
+                      gradient: KimmiPalate.kimmiBathtubStuCoat,
+                    ),
+                    child: ElevatedButton(
+                      onPressed: () {
+                        Get.back();
+                      },
+                      style: ElevatedButton.styleFrom(
+                        elevation: 0,
+                        backgroundColor: Colors.transparent,
+                        padding: const EdgeInsets.only(left: 6, right: 6),
+                      ),
                       child: Text(
-                        "kimmi_broderick_lobby_up".tr,
-                        style: KimmiTamperDaytime.TextB2_14,
+                        "kimmi_broderick_shorten_cream".tr,
+                        style: KimmiTamperDaytime.white14Bold,
                       ),
                     ),
                   ),
-                ),
-              ],
+                  KimmiManipulate.vGap10,
+                  Tapped(
+                    onTap: hangup,
+                    child: SizedBox(
+                      width: 200,
+                      height: 60,
+                      child: Center(
+                        child: Text(
+                          "kimmi_broderick_lobby_up".tr,
+                          style: KimmiTamperDaytime.TextB2_14,
+                        ),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
     if (isCenter) {
@@ -442,6 +485,7 @@ abstract class KimmiFailedWebsite {
       context: Get.context!,
       builder: (_) => Container(
         height: 250,
+        margin: EdgeInsets.only(bottom: Get.mediaQuery.padding.bottom),
         decoration: const BoxDecoration(
           borderRadius: KimmiPalate.kimmiSubstituteObjectiveStirTummy,
           color: KimmiPalate.kimmiNieceBgGranolaYummy,
@@ -506,6 +550,7 @@ abstract class KimmiFailedWebsite {
       context: Get.context!,
       builder: (_) => Container(
         height: 250,
+        margin: EdgeInsets.only(bottom: Get.mediaQuery.padding.bottom),
         decoration: const BoxDecoration(
           borderRadius: KimmiPalate.kimmiSubstituteObjectiveStirTummy,
           color: KimmiPalate.kimmiNieceBgGranolaYummy,

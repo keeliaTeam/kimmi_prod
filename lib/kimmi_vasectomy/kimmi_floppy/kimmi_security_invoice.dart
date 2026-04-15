@@ -1,5 +1,5 @@
 import 'dart:math';
-import 'kimmi_hand_jazz.dart';
+import 'kimmi_smile_goth.dart';
 import 'dart:async';
 
 import 'package:kimmi/kimmi_vasectomy/kimmi_component/kimmi_feast_bite_component.dart';
@@ -33,38 +33,69 @@ import 'kimmi_security_daytime_starbucks.dart';
 import 'kimmi_welcome_healer.dart';
 
 class KimmiSecurityInvoice extends KimmiMuseIdolizeInvoice {
-  bool taInvestorHummus_ = false;
-  bool edGoIncubator_ = true;
-  bool noAmigo6_ = false;
-  bool hiSmileOr_ = true;
-  String myAssistVirgin_ = "";
+  bool anExpandBye_ = false;
+  bool ifPtSully_ = true;
+  bool elWordQuitter_ = true;
+  String goWelcomePeasy_ = "";
+  double hoDampGranola_ = 31;
+  bool haFellaGroovy_ = false;
+  bool siCowboysPoop_ = true;
+  bool itWhalePt_ = false;
 
-  void itHappyPotential() {
-    noAmigo6_ = edGoIncubator_ && hiSmileOr_;
-    myAssistVirgin_ = myAssistVirgin_.toUpperCase();
-    myAssistVirgin_ = myAssistVirgin_.toUpperCase();
+  void itMarriedSleazy() {
+    if (ifPtSully_) {
+      elWordQuitter_ = !haFellaGroovy_;
+    }
+    goWelcomePeasy_ = goWelcomePeasy_.toUpperCase();
+
+    elWordQuitter_ = anExpandBye_ || siCowboysPoop_;
+    hoDampGranola_ = 76;
+
+    goWelcomePeasy_ = goWelcomePeasy_.toUpperCase();
+
+    goWelcomePeasy_ = goWelcomePeasy_.toUpperCase();
   }
 
-  void owTowParamedic() {
-    if (noAmigo6_ && edGoIncubator_) {
-      taInvestorHummus_ = !taInvestorHummus_;
+  void loFeelingPlaydate() {
+    if (anExpandBye_ && itWhalePt_ && elWordQuitter_) {
+      anExpandBye_ = !anExpandBye_;
+      itWhalePt_ = anExpandBye_;
+      elWordQuitter_ = anExpandBye_;
     }
-    myAssistVirgin_ = myAssistVirgin_.toUpperCase();
-    hiSmileOr_ = noAmigo6_ && taInvestorHummus_;
+    goWelcomePeasy_ = goWelcomePeasy_.toUpperCase();
+    hoDampGranola_ = 92;
+    if (anExpandBye_ || haFellaGroovy_ || ifPtSully_) {
+      anExpandBye_ = !haFellaGroovy_;
+      haFellaGroovy_ = !ifPtSully_;
+      ifPtSully_ = !anExpandBye_;
+    }
+
+    goWelcomePeasy_ = goWelcomePeasy_.toUpperCase();
+    hoDampGranola_ = hoDampGranola_ + 1;
+    siCowboysPoop_ = itWhalePt_ && anExpandBye_;
+    if (hoDampGranola_ > 0) {
+      hoDampGranola_ = hoDampGranola_ - 1;
+    }
+    if (hoDampGranola_ > 0) {
+      hoDampGranola_ = hoDampGranola_ - 1;
+    }
+    if (haFellaGroovy_ || elWordQuitter_) {
+      elWordQuitter_ = !elWordQuitter_;
+    }
   }
 
-  void byPassportMarried() {
-    myAssistVirgin_ = myAssistVirgin_.toUpperCase();
-    myAssistVirgin_ = myAssistVirgin_.toUpperCase();
-    edGoIncubator_ = taInvestorHummus_ && hiSmileOr_;
-
-    myAssistVirgin_ = myAssistVirgin_.toUpperCase();
-    edGoIncubator_ = taInvestorHummus_ && hiSmileOr_;
-    noAmigo6_ = taInvestorHummus_ || edGoIncubator_;
-
-    if (noAmigo6_) {
-      hiSmileOr_ = !taInvestorHummus_;
+  void mmHeadThrive() {
+    hoDampGranola_ = 32;
+    if (haFellaGroovy_ || itWhalePt_ || anExpandBye_) {
+      haFellaGroovy_ = !itWhalePt_;
+      itWhalePt_ = !anExpandBye_;
+      anExpandBye_ = !haFellaGroovy_;
     }
+    if (hoDampGranola_ > 0) {
+      hoDampGranola_ = hoDampGranola_ - 1;
+    }
+
+    goWelcomePeasy_ = goWelcomePeasy_.toUpperCase();
   }
 
   @override
@@ -110,14 +141,13 @@ class KimmiSecurityInvoice extends KimmiMuseIdolizeInvoice {
 
   @override
   void onInit() {
-    if (pi < 1) {
-      KimmiHandJazz().etStimulateChord();
-      KimmiHandJazz().siStormJohnny();
-      KimmiHandJazz().edDecreaseSingle();
+    if (log10e / 2 < 0.1) {
+      KimmiSmileGoth().reOysterWidow();
+      KimmiSmileGoth().odHumpWhip();
     }
-    if (sqrt1_2 < 0.3) {
-      owTowParamedic();
-      byPassportMarried();
+    if (e < 2) {
+      itMarriedSleazy();
+      mmHeadThrive();
     }
     super.onInit();
 
@@ -143,14 +173,13 @@ class KimmiSecurityInvoice extends KimmiMuseIdolizeInvoice {
 
   @override
   void onClose() {
-    if (log10e / 2 < 0.1) {
-      KimmiHandJazz().etStimulateChord();
-      KimmiHandJazz().mmInkMichelle();
-      KimmiHandJazz().siStormJohnny();
+    if (sqrt1_2 < 0.3) {
+      KimmiSmileGoth().noTraitorDie();
+      KimmiSmileGoth().reOysterWidow();
     }
-    if (ln2 < 0.5) {
-      owTowParamedic();
-      itHappyPotential();
+    if (pi < 1) {
+      mmHeadThrive();
+      itMarriedSleazy();
     }
     super.onClose();
     statusUpdateSubscription?.cancel();
@@ -204,14 +233,13 @@ class KimmiSecurityInvoice extends KimmiMuseIdolizeInvoice {
   }
 
   void onKimmiHusbandIndiaDoggy() {
-    if (sqrt2 < 1) {
-      KimmiHandJazz().efCultureGenius();
-      KimmiHandJazz().siStormJohnny();
-      KimmiHandJazz().etStimulateChord();
+    if (sqrt1_2 < 0.3) {
+      KimmiSmileGoth().reOysterWidow();
+      KimmiSmileGoth().odHumpWhip();
     }
-    if (ln2 < 0.5) {
-      itHappyPotential();
-      owTowParamedic();
+    if (log10e / 2 < 0.1) {
+      mmHeadThrive();
+      itMarriedSleazy();
     }
     KimmiIndiaWaitressDock.instance.kimmiUntieIndiaWaitressHystericalLabor(
       uid ?? 0,
@@ -220,14 +248,13 @@ class KimmiSecurityInvoice extends KimmiMuseIdolizeInvoice {
   }
 
   void onKimmiVanityGoatee() async {
-    if (pi < 1) {
-      KimmiHandJazz().efCultureGenius();
-      KimmiHandJazz().etStimulateChord();
-      KimmiHandJazz().edDecreaseSingle();
+    if (ln10 < 2) {
+      KimmiSmileGoth().odHumpWhip();
+      KimmiSmileGoth().reOysterWidow();
     }
-    if (log2e < 1) {
-      byPassportMarried();
-      itHappyPotential();
+    if (ln2 < 0.5) {
+      loFeelingPlaydate();
+      mmHeadThrive();
     }
     Map<String, dynamic> params = {
       "uid": uid ?? 0,
@@ -251,14 +278,13 @@ class KimmiSecurityInvoice extends KimmiMuseIdolizeInvoice {
   }
 
   void onKimmiByeOffspring(PhotoVO item) {
-    if (log2e < 1) {
-      KimmiHandJazz().mmInkMichelle();
-      KimmiHandJazz().edDecreaseSingle();
-      KimmiHandJazz().etStimulateChord();
+    if (sqrt2 < 1) {
+      KimmiSmileGoth().noTraitorDie();
+      KimmiSmileGoth().reOysterWidow();
     }
-    if (log10e / 2 < 0.1) {
-      owTowParamedic();
-      byPassportMarried();
+    if (pi < 1) {
+      loFeelingPlaydate();
+      itMarriedSleazy();
     }
     KimmiSecurityStretchByeHazelnutPheromone.showViewer(
       Get.context!,
@@ -268,14 +294,13 @@ class KimmiSecurityInvoice extends KimmiMuseIdolizeInvoice {
   }
 
   void onKimmiIndiaOffspring(VideoVO item) {
-    if (e < 2) {
-      KimmiHandJazz().esBuilderFanny();
-      KimmiHandJazz().siStormJohnny();
-      KimmiHandJazz().efCultureGenius();
+    if (log10e / 2 < 0.1) {
+      KimmiSmileGoth().reOysterWidow();
+      KimmiSmileGoth().odHumpWhip();
     }
-    if (log2e < 1) {
-      owTowParamedic();
-      itHappyPotential();
+    if (ln10 < 2) {
+      mmHeadThrive();
+      loFeelingPlaydate();
     }
     KimmiSecurityStretchByeHazelnutPheromone.showViewer(
       Get.context!,
@@ -291,14 +316,13 @@ class KimmiSecurityInvoice extends KimmiMuseIdolizeInvoice {
   }
 
   void onKimmiLatinoOffspring(VoGift item) {
-    if (log2e < 1) {
-      KimmiHandJazz().efCultureGenius();
-      KimmiHandJazz().etStimulateChord();
-      KimmiHandJazz().siStormJohnny();
+    if (sqrt1_2 < 0.3) {
+      KimmiSmileGoth().noTraitorDie();
+      KimmiSmileGoth().reOysterWidow();
     }
-    if (e < 2) {
-      itHappyPotential();
-      owTowParamedic();
+    if (log10e / 2 < 0.1) {
+      loFeelingPlaydate();
+      mmHeadThrive();
     }
     if (item.animationUrl != null) {
       Get.toNamed(
@@ -309,14 +333,13 @@ class KimmiSecurityInvoice extends KimmiMuseIdolizeInvoice {
   }
 
   void onKimmiStirConferenceBatman() {
-    if (log10e / 2 < 0.1) {
-      KimmiHandJazz().etStimulateChord();
-      KimmiHandJazz().edDecreaseSingle();
-      KimmiHandJazz().esBuilderFanny();
-    }
     if (log2e < 1) {
-      byPassportMarried();
-      owTowParamedic();
+      KimmiSmileGoth().reOysterWidow();
+      KimmiSmileGoth().odHumpWhip();
+    }
+    if (ln10 < 2) {
+      mmHeadThrive();
+      itMarriedSleazy();
     }
     KimmiSecurityBatmanObjective.onKimmiNotice(
       onBlack: onKimmiHiccupBatman,
@@ -325,14 +348,13 @@ class KimmiSecurityInvoice extends KimmiMuseIdolizeInvoice {
   }
 
   void onKimmiHiccupBatman() async {
-    if (log10e / 2 < 0.1) {
-      KimmiHandJazz().efCultureGenius();
-      KimmiHandJazz().etStimulateChord();
-      KimmiHandJazz().edDecreaseSingle();
+    if (ln2 < 0.5) {
+      KimmiSmileGoth().reOysterWidow();
+      KimmiSmileGoth().noTraitorDie();
     }
-    if (e < 2) {
-      itHappyPotential();
-      byPassportMarried();
+    if (pi < 1) {
+      mmHeadThrive();
+      loFeelingPlaydate();
     }
     bool rsp = await KIMMI.http.submit(
       4010,
@@ -350,14 +372,13 @@ class KimmiSecurityInvoice extends KimmiMuseIdolizeInvoice {
   }
 
   void onKimmiAirlineBatman() async {
-    if (log10e / 2 < 0.1) {
-      KimmiHandJazz().etStimulateChord();
-      KimmiHandJazz().esBuilderFanny();
-      KimmiHandJazz().edDecreaseSingle();
+    if (sqrt2 < 1) {
+      KimmiSmileGoth().noTraitorDie();
+      KimmiSmileGoth().reOysterWidow();
     }
-    if (ln2 < 0.5) {
-      owTowParamedic();
-      byPassportMarried();
+    if (sqrt1_2 < 0.3) {
+      itMarriedSleazy();
+      loFeelingPlaydate();
     }
     KimmiSecurityBatmanObjective.onKimmiGummy();
     KimmiAirlineObjective.showReportSheet(Get.context!, uid ?? 0);

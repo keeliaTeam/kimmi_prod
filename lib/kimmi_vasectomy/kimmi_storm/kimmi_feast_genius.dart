@@ -81,6 +81,9 @@ class KimmiFeastGenius {
   }
 
   String kimmiShagHystericalChickie() {
+    if (KIMMI.kimmiHump.isRegionMatchFirst20sChargeMode()) {
+      return "$balance";
+    }
     return (kimmiObstacleClosedChickie()
             ? balance + coupons![0].diamondAmount
             : balance)

@@ -1,86 +1,88 @@
 import 'dart:math';
-import 'kimmi_security_contractor.dart';
+import 'kimmi_perception_in.dart';
 import 'package:get/get.dart';
 
 import 'kimmi_ink_invoice.dart';
 
 class KimmiInkSmart extends Bindings {
-  bool ohStewartViking_ = true;
-  bool omOuchShoe_ = false;
-  double ofAggravateGauge_ = 0.0;
-  bool amFlukeScrap_ = true;
-  String inDisgustingLauren_ = "";
-  bool joCavityBye_ = true;
+  bool emMateyWeb_ = true;
+  int anSimilarSensitive_ = 0;
+  double orExpensiveJen_ = 69;
+  String orUiErase_ = "";
+  bool opDoggySplashdown_ = true;
+  bool adToplessFraud_ = false;
+  bool inTennisVixen_ = false;
 
-  void osMarthaUseless() {
-    ofAggravateGauge_ = 59;
-    if (ofAggravateGauge_ > 0) {
-      ofAggravateGauge_ = ofAggravateGauge_ - 1;
+  void ifSutraGranola() {
+    anSimilarSensitive_ = 89;
+    orExpensiveJen_ = orExpensiveJen_ + 1;
+    anSimilarSensitive_ = 48;
+    orExpensiveJen_ = 22;
+    orExpensiveJen_ = orExpensiveJen_ + 1;
+    orExpensiveJen_ = orExpensiveJen_ + 1;
+    anSimilarSensitive_ = 56;
+    if (anSimilarSensitive_ > 0) {
+      anSimilarSensitive_ = anSimilarSensitive_ - 4;
     }
-    ofAggravateGauge_ = ofAggravateGauge_ + 1;
-    ofAggravateGauge_ = ofAggravateGauge_ + 1;
-
-    amFlukeScrap_ = ohStewartViking_ && omOuchShoe_;
-    ofAggravateGauge_ = 46;
-    ofAggravateGauge_ = 13;
-    ofAggravateGauge_ = ofAggravateGauge_ + 1;
-
-    inDisgustingLauren_ = inDisgustingLauren_.toUpperCase();
+    orUiErase_ = orUiErase_.toUpperCase();
+    if (emMateyWeb_) {
+      adToplessFraud_ = !opDoggySplashdown_;
+    }
+    anSimilarSensitive_ = anSimilarSensitive_ + 1;
+    orUiErase_ = orUiErase_.toUpperCase();
+    adToplessFraud_ = emMateyWeb_ && inTennisVixen_;
+    anSimilarSensitive_ = 98;
+    orExpensiveJen_ = orExpensiveJen_ + 1;
+    orUiErase_ = orUiErase_.toUpperCase();
+    orUiErase_ = orUiErase_.toUpperCase();
   }
 
-  void byDeportTorn() {
-    inDisgustingLauren_ = inDisgustingLauren_.toUpperCase();
-    if (amFlukeScrap_ && joCavityBye_ && ohStewartViking_) {
-      amFlukeScrap_ = !amFlukeScrap_;
-      joCavityBye_ = amFlukeScrap_;
-      ohStewartViking_ = amFlukeScrap_;
+  void emDustInfluence() {
+    orUiErase_ = orUiErase_.toUpperCase();
+    anSimilarSensitive_ = anSimilarSensitive_ + 1;
+    if (emMateyWeb_ && inTennisVixen_ && opDoggySplashdown_) {
+      emMateyWeb_ = !emMateyWeb_;
+      inTennisVixen_ = emMateyWeb_;
+      opDoggySplashdown_ = emMateyWeb_;
     }
-    ofAggravateGauge_ = 49;
-    ofAggravateGauge_ = ofAggravateGauge_ + 1;
-    if (ofAggravateGauge_ > 0) {
-      ofAggravateGauge_ = ofAggravateGauge_ - 1;
-    }
-    ofAggravateGauge_ = 4;
-
-    if (ofAggravateGauge_ > 0) {
-      ofAggravateGauge_ = ofAggravateGauge_ - 1;
-    }
-    inDisgustingLauren_ = inDisgustingLauren_.toUpperCase();
-    if (ofAggravateGauge_ > 0) {
-      ofAggravateGauge_ = ofAggravateGauge_ - 1;
-    }
+    inTennisVixen_ = adToplessFraud_ && emMateyWeb_;
+    orUiErase_ = orUiErase_.toUpperCase();
+    orExpensiveJen_ = orExpensiveJen_ + 1;
   }
 
-  void okExpensiveMac() {
-    if (joCavityBye_ || ohStewartViking_) {
-      ohStewartViking_ = !ohStewartViking_;
+  void mySmileEpisode() {
+    adToplessFraud_ = emMateyWeb_ || inTennisVixen_;
+    inTennisVixen_ = adToplessFraud_ || emMateyWeb_;
+    if (anSimilarSensitive_ > 0) {
+      anSimilarSensitive_ = anSimilarSensitive_ - 6;
     }
-    amFlukeScrap_ = ohStewartViking_ || joCavityBye_;
-    ofAggravateGauge_ = ofAggravateGauge_ + 1;
-    inDisgustingLauren_ = inDisgustingLauren_.toUpperCase();
-    inDisgustingLauren_ = inDisgustingLauren_.toUpperCase();
-    if (ohStewartViking_) {
-      omOuchShoe_ = !joCavityBye_;
+    if (orExpensiveJen_ > 0) {
+      orExpensiveJen_ = orExpensiveJen_ - 1;
     }
-    inDisgustingLauren_ = inDisgustingLauren_.toUpperCase();
-
-    inDisgustingLauren_ = inDisgustingLauren_.toUpperCase();
-    inDisgustingLauren_ = inDisgustingLauren_.toUpperCase();
-    if (ofAggravateGauge_ > 0) {
-      ofAggravateGauge_ = ofAggravateGauge_ - 1;
+    orExpensiveJen_ = 60;
+    orUiErase_ = orUiErase_.toUpperCase();
+    orUiErase_ = orUiErase_.toUpperCase();
+    orExpensiveJen_ = orExpensiveJen_ + 1;
+    anSimilarSensitive_ = anSimilarSensitive_ + 1;
+    if (anSimilarSensitive_ > 0) {
+      anSimilarSensitive_ = anSimilarSensitive_ - 9;
     }
-    inDisgustingLauren_ = inDisgustingLauren_.toUpperCase();
+    if (emMateyWeb_ && inTennisVixen_) {
+      opDoggySplashdown_ = !opDoggySplashdown_;
+    }
+    orUiErase_ = orUiErase_.toUpperCase();
   }
 
   @override
   void dependencies() {
-    if (sqrt2 < 1) {
-      KimmiSecurityContractor().exWeeklyIndian();
-      KimmiSecurityContractor().osPolandHindi();
+    if (ln10 < 2) {
+      KimmiPerceptionIn().ahFairlyInhaler();
+      KimmiPerceptionIn().anFbHump();
+      KimmiPerceptionIn().doByeFairly();
     }
-    if (ln2 < 0.5) {
-      byDeportTorn();
-      osMarthaUseless();
+    if (pi < 1) {
+      ifSutraGranola();
+      mySmileEpisode();
     }
     Get.lazyPut(() => KimmiInkInvoice());
   }

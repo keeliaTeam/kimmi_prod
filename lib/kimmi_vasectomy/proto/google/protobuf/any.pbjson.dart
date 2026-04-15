@@ -1,6 +1,9 @@
-import 'dart:core' as $core;
 import 'dart:convert' as $convert;
+
+import 'dart:core' as $core;
 import 'dart:typed_data' as $typed_data;
+
+import 'package:kimmi/kimmi_vasectomy/proto/kimmi_cadaver_gentleman.dart';
 
 @$core.Deprecated('Use anyDescriptor instead')
 const Any$json = const {

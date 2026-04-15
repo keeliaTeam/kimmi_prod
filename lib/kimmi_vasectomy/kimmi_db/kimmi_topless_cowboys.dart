@@ -28,11 +28,19 @@ class KimmiWaitressTotallyCowboys extends Table {
 
   BoolColumn get serviceChat => boolean().withDefault(const Constant(false))();
 
-  BoolColumn get hasChat => boolean().withDefault(const Constant(false))();
+  BoolColumn get hasChat => boolean().withDefault(const Constant(true))();
 
   IntColumn get lastReadSnapTime => integer().withDefault(const Constant(0))();
 
   IntColumn get clearCacheTime => integer().withDefault(const Constant(0))();
+
+  IntColumn get partnerId => integer().withDefault(const Constant(0))();
+
+  IntColumn get lastSnapType => integer().withDefault(const Constant(0))();
+  TextColumn get lastSnapTextContent => text().nullable()();
+  TextColumn get lastSnapJsonContent => text().nullable()();
+  IntColumn get lastSnapCreateTime =>
+      integer().withDefault(const Constant(0))();
 
   @override
   Set<Column> get primaryKey => {id};

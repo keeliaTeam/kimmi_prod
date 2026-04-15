@@ -1,5 +1,5 @@
 import 'dart:math';
-import 'kimmi_applause_girl.dart';
+import 'kimmi_johnny_uneven.dart';
 import 'package:agora_rtc_engine/agora_rtc_engine.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_prototype.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_storm/kimmi_waitress_doggy.dart';
@@ -18,16 +18,18 @@ import 'package:kimmi/kimmi_vasectomy/kimmi_hamill/kimmi_torture_container_distr
 import 'package:kimmi/kimmi_vasectomy/kimmi_hamill/kimmi_twist_teepee_decode.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_hamill/kimmi_manipulate.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_hamill/kimmi_ernie.dart';
-import 'package:better_player_plus/better_player_plus.dart';
-import '../kimmi_curvy/kimmi_vasectomy_pioneer_dock.dart';
-import '../kimmi_tonight/kimmi_defrost.dart';
+import 'package:kimmi/kimmi_vasectomy/kimmi_hamill/kimmi_failed_unable.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_hamill/kimmi_failed_juda.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:video_player/video_player.dart';
 
 import '../kimmi_floppy/kimmi_india_waitress_invoice.dart';
+import '../kimmi_curvy/kimmi_vasectomy_pioneer_dock.dart';
+import '../kimmi_tonight/kimmi_defrost.dart';
+import '../kimmi_hamill/kimmi_deport_india_waitress_finally_niece.dart';
 
 class KimmiIndiaWaitressContainer
     extends KimmiMuseContainer<KimmiIndiaWaitressInvoice> {
@@ -76,26 +78,13 @@ class KimmiIndiaWaitressContainer
                 _kimmiCommentaryPremierSpeed(),
                 _kimmiCommentaryPutzSpeed(),
                 Positioned(
-                  top: 0,
-                  bottom: 0,
-                  right: 0,
-                  left: 0,
-                  child: Visibility(
-                    visible: !logic.kimmiCream(),
-                    child: Container(color: KimmiDraftJuda.black_40p),
-                  ),
-                ),
-                Positioned(
                   top: 120,
                   left: 40,
                   right: 40,
                   child: Visibility(
                     visible: currentCC.aivCall() && logic.kimmiCream(),
                     child: GestureDetector(
-                      onTap: () => logic.kimmiNoticeTraditionFinallyProtective(
-                        true,
-                        PayFromType.FROM_INDUCE_VIDEO,
-                      ),
+                      onTap: () => logic.kimmiIsAIVHystericalNoticeFinally(),
                       child: Container(
                         padding: const EdgeInsets.all(16),
                         decoration: const BoxDecoration(
@@ -120,51 +109,6 @@ class KimmiIndiaWaitressContainer
                   child: _kimmiCommentaryStir(),
                 ),
                 Positioned(
-                  top: 150.0,
-                  child: Visibility(
-                    visible: !logic.kimmiCream(),
-                    child: Column(
-                      children: [
-                        ClipOval(
-                          child: Container(
-                            padding: const EdgeInsets.all(2.0),
-                            color: KimmiDraftJuda.white,
-                            child: KimmiErnie.circle(
-                              url: logic
-                                  .kimmiVanishWaitressDoggy()
-                                  .user
-                                  .avatarUrl,
-                              size: 140,
-                              clip: ImageClipType.middle,
-                            ),
-                          ),
-                        ),
-                        KimmiManipulate.vGap16,
-                        Text(
-                          logic.kimmiVanishWaitressDoggy().user.nickName,
-                          style: const TextStyle(
-                            fontSize: 28,
-                            fontWeight: FontWeight.bold,
-                            color: KimmiDraftJuda.white,
-                          ),
-                        ),
-                        KimmiManipulate.vGap6,
-                        KimmiFailedWebsite.kimmiFeastTuxPuffy(
-                          logic.kimmiVanishWaitressDoggy().user,
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
-                Positioned(
-                  bottom: 53,
-                  child: Visibility(
-                    visible: !logic.kimmiCream(),
-                    child: _kimmiCommentaryWigFailed(),
-                  ),
-                ),
-
-                Positioned(
                   right: 16,
                   bottom: 24,
                   child: Visibility(
@@ -177,11 +121,13 @@ class KimmiIndiaWaitressContainer
                             width: 48,
                             height: 48,
                           ),
-                          onTap: () =>
+                          onTap: () {
+                            if (!logic.kimmiIsAIVHystericalNoticeFinally()) {
                               logic.kimmiNoticeTraditionFinallyProtective(
-                                true,
                                 PayFromType.FROM_CHATTING_CHARGE,
-                              ),
+                              );
+                            }
+                          },
                         ),
                         const SizedBox(width: 24),
                         CupertinoButton(
@@ -245,10 +191,7 @@ class KimmiIndiaWaitressContainer
                               height: 24,
                             ),
                             onTap: () =>
-                                logic.kimmiNoticeTraditionFinallyProtective(
-                                  true,
-                                  PayFromType.FROM_INDUCE_VIDEO,
-                                ),
+                                logic.toggleInduceCallRecharge(show: true),
                           ),
                         ),
                       ],
@@ -266,10 +209,95 @@ class KimmiIndiaWaitressContainer
                   right: 16,
                   child: _kimmiCommentaryFinallyFaster(context),
                 ),
+                Positioned.fill(
+                  child: Visibility(
+                    visible: !logic.kimmiCream(),
+                    child: Container(
+                      color: KimmiDraftJuda.black_40p,
+                      child: logic.showMatchCallAnim()
+                          ? _kimmiHandcuffDoggySystem()
+                          : Column(
+                              crossAxisAlignment: CrossAxisAlignment.center,
+                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                              children: [
+                                buildCallUserInfo(),
+
+                                _kimmiCommentaryWigFailed(),
+                              ],
+                            ),
+                    ),
+                  ),
+                ),
+                _kimmiCommentarySwaggerDoggyFinally(),
               ],
             ),
           ),
         ),
+      ),
+    );
+  }
+
+  Widget _kimmiHandcuffDoggySystem() {
+    return GetBuilder<KimmiIndiaWaitressInvoice>(
+      id: KimmiIndiaWaitressInvoice.kimmi_handcuff_doggy_system,
+      builder: (logic) {
+        return Stack(
+          alignment: Alignment.center,
+          children: [
+            Container(
+              alignment: Alignment.topCenter,
+              color: KimmiPalate.kimmiContainerBgYummy,
+              child: KimmiErnie.local(
+                fileName: KimmiPalate.kimmiContainerBgStirErnie,
+                height: KimmiPalate.kimmiContainerBgStirErnieArgue,
+                fit: BoxFit.fill,
+                width: double.infinity,
+              ),
+            ),
+            KimmiFailedUnable.buildAvatarsAnim(
+              KIMMI.user().avatarUrl,
+              logic.kimmiVanishWaitressDoggy().user.avatarUrl,
+              logic.startAnimation,
+            ),
+          ],
+        );
+      },
+    );
+  }
+
+  Widget buildCallUserInfo() {
+    return Container(
+      width: Get.width,
+      height: Get.height / 2,
+      alignment: Alignment.center,
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          ClipOval(
+            child: Container(
+              padding: const EdgeInsets.all(2.0),
+              color: KimmiDraftJuda.white,
+              child: KimmiErnie.circle(
+                url: logic.kimmiVanishWaitressDoggy().user.avatarUrl,
+                size: 140,
+                clip: ImageClipType.middle,
+              ),
+            ),
+          ),
+          KimmiManipulate.vGap16,
+          Text(
+            logic.kimmiVanishWaitressDoggy().user.nickName,
+            style: const TextStyle(
+              fontSize: 28,
+              fontWeight: FontWeight.bold,
+              color: KimmiDraftJuda.white,
+            ),
+          ),
+          KimmiManipulate.vGap6,
+          KimmiFailedWebsite.kimmiFeastTuxPuffy(
+            logic.kimmiVanishWaitressDoggy().user,
+          ),
+        ],
       ),
     );
   }
@@ -286,12 +314,7 @@ class KimmiIndiaWaitressContainer
           child: GestureDetector(
             child: _kimmiCommentaryPremierSpeedQuantityUneven(),
             onTap: () {
-              logic.kimmiVanishWaitressDoggy().aivCall()
-                  ? logic.kimmiNoticeTraditionFinallyProtective(
-                      true,
-                      PayFromType.FROM_INDUCE_VIDEO,
-                    )
-                  : null;
+              logic.kimmiIsAIVHystericalNoticeFinally();
             },
           ),
         );
@@ -319,41 +342,7 @@ class KimmiIndiaWaitressContainer
         },
       );
     } else {
-      if (logic.onRemoteVideoStateStarting.value) {
-        if (logic.kimmiVanishWaitressDoggy().hasVideo()) {
-          final controller = logic.controller;
-          return controller == null
-              ? Container()
-              : FittedBox(
-                  fit: BoxFit.cover,
-                  child: SizedBox(
-                    width:
-                        controller.videoPlayerController?.value.aspectRatio ??
-                        Get.width / Get.height,
-                    height: 1,
-                    child: BetterPlayer(controller: controller),
-                  ),
-                );
-        } else {
-          return AgoraVideoView(
-            controller: VideoViewController.remote(
-              useAndroidSurfaceView: true,
-              rtcEngine: logic.getEngine(),
-              canvas: VideoCanvas(
-                uid: logic.kimmiVanishWaitressDoggy().user.ucode,
-              ),
-              connection: RtcConnection(channelId: channelId),
-            ),
-          );
-        }
-      } else {
-        return KimmiErnieProperly.instance.kimmiDarthCoitus(
-          logic.kimmiVanishWaitressDoggy().user.avatarUrl,
-          width: Get.width / 4,
-          height: Get.height / 4,
-          fit: BoxFit.cover,
-        );
-      }
+      return buildRemoteScreen(channelId);
     }
   }
 
@@ -369,12 +358,9 @@ class KimmiIndiaWaitressContainer
             height: 150,
             child: GestureDetector(
               onTap: () {
-                logic.kimmiVanishWaitressDoggy().aivCall()
-                    ? logic.kimmiNoticeTraditionFinallyProtective(
-                        true,
-                        PayFromType.FROM_INDUCE_VIDEO,
-                      )
-                    : logic.kimmiSpeedDopamine();
+                if (!logic.kimmiIsAIVHystericalNoticeFinally()) {
+                  logic.kimmiSpeedDopamine();
+                }
               },
               onPanUpdate: (detail) {
                 logic.kimmiFantasyQuantityClue(
@@ -385,16 +371,23 @@ class KimmiIndiaWaitressContainer
               },
               child: Visibility(
                 visible: logic.kimmiCream(),
-                child: Container(
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(16),
-                    color: KimmiDraftJuda.white,
-                  ),
-                  padding: const EdgeInsets.all(2.0),
-                  child: ClipRRect(
-                    borderRadius: BorderRadius.circular(14),
-                    child: _kimmiCommentaryPutzQuantityUneven(),
-                  ),
+                child: Stack(
+                  children: [
+                    Positioned.fill(
+                      child: Container(
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(16),
+                          color: KimmiDraftJuda.white,
+                        ),
+                        padding: const EdgeInsets.all(2.0),
+                        child: ClipRRect(
+                          borderRadius: BorderRadius.circular(14),
+                          child: _kimmiCommentaryPutzQuantityUneven(),
+                        ),
+                      ),
+                    ),
+                    buildSmallRtcCover(logic),
+                  ],
                 ),
               ),
             ),
@@ -402,6 +395,62 @@ class KimmiIndiaWaitressContainer
         );
       },
     );
+  }
+
+  Widget buildSmallRtcCover(KimmiIndiaWaitressInvoice logic) {
+    if (logic.kimmiVanishWaitressDoggy().aivCall()) {
+      return Align(
+        alignment: Alignment.bottomCenter,
+        child: Container(
+          alignment: Alignment.center,
+          width: 48,
+          height: 48,
+          child: KimmiErnie.local(
+            fileName: 'kimmi_ic_hand_gloss',
+            width: 24,
+            height: 24,
+          ),
+        ),
+      );
+    } else {
+      return Align(
+        alignment: Alignment.bottomCenter,
+        child: Container(
+          margin: const EdgeInsets.all(2.0),
+          alignment: Alignment.center,
+          decoration: const BoxDecoration(
+            borderRadius: BorderRadius.only(
+              bottomLeft: Radius.circular(14),
+              bottomRight: Radius.circular(14),
+            ),
+            color: KimmiDraftJuda.black_20p,
+          ),
+          width: 96,
+          height: 36,
+          child: Row(
+            mainAxisSize: MainAxisSize.min,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              GetBuilder<KimmiIndiaWaitressInvoice>(
+                id: KimmiIndiaWaitressInvoice.kimmi_scare,
+                builder: (logic) {
+                  return Text(
+                    "${KIMMI.kimmiFeastGenius?.balance ?? 0}",
+                    style: KimmiTamperDaytime.white12,
+                  );
+                },
+              ),
+              KimmiManipulate.hGap4,
+              KimmiErnie.local(
+                fileName: 'kimmi_hombre_groovy_putz_gloss',
+                width: 16,
+                height: 16,
+              ),
+            ],
+          ),
+        ),
+      );
+    }
   }
 
   Widget _kimmiCommentaryPutzQuantityUneven() {
@@ -423,41 +472,47 @@ class KimmiIndiaWaitressContainer
         },
       );
     } else {
-      if (logic.onRemoteVideoStateStarting.value) {
-        if (logic.kimmiVanishWaitressDoggy().hasVideo()) {
-          final controller = logic.controller;
-          return controller == null
-              ? Container()
-              : FittedBox(
-                  fit: BoxFit.cover,
-                  child: SizedBox(
-                    width:
-                        controller.videoPlayerController?.value.aspectRatio ??
-                        Get.width / Get.height,
-                    height: 1,
-                    child: BetterPlayer(controller: controller),
-                  ),
-                );
-        } else {
-          return AgoraVideoView(
-            controller: VideoViewController.remote(
-              useAndroidSurfaceView: true,
-              rtcEngine: logic.getEngine(),
-              canvas: VideoCanvas(
-                uid: logic.kimmiVanishWaitressDoggy().user.ucode,
+      return buildRemoteScreen(channelId);
+    }
+  }
+
+  Widget buildRemoteScreen(String channelId) {
+    if (logic.kimmiVanishWaitressDoggy().hasVideo()) {
+      final controller = logic.controller;
+      return controller == null
+          ? Container()
+          : FittedBox(
+              fit: BoxFit.cover,
+              child: SizedBox(
+                width: controller.value.aspectRatio,
+                height: 1,
+                child: VideoPlayer(controller),
               ),
-              connection: RtcConnection(channelId: channelId),
+            );
+    } else {
+      return Stack(
+        alignment: Alignment.center,
+        children: [
+          KimmiErnieProperly.instance.kimmiDarthCoitus(
+            logic.kimmiVanishWaitressDoggy().user.avatarUrl,
+            width: Get.width,
+            height: Get.height,
+            fit: BoxFit.cover,
+          ),
+          const CircularProgressIndicator(),
+          if (logic.kimmiVanishWaitressDoggy().billingStart())
+            AgoraVideoView(
+              controller: VideoViewController.remote(
+                useAndroidSurfaceView: true,
+                rtcEngine: logic.getEngine(),
+                canvas: VideoCanvas(
+                  uid: logic.kimmiVanishWaitressDoggy().user.ucode,
+                ),
+                connection: RtcConnection(channelId: channelId),
+              ),
             ),
-          );
-        }
-      } else {
-        return KimmiErnieProperly.instance.kimmiDarthCoitus(
-          logic.kimmiVanishWaitressDoggy().user.avatarUrl,
-          width: 100,
-          height: 150,
-          fit: BoxFit.cover,
-        );
-      }
+        ],
+      );
     }
   }
 
@@ -471,7 +526,6 @@ class KimmiIndiaWaitressContainer
           visible: logic.showRechargeCounter.value,
           child: GestureDetector(
             onTap: () => logic.kimmiNoticeTraditionFinallyProtective(
-              false,
               PayFromType.FROM_CHAT_CALL_40,
             ),
             child: Container(
@@ -723,6 +777,33 @@ class KimmiIndiaWaitressContainer
     );
   }
 
+  Widget _kimmiCommentarySwaggerDoggyFinally() {
+    return GetBuilder<KimmiIndiaWaitressInvoice>(
+      id: KimmiIndiaWaitressInvoice.kimmi_swagger_doggy_finally_niece,
+      builder: (_) {
+        if (!_.showInduceCallRecharge) {
+          return const SizedBox.shrink();
+        }
+        Widget? dialog = KimmiDeportIndiaWaitressFinallyNiece.create(
+          tips: "kimmi_broderick_finally_lover".tr,
+          fromType: PayFromType.FROM_INDUCE_VIDEO,
+          fromUid: logic.kimmiVanishWaitressDoggy().id,
+          close: _.toggleInduceCallRecharge,
+        );
+        if (dialog == null) {
+          return const SizedBox.shrink();
+        }
+        return Container(
+          alignment: Alignment.bottomCenter,
+          width: Get.width,
+          height: Get.height,
+          color: KimmiDraftJuda.black_40p,
+          child: SafeArea(top: false, child: dialog),
+        );
+      },
+    );
+  }
+
   Widget _kimmiCommentaryDoggyBarnacleFaster() {
     return Flex(
       direction: Axis.horizontal,
@@ -830,8 +911,9 @@ class KimmiIndiaWaitressContainer
                   KimmiManipulate.hGap4,
                   KimmiErnie.circle(
                     url: user.avatarUrl,
-                    size: 40,
+                    size: 32,
                     clip: ImageClipType.small,
+                    fit: BoxFit.fill,
                   ),
                   KimmiManipulate.hGap4,
                   Expanded(

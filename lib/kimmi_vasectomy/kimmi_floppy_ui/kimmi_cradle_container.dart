@@ -1,5 +1,5 @@
 import 'dart:math';
-import 'kimmi_vibrant_mac.dart';
+import 'kimmi_sarcasm_component.dart';
 import 'dart:io';
 
 import 'package:kimmi/kimmi_vasectomy/kimmi_floppy/kimmi_cradle_invoice.dart';

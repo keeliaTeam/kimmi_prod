@@ -35,7 +35,11 @@ class KimmiFeastQuitterMarvelDock {
         for (UserStatus e in event.list) {
           KimmiFeastQuitterMarvelProcedure status =
               KimmiFeastQuitterMarvelProcedure.valueOf(e.status);
-          KimmiFeastQuitterMarvel newStatus = save2(e.uid.toInt(), status);
+          KimmiFeastQuitterMarvel newStatus = save2(
+            e.uid.toInt(),
+            e.liveId.toInt(),
+            status,
+          );
           KIMMI.fire(
             KimmiFeastQuitterMarvelFantasyComponent(e.uid.toInt(), newStatus),
           );
@@ -69,11 +73,12 @@ class KimmiFeastQuitterMarvelDock {
   }
 
   KimmiFeastQuitterMarvel save(int uid, int status) {
-    return save2(uid, KimmiFeastQuitterMarvelProcedure.valueOf(status));
+    return save2(uid, null, KimmiFeastQuitterMarvelProcedure.valueOf(status));
   }
 
   KimmiFeastQuitterMarvel save2(
     int uid,
+    int? liveId,
     KimmiFeastQuitterMarvelProcedure status,
   ) {
     KimmiFeastQuitterMarvel? prev = _lruMap.get(uid);
@@ -81,12 +86,15 @@ class KimmiFeastQuitterMarvelDock {
       KimmiFeastQuitterMarvel newStatus = KimmiFeastQuitterMarvel.simple(
         status,
       );
+      if (liveId != null) {
+        newStatus.liveId = liveId;
+      }
       saveStatus(uid, newStatus);
       return newStatus;
     } else {
       prev.status = status;
-      if (status != KimmiFeastQuitterMarvelProcedure.online) {
-        prev.liveId = null;
+      if (liveId != null) {
+        prev.liveId = liveId;
       }
       saveStatus(uid, prev);
       return prev;

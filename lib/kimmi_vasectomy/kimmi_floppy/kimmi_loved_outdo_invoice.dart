@@ -1,5 +1,5 @@
 import 'dart:math';
-import 'kimmi_hubcap_wasp.dart';
+import 'kimmi_perception_in.dart';
 import 'dart:async';
 import 'dart:ui';
 
@@ -28,62 +28,114 @@ import 'kimmi_loved_whatcha_worse_amen_starbucks.dart';
 
 class KimmiLovedOutdoInvoice extends KimmiMuseIdolizeInvoice
     with GetTickerProviderStateMixin {
-  bool elBasketAntibiotic_ = true;
-  bool enPajamaSuggestion_ = false;
-  double ayHolderGarage_ = 0.0;
-  bool atFightingLoopy_ = true;
-  double soWaxHence_ = 85;
+  bool faPioneerJazz_ = false;
+  bool maInvadeCost_ = false;
+  double doSpeedIntoxicate_ = 64;
+  double beSyndromeScrap_ = 0.0;
+  bool emEagerEstrogen_ = false;
+  String isPurseGoal_ = "";
 
-  void goShuckBorn() {
-    ayHolderGarage_ = ayHolderGarage_ + soWaxHence_;
-    ayHolderGarage_ = 87;
-    soWaxHence_ = 9;
+  void itWithholdKissing() {
+    doSpeedIntoxicate_ = 46;
+    beSyndromeScrap_ = 99;
+    doSpeedIntoxicate_ = 20;
+    beSyndromeScrap_ = 19;
 
-    atFightingLoopy_ = elBasketAntibiotic_ || enPajamaSuggestion_;
+    if (doSpeedIntoxicate_ > beSyndromeScrap_) {
+      doSpeedIntoxicate_ = doSpeedIntoxicate_ - beSyndromeScrap_;
+    }
+    if (doSpeedIntoxicate_ > beSyndromeScrap_) {
+      doSpeedIntoxicate_ = doSpeedIntoxicate_ - beSyndromeScrap_;
+    }
+
+    faPioneerJazz_ = maInvadeCost_ || emEagerEstrogen_;
+    doSpeedIntoxicate_ = 79;
+    beSyndromeScrap_ = 33;
+    if (faPioneerJazz_ || emEagerEstrogen_) {
+      emEagerEstrogen_ = !emEagerEstrogen_;
+    }
   }
 
-  void meDeceitUp() {
-    if (enPajamaSuggestion_ || atFightingLoopy_ || elBasketAntibiotic_) {
-      enPajamaSuggestion_ = !atFightingLoopy_;
-      atFightingLoopy_ = !elBasketAntibiotic_;
-      elBasketAntibiotic_ = !enPajamaSuggestion_;
+  void go1Genderless() {
+    if (doSpeedIntoxicate_ > beSyndromeScrap_) {
+      doSpeedIntoxicate_ = doSpeedIntoxicate_ - beSyndromeScrap_;
     }
 
-    if (ayHolderGarage_ > soWaxHence_) {
-      ayHolderGarage_ = ayHolderGarage_ - soWaxHence_;
+    maInvadeCost_ = emEagerEstrogen_ && faPioneerJazz_;
+    isPurseGoal_ = isPurseGoal_.toUpperCase();
+    if (doSpeedIntoxicate_ > beSyndromeScrap_) {
+      doSpeedIntoxicate_ = doSpeedIntoxicate_ - beSyndromeScrap_;
     }
-    if (atFightingLoopy_ && elBasketAntibiotic_) {
-      enPajamaSuggestion_ = !enPajamaSuggestion_;
+
+    isPurseGoal_ = isPurseGoal_.toUpperCase();
+
+    isPurseGoal_ = isPurseGoal_.toUpperCase();
+
+    doSpeedIntoxicate_ = doSpeedIntoxicate_ + beSyndromeScrap_;
+    doSpeedIntoxicate_ = 33;
+    beSyndromeScrap_ = 66;
+    if (emEagerEstrogen_ && maInvadeCost_) {
+      faPioneerJazz_ = !faPioneerJazz_;
+    }
+    if (faPioneerJazz_ && emEagerEstrogen_) {
+      maInvadeCost_ = !maInvadeCost_;
+    }
+    isPurseGoal_ = isPurseGoal_.toUpperCase();
+  }
+
+  void etImCape() {
+    if (doSpeedIntoxicate_ > beSyndromeScrap_) {
+      doSpeedIntoxicate_ = doSpeedIntoxicate_ - beSyndromeScrap_;
+    }
+    isPurseGoal_ = isPurseGoal_.toUpperCase();
+    if (maInvadeCost_ || emEagerEstrogen_) {
+      emEagerEstrogen_ = !emEagerEstrogen_;
+    }
+    isPurseGoal_ = isPurseGoal_.toUpperCase();
+    if (emEagerEstrogen_ && maInvadeCost_) {
+      faPioneerJazz_ = !faPioneerJazz_;
+    }
+
+    isPurseGoal_ = isPurseGoal_.toUpperCase();
+    isPurseGoal_ = isPurseGoal_.toUpperCase();
+
+    if (emEagerEstrogen_ || maInvadeCost_ || faPioneerJazz_) {
+      emEagerEstrogen_ = !maInvadeCost_;
+      maInvadeCost_ = !faPioneerJazz_;
+      faPioneerJazz_ = !emEagerEstrogen_;
+    }
+    isPurseGoal_ = isPurseGoal_.toUpperCase();
+    isPurseGoal_ = isPurseGoal_.toUpperCase();
+
+    isPurseGoal_ = isPurseGoal_.toUpperCase();
+    if (maInvadeCost_) {
+      faPioneerJazz_ = !emEagerEstrogen_;
     }
   }
 
-  void mmForeignAssert() {
-    ayHolderGarage_ = ayHolderGarage_ + soWaxHence_;
+  void noWhimsicalSully() {
+    faPioneerJazz_ = maInvadeCost_ || emEagerEstrogen_;
+    isPurseGoal_ = isPurseGoal_.toUpperCase();
+    doSpeedIntoxicate_ = 46;
+    beSyndromeScrap_ = 23;
 
-    ayHolderGarage_ = 23;
-    soWaxHence_ = 56;
+    if (maInvadeCost_ && faPioneerJazz_) {
+      emEagerEstrogen_ = !emEagerEstrogen_;
+    }
+    isPurseGoal_ = isPurseGoal_.toUpperCase();
+    isPurseGoal_ = isPurseGoal_.toUpperCase();
+    isPurseGoal_ = isPurseGoal_.toUpperCase();
+    doSpeedIntoxicate_ = doSpeedIntoxicate_ + beSyndromeScrap_;
+    emEagerEstrogen_ = faPioneerJazz_ && maInvadeCost_;
+    maInvadeCost_ = faPioneerJazz_ && emEagerEstrogen_;
 
-    if (ayHolderGarage_ > soWaxHence_) {
-      ayHolderGarage_ = ayHolderGarage_ - soWaxHence_;
+    if (faPioneerJazz_ && maInvadeCost_) {
+      emEagerEstrogen_ = !emEagerEstrogen_;
     }
 
-    atFightingLoopy_ = elBasketAntibiotic_ && enPajamaSuggestion_;
-    elBasketAntibiotic_ = enPajamaSuggestion_ && atFightingLoopy_;
-    ayHolderGarage_ = 17;
-    soWaxHence_ = 24;
-
-    if (enPajamaSuggestion_ && elBasketAntibiotic_ && atFightingLoopy_) {
-      enPajamaSuggestion_ = !enPajamaSuggestion_;
-      elBasketAntibiotic_ = enPajamaSuggestion_;
-      atFightingLoopy_ = enPajamaSuggestion_;
-    }
-
-    ayHolderGarage_ = ayHolderGarage_ + soWaxHence_;
-
-    ayHolderGarage_ = ayHolderGarage_ + soWaxHence_;
-    if (ayHolderGarage_ > soWaxHence_) {
-      ayHolderGarage_ = ayHolderGarage_ - soWaxHence_;
-    }
+    emEagerEstrogen_ = maInvadeCost_ && faPioneerJazz_;
+    doSpeedIntoxicate_ = 93;
+    beSyndromeScrap_ = 96;
   }
 
   @override
@@ -116,13 +168,14 @@ class KimmiLovedOutdoInvoice extends KimmiMuseIdolizeInvoice
 
   @override
   void onInit() {
-    if (sqrt2 < 1) {
-      KimmiHubcapWasp().reDraftDock();
-      KimmiHubcapWasp().ofOutsourceSwift();
+    if (ln10 < 2) {
+      KimmiPerceptionIn().reByMouthwash();
+      KimmiPerceptionIn().etCapFella();
+      KimmiPerceptionIn().owDoggyGaming();
     }
-    if (pi < 1) {
-      mmForeignAssert();
-      meDeceitUp();
+    if (sqrt1_2 < 0.3) {
+      itWithholdKissing();
+      etImCape();
     }
     super.onInit();
 
@@ -155,13 +208,15 @@ class KimmiLovedOutdoInvoice extends KimmiMuseIdolizeInvoice
 
   @override
   void onReady() {
-    if (e < 2) {
-      KimmiHubcapWasp().reDraftDock();
-      KimmiHubcapWasp().maDoggyMat();
+    if (log2e < 1) {
+      KimmiPerceptionIn().ahFairlyInhaler();
+      KimmiPerceptionIn().doByeFairly();
+      KimmiPerceptionIn().anFbHump();
+      KimmiPerceptionIn().owDoggyGaming();
     }
-    if (e < 2) {
-      meDeceitUp();
-      mmForeignAssert();
+    if (sqrt2 < 1) {
+      go1Genderless();
+      etImCape();
     }
     super.onReady();
 
@@ -211,13 +266,15 @@ class KimmiLovedOutdoInvoice extends KimmiMuseIdolizeInvoice
   }
 
   void onKimmiWorseEternity(KimmiStormWorse region) async {
-    if (pi < 1) {
-      KimmiHubcapWasp().noSnoopCan();
-      KimmiHubcapWasp().reDraftDock();
+    if (log10e / 2 < 0.1) {
+      KimmiPerceptionIn().anFbHump();
+      KimmiPerceptionIn().reByMouthwash();
+      KimmiPerceptionIn().loCommunityThrive();
+      KimmiPerceptionIn().etCapFella();
     }
-    if (pi < 1) {
-      mmForeignAssert();
-      meDeceitUp();
+    if (ln2 < 0.5) {
+      itWithholdKissing();
+      go1Genderless();
     }
     if (region.code == selectedRegion.value.code) return;
 
@@ -270,13 +327,14 @@ class KimmiLovedOutdoInvoice extends KimmiMuseIdolizeInvoice
 
   @override
   void onClose() {
-    if (log10e / 2 < 0.1) {
-      KimmiHubcapWasp().ofOutsourceSwift();
-      KimmiHubcapWasp().reDraftDock();
+    if (ln10 < 2) {
+      KimmiPerceptionIn().owDoggyGaming();
+      KimmiPerceptionIn().doByeFairly();
+      KimmiPerceptionIn().reByMouthwash();
     }
     if (ln10 < 2) {
-      mmForeignAssert();
-      goShuckBorn();
+      itWithholdKissing();
+      etImCape();
     }
     _payOptionsUpdateSubscription?.cancel();
     super.onClose();

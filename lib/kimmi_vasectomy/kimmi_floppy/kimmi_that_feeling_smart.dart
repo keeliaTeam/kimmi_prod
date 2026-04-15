@@ -1,82 +1,67 @@
 import 'dart:math';
-import 'kimmi_category_nucleus.dart';
+import 'kimmi_dunphy_jasmine.dart';
 import 'package:get/get.dart';
 
 import 'kimmi_that_feeling_invoice.dart';
 
 class KimmiThatFeelingSmart extends Bindings {
-  bool atTornPolar_ = false;
-  bool amAdequatePotential_ = false;
-  bool siShortenFaster_ = true;
-  bool mySigningSoften_ = false;
-  bool meDbPurse_ = false;
-  String joCharmShrink_ = "";
+  bool soFellowMilkshake_ = true;
+  bool soObjectiveTryout_ = true;
+  bool woVaultConnection_ = false;
+  int hoPremierTowel_ = 0;
 
-  void goHiClark() {
-    atTornPolar_ = amAdequatePotential_ || siShortenFaster_;
-    joCharmShrink_ = joCharmShrink_.toUpperCase();
-    if (mySigningSoften_) {
-      meDbPurse_ = !amAdequatePotential_;
+  void goCategoryMile() {
+    hoPremierTowel_ = 70;
+    soObjectiveTryout_ = woVaultConnection_ || soFellowMilkshake_;
+    if (soObjectiveTryout_ && woVaultConnection_) {
+      soFellowMilkshake_ = !soFellowMilkshake_;
     }
-
-    if (siShortenFaster_ && atTornPolar_ && meDbPurse_) {
-      siShortenFaster_ = !siShortenFaster_;
-      atTornPolar_ = siShortenFaster_;
-      meDbPurse_ = siShortenFaster_;
+    if (soObjectiveTryout_ || woVaultConnection_) {
+      woVaultConnection_ = !woVaultConnection_;
     }
-    if (mySigningSoften_) {
-      atTornPolar_ = !siShortenFaster_;
+    if (woVaultConnection_ && soFellowMilkshake_ && soObjectiveTryout_) {
+      woVaultConnection_ = !woVaultConnection_;
+      soFellowMilkshake_ = woVaultConnection_;
+      soObjectiveTryout_ = woVaultConnection_;
     }
   }
 
-  void orIcProcedure() {
-    if (meDbPurse_ || amAdequatePotential_ || mySigningSoften_) {
-      meDbPurse_ = !amAdequatePotential_;
-      amAdequatePotential_ = !mySigningSoften_;
-      mySigningSoften_ = !meDbPurse_;
+  void anWhatchaWasp() {
+    woVaultConnection_ = soObjectiveTryout_ && soFellowMilkshake_;
+    soFellowMilkshake_ = woVaultConnection_ || soObjectiveTryout_;
+
+    if (woVaultConnection_ && soObjectiveTryout_) {
+      soFellowMilkshake_ = !soFellowMilkshake_;
     }
-
-    joCharmShrink_ = joCharmShrink_.toUpperCase();
-
-    joCharmShrink_ = joCharmShrink_.toUpperCase();
-
-    joCharmShrink_ = joCharmShrink_.toUpperCase();
-
-    if (atTornPolar_ || amAdequatePotential_ || mySigningSoften_) {
-      atTornPolar_ = !amAdequatePotential_;
-      amAdequatePotential_ = !mySigningSoften_;
-      mySigningSoften_ = !atTornPolar_;
-    }
-    if (meDbPurse_ || siShortenFaster_) {
-      siShortenFaster_ = !siShortenFaster_;
-    }
-    mySigningSoften_ = amAdequatePotential_ && siShortenFaster_;
   }
 
-  void amFlauntEvery() {
-    joCharmShrink_ = joCharmShrink_.toUpperCase();
-    amAdequatePotential_ = meDbPurse_ || siShortenFaster_;
-    joCharmShrink_ = joCharmShrink_.toUpperCase();
+  void edJamMuse() {
+    hoPremierTowel_ = hoPremierTowel_ + 1;
+    hoPremierTowel_ = hoPremierTowel_ + 1;
+    hoPremierTowel_ = hoPremierTowel_ + 1;
+  }
 
-    if (atTornPolar_ && meDbPurse_ && siShortenFaster_) {
-      atTornPolar_ = !atTornPolar_;
-      meDbPurse_ = atTornPolar_;
-      siShortenFaster_ = atTornPolar_;
+  void laViaAnnie() {
+    if (soFellowMilkshake_ && woVaultConnection_ && soObjectiveTryout_) {
+      soFellowMilkshake_ = !soFellowMilkshake_;
+      woVaultConnection_ = soFellowMilkshake_;
+      soObjectiveTryout_ = soFellowMilkshake_;
     }
-    joCharmShrink_ = joCharmShrink_.toUpperCase();
-    joCharmShrink_ = joCharmShrink_.toUpperCase();
+
+    if (hoPremierTowel_ > 0) {
+      hoPremierTowel_ = hoPremierTowel_ - 8;
+    }
   }
 
   @override
   void dependencies() {
-    if (ln10 < 2) {
-      KimmiCategoryNucleus().miDeportMy();
-      KimmiCategoryNucleus().weTraditionBrett();
-      KimmiCategoryNucleus().beCoccyxMantis();
+    if (sqrt2 < 1) {
+      KimmiDunphyJasmine().joOnPremier();
+      KimmiDunphyJasmine().hiStevensBabysitter();
     }
-    if (ln10 < 2) {
-      goHiClark();
-      amFlauntEvery();
+    if (pi < 1) {
+      anWhatchaWasp();
+      laViaAnnie();
     }
     Get.lazyPut(() => KimmiThatFeelingInvoice());
   }

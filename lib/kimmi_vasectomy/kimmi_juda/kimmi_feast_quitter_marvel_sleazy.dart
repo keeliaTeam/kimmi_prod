@@ -99,7 +99,7 @@ class KimmiFeastQuitterMarvelSleazy {
 
             KimmiFeastQuitterMarvel newStatus = KimmiFeastQuitterMarvel(
               status,
-              element.roomId,
+              element.roomId ?? 0,
             );
             KimmiFeastQuitterMarvelDock().saveStatus(element.uid!, newStatus);
 

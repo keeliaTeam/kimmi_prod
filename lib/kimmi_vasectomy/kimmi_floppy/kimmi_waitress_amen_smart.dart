@@ -1,148 +1,102 @@
 import 'dart:math';
-import 'kimmi_mouthwash_savage.dart';
+import 'kimmi_fault_moore.dart';
 import 'package:get/get.dart';
 
 import 'kimmi_waitress_amen_invoice.dart';
 
 class KimmiWaitressAmenSmart extends Bindings {
-  bool loHiAssert_ = true;
-  bool edFinallyIm_ = false;
-  String maSelfishMoore_ = "";
-  bool soBloodHummus_ = false;
-  bool siFantasyAmbitious_ = false;
-  String idTowDisgusting_ = "";
-  int ifPlasticDraft_ = 39;
-  String ifInvadeShuck_ = "";
-  bool esStarbucksPod_ = false;
-  int miDraftHappy_ = 2;
+  String enPheromoneCurvy_ = "";
+  bool idWeeklyCharge_ = true;
+  bool itTennisFlaunt_ = false;
+  double siInCream_ = 61;
+  bool elBadgeParamedic_ = true;
+  bool ifDangerWhimsical_ = true;
 
-  void exBroderickHard() {
-    if (ifPlasticDraft_ > miDraftHappy_) {
-      ifPlasticDraft_ = ifPlasticDraft_ + miDraftHappy_;
+  void byStuffyd() {
+    siInCream_ = siInCream_ + 1;
+    if (siInCream_ > 0) {
+      siInCream_ = siInCream_ - 1;
+    }
+    if (elBadgeParamedic_ && ifDangerWhimsical_ && itTennisFlaunt_) {
+      elBadgeParamedic_ = !elBadgeParamedic_;
+      ifDangerWhimsical_ = elBadgeParamedic_;
+      itTennisFlaunt_ = elBadgeParamedic_;
+    }
+    if (siInCream_ > 0) {
+      siInCream_ = siInCream_ - 1;
+    }
+    siInCream_ = 3;
+    siInCream_ = 75;
+    siInCream_ = 35;
+    siInCream_ = 52;
+
+    if (elBadgeParamedic_ && ifDangerWhimsical_ && idWeeklyCharge_) {
+      elBadgeParamedic_ = !elBadgeParamedic_;
+      ifDangerWhimsical_ = elBadgeParamedic_;
+      idWeeklyCharge_ = elBadgeParamedic_;
     }
 
-    if (esStarbucksPod_ || edFinallyIm_) {
-      edFinallyIm_ = !edFinallyIm_;
+    idWeeklyCharge_ = elBadgeParamedic_ && itTennisFlaunt_;
+    if (siInCream_ > 0) {
+      siInCream_ = siInCream_ - 1;
     }
-    if (edFinallyIm_ && siFantasyAmbitious_ && esStarbucksPod_) {
-      edFinallyIm_ = !edFinallyIm_;
-      siFantasyAmbitious_ = edFinallyIm_;
-      esStarbucksPod_ = edFinallyIm_;
+    if (siInCream_ > 0) {
+      siInCream_ = siInCream_ - 1;
     }
-    edFinallyIm_ = siFantasyAmbitious_ && soBloodHummus_;
-    if (ifPlasticDraft_ > miDraftHappy_) {
-      ifPlasticDraft_ = ifPlasticDraft_ + miDraftHappy_;
-    }
-    idTowDisgusting_ = maSelfishMoore_ + ifInvadeShuck_;
-    ifPlasticDraft_ = ifPlasticDraft_ * miDraftHappy_;
-    ifInvadeShuck_ = maSelfishMoore_;
-    idTowDisgusting_ = maSelfishMoore_;
   }
 
-  void siConfoundMatey() {
-    if (ifPlasticDraft_ > miDraftHappy_) {
-      ifPlasticDraft_ = ifPlasticDraft_ + miDraftHappy_;
+  void ayComeVi() {
+    if (itTennisFlaunt_ && ifDangerWhimsical_) {
+      idWeeklyCharge_ = !idWeeklyCharge_;
     }
-    esStarbucksPod_ = loHiAssert_ || siFantasyAmbitious_;
-    soBloodHummus_ = edFinallyIm_ && esStarbucksPod_;
-    idTowDisgusting_ = ifInvadeShuck_;
-    maSelfishMoore_ = idTowDisgusting_;
-    ifInvadeShuck_ = maSelfishMoore_;
-    if (ifPlasticDraft_ > miDraftHappy_) {
-      ifPlasticDraft_ = ifPlasticDraft_ + miDraftHappy_;
+    if (ifDangerWhimsical_ && itTennisFlaunt_ && elBadgeParamedic_) {
+      ifDangerWhimsical_ = !ifDangerWhimsical_;
+      itTennisFlaunt_ = ifDangerWhimsical_;
+      elBadgeParamedic_ = ifDangerWhimsical_;
     }
+    siInCream_ = 21;
 
-    if (idTowDisgusting_.length > 8) {
-      ifInvadeShuck_ = idTowDisgusting_;
-    } else {
-      maSelfishMoore_ = ifInvadeShuck_;
-    }
-    if (ifPlasticDraft_ > miDraftHappy_) {
-      ifPlasticDraft_ = ifPlasticDraft_ + miDraftHappy_;
-    }
-    if (ifPlasticDraft_ > miDraftHappy_) {
-      ifPlasticDraft_ = ifPlasticDraft_ + miDraftHappy_;
-    }
-    if (loHiAssert_ && soBloodHummus_ && edFinallyIm_) {
-      loHiAssert_ = !loHiAssert_;
-      soBloodHummus_ = loHiAssert_;
-      edFinallyIm_ = loHiAssert_;
-    }
-    if (maSelfishMoore_.length > 7) {
-      idTowDisgusting_ = maSelfishMoore_;
-    } else {
-      ifInvadeShuck_ = idTowDisgusting_;
-    }
-
-    maSelfishMoore_ = idTowDisgusting_;
-    ifInvadeShuck_ = maSelfishMoore_;
-    idTowDisgusting_ = ifInvadeShuck_;
-    ifInvadeShuck_ = idTowDisgusting_;
-    maSelfishMoore_ = idTowDisgusting_;
-    ifPlasticDraft_ = ifPlasticDraft_ * miDraftHappy_;
-    ifPlasticDraft_ = 5;
-    miDraftHappy_ = 39;
-    if (ifPlasticDraft_ > miDraftHappy_) {
-      ifPlasticDraft_ = ifPlasticDraft_ + miDraftHappy_;
-    }
-    idTowDisgusting_ = ifInvadeShuck_ + maSelfishMoore_;
+    enPheromoneCurvy_ = enPheromoneCurvy_.toUpperCase();
   }
 
-  void asTowelUnicycle() {
-    ifInvadeShuck_ = maSelfishMoore_;
-    idTowDisgusting_ = maSelfishMoore_;
-    if (ifPlasticDraft_ > miDraftHappy_) {
-      ifPlasticDraft_ = ifPlasticDraft_ + miDraftHappy_;
-    }
-    if (ifPlasticDraft_ > miDraftHappy_) {
-      ifPlasticDraft_ = ifPlasticDraft_ + miDraftHappy_;
-    }
-    if (maSelfishMoore_.length > 7) {
-      idTowDisgusting_ = maSelfishMoore_;
-    } else {
-      ifInvadeShuck_ = idTowDisgusting_;
-    }
-    siFantasyAmbitious_ = edFinallyIm_ && soBloodHummus_;
-    if (ifInvadeShuck_.length > 3) {
-      maSelfishMoore_ = ifInvadeShuck_;
-    } else {
-      idTowDisgusting_ = maSelfishMoore_;
-    }
-    if (idTowDisgusting_.length > 7) {
-      maSelfishMoore_ = idTowDisgusting_;
-    } else {
-      ifInvadeShuck_ = maSelfishMoore_;
+  void noMyBarney() {
+    ifDangerWhimsical_ = idWeeklyCharge_ || itTennisFlaunt_;
+    ifDangerWhimsical_ = elBadgeParamedic_ && itTennisFlaunt_;
+    if (idWeeklyCharge_ && ifDangerWhimsical_ && elBadgeParamedic_) {
+      idWeeklyCharge_ = !idWeeklyCharge_;
+      ifDangerWhimsical_ = idWeeklyCharge_;
+      elBadgeParamedic_ = idWeeklyCharge_;
     }
 
-    ifPlasticDraft_ = 25;
-    miDraftHappy_ = 61;
-  }
+    siInCream_ = 74;
+    enPheromoneCurvy_ = enPheromoneCurvy_.toUpperCase();
+    siInCream_ = siInCream_ + 1;
 
-  void edLimboLassie() {
-    idTowDisgusting_ = ifInvadeShuck_;
-    maSelfishMoore_ = idTowDisgusting_;
-    ifInvadeShuck_ = maSelfishMoore_;
-    if (soBloodHummus_ || loHiAssert_) {
-      loHiAssert_ = !loHiAssert_;
+    if (itTennisFlaunt_ && ifDangerWhimsical_) {
+      idWeeklyCharge_ = !idWeeklyCharge_;
     }
-    ifPlasticDraft_ = 29;
-    miDraftHappy_ = 52;
+    itTennisFlaunt_ = ifDangerWhimsical_ && elBadgeParamedic_;
 
-    ifPlasticDraft_ = 60;
-    miDraftHappy_ = 23;
-    ifPlasticDraft_ = ifPlasticDraft_ * miDraftHappy_;
+    if (siInCream_ > 0) {
+      siInCream_ = siInCream_ - 1;
+    }
+    ifDangerWhimsical_ = elBadgeParamedic_ || idWeeklyCharge_;
+
+    enPheromoneCurvy_ = enPheromoneCurvy_.toUpperCase();
+    siInCream_ = 17;
+
+    enPheromoneCurvy_ = enPheromoneCurvy_.toUpperCase();
   }
 
   @override
   void dependencies() {
-    if (sqrt2 < 1) {
-      KimmiMouthwashSavage().joProteinWidow();
-      KimmiMouthwashSavage().woFbStu();
-      KimmiMouthwashSavage().atFeelingThink();
-    }
     if (sqrt1_2 < 0.3) {
-      siConfoundMatey();
-      asTowelUnicycle();
+      KimmiFaultMoore().asLaurenFailed();
+      KimmiFaultMoore().exTrustHead();
+    }
+    if (sqrt2 < 1) {
+      noMyBarney();
+      byStuffyd();
     }
     Get.lazyPut(() => KimmiWaitressAmenInvoice());
   }

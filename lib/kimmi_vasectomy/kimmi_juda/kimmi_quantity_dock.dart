@@ -190,7 +190,19 @@ class KimmiRTCDock {
   }
 
   void release() {
-    engine.release();
+    forceReleaseEngine();
     _instance = null;
+  }
+
+  void forceReleaseEngine({bool sync = true}) {
+    engine.release(sync: sync);
+    if (sync) {
+      _syncDelay(15);
+    }
+  }
+
+  void _syncDelay(int milliseconds) {
+    final start = DateTime.now().millisecondsSinceEpoch;
+    while (DateTime.now().millisecondsSinceEpoch - start < milliseconds) {}
   }
 }

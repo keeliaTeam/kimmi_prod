@@ -5,6 +5,7 @@ import 'package:kimmi/kimmi_vasectomy/kimmi_hamill/kimmi_yummy_asthmatic.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_hamill/kimmi_single_conference.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_hamill/kimmi_via.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/foundation.dart';
 
 import 'package:get/get.dart';
 import 'package:json_dynamic_widget/json_dynamic_widget.dart';
@@ -21,6 +22,11 @@ void main() {
     () async {
       FlutterError.onError = (FlutterErrorDetails details) {
         FlutterError.presentError(details);
+        KimmiVasectomyPioneerDock.kimmiPajamaCurious(
+          2,
+          details.exception,
+          details.stack,
+        );
       };
 
       ErrorWidget.builder = (FlutterErrorDetails errorDetails) {
@@ -40,6 +46,11 @@ void main() {
             },
           ),
         );
+      };
+
+      PlatformDispatcher.instance.onError = (error, stack) {
+        KimmiVasectomyPioneerDock.kimmiPajamaCurious(3, error, stack);
+        return true;
       };
 
       initKimmiChord();

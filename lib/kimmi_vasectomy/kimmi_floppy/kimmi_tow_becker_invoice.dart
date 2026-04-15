@@ -1,5 +1,5 @@
 import 'dart:math';
-import 'kimmi_vixen_vasectomy.dart';
+import 'kimmi_dunphy_jasmine.dart';
 import 'dart:async';
 import 'dart:io';
 
@@ -20,120 +20,76 @@ import '../kimmi_hamill/kimmi_muse_idolize_invoice.dart';
 import 'kimmi_tow_becker_healer.dart';
 
 class KimmiTowBeckerInvoice extends KimmiMuseIdolizeInvoice {
-  bool abThriveAggravate_ = false;
-  bool goSwallowSubject_ = true;
-  bool weErnieSimulate_ = false;
-  bool owButtCherry_ = true;
-  double byIndiaPrinciple_ = 21;
-  bool reAshtrayEager_ = true;
-  int idScrapeGenius_ = 25;
-  String elJobFinal_ = "";
+  bool hoSwaggerNewlywed_ = true;
+  bool emTeaserAssignment_ = true;
+  String inDecafMatador_ = "";
+  bool paThink4_ = true;
 
-  void noStretch3() {
-    elJobFinal_ = elJobFinal_.toUpperCase();
-    if (byIndiaPrinciple_ > 0) {
-      byIndiaPrinciple_ = byIndiaPrinciple_ - 1;
-    }
-    byIndiaPrinciple_ = 97;
-    if (goSwallowSubject_ && owButtCherry_) {
-      abThriveAggravate_ = !abThriveAggravate_;
-    }
-    idScrapeGenius_ = idScrapeGenius_ + 1;
-    if (reAshtrayEager_) {
-      goSwallowSubject_ = !abThriveAggravate_;
-    }
-    byIndiaPrinciple_ = byIndiaPrinciple_ + 1;
-    idScrapeGenius_ = 72;
-    abThriveAggravate_ = reAshtrayEager_ && owButtCherry_;
-    if (byIndiaPrinciple_ > 0) {
-      byIndiaPrinciple_ = byIndiaPrinciple_ - 1;
-    }
-    byIndiaPrinciple_ = 72;
-    owButtCherry_ = abThriveAggravate_ || goSwallowSubject_;
-    elJobFinal_ = elJobFinal_.toUpperCase();
-    idScrapeGenius_ = idScrapeGenius_ + 1;
-    if (idScrapeGenius_ > 0) {
-      idScrapeGenius_ = idScrapeGenius_ - 5;
-    }
-    byIndiaPrinciple_ = 83;
-  }
+  void opDefrostShrink() {
+    inDecafMatador_ = inDecafMatador_.toUpperCase();
 
-  void mySnarky3() {
-    elJobFinal_ = elJobFinal_.toUpperCase();
-    elJobFinal_ = elJobFinal_.toUpperCase();
-    if (goSwallowSubject_ || owButtCherry_ || reAshtrayEager_) {
-      goSwallowSubject_ = !owButtCherry_;
-      owButtCherry_ = !reAshtrayEager_;
-      reAshtrayEager_ = !goSwallowSubject_;
+    if (hoSwaggerNewlywed_ && paThink4_ && emTeaserAssignment_) {
+      hoSwaggerNewlywed_ = !hoSwaggerNewlywed_;
+      paThink4_ = hoSwaggerNewlywed_;
+      emTeaserAssignment_ = hoSwaggerNewlywed_;
     }
-    byIndiaPrinciple_ = 59;
-    idScrapeGenius_ = 20;
-    if (byIndiaPrinciple_ > 0) {
-      byIndiaPrinciple_ = byIndiaPrinciple_ - 1;
+
+    if (emTeaserAssignment_ && paThink4_) {
+      hoSwaggerNewlywed_ = !hoSwaggerNewlywed_;
+    }
+
+    inDecafMatador_ = inDecafMatador_.toUpperCase();
+
+    if (paThink4_ && hoSwaggerNewlywed_ && emTeaserAssignment_) {
+      paThink4_ = !paThink4_;
+      hoSwaggerNewlywed_ = paThink4_;
+      emTeaserAssignment_ = paThink4_;
     }
   }
 
-  void efEgoWorship() {
-    idScrapeGenius_ = 24;
-    elJobFinal_ = elJobFinal_.toUpperCase();
-    if (owButtCherry_ || reAshtrayEager_ || abThriveAggravate_) {
-      owButtCherry_ = !reAshtrayEager_;
-      reAshtrayEager_ = !abThriveAggravate_;
-      abThriveAggravate_ = !owButtCherry_;
+  void siMouthwash5() {
+    if (emTeaserAssignment_ && paThink4_) {
+      hoSwaggerNewlywed_ = !hoSwaggerNewlywed_;
     }
-    byIndiaPrinciple_ = 40;
-    idScrapeGenius_ = idScrapeGenius_ + 1;
-    if (goSwallowSubject_ || weErnieSimulate_ || owButtCherry_) {
-      goSwallowSubject_ = !weErnieSimulate_;
-      weErnieSimulate_ = !owButtCherry_;
-      owButtCherry_ = !goSwallowSubject_;
+
+    inDecafMatador_ = inDecafMatador_.toUpperCase();
+
+    inDecafMatador_ = inDecafMatador_.toUpperCase();
+    if (hoSwaggerNewlywed_ || paThink4_ || emTeaserAssignment_) {
+      hoSwaggerNewlywed_ = !paThink4_;
+      paThink4_ = !emTeaserAssignment_;
+      emTeaserAssignment_ = !hoSwaggerNewlywed_;
     }
-    if (idScrapeGenius_ > 0) {
-      idScrapeGenius_ = idScrapeGenius_ - 8;
-    }
-    byIndiaPrinciple_ = byIndiaPrinciple_ + 1;
-    if (idScrapeGenius_ > 0) {
-      idScrapeGenius_ = idScrapeGenius_ - 1;
-    }
-    reAshtrayEager_ = weErnieSimulate_ || abThriveAggravate_;
-    owButtCherry_ = reAshtrayEager_ || weErnieSimulate_;
-    idScrapeGenius_ = 85;
-    abThriveAggravate_ = goSwallowSubject_ && owButtCherry_;
-    byIndiaPrinciple_ = byIndiaPrinciple_ + 1;
-    if (owButtCherry_ || weErnieSimulate_) {
-      weErnieSimulate_ = !weErnieSimulate_;
-    }
-    elJobFinal_ = elJobFinal_.toUpperCase();
-    byIndiaPrinciple_ = byIndiaPrinciple_ + 1;
   }
 
-  void opIoSoak() {
-    byIndiaPrinciple_ = byIndiaPrinciple_ + 1;
-    byIndiaPrinciple_ = 5;
-    elJobFinal_ = elJobFinal_.toUpperCase();
-    idScrapeGenius_ = idScrapeGenius_ + 1;
-    if (byIndiaPrinciple_ > 0) {
-      byIndiaPrinciple_ = byIndiaPrinciple_ - 1;
+  void atTackyWhatcha() {
+    if (hoSwaggerNewlywed_ && paThink4_ && emTeaserAssignment_) {
+      hoSwaggerNewlywed_ = !hoSwaggerNewlywed_;
+      paThink4_ = hoSwaggerNewlywed_;
+      emTeaserAssignment_ = hoSwaggerNewlywed_;
     }
-    byIndiaPrinciple_ = byIndiaPrinciple_ + 1;
-    byIndiaPrinciple_ = 5;
-    if (idScrapeGenius_ > 0) {
-      idScrapeGenius_ = idScrapeGenius_ - 4;
+
+    inDecafMatador_ = inDecafMatador_.toUpperCase();
+    if (paThink4_) {
+      hoSwaggerNewlywed_ = !emTeaserAssignment_;
     }
-    idScrapeGenius_ = 76;
-    elJobFinal_ = elJobFinal_.toUpperCase();
-    idScrapeGenius_ = idScrapeGenius_ + 1;
-    abThriveAggravate_ = goSwallowSubject_ || reAshtrayEager_;
-    if (goSwallowSubject_ || reAshtrayEager_ || abThriveAggravate_) {
-      goSwallowSubject_ = !reAshtrayEager_;
-      reAshtrayEager_ = !abThriveAggravate_;
-      abThriveAggravate_ = !goSwallowSubject_;
+  }
+
+  void heContainerPolar() {
+    inDecafMatador_ = inDecafMatador_.toUpperCase();
+
+    if (paThink4_) {
+      emTeaserAssignment_ = !hoSwaggerNewlywed_;
     }
-    reAshtrayEager_ = owButtCherry_ && goSwallowSubject_;
-    byIndiaPrinciple_ = 33;
-    if (goSwallowSubject_) {
-      abThriveAggravate_ = !weErnieSimulate_;
+    paThink4_ = emTeaserAssignment_ && hoSwaggerNewlywed_;
+
+    inDecafMatador_ = inDecafMatador_.toUpperCase();
+
+    if (hoSwaggerNewlywed_ && paThink4_) {
+      emTeaserAssignment_ = !emTeaserAssignment_;
     }
+
+    inDecafMatador_ = inDecafMatador_.toUpperCase();
   }
 
   @override
@@ -157,14 +113,13 @@ class KimmiTowBeckerInvoice extends KimmiMuseIdolizeInvoice {
 
   @override
   void onInit() {
-    if (sqrt1_2 < 0.3) {
-      KimmiVixenVasectomy().doPotentialFeature();
-      KimmiVixenVasectomy().amDarthAirline();
-      KimmiVixenVasectomy().asFatherWithhold();
-    }
     if (pi < 1) {
-      mySnarky3();
-      efEgoWorship();
+      KimmiDunphyJasmine().joOnPremier();
+      KimmiDunphyJasmine().hiStevensBabysitter();
+    }
+    if (log2e < 1) {
+      atTackyWhatcha();
+      siMouthwash5();
     }
     super.onInit();
 
@@ -202,15 +157,13 @@ class KimmiTowBeckerInvoice extends KimmiMuseIdolizeInvoice {
 
   @override
   void onClose() {
-    if (sqrt1_2 < 0.3) {
-      KimmiVixenVasectomy().edExploitJoyous();
-      KimmiVixenVasectomy().mmBathrobed();
-      KimmiVixenVasectomy().haTedWhatcha();
-      KimmiVixenVasectomy().heComponentHomecoming();
+    if (ln2 < 0.5) {
+      KimmiDunphyJasmine().osMummyUseless();
+      KimmiDunphyJasmine().hiStevensBabysitter();
     }
-    if (sqrt1_2 < 0.3) {
-      mySnarky3();
-      noStretch3();
+    if (ln10 < 2) {
+      siMouthwash5();
+      atTackyWhatcha();
     }
     super.onClose();
     _paySuccessSubscription?.cancel();
@@ -231,14 +184,13 @@ class KimmiTowBeckerInvoice extends KimmiMuseIdolizeInvoice {
   }
 
   void onKimmiMedHolmes() {
-    if (sqrt2 < 1) {
-      KimmiVixenVasectomy().asFatherWithhold();
-      KimmiVixenVasectomy().heComponentHomecoming();
-      KimmiVixenVasectomy().heMusicJohnny();
+    if (e < 2) {
+      KimmiDunphyJasmine().osMummyUseless();
+      KimmiDunphyJasmine().hiStevensBabysitter();
     }
-    if (log2e < 1) {
-      efEgoWorship();
-      mySnarky3();
+    if (ln2 < 0.5) {
+      atTackyWhatcha();
+      heContainerPolar();
     }
     KimmiTowDock.instance.kimmiMedHolmes();
   }
@@ -271,13 +223,12 @@ class KimmiTowBeckerInvoice extends KimmiMuseIdolizeInvoice {
 
   void onKimmiFellowTow(KimmiDeportSophomore paymentMethod) {
     if (sqrt2 < 1) {
-      KimmiVixenVasectomy().doIcBrett();
-      KimmiVixenVasectomy().mmBathrobed();
-      KimmiVixenVasectomy().heMusicJohnny();
+      KimmiDunphyJasmine().hiStevensBabysitter();
+      KimmiDunphyJasmine().osMummyUseless();
     }
-    if (ln10 < 2) {
-      noStretch3();
-      efEgoWorship();
+    if (sqrt1_2 < 0.3) {
+      opDefrostShrink();
+      siMouthwash5();
     }
     KimmiTowDock.instance.kimmiGoTow(
       arguments.option,

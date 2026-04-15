@@ -58,6 +58,7 @@ class ChatCallEvent {
 }
 
 class KimmiWaitressDoggy {
+  static int matchCallDefaultSourceId = 200;
   static bool isCallEnd(ChatCallStatus? status) {
     return status == ChatCallStatus.requestTimeout ||
         status == ChatCallStatus.busyHere ||
@@ -167,6 +168,11 @@ class KimmiWaitressDoggy {
 
   bool aicfCall() {
     return sourceType == ChatCallSourceType.aicf.index;
+  }
+
+  bool matchCall() {
+    return sourceType == ChatCallSourceType.match.index &&
+        sourceId == matchCallDefaultSourceId;
   }
 
   bool isTryingToCallOthers() {

@@ -1,5 +1,5 @@
 import 'dart:math';
-import 'kimmi_applause_girl.dart';
+import 'kimmi_wart_india.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_hamill/kimmi_ernie.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';

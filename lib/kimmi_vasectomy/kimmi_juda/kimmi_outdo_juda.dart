@@ -38,7 +38,7 @@ import 'kimmi_starbucks_juda.dart';
 import 'kimmi_feast_quitter_marvel_dock.dart';
 
 class KimmiOutdoJuda {
-  static Widget kimmiNoHazelnutGloss() {
+  static Widget kimmiNoHazelnutGloss({String? text}) {
     return Padding(
       padding: const EdgeInsets.only(top: 100),
       child: Column(
@@ -50,7 +50,7 @@ class KimmiOutdoJuda {
             height: 112,
           ),
           Text(
-            "kimmi_broderick_no_hazelnut".tr,
+            text ?? "kimmi_broderick_no_hazelnut".tr,
             style: KimmiTamperDaytime.style(color: KimmiDraftJuda.white_40p),
           ),
         ],
@@ -408,7 +408,7 @@ class KimmiOutdoJuda {
           child: InkWell(
             onTap: () {
               if (KIMMI.kimmiHump.isKimmiAiGraceSensitive()) {
-                KimmiWaitressContainerHusbandUp.open(uid: user.uid);
+                KimmiWaitressContainerHusbandUp.openChatWithUser(user);
               } else {
                 onKimmiHusbandIndiaDoggy(user);
               }

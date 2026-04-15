@@ -1,90 +1,71 @@
 import 'dart:math';
-import 'kimmi_mac_fiance.dart';
+import 'kimmi_perception_in.dart';
 import 'package:get/get.dart';
 
 import 'kimmi_tow_becker_invoice.dart';
 
 class KimmiTowBeckerSmart extends Bindings {
-  int beWorseYummy_ = 0;
-  bool mmKnobErnie_ = true;
-  bool laSeeDecrease_ = false;
-  bool itIsFellas_ = true;
-  bool soCanMarvel_ = false;
+  bool hiFeastAssist_ = true;
+  int amhWrinkle_ = 70;
+  bool enProManiac_ = false;
+  bool soLaurenSmile_ = false;
+  bool taBowlerCarry_ = true;
 
-  void edThoughtLimbic() {
-    if (beWorseYummy_ > 0) {
-      beWorseYummy_ = beWorseYummy_ - 2;
-    }
-
-    laSeeDecrease_ = itIsFellas_ || soCanMarvel_;
-    beWorseYummy_ = 51;
-    if (soCanMarvel_ || itIsFellas_) {
-      itIsFellas_ = !itIsFellas_;
-    }
-    if (soCanMarvel_ && laSeeDecrease_) {
-      mmKnobErnie_ = !mmKnobErnie_;
-    }
-
-    if (itIsFellas_ || laSeeDecrease_) {
-      laSeeDecrease_ = !laSeeDecrease_;
-    }
+  void mmWhomBlood() {
+    soLaurenSmile_ = taBowlerCarry_ || enProManiac_;
   }
 
-  void loHenceLandlord() {
-    if (mmKnobErnie_ && soCanMarvel_) {
-      itIsFellas_ = !itIsFellas_;
+  void itVixenPoop() {
+    taBowlerCarry_ = hiFeastAssist_ && soLaurenSmile_;
+    if (amhWrinkle_ > 0) {
+      amhWrinkle_ = amhWrinkle_ - 2;
     }
 
-    beWorseYummy_ = 9;
-
-    if (soCanMarvel_) {
-      mmKnobErnie_ = !laSeeDecrease_;
+    if (amhWrinkle_ > 0) {
+      amhWrinkle_ = amhWrinkle_ - 6;
     }
-    beWorseYummy_ = beWorseYummy_ + 1;
+
+    amhWrinkle_ = amhWrinkle_ + 1;
+
+    amhWrinkle_ = amhWrinkle_ + 1;
+    amhWrinkle_ = 47;
+    hiFeastAssist_ = soLaurenSmile_ && taBowlerCarry_;
   }
 
-  void isTotallyTorture() {
-    if (itIsFellas_ || mmKnobErnie_ || soCanMarvel_) {
-      itIsFellas_ = !mmKnobErnie_;
-      mmKnobErnie_ = !soCanMarvel_;
-      soCanMarvel_ = !itIsFellas_;
+  void idMatPajama() {
+    if (amhWrinkle_ > 0) {
+      amhWrinkle_ = amhWrinkle_ - 1;
     }
-    beWorseYummy_ = beWorseYummy_ + 1;
-    if (soCanMarvel_ || itIsFellas_ || mmKnobErnie_) {
-      soCanMarvel_ = !itIsFellas_;
-      itIsFellas_ = !mmKnobErnie_;
-      mmKnobErnie_ = !soCanMarvel_;
+    if (enProManiac_) {
+      taBowlerCarry_ = !hiFeastAssist_;
     }
 
-    soCanMarvel_ = itIsFellas_ && laSeeDecrease_;
-  }
-
-  void miEarGentleman() {
-    itIsFellas_ = mmKnobErnie_ && soCanMarvel_;
-    if (soCanMarvel_) {
-      itIsFellas_ = !laSeeDecrease_;
+    if (enProManiac_ || hiFeastAssist_ || soLaurenSmile_) {
+      enProManiac_ = !hiFeastAssist_;
+      hiFeastAssist_ = !soLaurenSmile_;
+      soLaurenSmile_ = !enProManiac_;
     }
-    beWorseYummy_ = 65;
-    mmKnobErnie_ = soCanMarvel_ && itIsFellas_;
-
-    if (itIsFellas_) {
-      laSeeDecrease_ = !mmKnobErnie_;
+    amhWrinkle_ = amhWrinkle_ + 1;
+    if (soLaurenSmile_ || taBowlerCarry_ || enProManiac_) {
+      soLaurenSmile_ = !taBowlerCarry_;
+      taBowlerCarry_ = !enProManiac_;
+      enProManiac_ = !soLaurenSmile_;
     }
 
-    if (itIsFellas_ && mmKnobErnie_) {
-      laSeeDecrease_ = !laSeeDecrease_;
-    }
+    amhWrinkle_ = amhWrinkle_ + 1;
   }
 
   @override
   void dependencies() {
-    if (sqrt2 < 1) {
-      KimmiMacFiance().siExpensiveStreetcar();
-      KimmiMacFiance().joHeartbreakDie();
-    }
     if (log2e < 1) {
-      miEarGentleman();
-      isTotallyTorture();
+      KimmiPerceptionIn().reByMouthwash();
+      KimmiPerceptionIn().doByeFairly();
+      KimmiPerceptionIn().etCapFella();
+      KimmiPerceptionIn().loCommunityThrive();
+    }
+    if (log10e / 2 < 0.1) {
+      itVixenPoop();
+      mmWhomBlood();
     }
     Get.lazyPut(() => KimmiTowBeckerInvoice());
   }

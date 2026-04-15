@@ -6,22 +6,31 @@ import 'package:protobuf/protobuf.dart' as $pb;
 export 'live_message.pbenum.dart';
 
 class Message extends $pb.GeneratedMessage {
-  factory Message() => create();
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+    const $core.bool.fromEnvironment('protobuf.omit_message_names')
+        ? ''
+        : 'Message',
+    package: $pb.PackageName(
+      const $core.bool.fromEnvironment('protobuf.omit_message_names')
+          ? ''
+          : pP.kimmiLockEyelash(),
+    ),
+    createEmptyInstance: create,
+  )..hasRequiredFields = false;
+
   Message._() : super();
+
+  factory Message() => create();
+
   factory Message.fromBuffer(
     $core.List<$core.int> i, [
     $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
   ]) => create()..mergeFromBuffer(i, r);
+
   factory Message.fromJson(
     $core.String i, [
     $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
   ]) => create()..mergeFromJson(i, r);
-
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-    _omitMessageNames ? '' : 'Message',
-    package: $pb.PackageName(_omitMessageNames ? '' : pP.kimmiLockEyelash()),
-    createEmptyInstance: create,
-  )..hasRequiredFields = false;
 
   @$core.Deprecated(
     'Using this can add significant overhead to your binary. '
@@ -29,6 +38,7 @@ class Message extends $pb.GeneratedMessage {
     'Will be removed in next major version',
   )
   Message clone() => Message()..mergeFromMessage(this);
+
   @$core.Deprecated(
     'Using this can add significant overhead to your binary. '
     'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
@@ -36,19 +46,17 @@ class Message extends $pb.GeneratedMessage {
   )
   Message copyWith(void Function(Message) updates) =>
       super.copyWith((message) => updates(message as Message)) as Message;
-
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Message create() => Message._();
+
   Message createEmptyInstance() => create();
+
   static $pb.PbList<Message> createRepeated() => $pb.PbList<Message>();
+
   @$core.pragma('dart2js:noInline')
   static Message getDefault() =>
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Message>(create);
   static Message? _defaultInstance;
 }
-
-const _omitMessageNames = $core.bool.fromEnvironment(
-  'protobuf.omit_message_names',
-);

@@ -1,5 +1,5 @@
 import 'dart:math';
-import 'kimmi_colombian_male.dart';
+import 'kimmi_wart_india.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_palate.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_curvy/kimmi_africa.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_tonight/kimmi_draft_juda.dart';
@@ -67,12 +67,16 @@ class KimmiThatContainer extends KimmiMuseIdolizeContainer<KimmiThatInvoice> {
   }
 
   Widget _kimmiThatSaverFailed() {
+    String title = logic.isRegionMatchFirst20sChargeMode
+        ? KIMMI.kimmiHump.regionMatchFirst20sChargeModeDesc()
+        : 'kimmi_broderick_handcuff_husband_saver'.tr;
+    if (KIMMI.kimmiHump.isKimmiAiGraceSensitive()) {
+      title = "Quickly match with an AI friend";
+    }
     return SizedBox(
       width: Get.width - 32,
       child: Text(
-        KIMMI.kimmiHump.isKimmiAiGraceSensitive()
-            ? "Quickly match with an AI friend"
-            : 'kimmi_broderick_handcuff_husband_saver'.tr,
+        title,
         textAlign: TextAlign.center,
         style: KimmiTamperDaytime.style(
           fontSize: 14,

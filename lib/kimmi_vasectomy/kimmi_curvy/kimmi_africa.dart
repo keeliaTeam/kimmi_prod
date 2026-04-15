@@ -5,31 +5,29 @@ import 'dart:math';
 import 'package:adjust_sdk/adjust.dart';
 import 'package:adjust_sdk/adjust_event.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_prototype.dart';
-import 'package:kimmi/kimmi_vasectomy/kimmi_storm/kimmi_cavity_smile.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_exploit_dylan/kimmi_dylan_hump.dart';
-import 'package:kimmi/kimmi_vasectomy/kimmi_storm/kimmi_storm_boat_tux.dart';
+import 'package:kimmi/kimmi_vasectomy/kimmi_storm/kimmi_cavity_smile.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_storm/kimmi_cavity_feast.dart';
+import 'package:kimmi/kimmi_vasectomy/kimmi_storm/kimmi_storm_boat_tux.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_storm/kimmi_feast_genius.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_storm/kimmi_feast_genius_fantasy_smile.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_virgin/kimmi_foreign.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_floppy/kimmi_timing_vasectomy.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_palate.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_curvy/kimmi_vasectomy_pioneer_dock.dart';
-import 'package:kimmi/kimmi_vasectomy/kimmi_curvy/kimmi_india_waitress_dock.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_curvy/kimmi_blackjack_curve.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_curvy/kimmi_broderick_soften.dart';
+import 'package:kimmi/kimmi_vasectomy/kimmi_curvy/kimmi_india_waitress_dock.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_juda/kimmi_waitress_dock.dart';
-import 'package:kimmi/kimmi_vasectomy/kimmi_juda/kimmi_quantity_dock.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_juda/kimmi_curious_nucleus.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_juda/kimmi_tow_dock.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_juda/kimmi_mention_dock.dart';
+import 'package:kimmi/kimmi_vasectomy/kimmi_juda/kimmi_quantity_dock.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_juda/kimmi_starbucks_juda.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_juda/kimmi_feast_quitter_marvel_dock.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_hamill/kimmi_mile_ernie.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_hamill/kimmi_failed_juda.dart';
-import 'package:kimmi/kimmi_vasectomy/proto/kimmi_doggy.pb.dart';
 import 'package:event_bus/event_bus.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -37,7 +35,7 @@ import 'package:flutter_aihelp/flutter_aihelp.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:get/get.dart';
 import 'package:logger/logger.dart';
-import 'package:onesignal_flutter/onesignal_flutter.dart';
+import 'package:path/path.dart' as Path;
 import 'package:path_provider/path_provider.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -46,17 +44,16 @@ import '../kimmi_storm/kimmi_vasectomy_hump.dart';
 import '../kimmi_storm/kimmi_hump.dart';
 import '../kimmi_storm/kimmi_traitor.dart';
 import '../kimmi_storm/kimmi_feast_chickie.dart';
+import '../kimmi_virgin/kimmi_exploit.dart';
 import '../kimmi_virgin/kimmi_foreign_script_outsource.dart';
 import '../kimmi_floppy/kimmi_vibrant_groovy_savage.dart';
 import '../kimmi_floppy/kimmi_incubator_healer.dart';
 import '../kimmi_sully.dart';
-import '../kimmi_virgin/kimmi_exploit.dart';
 import '../proto/kimmi_velveteen.pb.dart';
 import '../proto/common.pb.dart';
 import '../proto/object.pb.dart';
 import 'kimmi_db.dart';
 import 'kimmi_phil.dart';
-import 'package:path/path.dart' as Path;
 
 class KimmiAfrica {
   EventBus eventBus = EventBus(sync: false);
@@ -88,7 +85,7 @@ class KimmiAfrica {
   bool socketInit = false;
   late KimmiForeign socket;
 
-  late MethodChannel? methodChannel;
+  MethodChannel? methodChannel;
 
   late String filePath;
   late String cachePath;
@@ -126,15 +123,8 @@ class KimmiAfrica {
     KimmiDylanHump? cachedConfig = kimmiPhil.respConfig();
 
     http = _buildKimmiExploit(cachedConfig?.router.http);
-    if (kimmiTraitor != null) {
-      KimmiTowDock.instance.kimmiOutsource();
-      KimmiTowDock.instance.kimmiDarthFlowerSplashdown();
-
-      initCustom();
-    }
 
     deviceService.initAdjust();
-    KimmiVasectomyPioneerDock.kimmiOnVasectomyParoleUp();
 
     await refreshKimmiHump(
       quickRefresh: false,
@@ -195,7 +185,15 @@ class KimmiAfrica {
       _loadInstallReferrer();
     }
 
+    if (kimmiTraitor != null) {
+      KimmiTowDock.instance.kimmiOutsource();
+      KimmiTowDock.instance.kimmiDarthFlowerSplashdown();
+
+      initCustom();
+    }
+
     isInitDone = true;
+    KimmiVasectomyPioneerDock.kimmiOnVasectomyParoleUp();
   }
 
   String rootRouteName = KimmiSully.KimmiCageyContainer;
@@ -659,6 +657,7 @@ class KimmiAfrica {
     dynamic arguments,
   ]) async {
     try {
+      if (methodChannel == null) {}
       return await methodChannel?.invokeMethod(methodName, arguments);
     } catch (e, stack) {
       KimmiVasectomyPioneerDock.kimmiPajamaCurious(50004, e, stack);

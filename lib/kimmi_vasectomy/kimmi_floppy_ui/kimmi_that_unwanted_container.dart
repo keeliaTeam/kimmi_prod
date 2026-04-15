@@ -1,5 +1,5 @@
 import 'dart:math';
-import 'kimmi_crossover_crossover.dart';
+import 'kimmi_johnny_uneven.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -189,7 +189,10 @@ class KimmiThatUnwantedContainer
                           ),
                         ),
                         Text(
-                          "kimmi_broderick_handcuff_unwanted_saver".tr,
+                          KIMMI.kimmiHump.isRegionMatchFirst20sChargeMode()
+                              ? KIMMI.kimmiHump
+                                    .regionMatchFirst20sChargeModeDesc()
+                              : "kimmi_broderick_handcuff_unwanted_saver".tr,
                           textAlign: TextAlign.center,
                           maxLines: 3,
                           style: KimmiTamperDaytime.style(

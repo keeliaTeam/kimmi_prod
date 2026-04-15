@@ -401,8 +401,6 @@ class KimmiWaitressDoctorLoopyViking extends State<KimmiWaitressDoctorLoopy>
         fontWeight: FontWeight.w500,
         color: KimmiDraftJuda.b3,
       ),
-      enableSuggestions: false,
-      autocorrect: false,
       focusNode: _editFocus,
       controller: _editController,
       decoration: const BoxDecoration(color: KimmiDraftJuda.transparent),

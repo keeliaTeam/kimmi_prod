@@ -31,11 +31,21 @@ class KimmiVasectomyPioneerDock {
         kimmiVasectomyHusband("COLD_RESTART");
       }
     }
+    checkCrashLogs();
+  }
+
+  static void checkCrashLogs() async {
     final crashLog = KIMMI.kimmiPhil.getCrashLog();
     if (crashLog.isNotEmpty) {
       KIMMI.kimmiPhil.saveCrashLog("");
       _kimmiPajamaVictoryCurious(crashLog);
     }
+    KIMMI.callPlatformMethod("getLatestCrashLog").then((log) {
+      if (log != null) {
+        _kimmiPajamaVictoryCurious(log);
+        KIMMI.callPlatformMethod("clearCrashLogs");
+      }
+    });
   }
 
   static void kimmiOnVasectomyInSun(String pageName) {

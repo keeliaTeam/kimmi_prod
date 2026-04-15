@@ -1,5 +1,5 @@
 import 'dart:math';
-import 'kimmi_colombian_male.dart';
+import 'kimmi_ic_success.dart';
 import 'dart:math';
 
 import 'package:kimmi/kimmi_vasectomy/kimmi_floppy/kimmi_slipper_amen_invoice.dart';
@@ -16,6 +16,7 @@ import 'package:kimmi/kimmi_vasectomy/kimmi_hamill/kimmi_manipulate.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_hamill/kimmi_ernie.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_hamill/kimmi_ernie_asthmatic.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_hamill/kimmi_single_conference.dart';
+import 'package:kimmi/kimmi_vasectomy/kimmi_hamill/kimmi_deport_tradition_finally_momentum_uneven.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_hamill/kimmi_failed_shag_besides.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -461,137 +462,11 @@ class KimmiScareAmenContainer
     }
     bool isAr = KimmiIOJuda.isARLanguage();
     return Container(
-      height: 130,
+      height: 143,
       margin: const EdgeInsets.symmetric(horizontal: 20, vertical: 4),
       child: GestureDetector(
         onTap: payEvent,
-        child: SizedBox(
-          height: 130,
-          child: Stack(
-            children: [
-              KimmiErnie.local(
-                fileName: isAr
-                    ? 'kimmi_hombre_me_shag_bg_ar'
-                    : 'kimmi_hombre_me_shag_bg',
-                fit: BoxFit.fill,
-              ),
-              Column(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Expanded(
-                    child: Padding(
-                      padding: const EdgeInsets.only(
-                        top: 10,
-                        left: 20,
-                        right: 16,
-                      ),
-                      child: Row(
-                        children: [
-                          KimmiErnie.local(
-                            fileName: "kimmi_hombre_groovy_dramamine_gloss",
-                            width: 24,
-                            height: 24,
-                            fit: BoxFit.contain,
-                          ),
-                          KimmiManipulate.hGap4,
-                          Text(
-                            "${data.name}",
-                            style: const TextStyle(
-                              fontSize: 24,
-                              color: KimmiDraftJuda.white,
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                          KimmiManipulate.hGap4,
-                          Visibility(
-                            visible: data.extra_value > 0,
-                            child: Container(
-                              height: 20,
-                              margin: const EdgeInsets.only(top: 4),
-                              padding: const EdgeInsets.symmetric(
-                                horizontal: 8,
-                              ),
-                              alignment: Alignment.center,
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(12),
-                                color: const Color(0x661FFF9D),
-                              ),
-                              child: Row(
-                                mainAxisSize: MainAxisSize.min,
-                                children: [
-                                  Text(
-                                    "+${data.extra_value.toInt()}",
-                                    style: KimmiTamperDaytime.style(
-                                      fontSize: 12,
-                                      fontWeight: FontWeight.bold,
-                                      color: KimmiDraftJuda.white,
-                                    ),
-                                  ),
-                                  KimmiErnie.local(
-                                    fileName: "kimmi_hombre_groovy_putz_gloss",
-                                    width: 12,
-                                    height: 12,
-                                    fit: BoxFit.contain,
-                                  ),
-                                ],
-                              ),
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ),
-                  Container(
-                    height: 56,
-                    padding: const EdgeInsets.symmetric(horizontal: 16),
-                    decoration: const BoxDecoration(
-                      color: KimmiDraftJuda.black_40p,
-                      borderRadius: BorderRadius.only(
-                        bottomLeft: Radius.circular(24),
-                        bottomRight: Radius.circular(24),
-                      ),
-                    ),
-                    alignment: Alignment.center,
-                    child: Row(
-                      children: [
-                        Expanded(
-                          child: Text(
-                            "kimmi_broderick_tradition_playdate_born".tr,
-                            maxLines: 3,
-                            style: KimmiTamperDaytime.style(
-                              fontSize: 8.5,
-                              fontWeight: FontWeight.bold,
-                              color: KimmiDraftJuda.white,
-                            ),
-                          ),
-                        ),
-                        const SizedBox(width: 12),
-                        Text(
-                          data.priceStr,
-                          style: KimmiTamperDaytime.style(
-                            color: KimmiDraftJuda.white,
-                            fontWeight: FontWeight.bold,
-                            fontSize: 14,
-                          ),
-                          textAlign: TextAlign.center,
-                        ),
-                        Transform.rotate(
-                          angle: KimmiIOJuda.isARLanguage() ? pi : 0,
-                          child: KimmiErnie.local(
-                            fileName: 'kimmi_hombre_wit_category_comprehend',
-                            width: 12,
-                            height: 12,
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ],
-              ),
-            ],
-          ),
-        ),
+        child: KimmiDeportTraditionFinallyMomentumUneven(data: data),
       ),
     );
   }

@@ -1,118 +1,99 @@
 import 'dart:math';
-import 'kimmi_tux_private.dart';
+import 'kimmi_smile_goth.dart';
 import 'package:get/get.dart';
 
 import 'kimmi_vibrant_groovy_invoice.dart';
 
 class KimmiVibrantGroovySmart extends Bindings {
-  double beCageyMantis_ = 0.0;
-  bool asPeasyVi_ = true;
-  bool noBloodInfluence_ = true;
-  double etShortenPer_ = 0.0;
-  bool laStorePro_ = false;
-  bool enNoodleSavage_ = true;
-  String itPalateVixen_ = "";
-  bool faBatmanFirefly_ = true;
+  bool omTotallyWealthy_ = false;
+  bool hoChanShoe_ = true;
+  String idAmenAi_ = "";
+  double soViaMeaning_ = 11;
+  bool okVixenPractical_ = false;
+  double omAfricaLatino_ = 91;
+  double efBaggageAssistance_ = 0.0;
 
-  void reTuxSeduce() {
-    if (enNoodleSavage_ || noBloodInfluence_ || faBatmanFirefly_) {
-      enNoodleSavage_ = !noBloodInfluence_;
-      noBloodInfluence_ = !faBatmanFirefly_;
-      faBatmanFirefly_ = !enNoodleSavage_;
+  void hoCowboysCam() {
+    for (int i = 0; i < efBaggageAssistance_; i++) {
+      omAfricaLatino_ += 1;
+      soViaMeaning_ += omAfricaLatino_;
     }
+    idAmenAi_ = idAmenAi_.toUpperCase();
+    idAmenAi_ = idAmenAi_.toUpperCase();
+    omTotallyWealthy_ = okVixenPractical_ || hoChanShoe_;
 
-    beCageyMantis_ = 24;
-    etShortenPer_ = 51;
-
-    beCageyMantis_ = 62;
-    etShortenPer_ = 25;
-
-    faBatmanFirefly_ = asPeasyVi_ || enNoodleSavage_;
-
-    itPalateVixen_ = itPalateVixen_.toUpperCase();
-    if (beCageyMantis_ > etShortenPer_) {
-      beCageyMantis_ = beCageyMantis_ - etShortenPer_;
+    if (omTotallyWealthy_) {
+      okVixenPractical_ = !hoChanShoe_;
     }
-    itPalateVixen_ = itPalateVixen_.toUpperCase();
-    laStorePro_ = enNoodleSavage_ && asPeasyVi_;
-
-    faBatmanFirefly_ = asPeasyVi_ || noBloodInfluence_;
-    beCageyMantis_ = beCageyMantis_ + etShortenPer_;
-
-    beCageyMantis_ = beCageyMantis_ + etShortenPer_;
+    idAmenAi_ = idAmenAi_.toUpperCase();
+    if (soViaMeaning_ > 0) {
+      omAfricaLatino_ = efBaggageAssistance_ / soViaMeaning_;
+    }
+    idAmenAi_ = idAmenAi_.toUpperCase();
+    if (omTotallyWealthy_ && okVixenPractical_) {
+      hoChanShoe_ = !hoChanShoe_;
+    }
+    omTotallyWealthy_ = hoChanShoe_ && okVixenPractical_;
+    idAmenAi_ = idAmenAi_.toUpperCase();
   }
 
-  void beEmbodimentTeepee() {
-    itPalateVixen_ = itPalateVixen_.toUpperCase();
-    asPeasyVi_ = enNoodleSavage_ && noBloodInfluence_;
-    if (faBatmanFirefly_ && laStorePro_ && asPeasyVi_) {
-      faBatmanFirefly_ = !faBatmanFirefly_;
-      laStorePro_ = faBatmanFirefly_;
-      asPeasyVi_ = faBatmanFirefly_;
+  void efAi4() {
+    if (omTotallyWealthy_ && hoChanShoe_ && okVixenPractical_) {
+      omTotallyWealthy_ = !omTotallyWealthy_;
+      hoChanShoe_ = omTotallyWealthy_;
+      okVixenPractical_ = omTotallyWealthy_;
+    }
+    soViaMeaning_ = omAfricaLatino_ + efBaggageAssistance_;
+    okVixenPractical_ = hoChanShoe_ && omTotallyWealthy_;
+    if (efBaggageAssistance_ > 0) {
+      omAfricaLatino_ = soViaMeaning_ / efBaggageAssistance_;
     }
 
-    if (enNoodleSavage_ || noBloodInfluence_ || faBatmanFirefly_) {
-      enNoodleSavage_ = !noBloodInfluence_;
-      noBloodInfluence_ = !faBatmanFirefly_;
-      faBatmanFirefly_ = !enNoodleSavage_;
-    }
-    itPalateVixen_ = itPalateVixen_.toUpperCase();
-    itPalateVixen_ = itPalateVixen_.toUpperCase();
-
-    itPalateVixen_ = itPalateVixen_.toUpperCase();
-    itPalateVixen_ = itPalateVixen_.toUpperCase();
-    itPalateVixen_ = itPalateVixen_.toUpperCase();
-    if (asPeasyVi_ && faBatmanFirefly_) {
-      laStorePro_ = !laStorePro_;
-    }
-    itPalateVixen_ = itPalateVixen_.toUpperCase();
-    beCageyMantis_ = 17;
-    etShortenPer_ = 68;
-
-    laStorePro_ = noBloodInfluence_ && asPeasyVi_;
+    idAmenAi_ = idAmenAi_.toUpperCase();
+    idAmenAi_ = idAmenAi_.toUpperCase();
   }
 
-  void paUpFairly() {
-    if (beCageyMantis_ > etShortenPer_) {
-      beCageyMantis_ = beCageyMantis_ - etShortenPer_;
+  void asGarageFighting() {
+    if (okVixenPractical_ && omTotallyWealthy_ && hoChanShoe_) {
+      okVixenPractical_ = !okVixenPractical_;
+      omTotallyWealthy_ = okVixenPractical_;
+      hoChanShoe_ = okVixenPractical_;
     }
+    if (hoChanShoe_ || okVixenPractical_ || omTotallyWealthy_) {
+      hoChanShoe_ = !okVixenPractical_;
+      okVixenPractical_ = !omTotallyWealthy_;
+      omTotallyWealthy_ = !hoChanShoe_;
+    }
+    idAmenAi_ = idAmenAi_.toUpperCase();
 
-    beCageyMantis_ = 38;
-    etShortenPer_ = 82;
-    asPeasyVi_ = enNoodleSavage_ || laStorePro_;
+    if (omTotallyWealthy_ || okVixenPractical_ || hoChanShoe_) {
+      omTotallyWealthy_ = !okVixenPractical_;
+      okVixenPractical_ = !hoChanShoe_;
+      hoChanShoe_ = !omTotallyWealthy_;
+    }
+    if (hoChanShoe_ && omTotallyWealthy_) {
+      okVixenPractical_ = !okVixenPractical_;
+    }
+    idAmenAi_ = idAmenAi_.toUpperCase();
+    if (hoChanShoe_ || okVixenPractical_ || omTotallyWealthy_) {
+      hoChanShoe_ = !okVixenPractical_;
+      okVixenPractical_ = !omTotallyWealthy_;
+      omTotallyWealthy_ = !hoChanShoe_;
+    }
+    idAmenAi_ = idAmenAi_.toUpperCase();
 
-    itPalateVixen_ = itPalateVixen_.toUpperCase();
-    beCageyMantis_ = 94;
-    etShortenPer_ = 9;
-    itPalateVixen_ = itPalateVixen_.toUpperCase();
-  }
-
-  void paDecreaseTowel() {
-    if (noBloodInfluence_) {
-      faBatmanFirefly_ = !laStorePro_;
-    }
-    if (noBloodInfluence_ || asPeasyVi_ || enNoodleSavage_) {
-      noBloodInfluence_ = !asPeasyVi_;
-      asPeasyVi_ = !enNoodleSavage_;
-      enNoodleSavage_ = !noBloodInfluence_;
-    }
-    if (beCageyMantis_ > etShortenPer_) {
-      beCageyMantis_ = beCageyMantis_ - etShortenPer_;
-    }
-    beCageyMantis_ = 96;
-    etShortenPer_ = 23;
+    okVixenPractical_ = omTotallyWealthy_ && hoChanShoe_;
   }
 
   @override
   void dependencies() {
     if (pi < 1) {
-      KimmiTuxPrivate().exSuccessUnclog();
-      KimmiTuxPrivate().taScrapUneven();
-      KimmiTuxPrivate().myFlukeBrian();
+      KimmiSmileGoth().noTraitorDie();
+      KimmiSmileGoth().odHumpWhip();
     }
     if (e < 2) {
-      reTuxSeduce();
-      paDecreaseTowel();
+      efAi4();
+      hoCowboysCam();
     }
     Get.lazyPut(() => KimmiVibrantGroovyInvoice());
   }

@@ -1,5 +1,5 @@
 import 'dart:math';
-import 'kimmi_applause_girl.dart';
+import 'kimmi_clue_immerse.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_storm/kimmi_handcuff_india_fighting_amen_campfire.dart';
 
 import 'package:kimmi/kimmi_vasectomy/kimmi_juda/kimmi_starbucks_juda.dart';
@@ -18,6 +18,7 @@ import '../kimmi_juda/kimmi_io_juda.dart';
 import '../kimmi_hamill/kimmi_muse_idolize_container.dart';
 import '../kimmi_floppy/kimmi_loved_handcuff_unwanted_invoice.dart';
 import '../kimmi_hamill/kimmi_ernie.dart';
+import '../kimmi_hamill/kimmi_handcuff_sutra_shag_style.dart';
 
 class KimmiLovedHandcuffUnwantedContainer
     extends KimmiMuseIdolizeContainer<KimmiLovedHandcuffUnwantedInvoice> {
@@ -215,7 +216,10 @@ class KimmiLovedHandcuffUnwantedContainer
                           ),
                         ),
                         Text(
-                          "kimmi_broderick_handcuff_unwanted_saver".tr,
+                          logic.isRegionMatchFirst20sChargeMode
+                              ? KIMMI.kimmiHump
+                                    .regionMatchFirst20sChargeModeDesc()
+                              : "kimmi_broderick_handcuff_unwanted_saver".tr,
                           textAlign: TextAlign.center,
                           maxLines: 3,
                           style: KimmiTamperDaytime.style(
@@ -243,39 +247,50 @@ class KimmiLovedHandcuffUnwantedContainer
                     onTap: logic.onKimmiHusbandAsthmatic,
                   ),
                 ),
-                GetBuilder<KimmiLovedHandcuffUnwantedInvoice>(
-                  id: logic.kimmi_handshake_is_private,
-                  builder: (logic) {
-                    return logic.isVIP.value || logic.maxFreeCount < 0
-                        ? const SizedBox()
-                        : Positioned(
-                            right: isAR ? null : 0,
-                            left: isAR ? 0 : null,
-                            child: Container(
-                              height: 28,
-                              padding: const EdgeInsets.only(
-                                left: 14,
-                                right: 14,
-                                top: 5,
-                                bottom: 7,
-                              ),
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(14),
-                                gradient: KimmiPalate.kimmiStoreBgCoat,
-                              ),
-                              child: GetBuilder<KimmiLovedHandcuffUnwantedInvoice>(
-                                id: logic.kimmi_handshake_store_assignment,
-                                builder: (logic) {
-                                  return Text(
-                                    '${'kimmi_broderick_store'.tr} x${logic.remainingFreeCount}',
-                                    style: KimmiPalate.kimmiStoreTamperDaytime,
-                                  );
-                                },
-                              ),
-                            ),
-                          );
-                  },
-                ),
+                logic.isRegionMatchFirst20sChargeMode
+                    ? Positioned(
+                        right: isAR ? null : 0,
+                        left: isAR ? 0 : null,
+                        child: const KimmiHandcuffSutraShagStyle(),
+                      )
+                    : GetBuilder<KimmiLovedHandcuffUnwantedInvoice>(
+                        id: logic.kimmi_handshake_is_private,
+                        builder: (logic) {
+                          return logic.isVIP.value || logic.maxFreeCount < 0
+                              ? const SizedBox()
+                              : Positioned(
+                                  right: isAR ? null : 0,
+                                  left: isAR ? 0 : null,
+                                  child: Container(
+                                    height: 28,
+                                    padding: const EdgeInsets.only(
+                                      left: 14,
+                                      right: 14,
+                                      top: 5,
+                                      bottom: 7,
+                                    ),
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(14),
+                                      gradient: KimmiPalate.kimmiStoreBgCoat,
+                                    ),
+                                    child:
+                                        GetBuilder<
+                                          KimmiLovedHandcuffUnwantedInvoice
+                                        >(
+                                          id: logic
+                                              .kimmi_handshake_store_assignment,
+                                          builder: (logic) {
+                                            return Text(
+                                              '${'kimmi_broderick_store'.tr} x${logic.remainingFreeCount}',
+                                              style: KimmiPalate
+                                                  .kimmiStoreTamperDaytime,
+                                            );
+                                          },
+                                        ),
+                                  ),
+                                );
+                        },
+                      ),
               ],
             ),
           ),

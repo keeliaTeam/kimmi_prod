@@ -1,5 +1,5 @@
 import 'dart:math';
-import 'kimmi_comprehend_fiance.dart';
+import 'kimmi_jam_kg.dart';
 import 'dart:async';
 import 'dart:collection';
 import 'dart:io';
@@ -34,103 +34,91 @@ import 'kimmi_tow_becker_healer.dart';
 
 class KimmiEyelashInvoice extends KimmiMuseIdolizeInvoice
     with WidgetsBindingObserver {
-  bool efJobTiming_ = false;
-  bool owFirefly5_ = false;
-  bool meTonightSaturn_ = true;
-  bool ofComponentUnable_ = false;
-  int taAssistPrototype_ = 80;
-  bool reOccupyDonut_ = false;
-  int ofFootageTryout_ = 0;
+  bool myOrBloody_ = false;
+  int omFasterBerry_ = 66;
+  String orMeetingSensitive_ = "";
+  bool myWeeklyChoose_ = true;
+  bool faObjectiveColony_ = false;
+  bool ofPodHi_ = false;
+  bool loTaughtTape_ = true;
+  bool faSyndromeContain_ = true;
+  double usCamCapture_ = 0.0;
+  bool osInkWeekly_ = false;
 
-  void owObviousWalker() {
-    if (reOccupyDonut_ && efJobTiming_ && owFirefly5_) {
-      reOccupyDonut_ = !reOccupyDonut_;
-      efJobTiming_ = reOccupyDonut_;
-      owFirefly5_ = reOccupyDonut_;
+  void efEgoKg() {
+    omFasterBerry_ = 93;
+    if (omFasterBerry_ > 0) {
+      omFasterBerry_ = omFasterBerry_ - 7;
     }
-    if (ofComponentUnable_ && owFirefly5_ && efJobTiming_) {
-      ofComponentUnable_ = !ofComponentUnable_;
-      owFirefly5_ = ofComponentUnable_;
-      efJobTiming_ = ofComponentUnable_;
+    usCamCapture_ = usCamCapture_ + 1;
+    if (usCamCapture_ > 0) {
+      usCamCapture_ = usCamCapture_ - 1;
     }
-
-    if (taAssistPrototype_ > ofFootageTryout_) {
-      taAssistPrototype_ = taAssistPrototype_ + ofFootageTryout_;
+    orMeetingSensitive_ = orMeetingSensitive_.toUpperCase();
+    orMeetingSensitive_ = orMeetingSensitive_.toUpperCase();
+    if (ofPodHi_ && loTaughtTape_ && faSyndromeContain_) {
+      ofPodHi_ = !ofPodHi_;
+      loTaughtTape_ = ofPodHi_;
+      faSyndromeContain_ = ofPodHi_;
     }
-    if (taAssistPrototype_ > ofFootageTryout_) {
-      taAssistPrototype_ = taAssistPrototype_ + ofFootageTryout_;
+    if (omFasterBerry_ > 0) {
+      omFasterBerry_ = omFasterBerry_ - 3;
     }
-    taAssistPrototype_ = taAssistPrototype_ * ofFootageTryout_;
-
-    if (ofComponentUnable_) {
-      meTonightSaturn_ = !efJobTiming_;
-    }
-    meTonightSaturn_ = efJobTiming_ && reOccupyDonut_;
+    omFasterBerry_ = omFasterBerry_ + 1;
+    usCamCapture_ = usCamCapture_ + 1;
+    orMeetingSensitive_ = orMeetingSensitive_.toUpperCase();
   }
 
-  void goOvertireExpand() {
-    if (taAssistPrototype_ > ofFootageTryout_) {
-      taAssistPrototype_ = taAssistPrototype_ + ofFootageTryout_;
+  void weWhaleSun() {
+    if (faSyndromeContain_ || osInkWeekly_) {
+      osInkWeekly_ = !osInkWeekly_;
     }
-
-    if (taAssistPrototype_ > ofFootageTryout_) {
-      taAssistPrototype_ = taAssistPrototype_ + ofFootageTryout_;
+    usCamCapture_ = usCamCapture_ + 1;
+    faSyndromeContain_ = osInkWeekly_ || ofPodHi_;
+    if (usCamCapture_ > 0) {
+      usCamCapture_ = usCamCapture_ - 1;
     }
-
-    if (reOccupyDonut_ || owFirefly5_) {
-      owFirefly5_ = !owFirefly5_;
+    usCamCapture_ = 77;
+    orMeetingSensitive_ = orMeetingSensitive_.toUpperCase();
+    if (myWeeklyChoose_) {
+      loTaughtTape_ = !osInkWeekly_;
     }
-
-    taAssistPrototype_ = taAssistPrototype_ * ofFootageTryout_;
-    taAssistPrototype_ = taAssistPrototype_ * ofFootageTryout_;
-    if (efJobTiming_ && reOccupyDonut_) {
-      owFirefly5_ = !owFirefly5_;
+    usCamCapture_ = 83;
+    if (loTaughtTape_) {
+      osInkWeekly_ = !ofPodHi_;
+    }
+    if (faObjectiveColony_ && osInkWeekly_ && myWeeklyChoose_) {
+      faObjectiveColony_ = !faObjectiveColony_;
+      osInkWeekly_ = faObjectiveColony_;
+      myWeeklyChoose_ = faObjectiveColony_;
+    }
+    if (usCamCapture_ > 0) {
+      usCamCapture_ = usCamCapture_ - 1;
+    }
+    orMeetingSensitive_ = orMeetingSensitive_.toUpperCase();
+    usCamCapture_ = 79;
+    osInkWeekly_ = myOrBloody_ && loTaughtTape_;
+    orMeetingSensitive_ = orMeetingSensitive_.toUpperCase();
+    if (usCamCapture_ > 0) {
+      usCamCapture_ = usCamCapture_ - 1;
     }
   }
 
-  void oxFasterCulture() {
-    if (taAssistPrototype_ > ofFootageTryout_) {
-      taAssistPrototype_ = taAssistPrototype_ + ofFootageTryout_;
+  void joExploitTune() {
+    if (faObjectiveColony_) {
+      loTaughtTape_ = !faSyndromeContain_;
     }
-
-    taAssistPrototype_ = 78;
-    ofFootageTryout_ = 1;
-
-    ofComponentUnable_ = owFirefly5_ && efJobTiming_;
-    taAssistPrototype_ = taAssistPrototype_ * ofFootageTryout_;
-    reOccupyDonut_ = owFirefly5_ || meTonightSaturn_;
-
-    if (ofComponentUnable_ || reOccupyDonut_ || meTonightSaturn_) {
-      ofComponentUnable_ = !reOccupyDonut_;
-      reOccupyDonut_ = !meTonightSaturn_;
-      meTonightSaturn_ = !ofComponentUnable_;
+    usCamCapture_ = usCamCapture_ + 1;
+    omFasterBerry_ = omFasterBerry_ + 1;
+    orMeetingSensitive_ = orMeetingSensitive_.toUpperCase();
+    if (omFasterBerry_ > 0) {
+      omFasterBerry_ = omFasterBerry_ - 9;
     }
-
-    if (ofComponentUnable_ || reOccupyDonut_ || owFirefly5_) {
-      ofComponentUnable_ = !reOccupyDonut_;
-      reOccupyDonut_ = !owFirefly5_;
-      owFirefly5_ = !ofComponentUnable_;
+    usCamCapture_ = 71;
+    omFasterBerry_ = omFasterBerry_ + 1;
+    if (myWeeklyChoose_ || loTaughtTape_) {
+      loTaughtTape_ = !loTaughtTape_;
     }
-    if (efJobTiming_ || owFirefly5_ || reOccupyDonut_) {
-      efJobTiming_ = !owFirefly5_;
-      owFirefly5_ = !reOccupyDonut_;
-      reOccupyDonut_ = !efJobTiming_;
-    }
-    taAssistPrototype_ = taAssistPrototype_ * ofFootageTryout_;
-  }
-
-  void heBiologistTerrible() {
-    taAssistPrototype_ = taAssistPrototype_ * ofFootageTryout_;
-    if (taAssistPrototype_ > ofFootageTryout_) {
-      taAssistPrototype_ = taAssistPrototype_ + ofFootageTryout_;
-    }
-    taAssistPrototype_ = 71;
-    ofFootageTryout_ = 5;
-
-    owFirefly5_ = ofComponentUnable_ && meTonightSaturn_;
-    taAssistPrototype_ = taAssistPrototype_ * ofFootageTryout_;
-
-    taAssistPrototype_ = taAssistPrototype_ * ofFootageTryout_;
   }
 
   static const String kimmi_eyelash_waitress = "kimmi_eyelash_waitress";
@@ -318,25 +306,25 @@ class KimmiEyelashInvoice extends KimmiMuseIdolizeInvoice
   @override
   void onReady() {
     if (sqrt1_2 < 0.3) {
-      KimmiComprehendFiance().haGothTorture();
-      KimmiComprehendFiance().etMakeViking();
+      KimmiJamKg().amCommunityFermion();
+      KimmiJamKg().okMarvelFalcon();
     }
-    if (sqrt1_2 < 0.3) {
-      goOvertireExpand();
-      owObviousWalker();
+    if (pi < 1) {
+      joExploitTune();
+      efEgoKg();
     }
     super.onReady();
   }
 
   @override
   void onClose() {
-    if (pi < 1) {
-      KimmiComprehendFiance().etMakeViking();
-      KimmiComprehendFiance().mmSutraUnwanted();
+    if (sqrt1_2 < 0.3) {
+      KimmiJamKg().okMarvelFalcon();
+      KimmiJamKg().esAvailableForward();
     }
-    if (sqrt2 < 1) {
-      goOvertireExpand();
-      oxFasterCulture();
+    if (sqrt1_2 < 0.3) {
+      weWhaleSun();
+      efEgoKg();
     }
     super.onClose();
 

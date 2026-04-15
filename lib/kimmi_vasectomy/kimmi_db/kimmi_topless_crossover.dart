@@ -1,8 +1,16 @@
+import 'dart:math' as logger;
+
 import 'package:kimmi/kimmi_vasectomy/kimmi_db/kimmi_waitress_signing_crossover.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_db/kimmi_topless_cowboys.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_storm/kimmi_topless.dart';
+import 'package:kimmi/kimmi_vasectomy/kimmi_tonight/kimmi_defrost.dart';
 import 'package:drift/drift.dart';
 import '../kimmi_storm/kimmi_waitress_feast.dart';
+import '../kimmi_storm/kimmi_expensive.dart';
+import '../kimmi_palate.dart';
+import '../kimmi_curvy/kimmi_vasectomy_pioneer_dock.dart';
+import '../kimmi_curvy/kimmi_africa.dart';
+import '../kimmi_juda/kimmi_waitress_juda.dart';
 import '../proto/im_object.pbenum.dart';
 import 'kimmi_expensive_crossover.dart';
 import 'kimmi_feast_crossover.dart';
@@ -74,6 +82,154 @@ class KimmiWaitressTotallyCrossover
     });
   }
 
+  Future saveOrUpdateChatBoxes(List<KimmiWaitressTotally>? boxes) async {
+    if (boxes == null || boxes.isEmpty) return;
+    return transaction(() async {
+      for (final m in boxes) {
+        final e = await modelById(m.id);
+        if (e == null) {
+          var toSave = _modelToEntityCompanion(m);
+          if (toSave != null) {
+            await into(kimmiWaitressTotallyCowboys).insert(toSave);
+          }
+        } else {
+          var updateVo = _modelToEntityCompanion(m, e);
+          if (updateVo != null) {
+            await update(kimmiWaitressTotallyCowboys).replace(updateVo);
+          }
+        }
+      }
+    });
+  }
+
+  Future updateChatBoxes(List<KimmiWaitressTotally>? boxes) async {
+    if (boxes == null || boxes.isEmpty) return;
+    return transaction(() async {
+      for (final m in boxes) {
+        var updateVo = _modelToEntityCompanion(m);
+        if (updateVo != null) {
+          await update(kimmiWaitressTotallyCowboys).replace(updateVo);
+        }
+      }
+    });
+  }
+
+  Future<List<KimmiWaitressTotally>?> queryChatBoxesForChatList(
+    int time,
+    int pageSize,
+  ) async {
+    final whereSegments = <String>[];
+    final variables = <Variable>[];
+
+    if (time > 0) {
+      whereSegments.add('box.update_time < ?');
+      variables.add(Variable<int>(time));
+    }
+
+    final whereClause = whereSegments.isEmpty
+        ? ''
+        : 'WHERE ${whereSegments.join(' AND ')}';
+
+    final sql =
+        '''
+      SELECT 
+        box.id,
+        box.type,
+        box.name,
+        box.owner,
+        box.weight,
+        box.muted,
+        box.unread_count,
+        box.update_time,
+        box.has_chat,
+        box.partner_id,
+        box.last_snap_type,
+        box.last_snap_text_content,
+        box.last_snap_json_content,
+        box.last_snap_create_time,
+        u.uid,
+        u.nick_name,
+        u.avatar_url
+      FROM kimmi_waitress_totally_cowboys box
+      LEFT JOIN kimmi_feast_cowboys u ON u.uid = box.partner_id
+      $whereClause
+      ORDER BY box.weight DESC, update_time DESC
+      LIMIT ?
+    ''';
+
+    variables.add(Variable<int>(pageSize));
+
+    final rows = await customSelect(
+      sql,
+      variables: variables,
+      readsFrom: {
+        kimmiWaitressTotallyCowboys,
+        attachedDatabase.kimmiFeastCowboys,
+      },
+    ).get();
+
+    if (rows.isEmpty) return [];
+
+    final chatBoxes = <KimmiWaitressTotally>[];
+    for (final row in rows) {
+      chatBoxes.add(_parseChatBoxFromRow(row));
+    }
+    return chatBoxes;
+  }
+
+  KimmiWaitressTotally _parseChatBoxFromRow(QueryRow row) {
+    final chatBox = KimmiWaitressTotally()
+      ..id = row.read<int>('id')
+      ..type = row.read<int?>('type')
+      ..name = row.read<String?>('name')
+      ..owner = row.read<int?>('owner')
+      ..weight = row.read<int?>('weight')
+      ..muted = row.read<bool?>('muted')
+      ..unreadCount = row.read<int?>('unread_count')
+      ..updateTime = row.read<int?>('update_time')
+      ..hasChat = row.read<bool?>('has_chat')
+      ..partnerId = row.read<int?>('partner_id');
+
+    final uid = row.read<int?>('uid');
+    final nickName = row.read<String?>('nick_name') ?? '';
+    final avatarUrl = row.read<String?>('avatar_url') ?? '';
+    if (uid != null) {
+      chatBox.chatUser = KimmiWaitressFeast()
+        ..uid = uid
+        ..nickName = nickName
+        ..avatarUrl = avatarUrl;
+    }
+
+    final snapType = row.read<int?>('last_snap_type');
+    final snapTextContent = row.read<String?>('last_snap_text_content');
+    final snapJsonContent = row.read<String?>('last_snap_json_content');
+    final snapCreateTime = row.read<int?>('last_snap_create_time');
+
+    chatBox.lastSnapType = snapType;
+    chatBox.lastSnapTextContent = snapTextContent;
+    chatBox.lastSnapJsonContent = snapJsonContent;
+    chatBox.lastSnapCreateTime = snapCreateTime;
+
+    if (chatBox.id != null && (snapCreateTime != null && snapCreateTime > 0)) {
+      final snap = KimmiExpensive()
+        ..chatBoxId = chatBox.id
+        ..type = snapType
+        ..textContent = snapTextContent
+        ..jsonContent = snapJsonContent
+        ..createTime = snapCreateTime;
+      chatBox.lastContent = KimmiWaitressJuda.convertChatListContent(
+        snap,
+        KimmiTamperDaytime.chatListDisplayNameTextStyle,
+      );
+      if (chatBox.updateTime != null) {
+        chatBox.updateTime = logger.max(chatBox.updateTime!, snapCreateTime);
+      }
+      chatBox.displayTime = chatBox.updateTime;
+    }
+
+    return chatBox;
+  }
+
   Future<bool> canDeleteChatBoxMember(int uid) async {
     return _chatBoxMemberDao.hasMemberChatBox(uid);
   }
@@ -91,15 +247,21 @@ class KimmiWaitressTotallyCrossover
 
   Future<KimmiWaitressTotally?> _modelByEntity(kimmi_topless_cowboys? e) async {
     if (e == null) return null;
-    final m = _modelFromEntity(e);
-    List<kimmi_waitress_signing_cowboys> memberIds = await _chatBoxMemberDao
-        .entitiesForChatBox(e.id);
-    List<int> ids = memberIds.map((e) => e.uid).toList();
-    m?.members = await _userDao.modelsByIds(ids);
-    m?.unreadCount = await _snapDao.countOfNewModelsForChatBox(
-      m.id,
-      m.lastReadSnapTime,
-    );
+    final rows = await customSelect(
+      '''
+      SELECT * FROM kimmi_waitress_totally_cowboys
+      WHERE id = ?
+      LIMIT 1
+      ''',
+      variables: [Variable<int>(e.id)],
+      readsFrom: {kimmiWaitressTotallyCowboys},
+    ).get();
+    if (rows.isEmpty) return null;
+    final entity = kimmiWaitressTotallyCowboys.map(rows.first.data);
+    final m = _modelFromEntity(entity);
+    if (m != null && m.partnerId != null && m.partnerId! > 0) {
+      m.chatUser = await _userDao.modelById(m.partnerId);
+    }
     return m;
   }
 
@@ -150,6 +312,19 @@ class KimmiWaitressTotallyCrossover
       clearCacheTime: m.clearCacheTime != null
           ? Value(m.clearCacheTime!)
           : Value.absent(),
+      partnerId: m.partnerId != null ? Value(m.partnerId!) : const Value(0),
+      lastSnapType: m.lastSnapType != null
+          ? Value(m.lastSnapType!)
+          : Value.absent(),
+      lastSnapTextContent: m.lastSnapTextContent != null
+          ? Value(m.lastSnapTextContent)
+          : Value.absent(),
+      lastSnapJsonContent: m.lastSnapJsonContent != null
+          ? Value(m.lastSnapJsonContent)
+          : Value.absent(),
+      lastSnapCreateTime: m.lastSnapCreateTime != null
+          ? Value(m.lastSnapCreateTime!)
+          : Value.absent(),
     );
   }
 
@@ -171,7 +346,12 @@ class KimmiWaitressTotallyCrossover
       ..serviceChat = e.serviceChat
       ..hasChat = e.hasChat
       ..lastReadSnapTime = e.lastReadSnapTime
-      ..clearCacheTime = e.clearCacheTime;
+      ..clearCacheTime = e.clearCacheTime
+      ..partnerId = e.partnerId
+      ..lastSnapType = e.lastSnapType
+      ..lastSnapTextContent = e.lastSnapTextContent
+      ..lastSnapJsonContent = e.lastSnapJsonContent
+      ..lastSnapCreateTime = e.lastSnapCreateTime;
   }
 
   Future deleteModels(List<KimmiWaitressTotally> models) async {
@@ -204,16 +384,63 @@ class KimmiWaitressTotallyCrossover
     });
   }
 
-  Future<List<KimmiWaitressTotally>?> modelsByIds(List<int>? ids) async {
+  Future<List<KimmiWaitressTotally>?> queryChatBoxesByIds(
+    Iterable<int>? ids,
+  ) async {
     if (ids == null || ids.isEmpty) return null;
-    return transaction(() async {
-      List<KimmiWaitressTotally> models = [];
-      for (final id in ids) {
-        final m = await modelById(id);
-        if (m != null) models.add(m);
-      }
-      return models;
-    });
+    return queryChatBoxesByIdsWithSnapshots(ids);
+  }
+
+  Future<List<KimmiWaitressTotally>?> queryChatBoxesByIdsWithSnapshots(
+    Iterable<int> ids,
+  ) async {
+    if (ids.isEmpty) return null;
+
+    final validIds = ids.where((id) => id > 0).toList();
+    if (validIds.isEmpty) return null;
+
+    final placeholders = List.generate(validIds.length, (_) => '?').join(',');
+    final variables = validIds.map((id) => Variable<int>(id)).toList();
+
+    final sql =
+        '''
+      SELECT 
+        box.id,
+        box.type,
+        box.owner,
+        box.weight,
+        box.muted,
+        box.unread_count,
+        box.update_time,
+        box.has_chat,
+        box.partner_id,
+        box.last_snap_type,
+        box.last_snap_text_content,
+        box.last_snap_json_content,
+        box.last_snap_create_time,
+        u.uid,
+        u.nick_name,
+        u.avatar_url
+      FROM kimmi_waitress_totally_cowboys box
+      LEFT JOIN kimmi_feast_cowboys u ON u.uid = box.partner_id
+      WHERE box.id IN (${placeholders})
+      ORDER BY box.weight DESC, box.update_time DESC
+    ''';
+
+    final rows = await customSelect(
+      sql,
+      variables: variables,
+      readsFrom: {
+        kimmiWaitressTotallyCowboys,
+        attachedDatabase.kimmiFeastCowboys,
+      },
+    ).get();
+
+    final chatBoxes = <KimmiWaitressTotally>[];
+    for (final row in rows) {
+      chatBoxes.add(_parseChatBoxFromRow(row));
+    }
+    return chatBoxes;
   }
 
   Future<List<KimmiWaitressTotally>?> modelsByType() async {
@@ -318,5 +545,124 @@ class KimmiWaitressTotallyCrossover
       }
       return false;
     });
+  }
+
+  Future<Map<int, int>> backfillNewFieldsOnFirstLoad(
+    Iterable<int> boxIds,
+  ) async {
+    try {
+      Map<int, int> partnerIdMap = await batchFindParentIdsByChatMemberDB(
+        boxIds,
+      );
+      if (partnerIdMap.isNotEmpty) {
+        await attachedDatabase.batch((batch) {
+          for (final entry in partnerIdMap.entries) {
+            final chatBoxId = entry.key;
+            final partnerId = entry.value;
+            if (partnerId > 0) {
+              batch.update(
+                kimmiWaitressTotallyCowboys,
+                KimmiWaitressTotallyCowboysNerd(partnerId: Value(partnerId)),
+                where: (tbl) => tbl.id.equals(chatBoxId),
+              );
+            }
+          }
+        });
+      }
+      return partnerIdMap;
+    } catch (e, stack) {
+      KimmiVasectomyPioneerDock.kimmiPajamaCurious(10084, e, stack);
+    }
+    return {};
+  }
+
+  Future<Map<int, int>> batchFindParentIdsByChatMemberDB(
+    Iterable<int> chatBoxIds,
+  ) async {
+    if (chatBoxIds.isEmpty) return {};
+
+    final currentUid = KIMMI.uid();
+    final validIds = chatBoxIds.where((id) => id > 0).toList();
+    if (validIds.isEmpty) return {};
+
+    final placeholders = List.generate(validIds.length, (_) => '?').join(',');
+    final variables = validIds.map((id) => Variable<int>(id)).toList();
+    variables.add(Variable<int>(currentUid));
+
+    try {
+      final memberRows = await customSelect(
+        '''
+            SELECT cid, uid FROM kimmi_waitress_signing_cowboys 
+            WHERE cid IN (${placeholders}) AND uid != ?
+            ''',
+        variables: variables,
+        readsFrom: {attachedDatabase.kimmiWaitressSigningCowboys},
+      ).get();
+
+      final result = <int, int>{};
+      for (final row in memberRows) {
+        final cid = row.read<int>('cid');
+        final uid = row.read<int>('uid');
+        if (!result.containsKey(cid)) {
+          result[cid] = uid;
+        }
+      }
+      return result;
+    } catch (e, stack) {
+      return {};
+    }
+  }
+
+  Future<KimmiWaitressTotally?> modelByPartnerId(int? partnerId) async {
+    if (partnerId == null || partnerId == 0) return null;
+    final rows = await customSelect(
+      '''
+      SELECT * FROM kimmi_waitress_totally_cowboys
+      WHERE partner_id = ?
+      LIMIT 1
+      ''',
+      variables: [Variable<int>(partnerId)],
+      readsFrom: {kimmiWaitressTotallyCowboys},
+    ).get();
+    if (rows.isEmpty) return null;
+    final entity = kimmiWaitressTotallyCowboys.map(rows.first.data);
+    return _modelByEntity(entity);
+  }
+
+  Future<void> updateChatBoxMember(KimmiWaitressFeast user) async {
+    await _userDao.saveOrUpdateModels([user]);
+  }
+
+  Future<void> deleteChatboxWithSnapsData(int chatBoxId) async {
+    if (chatBoxId <= 0) return;
+    await transaction(() async {
+      await _snapDao.deleteModelsForChatBox(chatBoxId);
+      await customStatement(
+        'DELETE FROM kimmi_waitress_totally_cowboys WHERE id = ?',
+        [chatBoxId],
+      );
+    });
+  }
+
+  Future<bool> resetModelUnread(int id) async {
+    return transaction(() async {
+      final affected = await customUpdate(
+        'UPDATE kimmi_waitress_totally_cowboys SET unread_count = 0 WHERE id = ?',
+        variables: [Variable.withInt(id)],
+        updates: {db.kimmiWaitressTotallyCowboys},
+      );
+      if (affected > 0) {
+        return true;
+      }
+      return false;
+    });
+  }
+
+  Future<int> totalUnreadCount() async {
+    final result = await customSelect(
+      'SELECT SUM(unread_count) AS total_unread FROM kimmi_waitress_totally_cowboys',
+    ).getSingleOrNull();
+    final total = result?.data['total_unread'] as int?;
+    return total ?? 0;
   }
 }

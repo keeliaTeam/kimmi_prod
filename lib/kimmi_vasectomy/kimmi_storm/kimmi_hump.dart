@@ -8,6 +8,7 @@ import 'package:kimmi/kimmi_vasectomy/kimmi_storm/kimmi_feast_genius.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_palate.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_curvy/kimmi_africa.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_juda/kimmi_starbucks_juda.dart';
+import 'package:get/get.dart';
 
 import '../kimmi_exploit_dylan/kimmi_dylan_hump.dart';
 import 'kimmi_storm_tempt.dart';
@@ -104,5 +105,39 @@ class KimmiHump {
 
   String? getPushKey() {
     return configs.push?.key;
+  }
+
+  bool isRegionMatchFirst20sChargeMode() {
+    if (configs.matchDiscount != null &&
+        configs.matchDiscount!.matchDiscountRegions.isNotEmpty &&
+        configs.matchDiscount!.matchDiscountRegions.contains(
+          KIMMI.user().regionCode,
+        )) {
+      return true;
+    }
+    return false;
+  }
+
+  String regionMatchFirst20sChargeModeDesc() {
+    int matchFreeSeconds = 20;
+    int matchCostCoins = 15;
+    int matchCallCost = 30;
+    if (configs.matchDiscount != null) {
+      matchCostCoins = configs.matchDiscount!.matchCostCoins;
+      matchCallCost = configs.matchDiscount!.matchCallCost;
+      matchFreeSeconds = configs.matchDiscount!.matchFreeSeconds;
+    }
+    return "kimmi_broderick_glad_handcuff_mrs".tr
+        .replaceAll("{seconds}", "$matchFreeSeconds")
+        .replaceAll("{firstPrice}", "$matchCostCoins")
+        .replaceAll("{price}", "$matchCallCost");
+  }
+
+  int regionMatchFirst20sChargeModeMatchCostCoins() {
+    int matchCostCoins = 15;
+    if (configs.matchDiscount != null) {
+      matchCostCoins = configs.matchDiscount!.matchCostCoins;
+    }
+    return matchCostCoins;
   }
 }

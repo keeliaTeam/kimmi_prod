@@ -41,6 +41,8 @@ class KimmiExpensive {
 
   List<KimmiStormErnie>? images;
 
+  int? toUid;
+
   @override
   int get hashCode => '$id$localId'.hashCode;
 

@@ -1,10 +1,11 @@
 import 'dart:math';
-import 'kimmi_crossover_crossover.dart';
+import 'kimmi_exploit_terminator.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_palate.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_curvy/kimmi_vasectomy_pioneer_dock.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_tonight/kimmi_draft_juda.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_tonight/kimmi_defrost.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_juda/kimmi_manifest.dart';
+import 'package:kimmi/kimmi_vasectomy/kimmi_juda/kimmi_quantity_dock.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_hamill/kimmi_muse_idolize_container.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_hamill/kimmi_ernie.dart';
 import 'package:flutter/cupertino.dart';
@@ -44,6 +45,19 @@ class KimmiCavityContainer
       KimmiVasectomyPioneerDock.kimmiPajamaCurious(770002, e, stack);
       rethrow;
     }
+  }
+
+  @override
+  Widget keepMainLive(Widget child) {
+    return PopScope(
+      canPop: false,
+      onPopInvokedWithResult: (bool didPop, Object? result) async {
+        if (didPop) return;
+        KimmiRTCDock.instance.forceReleaseEngine();
+        SystemNavigator.pop();
+      },
+      child: child,
+    );
   }
 
   Positioned _kimmiCommentaryDuckyButtNinja() {

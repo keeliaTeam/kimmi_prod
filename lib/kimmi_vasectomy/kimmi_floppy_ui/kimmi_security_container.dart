@@ -1,5 +1,5 @@
 import 'dart:math';
-import 'kimmi_crossover_crossover.dart';
+import 'kimmi_untie_ic.dart';
 import 'dart:math';
 import 'dart:ui';
 
@@ -310,7 +310,7 @@ class KimmiSecurityContainer
             },
           ),
 
-          const SizedBox(height: 60),
+          SizedBox(height: 60 + Get.mediaQuery.padding.bottom),
         ],
       ),
     );
@@ -853,7 +853,13 @@ class KimmiSecurityContainer
         width: 32,
         height: 32,
       ),
-    ).click(() => KimmiWaitressContainerHusbandUp.open(uid: logic.uid ?? 0));
+    ).click(
+      () => KimmiWaitressContainerHusbandUp.openChatWithUid(
+        logic.uid!,
+        logic.nickName ?? "",
+        logic.avatarUrl ?? '',
+      ),
+    );
   }
 
   Widget _kimmiTuxJohnny(String title, String icon, List<String> infos) {

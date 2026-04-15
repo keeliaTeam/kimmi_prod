@@ -6,12 +6,12 @@ import 'package:kimmi/kimmi_vasectomy/kimmi_curvy/kimmi_africa.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_juda/kimmi_io_juda.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_juda/kimmi_starbucks_juda.dart';
 import 'package:kimmi/kimmi_vasectomy/kimmi_hamill/kimmi_ernie.dart';
-import 'package:better_player_plus/better_player_plus.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
+import 'package:video_player/video_player.dart';
 import '../kimmi_curvy/kimmi_india_waitress_dock.dart';
 import '../kimmi_tonight/kimmi_defrost.dart';
 import '../kimmi_tonight/kimmi_draft_juda.dart';
@@ -136,17 +136,16 @@ class _MediaVideoViewState extends State<MediaVideoView> {
   bool _isControlShowing = true;
   bool _isControlVisible = true;
   Timer? _toggleControlTimer;
-  BetterPlayerController? _playController;
+  VideoPlayerController? _playController;
   bool _isLoading = true;
 
-  VideoPlayerValue? get _playerValue =>
-      _playController?.videoPlayerController?.value;
+  VideoPlayerValue? get _playerValue => _playController?.value;
 
   bool get _isPlaying => (_playerValue != null && _playerValue!.isPlaying);
 
   @override
   void dispose() {
-    _playController?.dispose(forceDispose: true);
+    _playController?.dispose();
     _playController = null;
     _stopToggleControlVisibleTimerIfNeed();
 
@@ -183,11 +182,10 @@ class _MediaVideoViewState extends State<MediaVideoView> {
               child: Hero(
                 tag: widget.heroTag,
                 child: AspectRatio(
-                  aspectRatio:
-                      _playerValue?.aspectRatio ?? Get.width / Get.height,
+                  aspectRatio: _playerValue?.aspectRatio ?? 1.0,
                   child: _playController == null
                       ? Container()
-                      : BetterPlayer(controller: _playController!),
+                      : VideoPlayer(_playController!),
                 ),
               ),
             ),
@@ -301,7 +299,7 @@ class _MediaVideoViewState extends State<MediaVideoView> {
 
   _playControlProgressBar() {
     final position = _playerValue?.position.inMilliseconds ?? 0;
-    final duration = _playerValue?.duration?.inMilliseconds ?? 0;
+    final duration = _playerValue?.duration.inMilliseconds ?? 0;
     return ProgressBar(
       baseBarColor: KimmiDraftJuda.white_50p,
       progressBarColor: KimmiDraftJuda.white,
@@ -321,41 +319,25 @@ class _MediaVideoViewState extends State<MediaVideoView> {
   }
 
   _initializePlay() {
-    _playController = BetterPlayerController(
-      BetterPlayerConfiguration(
-        aspectRatio: Get.width / Get.height,
-        looping: true,
-        controlsConfiguration: const BetterPlayerControlsConfiguration(
-          showControls: false,
-        ),
-        autoDetectFullscreenDeviceOrientation: true,
-        autoDetectFullscreenAspectRatio: true,
-        fit: BoxFit.cover,
-        autoDispose: false,
-        eventListener: (event) {
-          if (event.betterPlayerEventType ==
-              BetterPlayerEventType.initialized) {
-            _playController?.setVolume(0);
-            _playController?.setLooping(true);
-            _playController?.play();
-            callSetStateSafely(this, () {});
-          }
-        },
-      ),
-      betterPlayerDataSource: BetterPlayerDataSource(
-        !KimmiStarbucksJuda.isEmptyString(widget.netPath)
-            ? BetterPlayerDataSourceType.network
-            : BetterPlayerDataSourceType.file,
-        !KimmiStarbucksJuda.isEmptyString(widget.netPath)
-            ? widget.netPath!
-            : widget.filePath!,
-      ),
-    );
+    _playController = !KimmiStarbucksJuda.isEmptyString(widget.netPath)
+        ? VideoPlayerController.networkUrl(Uri.parse(widget.netPath!))
+        : VideoPlayerController.file(File(widget.filePath!));
+    _playController!.initialize().then((_) {
+      _isInitialized = true;
+      if (_playAfterInitialized) {
+        _listenPlay();
+        _togglePlay();
+      }
+      callSetStateSafely(this, () {});
+    });
   }
 
   _listenPlay() {
     if (_isListenerAdded) return;
     _isListenerAdded = true;
+    _playController?.addListener(() {
+      callSetStateSafely(this, () {});
+    });
   }
 
   callSetStateSafely(State state, VoidCallback fn) {

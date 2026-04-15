@@ -1,111 +1,164 @@
 import 'dart:core' as $core;
 
+import 'package:kimmi/kimmi_vasectomy/proto/kimmi_cadaver_gentleman.dart';
 import 'package:protobuf/protobuf.dart' as $pb;
 
 class Message_Type extends $pb.ProtobufEnum {
   static const Message_Type UNKNOWN = Message_Type._(
     0,
-    _omitEnumNames ? '' : 'UNKNOWN',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+        ? ''
+        : 'UNKNOWN',
   );
   static const Message_Type LIVECREATEREQ = Message_Type._(
     3000,
-    _omitEnumNames ? '' : 'LIVECREATEREQ',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+        ? ''
+        : 'LIVECREATEREQ',
   );
   static const Message_Type LIVECREATERSP = Message_Type._(
     3001,
-    _omitEnumNames ? '' : 'LIVECREATERSP',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+        ? ''
+        : 'LIVECREATERSP',
   );
   static const Message_Type LIVESUGGESTPSH = Message_Type._(
     3002,
-    _omitEnumNames ? '' : 'LIVESUGGESTPSH',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+        ? ''
+        : 'LIVESUGGESTPSH',
   );
   static const Message_Type ENTERLIVEREQ = Message_Type._(
     3003,
-    _omitEnumNames ? '' : 'ENTERLIVEREQ',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+        ? ''
+        : 'ENTERLIVEREQ',
   );
   static const Message_Type ENTERLIVERSP = Message_Type._(
     3004,
-    _omitEnumNames ? '' : 'ENTERLIVERSP',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+        ? ''
+        : 'ENTERLIVERSP',
   );
   static const Message_Type LIVELEAVEREQ = Message_Type._(
     3005,
-    _omitEnumNames ? '' : 'LIVELEAVEREQ',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+        ? ''
+        : 'LIVELEAVEREQ',
   );
   static const Message_Type LIVEENDREQ = Message_Type._(
     3006,
-    _omitEnumNames ? '' : 'LIVEENDREQ',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+        ? ''
+        : 'LIVEENDREQ',
   );
   static const Message_Type LIVEENDRSP = Message_Type._(
     3007,
-    _omitEnumNames ? '' : 'LIVEENDRSP',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+        ? ''
+        : 'LIVEENDRSP',
   );
   static const Message_Type LIVEENDPSH = Message_Type._(
     3008,
-    _omitEnumNames ? '' : 'LIVEENDPSH',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+        ? ''
+        : 'LIVEENDPSH',
   );
   static const Message_Type LIVEKEEPALIVE = Message_Type._(
     3009,
-    _omitEnumNames ? '' : 'LIVEKEEPALIVE',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+        ? ''
+        : 'LIVEKEEPALIVE',
   );
   static const Message_Type LIVEFEEDPSH = Message_Type._(
     3010,
-    _omitEnumNames ? '' : 'LIVEFEEDPSH',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+        ? ''
+        : 'LIVEFEEDPSH',
   );
   static const Message_Type LIVEGIFTGIVEREQ = Message_Type._(
     3011,
-    _omitEnumNames ? '' : 'LIVEGIFTGIVEREQ',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+        ? ''
+        : 'LIVEGIFTGIVEREQ',
   );
   static const Message_Type LIVELIKEREQ = Message_Type._(
     3012,
-    _omitEnumNames ? '' : 'LIVELIKEREQ',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+        ? ''
+        : 'LIVELIKEREQ',
   );
   static const Message_Type LIVELIKEPSH = Message_Type._(
     3013,
-    _omitEnumNames ? '' : 'LIVELIKEPSH',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+        ? ''
+        : 'LIVELIKEPSH',
   );
   static const Message_Type SENDMESSAGEREQ = Message_Type._(
     3014,
-    _omitEnumNames ? '' : 'SENDMESSAGEREQ',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+        ? ''
+        : 'SENDMESSAGEREQ',
   );
   static const Message_Type GETUSERLISTREQ = Message_Type._(
     3015,
-    _omitEnumNames ? '' : 'GETUSERLISTREQ',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+        ? ''
+        : 'GETUSERLISTREQ',
   );
   static const Message_Type GETUSERLISTRSP = Message_Type._(
     3016,
-    _omitEnumNames ? '' : 'GETUSERLISTRSP',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+        ? ''
+        : 'GETUSERLISTRSP',
   );
   static const Message_Type CALLINVITEREQ = Message_Type._(
     3017,
-    _omitEnumNames ? '' : 'CALLINVITEREQ',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+        ? ''
+        : 'CALLINVITEREQ',
   );
   static const Message_Type CALLINVITEPSH = Message_Type._(
     3018,
-    _omitEnumNames ? '' : 'CALLINVITEPSH',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+        ? ''
+        : 'CALLINVITEPSH',
   );
   static const Message_Type CALLKICKREQ = Message_Type._(
     3019,
-    _omitEnumNames ? '' : 'CALLKICKREQ',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+        ? ''
+        : 'CALLKICKREQ',
   );
   static const Message_Type CALLKICKPSH = Message_Type._(
     3020,
-    _omitEnumNames ? '' : 'CALLKICKPSH',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+        ? ''
+        : 'CALLKICKPSH',
   );
   static const Message_Type GETUSERLISTFORANCHORREQ = Message_Type._(
     3021,
-    _omitEnumNames ? '' : 'GETUSERLISTFORANCHORREQ',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+        ? ''
+        : 'GETUSERLISTFORANCHORREQ',
   );
   static const Message_Type GETUSERLISTFORANCHORRSP = Message_Type._(
     3022,
-    _omitEnumNames ? '' : 'GETUSERLISTFORANCHORRSP',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+        ? ''
+        : 'GETUSERLISTFORANCHORRSP',
   );
   static const Message_Type GETLIVEINFOREQ = Message_Type._(
     3023,
-    _omitEnumNames ? '' : 'GETLIVEINFOREQ',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+        ? ''
+        : 'GETLIVEINFOREQ',
   );
   static const Message_Type GETLIVEINFORSP = Message_Type._(
     3024,
-    _omitEnumNames ? '' : 'GETLIVEINFORSP',
+    const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+        ? ''
+        : 'GETLIVEINFORSP',
   );
 
   static const $core.List<Message_Type> values = <Message_Type>[
@@ -139,9 +192,8 @@ class Message_Type extends $pb.ProtobufEnum {
 
   static final $core.Map<$core.int, Message_Type> _byValue =
       $pb.ProtobufEnum.initByValue(values);
+
   static Message_Type? valueOf($core.int value) => _byValue[value];
 
   const Message_Type._($core.int v, $core.String n) : super(v, n);
 }
-
-const _omitEnumNames = $core.bool.fromEnvironment('protobuf.omit_enum_names');

@@ -1,7 +1,7 @@
 import 'dart:core' as $core;
 
+import 'package:kimmi/kimmi_vasectomy/proto/kimmi_cadaver_gentleman.dart';
 import 'package:protobuf/protobuf.dart' as $pb;
-
 import 'package:protobuf/src/protobuf/mixins/well_known.dart' as $mixin;
 
 class Any extends $pb.GeneratedMessage with $mixin.AnyMixin {
@@ -35,6 +35,7 @@ class Any extends $pb.GeneratedMessage with $mixin.AnyMixin {
         ..hasRequiredFields = false;
 
   Any._() : super();
+
   factory Any({$core.String? typeUrl, $core.List<$core.int>? value}) {
     final _result = create();
     if (typeUrl != null) {
@@ -45,20 +46,24 @@ class Any extends $pb.GeneratedMessage with $mixin.AnyMixin {
     }
     return _result;
   }
+
   factory Any.fromBuffer(
     $core.List<$core.int> i, [
     $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
   ]) => create()..mergeFromBuffer(i, r);
+
   factory Any.fromJson(
     $core.String i, [
     $pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY,
   ]) => create()..mergeFromJson(i, r);
+
   @$core.Deprecated(
     'Using this can add significant overhead to your binary. '
     'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
     'Will be removed in next major version',
   )
   Any clone() => Any()..mergeFromMessage(this);
+
   @$core.Deprecated(
     'Using this can add significant overhead to your binary. '
     'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
@@ -67,10 +72,14 @@ class Any extends $pb.GeneratedMessage with $mixin.AnyMixin {
   Any copyWith(void Function(Any) updates) =>
       super.copyWith((message) => updates(message as Any)) as Any;
   $pb.BuilderInfo get info_ => _i;
+
   @$core.pragma('dart2js:noInline')
   static Any create() => Any._();
+
   Any createEmptyInstance() => create();
+
   static $pb.PbList<Any> createRepeated() => $pb.PbList<Any>();
+
   @$core.pragma('dart2js:noInline')
   static Any getDefault() =>
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Any>(create);
@@ -78,6 +87,7 @@ class Any extends $pb.GeneratedMessage with $mixin.AnyMixin {
 
   @$pb.TagNumber(1)
   $core.String get typeUrl => $_getSZ(0);
+
   @$pb.TagNumber(1)
   set typeUrl($core.String v) {
     $_setString(0, v);
@@ -85,11 +95,13 @@ class Any extends $pb.GeneratedMessage with $mixin.AnyMixin {
 
   @$pb.TagNumber(1)
   $core.bool hasTypeUrl() => $_has(0);
+
   @$pb.TagNumber(1)
   void clearTypeUrl() => clearField(1);
 
   @$pb.TagNumber(2)
   $core.List<$core.int> get value => $_getN(1);
+
   @$pb.TagNumber(2)
   set value($core.List<$core.int> v) {
     $_setBytes(1, v);
@@ -97,8 +109,10 @@ class Any extends $pb.GeneratedMessage with $mixin.AnyMixin {
 
   @$pb.TagNumber(2)
   $core.bool hasValue() => $_has(1);
+
   @$pb.TagNumber(2)
   void clearValue() => clearField(2);
+
   static Any pack(
     $pb.GeneratedMessage message, {
     $core.String typeUrlPrefix = 'type.googleapis.com',
